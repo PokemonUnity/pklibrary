@@ -87,6 +87,8 @@ git-journal.fish
 *.nupkg
 # The packages folder can be ignored because of Package Restore
 */[Pp]ackages/*
+/[Pp]ackages/*
+/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1
 # except build/, which is used as an MSBuild target.
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
