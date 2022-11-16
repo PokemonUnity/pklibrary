@@ -88,34 +88,118 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="UnityFX\Styles\docfx.css" />
-    <Content Include="UnityFX\Styles\docfx.js" />
-    <Content Include="UnityFX\Styles\docfx.vendor.css" />
-    <Content Include="UnityFX\Styles\docfx.vendor.js" />
-    <Content Include="UnityFX\Styles\main.css" />
-    <Content Include="UnityFX\Styles\main.js" />
+    <Content Include="Theme\UnityFX\Styles\docfx.css" />
+    <Content Include="Theme\UnityFX\Styles\docfx.js" />
+    <Content Include="Theme\UnityFX\Styles\docfx.vendor.css" />
+    <Content Include="Theme\UnityFX\Styles\docfx.vendor.js" />
+    <Content Include="Theme\UnityFX\Styles\main.css" />
+    <Content Include="Theme\UnityFX\Styles\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Web.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Api\index.cshtml" />
     <None Include="packages.config" />
-    <Content Include="UnityFX\Theme\Api\_Layout-Left_Nav-Panel.cshtml" />
-    <Content Include="UnityFX\Theme\Api\_Layout-Top_Nav-Panel.cshtml" />
-    <Content Include="UnityFX\Theme\Wiki\_Layout.cshtml" />
-    <Content Include="UnityFX\Theme\Wiki\_Layout-Left_Nav-Panel.cshtml" />
-    <Content Include="UnityFX\Theme\Wiki\_Layout-Top_Nav-Panel.cshtml" />
+    <Content Include="Theme\UnityFX\Layout\_Partial-Api-Left_Nav-Panel.cshtml" />
+    <Content Include="Theme\UnityFX\Layout\_Partial-Api-Top_Nav-Panel.cshtml" />
+    <Content Include="Theme\UnityFX\Layout\_Layout-Wiki.cshtml" />
+    <Content Include="Theme\UnityFX\Layout\_Partial-Wiki-Left_Nav-Panel.cshtml" />
+    <Content Include="Theme\UnityFX\Layout\_Partial-Wiki-Top_Nav-Panel.cshtml" />
+    <Content Include="Theme\Guidebook\Wiki\_Layout-Left_Nav-Panel.cshtml" />
+    <Content Include="Theme\Guidebook\Wiki\_Layout-Top_Nav-Panel.cshtml" />
+    <Content Include="Theme\Guidebook\Wiki\_Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="UnityFX\Theme\Api\_Layout.cshtml" />
+    <Content Include="Theme\UnityFX\Layout\_Layout-Api.cshtml" />
+    <Content Include="Wiki\Pokemon\Ability.cshtml" />
+    <Content Include="Wiki\Pokemon\Defining_a_species.cshtml" />
+    <Content Include="Wiki\Pokemon\Defining_a_ability.cshtml" />
+    <Content Include="Wiki\Pokemon\Pokemon.cshtml" />
+    <Content Include="Wiki\Pokemon\Editing_a_Pokemon.cshtml" />
+    <Content Include="Wiki\Pokemon\Shiny_Pokemon.cshtml" />
+    <Content Include="Wiki\Pokemon\Mega_Evolution.cshtml" />
+    <Content Include="Wiki\Moves\Moves.cshtml" />
+    <Content Include="Wiki\Pokemon\Defining_a_type.cshtml" />
+    <Content Include="Wiki\Pokemon\Party.cshtml" />
+    <Content Include="Wiki\Pokemon\Manipulating_Pokemon.cshtml" />
+    <Content Include="Wiki\Pokemon\Shadow_Pokemon.cshtml" />
+    <Content Include="Wiki\Pokemon\List_of_abilities.cshtml" />
+    <Content Include="Wiki\People\Player.cshtml" />
+    <Content Include="Wiki\People\Trainers.cshtml" />
+    <Content Include="Wiki\People\Defining_a_trainer.cshtml" />
+    <Content Include="Wiki\Error_messages.cshtml" />
+    <Content Include="Wiki\Messages.cshtml" />
+    <Content Include="Wiki\Options_screen.cshtml" />
+    <Content Include="Wiki\Pause_menu.cshtml" />
+    <Content Include="Wiki\About.cshtml" />
+    <Content Include="Wiki\Guides\Guides.cshtml" />
+    <Content Include="Wiki\Guides\Game_design.cshtml" />
+    <Content Include="Wiki\Connecting_maps.cshtml" />
+    <Content Include="Wiki\Map_transfers.cshtml" />
+    <Content Include="Wiki\Debug_mode.cshtml" />
+    <Content Include="Wiki\Pokemon\Learning_moves.cshtml" />
+    <Content Include="Wiki\Moves\Defining_a_move.cshtml" />
+    <Content Include="Wiki\Controls.cshtml" />
+    <Content Include="Wiki\People\Rival.cshtml" />
+    <Content Include="Wiki\People\Partner_trainer.cshtml" />
+    <Content Include="Wiki\People\Special_NPCs.cshtml" />
+    <Content Include="Wiki\Place\Poke_Center.cshtml" />
+    <Content Include="Wiki\AllPages.cshtml" />
+    <Content Include="Wiki\Adding_new_encounter_methods.cshtml" />
+    <Content Include="Wiki\Battle\Wild_encounters.cshtml" />
+    <Content Include="Wiki\Battle\Adding_new_encounter_methods.cshtml" />
+    <Content Include="Wiki\Battle\Event_encounters.cshtml" />
+    <Content Include="Wiki\Battle\Roaming_Pokémon.cshtml" />
+    <Content Include="Wiki\Battle\Fishing_encounters.cshtml" />
+    <Content Include="Wiki\Battle\Obstacles.cshtml" />
+    <Content Include="Wiki\Battle\Rematches.cshtml" />
+    <Content Include="Wiki\Battle\Battle_AI.cshtml" />
+    <Content Include="Wiki\Items\Manipulating_items.cshtml" />
+    <Content Include="Wiki\Items\Item_effects.cshtml" />
+    <Content Include="Wiki\Items\Item_balls.cshtml" />
+    <Content Include="Wiki\Items\Berry_planting.cshtml" />
+    <Content Include="Wiki\Items\Bag.cshtml" />
+    <Content Include="Wiki\Items\Pokedex.cshtml" />
+    <Content Include="Wiki\Items\Pokegear.cshtml" />
+    <Content Include="Wiki\Items\Trainer_card.cshtml" />
+    <Content Include="Wiki\Place\Poke_Mart.cshtml" />
+    <Content Include="Wiki\Place\Pokemon_Gym.cshtml" />
+    <Content Include="Wiki\Place\Safari_Zone.cshtml" />
+    <Content Include="Wiki\Place\Bug_Catching_Contest.cshtml" />
+    <Content Include="Wiki\Place\Day_Care.cshtml" />
+    <Content Include="Wiki\Place\Game_Corner.cshtml" />
+    <Content Include="Wiki\Place\Battle_Frontier.cshtml" />
+    <Content Include="Wiki\Pokemon\Breeding.cshtml" />
+    <Content Include="Wiki\Items\Phone.cshtml" />
+    <Content Include="Wiki\Place\Events.cshtml" />
+    <Content Include="Wiki\Place\Time-sensitive_events.cshtml" />
+    <Content Include="Wiki\Place\Time.cshtml" />
+    <Content Include="Wiki\Moves\Move_effects.cshtml" />
+    <Content Include="Wiki\Moves\Function_codes.cshtml" />
+    <Content Include="Wiki\Moves\Using_moves_outside_battle.cshtml" />
+    <Content Include="Wiki\Moves\Attack_animations.cshtml" />
+    <Content Include="Wiki\Moves\All_Animations_Project.cshtml" />
+    <Content Include="Wiki\Script_sections.cshtml" />
+    <Content Include="Wiki\Mini-games.cshtml" />
+    <Content Include="Wiki\Pokemon\Eggs.cshtml" />
+    <Content Include="Wiki\Pokemon_storage.cshtml" />
+    <Content Include="Wiki\Items\Itemfinder.cshtml" />
+    <Content Include="Wiki\Metadata.cshtml" />
+    <Content Include="Wiki\PC.cshtml" />
+    <Content Include="Wiki\Getting_around.cshtml" />
+    <Content Include="Wiki\Place\Region_map.cshtml" />
+    <Content Include="Wiki\Place\Multiple_regions.cshtml" />
+    <Content Include="Wiki\Maps.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UnityFX\Fonts\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
