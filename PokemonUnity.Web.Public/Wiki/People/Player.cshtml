@@ -1,0 +1,360 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20201001120335if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl><dd><i>For how trainer types are defined, see <a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Defining_a_trainer" title="Defining a trainer">Defining a trainer</a>.</i></dd></dl>
+						<p>
+							This page describes how to set up the&nbsp;<b>player character</b>. It also details the rest of the game's global metadata.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1"><a href="#Setting_up_a_player_character"><span class="tocnumber">1</span> <span class="toctext">Setting up a player character</span></a></li>
+								<li class="toclevel-1 tocsection-2">
+									<a href="#Manipulating_the_player"><span class="tocnumber">2</span> <span class="toctext">Manipulating the player</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-3"><a href="#Naming_the_player"><span class="tocnumber">2.1</span> <span class="toctext">Naming the player</span></a></li>
+										<li class="toclevel-2 tocsection-4"><a href="#Outfits"><span class="tocnumber">2.2</span> <span class="toctext">Outfits</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-5"><a href="#Trainer-related_information"><span class="tocnumber">3</span> <span class="toctext">Trainer-related information</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Setting_up_a_player_character">Setting up a player character</span></h2>
+						<dl><dd><i>Main article: <a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Metadata" title="Metadata">Metadata</a></i></dd></dl>
+						<p>
+							The&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"metadata.txt" contains much of the information about the player characters, including listing the graphics used to depict them in the game.
+						</p><p>
+							You will also need to ensure that all relevant graphics are in the appropriate places. These include charsets depicting various kinds of movement (<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Getting_around" title="Getting around">walking, running, cycling, surfing, diving</a>&nbsp;and&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Fishing_encounters" title="Fishing encounters">fishing</a>), and front and back sprites as used in battle and on the <a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Trainer_card" title="Trainer card">Trainer card</a>. The front and back sprites are part of <a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Defining_a_trainer" title="Defining a trainer">defining a trainer type</a>.
+						</p>
+						<h2><span class="mw-headline" id="Manipulating_the_player">Manipulating the player</span></h2>
+						<p>
+							To set the player (and thus set all their sprites), use the following script:
+						</p>
+<pre>pbChangePlayer(<i>X</i>)
+</pre>
+						<p>
+							"X" is a number between 0 and 7, corresponding to player characters A through H. This script is called in the&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Game_intro" title="Game intro">game intro</a>, and is one of the two vital things that MUST happen there (along with setting the player's name).
+						</p><p>
+							You can also use this command at any point during the game, but note that all it will do is change whichever information is written for that player character in the&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Metadata" title="Metadata">global metadata</a>&nbsp;(i.e. the trainer type and the charsets) - it will NOT change their party/money/name/etc. In this sense, changing the player is purely cosmetic, as all that changes is the player's appearance.
+						</p>
+						<h3><span class="mw-headline" id="Naming_the_player">Naming the player</span></h3>
+						<p>
+							To name the player, use the following script:
+						</p>
+<pre>pbTrainerName
+</pre>
+						<p>
+							This opens the naming screen, where the player can choose a name for themselves. If they close the naming screen while the name section is still blank, the player's username on their computer will be used (or a randomly generated name if that can't be found). The randomly generated name is nearly always terrible, as it is generated letter by letter according to a set of rules, rather than choosing one name from a list of names. You may wish to change this to use a specific name (or a random choice from a list of names); if so, find this script in the script section&nbsp;<b>PSystem_Utilities</b>&nbsp;and edit as appropriate. Remember to differentiate between genders.
+						</p><p>
+							To set the player's name automatically without letting the player choose it for themselves, use the following command in the&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Game_intro" title="Game intro">game intro</a>&nbsp;event instead of the above (you can change the highlighted part to whatever you want):
+						</p>
+<pre>pbTrainerName("<span style="background:yellow">Dave</span>")
+</pre>
+						<p>
+							If this script is called, but&nbsp;<code>pbChangePlayer</code>&nbsp;hasn't been, then the player's character will be set to the default character A.
+						</p>
+						<h3><span class="mw-headline" id="Outfits">Outfits</span></h3>
+						<p>
+							The player can be given a selection of outfits to choose from. These effectively behave like&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Multiple_forms" class="mw-redirect" title="Multiple forms">multiple forms</a>&nbsp;do for <a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon" title="Pokémon">Pokémon</a>, in that the outfit ("form") is a single number which determines the graphics to use for the player. This number is stored in the variable&nbsp;<code>$Trainer.outfit</code>, and is 0 by default.
+						</p><p>
+							The charsets which the player will use are named by taking the defined charset names in the&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"metadata.txt" for the player's character, and then adding an underscore followed by the outfit number to the end of it. Therefore, each outfit will require its own collection of charsets. If the appropriate charset does not exist, the game will instead use the base charset name (without any outfit number on the end). As with Pokémon multiple forms, it is recommended that outfit 0's graphics actually have no numbers on the ends of their filenames, so that outfit 0 can also act as the default/backup outfit if necessary.
+						</p><p>
+							This file naming convention also applies to the trainer sprites (both front and back sprites), as well as the player's head icon which is shown on the&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Region_map" title="Region map">region map</a>, and to the Vs. battle intro animation.
+						</p><p>
+							By default, there is no in-game way to change the player's outfit in Essentials (except for a&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Debug_mode" title="Debug mode">Debug mode</a>&nbsp;option). Implementing a "wardrobe" feature, and deciding how to number each outfit and which outfits are available, is left to the user to do.
+						</p>
+						<h2><span class="mw-headline" id="Trainer-related_information">Trainer-related information</span></h2>
+						<p>
+							A number of pieces of information are stored in the variable&nbsp;<code>$Trainer</code>, as follows:
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Information
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.name</code>
+									</td>
+									<td>
+										The player's name (e.g. "Dave").
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.trainerTypeName</code>
+									</td>
+									<td>
+										The name of the trainer type that the player has (e.g. "PkMn Trainer").
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.fullname</code>
+									</td>
+									<td>
+										The full name of the trainer (e.g. "PkMn Trainer Dave").
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.trainertype</code>
+									</td>
+									<td>
+										The player's trainer type (typically 000 if male, 001 if female).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.id</code>
+									</td>
+									<td>
+										An 8 digit hexadecimal number (between 00000000 and FFFFFFFF).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.publicID</code>
+									</td>
+									<td>
+										The last 4 hexadecimal digits of the player's ID (a number between 0 and 65535). This is the player's ID number as shown on the&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Trainer_card" title="Trainer card">Trainer card</a>, as well as the displayed OT ID for a <a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon" title="Pokémon">Pokémon</a> originally owned by the player.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.secretID</code>
+									</td>
+									<td>
+										The first 4 hexadecimal digits of the player's ID (a number between 0 and 65535).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.gender</code>
+									</td>
+									<td>
+										The gender of the trainer type that the player has (0=male, 1=female, 2=unknown).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.outfit</code>
+									</td>
+									<td>
+										The outfit the player is wearing (0 by default, or any positive number).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.language</code>
+									</td>
+									<td>
+										A number corresponding to the language used by the player's computer. All Pokémon caught by the player have the same language.
+										<ul><li>0=Unknown, 1=Japanese, 2=English, 3=French, 4=Italian, 5=German, 7=Spanish, 8=Korean</li></ul>
+										<p>
+											If the language is known but none of the above, it is set to English.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.money</code>
+									</td>
+									<td>
+										The amount of money the player currently has.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.badges</code>
+									</td>
+									<td>
+										An array of values, each of which is TRUE if the corresponding badge is owned and FALSE if it is not. The first value,&nbsp;<code>$Trainer.badge[0]</code>, is the first badge, and so on.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.numbadges</code>
+									</td>
+									<td>
+										The total number of badges that the player has. It counts every&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Multiple_regions" title="Multiple regions">region</a>'s badges.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.pokegear</code>
+									</td>
+									<td>
+										Is TRUE if the player has the&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9gear" title="Pokégear">Pokégear</a>&nbsp;(i.e. it shows up in the&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Pause_menu" title="Pause menu">Pause menu</a>).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.pokedex</code>
+									</td>
+									<td>
+										Is TRUE if the player has the&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a>&nbsp;(i.e. it shows up in the&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Pause_menu" title="Pause menu">Pause menu</a>).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.pokedexSeen(dex)</code>
+									</td>
+									<td>
+										The total number of Pokémon species the player has seen in the specified Regional Dex. Leave the parameter blank or&nbsp;<code>-1</code>&nbsp;to count the National Dex (i.e. all Pokémon that exist in the game) instead.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.pokedexOwned(dex)</code>
+									</td>
+									<td>
+										The total number of Pokémon species the player has owned in the specified Regional Dex. Leave the parameter blank or&nbsp;<code>-1</code>&nbsp;to count the National Dex (i.e. all Pokémon that exist in the game) instead.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.numFormsSeen(species)</code>
+									</td>
+									<td>
+										Returns the total number of <a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Forms" title="Forms">alternate forms</a> that the player has seen of the given species. This only counts "true" alternate forms, i.e. gender differences are ignored.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.clearPokedex</code>
+									</td>
+									<td>
+										Completely erases everything in the Pokédex.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$Trainer.party</code>
+									</td>
+									<td>
+										An array that contains up to 6 entries, each entry being a&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon" title="Pokémon">Pokémon</a>&nbsp;(or&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Eggs" title="Eggs">egg</a>). This is the player's&nbsp;<a href="/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a>.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--
+					NewPP limit report
+					Cached time: 20200930130445
+					Cache expiry: 86400
+					Dynamic content: false
+					CPU time usage: 0.013 seconds
+					Real time usage: 0.017 seconds
+					Preprocessor visited node count: 53/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 170/2097152 bytes
+					Template argument size: 85/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    5.393      1 -total
+					 39.55%    2.133      1 Template:For
+					 30.34%    1.636      1 Template:Main
+					 27.24%    1.469      1 Template:Hl
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:207-0!canonical and timestamp 20200930130445 and revision id 914
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20201001120335/https://essentialsdocs.fandom.com/wiki/Player?oldid=914">https://essentialsdocs.fandom.com/wiki/Player?oldid=914</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20201001120335/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

@@ -1,0 +1,321 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20210603015015if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl>
+							<dd><i>For how to handle having multiple region maps, see <a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Multiple_regions" title="Multiple regions">Multiple regions</a>.</i></dd>
+							<dd><i>For linking a game map to a particular spot on the region map, see <a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Maps" title="Maps">Maps</a>.</i></dd>
+						</dl>
+						<figure class="thumb tright show-info-icon" style="width: 240px"> 	<a href="https://web.archive.org/web/20210603015015/https://static.wikia.nocookie.net/essentialsdocs/images/c/c4/Region.png/revision/latest?cb=20190822193258" class="image"><img alt="" src="https://web.archive.org/web/20210603015015im_/https://static.wikia.nocookie.net/essentialsdocs/images/c/c4/Region.png/revision/latest/scale-to-width-down/240?cb=20190822193258" decoding="async" width="240" height="160" class="thumbimage" data-image-name="Region.png" data-image-key="Region.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/File:Region.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 			<p class="caption">The Essen region map.</p> 		 	</figcaption> </figure>
+						<p>
+							The&nbsp;<b>region map</b>&nbsp;(also known as the&nbsp;<b>Town Map</b>) is the picture that shows the entire region. This page describes how to set up a region map.
+						</p><p>
+							It should not be confused with a&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Maps" title="Maps">game map</a>&nbsp;- those are the overworld areas the player walks around in, each of which typically depicts a single town or route, and are often&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Connecting_maps" title="Connecting maps">linked together</a>.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1"><a href="#Viewing_the_region_map"><span class="tocnumber">1</span> <span class="toctext">Viewing the region map</span></a></li>
+								<li class="toclevel-1 tocsection-2">
+									<a href="#The_region_map_picture"><span class="tocnumber">2</span> <span class="toctext">The region map picture</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-3"><a href="#Extra_graphics"><span class="tocnumber">2.1</span> <span class="toctext">Extra graphics</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-4">
+									<a href="#Adding_information_to_the_region_map"><span class="tocnumber">3</span> <span class="toctext">Adding information to the region map</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-5"><a href="#townmapgen.html"><span class="tocnumber">3.1</span> <span class="toctext">townmapgen.html</span></a></li>
+										<li class="toclevel-2 tocsection-6"><a href="#Example"><span class="tocnumber">3.2</span> <span class="toctext">Example</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-7"><a href="#Icons_on_the_map"><span class="tocnumber">4</span> <span class="toctext">Icons on the map</span></a></li>
+							</ul>
+						</div>
+
+						<h2><span class="mw-headline" id="Viewing_the_region_map">Viewing the region map</span></h2>
+						<p>
+							The region map can be viewed with the following method:
+						</p>
+<pre>pbShowMap
+pbShowMap(0)
+</pre>
+						<p>
+							The first example will show the map of the region the player is currently in. To show a particular region's map, put its number as an argument like in the second example (the default number is -1, which means "the current region").
+						</p><p>
+							These examples will both show the public version of that region map (as opposed to the player's version which is accessed via the <a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9gear" title="Pokégear">Pokégear</a> or the Town Map item). These are typically placed on the walls of&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9_Center" title="Poké Center">Poké Centers</a>&nbsp;and some other places.
+						</p><p>
+							A public region map will remain exactly the same regardless of the player's progress through the game. The player's version of the region map can/will record the player's progress through the game.
+						</p>
+						<h2><span class="mw-headline" id="The_region_map_picture">The region map picture</span></h2>
+						<p>
+							Every region map is divided into a grid of squares. By default, each square is of size 16x16 pixels. A small town is typically considered to be 1 square in size.
+						</p><p>
+							A region map should be 480x320 pixels in size, which contains 30x20 squares by default.
+						</p><p>
+							As the region map is grid-like, it is important that the towns and routes line up with this grid, so that the cursor and other icons are positioned properly over the locations. Aside from that, though, you can do whatever you want.
+						</p><p>
+							The region map pictures belong in the folder "Graphics/Pictures".
+						</p>
+						<h3><span class="mw-headline" id="Extra_graphics">Extra graphics</span></h3>
+						<p>
+							You can show additional pictures on (the player's version of) the region map at certain times, such as islands which originally weren't there but were unlocked. The newer GF games do this.
+						</p><p>
+							The <a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a>&nbsp;<b>Settings</b>&nbsp;contains an array which looks like this:
+						</p>
+<pre>REGIONMAPEXTRAS = [
+   [0,32,16,15,"mapHiddenDaroxy",false],
+   [0,33,20,14,"mapHiddenFaraday",false]
+]
+</pre>
+						<p>
+							Each line (itself an array) describes the details of a graphic to paste over a region map. It is made up of the following information:
+						</p>
+						<ol>
+							<li>The number of the region which this graphic can be pasted into.</li>
+							<li>The&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Switch</a>&nbsp;which needs to be ON in order to show this graphic. These only applies to the player's version of the region map.</li>
+							<li>The x-coordinate in squares where the left side of the graphic should be pasted.</li>
+							<li>The y-coordinate in squares where the top of the graphic should be pasted.</li>
+							<li>The name of the graphic. It is placed in the folder "Graphics/Pictures".</li>
+							<li>Whether the graphic should be shown on the public version of the region map.</li>
+						</ol>
+						<p>
+							The additional graphic has different criteria for being shown depending on whether the map being viewed is the public version or the player's version. Guidelines on how to define these criteria are as follows:
+						</p>
+						<ul>
+							<li>Locations which can be unlocked by the player, but are otherwise not known about before then (e.g. islands which are home to a legendary Pokémon) should only be shown on the player's version. The last piece of information will be "false", so the location will never appear on public maps.</li>
+							<li>The icons for towns and cities may appear greyed out at the start of the game, but are coloured in as the player visits them. In this case, a public map should show all the towns/cities coloured in regardless of the player's progress. In this case, the last piece of information for each coloured town icon should be "true".</li>
+						</ul>
+						<p>
+							The same graphic can be used multiple times (e.g. a coloured city's icon).
+						</p>
+						<h2><span class="mw-headline" id="Adding_information_to_the_region_map">Adding information to the region map</span></h2>
+						<p>
+							Each square of the region map can be given a variety of information (see the table below). To do this, you can either edit the&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"townmap.txt" directly, or you can use a special html file included with Essentials called "townmapgen.html" to help you.
+						</p><p>
+							Each region defined in the&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"townmap.txt" has its own section, which begins with the region number in square brackets (the first/default region number is 0). Then the name of the graphic file depicting the region is defined, then the name of the region, then information about each square (or "point"). See below for an example of a defined region.
+						</p><p>
+							The information each square of a region map can have is as follows:
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Information
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<th>
+										Current Position
+									</th>
+									<td>
+										The coordinates of the point on the region map, in squares. Every point must have these coordinates. This is filled in automatically when you click a part of the map in "townmapgen.html".
+										<p>
+											You cannot have more than one line in the same region with the same coordinates.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Name
+									</th>
+									<td>
+										The location's name (e.g. Route 101, Rustboro City, Mt. Moon).
+										<p>
+											Several squares can have the same name (e.g. you can give both squares of a large city that takes up 2 squares the same name).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Point of Interest
+									</th>
+									<td>
+										Optional. The name of a particular building or cave or other feature within that location (e.g. Pokémon Tower, Desert, Safari Zone). You can only have one Point of Interest per square.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Fly Destination
+									</th>
+									<td>
+										Optional. This is a&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">Fly destination</a>, and is three comma-separated numbers: the map ID followed by X and Y coordinates of the location Fly will take you to when you choose this square to Fly to. This location is usually directly in front of a&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9_Center" title="Poké Center">Poké Center</a>&nbsp;building, hence its old name "Healing Spot".
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Switch
+									</th>
+									<td>
+										Optional. If this is a number, then the&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Switch</a>&nbsp;of that number must be ON in order to show the square's information. That is, the map's name and Point of Interest will not be shown unless that Game Switch is ON. This only affects the player's version of the region map; the public version never shows the information for these squares.
+										<p>
+											Multiple squares can depend on the same <a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Switch</a>.
+										</p><p>
+											Typically used for special locations outside of the storyline. Note that only the name and Point of Interest are not displayed; you can still&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">Fly</a>&nbsp;there (if "Fly Destination" is defined). However, since you can only&nbsp;Fly&nbsp;to maps you have already visited, this shouldn't usually matter as you would set this <a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Switch</a> ON at the same time as visiting the map.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							Note that the ONLY way in which the region map corresponds to&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Maps" title="Maps">game maps</a>&nbsp;is when "Fly Destination" is defined.
+						</p><p>
+							Conversely, the ONLY way in which&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Maps" title="Maps">game maps</a> correspond to the region map is when the "MapPosition"&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Metadata" title="Metadata">metadata</a>&nbsp;is defined for a game map. This metadata is used for several things, including showing the player's current location.
+						</p>
+						<h3><span class="mw-headline" id="townmapgen.html">townmapgen.html</span></h3>
+						<figure class="thumb tright show-info-icon" style="width: 256px"> 	<a href="https://web.archive.org/web/20210603015015/https://static.wikia.nocookie.net/essentialsdocs/images/1/1b/Townmapgen.png/revision/latest?cb=20190822193327" class="image"><img alt="" src="https://web.archive.org/web/20210603015015im_/https://static.wikia.nocookie.net/essentialsdocs/images/1/1b/Townmapgen.png/revision/latest/scale-to-width-down/256?cb=20190822193327" decoding="async" width="256" height="343" class="thumbimage" data-image-name="Townmapgen.png" data-image-key="Townmapgen.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/File:Townmapgen.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 			<p class="caption">townmapgen.html</p> 		 	</figcaption> </figure>
+						<p>
+							"townmapgen.html" can be found in the game project's main folder. When it is opened, it loads the file at "Graphics/Pictures/MapRegion0.png" and sets the square size (in pixels) to 16x16. You can then load a&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Multiple_regions" title="Multiple regions">different map&nbsp;image</a> to work on and change the square size if you want.
+						</p><p>
+							From here, select a square by clicking on the map (a small white dot will appear over the chosen square) and fill in the details. Once you have done so, click the "Save" button to convert the information for that square into text in the box at the bottom of the page.
+						</p><p>
+							The information is converted into the correct format required for the&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"townmap.txt". You need to copy this line and paste it into "townmap.txt" (see below for an example of what it should look like). You can define multiple lines and then copy them all across at once.
+						</p><p>
+							You can also paste lines from the <a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "townmap.txt" into the big text box and then click the "Load" button to make all their white dots appear on the map image and be editable
+						</p>
+						<h3><span class="mw-headline" id="Example">Example</span></h3>
+<pre>[0]
+Name=Essen Region
+Filename=mapRegion0.png
+Point=13,12,"Lappet Town","Oak's Lab",2,8,8,
+Point=13,11,"Route 1",,,,,
+Point=13,10,"Cedolan City","Cedolan Dept. Store",7,47,11,
+Point=14,10,"Cedolan City",,7,47,11,
+Point=14,9,"Route 2",,,,,
+Point=14,8,"Route 2",,,,,
+Point=15,8,"Lerucean Town",,23,11,15,
+</pre>
+						<p>
+							This is an example of a region map as defined in the&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"townmap.txt".
+						</p><p>
+							The first point defined has a location name, a Point of Interest, and is a Fly destination - when choosing to&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">Fly</a>&nbsp;to this square, the player will move to map number 2, at coordinates (8,8).
+						</p><p>
+							Note that all the commas must be there in each line, even if there is no information for them to separate.
+						</p>
+						<h2><span class="mw-headline" id="Icons_on_the_map">Icons on the map</span></h2>
+						<p>
+							The player's current position, and the valid Fly destinations, can be marked on the map by icons. These are located in the folder "Graphics/Pictures", and are called:
+						</p>
+						<ul>
+							<li>mapPlayerXXX.png - "XXX" is the internal name or ID number (padded to 3 digits) of a&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Defining_a_trainer" title="Defining a trainer">trainer type</a>, i.e. of the trainer types the player can have.</li>
+							<li>mapFly.png - The two-frame icon that indicates a valid Fly destination.</li>
+						</ul>
+						<p>
+							The player's current position will always be shown on the map, and the Fly destination icons will only be shown when&nbsp;<a href="/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">using the move Fly</a>.
+						</p><p>
+							Note that the Fly destination icon is only a single map square in size. You should not have two squares adjacent to each other which are both Fly destinations, as the Fly icons will overlap. For locations spanning multiple squares that can be flown to (e.g. large cities), it is recommended that only one of those squares be a Fly destination to avoid overlapping icons.
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20210522070028
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.020 seconds
+					Real time usage: 0.023 seconds
+					Preprocessor visited node count: 64/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 181/2097152 bytes
+					Template argument size: 138/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    2.669      1 -total
+					 96.03%    2.563      2 Template:For
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:158-0!canonical and timestamp 20210522070028 and revision id 725
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20210603015015/https://essentialsdocs.fandom.com/wiki/Region_map?oldid=725">https://essentialsdocs.fandom.com/wiki/Region_map?oldid=725</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20210603015015/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

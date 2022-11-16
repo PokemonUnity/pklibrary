@@ -1,0 +1,853 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20210512073932if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<p>
+							This page describes the&nbsp;<b>Debug mode</b>&nbsp;available in Essentials.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1">
+									<a href="#What_is_Debug_mode.3F"><span class="tocnumber">1</span> <span class="toctext">What is Debug mode?</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-2"><a href="#Enabling_Debug_mode"><span class="tocnumber">1.1</span> <span class="toctext">Enabling Debug mode</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-3"><a href="#Gameplay_changes_in_Debug_mode"><span class="tocnumber">2</span> <span class="toctext">Gameplay changes in Debug mode</span></a></li>
+								<li class="toclevel-1 tocsection-4"><a href="#Debug_menu"><span class="tocnumber">3</span> <span class="toctext">Debug menu</span></a></li>
+								<li class="toclevel-1 tocsection-5"><a href="#Pok.C3.A9mon_Debug_menu"><span class="tocnumber">4</span> <span class="toctext">Pokémon Debug menu</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span id="What_is_Debug_mode?"></span><span class="mw-headline" id="What_is_Debug_mode.3F">What is Debug mode?</span></h2>
+						<p>
+							Debugging refers to playing a game with the aim of making sure everything works properly in it, and finding and fixing any problems that may arise before the game is made publicly available.
+						</p><p>
+							To help with this, games will often have a Debug mode, which is a mode only accessible to the game's developers. This mode provides additional commands and options that allow the developers to play through the game more easily and see what is going on behind the scenes. These commands can include the ability to modify Pokémon stats, warp to maps, and change game variables.
+						</p><p>
+							Essentials has a Debug mode.
+						</p>
+						<h3><span class="mw-headline" id="Enabling_Debug_mode">Enabling Debug mode</span></h3>
+						<p>
+							A game run from RPG Maker XP (rather than run by itself) is automatically in Debug mode. The Debug mode can be also toggled on and off by setting the variable&nbsp;<code>$DEBUG</code>&nbsp;to TRUE or FALSE respectively.
+						</p><p>
+							The term "playtest" is used to refer to playing a game in Debug mode.
+						</p>
+						<h2><span class="mw-headline" id="Gameplay_changes_in_Debug_mode">Gameplay changes in Debug mode</span></h2>
+						<p>
+							Debug mode changes a number of features in the game, and enables several more options. These changes are:
+						</p>
+						<ul>
+							<li>A console window is opened alongside the game's window. You can print messages to the console with <code>echoln "message"</code> lines of code in the scripts to help you monitor various aspects of the scripts in use.</li>
+							<li>Upon starting the game, it may <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Compiler" title="Compiler">compile</a> <a class="new" title="Plugins (page does not exist)" data-uncrawlable-url="L3dpa2kvUGx1Z2lucz9hY3Rpb249ZWRpdCZyZWRsaW5rPTE=" rel="nofollow">plugin scripts</a> and data in the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS files</a> if the game detects they have been updated. You can hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> while the game starts to force these to compile.</li>
+							<li>
+								The <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Game_intro" title="Game intro">splash and title screens</a> are skipped, and the Continue/New Game screen is shown straight away.
+								<ul><li>The Continue/New Game screen contains a "Debug" option which opens a limited form of the Debug menu described below.</li></ul>
+							</li>
+							<li>
+								The <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pause_menu" title="Pause menu">Pause menu</a> contains an extra option: "Debug". This opens the main Debug menu. See below for details.
+								<ul><li>This Debug menu can also be accessed by pressing "<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">F9</a>".</li></ul>
+							</li>
+							<li>In the&nbsp;<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Party" title="Party">Party</a>&nbsp;screen and the&nbsp;<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a>&nbsp;screen, the interact menu for Pokémon/eggs contains an extra option: "Debug". This opens a menu with debugging commands that apply to that Pokémon. See below for details.</li>
+							<li>In the&nbsp;<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>, the interact menu for items contains an extra option: "Make Mystery Gift". This lets the player create a Mystery Gift containing that item.</li>
+							<li>The player can throw away important items such as Key Items and HMs.</li>
+							<li>
+								The player can use any <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">field moves</a> at any time, even without the required <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Badge</a>.
+								<ul>
+									<li>If the field move can be used by interacting with something in the overworld (e.g. a small tree for Cut, water for Surf), then the player can use that move even if none of their Pokémon knows it.</li>
+									<li>Field moves that can only be used by selecting it from a Pokémon's menu in the&nbsp;<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Party" title="Party">Party</a>&nbsp;screen (e.g. "Teleport", "Sweet Scent", "Fly") still need to be known by a Pokémon in order to select it in the first place. <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Badge</a> requirements are ignored for these, though.</li>
+								</ul>
+							</li>
+						</ul>
+						<p>
+							There are many more features of Debug mode, all of which require the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl key</a> to be pressed or held (this allows normal functionality to be experienced by not holding it). These features include:
+						</p>
+						<ul>
+							<li>Hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> when closing an error message to copy that message to the computer's clipboard.</li>
+							<li>Hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> while starting the game in Debug mode to force the game to recompile <a class="new" title="Plugins (page does not exist)" data-uncrawlable-url="L3dpa2kvUGx1Z2lucz9hY3Rpb249ZWRpdCZyZWRsaW5rPTE=" rel="nofollow">plugin scripts</a> and <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS files</a>.</li>
+							<li>In the overworld, hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> while moving to move over any tile.</li>
+							<li>In the overworld, hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> to skip trainer battles and prevent wild encounters from occurring.</li>
+							<li>In the overworld, hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> while using the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9_Radar" title="Poké Radar">Poké Radar</a> to be able to use it regardless of its battery level.</li>
+							<li>When using Fly, hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> to allow flying to a location that hasn't been visited yet.</li>
+							<li>In a <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Mini-games" title="Mini-games">mining game</a>, hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> while breaking the wall to prevent the crack from getting longer.</li>
+							<li>In battle, hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> after a move's animation plays to force its additional effect to occur (if it has one).</li>
+							<li>In battle, hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> at the start of throwing a Poké Ball to ensure that it will capture the Pokémon.</li>
+							<li>In battle, hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> when choosing "Run" to ensure fleeing is successful. You can run from trainer battles this way, and will be given the choice of whether to treat it as a win or loss for the player.</li>
+							<li>In battle, hold <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Ctrl</a> while opening the Fight menu to force the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Mega_Evolution" title="Mega Evolution">Mega Evolution</a> option to appear (ignoring whether you have already performed a Mega Evolution this battle, and ignoring whether you have a Mega Ring item).</li>
+						</ul>
+						<h2><span class="mw-headline" id="Debug_menu">Debug menu</span></h2>
+						<figure class="thumb tright show-info-icon" style="width: 258px"> 	<a href="https://web.archive.org/web/20210512073932/https://static.wikia.nocookie.net/essentialsdocs/images/3/36/DebugMenu.png/revision/latest?cb=20200926222008" class="image"><img alt="" src="https://web.archive.org/web/20210512073932im_/https://static.wikia.nocookie.net/essentialsdocs/images/3/36/DebugMenu.png/revision/latest/scale-to-width-down/256?cb=20200926222008" decoding="async" width="256" height="192" class="thumbimage" data-image-name="DebugMenu.png" data-image-key="DebugMenu.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/File:DebugMenu.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 			<p class="caption">The main Debug menu, as found in the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pause_menu" title="Pause menu">Pause menu</a> or by pressing "<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">F9</a>"</p> 		 	</figcaption> </figure>
+						<p>
+							The Debug menu contains features useful for debugging or configuring a Pokémon game. You can access it from the&nbsp;<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Game_intro" title="Game intro">Continue/New Game screen</a>, the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pause_menu" title="Pause menu">Pause menu</a> or by pressing "<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">F9</a>" in the overworld.
+						</p><p>
+							The Debug menu has two levels of options. An option with "<code>...</code>" at the end of its name opens a sub-menu. Debug features are grouped together for easier navigation.
+						</p><p>
+							The Debug menu features are as follows:
+							<br clear="all">
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Menu
+									</th>
+									<th>
+										Debug option
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td rowspan="9">
+										Field options...
+									</td>
+									<td>
+										Warp to Map
+									</td>
+									<td>
+										Transfers the player to a random passable spot on a chosen map.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Refresh Map
+									</td>
+									<td>
+										Makes all events on the current map refresh themselves and recheck their page conditions.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Switches
+									</td>
+									<td>
+										Displays a list of all defined&nbsp;<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Switches</a>&nbsp;and allows them to be modified.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Variables
+									</td>
+									<td>
+										Displays a list of all defined <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Variables</a>&nbsp;and allows them to be modified.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Use PC
+									</td>
+									<td>
+										Boots up a PC, from which the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a> and the player's <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/PC" title="PC">PC</a> can be accessed.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Toggle Storage Wallpapers
+									</td>
+									<td>
+										Lists all special box wallpapers for <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a> and allows them to be locked and unlocked.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Day Care
+									</td>
+									<td>
+										Displays the Pokémon currently deposited in the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Day_Care" title="Day Care">Day Care</a> and allows them to be deposited/withdrawn and to force the generation of an <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Eggs" title="Eggs">egg</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Use Relic Stone
+									</td>
+									<td>
+										Uses the Relic Stone to purify a chosen <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Shadow_Pok%C3%A9mon" title="Shadow Pokémon">Shadow Pokémon</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Use Purify Chamber
+									</td>
+									<td>
+										Opens the Purify Chamber to purify <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Shadow_Pok%C3%A9mon" title="Shadow Pokémon">Shadow Pokémon</a>.
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="9">
+										Battle options...
+									</td>
+									<td>
+										Test Wild Battle
+									</td>
+									<td>
+										Starts a <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a> with a <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Wild_encounters" title="Wild encounters">wild Pokémon</a> of a chosen species and level.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Test Wild Battle Advanced
+									</td>
+									<td>
+										Lets you choose one or more <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Wild_encounters" title="Wild encounters">wild Pokémon</a> to battle against. Each Pokémon can be entirely customised via the Pokémon Debug menu described below. The number of Pokémon the player is allowed to use in the battle can also be set (up to 3).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Test Trainer Battle
+									</td>
+									<td>
+										Starts a single <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a> with a chosen <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Trainers" title="Trainers">Pokémon trainer</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Test Trainer Battle Advanced
+									</td>
+									<td>
+										Lets you choose one or more <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Trainers" title="Trainers">Pokémon trainers</a> to battle against. The number of Pokémon allowed on each side of the field can be independently set (up to 3 per side).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Toggle Battle Logging
+									</td>
+									<td>
+										Sets whether the game will log various useful messages in battle. This log is recorded in "debuglog.txt" in the "Data" folder.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Reset Map's Trainers
+									</td>
+									<td>
+										Resets the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Self Switches</a> of all trainer events on the current map.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Ready All Phone Rematches
+									</td>
+									<td>
+										All trainers registered in the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Phone" title="Phone">phone</a> are set to be awaiting their next rematch.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Roaming Pokémon
+									</td>
+									<td>
+										Displays information on all defined <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Roaming_Pok%C3%A9mon" title="Roaming Pokémon">roaming Pokémon</a>, including whether they are roaming and where, and allows roaming status to be changed. Also allows the locations of each roaming Pokémon to be changed.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set Encounters Version
+									</td>
+									<td>
+										Changes the value of <code>$PokemonGlobal.encounter_version</code>, which determines the <a class="new" title="Wild encounter (page does not exist)" data-uncrawlable-url="L3dpa2kvV2lsZF9lbmNvdW50ZXI/YWN0aW9uPWVkaXQmcmVkbGluaz0x" rel="nofollow">encounter tables</a> used for wild encounters.
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="3">
+										Item options...
+									</td>
+									<td>
+										Add Item
+									</td>
+									<td>
+										Adds a chosen number of a chosen item to the player's <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Fill Bag
+									</td>
+									<td>
+										Adds a chosen number of every item to the player's <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Empty Bag
+									</td>
+									<td>
+										Removes all items from the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>.
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="7">
+										Pokémon options...
+									</td>
+									<td>
+										Add Pokémon
+									</td>
+									<td>
+										Gives the player a <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon" title="Pokémon">Pokémon</a> of a chosen species and level. It will be sent to the PC if the player's party is full. The player is the original owner.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Give Demo Party
+									</td>
+									<td>
+										Fills the player's <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a> with a set of predefined Pokémon.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Heal Party
+									</td>
+									<td>
+										Fully heals all Pokémon in the player's <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Quick Hatch
+									</td>
+									<td>
+										Makes all <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Eggs" title="Eggs">eggs</a> in the player's <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a> require only one more step to hatch.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Fill Storage Boxes
+									</td>
+									<td>
+										Fills all <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a> boxes with one Pokémon of each species, all at level 50. All forms of all these species will also be marked as seen.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Clear Storage Boxes
+									</td>
+									<td>
+										Removes all Pokémon from the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Access Pokémon Storage
+									</td>
+									<td>
+										Opens the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a> screen.
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="11">
+										Player options...
+									</td>
+									<td>
+										Set Badges
+									</td>
+									<td>
+										Lists the first 24 <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Gym Badges</a> and allows the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Player" title="Player">player</a>'s ownership of each one to be toggled. Note that the Badges are only called "Badge 1", etc. and that you don't need to have all of them in your game.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set Money
+									</td>
+									<td>
+										Sets the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Player" title="Player">player</a>'s money to a chosen value.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set Coins
+									</td>
+									<td>
+										Sets the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Player" title="Player">player</a>'s Coins to a chosen value.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set Battle Points
+									</td>
+									<td>
+										Sets the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Player" title="Player">player</a>'s Battle Points to a chosen value.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Toggle Running Shoes
+									</td>
+									<td>
+										Sets whether the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Player" title="Player">player</a> owns a pair of running shoes.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Toggle Pokégear
+									</td>
+									<td>
+										Sets whether the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Player" title="Player">player</a> owns a <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9gear" title="Pokégear">Pokégear</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Toggle Pokédex and Dexes
+									</td>
+									<td>
+										Sets whether the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Player" title="Player">player</a> owns a <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a> and which <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Multiple_regions" title="Multiple regions">Regional Dexes</a>/National Dex have been unlocked.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set Player Character
+									</td>
+									<td>
+										Sets the player's character (i.e. a choice of the players listed in the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Metadata" title="Metadata">global metadata</a>).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set Player Outfit
+									</td>
+									<td>
+										Sets the player's outfit number.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set Player Name
+									</td>
+									<td>
+										Renames the player.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Randomize Player ID
+									</td>
+									<td>
+										Randomizes the player's ID.
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="15">
+										Information options...
+									</td>
+									<td>
+										Edit Metadata
+									</td>
+									<td>
+										Allows each map's <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Metadata" title="Metadata">metadata</a> to be defined, as well as the global metadata.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Edit Map Connections
+									</td>
+									<td>
+										Lets the user visually <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Connecting_maps" title="Connecting maps">connect maps</a> together.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Edit Terrain Tags
+									</td>
+									<td>
+										Allows the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Tilesets" title="Tilesets">terrain tags</a> of each tile in each tileset to be defined. This feature is necessary because of the terrain tag limit set by RPG Maker XP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Edit Wild Encounters
+									</td>
+									<td>
+										Allows the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Wild_encounters" title="Wild encounters">Pokémon encounters</a> for each map to be modified.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Edit Trainer Types
+									</td>
+									<td>
+										Allows the details of each <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Defining_a_trainer" title="Defining a trainer">trainer type</a> to be edited.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Edit Individual Trainers
+									</td>
+									<td>
+										Allows the details of individual <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Defining_a_trainer" title="Defining a trainer">trainers</a> and their Pokémon to be edited.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Edit Items
+									</td>
+									<td>
+										Allows the data of <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Defining_an_item" title="Defining an item">items</a> to be edited.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Edit Pokémon
+									</td>
+									<td>
+										Allows the data of <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Defining_a_species" title="Defining a species">Pokémon species</a> to be edited.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Edit Regional Dexes
+									</td>
+									<td>
+										A simpler way of creating and modifying the defined <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Multiple_regions" title="Multiple regions">Regional Dexes</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Edit Pokémon Sprite Positions
+									</td>
+									<td>
+										A visual way to position Pokémon sprites in <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Auto-Position All Sprites
+									</td>
+									<td>
+										Automatically changes the positioning coordinates of all Pokémon sprites at once, to position them in roughly the right place. Can be used as a starting point.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Battle Animation Editor
+									</td>
+									<td>
+										Opens the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Attack_animations" title="Attack animations">Animation Editor</a> to create and edit move animations and some other animations used in <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Battle Animation Organiser
+									</td>
+									<td>
+										Allows the rearranging and deleting of battle animations in an easier way than the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Attack_animations" title="Attack animations">Animation Editor</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Import All Battle Animations
+									</td>
+									<td>
+										Reads all animation data in the "Animations" folder and adds it to the game.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Export All Battle Animations
+									</td>
+									<td>
+										Creates data files for each separate animation and puts them in the "Animations" folder. Note that the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Attack_animations" title="Attack animations">Animation Editor</a> allows individual animations to be exported; this feature is a bulk exporter.
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="6">
+										Other options...
+									</td>
+									<td>
+										Manage Mystery Gifts
+									</td>
+									<td>
+										Edits the contents of the master <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Mystery_Gift" title="Mystery Gift">Mystery Gift</a> file, and creates Gift files for uploading.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Extract Text
+									</td>
+									<td>
+										Extracts all text in the game for&nbsp;<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Translating_the_game" title="Translating the game">localisation</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Compile Text
+									</td>
+									<td>
+										Compiles a text file into a&nbsp;<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Translating_the_game" title="Translating the game">localised format</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Compile Data
+									</td>
+									<td>
+										Compiles all data from the&nbsp;<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS files</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Create PBS File(s)
+									</td>
+									<td>
+										Generates any chosen PBS file (or all of them) from the data currently loaded in the game.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Fix Invalid Tiles
+									</td>
+									<td>
+										Checks through all maps to ensure they do not use any tiles that don't exist in the tilesets they use (tiles beyond the bottom of the tileset, or autotile slots without a graphic). Properly clears any invalid tile found.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							When accessed from the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Game_intro" title="Game intro">Continue/New Game screen</a>, only the "Information options..." and "Other options..." sub-menus are accessible. This is because the other sub-menus relate to in-game information which doesn't exist yet (because a save file has not been started or loaded).
+						</p>
+						<h2><span id="Pokémon_Debug_menu"></span><span class="mw-headline" id="Pok.C3.A9mon_Debug_menu">Pokémon Debug menu</span></h2>
+						<figure class="thumb tright show-info-icon" style="width: 258px"> 	<a href="https://web.archive.org/web/20210512073932/https://static.wikia.nocookie.net/essentialsdocs/images/0/07/DebugMenuPokemon.png/revision/latest?cb=20210502204826" class="image"><img alt="" src="https://web.archive.org/web/20210512073932im_/https://static.wikia.nocookie.net/essentialsdocs/images/0/07/DebugMenuPokemon.png/revision/latest/scale-to-width-down/256?cb=20210502204826" decoding="async" width="256" height="192" class="thumbimage" data-image-name="DebugMenuPokemon.png" data-image-key="DebugMenuPokemon.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/File:DebugMenuPokemon.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 			<p class="caption">The Pokémon-specific Debug menu.</p> 		 	</figcaption> </figure>
+						<p>
+							The <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon" title="Pokémon">Pokémon</a> Debug menu is accessible from the&nbsp;<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Party" title="Party">Party</a>&nbsp;screen, the&nbsp;<a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a>&nbsp;screen and the Debug menu option "Test Wild Battle Advanced" (see above). It contains options that edit aspects of the chosen Pokémon.
+						</p><p>
+							Most of the options are self-explanatory, and often display information related to the selected option (e.g. the Pokémon's Hidden Power when "Set IVs" is selected).
+						</p><p>
+							An option with "<code>...</code>" at the end of its name opens a sub-menu with more options in it.
+						</p><p>
+							The options in the Pokémon Debug menu are as follows
+							<br clear="all">
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Debug Option
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										HP/Status...
+									</td>
+									<td>
+										Allows you to set the Pokémon's HP and status condition. You can also make it fainted or heal it completely. You can also edit its Pokérus information.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Level/stats...
+									</td>
+									<td>
+										Lets you sets the Pokémon's level and/or Exp amount (the latter can only set values that lie within the current level). You can also edit the Pokémon's EVs, IVs, randomise its personal ID, set its happiness value and change its contest stats.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Moves...
+									</td>
+									<td>
+										Allows you to change the Pokémon's moveset. You can teach any Pokémon (except <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Shadow_Pok%C3%A9mon" title="Shadow Pokémon">Shadow Pokémon</a>) any move, even ones the Pokémon couldn't naturally learn. You can also make it forget a move (even the last known move), and reset the Pokémon's moveset to what it would have by default for its species/form/level. Each move's PP amount and PP Up value can be edited. Finally, the Pokémon's current moveset can be recorded as its initial moveset (for <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Learning_moves" title="Learning moves">Move Relearner</a> purposes).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set item
+									</td>
+									<td>
+										Allows you to change the Pokémon's held item. You can choose any item to make it hold (even Key Items and HMs which normally cannot be held), and you can delete its held item.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set ability
+									</td>
+									<td>
+										Allows you to change the Pokémon's ability. You can either choose from the abilities available to that Pokémon (including Hidden Abilities), or you can choose any ability at all. If the latter, the chosen ability is lost if the Pokémon changes species or form. You can also reset the Pokémon's ability and make it recalculate the one it would naturally have.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set nature
+									</td>
+									<td>
+										Allows you to change the Pokémon's nature. You can also reset the Pokémon's nature and make it recalculate the one it would naturally have.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set gender
+									</td>
+									<td>
+										Allows you to change the Pokémon's gender. You cannot make a Pokémon a gender it couldn't naturally be (e.g. male Chansey). You can also reset the Pokémon's gender and make it recalculate the one it would naturally have.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Species/form...
+									</td>
+									<td>
+										Allows you to change the Pokémon's species, e.g. Pikachu, Charmander, Diglett. Also allows you to change the Pokémon's form; note that you can only choose from the forms defined in the <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS files</a> "pokemon.txt" and "pokemonforms.txt". If the species has a "getForm" proc (which determines the Pokémon's form automatically), you can also apply an override to force the chosen form despite the "getForm" proc. You can also remove this override.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Cosmetic info...
+									</td>
+									<td>
+										Lets you set the Pokémon's shininess (and reset it to what it was naturally), the type of Poké Ball it is held in, the ribbons it has, its nickname, and information about the original trainer.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set egg
+									</td>
+									<td>
+										Allows you to convert the Pokémon between an <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Eggs" title="Eggs">egg</a> and a <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon" title="Pokémon">Pokémon</a>. A warning message will appear if the Pokémon couldn't naturally be an egg, but this doesn't prevent it from becoming one. You can also change an egg's remaining steps to 1.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Shadow Pkmn...
+									</td>
+									<td>
+										Allows you to turn the Pokémon into a <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Shadow_Pok%C3%A9mon" title="Shadow Pokémon">Shadow Pokémon</a>. You can also change its heart gauge value if it is one. You still have to use a Purify Chamber or Purification Stone to completely remove the Shadow status.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Mystery Gift
+									</td>
+									<td>
+										Allows you to create a <a href="/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Mystery_Gift" title="Mystery Gift">Mystery Gift</a> containing the Pokémon. You can set the name and ID of the gift, and set the Pokémon's obtain text. The gift will be added to the "MysteryGiftMaster.txt" file.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Duplicate
+									</td>
+									<td>
+										Duplicates the Pokémon. If the party is full, the duplicate will be stored in the PC.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Delete
+									</td>
+									<td>
+										Deletes the Pokémon. This is irreversible.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--
+					NewPP limit report
+					Cached time: 20210502204933
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.033 seconds
+					Real time usage: 0.035 seconds
+					Preprocessor visited node count: 113/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 0/2097152 bytes
+					Template argument size: 0/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    0.000      1 -total
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:263-0!canonical and timestamp 20210502204933 and revision id 1019
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20210512073932/https://essentialsdocs.fandom.com/wiki/Debug_mode?oldid=1019">https://essentialsdocs.fandom.com/wiki/Debug_mode?oldid=1019</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20210512073932/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

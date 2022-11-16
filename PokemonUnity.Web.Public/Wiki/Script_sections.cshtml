@@ -1,0 +1,222 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<div class="mw-parser-output">
+	<figure class="thumb tright " style="width: 256px"> 	<a href="https://static.wikia.nocookie.net/essentialsdocs/images/7/78/ScriptEditor.png/revision/latest?cb=20220614193340" class="image"><img alt="" src="https://static.wikia.nocookie.net/essentialsdocs/images/7/78/ScriptEditor.png/revision/latest/scale-to-width-down/256?cb=20220614193340" decoding="async" width="256" height="220" class="thumbimage" data-image-name="ScriptEditor.png" data-image-key="ScriptEditor.png"></a> 	 	<figcaption class="thumbcaption"> 		 		 		 			<p class="caption">The script editor.</p> 		 	</figcaption> </figure>
+	<p>
+		This page gives an overview of the <b>scripts</b> and the <b>script sections</b> they are stored in.
+	</p>
+	<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading">
+		<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr" style="min-width: 258px;">
+			<h2 id="mw-toc-heading">
+				<svg class="wds-icon wds-icon-tiny">
+					<use href="#wds-icons-bullet-list-tiny"></use>
+				</svg>Contents
+			</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span>
+		</div>
+		<ul>
+			<li class="toclevel-1 tocsection-1">
+				<a href="#Scripts"><span class="tocnumber">1</span> <span class="toctext">Scripts</span></a>
+				<ul>
+					<li class="toclevel-2 tocsection-2"><a href="#GitHub_scripts"><span class="tocnumber">1.1</span> <span class="toctext">GitHub scripts</span></a></li>
+				</ul>
+			</li>
+			<li class="toclevel-1 tocsection-3">
+				<a href="#List_of_script_groups"><span class="tocnumber">2</span> <span class="toctext">List of script groups</span></a>
+				<ul>
+					<li class="toclevel-2 tocsection-4"><a href="#Settings"><span class="tocnumber">2.1</span> <span class="toctext">Settings</span></a></li>
+					<li class="toclevel-2 tocsection-5"><a href="#Technical"><span class="tocnumber">2.2</span> <span class="toctext">Technical</span></a></li>
+					<li class="toclevel-2 tocsection-6"><a href="#Save_data"><span class="tocnumber">2.3</span> <span class="toctext">Save data</span></a></li>
+					<li class="toclevel-2 tocsection-7"><a href="#Game_processing"><span class="tocnumber">2.4</span> <span class="toctext">Game processing</span></a></li>
+					<li class="toclevel-2 tocsection-8"><a href="#Game_classes"><span class="tocnumber">2.5</span> <span class="toctext">Game classes</span></a></li>
+					<li class="toclevel-2 tocsection-9"><a href="#Sprites"><span class="tocnumber">2.6</span> <span class="toctext">Sprites</span></a></li>
+					<li class="toclevel-2 tocsection-10"><a href="#Map_renderer"><span class="tocnumber">2.7</span> <span class="toctext">Map renderer</span></a></li>
+					<li class="toclevel-2 tocsection-11"><a href="#Objects_and_windows"><span class="tocnumber">2.8</span> <span class="toctext">Objects and windows</span></a></li>
+					<li class="toclevel-2 tocsection-12"><a href="#Audio"><span class="tocnumber">2.9</span> <span class="toctext">Audio</span></a></li>
+					<li class="toclevel-2 tocsection-13"><a href="#Scenes"><span class="tocnumber">2.10</span> <span class="toctext">Scenes</span></a></li>
+					<li class="toclevel-2 tocsection-14"><a href="#Data"><span class="tocnumber">2.11</span> <span class="toctext">Data</span></a></li>
+					<li class="toclevel-2 tocsection-15"><a href="#Battle"><span class="tocnumber">2.12</span> <span class="toctext">Battle</span></a></li>
+					<li class="toclevel-2 tocsection-16"><a href="#Overworld"><span class="tocnumber">2.13</span> <span class="toctext">Overworld</span></a></li>
+					<li class="toclevel-2 tocsection-17"><a href="#Items"><span class="tocnumber">2.14</span> <span class="toctext">Items</span></a></li>
+					<li class="toclevel-2 tocsection-18"><a href="#Pokemon"><span class="tocnumber">2.15</span> <span class="toctext">Pokemon</span></a></li>
+					<li class="toclevel-2 tocsection-19"><a href="#Trainers_and_player"><span class="tocnumber">2.16</span> <span class="toctext">Trainers and player</span></a></li>
+					<li class="toclevel-2 tocsection-20"><a href="#UI"><span class="tocnumber">2.17</span> <span class="toctext">UI</span></a></li>
+					<li class="toclevel-2 tocsection-21"><a href="#Minigames"><span class="tocnumber">2.18</span> <span class="toctext">Minigames</span></a></li>
+					<li class="toclevel-2 tocsection-22"><a href="#Alternate_battle_modes"><span class="tocnumber">2.19</span> <span class="toctext">Alternate battle modes</span></a></li>
+					<li class="toclevel-2 tocsection-23"><a href="#Utilities"><span class="tocnumber">2.20</span> <span class="toctext">Utilities</span></a></li>
+					<li class="toclevel-2 tocsection-24"><a href="#Debug"><span class="tocnumber">2.21</span> <span class="toctext">Debug</span></a></li>
+					<li class="toclevel-2 tocsection-25"><a href="#Compiler"><span class="tocnumber">2.22</span> <span class="toctext">Compiler</span></a></li>
+					<li class="toclevel-2 tocsection-26"><a href="#Main"><span class="tocnumber">2.23</span> <span class="toctext">Main</span></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<h2><span class="mw-headline" id="Scripts">Scripts</span></h2>
+	<p>
+		"Scripts" is the word for the <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.ruby-lang.org/en/">Ruby</a> code that makes Pokémon Essentials work, including making the player move around, displaying menus and messages, defining items and Pokémon, and performing battles.
+	</p><p>
+		You can view the scripts in RPG Maker XP by clicking the "Script Editor" button, or going to "Tools &gt; Script Editor", or by pressing F11. The list on the left of the Script Editor lists all the script sections, and the main display shows the code in the selected script section. Each script section generally contains code about one specific feature or function.
+	</p><p>
+		Since there are hundreds of script sections, they have been put into groups and visually separated from each other by empty script sections with names of "<code>==================</code>" (or blank names). Each script group is named and the name is another empty script section with a name in double square brackets, e.g. "<code>[[ Game processing ]]</code>".
+	</p>
+	<h3><span class="mw-headline" id="GitHub_scripts">GitHub scripts</span></h3>
+	<p>
+		If using the version of Essentials on GitHub, you will notice that the scripts do not appear in RPG Maker XP's Script Editor. Instead they are all in separate ".rb" files in the "Data/Scripts" folder, which contains subfolders corresponding to the group names. This makes them easier to work with for some people, as they can use their own choice of <a href="http://en.wikipedia.org/wiki/Integrated_development_environment" class="extiw" title="wikipedia:Integrated development environment">IDE</a> to edit the scripts, and it also makes it easier to track changes to the scripts with <a href="http://en.wikipedia.org/wiki/version_control" class="extiw" title="wikipedia:version control">version control</a> software such as <a href="http://en.wikipedia.org/wiki/Git" class="extiw" title="wikipedia:Git">Git</a>.
+	</p><p>
+		The GitHub version includes scripts called "scripts_extract.rb" and "scripts_combine.rb", which will move the scripts between the single Scripts.rxdata data file (which the Script Editor displays the contents of) and individual files. For these, the formatting of the names of group separators and group names is important as they tell these scripts how and when to make folders when extracting them.
+	</p>
+	<div id="ntv_ad" class="gpt-ad ntv-ad ad-slot"></div><h2><span class="mw-headline" id="List_of_script_groups">List of script groups</span></h2>
+	<h3><span class="mw-headline" id="Settings">Settings</span></h3>
+	<dl><dd><i>Main article: <span class="new" title="Settings (page does not exist)" data-uncrawlable-url="L3dpa2kvU2V0dGluZ3M/YWN0aW9uPWVkaXQmcmVkbGluaz0x">Settings</span></i></dd></dl>
+	<p>
+		This first script group does not actually have a name. The group contains script sections that contain the <span class="new" title="Settings (page does not exist)" data-uncrawlable-url="L3dpa2kvU2V0dGluZ3M/YWN0aW9uPWVkaXQmcmVkbGluaz0x">settings</span>, a collection of constants and methods used throughout the scripts to make them work in particular ways. Settings are the more common values and features that the developer may want to change, so they are all collected here for convenience. Each setting has an accompanying description of what it does.
+	</p><p>
+		Many settings depend on the value of the setting <code>MECHANICS_GENERATION</code>, but you are free to change them however you want.
+	</p><p>
+		It is worth reading through the settings script sections to see what they contain, even if you don't want to touch any of the other scripts.
+	</p>
+	<h3><span class="mw-headline" id="Technical">Technical</span></h3>
+	<p>
+		These script sections are best left alone. They contain code that helps the game to function properly, such as helpful methods, <a href="/wiki/Translating_the_game" title="Translating the game">text translation</a>, <span class="new" title="Plugins (page does not exist)" data-uncrawlable-url="L3dpa2kvUGx1Z2lucz9hY3Rpb249ZWRpdCZyZWRsaW5rPTE=">the plugin manager</span>, <a href="/wiki/Debug_mode" title="Debug mode">debug tools</a> and code relating to the use of files.
+	</p><p>
+		This script group is split into three sub-groups for extra organisation.
+	</p>
+	<h3><span class="mw-headline" id="Save_data">Save data</span></h3>
+	<p>
+		These script sections define what gets put into a <a href="/wiki/Saving_and_loading" title="Saving and loading">save file</a> and how it works. It also contains code that allows save data to be modified, such as to support save files created with an older version of Essentials/the game which may have saved their information in a different way.
+	</p>
+	<h3><span class="mw-headline" id="Game_processing">Game processing</span></h3>
+	<p>
+		These script sections represent starting a new game (or loading a save file), the very basic game loop (i.e. the code that makes the game run at all), and the mechanics of how <a href="/wiki/Events" title="Events">event commands</a> work.
+	</p><p>
+		It also contains event handlers, where in this case "event" means "a thing that happens in the game" rather than "event objects you place in maps". Handlers let you store code to be run later on, and are used for a variety of things, such as numerous triggers (such as taking a step or when setting up an NPC trainer to battle against), the contents of some menus, ability and item effects, and code relating to Pokémon forms.
+	</p>
+	<h3><span class="mw-headline" id="Game_classes">Game classes</span></h3>
+	<p>
+		These script sections contain code for various overworld elements, including <a href="/wiki/Maps" title="Maps">maps</a> themselves, <a href="/wiki/Events" title="Events">events</a>, the <a href="/wiki/Player" title="Player">player</a> and <a href="/wiki/Partner_trainer" title="Partner trainer">followers</a>. There are also script sections for pictures displayed on-screen by an event command, the game screen itself, <span class="new" title="Statistics (page does not exist)" data-uncrawlable-url="L3dpa2kvU3RhdGlzdGljcz9hY3Rpb249ZWRpdCZyZWRsaW5rPTE=">game statistics</span>, common events, <a href="/wiki/Events" title="Events">Game Switches and Variables</a>, and a set of system variables that help the game to run.
+	</p>
+	<h3><span class="mw-headline" id="Sprites">Sprites</span></h3>
+	<p>
+		These script sections deal with the displaying on-screen of the things in the script group above ("Game classes"), as well as code for other visual features such as a <span class="new" title="Special effects (page does not exist)" data-uncrawlable-url="L3dpa2kvU3BlY2lhbF9lZmZlY3RzP2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==">particle engine</span> and code that helps to display graphics elsewhere (such as in battle).
+	</p>
+	<h3><span class="mw-headline" id="Map_renderer">Map renderer</span></h3>
+	<p>
+		These script sections display <a href="/wiki/Maps" title="Maps">maps</a> and work with <a href="/wiki/Tilesets" title="Tilesets">tilesets and autotiles</a>.
+	</p>
+	<h3><span class="mw-headline" id="Objects_and_windows">Objects and windows</span></h3>
+	<p>
+		<span style="background:red">TODO</span>
+	</p>
+	<h3><span class="mw-headline" id="Audio">Audio</span></h3>
+	<p>
+		<span style="background:red">TODO</span>
+	</p>
+	<h3><span class="mw-headline" id="Scenes">Scenes</span></h3>
+	<p>
+		The script sections in here don't really belong elsewhere, and are grouped together for the sake of it. They are visual in nature, hence the name of this script group.
+	</p><p>
+		One of the script sections contains code for all the transition animations. The majority of these animations are used when starting a <a href="/wiki/Battle" class="mw-redirect" title="Battle">battle</a> (<a href="/wiki/Wild_encounters" title="Wild encounters">wild</a> and <a href="/wiki/Trainer" class="mw-redirect" title="Trainer">trainer</a> ones) to fade the screen to black.
+	</p><p>
+		Another script section contains code to display a basic UI screen. This is only used by two pieces of UI (the <a href="/wiki/Game_intro" title="Game intro">splash/title screens</a> and the <a href="/wiki/Controls" title="Controls">controls help screen</a>).
+	</p>
+	<h3><span class="mw-headline" id="Data">Data</span></h3>
+	<p>
+		There are two main sub-groups of scripts in here: one for hardcoded game data, and one for game data <a href="/wiki/Compiler" title="Compiler">compiled</a> from <a href="/wiki/PBS_files" title="PBS files">PBS files</a>.
+	</p>
+	<h3><span class="mw-headline" id="Battle">Battle</span></h3>
+	<dl><dd><i>Main article: <a href="/wiki/Battles" title="Battles">Battles</a></i></dd></dl>
+	<p>
+		There are a lot of script sections in here, arranged in a number of sub-groups. Between them, they make <a href="/wiki/Battles" title="Battles">battles</a> work.
+	</p><p>
+		A battler is a Pokémon that is in battle. A move here is specifically one known by a battler. Pokémon and moves have battle-specific versions here because a lot of things can happen to them in a battle but which won't affect them outside of battle. They can also do more things in battle than they can outside of battle (moves have <a href="/wiki/Move_effects" title="Move effects">effects</a> when used to attack, for example), so it is convenient to have in-battle versions of these things.
+	</p><p>
+		The "Scene" sub-group is for the visual aspects of a battle.
+	</p><p>
+		The <a href="/wiki/Battle_AI" title="Battle AI">battle AI</a> also has script sections in here.
+	</p>
+	<h3><span class="mw-headline" id="Overworld">Overworld</span></h3>
+	<p>
+		<span style="background:red">TODO</span>
+	</p>
+	<h3><span class="mw-headline" id="Items">Items</span></h3>
+	<p>
+		These script sections contain various pieces of code that help items to do things, as well as the <a href="/wiki/Item_effects" title="Item effects">effects</a> they have when used in or out of battle. Some items, including the <a href="/wiki/Pok%C3%A9_Radar" title="Poké Radar">Poké Radar</a> and <a href="/wiki/Phone" title="Phone">phone</a> (which isn't technically an item but is close enough), have their own script sections to describe their effects.
+	</p><p>
+		There is also a script section for item sprites (sometimes called item icons), and one that describe how the <a href="/wiki/Bag" title="Bag">Bag</a> and <a href="/wiki/PC" title="PC">item storage</a> work.
+	</p>
+	<h3><span class="mw-headline" id="Pokemon">Pokemon</span></h3>
+	<p>
+		These script sections define individual <a href="/wiki/Pok%C3%A9mon" title="Pokémon">Pokémon</a>, what information they contain and various behaviours.
+	</p><p>
+		There is a sub-group of scripts for things relating to Pokémon but which are not directly part of Pokémon objects. These include <a href="/wiki/Forms" title="Forms">code for alternate forms</a>, <a href="/wiki/Shadow_Pok%C3%A9mon" title="Shadow Pokémon">Shadow Pokémon</a> mechanics, Pokémon sprites and the <a href="/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a>.
+	</p>
+	<h3><span class="mw-headline" id="Trainers_and_player">Trainers and player</span></h3>
+	<p>
+		These script sections define individual <a href="/wiki/Trainers" title="Trainers">trainers</a>, as well as the <a href="/wiki/Player" title="Player">player</a> (who is also a trainer, just one with a <a href="/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a>/money/running shoes/etc.). There is also a script section for creating an animated overworld sprite of a trainer, which is used in some places (trainer graphics used elsewhere are coded elsewhere).
+	</p>
+	<h3><span class="mw-headline" id="UI">UI</span></h3>
+	<p>
+		<span style="background:red">TODO</span>
+	</p>
+	<h3><span class="mw-headline" id="Minigames">Minigames</span></h3>
+	<dl><dd><i>Main article: <a href="/wiki/Mini-games" title="Mini-games">Mini-games</a></i></dd></dl>
+	<p>
+		The various <a href="/wiki/Mini-games" title="Mini-games">mini-games</a> in Essentials are coded here.
+	</p>
+	<h3><span class="mw-headline" id="Alternate_battle_modes">Alternate battle modes</span></h3>
+	<dl>
+		<dd><i>Main article: <a href="/wiki/Safari_Zone" title="Safari Zone">Safari Zone</a></i></dd>
+		<dd><i>Main article: <a href="/wiki/Bug_Catching_Contest" title="Bug Catching Contest">Bug Catching Contest</a></i></dd>
+		<dd><i>Main article: <a href="/wiki/Battle_Frontier" title="Battle Frontier">Battle Frontier</a></i></dd>
+	</dl>
+	<p>
+		These script sections contain code that make the <a href="/wiki/Safari_Zone" title="Safari Zone">Safari Zone</a> and <a href="/wiki/Bug_Catching_Contest" title="Bug Catching Contest">Bug Catching Contest</a> work (battle-related code for these is in the "Battles" script group).
+	</p><p>
+		There are also many script sections for the <a href="/wiki/Battle_Frontier" title="Battle Frontier">Battle Frontier</a> facilities, including their rulesets and generating random trainers/Pokémon for them.
+	</p>
+	<h3><span class="mw-headline" id="Utilities">Utilities</span></h3>
+	<p>
+		These script sections contain various useful scripts that don't fit elsewhere. One script section contains various scripts for giving <a href="/wiki/Pok%C3%A9mon" title="Pokémon">Pokémon</a> to the <a href="/wiki/Player" title="Player">player</a> and analysing Pokémon/the player's <a href="/wiki/Party" title="Party">party</a>. Another script section contains scripts that load [[Backgrounds and music|music] for <a href="/wiki/Battles" title="Battles">battles</a>.
+	</p>
+	<h3><span class="mw-headline" id="Debug">Debug</span></h3>
+	<dl><dd><i>Main article: <a href="/wiki/Debug_mode" title="Debug mode">Debug mode</a></i></dd></dl>
+	<p>
+		These script sections contains the three main Debug menus (overworld, in battle, and per Pokemon) and their functionalities. A large number of these are information editors (changing data stored in <a href="/wiki/PBS_files" title="PBS files">PBS files</a>) and the <a href="/wiki/Attack_animations" title="Attack animations">Animation Editor</a>.
+	</p>
+	<h3><span class="mw-headline" id="Compiler">Compiler</span></h3>
+	<dl><dd><i>Main article: <a href="/wiki/Compiler" title="Compiler">Compiler</a></i></dd></dl>
+	<p>
+		These scripts are responsible for compiling information from <a href="/wiki/PBS_files" title="PBS files">PBS files</a> into forms usable by the game, and for modifying map/event data. There are also methods for generating <a href="/wiki/PBS_files" title="PBS files">PBS files</a> from compiled information.
+	</p>
+	<h3><span class="mw-headline" id="Main">Main</span></h3>
+	<p>
+		This is the last script group, and contains just one script section which is responsible for starting the game when running it. This script section must always be last in the list, as script sections that are below this one will not work.
+	</p>
+	<!--
+	NewPP limit report
+	Cached time: 20221102232343
+	Cache expiry: 1209600
+	Reduced expiry: false
+	Complications: []
+	CPU time usage: 0.038 seconds
+	Real time usage: 0.045 seconds
+	Preprocessor visited node count: 231/1000000
+	Post‐expand include size: 530/2097152 bytes
+	Template argument size: 206/2097152 bytes
+	Highest expansion depth: 3/40
+	Expensive parser function count: 0/100
+	Unstrip recursion depth: 0/20
+	Unstrip post‐expand size: 21/5000000 bytes
+	-->
+	<!--
+	Transclusion expansion time report (%,ms,calls,template)
+	100.00%    5.601      1 -total
+	 43.52%    2.438      8 Template:Main
+	 42.12%    2.359      4 Template:Hl
+	-->
+	<!-- Saved in parser cache with key prod_essentialsdocs:pcache:idhash:260-0!canonical!FandomDesktop!LegacyGalleries and timestamp 20221102232343 and revision id 1376. Serialized with JSON.
+	 -->
+</div>

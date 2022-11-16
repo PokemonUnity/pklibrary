@@ -1,0 +1,233 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<div id="content" class="page-content">
+	<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://web.archive.org/web/20211024132806if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<div class="mw-parser-output">
+			<p>
+				When confronted with designing a pokemon game using Essentials, the developer is challenged to develop the front end of the software from scratch, as opposed from piggybacking off an already-established ROM. Pokemon Essentials gives the developer the engine to base their game off, however they are inclined to make everything else: the trainers, the maps, events (and plot), any custom moves, abilities, animations, and pokemon that have been introduced in generation 6 or later or any other fake pokemon.
+			</p><p>
+				There are many ways to skin a cat, and designing a pokemon fan game is no exception; however, let this serve as a simple road map for those just starting.
+			</p>
+			<div id="toc" class="toc">
+				<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr" style="min-width: 400px;">
+					<h2>
+						<svg class="wds-icon wds-icon-tiny">
+							<use href="#wds-icons-bullet-list-tiny"></use>
+						</svg>Contents
+					</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span>
+				</div>
+				<ul>
+					<li class="toclevel-1 tocsection-1"><a href="#Skills_to_Do_It_Yourself"><span class="tocnumber">1</span> <span class="toctext">Skills to Do It Yourself</span></a></li>
+					<li class="toclevel-1 tocsection-2"><a href="#Groundworks_for_your_Games_Aesthetic_and_Theme"><span class="tocnumber">2</span> <span class="toctext">Groundworks for your Games Aesthetic and Theme</span></a></li>
+					<li class="toclevel-1 tocsection-3"><a href="#The_Next_Step:_Determining_Where_Your_Game_Is"><span class="tocnumber">3</span> <span class="toctext">The Next Step: Determining Where Your Game Is</span></a></li>
+					<li class="toclevel-1 tocsection-4"><a href="#Determining_The_Plot_and_Region"><span class="tocnumber">4</span> <span class="toctext">Determining The Plot and Region</span></a></li>
+					<li class="toclevel-1 tocsection-5"><a href="#Pokemon_and_Writing_your_Pokedex"><span class="tocnumber">5</span> <span class="toctext">Pokemon and Writing your Pokedex</span></a></li>
+					<li class="toclevel-1 tocsection-6"><a href="#The_Starters"><span class="tocnumber">6</span> <span class="toctext">The Starters</span></a></li>
+					<li class="toclevel-1 tocsection-7"><a href="#Mapping_and_Eventing"><span class="tocnumber">7</span> <span class="toctext">Mapping and Eventing</span></a></li>
+					<li class="toclevel-1 tocsection-8"><a href="#Building_A_Team"><span class="tocnumber">8</span> <span class="toctext">Building A Team</span></a></li>
+				</ul>
+			</div>
+
+			<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Skills_to_Do_It_Yourself">Skills to Do It Yourself</span></h2>
+			<p>
+				The main and most important skill while using RPG Maker is the <b>manipulation of events.&nbsp;</b>You can build an entire game with only this knowledge and mapping skills alone&nbsp;(or you could make a game entirely based off of a&nbsp;region of the official games). However, it is advisable that you learn about the capabilities of eventing before anything else. Learning how to be a good eventer will make you better see the possibilities of your game and, most importantly, how to solve a problem.&nbsp;Good exercises include, in a basic level, setting up a bank system and, in a more advanced level, how to make a calculator.
+			</p><p>
+				The following is a list of skills to improve your game development through RPG Maker with emphasis in Pokemon Essentials kit. While <i>not all</i> of them are needed, they can really help you along the journey.
+			</p>
+			<ul>
+				<li>Coding in Ruby or the ability to learn coding from previously established code;</li>
+				<li>Decent photo manipulation and graphic design skills in programs more powerful than MS Paint,<b> notably ones that support transparency;</b></li>
+				<li>Ability to draw and sketch maps, trainers, and fakemon designs by hand, and draw them into said graphic manipulation programs;</li>
+				<li>A keen sense of design;</li>
+				<li>If you want to maintain the pixel density of all the sprites, a working knowledge of sprite art is <b>required</b>;</li>
+				<li>Project management skills is a must if you want to organize a team of people to help make assets for you;</li>
+				<li>Strong knowledge over niche battle mechanics, moves, abilities, and forms.</li>
+			</ul>
+			<h2><span class="mw-headline" id="Groundworks_for_your_Games_Aesthetic_and_Theme">Groundworks for your Games Aesthetic and Theme</span></h2>
+			<p>
+				Starting out, it is easy to say "I want make a pokemon game!"
+			</p><p>
+				We already know what that is. Most people who develop pokemon game are already familiar with the series and have a good idea about what it looks like. Believe it or not, coming from there can be used as a start point. We already have a core: we have a game based around magical creatures that can be stored in pokeballs and can battle each other.
+			</p><p>
+				We're also familiar with the general structure of their games: a young trainer travels the region(s) to defeat many trainers and ultimately the Pokemon League while also at the same time become the region(s)' hero/heroine!
+			</p><p>
+				Jumping from there ask yourself:
+			</p><p>
+				"What is my idea that sets it apart from the main series?"
+			</p><p>
+				The main idea: Do you want to invert the story? Do you want to make it darker? Do you want to see what Let's Go! style gameplay in a Unova-inspired region might look like?
+			</p><p>
+				Your next question then would be: How do you want it to look? How do you want people to interact with your theme? How will the game's aesthetics match/or not match it?
+			</p>
+			<h2><span class="mw-headline" id="The_Next_Step:_Determining_Where_Your_Game_Is">The Next Step: Determining Where Your Game Is</span></h2>
+			<p>
+				The next big step in planning your game is to determine where it is, now that we know what it is.
+			</p><p>
+				If you want a tropical adventure, set it in the Seafoam Islands, reprise Alola, or make up a new region! That's up to you! Just make sure that the region's aesthetics will match the aesthetics of your game! If you want a warm sunny region with the plot as the next Poke-war, you're free to do so, but be aware that your players will go in expecting a happier adventure in a region with a bright, cheery color palette. Your fans that like dark, dank stories would also be disappointed in the fact that your region would not reflect the story and the game's overall aesthetic.
+			</p><p>
+				Now that you have decided where you would like to put it, get a rough drawing of what the region would look like. Don't go too far into the details right now, as they will reflect your plot. This is the time to look up images of cities and towns that could be turned into something like a Pokemon game.
+			</p>
+			<h2><span class="mw-headline" id="Determining_The_Plot_and_Region">Determining The Plot and Region</span></h2>
+			<p>
+				Now that you have some idea of where you want the game to take place and what it is about, it's time to think of the details more specifically and how they relate to your game map.
+			</p><p>
+				This is important because your player interacts with your region through the map. Before I get into the specifics of structuring your game map, this is the time to think about the structure of your Gameplay
+			</p>
+			<table>
+				<tbody>
+					<tr>
+						<th>
+						</th>
+						<th>
+							Open Plot
+						</th>
+						<th>
+							Linear Plot
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<b>Open Map</b>
+						</td>
+						<td>
+							Open/Open
+						</td>
+						<td>
+							Open/Linear
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>Linear Map</b>
+						</td>
+						<td>
+							Linear/Open
+						</td>
+						<td>
+							Linear/Linear
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul>
+				<li><b>Linear/Linear: </b>Most mainline pokemon games use this model: You're on a single track through the game, with small optional areas going through a plot that only has one possibility to be completed in a specific order</li>
+				<li><b>Open/Linear: </b>Think the main series (dragon) plot from Bethesda's Skyrim. There is a strict linear flow to the game's plot despite being in an open world that you're free to explore with minimal gating.</li>
+				<li><b>Linear/Open: </b>You approach areas in a linear progression, but are free to do whatever when you arrive there. The dragon age series, particularly the third, utilizes this. Eventually the story will culminate, but you're free to complete various subplots that distract from the main series.</li>
+				<li><b>Open/Open: </b>Completely open; the game's plot is determined by discordant events that can be completed in any order. Skyrim becomes like this only after including all three major plot-lines in any order. Runescape does this especially well with each quest being a fixed difficulty, so some are easily stomped, and others are much more involved.</li>
+			</ul>
+			<p>
+				Determining which style of gameplay is imperative as it influences 1) pokemon levelling and balancing, 2) your map design, 3) how you structure your game's plot.
+			</p><p>
+				The traditional pokemon plot is gated by the gym leaders, or by the Island Captains/Kahunas in Alola, or progress in defeating Cipher in the Colosseum games. As a fangame developer, you are in complete control over what it will be like as RMXP supports all four of those play styles. It's up to you to choose a format that works for your game.
+			</p><p>
+				Please note that Open World pokemon maps are possible, though it becomes complicated when you have to consider the technical aspects of the game design because an individual Pokemon's power is in the form of leveling and you would have to make 8 variations of each gym if you want it truly open (and be able to complete each gym in any order you please). You also need scripts that will scale wild encounters appropriately with the correct gating.
+			</p><p>
+				<b>Gating</b>
+			</p><p>
+				Once you've determined the format of your game, how do you want to gate the player's progress through the game? Do you want the traditional gym system? Do you want to do Trials and Kahunas like in Alola? Essentially, how do you want your players to progress through the story? Will there be a rival with battles? Where would they be in the towns, cities, a magical place in the sky? The sky is the limit, but figuring them out will give you a mental checklist to incorporate into your game and its map and plot. They can be unrelated to the plot, but gating needs to be specified on your game map or at least <i>implied</i>. Otherwise, players would have to keep a mental tally on where that Snorlax was sleeping in the middle of the road or determining where they need to Surf, etc.
+			</p><p>
+				<b>Who are the People of your Region</b>
+			</p><p>
+				Now you know how to gate and how the player should interact with your game's world, it is time to determine who occupies it! This is important as it directly determines your plot! There are games that have no characters but even with those the landscape/puzzles become the characters!
+			</p><p>
+				We are all familiar with the teenage/child protagonist often single-handedly toppling a large, criminal organization that somehow has plans to destroy the world. And despite the region's best attempts by the actual police, only a child who started their pokemon journey hours before managed to topple them completely before challenging the pokemon league.&nbsp;
+			</p><p>
+				As a game developer you're free to both adapt that, rewrite it, or embrace it! As long as you can fit it into your game's planned structure, you should be fine!
+			</p><p>
+				Some other questions to be mindful is how&nbsp;the setting influence their looks? What they wear, what their hair color is? Do they have lives? Do they go to work, have families, have different rules in society than ours? It may sound trivial, but characters play an integral role in establishing your game's plot and aesthetics. Notice how everyone in Kalos looked super French? Many berets were worn, walking their Furfrou in front of a building that looked suspiciously like the Eiffel Tower? How Team Flare was obessed about Fashion?&nbsp;The people of a region make it feel alive!
+			</p><p>
+				<b>Sketching Your Map</b>
+			</p><p>
+				Now that you have everything above considered, it is time to start sketching your map!
+			</p><p>
+				It is a good idea to play out the plot as you are placing the cities in your head as you design it (especially true if you chose the Linear/Linear game structure).&nbsp;&nbsp;<br>
+			</p><figure class="thumb tright " style="width: 180px"> 	<a href="https://web.archive.org/web/20211024132806/https://static.wikia.nocookie.net/essentialsdocs/images/b/bc/Map_basics.png/revision/latest?cb=20190222215728" class="image"><img alt="" src="https://web.archive.org/web/20211024132806im_/https://static.wikia.nocookie.net/essentialsdocs/images/b/bc/Map_basics.png/revision/latest/scale-to-width-down/180?cb=20190222215728" decoding="async" width="180" height="77" class="thumbimage" data-image-name="Map basics.png" data-image-key="Map_basics.png"></a> 	 	<figcaption class="thumbcaption"> 		 		 		 			<p class="caption">A structural diagram of a pokemon map</p> 		 	</figcaption> </figure><p>
+				The details of&nbsp;pokemon game's plot can be worked out as you draw a map. If you're basing your region off an established place on Earth, a common newbie mistake is including too much of that area in your map. You should feel free to warp space and leave out cities and towns that don't contribute anything for the player or their experience. <b>It is a bad idea to make a map and then stick a plot on it. A smarter&nbsp;way to approach mapmaking and developing your plot is play it out mentally as you make it.&nbsp;</b>A pokemon map can be as simple as the drawing to the right or as convoluted as something from Generation 5 or 6, or even 7. At this stage it's imperative to get the route structure down before applying the later aesthetics.&nbsp;
+			</p><p>
+				For Linear maps with a linear plot, there should be a clear starting point and a clear ending point. Pokemon maps are made to be simple enough a child can read it but complex enough to imply the entire game's progression.
+			</p><p>
+				<br>
+			</p>
+			<h2><span class="mw-headline" id="Pokemon_and_Writing_your_Pokedex">Pokemon and Writing your Pokedex</span></h2>
+			<p>
+				Now that you have a region with characters planned, and a general idea about the characters, time to start making the game!&nbsp;
+			</p><p>
+				The next part is assembling a list of what pokemon to include. Pokemon Essentials by default has every pokemon introduced up to generation 5. You will have to add every pokemon manually after that, in addition to the Fairy type and any other custom types/fakemon.
+			</p><p>
+				Assembling a Pokedex can be an interesting challenge considering that there are so many to choose from. To start, it is a good idea to consider how many pokemon should be available:
+			</p><p>
+				Each main series game has a different number, before the postgame:
+			</p>
+			<ul>
+				<li>Kanto: 150</li>
+				<li>Kanto (LGPE): about 175</li>
+				<li>Johto: about 250</li>
+				<li>Johto (HGSS): about 300</li>
+				<li>Hoenn (RSE): about 250</li>
+				<li>Hoenn (ORAS): about 300</li>
+				<li>Sinnoh: about 150</li>
+				<li>Sinnoh (Pt): about 200</li>
+				<li>Unova: about 150</li>
+				<li>Unova (B2W2): about 300</li>
+				<li>Kalos: about 450</li>
+				<li>Alola: about 350</li>
+				<li>Alola (USUM): about 400</li>
+			</ul>
+			<p>
+				While there are fangames that claim to have all 809 currently available pokemon, it gives the developer a headache to find ways to make it feel less overwhelming for the player and themselves. Essentials supports 12 different encounter rates for pokemon on normal tall grass, and only 5 different percentages for Surfing, so if you want to develop a pokemon game will the pokemon, it will get chaotic. Luckily v17.2 has all of the gen 6 moves and abilities coded. It is your job to update the PBS files. You will have to program <b>all&nbsp;</b>of the Gen 7 moves and abilities.
+			</p><p>
+				Larger pokedexes will naturally lower the game's difficulty, so having too much variety in pokemon can make a would be difficult game easily curb-stomped despite the rich variety of choices. However, too few pokemon forces the developer to limit the variety of pokemon for the player both to use&nbsp;and encounter, but makes the difficulty curve more manageable.
+			</p><p>
+				Generally, all of the regional pokedexes order the pokemon in the order they are encountered in their respective games. Therefore, it makes it somewhat easier on the developer as players going in to the game exepect your regional pokedex to reflect that.&nbsp;
+			</p><p>
+				Your pokedex will go through many drafts as you develop the game, so unless you choose to make fakemon, your pokedex can remain flexible until you finalize your encounters, battles, and difficulty curve later on the road.
+			</p><p>
+				The pokemon games incorporate the Pokemon's rarity, approximate strength (BST) and it's typing and abilities when placing them in a route/trainer battle, and thus should be considered when making your game. No one likes route 1 legendaries. They make no sense. Early game pokemon such as rattata, pidgey, the elemental monkeys, poliwag, oddish, purrloin, bunnelby, etc., are all great pokemon with simple typings and movesets that give the player an illusion of variety right after picking your starter (discussed in the next section). Consider the terrain, as that is a direct implication about what pokemon could be there! It would be silly fishing magikarp out of lava (it would make sense to find slugma there). It would make more sense for wingull to be found on an early coastal map than in a dry desert in the middle of your region!
+			</p><p>
+				If you have Fakemon, now is a good time to start sketching them!
+			</p>
+			<h2><span class="mw-headline" id="The_Starters">The Starters</span></h2>
+			<p>
+				Perhaps the most important part of Pokemon (and perhaps even more important than the box legendaries) are your starter pokemon. Nailing who they are, and what types they are is essential to starting a fangame. We're very much used to the fire/water/grass trio, or the pikachu/eevee, umbreon/espeon in the spin-offs. They can be real pokemon, or fakemon, or can be of non-standard types. What matters is how they appear and how do they fit in the game's difficulty curve. If you have a fire type starter and the first three gyms are weak to fire, then you have a poor gym structure. The opposite is also a poor structure. In Kanto, if you chose Charmander, there would be no STAB move to defeat Brock!
+			</p>
+			<h2><span class="mw-headline" id="Mapping_and_Eventing">Mapping and Eventing</span></h2>
+			<p>
+				Now you have the Pokedex planned out, time to start making game maps! You can use the default tilesets preloaded into essentials or you can create your own. The wiki has extensive documentation on how to event and use the RMXP mapping tools. A quick google search will reveal that there are hundreds of public tilesets and characters for the overworld on the internet! <b>However, make sure that you have permission to use them, otherwise you can have your project taken down for plagiarism!</b>
+			</p>
+			<h2><span class="mw-headline" id="Building_A_Team">Building A Team</span></h2>
+			<p>
+				Once you're out of the planning stages, implementation of the game can be overwhelming for one person! You may have to recruit a team to help you make whatever you need for this project to see light of day! Be aware that working on a team as the lead dev that it is expected that you will be doing most of the work. Fangame development is different from professional development because most people would have to pay out of pocket to commission someone. If the developer cannot do their part, they are liable to being booted off their team! Likewise, if you haven't done much for the project at the start, people are not likely to join your team or take it seriously if they do join. Even if your sketches or maps are of poor quality they can always be redone--fangames can take years to complete.
+			</p><p>
+				This is where your project management skills will take shape! You need to make sure everyone is submitting everything on time at a high enough quality to present.&nbsp;
+			</p>
+			<!--
+			NewPP limit report
+			Cached time: 20211014030538
+			Cache expiry: 1209600
+			Dynamic content: false
+			CPU time usage: 0.016 seconds
+			Real time usage: 0.018 seconds
+			Preprocessor visited node count: 26/1000000
+			Preprocessor generated node count: 0/1000000
+			Post‐expand include size: 0/2097152 bytes
+			Template argument size: 0/2097152 bytes
+			Highest expansion depth: 2/40
+			Expensive parser function count: 0/100
+			Unstrip recursion depth: 0/20
+			Unstrip post‐expand size: 0/5000000 bytes
+			-->
+			<!--
+			Transclusion expansion time report (%,ms,calls,template)
+			100.00%    0.000      1 -total
+			-->
+			<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:375-0!canonical!FandomDesktop!LegacyGalleries and timestamp 20211014030538 and revision id 1077
+			 -->
+		</div>
+	</div>
+</div>

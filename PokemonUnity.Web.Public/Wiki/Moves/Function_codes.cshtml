@@ -1,0 +1,5391 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20210512082213if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl><dd><i>For defining a move, see <a href="/web/20210512082213/https://essentialsdocs.fandom.com/wiki/Defining_a_move" title="Defining a move">Defining a move</a>.</i></dd></dl>
+						<p>
+							This page lists the <b>move function codes</b> that exist in Essentials.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1">
+									<a href="#Function_codes"><span class="tocnumber">1</span> <span class="toctext">Function codes</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-2"><a href="#No_effects_and_pseudo-moves"><span class="tocnumber">1.1</span> <span class="toctext">No effects and pseudo-moves</span></a></li>
+										<li class="toclevel-2 tocsection-3"><a href="#Status_problems"><span class="tocnumber">1.2</span> <span class="toctext">Status problems</span></a></li>
+										<li class="toclevel-2 tocsection-4"><a href="#Changes_user.27s_stat_stages"><span class="tocnumber">1.3</span> <span class="toctext">Changes user's stat stages</span></a></li>
+										<li class="toclevel-2 tocsection-5"><a href="#Changes_target.27s_stat_stages"><span class="tocnumber">1.4</span> <span class="toctext">Changes target's stat stages</span></a></li>
+										<li class="toclevel-2 tocsection-6"><a href="#Other_changes_to_stats_and_stat_stages"><span class="tocnumber">1.5</span> <span class="toctext">Other changes to stats and stat stages</span></a></li>
+										<li class="toclevel-2 tocsection-7"><a href="#Changes_attributes_of_Pok.C3.A9mon"><span class="tocnumber">1.6</span> <span class="toctext">Changes attributes of Pokémon</span></a></li>
+										<li class="toclevel-2 tocsection-8"><a href="#Inflicts_fixed_amount_of_damage"><span class="tocnumber">1.7</span> <span class="toctext">Inflicts fixed amount of damage</span></a></li>
+										<li class="toclevel-2 tocsection-9"><a href="#Affects_an_attack.27s_power.2C_type_or_effect"><span class="tocnumber">1.8</span> <span class="toctext">Affects an attack's power, type or effect</span></a></li>
+										<li class="toclevel-2 tocsection-10"><a href="#Attacks_hitting_and_being_avoided"><span class="tocnumber">1.9</span> <span class="toctext">Attacks hitting and being avoided</span></a></li>
+										<li class="toclevel-2 tocsection-11"><a href="#Affects_the_attack_used"><span class="tocnumber">1.10</span> <span class="toctext">Affects the attack used</span></a></li>
+										<li class="toclevel-2 tocsection-12"><a href="#Multi-hits_attacks_and_multi-turn_attacks"><span class="tocnumber">1.11</span> <span class="toctext">Multi-hits attacks and multi-turn attacks</span></a></li>
+										<li class="toclevel-2 tocsection-13"><a href="#Healing_moves"><span class="tocnumber">1.12</span> <span class="toctext">Healing moves</span></a></li>
+										<li class="toclevel-2 tocsection-14"><a href="#Involves_fainting"><span class="tocnumber">1.13</span> <span class="toctext">Involves fainting</span></a></li>
+										<li class="toclevel-2 tocsection-15"><a href="#Switching_and_fleeing"><span class="tocnumber">1.14</span> <span class="toctext">Switching and fleeing</span></a></li>
+										<li class="toclevel-2 tocsection-16"><a href="#Items"><span class="tocnumber">1.15</span> <span class="toctext">Items</span></a></li>
+										<li class="toclevel-2 tocsection-17"><a href="#Attacks_with_recoil"><span class="tocnumber">1.16</span> <span class="toctext">Attacks with recoil</span></a></li>
+										<li class="toclevel-2 tocsection-18"><a href="#Weather-inducing_attacks"><span class="tocnumber">1.17</span> <span class="toctext">Weather-inducing attacks</span></a></li>
+										<li class="toclevel-2 tocsection-19"><a href="#Entry_hazards"><span class="tocnumber">1.18</span> <span class="toctext">Entry hazards</span></a></li>
+										<li class="toclevel-2 tocsection-20"><a href="#Pledge_attacks"><span class="tocnumber">1.19</span> <span class="toctext">Pledge attacks</span></a></li>
+										<li class="toclevel-2 tocsection-21"><a href="#Other"><span class="tocnumber">1.20</span> <span class="toctext">Other</span></a></li>
+										<li class="toclevel-2 tocsection-22"><a href="#Shadow_moves"><span class="tocnumber">1.21</span> <span class="toctext">Shadow moves</span></a></li>
+										<li class="toclevel-2 tocsection-23"><a href="#Generation_6_moves"><span class="tocnumber">1.22</span> <span class="toctext">Generation 6 moves</span></a></li>
+										<li class="toclevel-2 tocsection-24"><a href="#Generation_7_moves"><span class="tocnumber">1.23</span> <span class="toctext">Generation 7 moves</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-25"><a href="#Adding_your_own_move_effects"><span class="tocnumber">2</span> <span class="toctext">Adding your own move effects</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Function_codes">Function codes</span></h2>
+						<p>
+							Most moves have an effect, from common ones like poisoning the foe, to unique ones like Transform. Each different effect has its own <b>function code</b>, which is a hexadecimal number. Every move must have a function code (there is even one for "no effect").
+						</p><p>
+							All move effects (except for Shadow moves) are described in the script section <b>PokeBattle_MoveEffects</b>.
+						</p><p>
+							Function codes work alongside move flags, as they both describe how a move works. Some special aspects of a move (e.g. thaws a frozen user, has a high critical hit rate) are dealt with just by the move flags; in which case, moves with just those special aspects (e.g. Slash only has a high critical hit rate) will have the function code 000 (no effect) as they don't do anything else special.
+						</p>
+						<h3><span class="mw-headline" id="No_effects_and_pseudo-moves">No effects and pseudo-moves</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										000
+									</th>
+									<td>
+										No effect.
+									</td>
+									<td>
+										Accelerock, Aeroblast, Air Cutter, Aqua Jet, Aqua Tail, Attack Order, Boomburst, Brutal Swing, Bullet Punch, Crabhammer, Cross Chop, Cut, Dazzling Gleam, Dragon Claw, Dragon Hammer, Dragon Pulse, Drill Peck, Drill Run, Egg Bomb, Extreme Speed, Fairy Wind, High Horsepower, Horn Attack, Hydro Pump, Hyper Voice, Ice Shard, Karate Chop, Land's Wrath, Leaf Blade, Leafage, Mach Punch, Mega Kick, Mega Punch, Megahorn, Night Slash, Origin Pulse, Peck, Petal Blizzard, Pound, Power Gem, Power Whip, Precipice Blades, Psycho Cut, Quick Attack, Razor Leaf, Rock Throw, Scratch, Seed Bomb, Shadow Claw, Shadow Sneak, Slam, Slash, Spacial Rend, Stone Edge, Strength, Tackle, Vacuum Wave, Vice Grip, Vine Whip, Water Gun, Wing Attack, X-Scissor
+									</td>
+								</tr>
+								<tr>
+									<th>
+										001
+									</th>
+									<td>
+										Nothing happens at all. Cannot be used if Gravity is in effect.
+									</td>
+									<td>
+										Splash
+									</td>
+								</tr>
+								<tr>
+									<th>
+										002
+									</th>
+									<td>
+										This move has no type. The user takes damage equal to 1/4 of its total HP, rounded down. This is not considered recoil damage.
+									</td>
+									<td>
+										Struggle
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Status_problems">Status problems</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										003
+									</th>
+									<td>
+										Puts the target to sleep.
+										<p>
+											For Relic Song only, changes the user's form if the user is Meloetta and hasn't transformed.
+										</p>
+									</td>
+									<td>
+										Dark Void, Grass Whistle, Hypnosis, Lovely Kiss, Relic Song, Sing, Sleep Powder, Spore
+									</td>
+								</tr>
+								<tr>
+									<th>
+										004
+									</th>
+									<td>
+										Makes target drowsy, which makes it fall asleep at the end of the next round. Fails upon use if the target couldn't fall asleep immediately (even though it wouldn't), or is already drowsy. Target won't fall asleep if it already has a status problem, its ability prevents it from sleeping, or there is an uproar.
+									</td>
+									<td>
+										Yawn
+									</td>
+								</tr>
+								<tr>
+									<th>
+										005
+									</th>
+									<td>
+										Poisons the target.
+									</td>
+									<td>
+										Cross Poison, Gunk Shot, Poison Gas, Poison Jab, Poison Powder, Poison Sting, Poison Tail, Sludge, Sludge Bomb, Sludge Wave, Smog
+									</td>
+								</tr>
+								<tr>
+									<th>
+										006
+									</th>
+									<td>
+										Badly poisons the target.
+										<p>
+											Gen 6+: Status moves have perfect accuracy when the user is Poison-type, even against semi-invulnerable targets.
+										</p>
+									</td>
+									<td>
+										Poison Fang, Toxic
+									</td>
+								</tr>
+								<tr>
+									<th>
+										007
+									</th>
+									<td>
+										Paralyzes the target.
+										<p>
+											For Thunder Wave only, fails if the target is immune to the move's type.
+										</p><p>
+											For Bolt Strike only, will double the power of the next Fusion Flare used this round.
+										</p><p>
+											Gen 6+: For Body Slam only, power is doubled and accuracy is perfect if the target is Minimized.
+										</p>
+									</td>
+									<td>
+										Body Slam, Bolt Strike, Discharge, Dragon Breath, Force Palm, Glare, Lick, Nuzzle, Spark, Stun Spore, Thunder Punch, Thunder Shock, Thunder Wave, Thunderbolt, Zap Cannon
+									</td>
+								</tr>
+								<tr>
+									<th>
+										008
+									</th>
+									<td>
+										Paralyzes the target. Can hit the target even if it is in the middle of using Bounce, Fly or Sky Drop, or is under the effect of Sky Drop. During rainy weather, this attack has perfect accuracy. During sunny weather, this attack's base accuracy is 50%.
+									</td>
+									<td>
+										Thunder
+									</td>
+								</tr>
+								<tr>
+									<th>
+										009
+									</th>
+									<td>
+										May paralyze the target (10%). May cause the target to flinch (10%).
+									</td>
+									<td>
+										Thunder Fang
+									</td>
+								</tr>
+								<tr>
+									<th>
+										00A
+									</th>
+									<td>
+										Burns the target.
+										<p>
+											For Blue Flare only, will double the power of the next Fusion Bolt used this round.
+										</p>
+									</td>
+									<td>
+										Blaze Kick, Blue Flare, Ember, Fire Blast, Fire Punch, Flame Wheel, Flamethrower, Heat Wave, Inferno, Lava Plume, Sacred Fire, Scald, Searing Shot, Steam Eruption, Will-O-Wisp
+									</td>
+								</tr>
+								<tr>
+									<th>
+										00B
+									</th>
+									<td>
+										May burn the target (10%). May cause the target to flinch (10%).
+									</td>
+									<td>
+										Fire Fang
+									</td>
+								</tr>
+								<tr>
+									<th>
+										00C
+									</th>
+									<td>
+										Freezes the target.
+									</td>
+									<td>
+										Ice Beam, Ice Punch, Powder Snow
+									</td>
+								</tr>
+								<tr>
+									<th>
+										00D
+									</th>
+									<td>
+										Freezes the target. During hail weather, this attack has perfect accuracy.
+									</td>
+									<td>
+										Blizzard
+									</td>
+								</tr>
+								<tr>
+									<th>
+										00E
+									</th>
+									<td>
+										May freeze the target (10%). May cause the target to flinch (10%).
+									</td>
+									<td>
+										Ice Fang
+									</td>
+								</tr>
+								<tr>
+									<th>
+										00F
+									</th>
+									<td>
+										Causes the target to flinch.
+									</td>
+									<td>
+										Air Slash, Astonish, Bite, Bone Club, Dark Pulse, Extrasensory, Headbutt, Heart Stamp, Hyper Fang, Icicle Crash, Iron Head, Needle Arm, Rock Slide, Rolling Kick, Waterfall, Zen Headbutt, Zing Zap
+									</td>
+								</tr>
+								<tr>
+									<th>
+										010
+									</th>
+									<td>
+										Causes the target to flinch. Inflicts double damage and (Gen 6) has perfect accuracy if the target is Minimized.
+										<p>
+											Gen 6+: Dragon Rush has effects against Minimized targets. Prior to Gen 6, it just causes the target to flinch.
+										</p>
+									</td>
+									<td>
+										Dragon Rush, Steamroller, Stomp
+									</td>
+								</tr>
+								<tr>
+									<th>
+										011
+									</th>
+									<td>
+										Causes the target to flinch. Fails if the user is not asleep.
+									</td>
+									<td>
+										Snore
+									</td>
+								</tr>
+								<tr>
+									<th>
+										012
+									</th>
+									<td>
+										Causes the target to flinch. Fails if it isn't the user's first round in the battle.
+									</td>
+									<td>
+										Fake Out
+									</td>
+								</tr>
+								<tr>
+									<th>
+										013
+									</th>
+									<td>
+										Confuses the target.
+									</td>
+									<td>
+										Confuse Ray, Confusion, Dizzy Punch, Dynamic Punch, Psybeam, Rock Climb, Signal Beam, Supersonic, Sweet Kiss, Teeter Dance, Water Pulse
+									</td>
+								</tr>
+								<tr>
+									<th>
+										014
+									</th>
+									<td>
+										May confuse the target. The probability of causing confusion increases if the user's cry is louder, but is 0% if it isn't a custom recorded cry.
+										<p>
+											Gen 6+: Always confuses the target.
+										</p>
+									</td>
+									<td>
+										Chatter
+									</td>
+								</tr>
+								<tr>
+									<th>
+										015
+									</th>
+									<td>
+										Confuses the target. During rainy weather, this attack has perfect accuracy. During sunny weather, this attack's base accuracy is 50%. Hits the target even if it is in the middle of using Bounce, Fly or Sky Drop, or is under the effect of Sky Drop.
+									</td>
+									<td>
+										Hurricane
+									</td>
+								</tr>
+								<tr>
+									<th>
+										016
+									</th>
+									<td>
+										The user attracts the target to it. Only works if the user and target are different genders (and neither is genderless), and if the target isn't already attracted to anyone. The effect ends if either the user or the target is switched out.
+									</td>
+									<td>
+										Attract
+									</td>
+								</tr>
+								<tr>
+									<th>
+										017
+									</th>
+									<td>
+										Either burns, freezes or paralyzes the target. The status inflicted is chosen at random.
+									</td>
+									<td>
+										Tri Attack
+									</td>
+								</tr>
+								<tr>
+									<th>
+										018
+									</th>
+									<td>
+										The user is cured of burns, poison and paralysis.
+									</td>
+									<td>
+										Refresh
+									</td>
+								</tr>
+								<tr>
+									<th>
+										019
+									</th>
+									<td>
+										All Pokémon in the user's party are cured of their permanent status problems (doesn't affect confusion, etc.).
+									</td>
+									<td>
+										Aromatherapy, Heal Bell
+									</td>
+								</tr>
+								<tr>
+									<th>
+										01A
+									</th>
+									<td>
+										For 5 rounds (including the current round), Pokémon on the user's side cannot be given a status problem by any outside attacks or items (except held items). Status problems can still be self-inflicted. Fails if the user's side is already being affected by this effect.
+									</td>
+									<td>
+										Safeguard
+									</td>
+								</tr>
+								<tr>
+									<th>
+										01B
+									</th>
+									<td>
+										The target gains the permanent status problem of the user (bad poisoning is passed across). If it does, the user's permanent status problem is cured. Fails if the target already has a permanent status problem, or if it can't be inflicted with the user's permanent status problem.
+									</td>
+									<td>
+										Psycho Shift
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span id="Changes_user's_stat_stages"></span><span class="mw-headline" id="Changes_user.27s_stat_stages">Changes user's stat stages</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										01C
+									</th>
+									<td>
+										Increases the user's Attack by 1 stage.
+									</td>
+									<td>
+										Howl, Meditate, Metal Claw, Meteor Mash, Power-Up Punch, Sharpen
+									</td>
+								</tr>
+								<tr>
+									<th>
+										01D
+									</th>
+									<td>
+										Increases the user's Defense by 1 stage.
+									</td>
+									<td>
+										Harden, Steel Wing, Withdraw
+									</td>
+								</tr>
+								<tr>
+									<th>
+										01E
+									</th>
+									<td>
+										Increases the user's Defense by 1 stage. The user curls up (making the user's Ice Ball/Rollout do double damage), even if Defense is not boosted. Curling up is not cumulative.
+									</td>
+									<td>
+										Defense Curl
+									</td>
+								</tr>
+								<tr>
+									<th>
+										01F
+									</th>
+									<td>
+										Increases the user's Speed by 1 stage.
+									</td>
+									<td>
+										Flame Charge
+									</td>
+								</tr>
+								<tr>
+									<th>
+										020
+									</th>
+									<td>
+										Increases the user's Special Attack by 1 stage.
+									</td>
+									<td>
+										Charge Beam, Fiery Dance
+									</td>
+								</tr>
+								<tr>
+									<th>
+										021
+									</th>
+									<td>
+										Increases the user's Special Defense by 1 stage. Until the end of the next round, the power of the user's damaging Electric attacks is doubled. The effect ends if the user is switched out.
+									</td>
+									<td>
+										Charge
+									</td>
+								</tr>
+								<tr>
+									<th>
+										022
+									</th>
+									<td>
+										Increases the user's evasiveness by 1 stage.
+									</td>
+									<td>
+										Double Team
+									</td>
+								</tr>
+								<tr>
+									<th>
+										023
+									</th>
+									<td>
+										Increases the user's critical hit rate by 2 stages. This effect is not cumulative with itself or certain other effects.
+									</td>
+									<td>
+										Focus Energy
+									</td>
+								</tr>
+								<tr>
+									<th>
+										024
+									</th>
+									<td>
+										Increases the user's Attack and Defense by 1 stage each.
+									</td>
+									<td>
+										Bulk Up
+									</td>
+								</tr>
+								<tr>
+									<th>
+										025
+									</th>
+									<td>
+										Increases the user's Attack, Defense and accuracy by 1 stage each.
+									</td>
+									<td>
+										Coil
+									</td>
+								</tr>
+								<tr>
+									<th>
+										026
+									</th>
+									<td>
+										Increases the user's Attack and Speed by 1 stage each.
+									</td>
+									<td>
+										Dragon Dance
+									</td>
+								</tr>
+								<tr>
+									<th>
+										027
+									</th>
+									<td>
+										Increases the user's Attack and Special Attack by 1 stage each.
+									</td>
+									<td>
+										Work Up
+									</td>
+								</tr>
+								<tr>
+									<th>
+										028
+									</th>
+									<td>
+										Increases the user's Attack and Special Attack by 1 stage each. In sunny weather, increases them by 2 stages each instead.
+									</td>
+									<td>
+										Growth
+									</td>
+								</tr>
+								<tr>
+									<th>
+										029
+									</th>
+									<td>
+										Increases the user's Attack and accuracy by 1 stage each.
+									</td>
+									<td>
+										Hone Claws
+									</td>
+								</tr>
+								<tr>
+									<th>
+										02A
+									</th>
+									<td>
+										Increases the user's Defense and Special Defense by 1 stage each.
+									</td>
+									<td>
+										Cosmic Power, Defend Order
+									</td>
+								</tr>
+								<tr>
+									<th>
+										02B
+									</th>
+									<td>
+										Increases the user's Speed, Special Attack and Special Defense by 1 stage each.
+									</td>
+									<td>
+										Quiver Dance
+									</td>
+								</tr>
+								<tr>
+									<th>
+										02C
+									</th>
+									<td>
+										Increases the user's Special Attack and Special Defense by 1 stage each.
+									</td>
+									<td>
+										Calm Mind
+									</td>
+								</tr>
+								<tr>
+									<th>
+										02D
+									</th>
+									<td>
+										Increases the user's Attack, Defense, Speed, Special Attack and Special Defense by 1 stage each.
+									</td>
+									<td>
+										Ancient Power, Ominous Wind, Silver Wind
+									</td>
+								</tr>
+								<tr>
+									<th>
+										02E
+									</th>
+									<td>
+										Increases the user's Attack by 2 stages.
+									</td>
+									<td>
+										Swords Dance
+									</td>
+								</tr>
+								<tr>
+									<th>
+										02F
+									</th>
+									<td>
+										Increases the user's Defense by 2 stages.
+									</td>
+									<td>
+										Acid Armor, Barrier, Iron Defense
+									</td>
+								</tr>
+								<tr>
+									<th>
+										030
+									</th>
+									<td>
+										Increases the user's Speed by 2 stages.
+									</td>
+									<td>
+										Agility, Rock Polish
+									</td>
+								</tr>
+								<tr>
+									<th>
+										031
+									</th>
+									<td>
+										Increases the user's Speed by 2 stages. If the user's Speed was changed, lowers the user's weight by 100kg (this effect is cumulative, can't be Baton Passed, and weight can't go below 0.1kg).
+									</td>
+									<td>
+										Autotomize
+									</td>
+								</tr>
+								<tr>
+									<th>
+										032
+									</th>
+									<td>
+										Increases the user's Special Attack by 2 stages.
+									</td>
+									<td>
+										Nasty Plot
+									</td>
+								</tr>
+								<tr>
+									<th>
+										033
+									</th>
+									<td>
+										Increases the user's Special Defense by 2 stages.
+									</td>
+									<td>
+										Amnesia
+									</td>
+								</tr>
+								<tr>
+									<th>
+										034
+									</th>
+									<td>
+										Increases the user's evasiveness by 2 stages. The user minimizes (making it take double damage from a foe's Body Slam, Dragon Rush, Flying Press, Phantom Force, Steamroller or Stomp), even if evasion is not boosted. Minimizing is not cumulative.
+										<p>
+											Gen 6+: The above attacks have perfect accuracy against Minimized Pokémon.
+										</p>
+									</td>
+									<td>
+										Minimize
+									</td>
+								</tr>
+								<tr>
+									<th>
+										035
+									</th>
+									<td>
+										Decreases the user's Defense and Special Defense by 1 stage each. Increases the user's Attack, Speed and Special Attack by 2 stages each.
+									</td>
+									<td>
+										Shell Smash
+									</td>
+								</tr>
+								<tr>
+									<th>
+										036
+									</th>
+									<td>
+										Increases the user's Speed by 2 stages, and its Attack by 1 stage.
+									</td>
+									<td>
+										Shift Gear
+									</td>
+								</tr>
+								<tr>
+									<th>
+										037
+									</th>
+									<td>
+										Increases one random stat of the user's by 2 stages. Stats that can be raised are Attack, Defense, Speed, Special Attack, Special Defense, accuracy and evasion.
+									</td>
+									<td>
+										Acupressure
+									</td>
+								</tr>
+								<tr>
+									<th>
+										038
+									</th>
+									<td>
+										Increases the user's Defense by 3 stages.
+									</td>
+									<td>
+										Cotton Guard
+									</td>
+								</tr>
+								<tr>
+									<th>
+										039
+									</th>
+									<td>
+										Increases the user's Special Attack by 3 stages.
+									</td>
+									<td>
+										Tail Glow
+									</td>
+								</tr>
+								<tr>
+									<th>
+										03A
+									</th>
+									<td>
+										Reduces the user's HP by half of its total HP, and sets the user's Attack stat stage to +6 (i.e. maximum). Fails if the user would faint because of this, or if the user's Attack is already at +6.
+									</td>
+									<td>
+										Belly Drum
+									</td>
+								</tr>
+								<tr>
+									<th>
+										03B
+									</th>
+									<td>
+										Decreases the user's Attack and Defense by 1 stage each.
+									</td>
+									<td>
+										Superpower
+									</td>
+								</tr>
+								<tr>
+									<th>
+										03C
+									</th>
+									<td>
+										Decreases the user's Defense and Special Defense by 1 stage each.
+									</td>
+									<td>
+										Close Combat, Dragon Ascent
+									</td>
+								</tr>
+								<tr>
+									<th>
+										03D
+									</th>
+									<td>
+										Decreases the user's Defense, Speed and Special Defense by 1 stage each. The user's ally loses 1/16 of its total HP (this is not considered an attack by the user on that ally).
+									</td>
+									<td>
+										V-create
+									</td>
+								</tr>
+								<tr>
+									<th>
+										03E
+									</th>
+									<td>
+										Decreases the user's Speed by 1 stage.
+									</td>
+									<td>
+										Hammer Arm, Ice Hammer
+									</td>
+								</tr>
+								<tr>
+									<th>
+										03F
+									</th>
+									<td>
+										Decreases the user's Special Attack by 2 stages.
+									</td>
+									<td>
+										Draco Meteor, Fleur Cannon, Leaf Storm, Overheat, Psycho Boost
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span id="Changes_target's_stat_stages"></span><span class="mw-headline" id="Changes_target.27s_stat_stages">Changes target's stat stages</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										040
+									</th>
+									<td>
+										Increases the target's Special Attack by 1 stage (if possible), and confuses the target (if possible).
+									</td>
+									<td>
+										Flatter
+									</td>
+								</tr>
+								<tr>
+									<th>
+										041
+									</th>
+									<td>
+										Increases the target's Attack by 2 stages (if possible), and confuses the target (if possible).
+									</td>
+									<td>
+										Swagger
+									</td>
+								</tr>
+								<tr>
+									<th>
+										042
+									</th>
+									<td>
+										Decreases the target's Attack by 1 stage.
+									</td>
+									<td>
+										Aurora Beam, Baby-Doll Eyes, Growl, Lunge, Play Rough
+									</td>
+								</tr>
+								<tr>
+									<th>
+										043
+									</th>
+									<td>
+										Decreases the target's Defense by 1 stage.
+									</td>
+									<td>
+										Crunch, Crush Claw, Fire Lash, Iron Tail, Leer, Liquidation, Razor Shell, Rock Smash, Shadow Bone, Tail Whip
+									</td>
+								</tr>
+								<tr>
+									<th>
+										044
+									</th>
+									<td>
+										Decreases the target's Speed by 1 stage.
+										<p>
+											For Bulldoze only, power is halved if Grassy Terrain is in effect.
+										</p>
+									</td>
+									<td>
+										Bubble, Bubble Beam, Bulldoze, Constrict, Electroweb, Glaciate, Icy Wind, Low Sweep, Mud Shot, Rock Tomb
+									</td>
+								</tr>
+								<tr>
+									<th>
+										045
+									</th>
+									<td>
+										Decreases the target's Special Attack by 1 stage.
+									</td>
+									<td>
+										Mist Ball, Moonblast, Mystical Fire, Snarl, Struggle Bug
+									</td>
+								</tr>
+								<tr>
+									<th>
+										046
+									</th>
+									<td>
+										Decreases the target's Special Defense by 1 stage.
+									</td>
+									<td>
+										Acid, Bug Buzz, Earth Power, Energy Ball, Flash Cannon, Focus Blast, Luster Purge, Psychic, Shadow Ball
+									</td>
+								</tr>
+								<tr>
+									<th>
+										047
+									</th>
+									<td>
+										Decreases the target's accuracy by 1 stage.
+									</td>
+									<td>
+										Flash, Kinesis, Leaf Tornado, Mirror Shot, Mud Bomb, Mud-Slap, Muddy Water, Night Daze, Octazooka, Sand Attack, Smokescreen
+									</td>
+								</tr>
+								<tr>
+									<th>
+										048
+									</th>
+									<td>
+										Decreases the target's evasiveness by 1 stage.
+										<p>
+											Gen 6+: Decreases the target's evasiveness by 2 stages instead.
+										</p>
+									</td>
+									<td>
+										Sweet Scent
+									</td>
+								</tr>
+								<tr>
+									<th>
+										049
+									</th>
+									<td>
+										Decreases the target's evasiveness by 1 stage. Ends the effects of Aurora Veil, Light Screen, Mist, Reflect, Safeguard, Spikes, Stealth Rock, Sticky Web and Toxic Spikes on the target's side (even if the evasiveness wasn't changed).
+										<p>
+											Gen 6+: The effects are ended on both sides of the field.
+										</p>
+									</td>
+									<td>
+										Defog
+									</td>
+								</tr>
+								<tr>
+									<th>
+										04A
+									</th>
+									<td>
+										Decreases the target's Attack and Defense by 1 stage each.
+									</td>
+									<td>
+										Tickle
+									</td>
+								</tr>
+								<tr>
+									<th>
+										04B
+									</th>
+									<td>
+										Decreases the target's Attack by 2 stages.
+									</td>
+									<td>
+										Charm, Feather Dance
+									</td>
+								</tr>
+								<tr>
+									<th>
+										04C
+									</th>
+									<td>
+										Decreases the target's Defense by 2 stages.
+									</td>
+									<td>
+										Screech
+									</td>
+								</tr>
+								<tr>
+									<th>
+										04D
+									</th>
+									<td>
+										Decreases the target's Speed by 2 stages.
+										<p>
+											Gen 6+: String Shot decreases the target's Speed by 2 stages. Prior to Gen 6, it lowers the target's Speed by 1 stage instead.
+										</p>
+									</td>
+									<td>
+										Cotton Spore, Scary Face, String Shot
+									</td>
+								</tr>
+								<tr>
+									<th>
+										04E
+									</th>
+									<td>
+										Decreases the target's Special Attack by 2 stages, if it is the opposite gender to the user. Fails if the target has the ability Oblivious, is the same gender as the user, or if either Pokémon is genderless.
+									</td>
+									<td>
+										Captivate
+									</td>
+								</tr>
+								<tr>
+									<th>
+										04F
+									</th>
+									<td>
+										Decreases the target's Special Defense by 2 stages.
+									</td>
+									<td>
+										Acid Spray, Fake Tears, Metal Sound, Seed Flare
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Other_changes_to_stats_and_stat_stages">Other changes to stats and stat stages</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										050
+									</th>
+									<td>
+										Resets all stat stages for the target to 0.
+									</td>
+									<td>
+										Clear Smog
+									</td>
+								</tr>
+								<tr>
+									<th>
+										051
+									</th>
+									<td>
+										Resets all stat stages for all Pokémon in battle to 0.
+									</td>
+									<td>
+										Haze
+									</td>
+								</tr>
+								<tr>
+									<th>
+										052
+									</th>
+									<td>
+										The user and the target swap their Attack stat stages with each other, and their Special Attack stat stages with each other.
+									</td>
+									<td>
+										Power Swap
+									</td>
+								</tr>
+								<tr>
+									<th>
+										053
+									</th>
+									<td>
+										The user and the target swap their Defense stat stages with each other, and their Special Defense stat stages with each other.
+									</td>
+									<td>
+										Guard Swap
+									</td>
+								</tr>
+								<tr>
+									<th>
+										054
+									</th>
+									<td>
+										The user and the target swap their stat stages.
+									</td>
+									<td>
+										Heart Swap
+									</td>
+								</tr>
+								<tr>
+									<th>
+										055
+									</th>
+									<td>
+										The user copies all of the target's stat stages.
+										<p>
+											Gen 6+: This also copies the target's critical hit ratio and effect of Laser Focus.
+										</p>
+									</td>
+									<td>
+										Psych Up
+									</td>
+								</tr>
+								<tr>
+									<th>
+										056
+									</th>
+									<td>
+										For 5 rounds (including the current round), no attacks or abilities (except Haze) can reduce the stat stages of any Pokémon on the user's side (unless that reduction is self-inflicted). Fails if the user's side is already being affected by this effect.
+									</td>
+									<td>
+										Mist
+									</td>
+								</tr>
+								<tr>
+									<th>
+										057
+									</th>
+									<td>
+										The user swaps its base Attack and Defense. This does not affect stat stages.
+									</td>
+									<td>
+										Power Trick
+									</td>
+								</tr>
+								<tr>
+									<th>
+										058
+									</th>
+									<td>
+										Sets both the user's Attack and the target's Attack to the average of the two, rounded down. Sets both the user's Special Attack and the target's Special Attack to the average of the two, rounded down. This does not affect stat stages.
+									</td>
+									<td>
+										Power Split
+									</td>
+								</tr>
+								<tr>
+									<th>
+										059
+									</th>
+									<td>
+										Sets both the user's Defense and the target's Defense to the average of the two, rounded down. Sets both the user's Special Defense and the target's Special Defense to the average of the two, rounded down. This does not affect stat stages.
+									</td>
+									<td>
+										Guard Split
+									</td>
+								</tr>
+								<tr>
+									<th>
+										05A
+									</th>
+									<td>
+										Sets both the user's current HP and the target's current HP to the average of the two, rounded down (or their total HP, whichever is less).
+									</td>
+									<td>
+										Pain Split
+									</td>
+								</tr>
+								<tr>
+									<th>
+										05B
+									</th>
+									<td>
+										For 4 rounds (excluding the current round), all Pokémon on the user's side have their Speed doubled. This does not affect stat stages. Fails if the user's side is already being affected by this effect.
+									</td>
+									<td>
+										Tailwind
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span id="Changes_attributes_of_Pokémon"></span><span class="mw-headline" id="Changes_attributes_of_Pok.C3.A9mon">Changes attributes of Pokémon</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										05C
+									</th>
+									<td>
+										This move turns into the last move used by the target, with full PP. Fails if that move is Chatter, Metronome, Mimic, Sketch, Struggle, a move the user knows, or a Shadow move. Fails if the user has transformed, or the target hasn't yet used a move. This move change lasts until the user is switched out.
+									</td>
+									<td>
+										Mimic
+									</td>
+								</tr>
+								<tr>
+									<th>
+										05D
+									</th>
+									<td>
+										This move permanently turns into the last move used by the target, with full PP. Fails if that move is Chatter, Sketch, Struggle, a move the user knows, or a Shadow move. Fails if the user has transformed, or the target hasn't yet used a move.
+									</td>
+									<td>
+										Sketch
+									</td>
+								</tr>
+								<tr>
+									<th>
+										05E
+									</th>
+									<td>
+										The user's types are changed to that of a randomly chosen user's move (ignoring this move and pseudo-types such as&nbsp;???, and taking the original type of those moves). Fails if the user has the ability Multitype, or if none of the user's moves are a different type to the user's type(s).
+									</td>
+									<td>
+										Conversion
+									</td>
+								</tr>
+								<tr>
+									<th>
+										05F
+									</th>
+									<td>
+										The user's types are changed to a random type that resists/is immune to the type of the last attack used by the target. Fails if the user has the ability Multitype, if there is no "last move used" or valid type, or if the only possible types are ones the user already has.
+										<p>
+											Moves that can change their types are treated as their calculated types, not their original type. Effects that change the move's type, such as Normalize, also apply here.
+										</p>
+									</td>
+									<td>
+										Conversion 2
+									</td>
+								</tr>
+								<tr>
+									<th>
+										060
+									</th>
+									<td>
+										The user's types change depending on the environment:
+										<ul>
+											<li>(Tall grass, very tall grass) - Grass</li>
+											<li>(On water, underwater) - Water</li>
+											<li>(Caves) - Rock</li>
+											<li>(Rocks and sand) - Ground</li>
+											<li>(Forest) - Bug</li>
+											<li>(Snow and ice) - Ice</li>
+											<li>(Volcano) - Fire</li>
+											<li>(Graveyard) - Ghost</li>
+											<li>(Sky) - Flying</li>
+											<li>(Space) - Dragon</li>
+											<li>(Elsewhere) - Normal</li>
+										</ul>
+										<p>
+											The following moves override the above if they are in effect:
+										</p>
+										<ul>
+											<li>(Electric Terrain) - Electric</li>
+											<li>(Grassy Terrain) - Grass</li>
+											<li>(Misty Terrain) - Fairy</li>
+											<li>(Psychic Terrain) - Psychic</li>
+										</ul>
+										<p>
+											Fails if the user is already the new type (even partially), or if the user has the ability Multitype.
+										</p><p>
+											Note that, by default, Essentials does not have a way to use certain environments, and therefore this move cannot by default give the user certain types.
+										</p>
+									</td>
+									<td>
+										Camouflage
+									</td>
+								</tr>
+								<tr>
+									<th>
+										061
+									</th>
+									<td>
+										The target's types become Water. Fails if the target has the ability Multitype or has a substitute.
+									</td>
+									<td>
+										Soak
+									</td>
+								</tr>
+								<tr>
+									<th>
+										062
+									</th>
+									<td>
+										The user's types are changed to the target's types. Fails if both types are already the same, or if the user's ability is Multitype. Works through the target's Illusion.
+									</td>
+									<td>
+										Reflect Type
+									</td>
+								</tr>
+								<tr>
+									<th>
+										063
+									</th>
+									<td>
+										The target's ability becomes Simple. Fails if the target's ability is Multitype, Simple, Stance Change or Truant, or if the target has a substitute. Works through the target's Illusion.
+									</td>
+									<td>
+										Simple Beam
+									</td>
+								</tr>
+								<tr>
+									<th>
+										064
+									</th>
+									<td>
+										The target's ability becomes Insomnia. Fails if the target's ability is Insomnia, Multitype, Stance Change or Truant, or if the target has a substitute. Works through the target's Illusion.
+									</td>
+									<td>
+										Worry Seed
+									</td>
+								</tr>
+								<tr>
+									<th>
+										065
+									</th>
+									<td>
+										The user's ability is changed to the target's ability. Fails if:
+										<ul>
+											<li>Both abilities are already the same.</li>
+											<li>The user's ability is Multitype.</li>
+											<li>The target's ability is Flower Gift, Forecast, Illusion, Imposter, Multitype, Stance Change, Trace, Wonder Guard or Zen Mode.</li>
+											<li>The target doesn't have an ability.</li>
+										</ul>
+									</td>
+									<td>
+										Role Play
+									</td>
+								</tr>
+								<tr>
+									<th>
+										066
+									</th>
+									<td>
+										The target's ability is changed to the user's ability. Works through the target's Illusion. Fails if:
+										<ul>
+											<li>Both abilities are already the same.</li>
+											<li>The target's ability is Multitype, Stance Change or Truant.</li>
+											<li>The user's ability is Flower Gift, Forecast, Illusion, Imposter, Multitype, Stance Change, Trace or Zen Mode.</li>
+											<li>The user doesn't have an ability.</li>
+											<li>The target has a substitute.</li>
+										</ul>
+									</td>
+									<td>
+										Entrainment
+									</td>
+								</tr>
+								<tr>
+									<th>
+										067
+									</th>
+									<td>
+										The user and the target swap their abilities. Abilities which trigger upon the bearer switching in activate at this time. Fails if both abilities are the same, neither Pokémon has an ability, or if either ability is Illusion, Multitype, Stance Change or Wonder Guard.
+									</td>
+									<td>
+										Skill Swap
+									</td>
+								</tr>
+								<tr>
+									<th>
+										068
+									</th>
+									<td>
+										The target's ability is negated, even if the target later transforms. Doesn't affect abilities whose effects have already occurred (e.g. Intimidate). When the target's ability is negated, its Truant count is reset. Fails if the target's ability is Multitype. Works through the target's Illusion.
+									</td>
+									<td>
+										Gastro Acid
+									</td>
+								</tr>
+								<tr>
+									<th>
+										069
+									</th>
+									<td>
+										The user copies and adopts the following from the target:
+										<ul>
+											<li>Species.</li>
+											<li>Appearance (uses the details of the target).</li>
+											<li>Base Attack, Defense, Speed, Special Attack, Special Defense.</li>
+											<li>Stat stages.</li>
+											<li>Moves known (each with 5 PP and a max. PP of 5).</li>
+											<li>Types.</li>
+											<li>Ability.</li>
+										</ul>
+										<p>
+											The user's catch rate/Exp yield/IV yield are still those of the original user, not of the species it transformed into. If the user was affected by Disable, it is no longer affected by it. The user's form cannot change while transformed (e.g. if it is Castform/Giratina/etc.). All changes are reverted if the user is switched out.
+										</p><p>
+											Fails if the target is using Bounce, Dig, Dive, Fly, Shadow Force or Sky Drop, or is under the effect of Sky Drop. Fails if either Pokémon has already transformed, or if the target has a substitute, or if the target is affected by the ability Illusion.
+										</p><p>
+											Gen 6+: This also copies the target's critical hit ratio and effect of Laser Focus.
+										</p>
+									</td>
+									<td>
+										Transform
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Inflicts_fixed_amount_of_damage">Inflicts fixed amount of damage</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										06A
+									</th>
+									<td>
+										Inflicts a fixed 20 damage to the target. Affected by type immunities.
+									</td>
+									<td>
+										Sonic Boom
+									</td>
+								</tr>
+								<tr>
+									<th>
+										06B
+									</th>
+									<td>
+										Inflicts a fixed 40 damage to the target. Affected by type immunities.
+									</td>
+									<td>
+										Dragon Rage
+									</td>
+								</tr>
+								<tr>
+									<th>
+										06C
+									</th>
+									<td>
+										Inflicts a fixed amount of damage to the target equal to half of its current HP, rounded down. Affected by type immunities.
+									</td>
+									<td>
+										Nature's Madness, Super Fang
+									</td>
+								</tr>
+								<tr>
+									<th>
+										06D
+									</th>
+									<td>
+										Inflicts a fixed amount of damage to the target equal to the user's level. Affected by type immunities.
+									</td>
+									<td>
+										Night Shade, Seismic Toss
+									</td>
+								</tr>
+								<tr>
+									<th>
+										06E
+									</th>
+									<td>
+										Inflicts a fixed amount of damage to the target equal to <code>(target's HP - user's HP)</code> (i.e. makes target's HP become equal to the user's HP). Affected by type immunities. Fails if the user's HP is equal to or greater than the target's HP.
+									</td>
+									<td>
+										Endeavor
+									</td>
+								</tr>
+								<tr>
+									<th>
+										06F
+									</th>
+									<td>
+										Inflicts a fixed amount of damage to the target equal to <code>(user's level) * (N + 50) / 100</code>, rounded down, where <code>N</code> is a random number from 0 through 100 inclusive. Affected by type immunities.
+									</td>
+									<td>
+										Psywave
+									</td>
+								</tr>
+								<tr>
+									<th>
+										070
+									</th>
+									<td>
+										One-hit KO. Inflicts a fixed amount of damage to the target equal to its current HP (or the substitute's HP if it has one). This attack's original accuracy increases by the level difference between the user and the target (other accuracy modifiers are ignored for this attack). Fails if the target's level is higher than the user's level. Affected by type immunities.
+									</td>
+									<td>
+										Fissure, Guillotine, Horn Drill, Sheer Cold
+									</td>
+								</tr>
+								<tr>
+									<th>
+										071
+									</th>
+									<td>
+										If the last non-user who hit the user with a damaging physical attack this round is an opponent, inflicts twice the damage taken by that attack to the Pokémon in that opponent's position. Fails if that amount is zero. Affected by type immunities.
+										<p>
+											For multi-hit attacks, only the last hit is taken into account.
+										</p>
+									</td>
+									<td>
+										Counter
+									</td>
+								</tr>
+								<tr>
+									<th>
+										072
+									</th>
+									<td>
+										If the last non-user who hit the user with a damaging special attack this round is an opponent, inflicts twice the damage taken by that attack to the Pokémon in that opponent's position. Fails if that amount is zero. Affected by type immunities.
+										<p>
+											For multi-hit attacks, only the last hit is taken into account.
+										</p>
+									</td>
+									<td>
+										Mirror Coat
+									</td>
+								</tr>
+								<tr>
+									<th>
+										073
+									</th>
+									<td>
+										If the last non-user who hit the user with a damaging attack this round is an opponent, inflicts 1.5 times the damage taken by that attack to the Pokémon in that opponent's position. Fails if that amount is zero. Affected by type immunities.
+										<p>
+											For multi-hit attacks, only the last hit is taken into account.
+										</p>
+									</td>
+									<td>
+										Metal Burst
+									</td>
+								</tr>
+								<tr>
+									<th>
+										074
+									</th>
+									<td>
+										The target's ally loses 1/16 of its total HP. This is not considered an attack by the user on that ally.
+									</td>
+									<td>
+										Flame Burst
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span id="Affects_an_attack's_power,_type_or_effect"></span><span class="mw-headline" id="Affects_an_attack.27s_power.2C_type_or_effect">Affects an attack's power, type or effect</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										075
+									</th>
+									<td>
+										Power is doubled if the target is in the middle of using Dive.
+									</td>
+									<td>
+										Surf
+									</td>
+								</tr>
+								<tr>
+									<th>
+										076
+									</th>
+									<td>
+										Power is doubled if the target is in the middle of using Dig. Power is halved if Grassy Terrain is in effect.
+									</td>
+									<td>
+										Earthquake
+									</td>
+								</tr>
+								<tr>
+									<th>
+										077
+									</th>
+									<td>
+										Power is doubled if the target is in the middle of using Bounce, Fly or Sky Drop, or is under the effect of Sky Drop.
+									</td>
+									<td>
+										Gust
+									</td>
+								</tr>
+								<tr>
+									<th>
+										078
+									</th>
+									<td>
+										Power is doubled if the target is in the middle of using Bounce, Fly or Sky Drop, or is under the effect of Sky Drop. Causes the target to flinch.
+									</td>
+									<td>
+										Twister
+									</td>
+								</tr>
+								<tr>
+									<th>
+										079
+									</th>
+									<td>
+										Power is doubled if a non-user has used Fusion Flare or Blue Flare this round. If so, erases this power-up. Uses a different animation if the move is powered up or it is a critical hit.
+									</td>
+									<td>
+										Fusion Bolt
+									</td>
+								</tr>
+								<tr>
+									<th>
+										07A
+									</th>
+									<td>
+										Power is doubled if a non-user has used Fusion Bolt or Bolt Strike this round. If so, erases this power-up. Uses a different animation if the move is powered up or it is a critical hit.
+									</td>
+									<td>
+										Fusion Flare
+									</td>
+								</tr>
+								<tr>
+									<th>
+										07B
+									</th>
+									<td>
+										Power is doubled if the target is poisoned.
+									</td>
+									<td>
+										Venoshock
+									</td>
+								</tr>
+								<tr>
+									<th>
+										07C
+									</th>
+									<td>
+										Power is doubled if the target is paralyzed. Cures the target of paralysis.
+									</td>
+									<td>
+										Smelling Salts
+									</td>
+								</tr>
+								<tr>
+									<th>
+										07D
+									</th>
+									<td>
+										Power is doubled if the target is asleep. Wakes the target up.
+									</td>
+									<td>
+										Wake-Up Slap
+									</td>
+								</tr>
+								<tr>
+									<th>
+										07E
+									</th>
+									<td>
+										Power is doubled if the user is poisoned, burned, or paralyzed.
+										<p>
+											Gen 6+: The burn status's effect of lowering Attack doesn't apply when using this move.
+										</p>
+									</td>
+									<td>
+										Facade
+									</td>
+								</tr>
+								<tr>
+									<th>
+										07F
+									</th>
+									<td>
+										Power is doubled if the target has a status problem.
+									</td>
+									<td>
+										Hex
+									</td>
+								</tr>
+								<tr>
+									<th>
+										080
+									</th>
+									<td>
+										Power is doubled if the target's current HP is less than or equal to 1/2 of its max HP.
+									</td>
+									<td>
+										Brine
+									</td>
+								</tr>
+								<tr>
+									<th>
+										081
+									</th>
+									<td>
+										Power is doubled if the user has lost HP due to the target's attack this round (except by Pain Split). The target's attack could have happened at any point in the round prior to this move's use.
+									</td>
+									<td>
+										Avalanche, Revenge
+									</td>
+								</tr>
+								<tr>
+									<th>
+										082
+									</th>
+									<td>
+										Power is doubled if the target has already lost HP this round (except by Pain Split).
+									</td>
+									<td>
+										Assurance
+									</td>
+								</tr>
+								<tr>
+									<th>
+										083
+									</th>
+									<td>
+										Power is doubled if an ally has already used this move this round (even if unsuccessfully); the doubling is not cumulative. This move goes immediately after the first use of this move, regardless of priority.
+									</td>
+									<td>
+										Round
+									</td>
+								</tr>
+								<tr>
+									<th>
+										084
+									</th>
+									<td>
+										Power is doubled if the target has used an item this round or has already used a move this round.
+									</td>
+									<td>
+										Payback
+									</td>
+								</tr>
+								<tr>
+									<th>
+										085
+									</th>
+									<td>
+										Power is doubled if a Pokémon in the user's party fainted while active during the last round.
+									</td>
+									<td>
+										Retaliate
+									</td>
+								</tr>
+								<tr>
+									<th>
+										086
+									</th>
+									<td>
+										Power is doubled if the user has no held item. Flying Gem is consumed before this check is made.
+									</td>
+									<td>
+										Acrobatics
+									</td>
+								</tr>
+								<tr>
+									<th>
+										087
+									</th>
+									<td>
+										Power is doubled if there is weather. This attack's type changes depending on the weather, as follows:
+										<ul>
+											<li>(Sunny weather) - Fire</li>
+											<li>(Rainy weather) - Water</li>
+											<li>(Hail weather) - Ice</li>
+											<li>(Sandstorm weather) - Rock</li>
+											<li>(Other) - Normal</li>
+										</ul>
+										<p>
+											The following moves override the above if they are in effect:
+										</p>
+										<ul>
+											<li>(Electrify) - Electric</li>
+											<li>(Ion Deluge) - Electric (if the type would otherwise be Normal)</li>
+										</ul>
+									</td>
+									<td>
+										Weather Ball
+									</td>
+								</tr>
+								<tr>
+									<th>
+										088
+									</th>
+									<td>
+										If an opposing Pokémon would choose to switch out of battle this round, then the user uses this move on it (changing its target if necessary) before it switches out. In that case, this move's power is doubled and accuracy checks are ignored.
+									</td>
+									<td>
+										Pursuit
+									</td>
+								</tr>
+								<tr>
+									<th>
+										089
+									</th>
+									<td>
+										Base power is <code>user's happiness * 2/5</code>. It ranges between 1 and 102.
+									</td>
+									<td>
+										Return
+									</td>
+								</tr>
+								<tr>
+									<th>
+										08A
+									</th>
+									<td>
+										Base power is <code>(255 - user's happiness) * 2/5</code>. It ranges between 1 and 102.
+									</td>
+									<td>
+										Frustration
+									</td>
+								</tr>
+								<tr>
+									<th>
+										08B
+									</th>
+									<td>
+										Base power is <code>(user's current HP / user's total HP) * 150</code>, rounded down. It ranges between 1 and 150.
+									</td>
+									<td>
+										Eruption, Water Spout
+									</td>
+								</tr>
+								<tr>
+									<th>
+										08C
+									</th>
+									<td>
+										Base power is <code>(target's current HP / target's total HP) * 120</code>, rounded down. It ranges between 1 and 120.
+									</td>
+									<td>
+										Crush Grip, Wring Out
+									</td>
+								</tr>
+								<tr>
+									<th>
+										08D
+									</th>
+									<td>
+										Base power is <code>(target's current Speed / user's current Speed) * 25</code>, rounded down (max. 150).
+									</td>
+									<td>
+										Gyro Ball
+									</td>
+								</tr>
+								<tr>
+									<th>
+										08E
+									</th>
+									<td>
+										Base power is <code>20 * (1 + sum of user's positive stat stages)</code>. Ignores negative stat stages. It ranges between 20 and 860 (for 7 stats x 6 boosts per stat).
+									</td>
+									<td>
+										Power Trip, Stored Power
+									</td>
+								</tr>
+								<tr>
+									<th>
+										08F
+									</th>
+									<td>
+										Base power is <code>20 * (3 + number of target's positive stat stages)</code>(max. 200). Ignores negative stat stages.
+									</td>
+									<td>
+										Punishment
+									</td>
+								</tr>
+								<tr>
+									<th>
+										090
+									</th>
+									<td>
+										Base power and type depend on calculations using the user's IVs; see elsewhere for the formulae. Takes all defined types into account, except for Normal, Shadow and pseudo-types.
+										<p>
+											Gen 6+: Base power is a fixed 60.
+										</p>
+									</td>
+									<td>
+										Hidden Power
+									</td>
+								</tr>
+								<tr>
+									<th>
+										091
+									</th>
+									<td>
+										<code>X</code> begins at 1, and increases by 1 whenever this attack is successful (max. 4). Power is multiplied by <code>2^(X-1)</code>.
+										<p>
+											<code>X</code> is reset to 1 if:
+										</p>
+										<ul>
+											<li>The user is switched out.</li>
+											<li>This attack is prevented from being used, misses, or becomes ineffective.</li>
+											<li>This attack's PP is reduced to 0.</li>
+											<li>The user falls asleep or becomes frozen.</li>
+											<li>The user uses a different move.</li>
+										</ul>
+									</td>
+									<td>
+										Fury Cutter
+									</td>
+								</tr>
+								<tr>
+									<th>
+										092
+									</th>
+									<td>
+										Power is multiplied by the number of consecutive rounds (including this round) in which this move was used by any Pokémon on the user's side (max. 5).
+									</td>
+									<td>
+										Echoed Voice
+									</td>
+								</tr>
+								<tr>
+									<th>
+										093
+									</th>
+									<td>
+										If this attack is successful, this effect begins. During this effect:
+										<ul><li>Each time the user loses HP due to a non-user's attack (including Future Sight or Doom Desire), increases the user's Attack by 1 stage.</li></ul>
+										<p>
+											This effect ends if the user uses a different attack or does something else.
+										</p>
+									</td>
+									<td>
+										Rage
+									</td>
+								</tr>
+								<tr>
+									<th>
+										094
+									</th>
+									<td>
+										This attack randomly does one of the following:
+										<ul>
+											<li>(20% chance) - Heals the target by 1/4 of its total HP.</li>
+											<li>(40% chance) - This attack's base power is 40.</li>
+											<li>(30% chance) - This attack's base power is 80.</li>
+											<li>(10% chance) - This attack's base power is 120.</li>
+										</ul>
+										<p>
+											Ineffective if the target is immune. A damage-boosting Gem held item is consumed even if this attack would heal the target.
+										</p>
+									</td>
+									<td>
+										Present
+									</td>
+								</tr>
+								<tr>
+									<th>
+										095
+									</th>
+									<td>
+										Base power is chosen at random, as follows:
+										<ul>
+											<li>(5% chance) - 10.</li>
+											<li>(10% chance) - 30.</li>
+											<li>(20% chance) - 50.</li>
+											<li>(30% chance) - 70.</li>
+											<li>(20% chance) - 90.</li>
+											<li>(10% chance) - 110.</li>
+											<li>(5% chance) - 150.</li>
+										</ul>
+										<p>
+											These are referred to as Magnitudes 4 through 10 respectively. Power is doubled if the target is in the middle of using Dig. Power is halved if Grassy Terrain is in effect.
+										</p>
+									</td>
+									<td>
+										Magnitude
+									</td>
+								</tr>
+								<tr>
+									<th>
+										096
+									</th>
+									<td>
+										Base power and type depend on the berry the user is holding. The berry is consumed with no effect. Fails if the item isn't a berry or the user can't use items.
+									</td>
+									<td>
+										Natural Gift
+									</td>
+								</tr>
+								<tr>
+									<th>
+										097
+									</th>
+									<td>
+										Base power depends on the PP of this move (after deducting for this use and applying Pressure) as follows:
+										<ul>
+											<li>(0 PP) - 200.</li>
+											<li>(1 PP) - 80.</li>
+											<li>(2 PP) - 60.</li>
+											<li>(3 PP) - 50.</li>
+											<li>(4 PP or more) - 40.</li>
+										</ul>
+									</td>
+									<td>
+										Trump Card
+									</td>
+								</tr>
+								<tr>
+									<th>
+										098
+									</th>
+									<td>
+										Base power depends on the calculation of <code>48 * (user's current HP / user's total HP)</code>, rounded down. The power is then:
+										<ul>
+											<li>(Result is 0 or 1) - 200.</li>
+											<li>(Result is 2-4) - 150.</li>
+											<li>(Result is 5-9) - 100.</li>
+											<li>(Result is 10-16) - 80.</li>
+											<li>(Result is 17-32) - 40.</li>
+											<li>(Result is 33 or greater) - 20.</li>
+										</ul>
+									</td>
+									<td>
+										Flail, Reversal
+									</td>
+								</tr>
+								<tr>
+									<th>
+										099
+									</th>
+									<td>
+										Base power depends on the calculation of <code>(user's Speed / target's Speed)</code>, rounded down. The power is then:
+										<ul>
+											<li>(Result is 4 or greater) - 150.</li>
+											<li>(Result is 3) - 120.</li>
+											<li>(Result is 2) - 80.</li>
+											<li>(Result is 1) - 60.</li>
+											<li>(Result is less than 1) - 40.</li>
+										</ul>
+									</td>
+									<td>
+										Electro Ball
+									</td>
+								</tr>
+								<tr>
+									<th>
+										09A
+									</th>
+									<td>
+										Base power depends on the target's weight as follows:
+										<ul>
+											<li>(Less than 10kg) - 20.</li>
+											<li>(Between 10kg and 25kg) - 40.</li>
+											<li>(Between 25kg and 50kg) - 60.</li>
+											<li>(Between 50kg and 100kg) - 80.</li>
+											<li>(Between 100kg and 200kg) - 100.</li>
+											<li>(200kg or greater) - 120.</li>
+										</ul>
+									</td>
+									<td>
+										Grass Knot, Low Kick
+									</td>
+								</tr>
+								<tr>
+									<th>
+										09B
+									</th>
+									<td>
+										Base power depends on the calculation of <code>(user's weight / target's weight)</code>, rounded down. The power is then:
+										<ul>
+											<li>(Result is 5 or greater) - 120.</li>
+											<li>(Result is 4) - 100.</li>
+											<li>(Result is 3) - 80.</li>
+											<li>(Result is 2) - 60.</li>
+											<li>(Result is 1 or less) - 40.</li>
+										</ul>
+									</td>
+									<td>
+										Heat Crash, Heavy Slam
+									</td>
+								</tr>
+								<tr>
+									<th>
+										09C
+									</th>
+									<td>
+										The power of attacks used by the user's ally this round is multiplied by 1.5. The effect ends if the ally is switched out. Fails if there is no ally, or if it has already made its move.
+									</td>
+									<td>
+										Helping Hand
+									</td>
+								</tr>
+								<tr>
+									<th>
+										09D
+									</th>
+									<td>
+										During this effect, the power of Electric attacks is divided by 3. (This effect is not cumulative.) The effect ends if the user is switched out. Fails if this effect is active.
+										<p>
+											Gen 6+: The effect now belongs to the field, not the user. It lasts for 5 turns, including the current turn, rather than until the user switches out.
+										</p>
+									</td>
+									<td>
+										Mud Sport
+									</td>
+								</tr>
+								<tr>
+									<th>
+										09E
+									</th>
+									<td>
+										During this effect, the power of Fire attacks is divided by 3. (This effect is not cumulative.) The effect ends if the user is switched out. Fails if this effect is active.
+										<p>
+											Gen 6+: The effect now belongs to the field, not the user. It lasts for 5 turns, including the current turn, rather than until the user switches out.
+										</p>
+									</td>
+									<td>
+										Water Sport
+									</td>
+								</tr>
+								<tr>
+									<th>
+										09F
+									</th>
+									<td>
+										Type depends on the held item and the move used:
+										<ul>
+											<li>(Judgment) - Plates.</li>
+											<li>(Mult-Attack) - Memories</li>
+											<li>(Techno Blast) - Drives.</li>
+										</ul>
+										<p>
+											The following moves override the above type determination if they are in effect:
+										</p>
+										<ul>
+											<li>(Electrify) - Electric</li>
+											<li>(Ion Deluge) - Electric (if the type would otherwise be Normal)</li>
+										</ul>
+										<p>
+											Techno Blast has a different animation for each type.
+										</p>
+									</td>
+									<td>
+										Judgment, Multi-Attack, Techno Blast
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0A0
+									</th>
+									<td>
+										If this attack could be a critical hit, it will definitely be a critical hit.
+									</td>
+									<td>
+										Frost Breath, Storm Throw
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0A1
+									</th>
+									<td>
+										For 5 rounds (including the current round), attacks used against any Pokémon on the user's side cannot become critical hits. Fails if the user's side is already being affected by this effect.
+									</td>
+									<td>
+										Lucky Chant
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0A2
+									</th>
+									<td>
+										For 5 rounds (including the current round), the power of all physical attacks (that are not critical hits) against any Pokémon on the user's side is halved (in single battles) or reduced by 1/3 (in double battles).
+										<p>
+											Fails if the user's side is already being affected by this effect.
+										</p>
+									</td>
+									<td>
+										Reflect
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0A3
+									</th>
+									<td>
+										For 5 rounds (including the current round), the power of all special attacks (that are not critical hits) against any Pokémon on the user's side is halved (in single battles) or reduced by 1/3 (in double battles).
+										<p>
+											Fails if the user's side is already being affected by this effect.
+										</p>
+									</td>
+									<td>
+										Light Screen
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0A4
+									</th>
+									<td>
+										Effect and animation depends on the location:
+										<ul>
+											<li>(Tall grass) - Puts the target to sleep</li>
+											<li>(Water and underwater) - Lowers the target's Attack by 1 stage</li>
+											<li>(Still water and sky) - Lowers the target's Speed by 1 stage</li>
+											<li>(Sand and rocks) - Lowers the target's accuracy by 1 stage</li>
+											<li>(Cave, graveyard, space) - Causes the target to flinch</li>
+											<li>(Snow) - Freezes the target</li>
+											<li>(Volcano) - Burns the target</li>
+											<li>(Elsewhere) - Paralyzes the target</li>
+										</ul>
+										<p>
+											The following moves override the above if they are in effect:
+										</p>
+										<ul>
+											<li>(Electric Terrain) - Paralyzes the target</li>
+											<li>(Grassy Terrain) - Puts the target to sleep</li>
+											<li>(Misty Terrain) - Lowers the target's Special Attack by 1 stage</li>
+											<li>(Psychic Terrain) - Lowers the target's Speed by 1 stage</li>
+										</ul>
+										<p>
+											Note that, by default, Essentials does not have a way to use certain environments, and therefore this move cannot by default have certain effects. Also note that these effects are for Gen 6, and some are different in the old (Gen 5) mechanics.
+										</p>
+									</td>
+									<td>
+										Secret Power
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Attacks_hitting_and_being_avoided">Attacks hitting and being avoided</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										0A5
+									</th>
+									<td>
+										This attack will always hit.
+									</td>
+									<td>
+										Aerial Ace, Aura Sphere, Disarming Voice, Feint Attack, Magical Leaf, Magnet Bomb, Shadow Punch, Shock Wave, Swift, Vital Throw
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0A6
+									</th>
+									<td>
+										Until the end of the next round, the user's attacks will always hit the target. The effect ends if the user or the target is switched out, but can be Baton Passed. Fails if the target has a substitute.
+									</td>
+									<td>
+										Lock-On, Mind Reader
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0A7
+									</th>
+									<td>
+										This effect ends if the target is switched out. Fails if the target is being affected by Crafty Shield. During the effect:
+										<ul><li>The target's evasion stat stages are ignored in accuracy checks for any attacks against the target. All Normal and Fighting attacks used against the target have normal effectiveness against the target's Ghost type.</li></ul>
+									</td>
+									<td>
+										Foresight, Odor Sleuth
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0A8
+									</th>
+									<td>
+										This effect ends if the target is switched out. Fails if the target is being affected by Crafty Shield. During the effect:
+										<ul><li>The target's evasion stat stages are ignored in accuracy checks for any attacks against the target. All Psychic attacks used against the target have normal effectiveness against the Dark type.</li></ul>
+									</td>
+									<td>
+										Miracle Eye
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0A9
+									</th>
+									<td>
+										Ignores the target's Defense, Special Defense and evasion stat stages.
+									</td>
+									<td>
+										Chip Away, Darkest Lariat, Sacred Sword
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0AA
+									</th>
+									<td>
+										For the rest of this round, the user is unaffected by any non-user's attacks which have the "B" flag (i.e. is affected by Protect/Detect). Fails if this is the last attack used this round.
+										<p>
+											A variable "X" starts at 1, and resets to 1 if this attack fails, or if the user uses an attack that isn't Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield or Wide Guard. This attack has a <code>1/X</code> chance of succeeding. "X" is doubled each time this attack is successful.
+										</p>
+									</td>
+									<td>
+										Detect, Protect
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0AB
+									</th>
+									<td>
+										For the rest of this round, all Pokémon on the user's side avoid attacks whose priority is 1 or higher. Fails if this is the last attack used this round, or if this effect already applies.
+										<p>
+											A variable "X" starts at 1, and resets to 1 if this attack fails, or if the user uses an attack that isn't Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield or Wide Guard. This attack has a <code>1/X</code> chance of succeeding. "X" is doubled each time this attack is successful.
+										</p><p>
+											Gen 6+: There is no longer a <code>1/X</code> chance of succeeding, although successful use of this move will still double "X" for the other moves that use it.
+										</p>
+									</td>
+									<td>
+										Quick Guard
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0AC
+									</th>
+									<td>
+										For the rest of this round, all Pokémon on the user's side avoid damaging attacks that target multiple Pokémon (even ones used by an ally). Fails if this is the last attack used this round, or it has already been used by the user's ally this round.
+										<p>
+											A variable "X" starts at 1, and resets to 1 if this attack fails, or if the user uses an attack that isn't Detect, Endure, Protect, Quick Guard or Wide Guard. This attack has a <code>1/X</code> chance of succeeding. "X" is doubled each time this attack is successful.
+										</p><p>
+											Gen 6+: There is no longer a <code>1/X</code> chance of succeeding, although successful use of this move will still double "X" for the other moves that use it.
+										</p>
+									</td>
+									<td>
+										Wide Guard
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0AD
+									</th>
+									<td>
+										Ignores the target's Baneful Bunker, Detect, King's Shield, Protect, Quick Guard and Spiky Shield. The user is not affected by the target's King's Shield or Spiky Shield. If successful, the effect of Crafty Shield is removed from the target's side, and all other attacks against the target this round will ignore their Detect, King's Shield, Protect, Quick Guard, Spiky Shield and Wide Guard.
+									</td>
+									<td>
+										Feint
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Affects_the_attack_used">Affects the attack used</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										0AE
+									</th>
+									<td>
+										Uses the last attack that the target used, against the target (if possible). If that attack has no target or chooses its own target(s) instead, it will do so as usual.
+									</td>
+									<td>
+										Mirror Move
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0AF
+									</th>
+									<td>
+										Uses the last attack that was used. Fails if that attack is:
+										<ul><li>Bestow, Circle Throw, Counter, Covet, Destiny Bond, Detect, Dragon Tail, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Metal Burst, Mirror Coat, Protect, Rage Powder, Snatch, Switcheroo, Thief, Transform, Trick.</li></ul>
+									</td>
+									<td>
+										Copycat
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0B0
+									</th>
+									<td>
+										Uses the attack that the target is about to use, with 50% extra power. It is used with no target (one is randomly chosen if required).
+										<p>
+											Fails if the target has already moved this round, or if the attack is a status move. Fails if that attack is:
+										</p>
+										<ul><li>Chatter, Counter, Covet, Focus Punch, Me First, Metal Burst, Mirror Coat, Struggle, Thief.</li></ul>
+									</td>
+									<td>
+										Me First
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0B1
+									</th>
+									<td>
+										For the rest of this round, if a non-user's attack used against the user has the "C" flag (i.e. is affected by Magic Coat), then the user and target of that attack are reversed (i.e. the user of this attack will use that "C" flag attack against its original user).
+										<p>
+											If that attack has multiple targets, then after the attack has hit targets without Magic Coat/Magic Bounce, targets with Magic Coat/Magic Bounce will each bounce back the attack themselves against all possible targets for them.
+										</p><p>
+											This bouncing overrides the ability Soundproof (i.e. if the user has Soundproof and the attack is sound-based, that attack is still bounced back).
+										</p><p>
+											The effect ends if the user is switched out.
+										</p>
+									</td>
+									<td>
+										Magic Coat
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0B2
+									</th>
+									<td>
+										For the rest of this round, if a non-user uses an attack with the "D" flag (i.e. is affected by Snatch), then the user uses that attack instead. The effect ends when the user is switched out.
+									</td>
+									<td>
+										Snatch
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0B3
+									</th>
+									<td>
+										Uses one of the following attacks depending on the location:
+										<ul>
+											<li>(Tall grass, forest) - Energy Ball</li>
+											<li>(On water, underwater) - Hydro Pump</li>
+											<li>(Still water) - Mud Bomb</li>
+											<li>(Caves) - Power Gem</li>
+											<li>(Rocks and sand) - Earth Power</li>
+											<li>(Snow and ice) - Frost Breath</li>
+											<li>(Volcano) - Lava Plume</li>
+											<li>(Graveyard) - Shadow Ball</li>
+											<li>(Sky) - Air Slash</li>
+											<li>(Space) - Draco Meteor</li>
+											<li>(Elsewhere) - Tri Attack</li>
+										</ul>
+										<p>
+											The following moves override the above if they are in effect:
+										</p>
+										<ul>
+											<li>(Electric Terrain) - Thunderbolt</li>
+											<li>(Grassy Terrain) - Energy Ball</li>
+											<li>(Misty Terrain) - Moon Blast</li>
+											<li>(Psychic Terrain) - Psychic</li>
+										</ul>
+										<p>
+											Note that, by default, Essentials does not have a way to use certain environments, and therefore this move cannot by default turn into certain other moves. Also note that these moves are for Gen 6, and some are different in the old (Gen 5) mechanics.
+										</p>
+									</td>
+									<td>
+										Nature Power
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0B4
+									</th>
+									<td>
+										Uses a random attack known by the user. Cannot use any of the following:
+										<ul>
+											<li>Assist, Bide, Chatter, Copycat, Focus Punch, Me First, Metronome, Mimic, Mirror Move, Nature Power, Sketch, Sleep Talk, Struggle, Uproar.</li>
+											<li>Any two-turn attack</li>
+										</ul>
+										<p>
+											Fails if the user is not asleep, or if there is no viable attack. The used attack does not lose PP.
+										</p>
+									</td>
+									<td>
+										Sleep Talk
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0B5
+									</th>
+									<td>
+										Uses a random attack known by any Pokémon in the user's party (except the user and eggs). Cannot use any Shadow moves or any of the following:
+										<ul><li>Assist, Belch, Bestow, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dragon Tail, Endure, Feint, Focus Punch, Follow Me, Helping Hand, King's Shield, Mat Block, Me First, Metal Burst, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Phantom Force, Protect, Rage Powder, Roar, Sketch, Sleep Talk, Snatch, Spiky Shield, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind.</li></ul>
+									</td>
+									<td>
+										Assist
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0B6
+									</th>
+									<td>
+										Randomly chooses any attack that exists, and uses it. Cannot choose any Shadow moves or any of the following:
+										<ul><li>After You, Assist, Bestow, Chatter, Copycat, Counter, Covet, Destiny Bond, Detect, Endure, Feint, Focus Punch, Follow Me, Freeze Shock, Helping Hand, Ice Burn, Me First, Metal Burst, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Protect, Quash, Quick Guard, Rage Powder, Relic Song, Secret Sword, Sketch, Sleep Talk, Snarl, Snatch, Snore, Struggle, Switcheroo, Techno Blast, Thief, Transform, Trick, V-create, Wide Guard.</li></ul>
+									</td>
+									<td>
+										Metronome
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0B7
+									</th>
+									<td>
+										The target cannot choose to use the same attack twice in a row (including the last one it used before this effect started). This effect ends if the target is switched out.
+									</td>
+									<td>
+										Torment
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0B8
+									</th>
+									<td>
+										Disables any attacks for all opponents that the user also knows. The effect ends if the user is switched out.
+									</td>
+									<td>
+										Imprison
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0B9
+									</th>
+									<td>
+										For 5 rounds (including the current round), disables the last move used by the target at the time this attack was used. Fails if the target doesn't know that move, or if the target is already being disabled. This effect ends if the target is switched out.
+									</td>
+									<td>
+										Disable
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0BA
+									</th>
+									<td>
+										For 4 rounds (including the current round), the target's non-damaging moves are disabled. This effect ends if the target is switched out.
+									</td>
+									<td>
+										Taunt
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0BB
+									</th>
+									<td>
+										For 5 rounds (including the current round), the target's healing moves are disabled. If the target would gain HP because of an effect (except by Pain Split), it doesn't. Damage is still taken from the ability Liquid Ooze. This effect ends if the target is switched out, and can be Baton Passed.
+									</td>
+									<td>
+										Heal Block
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0BC
+									</th>
+									<td>
+										For 4 rounds (including the current round), this effect is active. During this effect:
+										<ul><li>If the target uses an attack, it must be the same attack as the last one it used (i.e. the last attack it used before this effect started). The target can choose its attack's target.</li></ul>
+										<p>
+											This attack fails if the encored attack is Encore, Mimic, Mirror Move, Sketch, Struggle or Transform, if the target doesn't know the encored attack, if the encored attack has zero PP, or if the target is already being affected by this effect.
+										</p><p>
+											This effect ends if the target is switched out, or the encored move has zero PP.
+										</p>
+									</td>
+									<td>
+										Encore
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Multi-hits_attacks_and_multi-turn_attacks">Multi-hits attacks and multi-turn attacks</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										0BD
+									</th>
+									<td>
+										Hits 2 times in a row.
+									</td>
+									<td>
+										Bonemerang, Double Hit, Double Kick, Dual Chop, Gear Grind
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0BE
+									</th>
+									<td>
+										Hits 2 times in a row. May poison the target on each hit.
+									</td>
+									<td>
+										Twineedle
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0BF
+									</th>
+									<td>
+										Hits 3 times in a row. The power of each hit is the attack's original damage multiplied by the hit number. Each hit has its own accuracy check (unless the user has Skill Link).
+									</td>
+									<td>
+										Triple Kick
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0C0
+									</th>
+									<td>
+										Hits 2-5 times in a row:
+										<ul>
+											<li>(2 or 3 hits) - 1/3 chance each.</li>
+											<li>(4 or 5 hits) - 1/6 chance each.</li>
+										</ul>
+									</td>
+									<td>
+										Arm Thrust, Barrage, Bone Rush, Bullet Seed, Comet Punch, Double Slap, Fury Attack, Fury Swipes, Icicle Spear, Pin Missile, Rock Blast, Spike Cannon, Tail Slap, Water Shuriken
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0C1
+									</th>
+									<td>
+										Hits X times in a row, where X is 1 (the user) plus the number of Pokémon in the user's party (both user's and partner's parties in double battles) which are unfainted, have no status problems and isn't the user.
+										<p>
+											The base power of each hit is <code>5 + Y/10</code>, where <code>Y</code> is the base Attack stat for the species of the corresponding suitable Pokémon. Beat Up's user is still the one performing the hits; there is nothing special about damage calculation.
+										</p>
+									</td>
+									<td>
+										Beat Up
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0C2
+									</th>
+									<td>
+										Two-turn attack. On the first turn, does damage. If successful, user skips the second turn.
+									</td>
+									<td>
+										Blast Burn, Frenzy Plant, Giga Impact, Hydro Cannon, Hyper Beam, Prismatic Laser, Roar of Time, Rock Wrecker
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0C3
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage. This attack is only considered to have been used after the second turn.
+									</td>
+									<td>
+										Razor Wind
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0C4
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage. This attack is only considered to have been used after the second turn.
+										<p>
+											Power is halved during any weather other than sunny. During sunny weather, this attack takes one turn instead.
+										</p>
+									</td>
+									<td>
+										Solar Beam, Solar Blade
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0C5
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage and may paralyze the target. This move is only considered to have been used after the second turn.
+									</td>
+									<td>
+										Freeze Shock
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0C6
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage and may burn the target. This attack is only considered to have been used after the second turn.
+									</td>
+									<td>
+										Ice Burn
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0C7
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage and may cause the target to flinch. This attack is only considered to have been used after the second turn.
+									</td>
+									<td>
+										Sky Attack
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0C8
+									</th>
+									<td>
+										Two-turn attack. On the first turn, increases the user's Defense by 1 stage. On the second turn, does damage. This attack is only considered to have been used after the second turn.
+									</td>
+									<td>
+										Skull Bash
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0C9
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage. This attack is only considered to have been used after the second turn. Cannot be used if Gravity is in effect.
+										<p>
+											The user is semi-invulnerable while using this attack. The only attacks it can be hit by are:
+										</p>
+										<ul><li>Gust, Hurricane, Thunder, Twister, Sky Uppercut, Smack Down, Whirlwind</li></ul>
+									</td>
+									<td>
+										Fly
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0CA
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage. This attack is only considered to have been used after the second turn.
+										<p>
+											The user is semi-invulnerable while using this attack. Isn't hit by the hail weather or sandstorm weather. The only attacks it can be hit by are:
+										</p>
+										<ul><li>Earthquake, Magnitude</li></ul>
+									</td>
+									<td>
+										Dig
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0CB
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage. This attack is only considered to have been used after the second turn.
+										<p>
+											The user is semi-invulnerable while using this attack. Isn't hit by the hail weather or sandstorm weather. The only attacks it can be hit by are:
+										</p>
+										<ul><li>Surf, Whirlpool</li></ul>
+									</td>
+									<td>
+										Dive
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0CC
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage and may paralyze the target. This attack is only considered to have been used after the second turn. Cannot be used if Gravity is in effect.
+										<p>
+											The user is semi-invulnerable while using this attack. The only attacks it can be hit by are:
+										</p>
+										<ul><li>Gust, Hurricane, Thunder, Twister, Sky Uppercut, Smack Down, Whirlwind</li></ul>
+									</td>
+									<td>
+										Bounce
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0CD
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage. Ignores the target's Baneful Bunker, Detect, King's Shield, Mat Block, Protect, Quick Guard and Spiky Shield. The user is not affected by the target's King's Shield or Spiky Shield. If successful, the effect of Crafty Shield is removed from the target's side, and all other attacks against the target this round will ignore their Detect, King's Shield, Mat Block, Protect, Quick Guard, Spiky Shield and Wide Guard.
+										<p>
+											The user is invulnerable while using this move.
+										</p>
+									</td>
+									<td>
+										Shadow Force
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0CE
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage. This attack is only considered to have been used after the second turn. Cannot be used if Gravity is in effect.
+										<p>
+											The user and the target are both semi-invulnerable while using this move. The target cannot take any action at all while airborne (not even use items or switch out), and cannot be targeted. The only attacks they can be hit by are:
+										</p>
+										<ul><li>Gust, Hurricane, Thunder, Twister, Sky Uppercut, Smack Down</li></ul>
+										<p>
+											Does not damage Flying Pokémon. Does not damage Pokémon with the ability Levitate, unless Smack Down was used on it previously. In both cases, they are still made unable to move.
+										</p><p>
+											Gen 6+: Fails if the target is 200kg or heavier.
+										</p>
+									</td>
+									<td>
+										Sky Drop
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0CF
+									</th>
+									<td>
+										Multi-turn attack, trapping move. If this attack is successful, the effect begins. This effect lasts for 5 or 6 rounds (including the current round). During this effect:
+										<ul><li>The target cannot switch out or flee. At the end of each round (except the last one), the target loses 1/16 of its total HP.</li></ul>
+										<p>
+											This effect ends if either the user or the target is switched out. The effect is not reset if this or another trapping move is used against the target during the effect.
+										</p><p>
+											Gen 6+: End-of-round damage is 1/8 of total HP instead.
+										</p>
+									</td>
+									<td>
+										Bind, Clamp, Fire Spin, Infestation, Magma Storm, Sand Tomb, Wrap
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0D0
+									</th>
+									<td>
+										Multi-turn attack, trapping move. If this attack is successful, the effect begins. This effect lasts for 5 or 6 rounds (including the current round). During this effect:
+										<ul><li>The target cannot switch out or flee. At the end of each round (except the last one), the target loses 1/16 of its total HP.</li></ul>
+										<p>
+											This effect ends if either the user or the target is switched out. The effect is not reset if this or another trapping move is used against the target during the effect.
+										</p><p>
+											Power is doubled if the target is in the middle of using Dive.
+										</p><p>
+											Gen 6+: End-of-round damage is 1/8 of total HP instead.
+										</p>
+									</td>
+									<td>
+										Whirlpool
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0D1
+									</th>
+									<td>
+										If this attack is successful, the effect begins. This effect lasts for 3 rounds (including the current round). During this effect:
+										<ul><li>The user is forced to use this attack during each of its turns and cannot take any other action. No Pokémon can fall asleep, and each sleeping active Pokémon wakes up at the beginning of its turn and at the end of each round (including the last round).</li></ul>
+										<p>
+											This effect ends if this attack's type is ineffective against the target's type(s), or if the user is switched out or prevented from using this attack (e.g. if this attack's PP is 0, or if the user falls asleep or becomes frozen).
+										</p>
+									</td>
+									<td>
+										Uproar
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0D2
+									</th>
+									<td>
+										If this attack is successful, this effect begins. This effect lasts for 2 or 3 rounds (including the current round). During this effect:
+										<ul><li>The user is forced to use this attack during each of its turns and cannot take any other action. At the end of the last round, the user becomes confused (if it is not already confused).</li></ul>
+										<p>
+											The effect ends (without causing confusion) if this attack misses or is ineffective against the target during use, or if the user is switched out or prevented from using this attack (e.g. if the user falls asleep or becomes frozen).
+										</p><p>
+											If the user is asleep (i.e. move was used by Sleep Talk), this attack just deals damage and lasts 1 round (it does not cause confusion).
+										</p>
+									</td>
+									<td>
+										Outrage, Petal Dance, Thrash
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0D3
+									</th>
+									<td>
+										If this attack is successful, this effect begins and <code>X</code> is set to 0. This effect lasts for 5 rounds (including the current round). During this effect:
+										<ul><li>The user is forced to use this attack during each of its turns and cannot take any other action. Power is multiplied by <code>2^X</code>. <code>X</code> increases by 1 whenever this attack is successful.</li></ul>
+										<p>
+											The effect ends if this attack misses or is ineffective against the target during use, or if the user is switched out or prevented from using this attack (e.g. if the user falls asleep or becomes frozen).
+										</p><p>
+											If the user is asleep (i.e. move was used by Sleep Talk), this attack just deals damage and lasts 1 round.
+										</p>
+									</td>
+									<td>
+										Ice Ball, Rollout
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0D4
+									</th>
+									<td>
+										When this attack is used, this effect begins and <code>X</code> is set to 0. During this effect:
+										<ul><li>The user cannot take any action. Whenever a non-user hits the user with a damaging attack, the HP lost by the user due to that attack is added to <code>X</code>. After the user's second turn after this one, the Pokémon in the position of the last non-user to hit the user with a damaging attack during this attack's effect loses HP equal to <code>(X * 2)</code>, and this effect ends. If there is no Pokémon there, chooses a random opposing Pokémon to damage.</li></ul>
+										<p>
+											Not affected by type immunities. The returned attack is considered to be an attack used by the user. The effect ends (and no damage is returned) if the user is prevented from using this attack or is switched out, or if the user falls asleep or becomes frozen.
+										</p><p>
+											Gen 6+: Is now affected by type immunities.
+										</p>
+									</td>
+									<td>
+										Bide
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Healing_moves">Healing moves</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										0D5
+									</th>
+									<td>
+										The user gains half of its total HP. Fails if its HP is full. Cannot be used if the user is affected by Heal Block.
+									</td>
+									<td>
+										Heal Order, Milk Drink, Recover, Slack Off, Soft-Boiled
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0D6
+									</th>
+									<td>
+										The user gains half of its total HP. Fails if its HP is full. Cannot be used if the user is affected by Heal Block.
+										<p>
+											If the user gains HP, then until the end of the same turn, its Flying type is ignored for attacks used against the user (or treated as Normal if the user is pure Flying).
+										</p>
+									</td>
+									<td>
+										Roost
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0D7
+									</th>
+									<td>
+										At the end of the next round, if there is a Pokémon in the user's position, that Pokémon gains half of the Wish user's total HP. Fails if the user's position is already being affected by this effect. Cannot be used if the user is affected by Heal Block.
+									</td>
+									<td>
+										Wish
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0D8
+									</th>
+									<td>
+										The user gains HP depending on the weather:
+										<ul>
+											<li>(Sunny) - 2/3 of its total HP</li>
+											<li>(Other weather) - 1/4 of its total HP</li>
+											<li>(No weather) - 1/2 of its total HP</li>
+										</ul>
+										<p>
+											Cannot be used if the user is affected by Heal Block.
+										</p>
+									</td>
+									<td>
+										Moonlight, Morning Sun, Synthesis
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0D9
+									</th>
+									<td>
+										The user restores its HP to full, and falls asleep (with a sleep count of 3), even if the user has a status problem. Fails if the user's HP is already full, if the user is already asleep, or if the user cannot fall asleep. Cannot be used if the user is affected by Heal Block.
+									</td>
+									<td>
+										Rest
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0DA
+									</th>
+									<td>
+										Rings the user. While the user is ringed:
+										<ul><li>At the end of each round, the user gains 1/16 of its total HP.</li></ul>
+										<p>
+											The ringing ends if the user is switched out. The ring can be Baton Passed. Cannot be used if the user is affected by Heal Block.
+										</p>
+									</td>
+									<td>
+										Aqua Ring
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0DB
+									</th>
+									<td>
+										Ingrains the user. While the user is ingrained:
+										<ul><li>The user cannot flee or switch out manually. The user can neither be made to end a wild battle nor be switched out by a non-user's move/item (it can still be switched out via Baton Pass, U-turn, Volt Switch or Parting Shot). The user is no longer airborne. At the end of each round, the user gains 1/16 of its total HP.</li></ul>
+										<p>
+											The ingraining ends if the user is switched out. Ingraining can be Baton Passed. Cannot be used if the user is affected by Heal Block.
+										</p>
+									</td>
+									<td>
+										Ingrain
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0DC
+									</th>
+									<td>
+										Seeds the target. While a Pokémon is seeded:
+										<ul><li>At the end of each round, the Pokémon loses 1/8 of its total HP, and the Pokémon in the user's position gains that amount of HP.</li></ul>
+										<p>
+											The seeding ends if the target is switched out or uses Rapid Spin. Fails if the target is at least part Grass.
+										</p>
+									</td>
+									<td>
+										Leech Seed
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0DD
+									</th>
+									<td>
+										The user gains half the HP the target lost from this attack (min. 1 HP gained).
+										<p>
+											Gen 6+: Cannot be used if the user is affected by Heal Block.
+										</p>
+									</td>
+									<td>
+										Absorb, Drain Punch, Giga Drain, Horn Leech, Leech Life, Mega Drain, Parabolic Charge
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0DE
+									</th>
+									<td>
+										The user gains half the HP the target lost from this attack (min. 1 HP gained). Fails if the target is not asleep.
+										<p>
+											Gen 6+: Cannot be used if the user is affected by Heal Block.
+										</p>
+									</td>
+									<td>
+										Dream Eater
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0DF
+									</th>
+									<td>
+										The target gains half of its total HP. Fails if its HP is full or it has a substitute. Cannot be used if the user is affected by Heal Block.
+									</td>
+									<td>
+										Heal Pulse
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Involves_fainting">Involves fainting</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										0E0
+									</th>
+									<td>
+										User faints.
+									</td>
+									<td>
+										Explosion, Self-Destruct
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0E1
+									</th>
+									<td>
+										The user faints. Inflicts a fixed amount of damage to the target equal to the user's current HP. User doesn't faint if there is no target or the attack missed. Affected by type immunities.
+									</td>
+									<td>
+										Final Gambit
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0E2
+									</th>
+									<td>
+										The user faints. Decreases the target's Attack and Special Attack by 2 stages each (if possible). User doesn't faint if there is no target or the attack missed, but does even if the target's stats can't be reduced after all.
+									</td>
+									<td>
+										Memento
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0E3
+									</th>
+									<td>
+										The user faints. The Pokémon that switches in to replace the user is fully healed (HP and status). Fails if there wouldn't be a replacement Pokémon (the user does not faint). Cannot be used if the user is affected by Heal Block.
+									</td>
+									<td>
+										Healing Wish
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0E4
+									</th>
+									<td>
+										The user faints. The Pokémon that switches in to replace the user is fully healed (HP and status) and all its PP is restored. Fails if there wouldn't be a replacement Pokémon (the user does not faint). Cannot be used if the user is affected by Heal Block.
+									</td>
+									<td>
+										Lunar Dance
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0E5
+									</th>
+									<td>
+										Each active Pokémon without a Perish count receives a Perish count of 4. At the end of each round (including the current round), each battler's Perish count is reduced by 1. All Pokémon with a Perish count of 0 faint simultaneously (and new Pokémon become active immediately; they do not get a Perish count).
+										<p>
+											A Pokémon's Perish count is removed if it is switched out (the replacement Pokémon does not get a Perish count). A Perish count can be Baton Passed.
+										</p>
+									</td>
+									<td>
+										Perish Song
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0E6
+									</th>
+									<td>
+										Until the user's next turn, if an attack causes the user to faint (including Pursuit), that attack's PP is reduced to 0. The effect ends if the user is switched out.
+									</td>
+									<td>
+										Grudge
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0E7
+									</th>
+									<td>
+										Until the user next moves, if an attack causes the user to faint (except Doom Desire/Future Sight), that attacker also faints. The effect ends if the user is switched out.
+									</td>
+									<td>
+										Destiny Bond
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0E8
+									</th>
+									<td>
+										For the rest of this round, if the user's HP would be reduced to less than 1 by a non-user's attack, that attack's damage is changed so that it reduces the user's HP to 1 instead. Will stop a multi-hit move once the user's HP reaches 1.
+										<p>
+											Fails if this is the last attack to be used this round.
+										</p><p>
+											A variable "X" starts at 1, and resets to 1 if this move fails, or if the user uses a move that isn't Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield or Wide Guard. This move has a <code>1/X</code> chance of succeeding. "X" is doubled each time this move is successful.
+										</p>
+									</td>
+									<td>
+										Endure
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0E9
+									</th>
+									<td>
+										If this attack would reduce the target's HP to less than 1, the damage dealt is changed so that it reduces the target's HP to 1 instead. Does not fail even if this attack would do 0 damage.
+									</td>
+									<td>
+										False Swipe, Hold Back
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Switching_and_fleeing">Switching and fleeing</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										0EA
+									</th>
+									<td>
+										Ends wild battles immediately (user flees). Fails if it is a trainer battle.
+									</td>
+									<td>
+										Teleport
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0EB
+									</th>
+									<td>
+										In wild battles, ends the battle immediately. Fails if the user's level is lower than the target's level.
+										<p>
+											In trainer battles, replaces the target with a random non-active Pokémon from the target's party. Fails if the target's party has no viable non-active Pokémon.
+										</p><p>
+											In both cases, fails if the target cannot be switched out (e.g. is affected by Ingrain or has the ability Suction Cups).
+										</p>
+									</td>
+									<td>
+										Roar, Whirlwind
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0EC
+									</th>
+									<td>
+										In wild battles, if the user and the target have at least 1 HP each after using this attack, ends the battle immediately. Fails if the user's level is lower than the target's level.
+										<p>
+											In trainer battles, if the user and the target have at least 1 HP each after using this attack, replaces the target with a random non-active Pokémon from the target's party. Doesn't work if the target's party has no viable non-active Pokémon.
+										</p><p>
+											In both cases, the additional effect doesn't occur if the target cannot be switched out (e.g. is affected by Ingrain or has the ability Suction Cups).
+										</p>
+									</td>
+									<td>
+										Circle Throw, Dragon Tail
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0ED
+									</th>
+									<td>
+										Replaces the user with a different non-active Pokémon in the user's party (of the user's choice). The replacement Pokémon inherits various things from the user, including stat stages, substitutes and certain other effects. Fails if there is no possible replacement. Ignores trapping moves.
+									</td>
+									<td>
+										Baton Pass
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0EE
+									</th>
+									<td>
+										If this move inflicts damage, and if the user is still active and hasn't fainted and it isn't the end of the battle, replaces the user with a different non-active Pokémon in the user's party (of the user's choice). Ignores trapping moves.
+										<p>
+											If the target has chosen to use Pursuit this round, but hasn't used it yet, then it will interrupt this move to use it at double damage before this move's user switches out. Pursuit currently doesn't interrupt this move.
+										</p>
+									</td>
+									<td>
+										U-turn, Volt Switch
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0EF
+									</th>
+									<td>
+										The target can no longer switch out or flee. This effect ends if either the user or the target is switched out. Fails for status moves if the target is already being affected by this effect.
+									</td>
+									<td>
+										Anchor Shot, Block, Mean Look, Spider Web, Spirit Shackle, Thousand Waves
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Items">Items</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										0F0
+									</th>
+									<td>
+										The target drops its held item for the rest of the battle (if it has one), even if it is later switched out. The item is not dropped if:
+										<ul>
+											<li>The user has fainted.</li>
+											<li>The item would be consumed by this move hitting; it is consumed and not dropped.</li>
+											<li>The target has a substitute.</li>
+											<li>The item is a mail item.</li>
+											<li>The target has Sticky Hold.</li>
+											<li>The target has the ability Multitype and has a Plate, or if the target is a Giratina with a Griseous Orb, or if the target is a Genesect with a Drive, or if the target has a Mega Stone it can use.</li>
+										</ul>
+										<p>
+											Exp. Share still affects experience even if it was knocked off. Items that were knocked off a Pokémon will be returned (reattached) at the end of the battle.
+										</p><p>
+											Gen 6+: If the target is able to lose their item (ignoring Sticky Hold), this move's power is multiplied by 1.5.
+										</p>
+									</td>
+									<td>
+										Knock Off
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0F1
+									</th>
+									<td>
+										The user takes the target's held item (even if the target fainted because of this attack). The item is not stolen if:
+										<ul>
+											<li>The user has fainted.</li>
+											<li>The user is already holding an item.</li>
+											<li>The user is a wild Pokémon using it against the player's Pokémon.</li>
+											<li>The item would be consumed by this move hitting; it is consumed and not stolen.</li>
+											<li>The target has a substitute.</li>
+											<li>The item is a mail item.</li>
+											<li>The target has Sticky Hold.</li>
+											<li>Either Pokémon has the ability Multitype and the item is a Plate, or if either Pokémon is a Giratina and the item is a Griseous Orb, or if either Pokémon is a Genesect and the item is a Drive, or if the item is a Mega Stone that either Pokémon can use.</li>
+										</ul>
+										<p>
+											Stolen items will be returned (reattached) to their original owners at the end of the battle. However, items stolen from wild Pokémon will be kept.
+										</p>
+									</td>
+									<td>
+										Covet, Thief
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0F2
+									</th>
+									<td>
+										The user and the target swap held items. Fails if:
+										<ul>
+											<li>Neither Pokémon is holding an item. (Works if just one of them is holding an item.)</li>
+											<li>The user is a wild Pokémon using it against the player's Pokémon.</li>
+											<li>The target has a substitute.</li>
+											<li>Either item is a mail item.</li>
+											<li>The target has Sticky Hold.</li>
+											<li>Either Pokémon has the ability Multitype and either item is a Plate, or if either Pokémon is a Giratina and either item is a Griseous Orb, or if either Pokémon is a Genesect and either item is a Drive, or if either item is a Mega Stone that either Pokémon can use.</li>
+										</ul>
+										<p>
+											Swapped items will be returned (reattached) to their original owners at the end of trainer battles. However, items swapped during wild Pokémon battles will remain swapped (even if this means the player loses an item).
+										</p>
+									</td>
+									<td>
+										Switcheroo, Trick
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0F3
+									</th>
+									<td>
+										The user gives its held item to the target. Fails if:
+										<ul>
+											<li>The user doesn't have an item.</li>
+											<li>The target is already holding an item.</li>
+											<li>The target has a substitute.</li>
+											<li>The item is a mail item.</li>
+											<li>Either Pokémon has the ability Multitype and the item is a Plate, or if either Pokémon is a Giratina and the item is a Griseous Orb, or if either Pokémon is a Genesect and the item is a Drive, or if the item is a Mega Stone that either Pokémon can use.</li>
+										</ul>
+										<p>
+											Given items will be returned (reattached) to their original owners at the end of trainer battles. However, items given during wild Pokémon battles will remain given (even if this means the player loses an item).
+										</p>
+									</td>
+									<td>
+										Bestow
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0F4
+									</th>
+									<td>
+										After using this move, if the target's held item is a berry and the user has not fainted, the user consumes it and gains its effect (ignoring its trigger conditions). Fails if the item isn't a berry, if the target has a substitute, or if the user has the ability Klutz or is affected by Embargo. The berry is consumed even if the user cannot use items. The berry is lost forever.
+									</td>
+									<td>
+										Bug Bite, Pluck
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0F5
+									</th>
+									<td>
+										If the target's held item is a berry, it is destroyed and lost forever. The berry is not destroyed if the target has a substitute, or the berry was already consumed because of being hit by this move.
+										<p>
+											Gen 6+: A target's held Gem is also destroyed by this move.
+										</p>
+									</td>
+									<td>
+										Incinerate
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0F6
+									</th>
+									<td>
+										If the user isn't holding an item, the user receives the last item it held and consumed (by its own effect or by Fling/Natural Gift) this battle.
+										<p>
+											Works even if the consumed item was not originally the user's.
+										</p>
+									</td>
+									<td>
+										Recycle
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0F7
+									</th>
+									<td>
+										The user drops its held item (even if the attack misses). Base power and effect depend on which item it was. Some items can't be flung (the attack will fail if this is so).
+										<p>
+											Fails if the user isn't holding an item, or can't use items (i.e. Embargo, the ability Klutz). Fails if the user is an Arceus holding a Plate, or a Giratina holding a Griseous Orb, or a Genesect holding a Drive, or if the item is a Mega Stone the user can use.
+										</p>
+									</td>
+									<td>
+										Fling
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0F8
+									</th>
+									<td>
+										For 5 rounds (including the current round), the effects of the target's held item are ignored (with some exceptions), it cannot use its held item, and the target's owner cannot use any items on it.
+										<p>
+											The effect ends if the target is switched out. The embargo can be Baton Passed.
+										</p>
+									</td>
+									<td>
+										Embargo
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0F9
+									</th>
+									<td>
+										For 5 rounds (including the current round), held item effects are ignored. This affects both sides. Items cannot be thrown by moves, but can be swapped/stolen. Berries consumed off an opponent will still work.
+										<p>
+											The effect ends immediately if this move is used again during the effect.
+										</p>
+									</td>
+									<td>
+										Magic Room
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Attacks_with_recoil">Attacks with recoil</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										0FA
+									</th>
+									<td>
+										The user takes recoil damage equal to 1/4 of the damage dealt to the target by this attack (rounded up, min. 1 damage).
+									</td>
+									<td>
+										Head Charge, Submission, Take Down, Wild Charge
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0FB
+									</th>
+									<td>
+										The user takes recoil damage equal to 1/3 of the damage dealt to the target by this attack (rounded up, min. 1 damage).
+									</td>
+									<td>
+										Brave Bird, Double-Edge, Wood Hammer
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0FC
+									</th>
+									<td>
+										The user takes recoil damage equal to 1/2 of the damage dealt to the target by this attack (rounded up, min. 1 damage).
+									</td>
+									<td>
+										Head Smash, Light of Ruin
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0FD
+									</th>
+									<td>
+										The user takes recoil damage equal to 1/3 of the damage dealt to the target by this attack (rounded up, min. 1 damage). May paralyze the target.
+									</td>
+									<td>
+										Volt Tackle
+									</td>
+								</tr>
+								<tr>
+									<th>
+										0FE
+									</th>
+									<td>
+										The user takes recoil damage equal to 1/3 of the damage dealt to the target by this attack (rounded up, min. 1 damage). May burn the target.
+									</td>
+									<td>
+										Flare Blitz
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Weather-inducing_attacks">Weather-inducing attacks</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										0FF
+									</th>
+									<td>
+										Starts sunny weather, which lasts for 5 rounds (including the current round). Sunny weather has the following effect:
+										<ul><li>The power of all Fire attacks is multiplied by 1.5, and the power of all Water attacks is halved. Pokémon cannot be frozen.</li></ul>
+									</td>
+									<td>
+										Sunny Day
+									</td>
+								</tr>
+								<tr>
+									<th>
+										100
+									</th>
+									<td>
+										Starts rainy weather, which lasts for 5 rounds (including the current round). Rainy weather has the following effect:
+										<ul><li>The power of all Water attacks is multiplied by 1.5, and the power of all Fire attacks is halved.</li></ul>
+									</td>
+									<td>
+										Rain Dance
+									</td>
+								</tr>
+								<tr>
+									<th>
+										101
+									</th>
+									<td>
+										Starts sandstorm weather, which lasts for 5 rounds (including the current round). Sandstorm weather has the following effect:
+										<ul><li>At the end of each round (except the last round), each active Pokémon (except Ground, Rock and Steel types) loses 1/16 of its total HP.</li></ul>
+									</td>
+									<td>
+										Sandstorm
+									</td>
+								</tr>
+								<tr>
+									<th>
+										102
+									</th>
+									<td>
+										Starts hail weather, which lasts for 5 rounds (including the current round). Hail weather has the following effect:
+										<ul><li>At the end of each round (except the last round), each active Pokémon (except Ice types) loses 1/16 of its total HP.</li></ul>
+									</td>
+									<td>
+										Hail
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Entry_hazards">Entry hazards</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										103
+									</th>
+									<td>
+										Adds a layer of spikes to the opposing side (max. 3 layers). Whenever an opponent becomes active, that opponent (unless it is airborne such as being Flying type or having the ability Levitate) loses HP depending on how many layers of spikes are on its side:
+										<ul>
+											<li>(1 layer) - 1/8 of total HP.</li>
+											<li>(2 layers) - 1/6 of total HP.</li>
+											<li>(3 layers) - 1/4 of total HP.</li>
+										</ul>
+										<p>
+											Fails if there are already 3 layers of spikes on the opposing side.
+										</p>
+									</td>
+									<td>
+										Spikes
+									</td>
+								</tr>
+								<tr>
+									<th>
+										104
+									</th>
+									<td>
+										Adds a layer of toxic spikes to the opposing side (max. 2 layers). Whenever an opponent becomes active, that opponent (unless it is airborne such as being Flying-type or having the ability Levitate) becomes poisoned (if 1 layer under them) or badly poisoned (if 2 layers). Does not affect Pokémon that cannot be poisoned.
+										<p>
+											Fails if there are already 2 layers of toxic spikes on the opposing side. The toxic spikes are removed if a Poison Pokémon that isn't airborne is switched in.
+										</p>
+									</td>
+									<td>
+										Toxic Spikes
+									</td>
+								</tr>
+								<tr>
+									<th>
+										105
+									</th>
+									<td>
+										Adds stealth rocks to the opposing side. Whenever an opponent becomes active, that opponent loses HP depending on the type effectiveness of Rock against it:
+										<ul>
+											<li>(0.25x) - 1/32 of total HP.</li>
+											<li>(0.5x) - 1/16 of total HP.</li>
+											<li>(1x) - 1/8 of total HP.</li>
+											<li>(2x) - 1/4 of total HP.</li>
+											<li>(4x) - 1/2 of total HP.</li>
+										</ul>
+										<p>
+											Fails if there are already stealth rocks on the opposing side.
+										</p>
+									</td>
+									<td>
+										Stealth Rock
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Pledge_attacks">Pledge attacks</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										106
+									</th>
+									<td>
+										If the user's ally is about to use Fire Pledge or Water Pledge this round, this move does nothing except cause the ally to take their turn next, regardless of priority.
+										<p>
+											If the user's ally has just used Fire Pledge or Water Pledge in the current round (and thus made this move go immediately next), this move's power is doubled. This move becomes Fire Pledge just for this attack, if the ally's move is Fire Pledge. One of the following effects begins, depending on the other Pledge move:
+										</p>
+										<ul>
+											<li>Fire Pledge: For 4 rounds (including the current round), a sea of fire appears on the target's side. At the end of each round, all Pokémon on the affected side lose HP equal to 1/8 of their max HP.</li>
+											<li>Water Pledge: For 4 rounds (including the current round), a swamp appears on the target's side. The speed of all Pokémon on the affected side is halved (this does not affect stat stages).</li>
+										</ul>
+									</td>
+									<td>
+										Grass Pledge
+									</td>
+								</tr>
+								<tr>
+									<th>
+										107
+									</th>
+									<td>
+										If the user's ally is about to use Grass Pledge or Water Pledge this round, this move does nothing except cause the ally to take their turn next, regardless of priority.
+										<p>
+											If the user's ally has just used Grass Pledge or Water Pledge in the current round (and thus made this move go immediately next), this move's power is doubled. This move becomes Water Pledge just for this attack, if the ally's move is Water Pledge. One of the following effects begins, depending on the other Pledge move:
+										</p>
+										<ul>
+											<li>Grass Pledge: For 4 rounds (including the current round), a sea of fire appears on the target's side. At the end of each round, all Pokémon on the affected side lose HP equal to 1/8 of their max HP.</li>
+											<li>Water Pledge: For 4 rounds (including the current round), a rainbow appears on the user's side. The probability of attacks used by battlers on the affected side having their secondary effects occurring is doubled (does not stack with the ability Serene Grace).</li>
+										</ul>
+									</td>
+									<td>
+										Fire Pledge
+									</td>
+								</tr>
+								<tr>
+									<th>
+										108
+									</th>
+									<td>
+										If the user's ally is about to use Grass Pledge or Fire Pledge this round, this move does nothing except cause the ally to take their turn next, regardless of priority.
+										<p>
+											If the user's ally has just used Grass Pledge or Fire Pledge in the current round (and thus made this move go immediately next), this move's power is doubled. This move becomes Grass Pledge just for this attack, if the ally's move is Grass Pledge. One of the following effects begins, depending on the other Pledge move:
+										</p>
+										<ul>
+											<li>Grass Pledge: For 4 rounds (including the current round), a swamp appears on the target's side. The speed of all Pokémon on the affected side is halved (this does not affect stat stages).</li>
+											<li>Fire Pledge: For 4 rounds (including the current round), a rainbow appears on the user's side. The probability of attacks used by battlers on the affected side having their secondary effects occurring is doubled (does not stack with the ability Serene Grace).</li>
+										</ul>
+									</td>
+									<td>
+										Water Pledge
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Other">Other</span></h3>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										109
+									</th>
+									<td>
+										At the end of the battle, if the player wins and the user belongs to the player, the player will gain an additional amount of money equal to 5 times the user's level (when the attack was used). This amount is affected by the items Amulet Coin and Luck Incense.
+									</td>
+									<td>
+										Pay Day
+									</td>
+								</tr>
+								<tr>
+									<th>
+										10A
+									</th>
+									<td>
+										Ignores the effect of Reflect, Light Screen and Aurora Veil. If successful, ends the effects of Light Screen, Reflect and Aurora Veil on the opposing side. Uses a different animation if the move breaks Light Screen, Reflect or Aurora Veil on the opposing side.
+									</td>
+									<td>
+										Brick Break, Psychic Fangs
+									</td>
+								</tr>
+								<tr>
+									<th>
+										10B
+									</th>
+									<td>
+										If this attack misses or is ineffective, the user loses HP equal to half the user's max HP (min. 1). Cannot be used if Gravity is in effect.
+									</td>
+									<td>
+										High Jump Kick, Jump Kick
+									</td>
+								</tr>
+								<tr>
+									<th>
+										10C
+									</th>
+									<td>
+										User loses 1/4 of its total HP (rounded down, min. 1 HP), and creates a decoy with that amount of HP. The decoy disappears if the user is switched out. Fails if the user would faint from losing that HP, or if the user already has a decoy.
+										<p>
+											Gen 6+: Substitutes are bypassed by sound-based moves and by Pokémon with the ability Infiltrator.
+										</p>
+									</td>
+									<td>
+										Substitute
+									</td>
+								</tr>
+								<tr>
+									<th>
+										10D
+									</th>
+									<td>
+										If the user isn't at least part Ghost type, decreases the user's Speed by 1 stage and increases the user's Attack and Defense by 1 stage each.
+										<p>
+											If the user is at least part Ghost, the user loses 1/2 of its total HP (even if the user would faint) and curses the target. A cursed battler loses 1/4 of its total HP at the end of each round. The curse disappears if the battler is switched out. Fails if the target is already cursed or is behind a Crafty Shield.
+										</p><p>
+											This move has a different animation depending on which of the above effects occurs.
+										</p>
+									</td>
+									<td>
+										Curse
+									</td>
+								</tr>
+								<tr>
+									<th>
+										10E
+									</th>
+									<td>
+										Decreases the PP of the last attack used by the target by 4 (or as much as possible). Fails if that attack's PP is 0, or if the target doesn't know that attack.
+									</td>
+									<td>
+										Spite
+									</td>
+								</tr>
+								<tr>
+									<th>
+										10F
+									</th>
+									<td>
+										While the target remains asleep, it loses 1/4 of its total HP at the end of each round. The effect ends if the target wakes up or is switched out.
+										<p>
+											Fails if the target is not asleep.
+										</p>
+									</td>
+									<td>
+										Nightmare
+									</td>
+								</tr>
+								<tr>
+									<th>
+										110
+									</th>
+									<td>
+										If this attack is successful, the following effects end for the user:
+										<ul>
+											<li>Trapping moves.</li>
+											<li>Being seeded by Leech Seed.</li>
+											<li>Spikes, Stealth Rock and Toxic Spikes (for the user's side).</li>
+										</ul>
+									</td>
+									<td>
+										Rapid Spin
+									</td>
+								</tr>
+								<tr>
+									<th>
+										111
+									</th>
+									<td>
+										When used, simply starts a timer which counts 3 rounds (including the current round). At the end of the last round, if there is a Pokémon in the target's position (which isn't the user), this move proper is used against it (including accuracy check, damage calculation, etc.). Damage calculation considers the user and target as they are when the move proper is used, not when the timer is started. Items can change the attack's damage, and do so during damage calculation.
+										<p>
+											If the user is switched out at the time when the move proper is used, it is treated as having no ability or held item, no stat stages or any other effects, and its basic type(s) and Special Attack stat.
+										</p><p>
+											The effects of Protect/Detect and Endure end before the attack proper occurs. Ignores semi-invulnerability dues to moves like Fly.
+										</p><p>
+											Fails immediately if there is already an attack pending against that target's position. Remains in effect even if the user or the target is switched out. The returned attack is considered an attack by the user. Fails when the move proper is used if the user is fainted.
+										</p>
+									</td>
+									<td>
+										Doom Desire, Future Sight
+									</td>
+								</tr>
+								<tr>
+									<th>
+										112
+									</th>
+									<td>
+										Increases the user's Defense and Special Defense by 1 stage each, and increases the user's Stockpile count by 1. Fails if the user's Stockpile count is already 3 or greater. The Stockpile count is reset to 0 if the user is switched out.
+									</td>
+									<td>
+										Stockpile
+									</td>
+								</tr>
+								<tr>
+									<th>
+										113
+									</th>
+									<td>
+										Power is 100 multiplied by the user's Stockpile count. Decreases the user's Defense and Special Defense by the amounts they were increased by Stockpile. Then resets the user's Stockpile count to 0.
+										<p>
+											Fails if the user's Stockpile count is 0.
+										</p>
+									</td>
+									<td>
+										Spit Up
+									</td>
+								</tr>
+								<tr>
+									<th>
+										114
+									</th>
+									<td>
+										The user gains HP depending on its Stockpile count:
+										<ul>
+											<li>(Stockpile count of 1) - 1/4 of total HP.</li>
+											<li>(Stockpile count of 2) - 1/2 of total HP.</li>
+											<li>(Stockpile count of 3) - All HP.</li>
+										</ul>
+										<p>
+											Decreases the user's Defense and Special Defense by X stages each, where X is the user's Stockpile count. Then resets the user's Stockpile count to 0. Both of these effects occur even if no HP was gained.
+										</p><p>
+											Fails if the user's Stockpile count is 0 or if it wouldn't do anything. Cannot be used if the user is affected by Heal Block.
+										</p>
+									</td>
+									<td>
+										Swallow
+									</td>
+								</tr>
+								<tr>
+									<th>
+										115
+									</th>
+									<td>
+										Fails if the user was hit by a non-user's damaging move this round.
+									</td>
+									<td>
+										Focus Punch
+									</td>
+								</tr>
+								<tr>
+									<th>
+										116
+									</th>
+									<td>
+										Fails if the target did not choose a damaging move this round, or if the target has already moved this round (unless they used Me First).
+									</td>
+									<td>
+										Sucker Punch
+									</td>
+								</tr>
+								<tr>
+									<th>
+										117
+									</th>
+									<td>
+										This round, if an opponent uses an attack with a target of "single non-user", "single opposing Pokémon" or "opposing Pokémon chosen at random", it is directed towards the user instead of any other Pokémon (unless the user is being affected by Sky Drop). The effect ends if the user is switched out. (Applied before Magic Coat and Magic Bounce.)
+										<p>
+											Fails if the battle is a single battle.
+										</p>
+									</td>
+									<td>
+										Follow Me, Rage Powder
+									</td>
+								</tr>
+								<tr>
+									<th>
+										118
+									</th>
+									<td>
+										For 5 rounds (including the current round), the following effects are applied:
+										<ul>
+											<li>The effects of Bounce, Fly, Magnet Rise, Sky Drop and Telekinesis end for all active Pokémon. (If Bounce, Fly or Sky Drop ends this way for an active Pokémon, or if Sky Drop ends this way for an opponent, that Pokémon skips the turn when it would have used that move.)</li>
+											<li>The moves Bounce, Fly, High Jump Kick, Jump Kick, Magnet Rise, Sky Drop, Splash and Telekinesis cannot be used.</li>
+											<li>All immunities to moves/effect because of the ability Levitate, the item Air Balloon or the Flying type are negated.</li>
+											<li>The evasion of all Pokémon is treated as 2 stages lower than what it actually is.</li>
+										</ul>
+										<p>
+											Fails if this is already in effect.
+										</p>
+									</td>
+									<td>
+										Gravity
+									</td>
+								</tr>
+								<tr>
+									<th>
+										119
+									</th>
+									<td>
+										For 5 rounds (including the current round), the user is immune to Ground attacks, the effects of Spikes and Toxic Spikes, and it can switch out/flee despite the ability Arena Trap.
+										<p>
+											The effect ends if the user is switched out. The effect can be Baton Passed. Fails if Ingrain, Smack Down or this effect is in effect for the user. Cannot be used if Gravity is in effect.
+										</p>
+									</td>
+									<td>
+										Magnet Rise
+									</td>
+								</tr>
+								<tr>
+									<th>
+										11A
+									</th>
+									<td>
+										For 3 rounds (including the current round), the following effects apply:
+										<ul>
+											<li>Attacks against the target (except OHKO moves) can't fail accuracy checks.</li>
+											<li>The target is immune to Ground attacks, the effects of Spikes and Toxic Spikes, and it can switch out/flee despite the ability Arena Trap.</li>
+										</ul>
+										<p>
+											The effect ends if the target is switched out. The effect can be Baton Passed. Fails if Ingrain, Smack Down or this effect is in effect for the target. Cannot be used if Gravity is in effect.
+										</p>
+									</td>
+									<td>
+										Telekinesis
+									</td>
+								</tr>
+								<tr>
+									<th>
+										11B
+									</th>
+									<td>
+										Hits the target even if it is in the middle of using Bounce, Fly or Sky Drop, or is under the effect of Sky Drop.
+									</td>
+									<td>
+										Sky Uppercut
+									</td>
+								</tr>
+								<tr>
+									<th>
+										11C
+									</th>
+									<td>
+										Hits the target even if it is in the middle of using Bounce, Fly or Sky Drop, or is under the effect of Sky Drop. Hits the target even if it is airborne or Flying-type and this move is Ground-type (Ground's effectiveness against the Flying type becomes 1x for this move).
+										<p>
+											If successful, stops the target being airborne (including because of Bounce, Fly, Magnet Rise, Telekinesis, the ability Levitate, and Flying Pokémon) and makes them vulnerable to Ground moves and the ability Arena Trap. Cancels the target's Bounce and Fly. Does not ground a Pokémon using/being affected by Sky Drop or being affected by Roost (although still hits it).
+										</p><p>
+											This grounding lasts until the target is switched out.
+										</p>
+									</td>
+									<td>
+										Smack Down, Thousand Arrows
+									</td>
+								</tr>
+								<tr>
+									<th>
+										11D
+									</th>
+									<td>
+										The target moves immediately after the user this round, regardless of priority. Fails if the target has already moved this round.
+									</td>
+									<td>
+										After You
+									</td>
+								</tr>
+								<tr>
+									<th>
+										11E
+									</th>
+									<td>
+										The target moves last this round, regardless of priority. Fails if the target has already moved this round, or if it would move immediately after the user anyway.
+									</td>
+									<td>
+										Quash
+									</td>
+								</tr>
+								<tr>
+									<th>
+										11F
+									</th>
+									<td>
+										For 5 rounds (including the current round), for each priority bracket, Pokémon with low Speed use moves before Pokémon with high Speed. This is overridden by the items Quick Claw, Lagging Tail and Full Incense and the ability Stall.
+										<p>
+											The effect ends immediately if the field is already being affected by this effect.
+										</p>
+									</td>
+									<td>
+										Trick Room
+									</td>
+								</tr>
+								<tr>
+									<th>
+										120
+									</th>
+									<td>
+										The user switches place with its ally. Fails if the battle is a single battle, or if there is no ally. Does not trigger Pursuit.
+									</td>
+									<td>
+										Ally Switch
+									</td>
+								</tr>
+								<tr>
+									<th>
+										121
+									</th>
+									<td>
+										The target's Attack (and its Attack stat stages and some other effects) are used instead of the user's Attack to calculate damage.
+									</td>
+									<td>
+										Foul Play
+									</td>
+								</tr>
+								<tr>
+									<th>
+										122
+									</th>
+									<td>
+										The target's Defense (and its Defense stat stages and other effects that modify its Defense) are used instead of the target's Special Defense to calculate damage.
+									</td>
+									<td>
+										Psyshock, Psystrike, Secret Sword
+									</td>
+								</tr>
+								<tr>
+									<th>
+										123
+									</th>
+									<td>
+										This attack is only effective against battlers that share a type with the user. Type effectiveness still applies, though.
+									</td>
+									<td>
+										Synchronoise
+									</td>
+								</tr>
+								<tr>
+									<th>
+										124
+									</th>
+									<td>
+										For 5 rounds (including the current round), any effects (including damage calculation) that refer to a Pokémon's Defense instead refer to its Special Defense, and vice versa. Stat stages remain unaffected.
+										<p>
+											The effect ends immediately if the user's side is already being affected by this effect.
+										</p>
+									</td>
+									<td>
+										Wonder Room
+									</td>
+								</tr>
+								<tr>
+									<th>
+										125
+									</th>
+									<td>
+										Fails unless the user has already used all other moves it knows at least once each. Fails if the user doesn't know any other moves.
+									</td>
+									<td>
+										Last Resort
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Shadow_moves">Shadow moves</span></h3>
+						<p>
+							After using any Shadow move, the user will enter Hyper Mode (unless otherwise stated).
+						</p><p>
+							All move effects for Shadow moves are described at the bottom of the script section <b>Pokemon_ShadowPokemon</b>.
+						</p><p>
+							Even if a game does not include Shadow Pokémon or Shadow moves, these function codes have still been defined in the scripts. You should not use any of the function codes below for your custom effects.
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										126
+									</th>
+									<td>
+										No effect.
+									</td>
+									<td>
+										Shadow Blast, Shadow Blitz, Shadow Break, Shadow Rave, Shadow Rush, Shadow Wave
+									</td>
+								</tr>
+								<tr>
+									<th>
+										127
+									</th>
+									<td>
+										Paralyzes the target.
+									</td>
+									<td>
+										Shadow Bolt
+									</td>
+								</tr>
+								<tr>
+									<th>
+										128
+									</th>
+									<td>
+										Burns the target.
+									</td>
+									<td>
+										Shadow Fire
+									</td>
+								</tr>
+								<tr>
+									<th>
+										129
+									</th>
+									<td>
+										Freezes the target.
+									</td>
+									<td>
+										Shadow Chill
+									</td>
+								</tr>
+								<tr>
+									<th>
+										12A
+									</th>
+									<td>
+										Confuses the target.
+									</td>
+									<td>
+										Shadow Panic
+									</td>
+								</tr>
+								<tr>
+									<th>
+										12B
+									</th>
+									<td>
+										Decreases the target's Defense by 2 stages.
+									</td>
+									<td>
+										Shadow Down
+									</td>
+								</tr>
+								<tr>
+									<th>
+										12C
+									</th>
+									<td>
+										Decreases the target's evasiveness by 2 stages.
+									</td>
+									<td>
+										Shadow Mist
+									</td>
+								</tr>
+								<tr>
+									<th>
+										12D
+									</th>
+									<td>
+										Power is doubled if the target is in the middle of using Dive.
+									</td>
+									<td>
+										Shadow Storm
+									</td>
+								</tr>
+								<tr>
+									<th>
+										12E
+									</th>
+									<td>
+										Two-turn attack. On the first turn, all active Pokémon lose half of their current HP (rounded down). If successful, user skips the second turn.
+										<p>
+											User will not enter Hyper Mode after using this move.
+										</p>
+									</td>
+									<td>
+										Shadow Half
+									</td>
+								</tr>
+								<tr>
+									<th>
+										12F
+									</th>
+									<td>
+										The target can no longer switch out or flee. This effect ends if either the user or the target is switched out. Fails if the target is already being affected by this effect.
+									</td>
+									<td>
+										Shadow Hold
+									</td>
+								</tr>
+								<tr>
+									<th>
+										130
+									</th>
+									<td>
+										The user takes recoil damage equal to 1/2 of its current HP (min. 1 damage).
+									</td>
+									<td>
+										Shadow End
+									</td>
+								</tr>
+								<tr>
+									<th>
+										131
+									</th>
+									<td>
+										Starts shadow weather, which lasts for 5 rounds (including the current round). Shadow weather has the following effect:
+										<ul><li>At the end of each round (except the last round), each active Pokémon (except Shadow Pokémon) loses 1/16 of its total HP. All losses occur simultaneously.</li></ul>
+										<p>
+											User will not enter Hyper Mode after using this move.
+										</p>
+									</td>
+									<td>
+										Shadow Sky
+									</td>
+								</tr>
+								<tr>
+									<th>
+										132
+									</th>
+									<td>
+										Ends the effects of Light Screen, Reflect and Safeguard on both sides.
+									</td>
+									<td>
+										Shadow Shed
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Generation_6_moves">Generation 6 moves</span></h3>
+						<p>
+							These effects are new move effects introduced in Gen 6. They have not been grouped with the above move effects simply because they were numbered prior to the addition of these effects, and it would be a hassle to renumber the function codes for nearly every move.
+						</p><p>
+							Note that some Gen 6 moves have an effect which is the same as one of the above move effects. Therefore those moves are simply listed above instead of below.
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+								<tr>
+									<th>
+										133
+									</th>
+									<td>
+										Nothing happens at all.
+									</td>
+									<td>
+										Hold Hands
+									</td>
+								</tr>
+								<tr>
+									<th>
+										134
+									</th>
+									<td>
+										Nothing happens at all. Displays the message: "Congratulations, &lt;player&gt;!"
+									</td>
+									<td>
+										Celebrate
+									</td>
+								</tr>
+								<tr>
+									<th>
+										135
+									</th>
+									<td>
+										Freezes the target. If the target is Water-type, this move's effectiveness against the Water type becomes 2x regardless of this move's type or any other effects.
+									</td>
+									<td>
+										Freeze-Dry
+									</td>
+								</tr>
+								<tr>
+									<th>
+										136
+									</th>
+									<td>
+										Increases the user's Defense by 2 stages.
+									</td>
+									<td>
+										Diamond Storm
+									</td>
+								</tr>
+								<tr>
+									<th>
+										137
+									</th>
+									<td>
+										Increases the Defense and Special Defense of the user and the user's ally by 1 stage each. Only occurs for a Pokémon if it has the Plus or Minus ability. Fails if neither Pokémon have the Plus or Minus ability.
+									</td>
+									<td>
+										Magnetic Flux
+									</td>
+								</tr>
+								<tr>
+									<th>
+										138
+									</th>
+									<td>
+										Increases the Special Defense of the user's ally by 1 stage. Fails if it is not a double battle or there is no ally.
+									</td>
+									<td>
+										Aromatic Mist
+									</td>
+								</tr>
+								<tr>
+									<th>
+										139
+									</th>
+									<td>
+										Decreases the target's Attack by 1 stage. This attack will always hit. Fails if the target is being affected by Crafty Shield or is semi-invulnerable.
+									</td>
+									<td>
+										Play Nice
+									</td>
+								</tr>
+								<tr>
+									<th>
+										13A
+									</th>
+									<td>
+										Decreases the target's Attack and Special Attack by 1 stage each.
+									</td>
+									<td>
+										Noble Roar, Tearful Look
+									</td>
+								</tr>
+								<tr>
+									<th>
+										13B
+									</th>
+									<td>
+										This attack will always hit, even if the target is affected by Baneful Bunker, Spiky Shield, King's Shield or Mat Block. Decreases the target's Defense by 1 stage. Fails if the user is not Hoopa in its Unbound Forme.
+									</td>
+									<td>
+										Hyperspace Fury
+									</td>
+								</tr>
+								<tr>
+									<th>
+										13C
+									</th>
+									<td>
+										Decreases the target's Special Attack by 1 stage. This attack will always hit. Fails if the target is being affected by Crafty Shield or is semi-invulnerable.
+									</td>
+									<td>
+										Confide
+									</td>
+								</tr>
+								<tr>
+									<th>
+										13D
+									</th>
+									<td>
+										Decreases the target's Special Attack by 2 stages.
+									</td>
+									<td>
+										Eerie Impulse
+									</td>
+								</tr>
+								<tr>
+									<th>
+										13E
+									</th>
+									<td>
+										Increases the Attack and Special Attack of all Grass-type Pokémon on both sides by 1 stage each. Does not affect airborne Pokémon. Fails if there are no non-airborne Grass-type Pokémon.
+									</td>
+									<td>
+										Rototiller
+									</td>
+								</tr>
+								<tr>
+									<th>
+										13F
+									</th>
+									<td>
+										Increases the Defense of all Grass-type Pokémon on both sides by 1 stage. Fails if there are no Grass-type Pokémon.
+									</td>
+									<td>
+										Flower Shield
+									</td>
+								</tr>
+								<tr>
+									<th>
+										140
+									</th>
+									<td>
+										Decreases the Attack, Special Attack and Speed of all poisoned targets by 1 stage each. Fails if none of the targets are poisoned.
+									</td>
+									<td>
+										Venom Drench
+									</td>
+								</tr>
+								<tr>
+									<th>
+										141
+									</th>
+									<td>
+										Reverses all of the target's stat changes. Ignores the target's Clear Body ability.
+									</td>
+									<td>
+										Topsy-Turvy
+									</td>
+								</tr>
+								<tr>
+									<th>
+										142
+									</th>
+									<td>
+										Gives the target the Ghost type in addition to its existing type(s). This overrides the third type given by Forest's Curse. Fails if the target is already Ghost-type.
+									</td>
+									<td>
+										Trick-or-Treat
+									</td>
+								</tr>
+								<tr>
+									<th>
+										143
+									</th>
+									<td>
+										Gives the target the Grass type in addition to its existing type(s). This overrides the third type given by Trick-or-Treat. Fails if the target is already Grass-type.
+									</td>
+									<td>
+										Forest's Curse
+									</td>
+								</tr>
+								<tr>
+									<th>
+										144
+									</th>
+									<td>
+										Damage dealt is multiplied by the Flying type's effectiveness against the target's type(s). Inflicts double damage and has perfect accuracy if the target is Minimized.
+									</td>
+									<td>
+										Flying Press
+									</td>
+								</tr>
+								<tr>
+									<th>
+										145
+									</th>
+									<td>
+										For the rest of this round, any move the target uses becomes Electric type. Fails if the target didn't choose to use a move this round, or it has already moved this round.
+									</td>
+									<td>
+										Electrify
+									</td>
+								</tr>
+								<tr>
+									<th>
+										146
+									</th>
+									<td>
+										For the rest of this round, any Normal-type move used becomes Electric-type instead.
+									</td>
+									<td>
+										Ion Deluge, Plasma Fists
+									</td>
+								</tr>
+								<tr>
+									<th>
+										147
+									</th>
+									<td>
+										This attack will always hit, even if the target is affected by Baneful Bunker, Spiky Shield, King's Shield or Mat Block.
+									</td>
+									<td>
+										Hyperspace Hole
+									</td>
+								</tr>
+								<tr>
+									<th>
+										148
+									</th>
+									<td>
+										Powders the target. For the rest of this round, if the target uses a Fire-type move, the target will instead lose 1/4 of their maximum HP and the move will fail.
+									</td>
+									<td>
+										Powder
+									</td>
+								</tr>
+								<tr>
+									<th>
+										149
+									</th>
+									<td>
+										For the rest of this round, all Pokémon on the user's side are unaffected by non-Status moves. Fails if it isn't the user's first round in the battle.
+									</td>
+									<td>
+										Mat Block
+									</td>
+								</tr>
+								<tr>
+									<th>
+										14A
+									</th>
+									<td>
+										For the rest of this round, all Pokémon on the user's side avoid Status moves (even moves used by Pokémon on that side). Does not prevent Perish Song.
+										<p>
+											Fails if this is the last attack used this round, or if this effect already applies.
+										</p>
+									</td>
+									<td>
+										Crafty Shield
+									</td>
+								</tr>
+								<tr>
+									<th>
+										14B
+									</th>
+									<td>
+										For the rest of this round, the user avoids all damaging moves that would hit it. If a move that makes contact is stopped by this effect, decreases the Attack of the Pokémon using that move by 2 stages.
+										<p>
+											A variable "X" starts at 1, and resets to 1 if this attack fails, or if the user uses an attack that isn't Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield or Wide Guard. This attack has a <code>1/X</code> chance of succeeding. "X" is doubled each time this attack is successful.
+										</p><p>
+											For Aegislash with the ability Stance Change only, changes the user's form to Shield Form, even if this move fails or can't be used.
+										</p>
+									</td>
+									<td>
+										King's Shield
+									</td>
+								</tr>
+								<tr>
+									<th>
+										14C
+									</th>
+									<td>
+										For the rest of this round, the user avoids all moves that target it. If a move that makes contact is stopped by this effect, the Pokémon using that move loses 1/8 of its maximum HP.
+										<p>
+											A variable "X" starts at 1, and resets to 1 if this attack fails, or if the user uses an attack that isn't Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield or Wide Guard. This attack has a <code>1/X</code> chance of succeeding. "X" is doubled each time this attack is successful.
+										</p>
+									</td>
+									<td>
+										Spiky Shield
+									</td>
+								</tr>
+								<tr>
+									<th>
+										14D
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, does damage. Ignores the target's Baneful Bunker, Detect, King's Shield, Mat Block, Protect, Quick Guard and Spiky Shield. The user is not affected by the target's King's Shield or Spiky Shield. If successful, the effect of Crafty Shield is removed from the target's side, and all other attacks against the target this round will ignore their Detect, King's Shield, Mat Block, Protect, Quick Guard, Spiky Shield and Wide Guard.
+										<p>
+											The user is invulnerable while using this move.
+										</p>
+									</td>
+									<td>
+										Phantom Force
+									</td>
+								</tr>
+								<tr>
+									<th>
+										14E
+									</th>
+									<td>
+										Two-turn attack. User skips the first turn. On the second turn, increases the user's Special Attack, Special Defense and Speed by 2 stages each. This attack is only considered to have been used after the second turn.
+									</td>
+									<td>
+										Geomancy
+									</td>
+								</tr>
+								<tr>
+									<th>
+										14F
+									</th>
+									<td>
+										The user gains 75% of the HP the target lost from this attack (min. 1 HP gained).
+										<p>
+											Cannot be used if the user is affected by Heal Block.
+										</p>
+									</td>
+									<td>
+										Draining Kiss, Oblivion Wing
+									</td>
+								</tr>
+								<tr>
+									<th>
+										150
+									</th>
+									<td>
+										If this move knocks out the target, increases the user's Attack by 3 stages.
+									</td>
+									<td>
+										Fell Stinger
+									</td>
+								</tr>
+								<tr>
+									<th>
+										151
+									</th>
+									<td>
+										Decreases the target's Attack and Special Attack by 1 stage each, then (even if stats weren't lowered) replaces the user with a different non-active Pokémon in the user's party (of the user's choice). Ignores trapping moves.
+										<p>
+											If the target has chosen to use Pursuit this round, but hasn't used it yet, then it will interrupt this move to use it at double damage before this move's user switches out. Pursuit currently doesn't interrupt this move.
+										</p>
+									</td>
+									<td>
+										Parting Shot
+									</td>
+								</tr>
+								<tr>
+									<th>
+										152
+									</th>
+									<td>
+										Until the end of the next round, no non-Ghost-type Pokémon can switch out or flee.
+									</td>
+									<td>
+										Fairy Lock
+									</td>
+								</tr>
+								<tr>
+									<th>
+										153
+									</th>
+									<td>
+										Adds a web to the opposing side. Whenever an opponent becomes active, decreases that opponent's Speed by 1 stage. Doesn't affect airborne Pokémon.
+										<p>
+											Fails if there is already a web on the opposing side.
+										</p>
+									</td>
+									<td>
+										Sticky Web
+									</td>
+								</tr>
+								<tr>
+									<th>
+										154
+									</th>
+									<td>
+										Creates an electric terrain, which lasts for 5 rounds (including the current round). It has the following effect:
+										<ul><li>Electric-type moves used by non-airborne Pokémon do 50% more damage. All Pokémon that are not airborne or semi-invulnerable cannot fall asleep or be affected by Yawn or use Rest.</li></ul>
+										<p>
+											This effect replaces other terrains if they are in effect.
+										</p>
+									</td>
+									<td>
+										Electric Terrain
+									</td>
+								</tr>
+								<tr>
+									<th>
+										155
+									</th>
+									<td>
+										Creates a grassy terrain, which lasts for 5 rounds (including the current round). It has the following effect:
+										<ul><li>Grass-type moves used by non-airborne Pokémon do 50% more damage. At the end of each round (except the last round), each active Pokémon (except airborne and semi-invulnerable Pokémon) gains 1/16 of its total HP.</li></ul>
+										<p>
+											This effect replaces other terrains if they are in effect.
+										</p>
+									</td>
+									<td>
+										Grassy Terrain
+									</td>
+								</tr>
+								<tr>
+									<th>
+										156
+									</th>
+									<td>
+										Creates a misty terrain, which lasts for 5 rounds (including the current round). It has the following effect:
+										<ul><li>All Pokémon that are not airborne or semi-invulnerable cannot become burned, paralysed, frozen, poisoned or fall asleep, or affected by Yawn or use Rest. Also, damage taken by these Pokémon from Dragon-type moves is halved.</li></ul>
+										<p>
+											This effect replaces other terrains if they are in effect.
+										</p>
+									</td>
+									<td>
+										Misty Terrain
+									</td>
+								</tr>
+								<tr>
+									<th>
+										157
+									</th>
+									<td>
+										At the end of the battle, if the player wins and the user belongs to the player, the money gained from that battle is doubled. This effect stacks with the items Amulet Coin and Luck Incense, but not with itself.
+									</td>
+									<td>
+										Happy Hour
+									</td>
+								</tr>
+								<tr>
+									<th>
+										158
+									</th>
+									<td>
+										If the user has not consumed a berry previously in the battle, this move cannot be chosen to be used (similar to trying to choose a move prevented by Taunt). This move can be used even if the consumed berry is restored somehow (e.g. Recycle, Pickup, Harvest).
+										<p>
+											The berry can be one held by the user and consumed by its effect, or an opponent's berry consumed by the user's Bug Bite/Pluck, or an opponent's berry thrown at the user by Fling. In all cases, the berry only allows the use of this move if it had an effect. No other berry consumption allows the use of this move.
+										</p>
+									</td>
+									<td>
+										Belch
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Generation_7_moves">Generation 7 moves</span></h3>
+						<p>
+							These effects are new move effects introduced in Gen 7. They have not been grouped with the above move effects simply because they were numbered prior to the addition of these effects, and it would be a hassle to renumber the function codes for nearly every move.
+						</p><p>
+							Note that some Gen 7 moves have an effect which is the same as one of the above move effects. Therefore those moves are simply listed above instead of below.
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Function code
+									</th>
+									<th>
+										Effect
+									</th>
+									<th width="25%">
+										Moves with this function code
+									</th>
+								</tr>
+
+								<tr>
+									<th>
+										159
+									</th>
+									<td>
+										Poisons the target. Decreases the target's Speed by 1 stage.
+										<p>
+											Fails only if the move can do neither of its effects.
+										</p>
+									</td>
+									<td>
+										Toxic Thread
+									</td>
+								</tr>
+								<tr>
+									<th>
+										15A
+									</th>
+									<td>
+										Cures the burn status of targets damaged by this move.
+									</td>
+									<td>
+										Sparkling Aria
+									</td>
+								</tr>
+								<tr>
+									<th>
+										15B
+									</th>
+									<td>
+										Cures the target's status condition, then the user gains 1/2 of its own total HP.
+										<p>
+											Fails if the target does not have a status condition.
+										</p>
+									</td>
+									<td>
+										Purify
+									</td>
+								</tr>
+								<tr>
+									<th>
+										15C
+									</th>
+									<td>
+										Increases the Attack and Special Attack of the user and the user's ally by 1 stage each. Only occurs for a Pokémon if it has the Plus or Minus ability. Fails if neither Pokémon have the Plus or Minus ability.
+									</td>
+									<td>
+										Gear Up
+									</td>
+								</tr>
+								<tr>
+									<th>
+										15D
+									</th>
+									<td>
+										Each of the user's stat stages is increased by the target's positive stat stage for the same stat. The target's positive stat stages are set to 0. This happens before damage calculation.
+										<p>
+											If the user has Simple, the increases are doubled. If the user has Contrary, its stat stages are decreased by the same amounts instead. This move ignores substitutes.
+										</p>
+									</td>
+									<td>
+										Spectral Thief
+									</td>
+								</tr>
+								<tr>
+									<th>
+										15E
+									</th>
+									<td>
+										Until the end of the next round, all of the user's moves will definitely be a critical hit (unless effects like Lucky Chant or Battle Armor prevent them from becoming critical hits).
+										<p>
+											This effect can be copied by Psych Up and Transform.
+										</p>
+									</td>
+									<td>
+										Laser Focus
+									</td>
+								</tr>
+								<tr>
+									<th>
+										15F
+									</th>
+									<td>
+										Decreases the user's Defense by 1 stage.
+									</td>
+									<td>
+										Clanging Scales
+									</td>
+								</tr>
+								<tr>
+									<th>
+										160
+									</th>
+									<td>
+										Decreases the target's Attack by 1 stage. The user gains HP equal to the target's old Attack stat (after applying stat stages but no other effects). The HP gained is increased by the user's Big Root, and becomes damage if the target has Liquid Ooze.
+										<p>
+											Fails if the target's Attack stat stage is already -6 (but doesn't fail if it has Contrary and is +6). Doesn't fail if the user is already at full HP or if the target's Attack cannot be lowered because of an effect like Mist or Hyper Cutter.
+										</p>
+									</td>
+									<td>
+										Strength Sap
+									</td>
+								</tr>
+								<tr>
+									<th>
+										161
+									</th>
+									<td>
+										The user and the target swap their Speed stats (not their stat stages) with each other.
+									</td>
+									<td>
+										Speed Swap
+									</td>
+								</tr>
+								<tr>
+									<th>
+										162
+									</th>
+									<td>
+										The user loses its Fire type. If it has no other type, it becomes typeless.
+										<p>
+											Fails if the user is not Fire-type.
+										</p>
+									</td>
+									<td>
+										Burn Up
+									</td>
+								</tr>
+								<tr>
+									<th>
+										163
+									</th>
+									<td>
+										Ignores all abilities that could alter the success or damage of this move, while this move is being used. This effect does not apply if this move was called by another move.
+									</td>
+									<td>
+										Moongeist Beam, Sunsteel Strike
+									</td>
+								</tr>
+								<tr>
+									<th>
+										164
+									</th>
+									<td>
+										Ignores all abilities that could alter the success or damage of this move, while this move is being used. This effect does not apply if this move was called by another move.
+										<p>
+											If the user's Attack is higher than its Special Attack (after applying stat stages), this move will use its Attack stat and be physical. If the user's Special Attack is equal to or higher than its Attack (after applying stat stages), this move will use its Special Attack stat and be special.
+										</p>
+									</td>
+									<td>
+										Photon Geyser
+									</td>
+								</tr>
+								<tr>
+									<th>
+										165
+									</th>
+									<td>
+										If the target has already performed its action this turn, its ability is negated while it remains in battle. This only applies if this move doesn't miss or the target is immune to it or protected from it.
+									</td>
+									<td>
+										Core Enforcer
+									</td>
+								</tr>
+								<tr>
+									<th>
+										166
+									</th>
+									<td>
+										Power is doubled if the last move the user used failed or had no effect. Doesn't apply if that move was protected against.
+									</td>
+									<td>
+										Stomping Tantrum
+									</td>
+								</tr>
+								<tr>
+									<th>
+										167
+									</th>
+									<td>
+										For 5 rounds (including the current round), the power of all attacks (that are not critical hits, confusion damage or fixed damage) against any Pokémon on the user's side is halved (in single battles) or reduced by 1/3 (in double battles). This reduction does not stack with Light Screen or Reflect.
+										<p>
+											Fails if the user's side is already being affected by this effect. Fails if the weather is not hail or an effect is negating the weather's effect (e.g. Air Lock).
+										</p><p>
+											(Removed by Brick Break, Defog and Psychic Fangs.)
+										</p>
+									</td>
+									<td>
+										Aurora Veil
+									</td>
+								</tr>
+								<tr>
+									<th>
+										168
+									</th>
+									<td>
+										For the rest of this round, the user is unaffected by any non-user's attacks which have the "B" flag (i.e. is affected by Protect/Detect). Fails if this is the last attack used this round.
+										<p>
+											If the effect of this move blocks an attack that makes contact, the attacker becomes poisoned.
+										</p><p>
+											A variable "X" starts at 1, and resets to 1 if this attack fails, or if the user uses an attack that isn't Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield or Wide Guard. This attack has a 1/X chance of succeeding. "X" is doubled each time this attack is successful.
+										</p><p>
+											(Feint, Phantom Force, Shadow Force, Hyperspace Hole, and Hyperspace Fury will bypass this move's effect and erase it.)
+										</p>
+									</td>
+									<td>
+										Baneful Bunker
+									</td>
+								</tr>
+								<tr>
+									<th>
+										169
+									</th>
+									<td>
+										This move's type is the same as the user's first type.
+									</td>
+									<td>
+										Revelation Dance
+									</td>
+								</tr>
+								<tr>
+									<th>
+										16A
+									</th>
+									<td>
+										This round, the target becomes the centre of attention, and all other targeting moves by the target's foes are forced to target it instead of the intended target. This effect overrides all other forms of target redirection such as Follow Me, Storm Drain and Ally Switch.
+										<p>
+											Fails if the battle is a single battle.
+										</p>
+									</td>
+									<td>
+										Spotlight
+									</td>
+								</tr>
+								<tr>
+									<th>
+										16B
+									</th>
+									<td>
+										The target is forced to repeat its most recent move immediately after this move, with the same target it had the first time.
+										<p>
+											Fails if the target has not used a move before, or is in the middle of using a multi-turn move, a move that forces its repeated use, or Bide, Focus Punch, Beak Blast or Shell Trap. Fails if the move to be used has no PP left, it is a move that calls another move, or if the target does not know the move.
+										</p><p>
+											Moves that fail if used after the Pokémon's first turn in battle will fail when repeated by this move, even if it is still within the Pokémon's first turn.
+										</p>
+									</td>
+									<td>
+										Instruct
+									</td>
+								</tr>
+								<tr>
+									<th>
+										16C
+									</th>
+									<td>
+										The target cannot user sound-based moves for 2 turns after this one.
+									</td>
+									<td>
+										Throat Chop
+									</td>
+								</tr>
+								<tr>
+									<th>
+										16D
+									</th>
+									<td>
+										The user gains 2/3 of its total HP in a sandstorm, or 1/2 of its total HP if not in a sandstorm.
+									</td>
+									<td>
+										Shore Up
+									</td>
+								</tr>
+								<tr>
+									<th>
+										16E
+									</th>
+									<td>
+										The target gains 2/3 of its total HP in Grassy Terrain, or 1/2 of its total HP otherwise. Fails if its HP is full or it has a substitute. Cannot be used if the user is affected by Heal Block.
+										<p>
+											(Similar to 0DF.)
+										</p>
+									</td>
+									<td>
+										Floral Healing
+									</td>
+								</tr>
+								<tr>
+									<th>
+										16F
+									</th>
+									<td>
+										This move's effect depends on which Pokémon it targets:
+										<ul>
+											<li>A foe: Deals damage.</li>
+											<li>An ally: The target gains 1/2 of its total HP. Fails if the target is affected by Heal Block.</li>
+										</ul>
+										<p>
+											If the user is affected by Heal Block, it cannot choose an ally as this move's target.
+										</p>
+									</td>
+									<td>
+										Pollen Puff
+									</td>
+								</tr>
+								<tr>
+									<th>
+										170
+									</th>
+									<td>
+										The user takes damage equal to half of its total HP (rounded up), unless it has Magic Guard. This happens even if the target protects itself or is immune or the move misses, but not if there are no targets. This is not recoil damage. It only happens for the first hit of this move (if Parental Bond makes it hit twice).
+										<p>
+											Fails if there is a Pokémon with the ability Damp on the field.
+										</p>
+									</td>
+									<td>
+										Mind Blown
+									</td>
+								</tr>
+								<tr>
+									<th>
+										171
+									</th>
+									<td>
+										Shows an animation and a message at the start of the attack phase to say: "PKMN set a shell trap!" Fails if the user has not been hit by an opponent's physical move this round.
+									</td>
+									<td>
+										Shell Trap
+									</td>
+								</tr>
+								<tr>
+									<th>
+										172
+									</th>
+									<td>
+										Shows an animation and a message at the start of the attack phase to say: "PKMN started heating up its beak!" The user charges up this move from the beginning of this round. Pokémon that make contact with the user in this time become burned.
+									</td>
+									<td>
+										Beak Blast
+									</td>
+								</tr>
+								<tr>
+									<th>
+										173
+									</th>
+									<td>
+										Creates a psychic terrain, which lasts for 5 rounds (including the current round). It has the following effect:
+										<ul>
+											<li>Psychic-type moves used by non-airborne Pokémon do 50% more damage.</li>
+											<li>Pokémon that are not airborne and not semi-invulnerable cannot be hit by an opponent's move with &gt;0 priority. (Doesn't apply to moves that don't specifically target the Pokémon.)</li>
+										</ul>
+										<p>
+											This effect replaces other terrains if they are in effect.
+										</p><p>
+											(Nature Power, Secret Power and Camouflage change their effects depending on this terrain.)
+										</p>
+									</td>
+									<td>
+										Psychic Terrain
+									</td>
+								</tr>
+								<tr>
+									<th>
+										174
+									</th>
+									<td>
+										Fails if it isn't the user's first round in the battle.
+									</td>
+									<td>
+										First Impression
+									</td>
+								</tr>
+								<tr>
+									<th>
+										175
+									</th>
+									<td>
+										Hits 2 times in a row. Causes the target to flinch. Inflicts double damage and has perfect accuracy if the target is Minimized.
+									</td>
+									<td>
+										Double Iron Bash
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h2><span class="mw-headline" id="Adding_your_own_move_effects">Adding your own move effects</span></h2>
+						<p>
+							If you are inventing a new move effect, you should use function code 176 and onwards (176, 177, 178, etc.). However, you can use any function code that is not already used, and it is recommended that you start higher up, just in case an update to Essentials adds some more itself.
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20210511034416
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.109 seconds
+					Real time usage: 0.112 seconds
+					Preprocessor visited node count: 89/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 67/2097152 bytes
+					Template argument size: 45/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 14/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    2.933      1 Template:For
+					100.00%    2.933      1 -total
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:169-0!canonical and timestamp 20210511034416 and revision id 956
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20210512082213/https://essentialsdocs.fandom.com/wiki/Function_codes?oldid=956">https://essentialsdocs.fandom.com/wiki/Function_codes?oldid=956</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20210512082213/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

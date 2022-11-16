@@ -1,0 +1,204 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<div class="mw-parser-output">
+	<p>
+		This page describes the various&nbsp;<b>mini-games</b>&nbsp;that are available in Essentials.
+	</p>
+	<div id="toc" class="toc">
+		<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr" style="min-width: 149px;">
+			<h2>
+				<svg class="wds-icon wds-icon-tiny">
+					<use href="#wds-icons-bullet-list-tiny"></use>
+				</svg>Contents
+			</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span>
+		</div>
+		<ul>
+			<li class="toclevel-1 tocsection-1"><a href="#Lottery"><span class="tocnumber">1</span> <span class="toctext">Lottery</span></a></li>
+			<li class="toclevel-1 tocsection-2"><a href="#Duel"><span class="tocnumber">2</span> <span class="toctext">Duel</span></a></li>
+			<li class="toclevel-1 tocsection-3"><a href="#Triple_Triad"><span class="tocnumber">3</span> <span class="toctext">Triple Triad</span></a></li>
+			<li class="toclevel-1 tocsection-4"><a href="#Slot_Machine"><span class="tocnumber">4</span> <span class="toctext">Slot Machine</span></a></li>
+			<li class="toclevel-1 tocsection-5"><a href="#Voltorb_Flip"><span class="tocnumber">5</span> <span class="toctext">Voltorb Flip</span></a></li>
+			<li class="toclevel-1 tocsection-6"><a href="#Mining"><span class="tocnumber">6</span> <span class="toctext">Mining</span></a></li>
+			<li class="toclevel-1 tocsection-7"><a href="#Tile_Puzzles"><span class="tocnumber">7</span> <span class="toctext">Tile Puzzles</span></a></li>
+			<li class="toclevel-1 tocsection-8"><a href="#Tips"><span class="tocnumber">8</span> <span class="toctext">Tips</span></a></li>
+		</ul>
+	</div>
+
+	<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Lottery">Lottery</span></h2>
+	<figure class="thumb tright " style="width: 256px"> 	<a href="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/c/c4/Lottery.gif/revision/latest?cb=20180905025000" class="image"><img alt="" src="https://web.archive.org/web/20211024121955im_/https://static.wikia.nocookie.net/essentialsdocs/images/c/c4/Lottery.gif/revision/latest/scale-to-width-down/256?cb=20180905025000" decoding="async" width="256" height="192" class="thumbimage" data-image-name="Lottery.gif" data-image-key="Lottery.gif"></a> 	 	<figcaption class="thumbcaption"> 		 		 		 			<p class="caption">Playing the Lottery (animated image).</p> 		 	</figcaption> </figure>
+	<p>
+		A random number between 0 and 65535 is generated, and is then compared to the OT ID numbers of every Pokémon the player currently owns (both in their&nbsp;<a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a>&nbsp;and in their&nbsp;<a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">storage boxes</a>, but not in the&nbsp;<a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Day_Care" title="Day Care">Day Care</a>). Each digit is compared in turn, starting with the least significant and working backwards (i.e. the number 12345 is compared in the order 5-4-3-2-1). Digits stop being compared if a pair don't match (i.e. the numbers 12345 and 12305 only match 1 digit).
+	</p><p>
+		The player wins a prize which depends on the number of digits matched.
+	</p><p>
+		The game is played using the following two scripts:
+	</p>
+<pre>pbSetLotteryNumber(1)
+pbLottery(pbGet(1),2,3,4)
+</pre>
+	<p>
+		The first generates a random number and saves it to the&nbsp;<a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Variable</a>&nbsp;given as an argument (1). The method used here chooses the number based on the current day, month and year, so that the number is the same regardless of when in a given day it is done. This is the winning number for that day.
+	</p><p>
+		The second script takes the winning number from the <a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Variable</a> it was stored in (1), and compares it with the OT ID numbers of every Pokémon the player owns. The name of the highest-matched Pokémon is stored in <a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Variable</a> 2, its location (party=1, storage=2) in <a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Variable</a> 3, and the number of digits matched in <a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Variable</a> 4.
+	</p><p>
+		The rest of the Lottery game's event involves checking how many digits were matched, and rewarding the player with the appropriate prize (if any).
+	</p>
+	<h2><span class="mw-headline" id="Duel">Duel</span></h2>
+	<figure class="thumb tright " style="width: 256px"> 	<a href="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/4/43/Duel.png/revision/latest?cb=20190907173950" class="image"><img alt="" src="https://web.archive.org/web/20211024121955im_/https://static.wikia.nocookie.net/essentialsdocs/images/4/43/Duel.png/revision/latest/scale-to-width-down/256?cb=20190907173950" decoding="async" width="256" height="192" class="thumbimage" data-image-name="Duel.png" data-image-key="Duel.png"></a> 	 	<figcaption class="thumbcaption"> 		 		 		 			<p class="caption">A duel.</p> 		 	</figcaption> </figure>
+	<p>
+		This mini-game is a sumo-like game played between the player and an NPC trainer.
+	</p><p>
+		The two competitors start with 10 HP each. Each round, both competitors choose an action ("Defend" or one of three kinds of attack). Depending on the choices, one, both or neither competitor loses some HP. The first competitor to reach 0 HP loses.
+	</p><p>
+		Duel is played by using the following scripts:
+		<br clear="all">
+	</p>
+<pre>$speeches=["I shall block all your attacks!",
+           "Nothing can pierce my armor!",
+           "Behold my dodging skills!",
+           "I'll show you my fighting skills!",
+           "Awe at the perfection of my skills!",
+           "I'll deliver a perfect blow!",
+           "Feel my power!",
+           "AAAAHHHH!",
+           "I'll attack with all my strength!",
+           "Face my secret technique!",
+           "This is my secret technique!",
+           "Evil Blade Strike!"]
+Kernel.pbDuel(:<span style="background:yellow">LEADER_Brawly</span>,"<span style="background:yellow">Brawly</span>",get_character(0),$speeches)
+</pre>
+	<p>
+		The speeches are arranged in the following order: 3 for defense, 3 for precise attacks, 3 for fierce attacks, and 3 for special attacks. The script that runs the duel itself should be put in a Conditional Branch.
+	</p><p>
+		Note that the opponent must use a&nbsp;<a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Defining_a_trainer" title="Defining a trainer">defined trainer type</a>&nbsp;(because its graphic is shown during the duel), although there doesn't need to be an actual trainer defined for them. The highlighted parts (as well as the speeches if desired) are the only parts you should change.
+	</p><p>
+		The player and the NPC will move around a little during the duel, so make sure there is space for them to do so.
+	</p>
+	<h2><span class="mw-headline" id="Triple_Triad">Triple Triad</span></h2>
+	<figure class="thumb tright " style="width: 256px"> 	<a href="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/3/39/TripleTriad.png/revision/latest?cb=20190822191322" class="image"><img alt="" src="https://web.archive.org/web/20211024121955im_/https://static.wikia.nocookie.net/essentialsdocs/images/3/39/TripleTriad.png/revision/latest/scale-to-width-down/256?cb=20190822191322" decoding="async" width="256" height="192" class="thumbimage" data-image-name="TripleTriad.png" data-image-key="TripleTriad.png"></a> 	 	<figcaption class="thumbcaption"> 		 		 		 			<p class="caption">A Triple Triad game in progress.</p> 		 	</figcaption> </figure>
+	<dl><dd><i>Main article: <a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Triple_Triad" title="Triple Triad">Triple Triad</a></i></dd></dl>
+	<p>
+		This is a Pokémon-themed version of the Triple Triad card game from the "Final Fantasy" game series.
+	</p><p>
+		Each card represents a Pokémon, and that Pokémon's base stats determine the strength of the card on each side. Cards are placed into a 3x3 grid, and stronger cards convert adjacent weaker cards to their own colour. The player who has the most cards of their colour on the board at the end is the winner
+	</p>
+	<h2><span class="mw-headline" id="Slot_Machine">Slot Machine</span></h2>
+	<figure class="thumb tright " style="width: 256px"> 	<a href="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/8/8b/SlotMachine.png/revision/latest?cb=20190907174640" class="image"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="256" height="192" class="thumbimage lazyload" data-image-name="SlotMachine.png" data-image-key="SlotMachine.png" data-src="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/8/8b/SlotMachine.png/revision/latest/scale-to-width-down/256?cb=20190907174640"></a> 	<noscript><a href="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/8/8b/SlotMachine.png/revision/latest?cb=20190907174640" class="image"><img alt="" src="https://web.archive.org/web/20211024121955im_/https://static.wikia.nocookie.net/essentialsdocs/images/8/8b/SlotMachine.png/revision/latest/scale-to-width-down/256?cb=20190907174640" decoding="async" width="256" height="192" class="thumbimage" data-image-name="SlotMachine.png" data-image-key="SlotMachine.png" data-src="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/8/8b/SlotMachine.png/revision/latest/scale-to-width-down/256?cb=20190907174640" /></a></noscript> 	<figcaption class="thumbcaption"> 		 		 		 			<p class="caption">Playing the Slot Machine.</p> 		 	</figcaption> </figure>
+	<p>
+		This is a basic slot machine mini-game, found in the various&nbsp;<a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Game_Corner" title="Game Corner">Game Corners</a>&nbsp;of the early Pokémon games.
+	</p><p>
+		The player first inserts 1, 2 or 3 coins, and starts the reels spinning. They stop the reels, and if any winning combinations have lined up, the machine pays out some coins depending on which combination(s) were made. The more coins the player wagers, the more rows they have in which to line up the symbols.
+	</p><p>
+		When stopping each reel from spinning, the reel can slip a couple of places, which makes it harder to accurately time matches. By lining up 3 Replay symbols, an extra free game is immediately played with all rows usable and no reel slipping. There are no other special features in the Slot Machine (such as bonus rounds).
+	</p><p>
+		The Slot Machine is played by using the following script:
+	</p>
+<pre>pbSlotMachine
+</pre>
+	<p>
+		This can have an argument of either 0, 1 or 2, which roughly correspond to easy, medium and hard difficulty (default is 1). All this does is change which symbols appear on each reel.
+	</p><p>
+		You must have a Coin Case in your inventory, as well as at least 1 coin but less than the maximum number of coins you could have, to play the Slot Machine.
+	</p>
+	<h2><span class="mw-headline" id="Voltorb_Flip">Voltorb Flip</span></h2>
+	<figure class="thumb tright " style="width: 256px"> 	<a href="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/2/29/VoltorbFlip.png/revision/latest?cb=20190907175834" class="image"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="256" height="192" class="thumbimage lazyload" data-image-name="VoltorbFlip.png" data-image-key="VoltorbFlip.png" data-src="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/2/29/VoltorbFlip.png/revision/latest/scale-to-width-down/256?cb=20190907175834"></a> 	<noscript><a href="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/2/29/VoltorbFlip.png/revision/latest?cb=20190907175834" class="image"><img alt="" src="https://web.archive.org/web/20211024121955im_/https://static.wikia.nocookie.net/essentialsdocs/images/2/29/VoltorbFlip.png/revision/latest/scale-to-width-down/256?cb=20190907175834" decoding="async" width="256" height="192" class="thumbimage" data-image-name="VoltorbFlip.png" data-image-key="VoltorbFlip.png" data-src="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/2/29/VoltorbFlip.png/revision/latest/scale-to-width-down/256?cb=20190907175834" /></a></noscript> 	<figcaption class="thumbcaption"> 		 		 		 			<p class="caption">Playing Voltorb Flip.</p> 		 	</figcaption> </figure>
+	<p>
+		This mini-game is from the international versions of Pokémon HeartGold and SoulSilver, as a replacement to the slot machines which couldn't be used because they involved gambling. In Voltorb Flip, the player can never lose coins (the worst they can do is not gain any coins).
+	</p><p>
+		The player is presented with a 5x5 grid of tiles, where each tile is either a 1x, 2x or 3x multiplier or a Voltorb. Each row and column shows the number of Voltorbs in it, as well as the sum of the multiplier tiles. The player flips over one tile at a time, and their score is multiplied by the tile they flipped over. Upon revealing all the 2x and 3x multipliers on a board, the player gains coins equal to their score for that board. Flipping over a Voltorb means that board is lost, and no coins are gained. The more boards the player plays, the harder the game becomes but the more coins they can win.
+	</p><p>
+		Voltorb Flip is played by using the following script:
+	</p>
+<pre>pbVoltorbFlip
+</pre>
+	<p>
+		You must have a Coin Case in your inventory, as well as at least 1 coin but less than the maximum number of coins you could have, to play Voltorb Flip.
+	</p>
+	<h2><span class="mw-headline" id="Mining">Mining</span></h2>
+	<figure class="thumb tright " style="width: 256px"> 	<a href="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/c/c1/MiningGame.png/revision/latest?cb=20190907180118" class="image"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="256" height="192" class="thumbimage lazyload" data-image-name="MiningGame.png" data-image-key="MiningGame.png" data-src="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/c/c1/MiningGame.png/revision/latest/scale-to-width-down/256?cb=20190907180118"></a> 	<noscript><a href="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/c/c1/MiningGame.png/revision/latest?cb=20190907180118" class="image"><img alt="" src="https://web.archive.org/web/20211024121955im_/https://static.wikia.nocookie.net/essentialsdocs/images/c/c1/MiningGame.png/revision/latest/scale-to-width-down/256?cb=20190907180118" decoding="async" width="256" height="192" class="thumbimage" data-image-name="MiningGame.png" data-image-key="MiningGame.png" data-src="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/c/c1/MiningGame.png/revision/latest/scale-to-width-down/256?cb=20190907180118" /></a></noscript> 	<figcaption class="thumbcaption"> 		 		 		 			<p class="caption">Mining for buried treasure.</p> 		 	</figcaption> </figure>
+	<dl><dd><i>Main article: <a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Mining_mini-game" title="Mining mini-game">Mining mini-game</a></i></dd></dl>
+	<p>
+		This mini-game is found in Pokémon Diamond, Pearl and Platinum, and involves knocking away at rocks to reveal buried items.
+	</p><p>
+		The player has a choice of two digging tools to use: the pick (weaker and lighter) and the hammer (stronger and heavier). Random items are buried under layers of dirt and rock, and if they are completely excavated, the player gets to keep them. There is a message at the beginning of the game to say how many items are buried. Iron blocks are also buried, which hinder excavation. Using the digging tools too much will cause a small cave-in and end the game immediately; this is denoted by a crack graphic at the top of the screen growing larger.
+	</p><p>
+		This game does&nbsp;<i>not</i>&nbsp;contain any buried spheres (which act as currency in Pokémon DPPt's Underground), as they are not real items and would serve no purpose in Essentials.
+	</p><p>
+		The mining game is played by using the following script:
+	</p>
+<pre>pbMiningGame
+</pre>
+	<p>
+		It is recommended that the player is somehow restricted in when they can play this game, as it yields useful/expensive items for no cost.
+	</p>
+	<h2><span class="mw-headline" id="Tile_Puzzles">Tile Puzzles</span></h2>
+	<figure class="thumb tright " style="width: 256px"> 	<a href="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/f/fa/TilePuzzle.png/revision/latest?cb=20190907180315" class="image"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="256" height="192" class="thumbimage lazyload" data-image-name="TilePuzzle.png" data-image-key="TilePuzzle.png" data-src="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/f/fa/TilePuzzle.png/revision/latest/scale-to-width-down/256?cb=20190907180315"></a> 	<noscript><a href="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/f/fa/TilePuzzle.png/revision/latest?cb=20190907180315" class="image"><img alt="" src="https://web.archive.org/web/20211024121955im_/https://static.wikia.nocookie.net/essentialsdocs/images/f/fa/TilePuzzle.png/revision/latest/scale-to-width-down/256?cb=20190907180315" decoding="async" width="256" height="192" class="thumbimage" data-image-name="TilePuzzle.png" data-image-key="TilePuzzle.png" data-src="https://web.archive.org/web/20211024121955/https://static.wikia.nocookie.net/essentialsdocs/images/f/fa/TilePuzzle.png/revision/latest/scale-to-width-down/256?cb=20190907180315" /></a></noscript> 	<figcaption class="thumbcaption"> 		 		 		 			<p class="caption">A Tile Puzzle (the Ruins of Alph variant).</p> 		 	</figcaption> </figure>
+	<p>
+		A board and tiles are presented to the player, who must place or rearrange the tiles in some way to form a picture.
+	</p><p>
+		There are seven variants of this mini-game, which are as follows:
+	</p>
+	<ol>
+		<li><b>Ruins of Alph</b>&nbsp;- Place tiles in the correct places to form the image. Pick up/swap/place tiles with the <a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">C key</a>. The classic Unown-related puzzle from the Johto games.</li>
+		<li><b>Ruins of Alph Rotator</b>&nbsp;- The same plus each tile can be rotated with the <a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Z key</a>.</li>
+		<li><b>Mystic Square</b>&nbsp;- A&nbsp;<a href="https://web.archive.org/web/20211024121955/http://en.wikipedia.org/wiki/15_puzzle" class="extiw" title="wikipedia:15 puzzle">15 puzzle</a>.</li>
+		<li><b>Tile Swap</b>&nbsp;- Swap two adjacent tiles. Hold C while selecting the first tile and press the direction to swap it in.</li>
+		<li><b>Tile Swap Rotator</b>&nbsp;- The same plus each tile can be rotated with the <a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">Z key</a>.</li>
+		<li><b>Rubik's Square</b>&nbsp;- Shift an entire row or column of tiles at once. The rows and columns loop round on themselves. Hold the <a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">C key</a> while selecting a tile in the desired row/column and press the direction to shift it in.</li>
+		<li><b>Star Rotator</b>&nbsp;- Rotate a tile with the <a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Controls" title="Controls">C key</a>, and all adjacent tiles rotate at the same time.</li>
+	</ol>
+	<p>
+		A tile puzzle is played by using the following script:
+	</p>
+<pre>pbTilePuzzle(1,"Kabuto")
+</pre>
+	<p>
+		The number is which puzzle variant to play, as listed above. The word is the name of the graphics to use; this example uses the graphics named "tilesKabuto.png" and "bgKabuto.png". If there is no background of the required name, then "bg.png" will be used instead. All graphics are in the folder "Graphics/Pictures/Tile Puzzle".
+	</p><p>
+		The script returns TRUE if the puzzle was solved, and FALSE if the player quit without solving it. All puzzles are solvable, although some are harder than others.
+	</p><p>
+		The default puzzles use a grid of 4x4 tiles. You can use a different grid by adding its width and height as extra arguments like so:
+	</p>
+<pre>pbTilePuzzle(1,"Kabuto",5,6)
+</pre>
+	<p>
+		This example uses a 5x6 grid. Note that some puzzles don't support certain grids (e.g. the Alph puzzles don't support grids whose width is an odd number, and no puzzles involving rotation support grids which make the tiles not square). The default tile graphics are all for 4x4 grids, so you would need to make your own graphics in order to use different grid sizes.
+	</p>
+	<h2><span class="mw-headline" id="Tips">Tips</span></h2>
+	<ul>
+		<li>
+			The Slot Machine and Voltorb Flip are both stand-alone applications, and as such could be turned into apps for the&nbsp;<a href="/web/20211024121955/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9gear" title="Pokégear">Pokégear</a>.
+			<ul>
+				<li>The Lottery game could also be turned into an app, at least the number-checking part (the player would still need to go somewhere in order to collect their prize). It would require a bit more effort, though.</li>
+				<li>Triple Triad could also be turned into an app, but again would require some more effort in order to set up appropriate (ostensibly computer-type) opponents to play against.</li>
+			</ul>
+		</li>
+	</ul>
+	<!--
+	NewPP limit report
+	Cached time: 20211014113856
+	Cache expiry: 1209600
+	Dynamic content: false
+	CPU time usage: 0.027 seconds
+	Real time usage: 0.033 seconds
+	Preprocessor visited node count: 80/1000000
+	Preprocessor generated node count: 0/1000000
+	Post‐expand include size: 201/2097152 bytes
+	Template argument size: 75/2097152 bytes
+	Highest expansion depth: 2/40
+	Expensive parser function count: 0/100
+	Unstrip recursion depth: 0/20
+	Unstrip post‐expand size: 0/5000000 bytes
+	-->
+	<!--
+	Transclusion expansion time report (%,ms,calls,template)
+	100.00%    4.628      1 -total
+	 54.77%    2.535      2 Template:Hl
+	 40.01%    1.852      2 Template:Main
+	-->
+	<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:226-0!canonical!FandomDesktop!LegacyGalleries and timestamp 20211014113856 and revision id 791
+	 -->
+</div>

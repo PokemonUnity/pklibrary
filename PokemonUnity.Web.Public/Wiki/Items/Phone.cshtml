@@ -1,0 +1,521 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20210512081522if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl><dd><i>For being able to battle the same trainer multiple times, see <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">Rematches</a>.</i></dd></dl>
+						<figure class="thumb tright show-info-icon" style="width: 258px"> 	<a href="https://web.archive.org/web/20210512081522/https://static.wikia.nocookie.net/essentialsdocs/images/5/58/Phone.png/revision/latest?cb=20190824145825" class="image"><img alt="" src="https://web.archive.org/web/20210512081522im_/https://static.wikia.nocookie.net/essentialsdocs/images/5/58/Phone.png/revision/latest/scale-to-width-down/256?cb=20190824145825" decoding="async" width="256" height="192" class="thumbimage" data-image-name="Phone.png" data-image-key="Phone.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/File:Phone.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 			<p class="caption">The phone.</p> 		 	</figcaption> </figure>
+						<p>
+							This page describes the&nbsp;<b>phone</b>&nbsp;application of the&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9gear" title="Pokégear">Pokégear</a>. The phone allows the player to store the phone numbers of various trainers and other important people, and to call them and receive calls from them at any time.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1"><a href="#The_phone_screen"><span class="tocnumber">1</span> <span class="toctext">The phone screen</span></a></li>
+								<li class="toclevel-1 tocsection-2">
+									<a href="#Registering_someone"><span class="tocnumber">2</span> <span class="toctext">Registering someone</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-3"><a href="#Registering_a_trainer"><span class="tocnumber">2.1</span> <span class="toctext">Registering a trainer</span></a></li>
+										<li class="toclevel-2 tocsection-4"><a href="#Registering_a_special_contact"><span class="tocnumber">2.2</span> <span class="toctext">Registering a special contact</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-5">
+									<a href="#Phone_calls_with_trainers"><span class="tocnumber">3</span> <span class="toctext">Phone calls with trainers</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-6"><a href="#Frequency_of_calls"><span class="tocnumber">3.1</span> <span class="toctext">Frequency of calls</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-7"><a href="#Phone_calls_with_special_contacts"><span class="tocnumber">4</span> <span class="toctext">Phone calls with special contacts</span></a></li>
+								<li class="toclevel-1 tocsection-8"><a href="#Technical_details"><span class="tocnumber">5</span> <span class="toctext">Technical details</span></a></li>
+								<li class="toclevel-1 tocsection-9"><a href="#Tips"><span class="tocnumber">6</span> <span class="toctext">Tips</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="The_phone_screen">The phone screen</span></h2>
+						<p>
+							The phone screen is displayed by code in the <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a> <b>PScreen_Phone</b>.
+						</p><p>
+							The background image for the phone screen is called "phonebg.png" and is located in the folder "Graphics/Pictures". If this image doesn't exist, the background is black.
+						</p>
+						<h2><span class="mw-headline" id="Registering_someone">Registering someone</span></h2>
+						<p>
+							Registering someone is the act of adding their phone number to your phone. A new contact will be added to the end of the contact list, which cannot be rearranged. There is no limit on the length of your contact list.
+						</p>
+						<h3><span class="mw-headline" id="Registering_a_trainer">Registering a trainer</span></h3>
+						<p>
+							The easiest way to allow a trainer to be registered is to include multiple "Battle" comments in its event - see the page <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Trainers" title="Trainers">Trainers</a>&nbsp;for more information on trainer event comments. The total number of these comments is the number of times the player can&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">battle&nbsp;them</a> (including the first time), and thus the number of&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Defining_a_trainer" title="Defining a trainer">versions of that trainer</a> you should define. In addition, the comment "<code>RegSpeech</code>" is what the trainer will say just before the player registers them (something like "Can we swap phone numbers?").
+						</p><p>
+							This is all you need to do - when the game is compiled, the event will be set up appropriately. See the page <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">Rematches</a>&nbsp;for what that event will look like.
+						</p>
+						<h3><span class="mw-headline" id="Registering_a_special_contact">Registering a special contact</span></h3>
+						<p>
+							To register a non-trainer (e.g. Professor Oak, Mom), you will need to use the following script:
+						</p>
+<pre>pbPhoneRegisterNPC(3,"Professor Oak",27)
+</pre>
+						<p>
+							The first number (3) is a unique identifying number for this contact, which determines which phone call messages are used (see below). Next is the display name of the contact. The second number (27) is the ID number of the <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Maps" title="Maps">map</a> where this NPC is; the map name is shown in the contact list.
+						</p><p>
+							NPC contacts also need overworld charsets of themselves, to be displayed in the contact list. These charsets are in the folder "Graphics/Characters", and are called "phoneXXX.png", where "XXX" is the identifying number padded to 3 digits. For convenience, the event itself can also use the same charset.
+						</p><p>
+							The conversations shown when calling these contacts also need to be defined for each contact, as they will all be different. See below for how to define them.
+						</p>
+						<h2><span class="mw-headline" id="Phone_calls_with_trainers">Phone calls with trainers</span></h2>
+						<p>
+							These conversations will be the same regardless of whether the player calls the trainer, or the trainer randomly calls the player.
+						</p><p>
+							These calls can either be idle chatter, or a request for a&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">rematch battle</a>. All phone calls are arrangements of up to three different kinds of dialogue:
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Dialogue type
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Greetings<br>GreetingsMorning<br>GreetingsEvening
+									</td>
+									<td>
+										The first part of all phone calls. The rest of a phone call is one of the below three options.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Bodies1<br>Bodies2
+									</td>
+									<td>
+										These two bits of dialogue are always used together.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Generics
+									</td>
+									<td>
+										This is a complete phone call in itself, minus the "Greetings" part.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										BattleRequests
+									</td>
+									<td>
+										A phrase which declares that the caller is ready for a&nbsp;rematch.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							The possible dialogues for each of the above dialogue types are defined in the&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"phone.txt". Each dialogue type has its own section, and each possible dialogue is written on a separate line (see the page <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Messages" title="Messages">Messages</a>&nbsp;for how they can be formatted).
+						</p><p>
+							Dialogue can reference several things, such as the caller's name and location. To do this, include the following in the dialogue where you want those things to appear:
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Code
+									</th>
+									<th>
+										What it is
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<code>\TN</code>
+									</td>
+									<td>
+										The caller's name.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>\TP</code>
+									</td>
+									<td>
+										A random Pokémon belonging to the caller (as of the last time they were battled).
+										<p>
+											Don't use this if the caller is not a trainer with Pokémon.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>\TE</code>
+									</td>
+									<td>
+										A random Pokémon that can be&nbsp;encountered&nbsp;in the map the caller is in.
+										<p>
+											Don't use this if the caller is not an NPC standing in a map (this usually means special NPCs such as Professor Oak and other non-trainers).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>\TM</code>
+									</td>
+									<td>
+										The name of the map the caller is standing in.
+										<p>
+											Again, don't use this if the caller is not an NPC standing in a map.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Frequency_of_calls">Frequency of calls</span></h3>
+						<p>
+							The time interval between two phone calls is between 20 and 40 minutes, not including time when messages are being displayed or the player is being forced to move via a&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Events" title="Events">move route</a>. The caller is chosen at random from the list in the phone (of people who can call the player).
+						</p><p>
+							You cannot be called by someone if you are on the same map as them.
+						</p>
+						<h2><span class="mw-headline" id="Phone_calls_with_special_contacts">Phone calls with special contacts</span></h2>
+						<p>
+							Each special contact in your phone can be called at any time by choosing them from the phone. They will never call the player, though.
+						</p><p>
+							The messages shown when calling a special contact are written in a Common Event whose ID number is the special contact's identifying number (3 in the example above). These messages include the "ringing" and "click!" at the beginning/end of the call.
+						</p><p>
+							As these conversations are defined in a Common Event, it is easy to allow them to be interactive (e.g. to allow Professor Oak to ask whether the player wants him to comment on the <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a> progress), and allows for them to be rather complex and context-sensitive (e.g. depending on the time of day, or on the player's progress through the game).
+						</p>
+						<h2><span class="mw-headline" id="Technical_details">Technical details</span></h2>
+						<p>
+							The numbers in the phone are stored in the array&nbsp;<code>$PokemonGlobal.phoneNumbers</code>. Each element of this array is an array in itself, listing various values specific to that contact. The length and contents of a contact's array depends on whether the contact is a trainer.
+						</p><p>
+							For trainer contacts:
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Index
+									</th>
+									<th>
+										Value
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										0
+									</td>
+									<td>
+										Is visible
+									</td>
+									<td>
+										This is either TRUE or FALSE. If this is TRUE, then the contact is displayed in the phone list (so the player can call them).
+										<p>
+											It is important that the contact's details remain stored even if the contact is "deleted", as these details determine aspects of the <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">rematches</a>. "Deleting" a contact simply makes it not appear in the contact list, and the contact is unable to call the player or count down to a rematch (although a contact already set up for a rematch can still be fought).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1
+									</td>
+									<td>
+										Trainer type
+									</td>
+									<td>
+										The trainer type of the contact (e.g. 14,&nbsp;<code>PBTrainers::CAMPER</code>).
+										<p>
+											Remember that all trainer contacts must have an associated defined trainer, even if that trainer is never battled.
+										</p><p>
+											In the contact list, this is the first part of the displayed name, e.g. the "Camper" in "Camper Andrew".
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										2
+									</td>
+									<td>
+										Trainer name
+									</td>
+									<td>
+										The name of the contact.
+										<p>
+											Remember that all trainer contacts must have an associated defined trainer, even if that trainer is never battled. However, such a situation is unlikely to ever occur.
+										</p><p>
+											In the contact list, this is the second part of the displayed name, e.g. the "Andrew" in "Camper Andrew".
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										3
+									</td>
+									<td>
+										Time to next battle
+									</td>
+									<td>
+										When the trainer is registered, and each time the player defeats them in a&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">rematch</a>, this value is set to&nbsp;<code>2000+rand(2000)</code>, and reduces by 1 every 1/4 second (except when messages are being displayed or the player is being forced to move by a&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Events" title="Events">move route</a>). When it reaches 0, the "Can battle" value is changed from 1 to 2.
+										<p>
+											This value will hit 0 between 8m 20s and 16m 40s after the trainer was last defeated (not including time spent displaying messages, etc.).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										4
+									</td>
+									<td>
+										Can battle
+									</td>
+									<td>
+										This is one of the following values:
+										<ul>
+											<li>0 - The trainer cannot be&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">rebattled</a>, and its "Time to next battle" needs resetting.</li>
+											<li>1 - The trainer cannot be&nbsp;rebattled&nbsp;yet, and it is counting down.</li>
+											<li>2 - The trainer can be&nbsp;rebattled, but has not yet called the player to say so.</li>
+											<li>3 - The trainer can be&nbsp;rebattled, and has called the player to say so.</li>
+										</ul>
+										<p>
+											This value is reset to 0 after the player defeats the trainer and then to 1 once its "Time to next battle" (above) has been set to a value. It is set to 2 when the "Time to next battle" hits zero. It is changed from 2 to 3 after the contact calls the player to tell them they are ready for a&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">rematch</a>.
+										</p><p>
+											If this value is 2, when the contact calls the player (or vice versa), they will tell the player they are ready for a&nbsp;rematch. If this value is 3, when the contact calls the player (or vice versa), there is only a 50% chance they will remind the player they are ready for a&nbsp;rematch&nbsp;- the other 50% of the time they will say the usual random dialogue.
+										</p><p>
+											Note that the contact does not need to have called the player before they can be&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">rebattled</a>, as the rematch is set up as soon as its "Time to next battle" hits zero.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										5
+									</td>
+									<td>
+										Next battle's trainer version
+									</td>
+									<td>
+										This number is the version of the trainer that the player will battle next (0 is the original battle, 1 is the first&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">rematch</a>, etc.). This is increased by 1 after each time the player defeats the trainer.
+										<p>
+											This value cannot be increased beyond a maximum number, which is the number of&nbsp;"<code>Battle</code>" comments&nbsp;in the event. Once all the different versions of the trainer have been battled, all subsequent&nbsp;rematches&nbsp;with that trainer will be with the final version of that trainer.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										6
+									</td>
+									<td>
+										Map ID
+									</td>
+									<td>
+										The ID of the <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Maps" title="Maps">map</a> the event is on. If this is defined, then the contact's location (the name of the map with this ID) is displayed in the phone screen.
+										<p>
+											If the player is on the same map as the contact, or are both in different regions, they cannot call or be called by that contact.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										7
+									</td>
+									<td>
+										Event ID
+									</td>
+									<td>
+										The ID of the trainer's event on the <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Maps" title="Maps">map</a> mentioned above.
+										<p>
+											If this is defined along with the map ID, and if the "Is visible" value is TRUE, then their event's <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Self Switches</a> will be altered to allow&nbsp;rematches&nbsp;when they become available. This value has no other effect.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							For non-trainer contacts ("special" contacts):
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Index
+									</th>
+									<th>
+										Value
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										0
+									</td>
+									<td>
+										Is visible
+									</td>
+									<td>
+										This is either TRUE or FALSE. If this is TRUE, then the contact is displayed in the phone list (so the player can call them).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1
+									</td>
+									<td>
+										Identifying number
+									</td>
+									<td>
+										A number unique to each contact. It is used to determine which charset to show in the contact list, and which Common Event contains the phone messages for this contact.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										2
+									</td>
+									<td>
+										Display name
+									</td>
+									<td>
+										The full display name of the contact (e.g. "Professor Oak").
+									</td>
+								</tr>
+								<tr>
+									<td>
+										3
+									</td>
+									<td>
+										Map ID
+									</td>
+									<td>
+										The ID of the map corresponding to this contact. It is only used to show the contact's location in the contact list.
+										<p>
+											The contact can always be called regardless of location, and you may want to add in appropriate messages to the contact's Common Event depending on the player's location (i.e. the NPC telling the player to just go up and talk to them instead of calling them).
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							When the player receives a phone call from a trainer, it is from a randomly-chosen trainer out of all the ones that can call the player. Possible callers are those that are on a different map to the one the player is currently on, but are in the same&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Multiple_regions" title="Multiple regions">region</a>&nbsp;as the player.
+						</p><p>
+							The time between successive received phone calls (<code>$PokemonGlobal.phoneTime</code>) is set to&nbsp;a random amount of time between 20 and 40 minutes, and is counted down except when messages are being displayed or the player is being forced to move by a&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Events" title="Events">move route</a>. When this time hits 0, a call from a trainer will be generated.
+						</p>
+						<h2><span class="mw-headline" id="Tips">Tips</span></h2>
+						<ul>
+							<li>The phone doesn't necessarily need to be a <a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9gear" title="Pokégear">Pokégear</a> app. You can just as easily make a phone item.</li>
+							<li>
+								Let the player turn their phone on and off, thus allowing or forbidding trainers to call them.
+								<ul><li>You could forbid random calls from trainers at certain times, e.g. plot-intensive parts of the game.</li></ul>
+							</li>
+							<li>Let the player delete contacts from the phone. The majority of the code required to allow this already exists.</li>
+							<li>You could create a text message system that is also usable by the phone (or the&nbsp;<a href="/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9gear" title="Pokégear">Pokégear</a>). At a very basic level, this would work something like Mail items.</li>
+						</ul>
+						<!--
+					NewPP limit report
+					Cached time: 20210428004520
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.024 seconds
+					Real time usage: 0.027 seconds
+					Preprocessor visited node count: 64/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 92/2097152 bytes
+					Template argument size: 70/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    1.867      1 Template:For
+					100.00%    1.867      1 -total
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:249-0!canonical and timestamp 20210428004520 and revision id 735
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20210512081522/https://essentialsdocs.fandom.com/wiki/Phone?oldid=735">https://essentialsdocs.fandom.com/wiki/Phone?oldid=735</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20210512081522/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

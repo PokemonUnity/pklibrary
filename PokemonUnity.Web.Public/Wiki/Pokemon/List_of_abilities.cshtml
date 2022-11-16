@@ -1,0 +1,2179 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20201104122019if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<p>
+							This page lists the&nbsp;<b>ability effects</b>&nbsp;that exist in Essentials. See the page <a href="/web/20201104122019/https://essentialsdocs.fandom.com/wiki/Abilities" title="Abilities">Abilities</a>&nbsp;for a description of what abilities are.
+						</p><p>
+							Note that this page doesn't describe how these effects are implemented. It also doesn't list every little interaction between a given ability and other effects.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1">
+									<a href="#List_of_abilities"><span class="tocnumber">1</span> <span class="toctext">List of abilities</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-2"><a href="#Occurs_upon_switching_in.2Fout"><span class="tocnumber">1.1</span> <span class="toctext">Occurs upon switching in/out</span></a></li>
+										<li class="toclevel-2 tocsection-3"><a href="#Occurs_at_end_of_round"><span class="tocnumber">1.2</span> <span class="toctext">Occurs at end of round</span></a></li>
+										<li class="toclevel-2 tocsection-4"><a href="#Occurs_upon_a_move_hitting"><span class="tocnumber">1.3</span> <span class="toctext">Occurs upon a move hitting</span></a></li>
+										<li class="toclevel-2 tocsection-5"><a href="#Stat_multipliers"><span class="tocnumber">1.4</span> <span class="toctext">Stat multipliers</span></a></li>
+										<li class="toclevel-2 tocsection-6"><a href="#Move_power_multipliers"><span class="tocnumber">1.5</span> <span class="toctext">Move power multipliers</span></a></li>
+										<li class="toclevel-2 tocsection-7"><a href="#Resists_stat_changes_or_status_problems"><span class="tocnumber">1.6</span> <span class="toctext">Resists stat changes or status problems</span></a></li>
+										<li class="toclevel-2 tocsection-8"><a href="#Immunity_or_resistance_to_moves"><span class="tocnumber">1.7</span> <span class="toctext">Immunity or resistance to moves</span></a></li>
+										<li class="toclevel-2 tocsection-9"><a href="#Immunity_or_resistance_to_other_effects"><span class="tocnumber">1.8</span> <span class="toctext">Immunity or resistance to other effects</span></a></li>
+										<li class="toclevel-2 tocsection-10"><a href="#Modifies_other_effects_and_mechanics"><span class="tocnumber">1.9</span> <span class="toctext">Modifies other effects and mechanics</span></a></li>
+										<li class="toclevel-2 tocsection-11"><a href="#Form_changing"><span class="tocnumber">1.10</span> <span class="toctext">Form changing</span></a></li>
+										<li class="toclevel-2 tocsection-12"><a href="#Other"><span class="tocnumber">1.11</span> <span class="toctext">Other</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-13"><a href="#Pickup.27s_items"><span class="tocnumber">2</span> <span class="toctext">Pickup's items</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="List_of_abilities">List of abilities</span></h2>
+						<h3><span id="Occurs_upon_switching_in/out"></span><span class="mw-headline" id="Occurs_upon_switching_in.2Fout">Occurs upon switching in/out</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Download
+									</td>
+									<td>
+										When the bearer enters battle, increases the bearer's Attack by 1 stage if the foe's Defense is lower than its Special Defense, or increases the bearer's Special Attack by 1 stage otherwise. In double battles, this ability considers the sum of the two stats of both foes.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Intimidate
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;When the bearer enters battle, lowers the foe's Attack by 1 stage.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), 50% chance that a wild Pokémon that would appear won't, if its level is lower than the bearer's and the difference is 5 or more.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Drizzle
+									</td>
+									<td>
+										When the bearer enters battle, starts rain weather. It lasts forever, unless replaced by another weather.
+										<p>
+											Gen 6: The weather lasts 5 rounds (or 8 if Damp Rock is held).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Drought
+									</td>
+									<td>
+										When the bearer enters battle, starts sunny weather. It lasts forever, unless replaced by another weather.
+										<p>
+											Gen 6: The weather lasts 5 rounds (or 8 if Heat Rock is held).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Sand Stream
+									</td>
+									<td>
+										When the bearer enters battle, starts sandstorm weather. It lasts forever, unless replaced by another weather.
+										<p>
+											Gen 6: The weather lasts 5 rounds (or 8 if Smooth Rock is held).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Snow Warning
+									</td>
+									<td>
+										When the bearer enters battle, starts hail weather. It lasts forever, unless replaced by another weather.
+										<p>
+											Gen 6: The weather lasts 5 rounds (or 8 if Icy Rock is held).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Primordial Sea
+									</td>
+									<td>
+										When the bearer enters battle, starts heavy rain weather. It lasts as long as the bearer remains in battle. It has the same effects as rain weather, and also causes all damaging Fire-type moves and weather-inducing moves to fail. Other weather-inducing abilities will not work, except for Desolate Land and Delta Stream.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Desolate Land
+									</td>
+									<td>
+										When the bearer enters battle, starts extremely harsh sunny weather. It lasts as long as the bearer remains in battle. It has the same effects as sunny weather, and also causes all damaging Water-type moves and weather-inducing moves to fail. Other weather-inducing abilities will not work, except for Primordial Sea and Delta Stream.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Delta Stream
+									</td>
+									<td>
+										When the bearer enters battle, starts windy weather. It lasts as long as the bearer remains in battle. Moves that are super-effective against the Flying type instead do 1x damage against it. Also, it causes all weather-inducing moves to fail. Other weather-inducing abilities will not work, except for Primordial Sea and Desolate Land.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Frisk
+									</td>
+									<td>
+										When the bearer enters battle, a message announces the foe's held item. If there are multiple foes with items, a random one is chosen for this ability (the message doesn't name the chosen Pokémon, only its item).
+										<p>
+											Gen 6: All foes are frisked, and each one is named with its item.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Anticipation
+									</td>
+									<td>
+										When the bearer enters battle, a message announces that the bearer "shudders" if any foe has a damaging move whose type is super-effective against the bearer (ignoring type-changing effects), or has an OHKO move that is effective against the bearer.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Forewarn
+									</td>
+									<td>
+										When the bearer enters battle, a message announces the name of the move with the highest base power known by any foe (randomly chooses one if there is a tie). Some variable power moves are assigned particular power values just for this.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Trace
+									</td>
+									<td>
+										When the bearer enters battle, the bearer's ability is turned into the foe's ability (if there are multiple foes, randomly chooses the ability). If the bearer can't trace an ability immediately (some cannot be traced), it will keep trying to trace an ability until it does so.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Imposter
+									</td>
+									<td>
+										When the bearer enters battle, it transforms into the foe directly opposite it. It copies everything that the move Transform does. If there is no foe directly opposite it, it will not transform (even if there is another foe).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Illusion
+									</td>
+									<td>
+										Before bearer enters battle, bearer's appearance becomes that of the last Pokémon in the bearer's party. Copies name (or nickname), shininess, gender and Poké Ball. Illusion breaks when the bearer takes damage from a move, or when Illusion is changed/negated. Aesthetic change only.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Regenerator
+									</td>
+									<td>
+										When the bearer is switched out, it is healed by 1/3 of its maximum HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Natural Cure
+									</td>
+									<td>
+										When the bearer is switched out or is in battle when it ends, its status is cured.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Occurs_at_end_of_round">Occurs at end of round</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Speed Boost
+									</td>
+									<td>
+										At the end of each round, increases the bearer's Speed by 1 stage.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Moody
+									</td>
+									<td>
+										At the end of each round, increases one random stat of the bearer by 2 stages and lowers one other random stat of the bearer by 1 stage. Includes accuracy and evasion. This ability won't choose to increase/lower a stat if it can't be increased/lowered.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Shed Skin
+									</td>
+									<td>
+										At the end of each round, 30% chance to cure the bearer's status. This happens before taking burn/poison damage (which then isn't taken).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Healer
+									</td>
+									<td>
+										At the end of each round, 30% chance to cure the bearer's ally's status. This happens before taking burn/poison damage (which then isn't taken).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Bad Dreams
+									</td>
+									<td>
+										At the end of each round, all sleeping foes lose 1/8 of their maximum HP. This effect does not stack with itself.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Hydration
+									</td>
+									<td>
+										At the end of each round, cures the bearer's status in rainy weather.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Dry Skin
+									</td>
+									<td>
+										At the end of each round, the bearer gains 1/8 of its maximum HP in rainy weather, or loses 1/8 of its maximum HP in sunny weather.
+										<p>
+											Fire-type moves that hit the bearer do 25% more damage.
+										</p><p>
+											The bearer is immune to Water-type moves, and if hit by one, the bearer is healed by 1/4 of its maximum HP instead.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Rain Dish
+									</td>
+									<td>
+										At the end of each round, the bearer gains 1/16 of its maximum HP in rainy weather.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Ice Body
+									</td>
+									<td>
+										At the end of each round, the bearer gains 1/16 of its maximum HP in hail weather. The bearer takes no damage from hail weather.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Pickup
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;At the end of each round, the bearer picks up the most recently consumed held item (used either by its own effect or by Fling/Natural Gift). This ability cannot pick up an item used by the bearer, or one used by a Pokémon that is no longer in battle (not even if it switched out and then back in again). This doesn't happen if the bearer is holding another item. The item may then be consumed immediately.
+										<p>
+											<b>Out of battle:</b>&nbsp;After each battle that the player wins, 10% chance of the bearer gaining an item to hold. The item is randomly chosen, and depends on the bearer's level - see below for the possible items listed in Essentials. This occurs even if the bearer didn't battle or if it is fainted, and only if it isn't holding anything.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Harvest
+									</td>
+									<td>
+										At the end of each round, if the last item the bearer had consumed/Flung/Natural Gifted this battle was a berry, 50% chance to restore it (or 100% chance in sunny weather). This doesn't happen if the bearer is holding another item. The berry may then be consumed immediately.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Occurs_upon_a_move_hitting">Occurs upon a move hitting</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Anger Point
+									</td>
+									<td>
+										When the bearer is hit by a critical hit, its Attack stat stage becomes +6.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Defiant
+									</td>
+									<td>
+										When one of the bearer's stats is lowered by a foe, increases the bearer's Attack by 2 stages. This ability activates once for each different stat lowered.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Competitive
+									</td>
+									<td>
+										When one of the bearer's stats is lowered by a foe, increases the bearer's Special Attack by 2 stages. This ability activates once for each different stat lowered.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Steadfast
+									</td>
+									<td>
+										When the bearer flinches, increases the bearer's Speed by 1 stage.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Weak Armor
+									</td>
+									<td>
+										When the bearer is hit by a physical move, lowers the bearer's Defense by 1 stage and increases its Speed by 1 stage. Applies to each hit of multi-hit moves.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Justified
+									</td>
+									<td>
+										When the bearer is hit by a Dark-type move, increases the bearer's Attack by 1 stage. Applies to each hit of multi-hit moves.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Rattled
+									</td>
+									<td>
+										When the bearer is hit by a Dark-, Bug- or Ghost-type move, increases the bearer's Speed by 1 stage. Applies to each hit of multi-hit moves.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Magician
+									</td>
+									<td>
+										When the bearer hits a Pokémon with a move, the bearer steals the target's held item (if the bearer has no item itself). Doesn't apply if either Pokémon has a substitute.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Moxie
+									</td>
+									<td>
+										When the bearer knocks out another Pokémon by direct damage, increases the bearer's Attack by 1 stage.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Cursed Body
+									</td>
+									<td>
+										When a Pokémon hits the bearer with a move, 30% chance of that move being disabled. Applies to each hit of multi-hit moves. Applies even if the bearer is fainted.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Cute Charm
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;When a Pokémon hits the bearer with a move that makes contact, 30% chance of the attacker becoming infatuated with the bearer (if it is the opposite gender). Applies to each hit of multi-hit moves.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), the gender ratio of any encountered wild Pokémon will be 2:1 in favour of the opposite gender to the bearer (regardless of inherent gender ratios). This only applies to Pokémon that can be either gender, and only if the bearer isn't genderless.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Poison Point
+									</td>
+									<td>
+										When a Pokémon hits the bearer with a move that makes contact, 30% chance of the attacker becoming poisoned. Applies to each hit of multi-hit moves. Applies even if the bearer is fainted.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Static
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;When a Pokémon hits the bearer with a move that makes contact, 30% chance of the attacker becoming paralysed. Applies to each hit of multi-hit moves. Applies even if the bearer is fainted.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), 50% chance to make a wild encounter be with an Electric-type Pokémon (if that encounter could produce an Electric-type Pokémon).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Effect Spore
+									</td>
+									<td>
+										When a Pokémon hits the bearer with a move that makes contact, 30% chance of the attacker becoming paralysed/poisoned/asleep (equal chance of each). Applies to each hit of multi-hit moves. Applies even if the bearer is fainted.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Flame Body
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;When a Pokémon hits the bearer with a move that makes contact, 30% chance of the attacker becoming burned. Applies to each hit of multi-hit moves. Applies even if the bearer is fainted.
+										<p>
+											<b>Out of battle:</b>&nbsp;Eggs hatch twice as fast if the bearer is in the party. This effect does not stack with itself or Magma Armor.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Rough Skin
+									</td>
+									<td>
+										When a Pokémon hits the bearer with a move that makes contact, the attacker loses 1/8 of its maximum HP. Applies to each hit of multi-hit moves. Applies even if the bearer is fainted.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Iron Barbs
+									</td>
+									<td>
+										When a Pokémon hits the bearer with a move that makes contact, the attacker loses 1/8 of its maximum HP. Applies to each hit of multi-hit moves. Applies even if the bearer is fainted.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Pickpocket
+									</td>
+									<td>
+										When a Pokémon hits the bearer with a move that makes contact, the bearer steals the attacker's held item (if the bearer has no item itself). Doesn't apply if either Pokémon has a substitute.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Mummy
+									</td>
+									<td>
+										When a Pokémon hits the bearer with a move that makes contact, the attacker's ability becomes Mummy. Applies to each hit of multi-hit moves. Applies even if the bearer is fainted.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Gooey
+									</td>
+									<td>
+										When a Pokémon hits the bearer with a move that makes contact, lowers the attacker's Speed by 1 stage. Applies to each hit of multi-hit moves. Applies even if the bearer is fainted.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Stench
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;When the bearer hits a Pokémon with a move, 10% chance of making the target flinch this round. This effect doesn't stack with King's Rock or Razor Fang.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), halves the wild encounter rate.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Poison Touch
+									</td>
+									<td>
+										When the bearer hits a Pokémon with a move that makes contact, 30% chance of poisoning the target. Applies to each hit of multi-hit moves. Applies even if the bearer is fainted.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Synchronize
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;When the bearer is inflicted with a burn, paralysis or poison (including bad poison) by another Pokémon, that Pokémon is also given the same status problem (if possible).
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), 50% chance that wild Pokémon will have the same nature as the bearer.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Aftermath
+									</td>
+									<td>
+										When the bearer is knocked out by another Pokémon's move that makes contact, that Pokémon loses 1/4 of its maximum HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Color Change
+									</td>
+									<td>
+										When the bearer is damaged by a move, the bearer's types become that move's type. Occurs after all hits of multi-hit moves.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Stat_multipliers">Stat multipliers</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Flare Boost
+									</td>
+									<td>
+										The bearer's Special Attack is boosted by 50% while it is burned.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Guts
+									</td>
+									<td>
+										The bearer's Attack is boosted by 50% while it has a non-volatile status problem. The bearer's Attack isn't lowered by a burn.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Marvel Scale
+									</td>
+									<td>
+										The bearer's Defense is boosted by 50% while it has a non-volatile status problem.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Quick Feet
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer's Speed is boosted by 50% while it has a non-volatile status problem. The bearer's Speed isn't lowered by paralysis.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), halves the wild encounter rate.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Toxic Boost
+									</td>
+									<td>
+										The bearer's Attack is boosted by 50% while it is poisoned.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Tangled Feet
+									</td>
+									<td>
+										The bearer's evasion is boosted by 20% while it is confused.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Hustle
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer's Attack is boosted by 50%. Its accuracy with physical moves is lowered by 20%.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), 50% chance of a wild Pokémon being a higher level.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Pure Power
+									</td>
+									<td>
+										The bearer's Attack is doubled.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Huge Power
+									</td>
+									<td>
+										The bearer's Attack is doubled.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Compound Eyes
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer's accuracy is boosted by 30%.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), wild Pokémon have 60%/20%/5% chance to be holding a common/uncommon/rare item.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Unburden
+									</td>
+									<td>
+										After the bearer loses its held item, its Speed is doubled. This only applies while the bearer has no held item.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Slow Start
+									</td>
+									<td>
+										The bearer's Attack and Speed are halved for the first 5 rounds it is in battle. This effect is reset if the bearer switches out.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Defeatist
+									</td>
+									<td>
+										The bearer's Attack and Special Attack are halved while it is at or less than half of its maximum HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Victory Star
+									</td>
+									<td>
+										The bearer's accuracy is boosted by 10%. The bearer's ally's accuracy (in double battles) is boosted by 10%. This effect stacks with itself.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Plus
+									</td>
+									<td>
+										The bearer's Special Attack is boosted by 50% while the bearer's ally has the ability Plus or Minus.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Minus
+									</td>
+									<td>
+										The bearer's Special Attack is boosted by 50% while the bearer's ally has the ability Plus or Minus.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Chlorophyll
+									</td>
+									<td>
+										The bearer's Speed is doubled in sunny weather.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Swift Swim
+									</td>
+									<td>
+										The bearer's Speed is doubled in rain weather.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Sand Rush
+									</td>
+									<td>
+										The bearer's Speed is doubled in sandstorm weather.
+										<p>
+											The bearer takes no damage from sandstorm weather.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Solar Power
+									</td>
+									<td>
+										The bearer's Special Attack is boosted by 50% in sunny weather.
+										<p>
+											At the end of each round, the bearer loses 1/8 of its maximum HP in sunny weather.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Sand Veil
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer's evasion is boosted by 25% in sandstorm weather.
+										<p>
+											The bearer takes no damage from sandstorm weather.
+										</p><p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), halves the wild encounter rate in sandstorms.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Snow Cloak
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer's evasion is boosted by 25% in hail weather.
+										<p>
+											The bearer takes no damage from hail weather.
+										</p><p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), halves the wild encounter rate in blizzards.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Flower Gift
+									</td>
+									<td>
+										The bearer's Attack and Special Defense are boosted by 50% in sunny weather. The bearer's ally's Attack and Special Defense are boosted by 50% in sunny weather. This effect doesn't stack with itself.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Grass Pelt
+									</td>
+									<td>
+										The bearer's Defense is boosted by 50% while Grassy Terrain is in effect.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Move_power_multipliers">Move power multipliers</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Blaze
+									</td>
+									<td>
+										The power of the bearer's Fire-type moves is boosted by 50% while the bearer is at or less than 1/3 of its maximum HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Overgrow
+									</td>
+									<td>
+										The power of the bearer's Grass-type moves is boosted by 50% while the bearer is at or less than 1/3 of its maximum HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Torrent
+									</td>
+									<td>
+										The power of the bearer's Water-type moves is boosted by 50% while the bearer is at or less than 1/3 of its maximum HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Swarm
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The power of the bearer's Bug-type moves is boosted by 50% while the bearer is at or less than 1/3 of its maximum HP.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), increases the wild encounter rate by 50%.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Sand Force
+									</td>
+									<td>
+										The power of the bearer's Rock-, Ground- and Steel-type moves is boosted by 30% in sandstorm weather.
+										<p>
+											The bearer takes no damage from sandstorm weather.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Iron Fist
+									</td>
+									<td>
+										The power of the bearer's punching moves is boosted by 20%.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Strong Jaw
+									</td>
+									<td>
+										The power of the bearer's biting moves is boosted by 50%.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Mega Launcher
+									</td>
+									<td>
+										The power of the bearer's pulse and aura moves is boosted by 50%. The bearer's Heal Pulse will heal 75% of the maximum HP rather than 50%.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Tough Claws
+									</td>
+									<td>
+										The power of the bearer's moves that make contact is boosted by 33%.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Reckless
+									</td>
+									<td>
+										The power of the bearer's recoil-inflicting moves (except Struggle) and crash-damaging moves is boosted by 20%.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Rivalry
+									</td>
+									<td>
+										The power of the bearer's moves are boosted by 25% if used against a Pokémon of the same gender as the bearer, and lowered by 25% if used against a Pokémon of the opposite gender to the bearer. If either the bearer or the target is genderless, this ability does nothing.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Sheer Force
+									</td>
+									<td>
+										The power of the bearer's moves are boosted by 30% if they have a secondary effect (i.e. they have a non-zero added effect probability, even if that value is 100%), and those effects are ignored. Moves affected by this ability also don't trigger the effects of Red Card, Eject Button, Shell Bell and Life Orb's recoil damage.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Technician
+									</td>
+									<td>
+										The power of the bearer's moves are boosted by 50% if their (calculated) base power is 60 or less.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Tinted Lens
+									</td>
+									<td>
+										The power of the bearer's moves is doubled if they are not very effective against the foe.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Sniper
+									</td>
+									<td>
+										The power of the bearer's moves is boosted by 50% if they are critical hits.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Analytic
+									</td>
+									<td>
+										The power of the bearer's moves is boosted by 30% if the target acted before the bearer this round.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Dark Aura
+									</td>
+									<td>
+										The power of all Dark-type moves used by any Pokémon is increased by 33%. If a Pokémon with Aura Break is in battle, the power of these moves is decreased by 33% instead.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Fairy Aura
+									</td>
+									<td>
+										The power of all Fairy-type moves used by any Pokémon is increased by 33%. If a Pokémon with Aura Break is in battle, the power of these moves is decreased by 33% instead.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Aura Break
+									</td>
+									<td>
+										The effects of the abilities Dark Aura and Fairy Aura are reversed.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Resists_stat_changes_or_status_problems">Resists stat changes or status problems</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Big Pecks
+									</td>
+									<td>
+										The bearer's Defense cannot be lowered (except if self-inflicted).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Hyper Cutter
+									</td>
+									<td>
+										The bearer's Attack cannot be lowered (except if self-inflicted).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Keen Eye
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer's accuracy cannot be lowered (except if self-inflicted).
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), 50% chance that a wild Pokémon that would appear won't, if its level is lower than the bearer's and the difference is 5 or more.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Clear Body
+									</td>
+									<td>
+										The bearer's stats cannot be lowered (except if self-inflicted).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										White Smoke
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer's stats cannot be lowered (except if self-inflicted).
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), halves the wild encounter rate.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Immunity
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer cannot become poisoned. The bearer is cured of poison if it becomes poisoned.
+										<p>
+											<b>Out of battle:</b>&nbsp;The bearer doesn't take poison damage from walking around.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Magma Armor
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer cannot become frozen. The bearer is cured of its freeze if it becomes frozen.
+										<p>
+											<b>Out of battle:</b>&nbsp;Eggs hatch twice as fast if the bearer is in the party. This effect does not stack with itself or Flame Body.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Limber
+									</td>
+									<td>
+										The bearer cannot become paralysed. The bearer is cured of paralysis if it becomes paralysed.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Insomnia
+									</td>
+									<td>
+										The bearer cannot fall asleep or be affected by Yawn. The bearer is cured of its sleep if it falls asleep. The move Rest will fail if used by the bearer.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Vital Spirit
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer cannot fall asleep or be affected by Yawn. The bearer is cured of its sleep if it falls asleep. The move Rest will fail if used by the bearer.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), 50% chance of a wild Pokémon being a higher level.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Sweet Veil
+									</td>
+									<td>
+										The bearer and its ally cannot fall asleep or be affected by Yawn. The bearer and ally are cured of their sleep if they fall asleep. The move Rest will fail if used by the bearer or its ally.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Water Veil
+									</td>
+									<td>
+										The bearer cannot become burned. The bearer is cured of its burn if it becomes burned.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Own Tempo
+									</td>
+									<td>
+										The bearer cannot become confused. The bearer is cured of its confusion if it becomes confused.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Oblivious
+									</td>
+									<td>
+										The bearer cannot become infatuated. The bearer is cured of its infatuation if it becomes infatuated. The bearer is not affected by the move Captivate.
+										<p>
+											Gen 6: Also, the bearer is not affected by the move Taunt. The bearer is cured of its taunt if it becomes taunted.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Inner Focus
+									</td>
+									<td>
+										The bearer cannot be made to flinch.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Flower Veil
+									</td>
+									<td>
+										All Grass-type Pokémon on the bearer's side cannot obtain a non-volatile status problem, or fall asleep if affected by Yawn.
+										<p>
+											The stats of all Grass-type Pokémon on the bearer's side cannot be lowered (except if self-inflicted).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Leaf Guard
+									</td>
+									<td>
+										In sunny weather, the bearer cannot obtain a non-volatile status problem.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Immunity_or_resistance_to_moves">Immunity or resistance to moves</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Flash Fire
+									</td>
+									<td>
+										The bearer is immune to Fire-type moves. If hit by one, the power of all the bearer's Fire-type moves from then on is boosted by 50% (this boost does not stack).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Storm Drain
+									</td>
+									<td>
+										The bearer is immune to Water-type moves. If hit by one, increases the bearer's Special Attack by 1 stage.
+										<p>
+											If another Pokémon uses a Water-type move against a single target that isn't the bearer, the bearer becomes the target. Water-type moves used against the bearer have perfect accuracy.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Water Absorb
+									</td>
+									<td>
+										The bearer is immune to Water-type moves. If hit by one, the bearer is healed by 1/4 of its maximum HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Lightning Rod
+									</td>
+									<td>
+										The bearer is immune to Electric-type moves. If hit by one, increases the bearer's Special Attack by 1 stage.
+										<p>
+											If another Pokémon uses a Electric-type move against a single target that isn't the bearer, the bearer becomes the target. Electric-type moves used against the bearer have perfect accuracy.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Motor Drive
+									</td>
+									<td>
+										The bearer is immune to Electric-type moves. If hit by one, increases the bearer's Speed by 1 stage.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Volt Absorb
+									</td>
+									<td>
+										The bearer is immune to Electric-type moves. If hit by one, the bearer is healed by 1/4 of its maximum HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Sap Sipper
+									</td>
+									<td>
+										The bearer is immune to Grass-type moves. If hit by one, increases the bearer's Attack by 1 stage.
+										<p>
+											Gen 6: This ability is now also triggered by an ally's Aromatherapy.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Levitate
+									</td>
+									<td>
+										The bearer is immune to damaging Ground-type moves (except Thousand Arrows), damage from Sky Drop and entry hazards (except Stealth Rock).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Soundproof
+									</td>
+									<td>
+										The bearer is immune to sound-based moves.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Bulletproof
+									</td>
+									<td>
+										The bearer is immune to bomb moves.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Rock Head
+									</td>
+									<td>
+										The bearer is immune to recoil damage (except from Struggle and Shadow moves).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Telepathy
+									</td>
+									<td>
+										The bearer is immune to damaging moves used by the bearer's ally.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Sturdy
+									</td>
+									<td>
+										The bearer is immune to OHKO moves.
+										<p>
+											If an attack against the bearer would KO it from full HP, the bearer survives the attack with 1HP instead (like Focus Sash).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Wonder Guard
+									</td>
+									<td>
+										The bearer is immune to damaging moves that aren't super-effective against the bearer.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Aroma Veil
+									</td>
+									<td>
+										The bearer and its ally are immune to the moves Attract, Disable, Encore, Heal Block, Taunt and Torment. These moves fail when used against an immune Pokémon.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Heatproof
+									</td>
+									<td>
+										The power of Fire-type moves used against the bearer is halved.
+										<p>
+											The bearer only takes half the usual damage from being burned.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Thick Fat
+									</td>
+									<td>
+										The power of Ice-type and Fire-type moves used against the bearer is halved.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Fur Coat
+									</td>
+									<td>
+										The power of physical moves used against the bearer is halved. This effect also applies to Psyshock, Psystrike and Secret Sword.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Solid Rock
+									</td>
+									<td>
+										The bearer takes 25% less damage from super-effective moves that hit it.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Filter
+									</td>
+									<td>
+										The bearer takes 25% less damage from super-effective moves that hit it.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Multiscale
+									</td>
+									<td>
+										The bearer takes half damage from moves that hit it while the bearer is at full HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Friend Guard
+									</td>
+									<td>
+										The bearer's ally takes 25% less damage from attacks that hit the ally.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Battle Armor
+									</td>
+									<td>
+										The chance of a move used against the bearer being a critical hit is 0.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Shell Armor
+									</td>
+									<td>
+										The chance of a move used against the bearer being a critical hit is 0.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Immunity_or_resistance_to_other_effects">Immunity or resistance to other effects</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Magic Guard
+									</td>
+									<td>
+										The bearer is immune to damage inflicted by effects (e.g. weather, entry hazards, Leech Seed, being burned/poisoned). Any other effects (e.g. being trapped) are not resisted.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Overcoat
+									</td>
+									<td>
+										The bearer is immune to damage inflicted by weather (i.e. sandstorm and hail).
+										<p>
+											Gen 6: The bearer is also immune to powder-based moves, as well as the ability Effect Spore.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Modifies_other_effects_and_mechanics">Modifies other effects and mechanics</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Simple
+									</td>
+									<td>
+										All changes to the bearer's stat stages are doubled.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Poison Heal
+									</td>
+									<td>
+										If the bearer is poisoned, the bearer is not hurt by poison damage but instead is healed by 1/8 of its maximum HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Early Bird
+									</td>
+									<td>
+										If the bearer falls asleep, the preset number of rounds it will remain asleep is halved (rounding down).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Liquid Ooze
+									</td>
+									<td>
+										If the bearer's HP is drained by an attack or Leech Seed, the Pokémon that would gain the drained HP is instead damaged by that same amount.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Air Lock
+									</td>
+									<td>
+										All effects of weather are negated. The weather itself still occurs, though.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Cloud Nine
+									</td>
+									<td>
+										All effects of weather are negated. The weather itself still occurs, though.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Sticky Hold
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer's held item cannot be stolen or dropped.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), increases the bite chance and speed for fishing encounters.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Gluttony
+									</td>
+									<td>
+										The bearer will consume certain berries while it is at or less than half of its maximum HP. The berries affected are the 9 which are normally only consumed when at or less than a quarter of the holder's maximum HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Cheek Pouch
+									</td>
+									<td>
+										When the bearer consumes a berry (either by itself or by using Bug Bite/Pluck or when another Pokémon flings a berry at it), it is healed by 1/3 of its maximum HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Symbiosis
+									</td>
+									<td>
+										When the bearer's ally consumes an item (either by itself or by using Fling/Natural Gift/Bug Bite/Pluck), the bearer immediately gives its held item to its ally.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Unnerve
+									</td>
+									<td>
+										The bearer's foes cannot consume their held berries or use the moves Natural Gift or Fling (if they would fling a berry).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Klutz
+									</td>
+									<td>
+										The effects of the bearer's held item are negated. The bearer cannot consume its held item, and cannot use the moves Fling or Natural Gift. The bearer won't get the effect of a berry eaten by Bug Bite/Pluck (but will still eat it). The items Exp Share/Power Weight/Amulet Coin and similar are unaffected. Iron Ball still lowers Speed.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Run Away
+									</td>
+									<td>
+										The bearer can always flee from battle, ignoring the escape calculation. Doesn't affect whether the bearer can switch with another party Pokémon.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Suction Cups
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer cannot be forced to switch out or flee by a foe's move.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), increases the bite chance and speed for fishing encounters.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Shadow Tag
+									</td>
+									<td>
+										The bearer's foes cannot switch out or flee (unless they also have this ability).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Arena Trap
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer's non-airborne foes cannot switch out or flee.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), doubles the wild encounter rate.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Magnet Pull
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer's Steel-type foes cannot switch out or flee.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), 50% chance to make a wild encounter be with a Steel-type Pokémon (if that encounter could produce a Steel-type Pokémon).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Mold Breaker
+									</td>
+									<td>
+										Negates the effects of all abilities that could affect the damage or effect of the bearer's moves.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Teravolt
+									</td>
+									<td>
+										Negates the effects of all abilities that could affect the damage or effect of the bearer's moves.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Turboblaze
+									</td>
+									<td>
+										Negates the effects of all abilities that could affect the damage or effect of the bearer's moves.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Pressure
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;Moves that hit the bearer or the bearer's side lose 1 more PP than normal. This effect stacks with itself.
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), 50% chance of a wild Pokémon being a higher level.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Truant
+									</td>
+									<td>
+										The bearer skips every other turn. It will always be able to move immediately after waking up.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Stall
+									</td>
+									<td>
+										The bearer moves last in its priority bracket, regardless of speed. This ignores Trick Room, and is overridden by Quick Claw and Custap Berry.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Unaware
+									</td>
+									<td>
+										When the bearer uses a move, it ignores the target's Defense, Special Defense and evasion stat changes.
+										<p>
+											When the bearer is attacked, that move ignores the attacker's Attack, Special Attack and accuracy stat changes.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Contrary
+									</td>
+									<td>
+										When one or more of the bearer's stats are changed, that change is the opposite of what it normally does (i.e. increase instead of decrease, and vice versa).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Scrappy
+									</td>
+									<td>
+										The type effectiveness of the bearer's moves against the Ghost-type become 1x if they were originally 0x (i.e. the bearer's Normal-type and Fighting-type moves can hit Ghost-type Pokémon).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Serene Grace
+									</td>
+									<td>
+										Doubles the chance of the additional effect of a bearer's damaging move occurring.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Shield Dust
+									</td>
+									<td>
+										Negates all additional effects of damaging moves that affect the bearer (i.e. the move just does damage).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Skill Link
+									</td>
+									<td>
+										The bearer's multi-hit moves always hit the maximum number of times. Affects moves that hit 2-5 times and Triple Kick.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Parental Bond
+									</td>
+									<td>
+										The bearer's single-hit damaging moves that only target one Pokémon instead hit twice, with the second hit being 1/4 as powerful. This applies to moves that normally have a single target, as well as moves that normally have multiple targets but are only targeting one Pokémon this time (e.g. Earthquake in single battles, or when all but one potential target is fainted). This does not apply to moves that require charging before use. It also does not apply to Endeavor, Explosion, Final Gambit, Fling or Self-Destruct.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Super Luck
+									</td>
+									<td>
+										The chance of a bearer's move being a critical hit is increased by 1 stage.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Damp
+									</td>
+									<td>
+										No Pokémon can self-destruct, and the ability Aftermath is negated.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Adaptability
+									</td>
+									<td>
+										The STAB for the bearer's moves is 2x rather than 1.5x.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										No Guard
+									</td>
+									<td>
+										<b>In battle:</b>&nbsp;The bearer's moves and moves targeting the bearer will always hit. This applies even if the bearer's target is semi-invulnerable (e.g. using Fly).
+										<p>
+											<b>Out of battle:</b>&nbsp;If the bearer is at the front of the party (even if it is fainted), doubles the wild encounter rate.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Normalize
+									</td>
+									<td>
+										The bearer's moves become Normal-type. This does not affect moves that calculate their own type, i.e. Hidden Power, Judgment, Natural Gift, Techno Blast and Weather Ball.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Aerilate
+									</td>
+									<td>
+										The bearer's Normal-type moves become Flying-type, and the power of these affected moves is boosted by 30%.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Refrigerate
+									</td>
+									<td>
+										The bearer's Normal-type moves become Ice-type, and the power of these affected moves is boosted by 30%.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Pixilate
+									</td>
+									<td>
+										The bearer's Normal-type moves become Fairy-type, and the power of these affected moves is boosted by 30%.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Protean
+									</td>
+									<td>
+										When the bearer uses a move, changes the bearer's type(s) to that move's type. Considers effects that would change the move's type. Doesn't apply to a move that calls another move, but does apply to that called move.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Wonder Skin
+									</td>
+									<td>
+										Lowers the accuracy of all foes' status moves that target the bearer to 50%. This check happens after other accuracy-changing effects (e.g. Compound Eyes), and only applies if the resulting accuracy would be higher than 50%.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Infiltrator
+									</td>
+									<td>
+										The bearer's moves ignore the foe's Light Screen, Mist, Reflect and Safeguard.
+										<p>
+											Gen 6: The bearer's moves also bypass a target's Substitute.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Prankster
+									</td>
+									<td>
+										Increases the priority of the bearer's status moves by 1. The priority increase is ignored for the purpose of Quick Guard.
+										<p>
+											Gen 6: The priority increase now counts for Quick Guard's effect.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Gale Wings
+									</td>
+									<td>
+										Increases the priority of the bearer's Flying-type moves by 1. The priority increase is ignored for the purpose of Quick Guard. The move's type is considered to be the original type, not a modified type due to abilities or other effects (e.g. Judgment is considered Normal-type regardless of the Plate being held).
+										<p>
+											Gen 6: The priority increase now counts for Quick Guard's effect.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Form_changing">Form changing</span></h3>
+						<p>
+							If a Pokémon transforms (via Transform or Imposter) into a target with a form-changing ability, that Pokémon will transform into the target's current form and remain that way, regardless of any rules about which form it should be. In other words, transformed Pokémon are form-locked.
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Forecast
+									</td>
+									<td>
+										Changes the bearer's form to match the weather. The bearer's type and sprite are changed. Only works if the bearer is Castform and it hasn't transformed.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Multitype
+									</td>
+									<td>
+										Changes the bearer's form depending on its held Plate. The bearer's type and sprite are changed. The Plate cannot be removed from the bearer by any means (but non-Plate items can be used/lost as normal). Only works if the bearer is Arceus and it hasn't transformed.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Zen Mode
+									</td>
+									<td>
+										Changes the bearer's form depending on its HP. The bearer's base stats, type and sprite are changed. Only works if the bearer is Darmanitan and it hasn't transformed.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Stance Change
+									</td>
+									<td>
+										Changes the bearer's form depending on the move it uses. The bearer's base stats and sprite are changed. Only works if the bearer is Aegislash and it hasn't transformed.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Other">Other</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Illuminate
+									</td>
+									<td>
+										<b>In battle:</b> No effect.
+										<p>
+											<b>Out of battle:</b> If the bearer is at the front of the party (even if it is fainted), doubles the wild encounter rate.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Honey Gather
+									</td>
+									<td>
+										<b>In battle:</b> No effect.
+										<p>
+											<b>Out of battle:</b> After each battle that the player wins, X% chance of the bearer gaining Honey as a held item. X is <code>5 + ((bearer's level - 1)/10).floor * 5</code>. This occurs even if the bearer didn't battle or if it is fainted, and only if it isn't holding anything.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Magic Bounce
+									</td>
+									<td>
+										Reflects effects of status ailment-inflicting moves back at the originator. Activates max. once per round. Reflects the same things that the move Magic Coat does.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Heavy Metal
+									</td>
+									<td>
+										Doubles the bearer's weight.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Light Metal
+									</td>
+									<td>
+										Halves the bearer's weight.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h2><span id="Pickup's_items"></span><span class="mw-headline" id="Pickup.27s_items">Pickup's items</span></h2>
+						<p>
+							The items that the ability Pickup can produce are listed in <code>def Kernel.pbPickup</code>&nbsp;in the script section&nbsp;<b>PField_Battles</b>. They are listed in two groups: the common items and the rare items. They are the items available from Pickup in the games Omega Ruby and Alpha Sapphire.
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Start level
+									</th>
+									<th>
+										Common items
+									</th>
+									<th>
+										Rare items
+									</th>
+								</tr>
+								<tr>
+									<td>
+										1-10
+									</td>
+									<td>
+										Potion
+									</td>
+									<td>
+										Hyper Potion
+									</td>
+								</tr>
+								<tr>
+									<td>
+										11-20
+									</td>
+									<td>
+										Antidote
+									</td>
+									<td>
+										Nugget
+									</td>
+								</tr>
+								<tr>
+									<td>
+										21-30
+									</td>
+									<td>
+										Super Potion
+									</td>
+									<td>
+										King's Rock
+									</td>
+								</tr>
+								<tr>
+									<td>
+										31-40
+									</td>
+									<td>
+										Great Ball
+									</td>
+									<td>
+										Full Restore
+									</td>
+								</tr>
+								<tr>
+									<td>
+										41-50
+									</td>
+									<td>
+										Repel
+									</td>
+									<td>
+										Ether
+									</td>
+								</tr>
+								<tr>
+									<td>
+										51-60
+									</td>
+									<td>
+										Escape Rope
+									</td>
+									<td>
+										Iron Ball
+									</td>
+								</tr>
+								<tr>
+									<td>
+										61-70
+									</td>
+									<td>
+										Full Heal
+									</td>
+									<td>
+										Destiny Knot
+									</td>
+								</tr>
+								<tr>
+									<td>
+										71-80
+									</td>
+									<td>
+										Hyper Potion
+									</td>
+									<td>
+										Elixir
+									</td>
+								</tr>
+								<tr>
+									<td>
+										81-90
+									</td>
+									<td>
+										Ultra Ball
+									</td>
+									<td>
+										Destiny Knot
+									</td>
+								</tr>
+								<tr>
+									<td>
+										91+
+									</td>
+									<td>
+										Revive
+									</td>
+									<td>
+										Leftovers
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td>
+										Rare Candy
+									</td>
+									<td>
+										Destiny Knot
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td>
+										Sun Stone
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td>
+										Moon Stone
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td>
+										Heart Scale
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td>
+										Full Restore
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td>
+										Max Revive
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td>
+										PP Up
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td>
+										Max Elixir
+									</td>
+									<td>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							The items to be chosen from, and their rarities, depend on the Pokémon's level.
+						</p><p>
+							Nine items are chosen from the list of common items, starting with the one corresponding to the appropriate start level, and taking the eight items listed after that in order. These nine items, in order, have rarities of 30%, 10%, 10%, 10%, 10%, 10%, 10%, 4% and 4% (98% total).
+						</p><p>
+							Two further items are chosen from the list of rare items, again starting with the one corresponding to the appropriate start level, and taking the item after that as well. Each of these two items have a rarity of 1%.
+						</p><p>
+							The rarity of each item is listed in the array&nbsp;<code>randlist</code>. It is highly unlikely you would want to change these probabilities, as any change would be virtually unnoticeable to the player considering how much Pickup would have to be used in order to see the altered probabilities.
+						</p><p>
+							For example, a Pokémon of level 56 would choose the Escape Rope (30%), Full Heal to Sun Stone (10% each), Moon Stone (4%) and Heart Scale (4%), and finally the Iron Ball (1%) and Destiny Knot (1%).
+						</p><p>
+							A level higher than 100 is treated as a level of 100 for this ability, which is why the table above gives the final start level as "91+" rather than "91-100".
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20201031074028
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.028 seconds
+					Real time usage: 0.030 seconds
+					Preprocessor visited node count: 40/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 0/2097152 bytes
+					Template argument size: 0/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    0.000      1 -total
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:206-0!canonical and timestamp 20201031074028 and revision id 613
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20201104122019/https://essentialsdocs.fandom.com/wiki/List_of_abilities?oldid=613">https://essentialsdocs.fandom.com/wiki/List_of_abilities?oldid=613</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20201104122019/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

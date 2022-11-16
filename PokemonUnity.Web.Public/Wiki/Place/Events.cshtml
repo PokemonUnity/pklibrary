@@ -1,0 +1,1514 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20210512073724if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl>
+							<dd><i>For making an event do different things depending on the time or date, see <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Time-sensitive_events" title="Time-sensitive events">Time-sensitive events</a>.</i></dd>
+							<dd><i>For doing things with events via scripts rather than event commands, see <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Controlling_events_with_scripts" title="Controlling events with scripts">Controlling events with scripts</a>.</i></dd>
+						</dl>
+						<p>
+							This page describes&nbsp;<b>events</b>, as well as&nbsp;<b>Game Switches and Variables</b>. As these things are fundamental parts of RPG Maker XP, this article won't fully explain them, and will only mention the aspects that are specific to Pokémon Essentials.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1">
+									<a href="#Event_commands"><span class="tocnumber">1</span> <span class="toctext">Event commands</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-2"><a href="#Page_1"><span class="tocnumber">1.1</span> <span class="toctext">Page 1</span></a></li>
+										<li class="toclevel-2 tocsection-3"><a href="#Page_2"><span class="tocnumber">1.2</span> <span class="toctext">Page 2</span></a></li>
+										<li class="toclevel-2 tocsection-4"><a href="#Page_3"><span class="tocnumber">1.3</span> <span class="toctext">Page 3</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-5">
+									<a href="#Switches_and_Variables"><span class="tocnumber">2</span> <span class="toctext">Switches and Variables</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-6"><a href="#Game_Switches"><span class="tocnumber">2.1</span> <span class="toctext">Game Switches</span></a></li>
+										<li class="toclevel-2 tocsection-7"><a href="#Game_Variables"><span class="tocnumber">2.2</span> <span class="toctext">Game Variables</span></a></li>
+										<li class="toclevel-2 tocsection-8"><a href="#Script_Switches"><span class="tocnumber">2.3</span> <span class="toctext">Script Switches</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Event_commands">Event commands</span></h2>
+						<p>
+							RPG Maker XP includes a range of default commands for events, which perform various different effects. This section of the article describes those commands.
+						</p><p>
+							Some of those commands have been adapted from their original use to work with Essentials. Modified commands are highlighted in green. Commands that do nothing are highlighted in red.
+						</p>
+						<h3><span class="mw-headline" id="Page_1">Page 1</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Command
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Show Text
+									</td>
+									<td>
+										<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Messages" title="Messages">Shows text</a>.
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Show Choices
+									</td>
+									<td>
+										Displays up to 4 choices. To show more than 4 choices, see the page <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Messages" title="Messages">Messages</a>.
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Input Number
+									</td>
+									<td>
+										Lets the player set a Game Variable to a number of their choice. You choose how many digits the number has.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Change Text Options
+									</td>
+									<td>
+										Changes the position of the speech text box (either top, middle or bottom), and shows/hides the window (but not the text itself). Applies to all speech boxes for the rest of the event.
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Button Input Processing
+									</td>
+									<td>
+										Waits for the player to press a key, and stores the key in a Game Variable.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Wait
+									</td>
+									<td>
+										Pauses the game for a given length of time.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Comment
+									</td>
+									<td>
+										Used to annotate events. Some comments are converted into other event commands when the game is compiled (e.g. into a&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Trainers" title="Trainers">trainer event</a>).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Conditional Branch
+									</td>
+									<td>
+										Creates an "if...else" branch in the event.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Loop
+									</td>
+									<td>
+										Creates a never-ending loop in the event.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Break Loop
+									</td>
+									<td>
+										Breaks out of the above loop.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Exit Event Processing
+									</td>
+									<td>
+										Immediately stops processing the event's commands, even if there are commands after this one.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Erase Event
+									</td>
+									<td>
+										Temporarily erases the current event, for as long as the current map remains loaded. Is exactly the same as the script command&nbsp;<code>pbEraseThisEvent</code>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Call Common Event
+									</td>
+									<td>
+										Calls a Common Event and begins processing it.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Label
+									</td>
+									<td>
+										Set a bookmark in the event's commands, which can be jumped to.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Jump to Label
+									</td>
+									<td>
+										Jumps to a label in the event's commands.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Control Switches
+									</td>
+									<td>
+										Changes the ON/OFF status of a Game Switch.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Control Variables
+									</td>
+									<td>
+										Changes the value of a Game Variable.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Control Self Switch
+									</td>
+									<td>
+										Changes the ON/OFF status of one of the event's Self Switches.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Control Timer
+									</td>
+									<td>
+										Begins an on-screen timer which counts down from the given time, or stops it and makes it disappear. If the timer reaches 0, it will still remain on-screen until this command stops it.
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Change Gold
+									</td>
+									<td>
+										Changes the player's money.
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Items
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Weapons
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Armor
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Party Member
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Change Windowskin
+									</td>
+									<td>
+										Changes the speech text frame. Much less convenient to use than the&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Messages" title="Messages">message command</a>&nbsp;which does the same thing.
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Change Battle BGM
+									</td>
+									<td>
+										Sets the BGM to play for the next battle.
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Change Battle End ME
+									</td>
+									<td>
+										Sets the ME to play in battle for the next victory.
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Change Save Access
+									</td>
+									<td>
+										Allows or forbids the player to save the game (the option won't show up in the&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pause_menu" title="Pause menu">Pause menu</a>).
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Change Menu Access
+									</td>
+									<td>
+										Allows or forbids the player to open the&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pause_menu" title="Pause menu">Pause menu</a>.
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Change Encounter
+									</td>
+									<td>
+										Enables or disables <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Wild_encounters" title="Wild encounters">wild Pokémon&nbsp;encounters</a>.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Page_2">Page 2</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Command
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Transfer Player
+									</td>
+									<td>
+										Instantly moves the player to a different location on the same or a different map. Usually used alongside a few other event commands.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set Event Location
+									</td>
+									<td>
+										The same as "Transfer Player", but only for events and only for the current map.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Scroll Map
+									</td>
+									<td>
+										Changes what part of the map the screen is centred on. Doesn't work well if the player (now off to one side of the screen) moves towards the centre of the screen.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Change Map Settings
+									</td>
+									<td>
+										Set the map's panorama picture or fog. The battleback graphic does nothing.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Change Fog Color Tone
+									</td>
+									<td>
+										Changes the colour of the fog.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Change Fog Opacity
+									</td>
+									<td>
+										Changes the opacity of the fog.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Show Animation
+									</td>
+									<td>
+										Plays an&nbsp;<a class="new" title="Field animations (page does not exist)" data-uncrawlable-url="L3dpa2kvRmllbGRfYW5pbWF0aW9ucz9hY3Rpb249ZWRpdCZyZWRsaW5rPTE=" rel="nofollow">animation</a>&nbsp;centred on either the player or an event.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Change Transparent Flag
+									</td>
+									<td>
+										Makes the player visible or invisible.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set Move Route
+									</td>
+									<td>
+										Sets a move route for the player or an event.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Wait for Move's Completion
+									</td>
+									<td>
+										Use after "Set Move Route" to make the entire move route play out first before proceeding with the next event command.
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Prepare for Transition
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Execute Transition
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Change Screen Color Tone
+									</td>
+									<td>
+										Changes the tone of the screen, until the player transfers to a different map. The changed tone remains even if you&nbsp;walk between <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Connecting_maps" title="Connecting maps">connected maps</a>. The time it takes to change to the new tone is also definable.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Screen Flash
+									</td>
+									<td>
+										Like "Change Screen Color Tone", but temporary.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Screen Shake
+									</td>
+									<td>
+										Makes the screen shake.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Show Picture
+									</td>
+									<td>
+										Displays a picture on-screen. The&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Game_intro" title="Game intro">Professor's lecture</a>&nbsp;contains a number of examples of this.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Move Picture
+									</td>
+									<td>
+										Moves a displayed picture to a different place on-screen. It glides from its old to its new position over a definable period of time.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Rotate Picture
+									</td>
+									<td>
+										Makes a displayed picture begin rotating.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Change Picture Color Tone
+									</td>
+									<td>
+										Changes the colour of a displayed picture over a definable period of time.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Erase Picture
+									</td>
+									<td>
+										Erases a displayed picture.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Set Weather Effects
+									</td>
+									<td>
+										Causes&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Weather" title="Weather">weather</a>&nbsp;to begin. This command only lists rain, storm and snow, so the other kinds of weather such as sandstorm and sunny need to be started using&nbsp;<code>$game_screen.weather(PBFieldWeather::Sandstorm,9.0,20)</code> or similar.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Play BGM
+									</td>
+									<td>
+										Plays a BGM.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Fade Out BGM
+									</td>
+									<td>
+										Fades out the currently-playing BGM and then stops it.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Play BGS
+									</td>
+									<td>
+										Plays a BGS.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Fade Out BGS
+									</td>
+									<td>
+										Fades out the currently-playing BGM and then stops it.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Memorize BGM/BGS
+									</td>
+									<td>
+										Remembers which BGM and BGS are currently playing.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Restore BGM/BGS
+									</td>
+									<td>
+										Plays the remembered BGM and BGS.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Play ME
+									</td>
+									<td>
+										Plays an ME.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Play SE
+									</td>
+									<td>
+										Plays an SE.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Stop SE
+									</td>
+									<td>
+										Stops the currently playing SE.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Page_3">Page 3</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Command
+									</th>
+									<th>
+										Effect
+									</th>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Battle Processing
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Shop Processing
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Name Input Processing
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change HP
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change SP
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change State
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Recover All
+									</td>
+									<td>
+										Fully heals all Pokémon in the player's&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a>.
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change EXP
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Level
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Parameters
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Skills
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Equipment
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Actor Name
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Actor Class
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Actor Graphic
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Enemy HP
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Enemy SP
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Change Enemy State
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Enemy Recover All
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Enemy Appearance
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Enemy Transform
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Show Battle Animation
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Deal Damage
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Force Action
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr style="background: #FFC6C6;">
+									<td>
+										Abort Battle
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Call Menu Screen
+									</td>
+									<td>
+										Opens the&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pause_menu" title="Pause menu">Pause menu</a>.
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Call Save Screen
+									</td>
+									<td>
+										Prompts the player to&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Saving_and_loading" title="Saving and loading">save the game</a>.
+									</td>
+								</tr>
+								<tr style="background: #C6FFC6;">
+									<td>
+										Game Over
+									</td>
+									<td>
+										Makes the player&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Map_transfers" title="Map transfers">black out</a>&nbsp;with a message unique to using this event command: "After the unfortunate defeat, you scurry back home/to a Pokémon Center."
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Return to Title Screen
+									</td>
+									<td>
+										Goes to the&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Game_intro" title="Game intro">Continue/New Game screen</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Script
+									</td>
+									<td>
+										Allows the user to enter their own scripts for the event to run.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h2><span class="mw-headline" id="Switches_and_Variables">Switches and Variables</span></h2>
+						<p>
+							A number of things in Essentials use Game Switches and Variables. Below are tables that describe what each one is used for.
+						</p>
+						<h3><span class="mw-headline" id="Game_Switches">Game Switches</span></h3>
+						<p>
+							The existing Game Switches are listed in the table below. Ones highlighted in blue are Script Switches; see below for more information about those.
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Game Switch
+									</th>
+									<th>
+										Name
+									</th>
+									<th>
+										What it does
+									</th>
+								</tr>
+								<tr>
+									<td>
+										1
+									</td>
+									<td>
+										Starting over
+									</td>
+									<td>
+										Set to ON when the player blacks out, and allows special things to happen after this. Should be turned OFF again afterwards.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										2
+									</td>
+									<td>
+										Seen Pokérus in Poké Center
+									</td>
+									<td>
+										Set to ON once Pokérus has been identified in the Poké Center, and prevents the explanation of what it is from showing again.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										3
+									</td>
+									<td>
+										Choosing starter
+									</td>
+									<td>
+										Used to determine whether the player is in the middle of&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Choosing_a_starter" title="Choosing a starter">choosing a starter</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										4
+									</td>
+									<td>
+										Defeated Gym 1
+									</td>
+									<td>
+										Used to determine whether the player has defeated the first <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Gym Leader</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										5
+									</td>
+									<td>
+										Defeated Gym 2
+									</td>
+									<td>
+										Used to determine whether the player has defeated the second <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Gym Leader</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										6
+									</td>
+									<td>
+										Defeated Gym 3
+									</td>
+									<td>
+										Used to determine whether the player has defeated the third <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Gym Leader</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										7
+									</td>
+									<td>
+										Defeated Gym 4
+									</td>
+									<td>
+										Used to determine whether the player has defeated the fourth <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Gym Leader</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										8
+									</td>
+									<td>
+										Defeated Gym 5
+									</td>
+									<td>
+										Used to determine whether the player has defeated the fifth <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Gym Leader</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										9
+									</td>
+									<td>
+										Defeated Gym 6
+									</td>
+									<td>
+										Used to determine whether the player has defeated the sixth <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Gym Leader</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										10
+									</td>
+									<td>
+										Defeated Gym 7
+									</td>
+									<td>
+										Used to determine whether the player has defeated the seventh <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Gym Leader</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										11
+									</td>
+									<td>
+										Defeated Gym 8
+									</td>
+									<td>
+										Used to determine whether the player has defeated the eighth <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Gym Leader</a>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										12
+									</td>
+									<td>
+										Defeated Elite Four
+									</td>
+									<td>
+										Used to determine whether the player has defeated the Elite Four.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										13
+									</td>
+									<td>
+										Fossil revival in progress
+									</td>
+									<td>
+										Used to determine whether the&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Special_NPCs" title="Special NPCs">Fossil Reviver</a>&nbsp;is currently busy reviving a fossil which the player has given him. Typically turned OFF again in the door event that leads out of the Fossil Reviver's lab.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										14
+									</td>
+									<td>
+										s:PBDayNight.isDay?
+									</td>
+									<td>
+										Is ON during the day (i.e. between 5am and 8pm), and OFF otherwise (i.e. during the night).
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										15
+									</td>
+									<td>
+										s:PBDayNight.isNight?
+									</td>
+									<td>
+										Is ON during the night (i.e. between 8pm and 5am), and OFF otherwise (i.e. during the day).
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										16
+									</td>
+									<td>
+										s:PBDayNight.isMorning?
+									</td>
+									<td>
+										Is ON during the morning (i.e. between 5am and 10am), and OFF otherwise.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										17
+									</td>
+									<td>
+										s:PBDayNight.isAfternoon?
+									</td>
+									<td>
+										Is ON during the afternoon (i.e. between 2pm and 5pm), and OFF otherwise.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										18
+									</td>
+									<td>
+										s:PBDayNight.isEvening?
+									</td>
+									<td>
+										Is ON during the evening (i.e. between 5pm and 8pm), and OFF otherwise.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										19
+									</td>
+									<td>
+										s:pbIsWeekday(-1,2,4,6)
+									</td>
+									<td>
+										Is ON if the current day is Tuesday, Thursday or Saturday, and OFF otherwise.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										20
+									</td>
+									<td>
+										s:!pbIsWeekday(-1,2,4,6)
+									</td>
+									<td>
+										The opposite of Switch 19. Is ON if the current day is Monday, Wednesday, Friday or Sunday, and OFF otherwise.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										21
+									</td>
+									<td>
+										s:tsOn?("A")
+									</td>
+									<td>
+										Is ON if the event's temporary switch A is ON, and OFF if the event's temporary switch A is OFF.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										22
+									</td>
+									<td>
+										s:tsOff?("A")
+									</td>
+									<td>
+										Is ON if the event's temporary switch A is OFF, and OFF if the event's temporary switch A is ON.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										23
+									</td>
+									<td>
+										s:cooledDown?(86400)
+									</td>
+									<td>
+										Is ON if 24 hours (86400 seconds) <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Time-sensitive_events" title="Time-sensitive events">have passed</a> since the event's variable was set (to the current time then),&nbsp;<i>and</i>&nbsp;if the event's Self Switch A is ON.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										24
+									</td>
+									<td>
+										s:cooledDownDays?(1)
+									</td>
+									<td>
+										Is ON if <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Time-sensitive_events" title="Time-sensitive events">the current day is different</a> to the day on which the event's variable was set (to the current time then),&nbsp;<i>and</i>&nbsp;if the event's Self Switch A is ON.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										25
+									</td>
+									<td>
+										s:pbInSafari?
+									</td>
+									<td>
+										Is ON if the player is currently in the&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Safari_Zone" title="Safari Zone">Safari Zone</a>, and OFF if they are not.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										26
+									</td>
+									<td>
+										s:pbBugContestUndecided?
+									</td>
+									<td>
+										Is ON during a&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Bug_Catching_Contest" title="Bug Catching Contest">Bug Catching Contest</a>.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										27
+									</td>
+									<td>
+										s:pbBugContestDecided?
+									</td>
+									<td>
+										Is ON after a&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Bug_Catching_Contest" title="Bug Catching Contest">Bug Catching Contest</a>&nbsp;has finished. It is used to begin the judging and to show other Contest participants standing around afterwards.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										28
+									</td>
+									<td>
+										s:pbInChallenge?
+									</td>
+									<td>
+										Is ON if the player is currently participating in a&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Battle_Frontier" title="Battle Frontier">Battle Frontier</a>&nbsp;challenge.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										29
+									</td>
+									<td>
+										Has National Dex
+									</td>
+									<td>
+										Used to determine whether the player has the <a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">National Dex</a>. This Switch does not&nbsp;<i>cause</i>&nbsp;the player to have the National Dex, though.
+									</td>
+								</tr>
+								<tr style="background: #C6FFFF;">
+									<td>
+										30
+									</td>
+									<td>
+										s:pbNextMysteryGiftID&gt;0
+									</td>
+									<td>
+										Is ON if there is a downloaded&nbsp;Mystery Gift&nbsp;which has not yet been collected, and OFF if there are none.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										31
+									</td>
+									<td>
+										Shiny wild Pokémon
+									</td>
+									<td>
+										While this Switch is ON, all wild Pokémon encountered will be shiny.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										32
+									</td>
+									<td>
+										Fateful encounters
+									</td>
+									<td>
+										While this Switch is ON, all Pokémon created will be fateful encounters.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										33
+									</td>
+									<td>
+										No money lost in battle
+									</td>
+									<td>
+										While this Switch is ON, the player will not lose any money if they lose a wild battle or a trainer battle. They can still gain money from battles, though.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										34
+									</td>
+									<td>
+										No Mega Evolution
+									</td>
+									<td>
+										While this Switch is ON, no Pokémon can&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Mega_Evolution" title="Mega Evolution">Mega Evolve</a>&nbsp;in battle, not even if they normally could.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										35-50
+									</td>
+									<td>
+										----RESERVED-----
+									</td>
+									<td>
+										These switches are not currently used, but are marked as reserved in case they need to be used by Essentials in future.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										51 onwards
+									</td>
+									<td>
+										<i>various</i>
+									</td>
+									<td>
+										Other switches used specifically in the Essentials&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Example_maps" title="Example maps">example maps</a>, which can be overwritten as required.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							Remember that an event's page conditions can check up to 2 different Switches. For example, you can have an event page that depends on both Switch 14 and Switch 19, and that page will only be usable during the daytime of Tuesdays, Thursdays and Saturdays.
+						</p>
+						<h3><span class="mw-headline" id="Game_Variables">Game Variables</span></h3>
+						<p>
+							The existing Game Variables are as follows:
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Game Variable
+									</th>
+									<th>
+										Name
+									</th>
+									<th>
+										What it does
+									</th>
+								</tr>
+								<tr>
+									<td>
+										1
+									</td>
+									<td>
+										Temp Pokemon Choice
+									</td>
+									<td>
+										Used to temporarily store information. The name is just a guide as to what kind of information that is.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										2
+									</td>
+									<td>
+										Temp Move Choice
+									</td>
+									<td>
+										Used to temporarily store information. The name is just a guide as to what kind of information that is.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										3
+									</td>
+									<td>
+										Temp Pokemon Name
+									</td>
+									<td>
+										Used to temporarily store information. The name is just a guide as to what kind of information that is.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										4
+									</td>
+									<td>
+										Temp Move Name
+									</td>
+									<td>
+										Used to temporarily store information. The name is just a guide as to what kind of information that is.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										5
+									</td>
+									<td>
+										Temp Text Entry
+									</td>
+									<td>
+										Used to temporarily store information. The name is just a guide as to what kind of information that is.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										6
+									</td>
+									<td>
+										Poké Center healing ball count
+									</td>
+									<td>
+										Used while healing in the&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9_Center" title="Poké Center">Poké Center</a>. Is the number of balls to display on the healing machine (i.e. the number of Pokémon in the player's party).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										7
+									</td>
+									<td>
+										Starter choice
+									</td>
+									<td>
+										Used for remembering which&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Choosing_a_starter" title="Choosing a starter">starter Pokémon</a>&nbsp;the player chose. Typically 1=Grass starter, 2=Fire starter, 3=Water starter.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										8
+									</td>
+									<td>
+										Apricorn being converted
+									</td>
+									<td>
+										Used by the&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Special_NPCs" title="Special NPCs">Apricorn Converter</a>. Is the item number of the Apricorn given to convert, or the item number of the resulting Poké Ball.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										9
+									</td>
+									<td>
+										Fossil being revived
+									</td>
+									<td>
+										Used by the&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Special_NPCs" title="Special NPCs">Fossil Reviver</a>. Is the item number of the fossil being revived, or the species number of the resulting Pokémon.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										10
+									</td>
+									<td>
+										Elevator current floor
+									</td>
+									<td>
+										Used by elevator maps. Is the current floor the elevator is at. It should be set as part of any door event which leads into the elevator.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										11
+									</td>
+									<td>
+										Elevator new floor
+									</td>
+									<td>
+										Used by elevator maps. Is the floor the player wants to go to. It should be set by the event representing the elevator's controls.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										12
+									</td>
+									<td>
+										Rival name
+									</td>
+									<td>
+										Stores the&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Rival" title="Rival">rival</a>'s name.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										13
+									</td>
+									<td>
+										E4 defeated count
+									</td>
+									<td>
+										The number of times the Elite Four have been beaten. This number is added to each time the Hall of Fame is entered.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										14-25
+									</td>
+									<td>
+										-----RESERVED-----
+									</td>
+									<td>
+										These variables are not currently used, but are marked as reserved in case they need to be used by Essentials in future.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Script_Switches">Script Switches</span></h3>
+						<p>
+							Some predefined Game Switches have a line of code as a name. These Switches will be ON while their code is TRUE, and OFF while it is FALSE. These Switch names begin with "<code>s:</code>", followed by the code. Half of the predefined Switches are Script Switches (see the ones highlighted in blue above).
+						</p><p>
+							As a Switch name is only a single line which cannot be very long, you cannot have complicated calculations in them. However, you can work around that by writing a method in a&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Script_sections" title="Script sections">script section</a>, and then simply calling that method in the Switch name (this is what all the predefined Script Switches do).
+						</p><p>
+							Script Switches are useful for a number of things, including&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Time-sensitive_events" title="Time-sensitive events">time-sensitive events</a>&nbsp;and checking certain conditions (e.g. whether the player is in a&nbsp;<a href="/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Safari_Zone" title="Safari Zone">Safari Zone</a>). The reason they are useful is because they can be ON or OFF depending on various factors and calculations. They are an automatic way of seeing the state of certain parts of the game.
+						</p><p>
+							Technical Note: A Script Switch has its code evaluated by events when they are checking their preconditions on a map refresh. The actual value&nbsp;<i>stored</i>&nbsp;in that Game Switch is never changed by this process, and it won't be related in any way to the code. Bear this is mind if you happen to access the actual value stored in a Game Switch which is a Script Switch (although you shouldn't ever do so because there are plenty of other Game Switches available instead).
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20210509051639
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.058 seconds
+					Real time usage: 0.060 seconds
+					Preprocessor visited node count: 93/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 275/2097152 bytes
+					Template argument size: 232/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 35/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    2.535      1 -total
+					 95.06%    2.410      2 Template:For
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:215-0!canonical and timestamp 20210509051639 and revision id 572
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20210512073724/https://essentialsdocs.fandom.com/wiki/Events?oldid=572">https://essentialsdocs.fandom.com/wiki/Events?oldid=572</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20210512073724/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

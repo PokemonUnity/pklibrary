@@ -1,0 +1,332 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20201001134502if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<figure class="thumb tright show-info-icon" style="width: 258px"> 	<a href="https://web.archive.org/web/20201001134502/https://static.wikia.nocookie.net/essentialsdocs/images/0/0c/ShadowPokemon.png/revision/latest?cb=20180908163607" class="image"><img alt="" src="https://web.archive.org/web/20201001134502im_/https://static.wikia.nocookie.net/essentialsdocs/images/0/0c/ShadowPokemon.png/revision/latest/scale-to-width-down/256?cb=20180908163607" decoding="async" width="256" height="192" class="thumbimage" data-image-name="ShadowPokemon.png" data-image-key="ShadowPokemon.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/File:ShadowPokemon.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 			<p class="caption">Encountering a Shadow Electabuzz</p> 		 	</figcaption> </figure>
+						<p>
+							This page describes&nbsp;<b>Shadow Pokémon</b>, a variant of <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon" title="Pokémon">Pokémon</a> that have had the door to their heart shut.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1">
+									<a href="#Shadow_Pok.C3.A9mon"><span class="tocnumber">1</span> <span class="toctext">Shadow Pokémon</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-2"><a href="#Sprites_and_icons"><span class="tocnumber">1.1</span> <span class="toctext">Sprites and icons</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-3">
+									<a href="#Enabling_Shadow_Pok.C3.A9mon"><span class="tocnumber">2</span> <span class="toctext">Enabling Shadow Pokémon</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-4"><a href="#Define_the_Shadow_type"><span class="tocnumber">2.1</span> <span class="toctext">Define the Shadow type</span></a></li>
+										<li class="toclevel-2 tocsection-5"><a href="#Add_in_Shadow_moves"><span class="tocnumber">2.2</span> <span class="toctext">Add in Shadow moves</span></a></li>
+										<li class="toclevel-2 tocsection-6"><a href="#Assign_Shadow_moves_to_Shadow_Pok.C3.A9mon_.28optional.29"><span class="tocnumber">2.3</span> <span class="toctext">Assign Shadow moves to Shadow Pokémon (optional)</span></a></li>
+										<li class="toclevel-2 tocsection-7"><a href="#Add_in_items_that_affect_Shadow_Pok.C3.A9mon_.28optional.29"><span class="tocnumber">2.4</span> <span class="toctext">Add in items that affect Shadow Pokémon (optional)</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-8"><a href="#Giving_enemy_trainers_a_Shadow_Pok.C3.A9mon"><span class="tocnumber">3</span> <span class="toctext">Giving enemy trainers a Shadow Pokémon</span></a></li>
+								<li class="toclevel-1 tocsection-9">
+									<a href="#Shadow_Pok.C3.A9mon_in_battle"><span class="tocnumber">4</span> <span class="toctext">Shadow Pokémon in battle</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-10"><a href="#Hyper_Mode"><span class="tocnumber">4.1</span> <span class="toctext">Hyper Mode</span></a></li>
+										<li class="toclevel-2 tocsection-11"><a href="#Snagging_Shadow_Pok.C3.A9mon"><span class="tocnumber">4.2</span> <span class="toctext">Snagging Shadow Pokémon</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-12">
+									<a href="#Purification"><span class="tocnumber">5</span> <span class="toctext">Purification</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-13"><a href="#Relic_Stone"><span class="tocnumber">5.1</span> <span class="toctext">Relic Stone</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-14"><a href="#Purification_Chamber"><span class="tocnumber">6</span> <span class="toctext">Purification Chamber</span></a></li>
+								<li class="toclevel-1 tocsection-15"><a href="#Tips"><span class="tocnumber">7</span> <span class="toctext">Tips</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span id="Shadow_Pokémon"></span><span class="mw-headline" id="Shadow_Pok.C3.A9mon">Shadow Pokémon</span></h2>
+						<p>
+							Shadow Pokémon are a special kind of Pokémon. Their "door to their heart" has been fully closed, allowing them access to powerful Shadow moves which are super-effective against every Pokémon type (except Shadow), but they cannot gain experience points. By battling with them, their heart's door will open, and once it has been fully opened they can be purified back to regular Pokémon.
+						</p>
+						<h3><span class="mw-headline" id="Sprites_and_icons">Sprites and icons</span></h3>
+						<p>
+							Shadow Pokémon appear different to their non-Shadow counterparts, typically having a purple tint to them. You will need to create new sprites and icons for species which have Shadow Pokémon, which show this alternate colouration. You will need to make sure you have all the graphics you need for this.
+						</p><p>
+							The sprite and icon files should have "<code>_shadow</code>" at the end of their file names.
+						</p>
+						<h2><span id="Enabling_Shadow_Pokémon"></span><span class="mw-headline" id="Enabling_Shadow_Pok.C3.A9mon">Enabling Shadow Pokémon</span></h2>
+						<figure class="thumb tright show-info-icon" style="width: 258px"> 	<a href="https://web.archive.org/web/20201001134502/https://static.wikia.nocookie.net/essentialsdocs/images/7/73/ShadowSummary.png/revision/latest?cb=20180908163834" class="image"><img alt="" src="https://web.archive.org/web/20201001134502im_/https://static.wikia.nocookie.net/essentialsdocs/images/7/73/ShadowSummary.png/revision/latest/scale-to-width-down/256?cb=20180908163834" decoding="async" width="256" height="192" class="thumbimage" data-image-name="ShadowSummary.png" data-image-key="ShadowSummary.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/File:ShadowSummary.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 			<p class="caption"><a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/Summary_screens" title="Summary screens">Summary screen</a> for a Shadow Pokémon</p> 		 	</figcaption> </figure>
+						<p>
+							There are several things you need to do in order to have Shadow Pokémon in your game.
+						</p>
+						<h3><span class="mw-headline" id="Define_the_Shadow_type">Define the Shadow type</span></h3>
+						<dl><dd><i>Main article: <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/Defining_a_type" title="Defining a type">Defining a type</a></i></dd></dl>
+						<p>
+							Edit the <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "types.txt" to include the following type:
+						</p>
+<pre>[18]
+Name=Shadow
+InternalName=SHADOW
+IsSpecialType=true
+Resistances=SHADOW
+</pre>
+						<p>
+							The Shadow type's number may be different in your game. You should also make all other types have a weakness to the Shadow type.
+						</p>
+						<h3><span class="mw-headline" id="Add_in_Shadow_moves">Add in Shadow moves</span></h3>
+						<dl><dd><i>Main article: <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/Defining_a_move" title="Defining a move">Defining a move</a></i></dd></dl>
+						<p>
+							Edit the <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "moves.txt" to include the following lines:
+						</p>
+<pre>560,SHADOWEND,Shadow End,130,120,SHADOW,Special,60,0,0,00,0,abf,Cool,"A shadowy aura ram attack that also rebounds on the user."
+561,SHADOWSTORM,Shadow Storm,12D,95,SHADOW,Special,100,0,0,04,0,b,Cool,"A shadowy aura is used to whip up a vicious tornado."
+562,SHADOWBLAST,Shadow Blast,126,80,SHADOW,Special,100,0,0,00,0,bfh,Cool,"A wicked blade of air is formed using a shadowy aura."
+563,SHADOWBOLT,Shadow Bolt,127,75,SHADOW,Special,100,0,10,00,0,bf,Cool,"A shadowy thunder attack that may paralyze."
+564,SHADOWBREAK,Shadow Break,126,75,SHADOW,Physical,100,0,0,00,0,abf,Cool,"A shattering ram attack with a shadowy aura."
+565,SHADOWCHILL,Shadow Chill,129,75,SHADOW,Special,100,0,10,00,0,bf,Cool,"A shadowy ice attack that may freeze."
+566,SHADOWFIRE,Shadow Fire,128,75,SHADOW,Special,100,0,10,00,0,bf,Cool,"A shadowy fireball attack that may inflict a burn."
+567,SHADOWRAVE,Shadow Rave,126,70,SHADOW,Special,100,0,0,04,0,b,Cool,"A shadowy aura in the ground is used to launch spikes."
+568,SHADOWRUSH,Shadow Rush,126,55,SHADOW,Physical,100,0,0,00,0,abf,Cool,"A reckless move that also hurts the user."
+569,SHADOWWAVE,Shadow Wave,126,50,SHADOW,Special,100,0,0,04,0,b,Cool,"Shadowy aura waves are loosed to inflict damage."
+570,SHADOWBLITZ,Shadow Blitz,126,40,SHADOW,Physical,100,0,0,00,0,abf,Cool,"A Pokémon throws this tackle while casting a shadowy aura."
+571,SHADOWDOWN,Shadow Down,12B,0,SHADOW,Status,100,0,0,04,0,b,Cool,"A shadowy aura sharply cuts the foe's Defense."
+572,SHADOWHALF,Shadow Half,12E,0,SHADOW,Status,100,0,0,20,0,b,Cool,"A shadowy aura's energy cuts everyone's HP by half."
+573,SHADOWHOLD,Shadow Hold,12F,0,SHADOW,Status,100,0,0,04,0,b,Cool,"The opponent Pokémon cannot escape."
+574,SHADOWMIST,Shadow Mist,12C,0,SHADOW,Status,100,0,0,04,0,b,Cool,"A shadowy aura sharply cuts the foe's evasiveness."
+575,SHADOWPANIC,Shadow Panic,12A,0,SHADOW,Status,90,0,0,04,0,bk,Cool,"A shadowy aura emanates to confuse the foe."
+576,SHADOWSHED,Shadow Shed,132,0,SHADOW,Status,100,0,0,20,0,b,Cool,"A shadowy aura eliminates Reflect and similar moves."
+577,SHADOWSKY,Shadow Sky,131,0,SHADOW,Status,100,0,0,20,0,b,Cool,"Darkness hurts all but Shadow Pokémon for 5 turns."
+</pre>
+						<p>
+							Again, the ID numbers may be different. These moves already have their <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/Function_codes" title="Function codes">effects</a> defined in the script section <b>Pokemon_ShadowPokemon</b>, so this is all you need to do here.
+						</p><p>
+							Note that the PP of Shadow moves is 0. This means that they are infinite use.
+						</p><p>
+							Aside from the PP, there is nothing special about these moves, and they can be given to Pokémon in the same way as any other move. However, Shadow moves typically can only be obtained by Shadow Pokémon, and only by the method mentioned below.
+						</p>
+						<h3><span id="Assign_Shadow_moves_to_Shadow_Pokémon_(optional)"></span><span class="mw-headline" id="Assign_Shadow_moves_to_Shadow_Pok.C3.A9mon_.28optional.29">Assign Shadow moves to Shadow Pokémon (optional)</span></h3>
+						<p>
+							To define which Shadow moves a Shadow Pokémon of each species can know, edit the <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "shadowmoves.txt" to include lines such as:
+						</p>
+<pre>TEDDIURSA=SHADOWBLITZ,SHADOWMIST
+FARFETCHD=SHADOWBREAK,SHADOWSKY,SHADOWPANIC
+LUGIA=SHADOWBLAST,SHADOWSHED,SHADOWDOWN,SHADOWSTORM
+</pre>
+						<p>
+							If a species does not have any Shadow moves defined for it, then its only Shadow move will be Shadow Rush.
+						</p><p>
+							When a Shadow Pokémon is generated, it will first be given its initial moveset as normal. Then, starting from the first move, some/all of the initial moves are replaced with the Shadow moves defined for that species. This is its Shadow moveset. All Shadow moves will be available immediately, while the other moves are unlocked while opening that Pokémon's door to the heart.
+						</p><p>
+							It is recommended that you specifically define the initial movesets for all Shadow Pokémon (in the <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "trainers.txt"), to make sure that the appropriate moves are replaced by Shadow moves.
+						</p><p>
+							You don't have to list just Shadow moves in the <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "shadowmoves.txt"; you can list any move that exists.
+						</p>
+						<h3><span id="Add_in_items_that_affect_Shadow_Pokémon_(optional)"></span><span class="mw-headline" id="Add_in_items_that_affect_Shadow_Pok.C3.A9mon_.28optional.29">Add in items that affect Shadow Pokémon (optional)</span></h3>
+						<dl><dd><i>Main article: <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/Defining_an_item" title="Defining an item">Defining an item</a></i></dd></dl>
+						<p>
+							You can also include some items that allow the player to purify Shadow Pokémon more quickly. Add these lines into the <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "items.txt":
+						</p>
+<pre>601,JOYSCENT,Joy Scent,1,300,"This scent massage opens the hearts of Pokémon a little.",1,0,0
+602,EXCITESCENT,Excite Scent,1,500,"This scent massage opens the hearts of Pokémon.",1,0,0
+603,VIVIDSCENT,Vivid Scent,1,800,"This scent massage opens the hearts of Pokémon a lot.",1,0,0
+604,TIMEFLUTE,Time Flute,1,3000,"This item fully opens the hearts of a Pokémon.",1,0,0
+</pre>
+						<p>
+							Again, their effects are already defined in the script section <b>Pokemon_ShadowPokemon</b>. These items should have icons just like any other item.
+						</p>
+						<h2><span id="Giving_enemy_trainers_a_Shadow_Pokémon"></span><span class="mw-headline" id="Giving_enemy_trainers_a_Shadow_Pok.C3.A9mon">Giving enemy trainers a Shadow Pokémon</span></h2>
+						<dl><dd><i>Main article: <a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/Defining_a_trainer" title="Defining a trainer">Defining a trainer</a></i></dd></dl>
+						<p>
+							Shadow Pokémon are typically owned by an enemy trainer. To give an enemy trainer a Shadow Pokémon is a simple matter: simply define the trainer's party as normal, then set the Pokémon's shadow tag to TRUE.
+						</p>
+						<h2><span id="Shadow_Pokémon_in_battle"></span><span class="mw-headline" id="Shadow_Pok.C3.A9mon_in_battle">Shadow Pokémon in battle</span></h2>
+						<h3><span class="mw-headline" id="Hyper_Mode">Hyper Mode</span></h3>
+						<p>
+							Most Shadow moves will cause the user to enter Hyper Mode after using them.
+						</p><p>
+							While a Shadow Pokémon is in Hyper Mode:
+						</p>
+						<ul>
+							<li>It will take some damage at the end of each turn. This damage is the same as that inflicted by being confused.</li>
+							<li>There is a chance that it will disobey the player if it is ordered to use a non-Shadow move.</li>
+							<li>Any Shadow move it uses has an increased critical hit rate.</li>
+							<li>Items cannot be used on it.</li>
+						</ul>
+						<p>
+							Calling to the Shadow Pokémon will cause it to snap out of Hyper Mode. Calling is only possible in trainer battles if the Shadow type is defined.
+						</p>
+						<h3><span id="Snagging_Shadow_Pokémon"></span><span class="mw-headline" id="Snagging_Shadow_Pok.C3.A9mon">Snagging Shadow Pokémon</span></h3>
+						<p>
+							Shadow Pokémon can be captured from other trainers by using a Snag Ball. Any type of Poké Ball can be a Snag Ball. A Snag Ball works in exactly the same way as any other Poké Ball, except it can also capture a Shadow Pokémon that is owned by another trainer.
+						</p><p>
+							To make all Poké Balls work as Snag Balls, simply use:
+						</p>
+<pre>$PokemonGlobal.snagMachine=true
+</pre>
+						<p>
+							Alternatively, if you want to make one particular Poké Ball item into a Snag Ball, you will need to edit that Poké Ball's definition in the&nbsp;<a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"items.txt" as follows:
+						</p>
+<pre>264,MASTERBALL,Master Ball,3,0,"The best Ball with the ultimate level of performance. It will catch any wild Pokémon without fail.",0,2,3
+</pre>
+						<p>
+							The last number in this line should be a <code>3</code> if it is a Snag Ball (it is <code>4</code> if it is a regular Poké Ball item).
+						</p><p>
+							When a Shadow Pokémon has been captured, its species is recorded as caught in the array&nbsp;<code>$Trainer.shadowcaught[species]</code> (i.e. this entry is set to TRUE). This information can be used to alter future trainer battles (e.g. rematches where the trainer may or may not have their Shadow Pokémon depending on whether the player caught it).
+						</p>
+						<h2><span class="mw-headline" id="Purification">Purification</span></h2>
+						<p>
+							A Shadow Pokémon can have its heart gauge reduced in a number of ways:
+						</p>
+						<ul>
+							<li>Walking around (-1 per step).</li>
+							<li>Using the Joy Scent (-500), Excite Scent (-1000), Vivid Scent (-2000) or Time Flute (fully reduces) on it.</li>
+							<li>Sending it into battle (-30).</li>
+							<li>Snapping it out of Hyper Mode by calling to it (-300).</li>
+							<li>Using the Purification Chamber.</li>
+						</ul>
+						<p>
+							Once its heart gauge has reached zero (and it is not a Lugia), a message will state that it is ready to be purified.
+						</p><p>
+							When a Shadow Pokémon is purified:
+						</p>
+						<ul>
+							<li>It forgets all its Shadow moves, and its moveset is reset to its initial one.</li>
+							<li>It immediately regains all Exp and EVs that it would have gained from battles it was involved in. It immediately jumps to the level it would end up at, rather than going through all levels leading up to it. If it can learn a move at its resulting level, it will try to learn it.</li>
+							<li>It gains the National Ribbon.</li>
+							<li>The player is given the chance to nickname it.</li>
+						</ul>
+						<h3><span class="mw-headline" id="Relic_Stone">Relic Stone</span></h3>
+						<p>
+							The Relic Stone is a special location where Shadow Pokémon can be turned back into regular Pokémon. This can only be done if the Shadow Pokémon's heart gauge is empty.
+						</p><p>
+							To start the purification process at the Relic Stone, use the script:
+						</p>
+<pre>pbRelicStone
+</pre>
+						<h2><span class="mw-headline" id="Purification_Chamber">Purification Chamber</span></h2>
+						<p>
+							The Purification Chamber is a way to lower a Shadow Pokémon's heart gauge.
+						</p><p>
+							The option to access it is in the&nbsp;<a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/PC" title="PC">PC menu</a>&nbsp;alongside&nbsp;<a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a>&nbsp;and&nbsp;<a href="/web/20201001134502/https://essentialsdocs.fandom.com/wiki/PC" title="PC">the player's PC</a>. The option will only be shown if the variable&nbsp;<code>$PokemonGlobal.seenPurifyChamber</code>&nbsp;is TRUE.
+						</p><p>
+							To access the Purification Chamber, use the script:
+						</p>
+<pre>pbPurifyChamber
+</pre>
+						<h2><span class="mw-headline" id="Tips">Tips</span></h2>
+						<ul>
+							<li>In Pokémon XD, Miror B. would collect any Shadow Pokémon the player knocked out, and would occasionally appear with these Pokémon. You could add a similar feature to your game, using the array&nbsp;<code>$Trainer.shadowcaught</code>&nbsp;to determine which Shadow Pokémon Miror B. can have.</li>
+							<li>Lugia was a special Shadow Pokémon, in that it couldn't be purified unless the Purification Chamber's tempo was at maximum. You could make your own special Shadow Pokémon with their own unique features.</li>
+							<li>Why not give the player the ability to turn regular Pokémon into Shadow Pokémon?</li>
+							<li>Don't limit yourself to the Shadow moves/items listed above. Try inventing your own!</li>
+						</ul>
+						<!--
+					NewPP limit report
+					Cached time: 20200930214013
+					Cache expiry: 86400
+					Dynamic content: false
+					CPU time usage: 0.021 seconds
+					Real time usage: 0.023 seconds
+					Preprocessor visited node count: 90/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 224/2097152 bytes
+					Template argument size: 128/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    2.688      1 -total
+					 91.41%    2.457      4 Template:Main
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:108-0!canonical and timestamp 20200930214013 and revision id 807
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20201001134502/https://essentialsdocs.fandom.com/wiki/Shadow_Pokémon?oldid=807">https://essentialsdocs.fandom.com/wiki/Shadow_Pokémon?oldid=807</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20201001134502/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

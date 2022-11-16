@@ -1,0 +1,703 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20201001131723if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl>
+							<dd><i>For the main page about Pokémon, see <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon" title="Pokémon">Pokémon</a>.</i></dd>
+							<dd><i>For defining the differences between a species' multiple forms, see <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Forms" title="Forms">Forms</a>.</i></dd>
+						</dl>
+						<p>
+							This page describes <b>how to define a Pokémon species</b>.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1"><a href="#Defining_a_species"><span class="tocnumber">1</span> <span class="toctext">Defining a species</span></a></li>
+								<li class="toclevel-1 tocsection-2">
+									<a href="#PBS_file_.22pokemon.txt.22"><span class="tocnumber">2</span> <span class="toctext">PBS file "pokemon.txt"</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-3"><a href="#Required_information"><span class="tocnumber">2.1</span> <span class="toctext">Required information</span></a></li>
+										<li class="toclevel-2 tocsection-4"><a href="#Optional_information"><span class="tocnumber">2.2</span> <span class="toctext">Optional information</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-5">
+									<a href="#Graphics_and_audio"><span class="tocnumber">3</span> <span class="toctext">Graphics and audio</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-6"><a href="#Female_differences"><span class="tocnumber">3.1</span> <span class="toctext">Female differences</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-7"><a href="#Multiple_forms"><span class="tocnumber">4</span> <span class="toctext">Multiple forms</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Defining_a_species">Defining a species</span></h2>
+						<p>
+							A Pokémon species begins with its definition. This means that it is listed in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "pokemon.txt", so that it can be recognised by the game as a species.
+						</p><p>
+							Note that this only defines the basic properties common to all individual Pokémon of that species (e.g. base stats, move sets, evolution paths, etc.).
+						</p><p>
+							In addition to this, a species will require a number of graphics files depicting that species in different ways, as well as an audio file which plays its cry. See below for more information.
+						</p>
+						<h2><span id="PBS_file_&quot;pokemon.txt&quot;"></span><span class="mw-headline" id="PBS_file_.22pokemon.txt.22">PBS file "pokemon.txt"</span></h2>
+						<p>
+							The <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "pokemon.txt" lists all the defined Pokémon species in the game. Each section in this file is one separate species, where a section begins with a line containing an ID number in square brackets and ends when the next section begins. Each line in a section is one separate piece of information about that species.
+						</p><p>
+							Aside from the ID line, every line in a section follows the format:
+						</p>
+<pre>XXX = YYY
+</pre>
+						<p>
+							where <code>XXX</code> is a property and <code>YYY</code> is the value or values associated with it (the spaces are optional). For example:
+						</p>
+<pre>[1]
+Name = Bulbasaur
+Type1 = GRASS
+Type2 = POISON
+BaseStats = 45,49,49,45,65,65
+GenderRate = FemaleOneEighth
+BaseEXP = 64
+Moves = 1,TACKLE,3,GROWL,7,LEECHSEED,9,VINEWHIP,13,POISONPOWDER,13,SLEEPPOWDER,15,TAKEDOWN,19,RAZORLEAF,21,SWEETSCENT,25,GROWTH,27,DOUBLEEDGE,31,WORRYSEED,33,SYNTHESIS,37,SEEDBOMB
+Height = 0.7
+Pokedex = Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.
+Evolutions = IVYSAUR,Level,16
+</pre>
+						<p>
+							Some pieces of information must be defined for every species, while other pieces of information are optional and can be excluded if they don't apply. The order of the lines does not matter, except for the ID line in square brackets which must be first.
+						</p>
+						<h3><span class="mw-headline" id="Required_information">Required information</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Data
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										[ID]
+									</td>
+									<td>
+										This line must come first in a section, because, as mentioned above, this line defines when a new section begins. This line contains a number inside square brackets, e.g. <code>[42]</code>.
+										<p>
+											This number must be different for each species. It must be a whole number that is 1 or higher. While you can skip numbers, minor bugs can occur if you do so, so it is recommended that you don't. The order in which species are numbered is not important; however, keeping them in order will make it easier to spot gaps or mistakes.
+										</p><p>
+											This ID number is the default National Pokédex number of the species. If there are no <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Multiple_regions" title="Multiple regions">Regional Pokédex lists</a> defined, or if viewing the default Pokédex list in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a>, that list will contain all the defined Pokémon species sorted by this number.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Name
+									</td>
+									<td>
+										The name of the species, as seen by the player.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										InternalName
+									</td>
+									<td>
+										This is how the scripts refer to the species. Typically this is the species name, but written in all capital letters and with no spaces or symbols. The internal name is never seen by the player.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Type1<br>Type2
+									</td>
+									<td>
+										The internal name(s) of the species' primary and secondary <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Defining_a_type" title="Defining a type">elemental types</a>.
+										<p>
+											<code>Type2</code> is optional, and can be omitted if it does not apply to the species.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										BaseStats
+									</td>
+									<td>
+										Six comma-separated values, corresponding to (in order):
+										<ol>
+											<li>HP</li>
+											<li>Attack</li>
+											<li>Defense</li>
+											<li>Speed</li>
+											<li>Special Attack</li>
+											<li>Special Defense</li>
+										</ol>
+										<p>
+											Each value can be 1 or higher.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										GenderRate
+									</td>
+									<td>
+										The likelihood of a Pokémon of the species being a certain gender. Must be one of the following:
+										<ul>
+											<li>AlwaysMale</li>
+											<li>FemaleOneEighth</li>
+											<li>Female25Percent</li>
+											<li>Female50Percent</li>
+											<li>Female75Percent</li>
+											<li>FemaleSevenEighths</li>
+											<li>AlwaysFemale</li>
+											<li>Genderless</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										GrowthRate
+									</td>
+									<td>
+										The rate at which a Pokémon of the species gains levels (i.e. how much Experience is needed to level up). Must be one of the following:
+										<ul>
+											<li>Fast</li>
+											<li>Medium (also known as MediumFast)</li>
+											<li>Slow</li>
+											<li>Parabolic (also known as MediumSlow)</li>
+											<li>Erratic</li>
+											<li>Fluctuating</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										BaseEXP
+									</td>
+									<td>
+										The base amount of Experience gained from <a class="new" title="Ending a battle (page does not exist)" rel="nofollow" data-uncrawlable-url="L3dpa2kvRW5kaW5nX2FfYmF0dGxlP2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==">defeating a Pokémon</a> of the species. It must be a whole number that is 1 or higher.
+										<p>
+											This base amount is used in a calculation to determine the actual number of Exp. points awarded for defeating a Pokémon of the species.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										EffortPoints
+									</td>
+									<td>
+										The number of EVs gained by defeating a Pokémon of the species. Is six comma-separated numbers, corresponding to (in order):
+										<ol>
+											<li>HP</li>
+											<li>Attack</li>
+											<li>Defense</li>
+											<li>Speed</li>
+											<li>Special Attack</li>
+											<li>Special Defense</li>
+										</ol>
+										<p>
+											Each value can be 0 or higher. As a rule, the total of these numbers should be between 1 and 3, and higher evolutions tend to give more EVs.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Rareness
+									</td>
+									<td>
+										The catch rate of the species. It can be 0 or higher (typically the highest is 255). The higher the number, the more likely a capture (0 means it cannot be caught by anything except a Master Ball).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Happiness
+									</td>
+									<td>
+										The amount of happiness a newly caught Pokémon of the species will have. It can be 0 or higher, although it is typically 70. The game treats 255 as the highest attainable happiness.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Moves
+									</td>
+									<td>
+										The <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Moves" title="Moves">moves</a> that all Pokémon of the species learn as they level up. There are two (comma-separated) parts to each move:
+										<ol>
+											<li>Level at which the move is learned (0 means the move can only be learned when a Pokémon evolves into the species).</li>
+											<li>The internal name of the move.</li>
+										</ol>
+										<p>
+											These couplets are also comma-separated in this line.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Compatibility
+									</td>
+									<td>
+										The <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Breeding" title="Breeding">egg groups</a> that the species belongs to. Is either one or two (comma-separated) of the following words:
+										<ul>
+											<li>Monster</li>
+											<li>Water1</li>
+											<li>Bug</li>
+											<li>Flying</li>
+											<li>Field</li>
+											<li>Fairy</li>
+											<li>Grass</li>
+											<li>Humanlike</li>
+											<li>Water3</li>
+											<li>Mineral</li>
+											<li>Amorphous</li>
+											<li>Water2</li>
+											<li>Ditto</li>
+											<li>Dragon</li>
+											<li>Undiscovered</li>
+										</ul>
+										<p>
+											"Water1" is for sea creatures, "Water2" is for fish, and "Water3" is for shellfish. "Ditto" should contain only Ditto, as a species in that group can breed with any other breedable Pokémon. If either egg group is "Undiscovered", the species cannot breed.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										StepsToHatch
+									</td>
+									<td>
+										The number of steps it takes to hatch an <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Eggs" title="Eggs">egg</a> of the species. It can be 1 or higher. Note that this is <i>not</i> the number of egg cycles for the species, but the actual number of steps.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Height
+									</td>
+									<td>
+										The height of the species in meters, to one decimal place. Use a period for the decimal point, and do not use commas for thousands.
+										<p>
+											The <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a> will automatically show this height in feet/inches if the game recognises that the player is in the USA. This is only cosmetic; the rest of the scripts still perform calculations using the meters value defined.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Weight
+									</td>
+									<td>
+										The weight of the species in kilograms, to one decimal place. Use a period for the decimal point, and do not use commas for thousands.
+										<p>
+											The <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a> will automatically show this weight in pounds if the game recognises that the player is in the USA. This is only cosmetic; the rest of the scripts still perform calculations using the kilograms value defined.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Color
+									</td>
+									<td>
+										The main colour of the species. Must be one of the colours defined in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a> <b>PBColors</b>, which by default are:
+										<ul>
+											<li>Black</li>
+											<li>Blue</li>
+											<li>Brown</li>
+											<li>Gray</li>
+											<li>Green</li>
+											<li>Pink</li>
+											<li>Purple</li>
+											<li>Red</li>
+											<li>White</li>
+											<li>Yellow</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Shape
+									</td>
+									<td>
+										The body shape of the species. The <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a> can search for Pokémon of particular shapes. This is a number from 1 to 14 inclusive, as follows:
+										<ul>
+											<li>1 = Only a head</li>
+											<li>2 = Serpent-like</li>
+											<li>3 = Fish</li>
+											<li>4 = Head and arms</li>
+											<li>5 = Head and base</li>
+											<li>6 = Bipedal with tail</li>
+											<li>7 = Head and legs</li>
+											<li>8 = Quadruped</li>
+											<li>9 = Has two wings</li>
+											<li>10 = Tentacles/multiple legs</li>
+											<li>11 = Multiple fused bodies</li>
+											<li>12 = Humanoid</li>
+											<li>13 = Winged insectoid</li>
+											<li>14 = Insectoid</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Kind
+									</td>
+									<td>
+										The species' kind, which is displayed in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a>. For example, Bulbasaur is the Seed Pokémon. The word "Pokémon" is automatically added to the end, so only "Seed" needs to be here.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Pokedex
+									</td>
+									<td>
+										The <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a> entry.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Optional_information">Optional information</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Data
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Abilities
+									</td>
+									<td>
+										The internal name(s) of one or two <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Abilities" title="Abilities">abilities</a> that the species can have. If there are two abilities, separate them with a comma.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										HiddenAbility
+									</td>
+									<td>
+										The internal names of up to four additional <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Abilities" title="Abilities">abilities</a> that the species can have. If there are multiple abilities here, they are separated by commas.
+										<p>
+											Pokémon cannot have any hidden ability naturally, and must be <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Editing_a_Pok%C3%A9mon" title="Editing a Pokémon">specially given one</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										EggMoves
+									</td>
+									<td>
+										A comma-separated list of the internal names of <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Moves" title="Moves">moves</a> that a Pokémon of the species can only learn as an <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Eggs" title="Eggs">egg</a> (obtained through <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Breeding" title="Breeding">breeding</a>). Only species that can be in eggs should have this line (typically only unevolved species).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Habitat
+									</td>
+									<td>
+										The kind of location that the species can typically be found in. Must be one of the habitats defined in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a> <b>PBHabitats</b>, which by default are:
+										<ul>
+											<li>None</li>
+											<li>Cave</li>
+											<li>Forest</li>
+											<li>Grassland</li>
+											<li>Mountain</li>
+											<li>Rare</li>
+											<li>RoughTerrain</li>
+											<li>Sea</li>
+											<li>Urban</li>
+											<li>WatersEdge</li>
+										</ul>
+										<p>
+											"Rare" can be taken to mean "unknown" here.
+										</p><p>
+											This information is unused in Essentials.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										RegionalNumbers
+									</td>
+									<td>
+										One or more comma-separated numbers. Each number is the Pokédex number of the species in the corresponding <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Multiple_regions" title="Multiple regions">Regional Pokédex</a>. A number of 0 means that the species does not appear in that Regional Pokédex.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										WildItemCommon<br>WildItemUncommon<br>WildItemRare
+									</td>
+									<td>
+										The internal names of <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Items" title="Items">items</a> that a wild Pokémon of the species may be found holding. Each line can only list one item.
+										<p>
+											The chances of holding the item are 50%, 5% and 1% respectively. If all three are the same item, then the chance of holding it is 100% instead.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										BattlerPlayerX<br>BattlerPlayerY
+									</td>
+									<td>
+										Affects the positioning of the back sprite of the species in <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a>. A higher number means the back sprite is placed further right/lower down the screen. Can be positive or negative, and is 0 by default.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										BattlerEnemyX<br>BattlerEnemyY
+									</td>
+									<td>
+										Affects the positioning of the front sprite of the species in <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a>. A higher number means the front sprite is placed further right/lower down the screen. Can be positive or negative, and is 0 by default.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										BattlerAltitude
+									</td>
+									<td>
+										Affects the positioning of the front sprite of the species in <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a> relative to its base. A higher number means the front sprite is placed further up the screen. Can only be positive or 0, and is 0 by default.
+										<p>
+											This properly is typically unused as <code>BattlerEnemyY</code> can do the same thing.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										BattlerShadowX
+									</td>
+									<td>
+										Affects the horizontal positioning of the shadow beneath the front sprite of the species in <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a>. A higher number means the shadow is placed further right on the screen. Can be positive or negative, and is 0 by default.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										BattlerShadowSize
+									</td>
+									<td>
+										A number that determines which shadow graphic to place underneath the front sprite of the species in <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a>. It can be 0 or higher. By default, there are three possible shadow graphics, ranging from 1 (smallest) to 3 (largest).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Evolutions
+									</td>
+									<td>
+										The <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Evolution" title="Evolution">evolution</a> paths the species can take. For each possible evolution of the species, there are three parts:
+										<ol>
+											<li>The internal name of the evolved species.</li>
+											<li>
+												The evolution method. Must be one of the methods defined in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a> <b>Pokemon_Evolution</b>. A full list is on the page <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Evolution" title="Evolution">Evolution</a>, but examples are:
+												<ul>
+													<li>Happiness</li>
+													<li>Level</li>
+													<li>Trade</li>
+													<li>Item</li>
+													<li>Beauty</li>
+													<li>HasMove</li>
+													<li>LevelFemale</li>
+													<li>Location</li>
+												</ul>
+											</li>
+											<li>A parameter used by the evolution method. Depending on the method, this could be blank or a number or the internal name of a move/item/ability/species/type/etc.</li>
+										</ol>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										FormName
+									</td>
+									<td>
+										The name of this <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Forms" title="Forms">form</a> of the species (form 0), if it has one.
+										<p>
+											If this is blank, then its form name as shown in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a>'s Forms page will be "Male"/"Female" if the species is gendered. If the species is genderless, its form name will be "Genderless" (if this is the only form for the species) or "One Form" (if the species also has other forms).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Incense
+									</td>
+									<td>
+										The internal name of an item that needs to be held by a parent when <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Breeding" title="Breeding">breeding</a> in order for the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Eggs" title="Eggs">egg</a> to be this species. If neither parent is holding the required item, the egg will be the next evolved species instead.
+										<p>
+											The only species that should have this line are ones which cannot breed, but evolve into a species which can. That is, the species should be a "baby" species. Not all baby species need this line. Note that Essentials does not have any formal definition of what a "baby" species is.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h2><span class="mw-headline" id="Graphics_and_audio">Graphics and audio</span></h2>
+						<p>
+							A Pokémon species has one of each of the following:
+						</p>
+						<ul>
+							<li>
+								Four battle sprites, used in a variety of places in-game:
+								<ol>
+									<li>Front normal</li>
+									<li>Rear normal</li>
+									<li>Front shiny</li>
+									<li>Rear shiny</li>
+								</ol>
+							</li>
+							<li>A two-frame icon (each frame is square, and the second is placed to the right of the first). Used mainly in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a> screen and <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a> screen.</li>
+							<li>A graphic depicting its footprint, for use in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a></li>
+							<li>An audio file depicting its cry, played in various places</li>
+						</ul>
+						<p>
+							The battle sprites can be any size, and are placed in the folder "Graphics/Battlers" with the following names, where "<code>XXX</code>" is either the internal name of that species or its ID number padded to 3 digits (e.g. Bulbasaur is "<code>001</code>", Pikachu is "<code>025</code>", Mewtwo is "<code>150</code>"):
+						</p>
+						<ul>
+							<li><code>XXX.png</code> - Front normal</li>
+							<li><code>XXXb.png</code> - Rear normal</li>
+							<li><code>XXXs.png</code> - Front shiny</li>
+							<li><code>XXXsb.png</code> - Rear shiny</li>
+						</ul>
+						<p>
+							The icon is composed of two square pictures side by side, and is animated automatically in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a> screen (it is not animated in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a> screen). It is placed in the folder "Graphics/Icons", with the following name (where the "<code>XXX</code>" is as above):
+						</p>
+						<ul>
+							<li><code>iconXXX.png</code> - icon</li>
+							<li><code>iconXXXs.png</code> - icon shiny version</li>
+						</ul>
+						<p>
+							The shiny versions of the battle sprites and icon are not necessary. If they do not exist, the regular versions will be used instead.
+						</p><p>
+							The footprint graphic is placed in the folder "Graphics/Icons/Footprints" with the name "<code>footprintXXX.png</code>".
+						</p><p>
+							The cry file is placed in the folder "Audio/SE/Cries" with the name "<code>XXXCry</code>", and can be of any supported audio type.
+						</p>
+						<h3><span class="mw-headline" id="Female_differences">Female differences</span></h3>
+						<p>
+							Female Pokémon can have different sprites to male Pokémon of the same species. In this case, the female will need additional battle sprites and possibly an additional icon with these names:
+						</p>
+						<ul>
+							<li><code>XXXf.png</code> - Front normal battle sprite</li>
+							<li><code>XXXfb.png</code> - Rear normal battle sprite</li>
+							<li><code>XXXfs.png</code> - Front shiny battle sprite</li>
+							<li><code>XXXfsb.png</code> - Rear shiny battle sprite</li>
+							<li><code>iconXXXf.png</code> - icon</li>
+							<li><code>iconXXXfs.png</code> - icon shiny version</li>
+						</ul>
+						<p>
+							The shiny versions of the battle sprites and icon are not necessary. If they do not exist, the regular versions will be used instead.
+						</p><p>
+							The footprint graphic and the cry do not support female variants. If you want either of these to be different for female Pokémon, you will need to make females a separate form instead.
+						</p>
+						<h2><span class="mw-headline" id="Multiple_forms">Multiple forms</span></h2>
+						<dl>
+							<dd><i>Main article: <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Forms" title="Forms">Forms</a></i></dd>
+							<dd><i>Main article: <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Mega_Evolution" title="Mega Evolution">Mega Evolution</a></i></dd>
+						</dl>
+						<p>
+							If a Pokémon species has more than one form (including having mechanically differing male/female versions, and Mega Evolutions), then it will need additional graphics and possibly additional cries to depict them. Alternate forms are defined in the <a href="/web/20201001131723/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "pokemonforms.txt", which is laid out in much the same way as "pokemon.txt".
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20200930124552
+					Cache expiry: 86400
+					Dynamic content: false
+					CPU time usage: 0.025 seconds
+					Real time usage: 0.030 seconds
+					Preprocessor visited node count: 98/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 241/2097152 bytes
+					Template argument size: 150/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    6.939      1 -total
+					 68.09%    4.725      2 Template:For
+					 25.97%    1.802      2 Template:Main
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:103-0!canonical and timestamp 20200930124552 and revision id 937
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20201001131723/https://essentialsdocs.fandom.com/wiki/Defining_a_species?oldid=937">https://essentialsdocs.fandom.com/wiki/Defining_a_species?oldid=937</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20201001131723/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

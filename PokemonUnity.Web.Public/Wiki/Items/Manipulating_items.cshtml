@@ -1,0 +1,433 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20210512075816if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<p>
+							This page describes how to&nbsp;<b>manipulate items</b>&nbsp;in the game, including how to give/take items, count how many of an item a player has, check what kind of item an item is, and so forth.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1">
+									<a href="#Giving_the_player_an_item"><span class="tocnumber">1</span> <span class="toctext">Giving the player an item</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-2"><a href="#Giving_multiple_items"><span class="tocnumber">1.1</span> <span class="toctext">Giving multiple items</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-3"><a href="#Deleting_an_item_from_the_Bag"><span class="tocnumber">2</span> <span class="toctext">Deleting an item from the Bag</span></a></li>
+								<li class="toclevel-1 tocsection-4"><a href="#Counting_items_in_the_Bag"><span class="tocnumber">3</span> <span class="toctext">Counting items in the Bag</span></a></li>
+								<li class="toclevel-1 tocsection-5"><a href="#Choosing_an_item_from_the_Bag"><span class="tocnumber">4</span> <span class="toctext">Choosing an item from the Bag</span></a></li>
+								<li class="toclevel-1 tocsection-6"><a href="#Other_checks"><span class="tocnumber">5</span> <span class="toctext">Other checks</span></a></li>
+								<li class="toclevel-1 tocsection-7"><a href="#Activating_item_effects"><span class="tocnumber">6</span> <span class="toctext">Activating item effects</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Giving_the_player_an_item">Giving the player an item</span></h2>
+						<p>
+							There are three ways to give the player an item:
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Script
+									</th>
+									<th>
+										What it does
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<code>Kernel.pbReceiveItem(:POTION)</code>
+									</td>
+									<td>
+										This script gives the player an item. As elsewhere, "POTION" is the internal name of the item to be given. Note the colon just before it.
+										<p>
+											Two messages are shown: one states that the item has been&nbsp;<i>received</i>&nbsp;(and if it's a TM/HM, the move it teaches is also stated), and the second message states that the player has put it in the appropriate pocket of their&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>. If the item is Leftovers, the first message will refer to it as "some Leftovers" rather than "a Potion"/"an Oran Berry".
+										</p><p>
+											This script should be used when&nbsp;<i>receiving</i>&nbsp;an item from an NPC, because it displays the message that the player has "obtained" it (i.e. from another person, rather than finding it).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>Kernel.pbItemBall(:POTION)</code>
+									</td>
+									<td>
+										This script works the same as the above, except that the first message shown states that the player has&nbsp;"found"&nbsp;the item (rather than "obtained" it). Also, if the item cannot be added to the&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>, the second message instead says the Bag is full, and the item is not picked up.
+										<p>
+											It is used in&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Item_balls" title="Item balls">item balls</a>. When making an&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Item_balls" title="Item balls">item ball</a>, this script is set up in that item ball event automatically when the game is compiled, so you will typically not need to use it yourself.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>$PokemonBag.pbStoreItem(:POTION,5)</code>
+									</td>
+									<td>
+										This particular script is used by the above two methods. It does the actual adding of the item to the&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>, and does not display any messages. The first parameter is the item to add, and the second is the quantity (default: 1).
+										<p>
+											If the&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>&nbsp;becomes full in the middle of adding several items, then as many as possible of the item will be added (the rest are ignored), but it will be treated as if no items had been picked up (i.e. the method will still return FALSE) because it didn't add as many items as it wanted to.
+										</p><p>
+											You should check beforehand whether the player has enough space to store all the items to be added. This won't normally be a problem, though, as by default all&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag pockets</a>&nbsp;are infinite in size.
+										</p><p>
+											You will not normally ever use this script.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							All three scripts above will return TRUE if the item has been added to the player's&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>, and FALSE if it hasn't.
+						</p><p>
+							As a slot in the&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>&nbsp;can only hold a maximum of 999 of an item (by default; this value is defined as <code>BAGMAXPERSLOT</code> in the <a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a> <b>Settings</b>), if you attempt to give the player more than this amount, the excess will start filling up a new slot. For example, if the player has 997 Potions and the game gives them 5 more, 2 of the extra Potions will go into the existing slot and the other 3 will go into a new slot.
+						</p>
+						<h3><span class="mw-headline" id="Giving_multiple_items">Giving multiple items</span></h3>
+						<p>
+							The first two scripts in the table above can also give more than 1 of an item. Here are examples of this:
+						</p>
+<pre>Kernel.pbReceiveItem(:POKEBALL,5)
+Kernel.pbReceiveItem(:ORANBERRY,3)
+Kernel.pbItemBall(:POTION,4)
+Kernel.pbItemBall(:WISEGLASSES,2)
+</pre>
+						<p>
+							The two parameters are the item itself and the quantity (default is 1 if not stated). The name of the item as stated in the message will be the plural form of the item's name (if the quantity is greater than 1) as defined in the&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "items.txt".
+						</p>
+						<h2><span class="mw-headline" id="Deleting_an_item_from_the_Bag">Deleting an item from the Bag</span></h2>
+						<p>
+							To delete an item that the player has, use the following script:
+						</p>
+<pre>$PokemonBag.pbDeleteItem(:POTION)
+</pre>
+						<p>
+							To delete several of the same item, add the quantity as a second parameter like so:
+						</p>
+<pre>$PokemonBag.pbDeleteItem(:POTION,5)
+</pre>
+						<p>
+							This script returns TRUE if the item has been removed, and FALSE if it hasn't. It does not display any messages to indicate whether the item has been removed.
+						</p><p>
+							Note that if you try to delete more of an item than there are in the&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>, then as many as possible of that item will be deleted (i.e. all of them), but then this script will still return FALSE (because it didn't manage to delete as many as it should have).
+						</p><p>
+							Before deleting an item, you should check that the player has at least as many of that item as you want to delete, so that the script can execute fully.
+						</p>
+						<h2><span class="mw-headline" id="Counting_items_in_the_Bag">Counting items in the Bag</span></h2>
+						<p>
+							To determine how many of a particular item the player currently has, use the following script:
+						</p>
+<pre>$PokemonBag.pbQuantity(:POTION)
+</pre>
+						<p>
+							This script returns a value, and does nothing else on its own. It should either be stored as a variable or be used as part of a check comparing this value to another value, e.g.
+						</p>
+<pre>itemQty = $PokemonBag.pbQuantity(:POTION)
+$game_variables[42] = $PokemonBag.pbQuantity(:POTION)
+$PokemonBag.pbQuantity(:POTION)==5
+$PokemonBag.pbQuantity(:POTION)&gt;0
+</pre>
+						<p>
+							If you want to check if the player has at least 1 of an item, you can instead use this:
+						</p>
+<pre>$PokemonBag.pbHasItem?(:POTION)
+</pre>
+						<p>
+							This is how items like Key Cards work. They have no effects themselves, but doors open when interacted with so long as the player has the item in their <a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>. This is done by using this line of code in a Conditional Branch and making the door open within that Conditional Branch (i.e. if they have at least 1 of the item).
+						</p>
+						<h2><span class="mw-headline" id="Choosing_an_item_from_the_Bag">Choosing an item from the Bag</span></h2>
+						<p>
+							To make the player choose an item from the Bag, use either version of the following script:
+						</p>
+<pre>Kernel.pbChooseItem
+Kernel.pbChooseItem(1)
+</pre>
+						<p>
+							This method returns the ID of the chosen item (or 0 if no item was chosen). The argument is optional, and is the number of the <a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Variable</a> in which the item's ID number is stored (in addition to the method itself returning that value).
+						</p><p>
+							To make the player choose from a specific list of items, use the following script:
+						</p>
+<pre>pbChooseItemFromList(_I("Choose an item"),1,:POTION,:REPEL,:POKEBALL)
+</pre>
+						<p>
+							This method returns the ID of the chosen item (or -1 if the choice was cancelled). The second argument (the number&nbsp;1&nbsp;here) is the <a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Variable</a> in which the returned value is stored (in addition to the method itself returning that value).
+						</p><p>
+							Any number of items can be listed. Only items which the player has at least 1 of will appear in the list. If the player has none of the listed items, then the method will immediately return/store 0 without displaying the message or listing anything.
+						</p>
+						<h2><span class="mw-headline" id="Other_checks">Other checks</span></h2>
+						<p>
+							Below is a list of other ways in which an item can be checked for or manipulated.
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Script
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<code>$PokemonBag.pbCanStore?(:POTION,5)</code>
+									</td>
+									<td>
+										Returns TRUE if there is space in the <a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a> for the given amount of the given item; returns FALSE if there isn't.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>PBItems.getName(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns the name of the item.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbGetPrice(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns the money value of the item, i.e. the price the player would pay when buying it. The selling price of an item is half its buying price.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbGetPocket(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns the <a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag pocket number</a> that the item is stored in.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbIsKeyItem?(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns TRUE if the item is a Key Item (i.e. its <a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Defining_an_item" title="Defining an item">"special items" number</a> is 6); returns FALSE otherwise.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbIsImportantItem?(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns TRUE if the item is a Key Item or a HM (i.e. something that cannot be tossed/sold); returns FALSE otherwise. Also returns TRUE if the item is a TM and TMs are set to infinite use, because in that case they cannot be tossed/sold either.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbIsTechnicalMachine?(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns TRUE if the item is a TM; returns FALSE otherwise.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbIsHiddenMachine?(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns TRUE if the item is a HM; returns FALSE otherwise.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbIsMachine?(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns TRUE if the item is a TM or a HM; returns FALSE otherwise.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbIsHiddenMove?(PBMoves::CUT)</code>
+									</td>
+									<td>
+										Returns TRUE if the move can be taught by any HM; returns FALSE otherwise.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbIsBerry?(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns TRUE if the item is a berry; returns FALSE otherwise.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbIsPokeBall?(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns TRUE if the item is a Poké Ball or a Snag Ball; returns FALSE otherwise.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbIsSnagBall?(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns TRUE if the item is a Snag Ball, or if it is a Poké Ball while&nbsp;<code>$PokemonGlobal.snagMachine=true</code>; returns FALSE otherwise.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbIsMail?(PBItems::POTION)</code>
+									</td>
+									<td>
+										Returns TRUE if the item is a Mail item; returns FALSE otherwise.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pbClosestHiddenItem</code>
+									</td>
+									<td>
+										Returns the location of the nearest&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Item_balls" title="Item balls">hidden item</a>; returns&nbsp;<code>nil</code>&nbsp;if there is none in range. Used by the&nbsp;<a href="/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Itemfinder" title="Itemfinder">Itemfinder</a>.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h2><span class="mw-headline" id="Activating_item_effects">Activating item effects</span></h2>
+						<p>
+							There are a few ways to activate the effects of a given item.
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Script
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<code>ItemHandlers.triggerUseInField(:REPEL)</code>
+									</td>
+									<td>
+										Triggers the activation of a given item type without consuming it.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>Kernel.pbUseKeyItemInField(:REPEL)</code>
+									</td>
+									<td>
+										Triggers the activation of a given item type and consumes it.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--
+					NewPP limit report
+					Cached time: 20210429195926
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.015 seconds
+					Real time usage: 0.016 seconds
+					Preprocessor visited node count: 41/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 0/2097152 bytes
+					Template argument size: 0/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    0.000      1 -total
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:163-0!canonical and timestamp 20210429195926 and revision id 699
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20210512075816/https://essentialsdocs.fandom.com/wiki/Manipulating_items?oldid=699">https://essentialsdocs.fandom.com/wiki/Manipulating_items?oldid=699</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20210512075816/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

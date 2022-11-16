@@ -1,0 +1,321 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20210512070936if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl>
+							<dd><i>For the project that aims to create every battle animation, see <a href="/web/20210512070936/https://essentialsdocs.fandom.com/wiki/All_Animations_Project" title="All Animations Project">All Animations Project</a>.</i></dd>
+							<dd><i>For how to define a move, see <a href="/web/20210512070936/https://essentialsdocs.fandom.com/wiki/Defining_a_move" title="Defining a move">Defining a move</a>.</i></dd>
+							<dd><i>For making animations that show in the overworld, see <a class="new" title="Field animations (page does not exist)" data-uncrawlable-url="L3dpa2kvRmllbGRfYW5pbWF0aW9ucz9hY3Rpb249ZWRpdCZyZWRsaW5rPTE=" rel="nofollow">Field animations</a>.</i></dd>
+						</dl>
+						<figure class="thumb tright show-info-icon" style="width: 402px"> 	<a href="https://web.archive.org/web/20210512070936/https://static.wikia.nocookie.net/essentialsdocs/images/8/85/AnimationEditor.png/revision/latest?cb=20200926165944" class="image"><img alt="" src="https://web.archive.org/web/20210512070936im_/https://static.wikia.nocookie.net/essentialsdocs/images/8/85/AnimationEditor.png/revision/latest/scale-to-width-down/400?cb=20200926165944" decoding="async" width="400" height="336" class="thumbimage" data-image-name="AnimationEditor.png" data-image-key="AnimationEditor.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20210512070936/https://essentialsdocs.fandom.com/wiki/File:AnimationEditor.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 			<p class="caption">The Animation Editor in Essentials.</p> 		 	</figcaption> </figure>
+						<p>
+							This page describes how to create&nbsp;<b>attack animations</b>. It also applies to other battle animations, such as the ones played to indicate a&nbsp;<a href="/web/20210512070936/https://essentialsdocs.fandom.com/wiki/Shiny_Pok%C3%A9mon" title="Shiny Pokémon">shiny Pokémon</a>&nbsp;or a stat change.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1"><a href="#Which_animation_editor.3F"><span class="tocnumber">1</span> <span class="toctext">Which animation editor?</span></a></li>
+								<li class="toclevel-1 tocsection-2"><a href="#Layout_of_the_Animation_Editor"><span class="tocnumber">2</span> <span class="toctext">Layout of the Animation Editor</span></a></li>
+								<li class="toclevel-1 tocsection-3"><a href="#Drawing_an_animation"><span class="tocnumber">3</span> <span class="toctext">Drawing an animation</span></a></li>
+								<li class="toclevel-1 tocsection-4"><a href="#Animation_sheets"><span class="tocnumber">4</span> <span class="toctext">Animation sheets</span></a></li>
+								<li class="toclevel-1 tocsection-5"><a href="#Cel_focus"><span class="tocnumber">5</span> <span class="toctext">Cel focus</span></a></li>
+								<li class="toclevel-1 tocsection-6">
+									<a href="#Animation_naming_conventions"><span class="tocnumber">6</span> <span class="toctext">Animation naming conventions</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-7"><a href="#Move:"><span class="tocnumber">6.1</span> <span class="toctext">Move:</span></a></li>
+										<li class="toclevel-2 tocsection-8"><a href="#OppMove:"><span class="tocnumber">6.2</span> <span class="toctext">OppMove:</span></a></li>
+										<li class="toclevel-2 tocsection-9"><a href="#Common:"><span class="tocnumber">6.3</span> <span class="toctext">Common:</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-10"><a href="#Animation_numbering_conventions"><span class="tocnumber">7</span> <span class="toctext">Animation numbering conventions</span></a></li>
+								<li class="toclevel-1 tocsection-11"><a href="#Saved_animation_data"><span class="tocnumber">8</span> <span class="toctext">Saved animation data</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span id="Which_animation_editor?"></span><span class="mw-headline" id="Which_animation_editor.3F">Which animation editor?</span></h2>
+						<p>
+							There are two animation editors available in Essentials. The first is the default RPG Maker XP one, which is the Animations tab in the Database (F9), and is used to make&nbsp;<a class="new" title="Field animations (page does not exist)" data-uncrawlable-url="L3dpa2kvRmllbGRfYW5pbWF0aW9ucz9hY3Rpb249ZWRpdCZyZWRsaW5rPTE=" rel="nofollow">field animations</a>&nbsp;(grass rustling and so forth). That's not the one you want here.
+						</p><p>
+							The animation editor you want to use for battle animations is the one made specifically for Essentials. It is found in the&nbsp;<a href="/web/20210512070936/https://essentialsdocs.fandom.com/wiki/Debug_mode" title="Debug mode">Debug menu</a>&nbsp;in-game. This is referred to as the Animation Editor (with capital letters).
+						</p><p>
+							The Animation Editor works a lot like the Database's Animations tab, except with a lot more functionality. It can therefore be useful to play around with the Database's Animations tab first, to get a grip on the basics. Any tutorial written for the Database's Animations tab will also serve you well with the Animation Editor.
+						</p>
+						<h2><span class="mw-headline" id="Layout_of_the_Animation_Editor">Layout of the Animation Editor</span></h2>
+						<p>
+							At the top of this page is a screenshot taken in the Animation Editor. It contains several elements, which are described below.
+						</p><p>
+							<b>Top left - the canvas</b>
+						</p>
+						<ul>
+							<li>This is the big picture that looks like a battle between a Pikachu and a Charizard. It is where you construct the animation, by placing cels. There is a dark red border around it, which won't be shown in-game - it is there to make it easier for you to deal with cels that are near the edge of the screen.</li>
+							<li>Cels with a white box around them are the cels in the current frame. Cels with a blue box are cels in the previous frame. This can help you to position cels, by placing them relative to where they were in the previous frame.</li>
+						</ul>
+						<p>
+							<b>Bottom left - frame and animation navigation</b>
+						</p>
+						<ul>
+							<li>"Frame:" - The frame of the animation which you are currently working on. The frame number begins at 1. Click the arrows to move between frames.</li>
+							<li>「Total Frames: X」- The total number of frames in that animation. Click to change this number.</li>
+							<li>「Set Animation Sheet」- Choose the animation sheet to be used for the animation.</li>
+							<li>「List of Animations」- Shows all the existing animations. You can open another one to work on, create a new one, or rename or delete an existing one. You can also change the maximum number of animations allowed by modifying the number at the bottom and clicking "Resize Animation List". Press "Esc" to close.</li>
+						</ul>
+						<p>
+							<b>Bottom right - animation name and palette</b>
+						</p>
+						<ul>
+							<li>The palette is a row of cel sprites taken from the animation sheet. You can scroll through them with the thin arrows at the sides, and click a cel sprite to select it. When you click an empty spot in the canvas, you will draw a new cel using the selected cel sprite.</li>
+							<li>"Name:" - The name of the animation. Nearly all animations have guidelines on how to name them. You cannot edit the name here, but you can do so when viewing the List of Animations.</li>
+						</ul>
+						<p>
+							<b>Right - the tool menu</b>
+						</p>
+						<ul>
+							<li>「SE and BG...」- Set the sound(s) to play for the animation (you can choose the sound file to play, its volume and pitch). Also, set the background and foreground images for this animation (you can choose the file, its offset, its colour and opacity, and the frame to start showing it at). The commands at the bottom let you change the frame number when the currently selected sound/image will play/appear, and you can delete the selected timing.</li>
+							<li>「Cel Focus...」- Set the default cel focus for the animation (see below), which is used by all new cels created. Note that changing this will&nbsp;<i>not</i>&nbsp;affect the focus of any cel that already exists.</li>
+							<li>「Paste Last」- Makes the current frame a copy of the previous frame.</li>
+							<li>「Copy Frames...」- Copies a sequence of frames elsewhere. Select a sequence of frames, then choose the frame where the copy sequence should start from.</li>
+							<li>「Clear Frames...」- Deletes all cels in a sequence of frames. Does not delete locked cels.</li>
+							<li>「Tweening...」- Interpolates the cels between one frame and another frame for a smoother animation. Can choose a set of cels to interpolate and the frames to interpolate between. Can interpolate position, pattern, zoom, angle, opacity and blending.</li>
+							<li>「Cel Batch...」- Modify the properties of multiple cels in multiple frames at once. Can modify position, pattern, zoom, angle, opacity, blending, flip, priority and focus.</li>
+							<li>「Entire Slide...」- Shifts the position of all cels in a sequence of frames by a given amount (positive values mean shift right/down, negative values mean shift left/up).</li>
+							<li>「Play Animation」- Plays the complete animation as though the player's Pokémon (Pikachu) was using it.</li>
+							<li>「Play Opp Anim」- Plays the complete animation as though the opposing Pokémon (Charizard) was using it.</li>
+							<li>「Import Anim...」- Imports an animation from an .anm file and turns the current animation into it.</li>
+							<li>「Export Anim...」- Exports the animation's details to an .anm file in the game's main folder.</li>
+							<li>「Help」- Displays a help screen.</li>
+						</ul>
+						<h2><span class="mw-headline" id="Drawing_an_animation">Drawing an animation</span></h2>
+						<p>
+							With an animation open, select a cel sprite in the palette at the bottom of the screen. Click in an empty spot of the canvas to draw a cel.
+						</p><p>
+							To select a cel on the canvas, simply click within its bounding box. A selected cel will have a black box around it, rather than white. If you hold "Alt" while clicking on a cel, you will only select that cel if you are clicking on a non-empty part of that cel's sprite (you can select a cel this way even if you click outside of its bounding box). Alternatively, you can press Tab to cycle through all the cels in the current frame.
+						</p><p>
+							With a cel selected, you can do the following things:
+						</p>
+						<ul>
+							<li>Click and drag to move the cel around.</li>
+							<li>Use the arrow keys to move the cel 8 pixels in that direction (hold "Alt" to move it 2 pixels instead).</li>
+							<li>
+								Keyboard shortcuts:
+								<ul>
+									<li>P - Open the cel's properties screen.</li>
+									<li>E/R - Rotate the cel left/right in increments of 10 degrees.</li>
+									<li>+/- (numeric pad) - Change the sprite's zoom factor in increments of 10%.</li>
+									<li>L - Lock or unlock the cel. A locked cel cannot be moved or deleted.</li>
+									<li>Delete - Delete the cel.</li>
+								</ul>
+							</li>
+						</ul>
+						<p>
+							You can right click on any part of the canvas to open a menu. This lets you open a cel's properties screen, cut/copy/paste cels, delete or renumber a cel, or define a path for a cel to move over for the next number of frames (either a smooth curve or a freehand path). Most of these options only work if a cel is selected.
+						</p><p>
+							Once one frame is complete, you can move to the next frame and carry on.
+						</p><p>
+							You should draw the animation as though the player's Pokémon (Pikachu) is using it.
+						</p>
+						<h2><span class="mw-headline" id="Animation_sheets">Animation sheets</span></h2>
+						<p>
+							An animation sheet is a picture file containing the various sprites that can be used to create an animation. It is like a tileset for animations. Each "tile" of the animation sheet is known as a "cel sprite".
+						</p><p>
+							Each cel sprite must be exactly 192x192 pixels in size. The animation sheet can have up to 5 cel sprites in a row, and any number of rows (this is similar to tilesets, which must have exactly 8 tiles in a row and any number of rows).
+						</p><p>
+							An animation can only use one animation sheet, so all the cel sprites required for it must be in the same sheet.
+						</p>
+						<h2><span class="mw-headline" id="Cel_focus">Cel focus</span></h2>
+						<p>
+							Each cel has its own focus. A focus is an anchor point for that cel, and that cel will be displayed relative to the thing it focuses on, no matter whereabouts on the screen that focus is.
+						</p><p>
+							If there are two focal points, the cel will be displayed in the same relative position to both of them. For example, if a cel is positioned halfway between two focal points, then no matter where those focal points happen to be, the cel will be halfway between them.
+						</p><p>
+							There are four possible focuses a cel can choose from. Their names indicate what the cel will be focussed on.
+						</p>
+						<ul>
+							<li><b>User</b>&nbsp;- For parts of an animation which solely affect the user (Pikachu), such as charging-up particles or anything that is self-inflicted. Also used for various effects (e.g. poison, stat changes, shininess).</li>
+							<li><b>Target</b>&nbsp;- For parts of an animation which solely affect the target (Charizard), such as slash marks or an impact burst.</li>
+							<li><b>User and target</b>&nbsp;- For parts of an animation which affect both the user and the target, such as beams that travel from one to the other.</li>
+							<li><b>Screen</b>&nbsp;- For moves and effects which affect the field in general, such as weather and Trick Room. What is shown in the Animation Editor is always exactly what appears in battle.</li>
+						</ul>
+						<p>
+							The majority of animations will use just one type of focus throughout. However, some animations can mix and match (e.g. Leech Seed, which will use "User and target" for the projectiles flying through the air, then "Target" for the seeds sprouting on the opponent).
+						</p><p>
+							It is important to note that the "User and target" focus can reposition cels in such a way that the animation looks wrong if used by, say, an opposing Pokémon (Charizard) on a player's Pokémon (Pikachu). The 「Play Opp Anim」 button in the tool menu will be useful for figuring out if this happens. If so, don't panic! You can make a second version of the animation specifically for opposing Pokémon to use, via the "OppMove" naming convention (see below).
+						</p>
+						<h2><span class="mw-headline" id="Animation_naming_conventions">Animation naming conventions</span></h2>
+						<p>
+							The vast majority of battle animations will need to follow specific naming conventions. There are three kinds of animations that have naming conventions: "Move:" animations, "OppMove:" animations and "Common:" animations.
+						</p>
+						<h3><span class="mw-headline" id="Move:">Move:</span></h3>
+						<p>
+							"Move:" animations are named&nbsp;<b>Move:</b>&nbsp;followed by the internal name of the move it depicts, e.g.&nbsp;<code>Move:FIREPUNCH</code>. They are shown automatically when using that move.
+						</p><p>
+							If a "Move:" animation does not exist for a particular move, then the game will instead try to use a default animation - this will either be the animation of a predefined other move with the same type as the move being used, or Tackle's animation (<code>Move:TACKLE</code>) if that can't be found. If the game cannot find either of these animations, then no animation is shown.
+						</p>
+						<h3><span class="mw-headline" id="OppMove:">OppMove:</span></h3>
+						<p>
+							These are the same as "Move:" animations, except they are drawn as though the opposing Pokémon (Charizard) is using the move against the player's Pokémon (Pikachu). This type of animation is used if the regular "Move:" animation for a move will not look good when an opposing Pokémon is using it.
+						</p><p>
+							"OppMove:" animations are named&nbsp;<b>OppMove:</b>&nbsp;followed by the internal name of the move it depicts, e.g.&nbsp;<code>OppMove:FIREPUNCH</code>. They are shown automatically when using that move.
+						</p><p>
+							When an opposing Pokémon uses a move, it first checks if that move has an "Oppmove:" animation for it. If so, it uses that, and if not, it will try to use the "Move:" animation for it. If there is no "Move:" animation for the move either, it goes through the same default animation fallbacks as mentioned above.
+						</p>
+						<h3><span class="mw-headline" id="Common:">Common:</span></h3>
+						<p>
+							"Common:" animations are animations which are called by name from the scripts, but are not "Move:" or "OppMove:" animations. They are used for a variety of status changes and lingering effects. These include:
+						</p>
+						<ul>
+							<li><code>Common:Shiny</code>,&nbsp;<code>Common:Shadow</code>&nbsp;- Shown when a&nbsp;<a href="/web/20210512070936/https://essentialsdocs.fandom.com/wiki/Shiny_Pok%C3%A9mon" title="Shiny Pokémon">shiny Pokémon</a>/<a href="/web/20210512070936/https://essentialsdocs.fandom.com/wiki/Shadow_Pok%C3%A9mon" title="Shadow Pokémon">Shadow Pokémon</a>&nbsp;enters battle.</li>
+							<li><code>Common:StatUp</code>,&nbsp;<code>Common:StatDown</code>&nbsp;- Shown when one of a Pokémon's stats is raised/lowered.</li>
+							<li><code>Common:Poison</code>,&nbsp;<code>Common:Sleep</code>, etc. - Typically shown at the end of a&nbsp;<a class="new" title="Battle round (page does not exist)" data-uncrawlable-url="L3dpa2kvQmF0dGxlX3JvdW5kP2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==" rel="nofollow">battle round</a>, to indicate that a Pokémon still has that status problem.</li>
+							<li><code>Common:Sunny</code>,&nbsp;<code>Common:Rain</code>, etc. - Weather animations, shown at the start of battle and at the end of each battle round while the weather persists.</li>
+						</ul>
+						<p>
+							"Common:" animations are named&nbsp;<b>Common:</b>&nbsp;followed by anything you like (preferably something identifiable). It is the "anything you like" part which is written in the scripts when the animation is called.
+						</p><p>
+							Common animations are shown with the code&nbsp;<code>pbCommonAnimation("Poison",attacker,opponent)</code>&nbsp;(or similar). Examples include:
+						</p>
+						<ul>
+							<li><code>pbCommonAnimation("LeechSeed",recipient,i)</code></li>
+							<li><code>pbCommonAnimation("Poison",i,nil)</code></li>
+							<li><code>pbCommonAnimation("Sunny",nil,nil)</code></li>
+						</ul>
+						<p>
+							If there is no Common animation with the given name, then no animation is shown.
+						</p><p>
+							Note that there is no "OppCommon:" animation naming convention. If a different animation needs to be played depending on which side of the field the affected Pokémon is on (or which side of the field is affected), this will need to be manually coded. See the code for the Pledge moves for an example.
+						</p>
+						<h2><span class="mw-headline" id="Animation_numbering_conventions">Animation numbering conventions</span></h2>
+						<p>
+							In addition to naming conventions, some animations also need to follow numbering conventions. Basically, a move or effect that has multiple animations should have those animations listed in sequence with no gaps.
+						</p><p>
+							This applies to:
+						</p>
+						<ul>
+							<li>All multi-hit moves. Each hit is a separate animation, even if the animations are supposed to look the same. There should be a number of animations equal to the maximum possible number of hits, listed in order. Examples include Beat Up and Comet Punch.</li>
+							<li>Two-turn moves, such as Fly. The charging animation should be the second animation, listed immediately after the attacking animation.</li>
+							<li>Fusion Bolt and Fusion Flare. The more powerful version of the animation should be second.</li>
+							<li>Techno Blast. The Normal-type animation should be first, followed by the Electric-, Fire-, Ice- and Water-type versions in that order.</li>
+							<li>Brick Break. The version showing this move breaking an opponent's Reflect/Light Screen should be second.</li>
+							<li>Future Sight and Doom Desire. The initial use's animation (foreseeing the attack) should be first, and the actual attack's animation (the attack hitting) should be second.</li>
+						</ul>
+						<p>
+							In all cases, the first animation should follow the appropriate naming convention, but every other animation&nbsp;<i>must not</i>. The game will be confused if there are multiple animations for a single move that follow the naming conventions. For all animations except for the first, you can name them anything you like, so long as they do not follow the naming conventions (although it is useful to name them something informative like "Fury Attack hit 2" or "Fly charging").
+						</p><p>
+							While&nbsp;<a href="/web/20210512070936/https://essentialsdocs.fandom.com/wiki/List_of_abilities" title="List of abilities">the ability Parental Bond</a>&nbsp;can turn almost every one-hit move into a multi-hit move, you don't need to worry about allowing for this. Parental Bond is hard-coded to use the "Common:ParentalBond" animation for its second hit.
+						</p>
+						<h2><span class="mw-headline" id="Saved_animation_data">Saved animation data</span></h2>
+						<p>
+							Attack animations are saved in the folder "Data" in the file "PkmnAnimations.rxdata".
+						</p><p>
+							There is also a data file called "move2anim.dat" in the same folder, which contains an array that matches up the numbers of the Move/OppMove animations to their corresponding move ID number (e.g. matches animation number 271 to the move Tackle). This file is generated each time the game is compiled.
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20210501033921
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.019 seconds
+					Real time usage: 0.025 seconds
+					Preprocessor visited node count: 70/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 288/2097152 bytes
+					Template argument size: 224/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    2.114      1 -total
+					 95.13%    2.011      3 Template:For
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:128-0!canonical and timestamp 20210501033921 and revision id 517
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20210512070936/https://essentialsdocs.fandom.com/wiki/Attack_animations?oldid=517">https://essentialsdocs.fandom.com/wiki/Attack_animations?oldid=517</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20210512070936/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

@@ -1,0 +1,479 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20210512084010if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl><dd><i>For the main page about items, see <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Items" title="Items">Items</a>.</i></dd></dl>
+						<p>
+							This page describes how&nbsp;<b>item effects</b>&nbsp;are defined.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1">
+									<a href="#Ways_to_use_an_item"><span class="tocnumber">1</span> <span class="toctext">Ways to use an item</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-2"><a href="#Examples"><span class="tocnumber">1.1</span> <span class="toctext">Examples</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-3">
+									<a href="#Pok.C3.A9_Balls"><span class="tocnumber">2</span> <span class="toctext">Poké Balls</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-4"><a href="#Examples_2"><span class="tocnumber">2.1</span> <span class="toctext">Examples</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-5"><a href="#TMs_and_HMs"><span class="tocnumber">3</span> <span class="toctext">TMs and HMs</span></a></li>
+								<li class="toclevel-1 tocsection-6"><a href="#Mail"><span class="tocnumber">4</span> <span class="toctext">Mail</span></a></li>
+								<li class="toclevel-1 tocsection-7"><a href="#Held_items"><span class="tocnumber">5</span> <span class="toctext">Held items</span></a></li>
+								<li class="toclevel-1 tocsection-8"><a href="#Special_item_effects"><span class="tocnumber">6</span> <span class="toctext">Special item effects</span></a></li>
+								<li class="toclevel-1 tocsection-9"><a href="#Use_by_enemy_trainers"><span class="tocnumber">7</span> <span class="toctext">Use by enemy trainers</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Ways_to_use_an_item">Ways to use an item</span></h2>
+						<p>
+							Most items have an effect. A Potion will restore up to 20HP, for instance. These effects are all written in the scripts, in up to several different places depending on the kind of item and how it is used (e.g. from the&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>, in battle, as a&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">registered item</a>, etc.). This section of the page describes the different ways an item can be actively used, and how to set up general item effects in each case. See below for passive effects (e.g. held items), Poké Ball effects and so forth.
+						</p><p>
+							The <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script sections</a>&nbsp;<b>PItem_ItemEffects</b>&nbsp;and <b>PItem_BattleItemEffects</b> contain all the item effects for items that are actively used. As there are several different ways an item can be used, there are several different handlers, one for each way. There are six such handlers:
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Handler
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<code>UseFromBag</code>
+									</td>
+									<td>
+										For when the item is being used from the&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>, but not on a chosen Pokémon. Typically used for Escape Rope, Repels, all usable Key Items and a few others.
+										<p>
+											Returns one of the following numbers:
+										</p>
+										<ul>
+											<li>0 - The item was not used.</li>
+											<li>1 - The item was used, and the Bag screen stays open.</li>
+											<li>2 - The item was used, and the Bag screen is closed.</li>
+											<li>3 - The item was used, and it was consumed.</li>
+											<li>4 - The item was used, it was consumed, and the Bag screen is closed.</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>UseOnPokemon</code>
+									</td>
+									<td>
+										For when the item is to be used on one particular Pokémon in your&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a>&nbsp;(which the player chooses). This includes Potions, Revives, Ethers,&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Evolution" title="Evolution">evolution stones</a>, etc.
+										<p>
+											Returns TRUE if the item was used, and FALSE if it wasn't.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>UseInField</code>
+									</td>
+									<td>
+										For when the item needs to close the&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>&nbsp;screen in order to be used, or if it is being used in the field as a&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">registered item</a>. For Repels, Honey, Black/White Flutes, Escape Rope and all appropriate Key Items. Items that do not have this handler cannot be registered.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>BattleUseOnPokemon</code>
+									</td>
+									<td>
+										For when the item is to be used on one particular Pokémon in your&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a>&nbsp;(which the player chooses) during&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a>. Is for nearly all items that also have a&nbsp;<code>UseOnPokemon</code>&nbsp;handler (except ones that can't be used in battle, obviously), and also for items that affect attraction/confusion (which are in-battle-only statuses).
+										<p>
+											Returns TRUE if the item was used, and FALSE if it wasn't.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>BattleUseOnBattler</code>
+									</td>
+									<td>
+										For when the item is to be used on a Pokémon that is currently in&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a>&nbsp;(which you choose). For X Attack&nbsp;<i>et al</i>&nbsp;and all Poké Balls (to decide if it can be used).
+										<p>
+											Returns TRUE if the item was used, and FALSE if it wasn't.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>UseInBattle</code>
+									</td>
+									<td>
+										For when the item is being used in&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a>, but not on a Pokémon you choose. For Poké Doll (automatic escape from battle), Poké Flute (affects all battlers) and all Poké Balls (to start the capture process).
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							Many items can be used in more than one of the situations described above. The new item's effect must be written separately for each handler (e.g. Potion has a defined effect both for&nbsp;<code>UseOnPokemon</code>&nbsp;and&nbsp;<code>BattleUseOnPokemon</code>). Many items will have the exact same effect for each of its handlers, but some do not (e.g. Old Rod, other Key Items). If in doubt, look at existing items that have similar effects to your new item to decide which handlers you need, and what each handler should do.
+						</p><p>
+							Notice that whenever an item is referred to, it is preceded by a colon (:). This colon is important.
+						</p>
+						<h3><span class="mw-headline" id="Examples">Examples</span></h3>
+<pre>ItemHandlers::UseOnPokemon.add(:POTION,proc { |item,pkmn,scene|
+  next pbHPItem(pkmn,20,scene)
+})
+</pre>
+						<p>
+							This describes what a Potion does. This particular example is the&nbsp;<code>UseOnPokemon</code>&nbsp;handler; there is also a&nbsp;<code>BattlerUseOnPokemon</code>&nbsp;handler for the Potion, which has an identical effect to this one.
+						</p><p>
+							It calls <code>def pbHPItem</code>, which changes the HP of a single Pokémon, and tells it to add 20. That method will add as much HP as possible, up to that value.
+						</p>
+<pre>ItemHandlers::UseOnPokemon.add(:ANTIDOTE,proc { |item,pkmn,scene|
+  if pkmn.fainted? || pkmn.status!=PBStatuses::POISON
+    scene.pbDisplay(_INTL("It won't have any effect."))
+    next false
+  end
+  pkmn.healStatus
+  scene.pbRefresh
+  scene.pbDisplay(_INTL("{1} was cured of its poisoning.",pkmn.name))
+  next true
+})
+</pre>
+						<p>
+							This describes what an Antidote does (cures the poison effect). This particular example is the&nbsp;<code>UseOnPokemon</code>&nbsp;handler; there is also a&nbsp;<code>BattleUseOnPokemon</code>&nbsp;handler for the Antidote, which has an identical effect to this one.
+						</p>
+<pre>ItemHandlers::UseOnPokemon.copy(:ANTIDOTE,:PECHABERRY)
+</pre>
+						<p>
+							This line copies the&nbsp;<code>UseOnPokemon</code>&nbsp;handler effect of Antidote and gives it to Pecha Berry. The&nbsp;<code>BattleUseOnPokemon</code> handler effect must be copied separately (but in the same way - only the handler's name is different).
+						</p>
+<pre>ItemHandlers::UseOnPokemon.copy(:AWAKENING,:CHESTOBERRY,:BLUEFLUTE,:POKEFLUTE)
+</pre>
+						<p>
+							You can copy an item's handler effect to multiple other items at once. Here, Awakening's <code>UseOnPokemon</code> handler effect is copied to three other items at once.
+						</p>
+<pre>ItemHandlers::UseOnPokemon.addIf(proc { |item| pbIsEvolutionStone?(item)},
+  proc { |item,pkmn,scene|
+    if pkmn.shadowPokemon?
+      scene.pbDisplay(_INTL("It won't have any effect."))
+      next false
+    end
+    newspecies = pbCheckEvolution(pkmn,item)
+    if newspecies&lt;=0
+      scene.pbDisplay(_INTL("It won't have any effect."))
+      next false
+    end
+    pbFadeOutInWithMusic {
+      evo = PokemonEvolutionScene.new
+      evo.pbStartScreen(pkmn,newspecies)
+      evo.pbEvolution(false)
+      evo.pbEndScreen
+      if scene.is_a?(PokemonPartyScreen)
+        scene.pbRefreshAnnotations(proc { |p| pbCheckEvolution(p,item)&gt;0 })
+        scene.pbRefresh
+      end
+    }
+    next true
+  }
+)
+</pre>
+						<p>
+							This code describes what an&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Evolution" title="Evolution">evolution stone</a>&nbsp;does. It only has the&nbsp;<code>UseOnPokemon</code>&nbsp;handler. There is no code difference here depending on which particular evolution stone is being used. This is because the <code>def pbCheckEvolution</code> is what checks whether the stone being used will work on the Pokémon or not, and returns a value for "<code>newSpecies</code>" (either the ID number of the evolved species if it can be used, or 0 if it can't). The effect then carries out depending on this value.
+						</p><p>
+							This handler applies to any item which matches the proc given in the first line, rather than matching a specific item. This is done by using <code>UseOnPokemon.addIf</code> rather than <code>UseOnPokemon.add</code>, and by providing a proc into which is passed the item being used.
+						</p>
+<pre>ItemHandlers::UseFromBag.add(:OLDROD,proc { |item|
+  terrain = pbFacingTerrainTag
+  notCliff = $game_map.passable?($game_player.x,$game_player.y,$game_player.direction,$game_player)
+  if (PBTerrain.isWater?(terrain) &amp;&amp;&nbsp;!$PokemonGlobal.surfing &amp;&amp; notCliff) ||
+     (PBTerrain.isWater?(terrain) &amp;&amp; $PokemonGlobal.surfing)
+    next 2
+  end
+  pbMessage(_INTL("Can't use that here."))
+  next 0
+})
+
+ItemHandlers::UseInField.add(:OLDROD,proc { |item|
+  terrain = pbFacingTerrainTag
+  notCliff = $game_map.passable?($game_player.x,$game_player.y,$game_player.direction,$game_player)
+  if !PBTerrain.isWater?(terrain) || (!notCliff &amp;&amp;&nbsp;!$PokemonGlobal.surfing)
+    pbMessage(_INTL("Can't use that here."))
+    next 0
+  end
+  encounter = $PokemonEncounters.hasEncounter?(EncounterTypes::OldRod)
+  if pbFishing(encounter,1)
+    pbEncounter(EncounterTypes::OldRod)
+  end
+  next 1
+})
+</pre>
+						<p>
+							These are the two handlers for the Old Rod. Note that they are different. The first one does a check for whether it can be used - if successful (i.e. when used while facing water, but not off a clifftop), all it does is "<code>next 2</code>", which means that the&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>&nbsp;screen should be closed and the&nbsp;<code>UseInField</code>&nbsp;handler for that item should then be run. If the Old Rod cannot be used, the&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>&nbsp;screen is not closed in the first place.
+						</p><p>
+							If the Old Rod has been&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">registered</a>&nbsp;and is being used that way, it performs the&nbsp;<code>UseInField</code>&nbsp;handler effect immediately instead. The&nbsp;<code>UseInField</code>&nbsp;handler is the one that actually describes what the Old Rod does.
+						</p><p>
+							<br>
+						</p><p>
+							Note that some items which have a&nbsp;<code>UseInField</code>&nbsp;handler counterpart will NOT simply "next 2" in its&nbsp;<code>UseFromBag</code>&nbsp;handler effect (e.g. Town Map, Coin Case), even if it can be used. Those items do not need to close the&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a>&nbsp;screen in order to do something. In this case, the two handlers are simply identical.
+						</p>
+						<h2><span id="Poké_Balls"></span><span class="mw-headline" id="Pok.C3.A9_Balls">Poké Balls</span></h2>
+						<p>
+							Poké Balls can have several different effects, from changing the likelihood of capturing a Pokémon to making the captured Pokémon happier. These effects are not defined in the same place as above, but in the <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a>&nbsp;<b>PokeBall_CatchEffects</b>.
+						</p><p>
+							All effects of Poké Balls are written in one or more handlers. The possible handlers are as follows:
+						</p>
+						<table class="wikitable">
+							<tbody>
+								<tr>
+									<th>
+										Handler
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<code>IsUnconditional</code>
+									</td>
+									<td>
+										If present, it will always be called as soon as the wild Pokémon has been absorbed into the Poké Ball. If this handler returns TRUE, then the capture is successful, regardless of anything else.
+										<p>
+											By default, only the Master Ball has this handler (and it always returns TRUE).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>ModifyCatchRate</code>
+									</td>
+									<td>
+										Changes the catch rate of the Poké Ball. This change can depend on any factor of the Pokémon to be captured (e.g. level, weight, type, how it evolves), and/or on any condition of the battle (e.g. turn count, environment, time of day).
+										<p>
+											Most Poké Balls have one of these handlers.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>OnCatch</code>
+									</td>
+									<td>
+										Describes an effect that happens after a successful capture.
+										<p>
+											The Heal Ball will heal the captured Pokémon, and the Friend Ball sets its happiness to 200.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>OnFailCatch</code>
+									</td>
+									<td>
+										Describes an effect that happens after a failed capture attempt.
+										<p>
+											There is no existing Poké Ball which has this kind of effect, but you could create a Poké Ball that, for example, puts the Pokémon to sleep if it fails to capture it.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							Other effects of Poké Balls (e.g. Luxury Ball increases happiness gain) need to be defined separately. There is no standard code for this, as these additional effects could vary wildly.
+						</p><p>
+							When defining a new Poké Ball, in addition to defining its effect, it will also need to be listed in the hash <code>$BallTypes</code> at the top of the <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a>&nbsp;<b>PokeBall_CatchEffects</b>. The number given to a Poké Ball here determines the filename of Poké Ball graphics used in <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a> and the <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Summary_screens" title="Summary screens">summary screens</a>.
+						</p>
+						<h3><span class="mw-headline" id="Examples_2">Examples</span></h3>
+<pre>BallHandlers::ModifyCatchRate.add(:GREATBALL,proc { |ball,catchRate,battle,battler,ultraBeast|
+  next catchRate*1.5
+})
+</pre>
+						<p>
+							A Great Ball is 1.5x as effective as a regular Poké Ball. This code reflects this by multiplying "<code>catchRate</code>" by 1.5.
+						</p>
+<pre>BallHandlers::ModifyCatchRate.add(:DIVEBALL,proc { |ball,catchRate,battle,battler,ultraBeast|
+  catchRate *= 3.5 if battle.environment==PBEnvironment::Underwater
+  next catchRate
+})
+</pre>
+						<p>
+							A Dive Ball is 3.5x as effective as a regular Poké Ball, but only if used while underwater. It has the same effectiveness as a regular Poké Ball if it is used above water.
+						</p>
+<pre>BallHandlers::IsUnconditional.add(:MASTERBALL,proc { |ball,battle,battler|
+  next true
+})
+</pre>
+						<p>
+							The Master Ball will always capture a Pokémon. Because an&nbsp;<code>IsUnconditional</code>&nbsp;handler is always called as soon as a Pokémon is absorbed into a Poké Ball, and because this handler always returns TRUE, the capture will always be successful.
+						</p>
+<pre>BallHandlers::OnCatch.add(:FRIENDBALL,proc { |ball,battle,pkmn|
+  pkmn.happiness = 200
+})
+</pre>
+						<p>
+							The Friend Ball doesn't change the capture rate, but it does change the happiness of the captured Pokémon upon capture. This is the code that does so. Any other effects that occur upon successfully capturing a Pokémon (these effects usually only affect the captured Pokémon) can use this handler (e.g. the Heal Ball restoring the captured Pokémon to full health).
+						</p>
+						<h2><span class="mw-headline" id="TMs_and_HMs">TMs and HMs</span></h2>
+						<dl><dd><i>Main article: <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Learning_moves" title="Learning moves">Learning moves</a></i></dd></dl>
+						<p>
+							TMs and HMs are also used in a different way to the methods mentioned above. All TMs and HMs work in exactly the same way, with the one exception being that a TM will be consumed after use (unless the <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Setting" class="mw-redirect" title="Setting">setting</a> <code>INFINITE_TMS</code> is set to true).
+						</p><p>
+							The page <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Learning_moves" title="Learning moves">Learning moves</a>&nbsp;contains more information about how a move is taught. The only requirement for creating a TM or HM item is to&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Defining_an_item" title="Defining an item">define it as one</a>.
+						</p>
+						<h2><span class="mw-headline" id="Mail">Mail</span></h2>
+						<p>
+							Mail items cannot be used like other items, but instead can be read. Reading a mail item from the <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a> will simply show the blank mail, while reading a mail item being held by a <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon" title="Pokémon">Pokémon</a> will show the mail and its message.
+						</p><p>
+							When a mail item is given to a Pokémon to hold, the player can enter a message. It is automatically signed with the player's name. If the mail&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Defining_an_item" title="Defining an item">is defined</a>&nbsp;as one which shows Pokémon on it, then the holder and the next two Pokémon currently in the player's party will appear as icons on the mail, in order of right to left.
+						</p><p>
+							A mail's message (and details of the Pokémon to show on it) are saved as a property of the Pokémon holding the mail. See the page <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Editing_a_Pok%C3%A9mon" title="Editing a Pokémon">Editing a Pokémon</a>&nbsp;for an explanation of how to set the message, sender's name and icons for a held mail item.
+						</p><p>
+							The only requirement for creating a mail item is to&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Defining_an_item" title="Defining an item">define it as one</a>.
+						</p>
+						<h2><span class="mw-headline" id="Held_items">Held items</span></h2>
+						<p>
+							Some items have effects if they are held by a Pokémon, such as making certain types of moves stronger in&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a>, giving more experience or making a particular&nbsp;<a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Weather" title="Weather">weather</a>&nbsp;move last longer. There are standard ways to define the more common types of held item effects, all of which are in the <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a> <b>BattleHandlers_Items</b>.
+						</p><p>
+							Each type of effect has its own type of battle handler. These are much the same as the handlers shown above. They will not be described in detail here, and the advice is to look at items with similar effects to a new one you want to add and to see how they work.
+						</p><p>
+							Some item battle effects do not have handlers, usually because they are so niche that it isn't worth creating a handler for them.
+						</p><p>
+							Held items which have effects outside of battle do not have any standard code or handlers, again because they are so niche. These include the Destiny Knot (for breeding), Cleanse Tag/Pure Incense (for avoiding wild encounters), Everstone (prevents evolution) and Soothe Bell (for happiness gain).
+						</p>
+						<h2><span class="mw-headline" id="Special_item_effects">Special item effects</span></h2>
+						<p>
+							There are some items, usually Key Items, that have unique or significant effects when used. These include:
+						</p>
+						<ul>
+							<li><a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Region_map" title="Region map">Town Map</a></li>
+							<li><a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9_Radar" title="Poké Radar">Poké Radar</a></li>
+							<li><a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Getting_around" title="Getting around">Bicycle</a></li>
+							<li><a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Fishing_encounters" title="Fishing encounters">Fishing Rod</a></li>
+							<li><a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Itemfinder" title="Itemfinder">Itemfinder</a></li>
+							<li><a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Game_Corner" title="Game Corner">Coin Case</a></li>
+						</ul>
+						<p>
+							It is best to look at the scripts directly to see how these items work.
+						</p><p>
+							In general, any other Key Items are used passively. That is, an event will check to see if the player has a particular Key Item (e.g. Key Card), rather than the player having to actively use that item. Checks like this are described in the page <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Manipulating_items" title="Manipulating items">Manipulating items</a>.
+						</p>
+						<h2><span class="mw-headline" id="Use_by_enemy_trainers">Use by enemy trainers</span></h2>
+						<dl><dd><i>Main article: <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Battle_AI" title="Battle AI">Battle AI</a></i></dd></dl>
+						<p>
+							Some items can be used by enemy trainers during battle. By default, the AI knows how to use HP-restoring items, status problem-curing items and X items (e.g. X Attack).
+						</p><p>
+							The decisions of which item should be used are coded in the <a href="/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a>&nbsp;<b>AI_Item</b>. If you add an item and want the AI to be able to use it, you should add code in here for it.
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20210427170042
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.024 seconds
+					Real time usage: 0.038 seconds
+					Preprocessor visited node count: 89/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 151/2097152 bytes
+					Template argument size: 81/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    4.514      1 -total
+					 50.20%    2.266      1 Template:For
+					 45.33%    2.046      2 Template:Main
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:194-0!canonical and timestamp 20210427170042 and revision id 966
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20210512084010/https://essentialsdocs.fandom.com/wiki/Item_effects?oldid=966">https://essentialsdocs.fandom.com/wiki/Item_effects?oldid=966</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20210512084010/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

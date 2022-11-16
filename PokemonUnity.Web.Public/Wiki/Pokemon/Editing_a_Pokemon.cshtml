@@ -1,0 +1,699 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20201112012047if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl><dd><i>For giving, taking, counting and choosing Pokémon, see <a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Manipulating_Pok%C3%A9mon" title="Manipulating Pokémon">Manipulating Pokémon</a>.</i></dd></dl>
+						<p>
+							This page describes how to&nbsp;<b>edit the attributes of a Pokémon</b>, such as its gender, owner or ribbons.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1">
+									<a href="#Editing_a_Pok.C3.A9mon"><span class="tocnumber">1</span> <span class="toctext">Editing a Pokémon</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-2"><a href="#Common_attributes_to_edit"><span class="tocnumber">1.1</span> <span class="toctext">Common attributes to edit</span></a></li>
+										<li class="toclevel-2 tocsection-3"><a href="#Rare_attributes_to_edit"><span class="tocnumber">1.2</span> <span class="toctext">Rare attributes to edit</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-4"><a href="#What_can.27t_be_changed"><span class="tocnumber">2</span> <span class="toctext">What can't be changed</span></a></li>
+								<li class="toclevel-1 tocsection-5"><a href="#The_last_part_of_editing_a_Pok.C3.A9mon"><span class="tocnumber">3</span> <span class="toctext">The last part of editing a Pokémon</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span id="Editing_a_Pokémon"></span><span class="mw-headline" id="Editing_a_Pok.C3.A9mon">Editing a Pokémon</span></h2>
+						<p>
+							The first step is to find the Pokémon to edit. This can be done a variety of different ways depending on the circumstances. For example:
+						</p>
+<pre>pkmn = $Trainer.party[0]
+pkmn = pbFirstAblePokemon(1)
+pkmn = $Trainer.lastPokemon
+pkmn = pbGetPokemon(1)
+</pre>
+						<p>
+							These will all return a Pokémon (if possible) and call it "<code>pkmn</code>". This article assumes that the Pokémon being edited is referred to as "<code>pkmn</code>".
+						</p>
+						<h3><span class="mw-headline" id="Common_attributes_to_edit">Common attributes to edit</span></h3>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Attribute
+									</th>
+									<th>
+										Code
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Ability
+									</td>
+									<td>
+										<code>pkmn.setAbility(2)</code>
+									</td>
+									<td>
+										Sets the Pokémon's&nbsp;<a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Abilities" title="Abilities">ability</a>&nbsp;to be the first natural (0), second natural (1) or a hidden (2-5) ability <a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Defining_a_species" title="Defining a species">available to its species</a>. Use&nbsp;<code>pkmn.setAbility(nil)</code>&nbsp;to remove the override and have the ability determined by the Pokémon's personal ID.
+										<p>
+											It is not possible to give the Pokémon any ability other than those <a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Defining_a_species" title="Defining a species">defined</a> in the&nbsp;<a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"pokemon.txt" for its species.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Ball used
+									</td>
+									<td>
+										<code>pkmn.ballused=7</code>
+									</td>
+									<td>
+										Sets the type of Poké Ball the Pokémon is contained in. The list of Poké Balls and their corresponding numbers is at the top of the <a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a>&nbsp;<b>PokeBall_CatchEffects</b>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										EVs
+									</td>
+									<td>
+										<code>pkmn.ev[PBStats::DEFENSE]=42</code>
+									</td>
+									<td>
+										Sets the Pokémon's EVs for a given stat. Each stat should be a number between 0 and 252 inclusive. The possible stats (as mentioned in the square brackets) are as follows:
+										<ul>
+											<li>PBStats::HP</li>
+											<li>PBStats::ATTACK</li>
+											<li>PBStats::DEFENSE</li>
+											<li>PBStats::SPATK</li>
+											<li>PBStats::SPDEF</li>
+											<li>PBStats::SPEED</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Form
+									</td>
+									<td>
+										<code>pkmn.form=1</code>
+									</td>
+									<td>
+										Sets the Pokémon's&nbsp;<a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Forms" title="Forms">form</a>. 0 is the default form as defined in the&nbsp;<a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"pokemon.txt".
+										<p>
+											Some Pokémon species determine their form automatically depending on various factors. Their form cannot be manually changed this way, as they will immediately change back.
+										</p><p>
+											Setting a Pokémon's form will also recalculate its stats and mark it as seen in the Pokédex.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Gender
+									</td>
+									<td>
+										<code>pkmn.makeMale</code><br><code>pkmn.makeFemale</code>
+									</td>
+									<td>
+										Sets the Pokémon's gender to male or female. They cannot give a Pokémon a gender it cannot have. Use&nbsp;<code>pkmn.setGender(nil)</code>&nbsp;to remove the override and have the gender determined by the Pokémon's personal ID.
+										<p>
+											You will also need to record the new gender as seen, so that it will show up in the&nbsp;<a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a>. To do this, use&nbsp;<code>pbSeenForm(pkmn)</code>&nbsp;afterwards.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Happiness
+									</td>
+									<td>
+										<code>pkmn.happiness=200</code>
+									</td>
+									<td>
+										Sets the Pokémon's happiness. This should be a number between 0 and 255 inclusive.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Held item
+									</td>
+									<td>
+										<code>pkmn.setItem(:ORANBERRY)</code>
+									</td>
+									<td>
+										Sets the Pokémon's&nbsp;<a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Items" title="Items">held item</a>. "<code>0</code>" means no item.
+										<p>
+											If the item is a mail item, then&nbsp;<code>pkmn.mail</code>&nbsp;should also be set:&nbsp;<code>pkmn.mail=PokemonMail.new(PBItems::GRASSMAIL,"This is a message.","Dave")</code>
+										</p><p>
+											If the item is a mail item which shows Pokémon on it, then this should instead be:&nbsp;<code>pkmn.mail=PokemonMail.new(PBItems::GRASSMAIL,"This is a message.","Dave",pkmn1,pkmn2,pkmn3)</code>. Each "<code>pkmn#</code>" should be an array of the form&nbsp;<code>[species,gender,shininess,form,shadowness,is egg?]</code>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										IVs
+									</td>
+									<td>
+										<code>pkmn.iv[PBStats::DEFENSE]=7</code>
+									</td>
+									<td>
+										Sets the Pokémon's IVs for a given stat. Each stat should be a number between 0 and 31 inclusive. The possible stats (as mentioned in the square brackets) are as follows:
+										<ul>
+											<li>PBStats::HP</li>
+											<li>PBStats::ATTACK</li>
+											<li>PBStats::DEFENSE</li>
+											<li>PBStats::SPATK</li>
+											<li>PBStats::SPDEF</li>
+											<li>PBStats::SPEED</li>
+										</ul>
+										<p>
+											<code>pkmn.ivMaxed[PBStats::DEFENSE]=true</code> will treat the Pokémon's IV in the given stat as the highest possible value (31) when it comes to calculating its effect on the Pokémon's stats. It is used in Hyper Training. Use <code>pkmn.ivMaxed[PBStats::DEFENSE]=nil</code> to remove this override.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Language
+									</td>
+									<td>
+										<code>pkmn.language=2</code>
+									</td>
+									<td>
+										Sets the Pokémon's&nbsp;language. Is one of the following:
+										<ul>
+											<li>0 = Unknown</li>
+											<li>1 = Japanese</li>
+											<li>2 = English (default)</li>
+											<li>3 = French</li>
+											<li>4 = Italian</li>
+											<li>5 = German</li>
+											<li>7 = Spanish</li>
+											<li>8 = Korean</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Level
+									</td>
+									<td>
+										<code>pkmn.level=42</code>
+									</td>
+									<td>
+										Sets the Pokémon's current level.
+										<p>
+											What it actually does is change the Pokémon's "<code>exp</code>" value to be the lowest possible value for that level.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Moveset
+									</td>
+									<td>
+										<code>pkmn.pbLearnMove(:TACKLE)<br>pkmn.pbDeleteMove(:TACKLE)<br>pkmn.resetMoves</code>
+									</td>
+									<td>
+										The first option teaches a&nbsp;move&nbsp;to the Pokémon. This can teach any move, and will do so without informing the player. If the Pokémon already knows 4 moves, the first move will be forgotten, the other three bumped up and the new move added to the end.
+										<p>
+											The second option deletes a move from the Pokémon, if it knows it. Again, this will happen without informing the player.
+										</p><p>
+											The third option resets the Pokémon's moveset to what a wild Pokémon of that species/level/form would know. This can be useful when changing a Pokémon's level/form.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Nature
+									</td>
+									<td>
+										<code>pkmn.setNature(:HASTY)</code>
+									</td>
+									<td>
+										Sets the Pokémon's nature. Use&nbsp;<code>pkmn.setNature(nil)</code>&nbsp;to remove the override and have the nature determined by the Pokémon's personal ID.
+										<p>
+											<code>pkmn.natureOverride=PBNatures::HASTY</code> will treat the Pokémon's nature as this one when it comes to calculating its effect on the Pokémon's stats. It is used by the Gen 8 mints. Use <code>pkmn.natureOverride=nil</code> to remove this override.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Nickname
+									</td>
+									<td>
+										<code>pkmn.name="Dave"</code>
+									</td>
+									<td>
+										Sets the Pokémon's nickname to a given phrase. Use&nbsp;<code>pkmn.name=nil</code>&nbsp;to remove the nickname.
+										<p>
+											To let the player choose their own name, simply call&nbsp;<code>pbNickname(pkmn)</code>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Obtain text
+									</td>
+									<td>
+										<code>pkmn.obtainText=_I("Day-Care Couple")</code>
+									</td>
+									<td>
+										Sets the phrase to use instead of the obtain map's name as the place where the Pokémon was obtained. Use&nbsp;<code>pkmn.obtainText=nil</code>&nbsp;to remove the phrase.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Pokérus
+									</td>
+									<td>
+										<code>pkmn.givePokerus<br>pkmn.givePokerus(4)</code>
+									</td>
+									<td>
+										Gives the Pokémon Pokérus. The parameter is optional, and is the strain of Pokérus to give (between 1 and 15 inclusive; the strain is randomly chosen if not given).
+										<p>
+											<code>pkmn.pokerusStage</code>&nbsp;will return either <code>0</code> (never infected), <code>1</code> (currently infectious) or <code>2</code> (cured/immune).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Ribbons
+									</td>
+									<td>
+										<code>pkmn.giveRibbon(:HOENNCOOL)<br>pkmn.takeRibbon(:HOENNCOOL)</code>
+									</td>
+									<td>
+										Gives the Pokémon the specified ribbon (or removes it).
+										<p>
+											There are a few other methods dealing with ribbons:
+										</p>
+										<ul>
+											<li><code>pkmn.upgradeRibbon(:HOENNCOOL,:HOENNCOOLSUPER,:HOENNCOOLHYPER,:HOENNCOOLMASTER)</code> - Any number of ribbons can be listed. Either adds the first ribbon if the Pokémon has none of them, or turns the possessed ribbon into the next one listed. Returns the ID number of the ribbon added/upgraded into, or 0 if nothing changed.</li>
+											<li><code>pkmn.ribbonCount</code>&nbsp;- Returns the total number of ribbons the Pokémon has.</li>
+											<li><code>pkmn.hasRibbon?(:HOENNCOOL)</code>&nbsp;- Returns TRUE if the Pokémon has the specified ribbon, and FALSE if not.</li>
+											<li><code>pkmn.clearAllRibbons</code>&nbsp;- Removes all ribbons from the Pokémon.</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Shadowness
+									</td>
+									<td>
+										<code>pkmn.makeShadow</code>
+									</td>
+									<td>
+										Makes the Pokémon a&nbsp;<a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Shadow_Pok%C3%A9mon" title="Shadow Pokémon">Shadow Pokémon</a>. It is not so easy to turn a Shadow Pokémon into a regular Pokémon, though.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Shininess
+									</td>
+									<td>
+										<code>pkmn.makeShiny<br>pkmn.makeNotShiny</code>
+									</td>
+									<td>
+										Makes the Pokémon&nbsp;<a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Shiny_Pok%C3%A9mon" title="Shiny Pokémon">shiny</a>, or not. Use&nbsp;<code>pkmn.shinyflag=nil</code>&nbsp;to remove the override and have the shininess determined by the Pokémon's personal ID.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3><span class="mw-headline" id="Rare_attributes_to_edit">Rare attributes to edit</span></h3>
+						<p>
+							The following are attributes you are unlikely to ever want to edit. They are listed mainly for completeness.
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Attribute
+									</th>
+									<th>
+										Code
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										Contest stats
+									</td>
+									<td>
+										<code>pkmn.beauty=42<br>pkmn.cool=42<br>pkmn.cute=42<br>pkmn.smart=42<br>pkmn.tough=42<br>pkmn.sheen=42</code>
+									</td>
+									<td>
+										Sets the Pokémon's contest stats. Each stat should be a number between 0 and 255 inclusive.
+										<p>
+											Note that these properties are currently unused (except beauty for Feebas' evolution).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Current HP
+									</td>
+									<td>
+										<code>pkmn.hp=42<br>pkmn.healHP<br>pkmn.heal</code>
+									</td>
+									<td>
+										Sets the Pokémon's current HP. The second option fully heals the Pokémon's HP. The last option will also restore the Pokémon's PP and status to full/normal.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Egg steps
+									</td>
+									<td>
+										<code>pkmn.eggsteps=5120</code>
+									</td>
+									<td>
+										Sets the number of steps required for the&nbsp;<a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Eggs" title="Eggs">Pokémon egg</a>&nbsp;to hatch.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Experience
+									</td>
+									<td>
+										<code>pkmn.exp=12345</code>
+									</td>
+									<td>
+										Sets the Pokémon's Experience Points. You will usually want to add/subtract amounts from this, rather than setting it to a specific new value.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Fused Pokémon
+									</td>
+									<td>
+										<code>pkmn.fused=pkmn2</code>
+									</td>
+									<td>
+										Sets the Pokémon which is fused with this Pokémon.&nbsp;<code>pkmn2</code> is itself a Pokémon. Use&nbsp;<code>pkmn.fused=nil</code>&nbsp;to erase the fused Pokémon.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Hatched map
+									</td>
+									<td>
+										<code>pkmn.hatchedMap=42</code>
+									</td>
+									<td>
+										Sets the map in which the Pokémon hatched from an egg. Is used only if the Pokémon's obtain method is "egg received".
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Hatched time
+									</td>
+									<td>
+										<code>pkmn.timeEggHatched=Time.now</code>
+									</td>
+									<td>
+										Sets the time at which the Pokémon hatched from an egg. Is used only if the Pokémon's obtain method is "egg received".
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Markings
+									</td>
+									<td>
+										<code>pkmn.markings=5</code>
+									</td>
+									<td>
+										Sets the markings the Pokémon has. Each marking has a value, and the Pokémon will have the markings whose values add up to the number specified. The six markings are in order:
+										<ul>
+											<li>1 = ●</li>
+											<li>2 = ▲</li>
+											<li>4 = ■</li>
+											<li>8 = ♥</li>
+											<li>16 = ★</li>
+											<li>32 = ♦</li>
+										</ul>
+										<p>
+											For example, if this number is 5, the values that make 5 are 1 (circle) and 4 (square), so the Pokémon will have those two markings.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Obtain level
+									</td>
+									<td>
+										<code>pkmn.obtainLevel=42</code>
+									</td>
+									<td>
+										Sets the Level at which the Pokémon was obtained.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Obtain map
+									</td>
+									<td>
+										<code>pkmn.obtainMap=42</code>
+									</td>
+									<td>
+										Sets the map in which the Pokémon was obtained.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Obtain method
+									</td>
+									<td>
+										<code>pkmn.obtainMode=1</code>
+									</td>
+									<td>
+										Sets the method by which the Pokémon was obtained. The number is either <code>nil</code>, <code>0</code> ("met"), <code>1</code> ("egg received", i.e. it then hatched), <code>2</code> ("<a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Trading_Pok%C3%A9mon" title="Trading Pokémon">traded</a>") or <code>4</code> ("fateful encounter").
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Original trainer's gender
+									</td>
+									<td>
+										<code>pkmn.otgender=1</code>
+									</td>
+									<td>
+										Sets the gender of the Pokémon's original trainer. The number is either <code>0</code> (male), <code>1</code> (female), <code>2</code> (mixed) or <code>3</code> (unknown).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Original trainer's ID number
+									</td>
+									<td>
+										<code>pkmn.trainerID=$Trainer.id<br>pkmn.trainerID=$Trainer.getForeignID</code>
+									</td>
+									<td>
+										Sets the ID number of the Pokémon's original trainer. The first option sets it to the player's ID number, and the second option sets it to a random other ID number.
+										<p>
+											This and the original trainer's name determine whether the Pokémon originally belonged to the player or not.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Original trainer's name
+									</td>
+									<td>
+										<code>pkmn.ot="Dave"</code>
+									</td>
+									<td>
+										Sets the name of the Pokémon's original trainer.
+										<p>
+											This and the original trainer's ID number determine whether the Pokémon originally belonged to the player or not.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Personal ID
+									</td>
+									<td>
+										<code>pkmn.personalID=rand(2**32)</code>
+									</td>
+									<td>
+										Sets the Pokémon's personal ID. The example will randomise the Pokémon's personal ID, although it can also be set to any value between 0 and 4,294,967,295.
+										<p>
+											Note that the Pokémon's gender, nature, ability and shininess all depend on the value of the personal ID by default. Spinda's spot locations and the&nbsp;<a href="/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Evolution" title="Evolution">evolution methods</a> "Silcoon" and "Cascoon" also depend on it.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Species
+									</td>
+									<td>
+										<code>pkmn.species=PBSpecies::BULBASAUR</code>
+									</td>
+									<td>
+										Sets the Pokémon's species.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Status
+									</td>
+									<td>
+										<code>pkmn.status=PBStatuses::POISON<br>pkmn.status=0<br>pkmn.healStatus</code>
+									</td>
+									<td>
+										Sets the Pokémon's status. The possible statuses are:
+										<ul>
+											<li>0 (or&nbsp;<code>PBStatuses::NONE</code>)</li>
+											<li>1 (or&nbsp;<code>PBStatuses::SLEEP</code>)</li>
+											<li>2 (or&nbsp;<code>PBStatuses::POISON</code>)</li>
+											<li>3 (or&nbsp;<code>PBStatuses::BURN</code>)</li>
+											<li>4 (or&nbsp;<code>PBStatuses::PARALYSIS</code>)</li>
+											<li>5 (or&nbsp;<code>PBStatuses::FROZEN</code>)</li>
+										</ul>
+										<p>
+											If putting the Pokémon to sleep, then&nbsp;<code>pkmn.statusCount=3</code>should also be set, where the number is the number of&nbsp;rounds&nbsp;the Pokémon will remain asleep.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h2><span id="What_can't_be_changed"></span><span class="mw-headline" id="What_can.27t_be_changed">What can't be changed</span></h2>
+						<p>
+							There are some attributes of a Pokémon that cannot be changed directly. These are:
+						</p>
+						<ul>
+							<li>Type 1</li>
+							<li>Type 2</li>
+							<li>
+								<i>Stats:</i>
+								<ul>
+									<li>Maximum HP</li>
+									<li>Attack</li>
+									<li>Defense</li>
+									<li>Special Attack</li>
+									<li>Special Defense</li>
+									<li>Speed</li>
+								</ul>
+							</li>
+						</ul>
+						<h2><span id="The_last_part_of_editing_a_Pokémon"></span><span class="mw-headline" id="The_last_part_of_editing_a_Pok.C3.A9mon">The last part of editing a Pokémon</span></h2>
+						<p>
+							Once a Pokémon's attributes have been edited, its stats may need to be recalculated. This is done by the following code:
+						</p>
+<pre>pkmn.calcStats
+</pre>
+						<p>
+							To be safe, you should always include this line after all other edits.
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20201106182513
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.031 seconds
+					Real time usage: 0.040 seconds
+					Preprocessor visited node count: 54/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 110/2097152 bytes
+					Template argument size: 88/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    7.467      1 Template:For
+					100.00%    7.467      1 -total
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:123-0!canonical and timestamp 20201106182513 and revision id 942
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20201112012047/https://essentialsdocs.fandom.com/wiki/Editing_a_Pokémon?oldid=942">https://essentialsdocs.fandom.com/wiki/Editing_a_Pokémon?oldid=942</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20201112012047/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

@@ -1,0 +1,579 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20201028143321if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl>
+							<dd><i>For how to define a Pokémon species, see <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Defining_a_species" title="Defining a species">Defining a species</a>.</i></dd>
+							<dd><i>For how to change a property of an individual Pokémon, see <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Editing_a_Pok%C3%A9mon" title="Editing a Pokémon">Editing a Pokémon</a>.</i></dd>
+							<dd><i>For adding, removing, counting and choosing Pokémon, see <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Manipulating_Pok%C3%A9mon" title="Manipulating Pokémon">Manipulating Pokémon</a>.</i></dd>
+							<dd><i>For Pokémon before they're hatched, see <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Eggs" title="Eggs">Eggs</a>.</i></dd>
+						</dl>
+						<p>
+							This page describes how <b>Pokémon</b> work in-game. This includes the properties an individual Pokémon has, along with other general information about them.
+						</p>
+						<div id="incontent_player" class="gpt-ad"></div><h2><span id="A_Pokémon's_attributes"></span><span class="mw-headline" id="A_Pok.C3.A9mon.27s_attributes">A Pokémon's attributes</span></h2>
+						<p>
+							Each individual Pokémon in the game has a number of attributes. Together, these attributes define that specific Pokémon.
+						</p><p>
+							The term "<code>pkmn</code>" in the examples below should be replaced with the Pokémon to be modified (e.g. <code>$Trainer.party[0]</code> is the first Pokémon in the player's <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a>) - see <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Manipulating_Pok%C3%A9mon" title="Manipulating Pokémon">Manipulating Pokémon</a> for ways to refer to individual Pokémon.
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Attribute
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<code>species</code>
+									</td>
+									<td>
+										The Pokemon's species.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>name</code>
+									</td>
+									<td>
+										The Pokemon's nickname. If blank, is the Pokémon's species name instead.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>level</code>
+									</td>
+									<td>
+										The Pokémon's current level. Depends on the attribute "<code>exp</code>".
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>exp</code>
+									</td>
+									<td>
+										The Pokémon's Experience Points. The attribute "<code>level</code>" depends on this.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>type1<br>type2</code>
+									</td>
+									<td>
+										The Pokemon's first and second types. Depends on the first/second types <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Defining_a_type" title="Defining a type">as defined</a> for the Pokémon's species in the <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "pokemon.txt" or "pokemonforms.txt".
+										<p>
+											If the Pokémon only has one type, then "<code>type2</code>" will be the same as "<code>type1</code>".
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>ability</code>
+									</td>
+									<td>
+										The ID number of the Pokemon's ability. Depends on the attribute "<code>abilityflag</code>" if defined, or the attribute "<code>personalid</code>" if not.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>abilityflag</code>
+									</td>
+									<td>
+										If defined, forces the Pokémon's ability to be the first natural (0), second natural (1) or hidden (2) ability available to its species. It is not possible to give the Pokémon any ability other than those defined in the <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "pokemon.txt" for its species (or "pokemonforms.txt" for its species and form).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>gender</code>
+									</td>
+									<td>
+										The Pokémon's gender. Is either 0 (male), 1 (female) or 2 (genderless). Depends on the attribute "<code>genderflag</code>" if defined, or the attribute "<code>personalID</code>" if not.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>genderflag</code>
+									</td>
+									<td>
+										If defined, forces the Pokémon to be male (0) or female (1). It cannot be set to a gender that the Pokémon cannot have.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>nature</code>
+									</td>
+									<td>
+										The Pokémon's nature. Depends on the attribute "<code>natureflag</code>" if defined, or the attribute "<code>personalID</code>" if not.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>natureflag</code>
+									</td>
+									<td>
+										If defined, forces the Pokémon's nature to be the value of this attribute.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>isShiny?</code>
+									</td>
+									<td>
+										Whether the Pokémon is shiny or not. Depends on the attribute "<code>personalID</code>".
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>shinyflag</code>
+									</td>
+									<td>
+										If defined, forces the Pokémon to be shiny (true) or not (false).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>form</code>
+									</td>
+									<td>
+										The Pokémon's form. 0 is the default form, and Pokémon with form 0 are as defined in the PBS file "pokemon.txt". See <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Forms" title="Forms">Forms</a> for more information.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>hp</code>
+									</td>
+									<td>
+										The Pokémon's current HP.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>totalhp<br>attack<br>defense<br>speed<br>spatk<br>spdef</code>
+									</td>
+									<td>
+										In order:
+										<ul>
+											<li>The current maximum HP amount the Pokémon can have</li>
+											<li>The Pokémon's Attack stat</li>
+											<li>The Pokémon's Defense stat</li>
+											<li>The Pokémon's Speed stat</li>
+											<li>The Pokémon's Special Attack stat</li>
+											<li>The Pokémon's Special Defense stat</li>
+										</ul>
+										<p>
+											All of these are calculated depending on the Pokémon's species, level, IVs, EVs and nature.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>happiness</code>
+									</td>
+									<td>
+										The Pokémon's happiness. Is a number between 0 and 255 inclusive.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>status</code>
+									</td>
+									<td>
+										The Pokémon's status. One of:
+										<ul>
+											<li>0 (healthy)</li>
+											<li>1 (or <code>PBStatuses::SLEEP</code>)</li>
+											<li>2 (or <code>PBStatuses::POISON</code>)</li>
+											<li>3 (or <code>PBStatuses::BURN</code>)</li>
+											<li>4 (or <code>PBStatuses::PARALYSIS</code>)</li>
+											<li>5 (or <code>PBStatuses::FROZEN</code>)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>statusCount</code>
+									</td>
+									<td>
+										Is 0, except if the Pokémon is:
+										<ul>
+											<li>Asleep - Is the number of <a class="new" title="Battle round (page does not exist)" rel="nofollow" data-uncrawlable-url="L3dpa2kvQmF0dGxlX3JvdW5kP2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==">rounds</a> the Pokémon will remain asleep. This number is set when the Pokémon is made to fall asleep.</li>
+											<li>Badly poisoned - If the Pokémon is Poisoned and this is "1", the Pokémon is badly poisoned instead (which affects how much poison damage it takes in battle). When the Pokémon leaves battle while badly poisoned, this value is set to 0 and it becomes regular Poisoned (even in later battles).</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>eggsteps</code>
+									</td>
+									<td>
+										Used for <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Eggs" title="Eggs">Pokémon eggs</a>. The number of steps until the egg hatches. If it is 0, it is a Pokémon. The code <code>pkmn.egg?</code> will return whether <code>pkmn</code> is an egg (it is if "<code>eggsteps</code>" is a positive number).
+										<p>
+											This is the only way in which eggs are different to Pokémon.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>moves</code>
+									</td>
+									<td>
+										An array of 4 <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Moves" title="Moves">move slots</a> that the Pokémon has. Each move slot has the following attributes:
+										<ul>
+											<li><code>id</code> - The internal number of the move. Can also be referred to as <code>PBMoves::TACKLE</code>. Is 0 if the move slot is empty.</li>
+											<li><code>pp</code> - The remaining PP of the move.</li>
+											<li><code>ppup</code> - The number of boosts to the maximum PP this move has had. One boost will add 20% of the original maximum PP, and <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Item_effects" title="Item effects">item effects</a> limit the maximum number of allowed boosts to 3 (there is no inherent limit on the number of boosts allowed).</li>
+											<li><code>type</code> - The move's type. Is looked up from the <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "moves.txt".</li>
+											<li><code>totalpp</code> - The maximum PP of this move. Is calculated from data in the <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "moves.txt" and the "<code>ppup</code>" attribute.</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>ballused</code>
+									</td>
+									<td>
+										A number representing the type of Poké Ball that the Pokémon is in. The list of Poké Balls and their corresponding numbers is in the script section <b>PItem_PokeBalls</b>. Is 0 by default, i.e. a regular Poké Ball.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>item</code>
+									</td>
+									<td>
+										The Pokémon's held item. Is the internal number of that item, which is the same as <code>PBItems::ORANBERRY</code> (or similar).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>mail</code>
+									</td>
+									<td>
+										If the Pokémon's item is not a mail item, this attribute is <code>nil</code>. If it is a mail item, then this attribute is an array of several attributes:
+										<ul>
+											<li><code>item</code> - Is the same value as the Pokémon's held item. This determines the mail's background image.</li>
+											<li><code>message</code> - The mail's message.</li>
+											<li><code>sender</code> - The name of the mail's sender.</li>
+											<li><code>pokeX</code>, <code>formX</code> - The species and forms of up to three Pokémon to appear on the mail, if appropriate ("<code>X</code>" is 1, 2 or 3).</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>ev</code>
+									</td>
+									<td>
+										An array of the Effort Values this Pokémon has, in the order:
+										<ol>
+											<li>HP</li>
+											<li>Attack</li>
+											<li>Defense</li>
+											<li>Speed</li>
+											<li>Special Attack</li>
+											<li>Special Defense</li>
+										</ol>
+										<p>
+											These can each be between 0 and 255 inclusive. They are all 0 when the Pokémon is created.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>iv</code>
+									</td>
+									<td>
+										An array of the Individual Values this Pokémon has, in the order:
+										<ol>
+											<li>HP</li>
+											<li>Attack</li>
+											<li>Defense</li>
+											<li>Speed</li>
+											<li>Special Attack</li>
+											<li>Special Defense</li>
+										</ol>
+										<p>
+											These can each be between 0 and 31 inclusive. They are randomly set when the Pokémon is created.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pokerus</code>
+									</td>
+									<td>
+										Is a number between 0 and 255 which describes the Pokérus infection state of this Pokémon. It contains both the strain of the virus and the remaining infection time in days. As a rough explanation:
+										<ul>
+											<li>0 - The Pokémon does not have Pokérus, and has never had it.</li>
+											<li>&gt;15, has a remainder when divided by 16 - The Pokémon has Pokérus and is infectious. The remainder is the number of days remaining for it to be infectious.</li>
+											<li>&gt;15, has no remainder when divided by 16 - The Pokémon has had Pokérus in the past, and is no longer infectious.</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>fused</code>
+									</td>
+									<td>
+										Another Pokémon which has been fused with this Pokémon (or <code>nil</code> if there is none). It is a Pokémon itself. Currently only used by Kyurem, to record a fused Reshiram or Zekrom.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>beauty<br>cool<br>cute<br>smart<br>tough<br>sheen</code>
+									</td>
+									<td>
+										The Pokémon's contest stats.
+										<p>
+											They currently do nothing in Essentials (except for "<code>beauty</code>" which is involved in the <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Evolution" title="Evolution">evolution method</a> "Feebas", although there is no existing way to change its value).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>markings</code>
+									</td>
+									<td>
+										The Pokémon's markings. The binary version of this number indicates which markings the Pokémon has.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>ribbons</code>
+									</td>
+									<td>
+										An array of the Pokémon's ribbons. Each element of the array is either TRUE (has that particular ribbon) or FALSE (doesn't have that particular ribbon).
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>personalID</code>
+									</td>
+									<td>
+										The Pokémon's personal ID number. A 32-bit number (i.e. a number between 0 and 4,294,967,295), which is randomly generated when the Pokémon is created. The last two octets of the binary version of the ID number (a number between 0 and 65535) is displayed in a <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Summary_screens" title="Summary screens">Pokémon summary screen</a>, and is given by <code>pkmn.publicID</code>.
+										<p>
+											Determines the Pokémon's gender, ability, nature and shininess. It also determines <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Forms" title="Forms">where Spinda's spots are</a>, and is used in the <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Evolution" title="Evolution">evolution methods</a> "Silcoon" and "Cascoon".
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>trainerID<br>ot<br>otgender</code>
+									</td>
+									<td>
+										The Pokémon's original trainer's ID number (a 32-bit number), name and gender respectively. The last two octets of the binary version of the ID number (a number between 0 and 65535) is displayed in a <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Summary_screens" title="Summary screens">Pokémon summary screen</a>. "<code>otgender</code>" is either 0 (male), 1 (female), 2 (mixed) or 3 (unknown), and is only used to colour in some text in a <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Summary_screens" title="Summary screens">Pokémon summary screen</a>.
+										<p>
+											Use <code>pkmn.isForeign?($Trainer)</code> to determine whether the Pokémon was originally owned by the player. Returns TRUE if either "<code>trainerID</code>" or "<code>ot</code>" do not match the player's (i.e. <code>pkmn</code> is foreign to the player), and FALSE if they both match (i.e. the player is the original owner). This example considers the player (<code>$Trainer</code>), but the script can be used for other (NPC) trainers, e.g. in battle.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>obtainMode<br>obtainMap<br>obtainLevel<br>hatchedmap</code>
+									</td>
+									<td>
+										The method, map ID and Level at which the Pokémon was obtained, and the map the Pokémon <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Eggs" title="Eggs">hatched from an egg</a> on. "<code>obtainMode</code>" is either <code>nil</code>, 0 (met), 1 (egg received), 2 (<a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Trading_Pok%C3%A9mon" title="Trading Pokémon">traded</a>) or 4 (fateful encounter).
+										<p>
+											The first three of these attributes are set when the Pokémon is generated, and again (except for "<code>obtainMode</code>") when an egg hatches.
+										</p><p>
+											<code>pkmn.timeReceived</code> returns the time and date the Pokémon was met (in seconds since the Unix epoch). Similarly, <code>pkmn.timeEggHatched</code> returns the time/date the Pokémon hatched.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>obtainText</code>
+									</td>
+									<td>
+										If this is a string of text, that text will be shown instead of the name of the "<code>obtainMap</code>" in the <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Summary_screens" title="Summary screens">summary screens</a>.
+										<p>
+											Any egg obtained from the <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Day_Care" title="Day Care">Day Care</a> will have this set to "Day-Care Couple".
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>language</code>
+									</td>
+									<td>
+										The Pokémon's language. Is one of the following:
+										<ul>
+											<li>0 - Unknown</li>
+											<li>1 - Japanese</li>
+											<li>2 - English (default)</li>
+											<li>3 - French</li>
+											<li>4 - Italian</li>
+											<li>5 - German</li>
+											<li>7 - Spanish</li>
+											<li>8 - Korean</li>
+										</ul>
+										<p>
+											Pokémon that the player catches will have the same language as the player.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							There are also two functions that affect Pokémon, as follows:
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Function
+									</th>
+									<th>
+										What it does
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<code>pkmn.heal</code>
+									</td>
+									<td>
+										Fully heals the Pokémon. Restores the HP to full, the status to normal, and the PP of all moves to full.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<code>pkmn.calcStats</code>
+									</td>
+									<td>
+										Recalculates the Pokémon's stats (total HP, Attack, Defense, etc.).
+										<p>
+											Used when creating a Pokémon or egg, when an egg hatches, when a Pokémon's level/species/nature/gender/shininess changes, when an EV-modifying item is used, and when a Pokémon's form changes.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h2><span class="mw-headline" id="Level_limit">Level limit</span></h2>
+						<p>
+							The level limit is defined in the script section <b>Settings</b>, and is a variable called <code>MAXLEVEL</code> (default 100).
+						</p><p>
+							In the script section <b>PBExperience</b> is a large array containing all the "Exp per level" numbers for each growth rate. These numbers only go up to level 100. If the level limit is increased, then the "Exp per level" numbers for levels above 100 are calculated by formulae instead of being looked up in the array. These calculations are written in <code>def self.pbGetExpInternal</code>. There are different calculations depending on which growth rate the Pokémon's species has.
+						</p>
+						<h2><span id="Pokérus"></span><span class="mw-headline" id="Pok.C3.A9rus">Pokérus</span></h2>
+						<p>
+							Pokérus is a virus that can rarely be contracted by a Pokémon. While it is infected, a Pokémon will receive more EVs from battle than usual. A Pokémon will be infectious for a while after contracting Pokérus, but will still receive the effect of it forever after.
+						</p><p>
+							The attribute which records a Pokémon's Pokérus is described above. It works the same as in the official games.
+						</p><p>
+							Only wild Pokémon or eggs from the <a href="/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Day_Care" title="Day Care">Day Care</a> may be generated with Pokérus. The chance of this is defined in the script section <b>Settings</b>, and is a variable called <code>POKERUSCHANCE</code> (default 3).
+						</p><p>
+							After any battle, an uninfected Pokémon in the player's party will have a 33% chance of catching Pokérus from each infected Pokémon next to it.
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20201023142005
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.025 seconds
+					Real time usage: 0.049 seconds
+					Preprocessor visited node count: 86/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 368/2097152 bytes
+					Template argument size: 283/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%   16.574      1 -total
+					 98.40%   16.309      4 Template:For
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:107-0!canonical and timestamp 20201023142005 and revision id 388
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20201028143321/https://essentialsdocs.fandom.com/wiki/Pokémon?oldid=388">https://essentialsdocs.fandom.com/wiki/Pokémon?oldid=388</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20201028143321/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

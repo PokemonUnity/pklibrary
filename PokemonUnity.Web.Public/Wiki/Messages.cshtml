@@ -1,0 +1,1093 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20201001121228if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl><dd><i>For how to change some text options in-game, see <a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/Options_screen" title="Options screen">Options screen</a>.</i></dd></dl>
+						<p>
+							This page describes various&nbsp;<b>message</b>&nbsp;options, including modifying the appearance of text and the message box, and displaying choices.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1"><a href="#Messages"><span class="tocnumber">1</span> <span class="toctext">Messages</span></a></li>
+								<li class="toclevel-1 tocsection-2">
+									<a href="#Windowskins"><span class="tocnumber">2</span> <span class="toctext">Windowskins</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-3"><a href="#Special_windowskins"><span class="tocnumber">2.1</span> <span class="toctext">Special windowskins</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-4"><a href="#Modifying_text"><span class="tocnumber">3</span> <span class="toctext">Modifying text</span></a></li>
+								<li class="toclevel-1 tocsection-5">
+									<a href="#Choices"><span class="tocnumber">4</span> <span class="toctext">Choices</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-6"><a href="#Examples"><span class="tocnumber">4.1</span> <span class="toctext">Examples</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-7">
+									<a href="#Entering_text"><span class="tocnumber">5</span> <span class="toctext">Entering text</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-8">
+											<a href="#Entering_a_word.2Fname"><span class="tocnumber">5.1</span> <span class="toctext">Entering a word/name</span></a>
+											<ul>
+												<li class="toclevel-3 tocsection-9"><a href="#Variants"><span class="tocnumber">5.1.1</span> <span class="toctext">Variants</span></a></li>
+											</ul>
+										</li>
+										<li class="toclevel-2 tocsection-10"><a href="#Entering_a_message"><span class="tocnumber">5.2</span> <span class="toctext">Entering a message</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Messages">Messages</span></h2>
+						<p>
+							A message is any text which appears in a box, either by an event's&nbsp;<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/Events" title="Events">"Show Text" command</a>&nbsp;or by the method&nbsp;<code>Kernel.pbMessage</code>&nbsp;or any of a number of similar methods.
+						</p><p>
+							There are two kinds of messages: speech and system. Speech is for any text that appears as dialogue, while system is typically for choice menus and informative text.
+						</p><p>
+							When typing a message into an event, you do not need to add in any line breaks or restrict how much text you enter. The message system will automatically wrap text as appropriate, and scroll the text if it won't all fit into a single text box.
+						</p>
+						<h2><span class="mw-headline" id="Windowskins">Windowskins</span></h2>
+						<figure class="thumb tright show-info-icon" style="width: 252px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/4/4f/WindowskinBreakdown.png/revision/latest?cb=20181207170856" class="image"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="250" height="284" class="thumbimage lazyload" data-image-name="WindowskinBreakdown.png" data-image-key="WindowskinBreakdown.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/4/4f/WindowskinBreakdown.png/revision/latest/scale-to-width-down/250?cb=20181207170856"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/4/4f/WindowskinBreakdown.png/revision/latest?cb=20181207170856" class="image"><img alt="" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/4/4f/WindowskinBreakdown.png/revision/latest/scale-to-width-down/250?cb=20181207170856" decoding="async" width="250" height="284" class="thumbimage" data-image-name="WindowskinBreakdown.png" data-image-key="WindowskinBreakdown.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/4/4f/WindowskinBreakdown.png/revision/latest/scale-to-width-down/250?cb=20181207170856" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:WindowskinBreakdown.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 			<p class="caption">Diagram showing the margins for each style of windowskin.</p> 		 	</figcaption> </figure>
+						<p>
+							A windowskin is the background image of the message box. All windowskins are stored in the folder "Graphics/Windowskins".
+						</p><p>
+							Each windowskin is a single graphic of specific dimensions. The graphic's dimensions determine which margins it should use to split itself up when displaying as a proper message box. The image on the right shows how windowskins of different sizes are divided up.
+						</p><p>
+							A windowskin has two kinds of margins:
+						</p>
+						<ul>
+							<li>"Tiling" - This is how the graphic itself is drawn to fill the area of the screen it should occupy. The four middle side segments and the central segment are tiled as often as necessary.</li>
+							<li>"Text position" - The central segment defined by these margins is where the text is displayed.</li>
+						</ul>
+						<p>
+							Only one of the four styles of windowskin has different tiling and text position margins.
+						</p><p>
+							Pokémon Essentials also supports windowskins in the forms used by RPG Maker XP (192x128) and RPG Maker VX (128x128). Information about those formats can be found online.
+						</p><p>
+							The player is able to change the windowskins of the speech and system messages in the&nbsp;<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/Options_screen" title="Options screen">Options screen</a>.
+						</p>
+						<h3><span class="mw-headline" id="Special_windowskins">Special windowskins</span></h3>
+						<p>
+							There are a couple of notable windowskins. These are:
+						</p>
+						<ul>
+							<li>goldskin.png - Used for the boxes which show the player's money and Coins.</li>
+							<li>signskin.png - Typically used for signposts and "Trainer Tips" boards.</li>
+						</ul>
+						<h2><span class="mw-headline" id="Modifying_text">Modifying text</span></h2>
+						<p>
+							These are a number of ways to modify the text in Pokémon Essentials. You can do so by using the following commands:
+						</p>
+						<div id="tabber-5c69ae555d659f4c9f2ae1ad4b024ad6" class="tabber">
+							<div class="tabbertab" title="Display text">
+								<p class="mw-empty-elt">
+								</p><table class="article-table" border="1">
+									<tbody>
+										<tr>
+											<th>
+												Command
+											</th>
+											<th>
+												What it does
+											</th>
+											<th>
+												Screenshot
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<code>\\</code>
+											</td>
+											<td>
+												Becomes the backslash character "\".
+												<p>
+													You don't need to use this in text which appears in a "Show Text" event command, but you will need to use it in other places (such as in scripts where the text is of the form&nbsp;<code>_I("blah")</code>). It will be used to put the backslash in the below text commands (e.g. use&nbsp;<code>\\PN</code>&nbsp;rather than&nbsp;<code>\PN</code>).
+												</p>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&amp;apos;</code>
+											</td>
+											<td>
+												Becomes the apostrophe character '.
+												<p>
+													You don't need to use this in text which appears in a "Show Text" event command, but you may need to use it in other places.
+												</p>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&amp;lt;</code>
+											</td>
+											<td>
+												Becomes the less than character "&lt;".
+												<p>
+													You don't need to use this in text which appears in a "Show Text" event command, but you may need to use it in other places.
+												</p>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&amp;gt;</code>
+											</td>
+											<td>
+												Becomes the greater than character "&gt;".
+												<p>
+													You don't need to use this in text which appears in a "Show Text" event command, but you may need to use it in other places.
+												</p>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&amp;amp;</code>
+											</td>
+											<td>
+												Becomes the ampersand character "&amp;".
+												<p>
+													You don't need to use this in text which appears in a "Show Text" event command, but you may need to use it in other places.
+												</p>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&amp;quot;</code>
+											</td>
+											<td>
+												Becomes the double quote mark character ".
+												<p>
+													You don't need to use this in text which appears in a "Show Text" event command, but you may need to use it in other places.
+												</p>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\PN</code>
+											</td>
+											<td>
+												Becomes the player's name.
+											</td>
+											<td rowspan="3">
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/9/92/MessageReplaceText.png/revision/latest?cb=20181104181116" class="image"><img alt="MessageReplaceText.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/9/92/MessageReplaceText.png/revision/latest/scale-to-width-down/128?cb=20181104181116" decoding="async" width="128" height="64" class="thumbimage" data-image-name="MessageReplaceText.png" data-image-key="MessageReplaceText.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageReplaceText.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\PM</code>
+											</td>
+											<td>
+												Becomes the player's current money within the message, with a dollar sign before it (e.g. $1000). If using one of the Pokémon fonts that comes with Essentials, the dollar sign will instead be the PokéDollar symbol.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\v[42]</code>
+											</td>
+											<td>
+												Becomes whatever is stored in Global Variable 42.
+											</td>
+										</tr>
+									</tbody>
+								</table><p class="mw-empty-elt"></p>
+							</div>
+							<div class="tabbertab" title="Format text">
+								<p class="mw-empty-elt">
+								</p><table class="article-table" border="1">
+									<tbody>
+										<tr>
+											<th>
+												Command
+											</th>
+											<th>
+												What it does
+											</th>
+											<th>
+												Screenshot
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;b&gt;...&lt;/b&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands bold.
+											</td>
+											<td rowspan="6">
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/9/95/MessageFormatting1.png/revision/latest?cb=20181104181150" class="image"><img alt="MessageFormatting1.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/9/95/MessageFormatting1.png/revision/latest/scale-to-width-down/128?cb=20181104181150" decoding="async" width="128" height="64" class="thumbimage" data-image-name="MessageFormatting1.png" data-image-key="MessageFormatting1.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageFormatting1.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;i&gt;...&lt;/i&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands italic.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;u&gt;...&lt;/u&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands underlined.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;s&gt;...&lt;/s&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands struck out (i.e. a line is drawn through it).
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;outln&gt;...&lt;/outln&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands display with an outline rather than a shadow.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;outln2&gt;...&lt;/outln&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands display with a thicker outline rather than a shadow.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;fn=X&gt;...&lt;/fn&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands display is a specified font (or Arial if the font doesn't exist).
+											</td>
+											<td rowspan="3">
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/2/23/MessageFormatting2.png/revision/latest?cb=20181104181215" class="image"><img alt="MessageFormatting2.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/2/23/MessageFormatting2.png/revision/latest/scale-to-width-down/128?cb=20181104181215" decoding="async" width="128" height="64" class="thumbimage" data-image-name="MessageFormatting2.png" data-image-key="MessageFormatting2.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageFormatting2.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;fs=X&gt;...&lt;/fs&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands font size "X". Text will be squished if this is greater than 32.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;o=X&gt;...&lt;/o&gt;</code>
+											</td>
+											<td>
+												Changes the opacity of the text between these commands. "X" is a number between 0 (fully transparent) and 255 (fully opaque).
+											</td>
+										</tr>
+									</tbody>
+								</table><p class="mw-empty-elt"></p>
+							</div>
+							<div class="tabbertab" title="Text colours">
+								<p class="mw-empty-elt">
+								</p><table class="article-table" border="1">
+									<tbody>
+										<tr>
+											<th>
+												Command
+											</th>
+											<th>
+												What it does
+											</th>
+											<th>
+												Screenshot
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<code>\b</code>
+											</td>
+											<td>
+												Makes the text after this command blue (male dialogue colour). The shadow colour is still grey.
+											</td>
+											<td rowspan="2">
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/1a/MessageColour1.png/revision/latest?cb=20181104181238" class="image"><img alt="MessageColour1.png" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="128" height="64" class="thumbimage lazyload" data-image-name="MessageColour1.png" data-image-key="MessageColour1.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/1a/MessageColour1.png/revision/latest/scale-to-width-down/128?cb=20181104181238"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/1a/MessageColour1.png/revision/latest?cb=20181104181238" class="image"><img alt="MessageColour1.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/1/1a/MessageColour1.png/revision/latest/scale-to-width-down/128?cb=20181104181238" decoding="async" width="128" height="64" class="thumbimage" data-image-name="MessageColour1.png" data-image-key="MessageColour1.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/1a/MessageColour1.png/revision/latest/scale-to-width-down/128?cb=20181104181238" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageColour1.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\r</code>
+											</td>
+											<td>
+												Makes the text after this command red (female dialogue colour). The shadow colour is still grey.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\pg</code>
+											</td>
+											<td>
+												Is treated as <code>\b</code> if the player is male, or <code>\r</code> if the player is female. It colors the text according to the player's gender.
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\pog</code>
+											</td>
+											<td>
+												Is treated as <code>\r</code> if the player is male, or <code>\b</code> if the player is female. It colors the text according to the player's opposite gender.
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\c[n]</code>
+											</td>
+											<td>
+												Makes the text after this command one of the following colours depending on the value of "n":
+												<ul>
+													<li>0 - Default colour (black or white depending on the windowskin colour)</li>
+													<li>1 - Blue</li>
+													<li>2 - Red</li>
+													<li>3 - Green</li>
+													<li>4 - Cyan</li>
+													<li>5 - Magenta</li>
+													<li>6 - Yellow</li>
+													<li>7 - Gray</li>
+													<li>8 - White</li>
+												</ul>
+											</td>
+											<td>
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/0/07/MessageColourPreset.png/revision/latest?cb=20181104181304" class="image"><img alt="MessageColourPreset.png" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="128" height="72" class="thumbimage lazyload" data-image-name="MessageColourPreset.png" data-image-key="MessageColourPreset.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/0/07/MessageColourPreset.png/revision/latest/scale-to-width-down/128?cb=20181104181304"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/0/07/MessageColourPreset.png/revision/latest?cb=20181104181304" class="image"><img alt="MessageColourPreset.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/0/07/MessageColourPreset.png/revision/latest/scale-to-width-down/128?cb=20181104181304" decoding="async" width="128" height="72" class="thumbimage" data-image-name="MessageColourPreset.png" data-image-key="MessageColourPreset.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/0/07/MessageColourPreset.png/revision/latest/scale-to-width-down/128?cb=20181104181304" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageColourPreset.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\[XXXXyyyy]</code>
+											</td>
+											<td>
+												Makes the text after this command a given colour. "<code>XXXX</code>" is the base colour and "<code>yyyy</code>" is the shadow colour. Each number is a 15-bit hexadecimal RGB colour. Is a shortened version of&nbsp;<code>&lt;c2&gt;</code>.
+												<p>
+													Examples (matching the colours above):
+												</p>
+												<ul>
+													<li><code>\[043c3aff]</code>&nbsp;- Red</li>
+													<li><code>\[06644bd2]</code>&nbsp;- Green</li>
+													<li><code>\[65467b14]</code>&nbsp;- Blue</li>
+													<li><code>\[318c675a]</code>&nbsp;- Gray</li>
+												</ul>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;c2=XXXXyyyy&gt;...&lt;/c2&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands a given colour. "<code>XXXX</code>" is the base colour, and "<code>yyyy</code>" is the shadow colour. Each number is a 15-bit hexadecimal RGB colour.
+												<p>
+													Examples:
+												</p>
+												<ul>
+													<li><code>&lt;c2=043c3aff&gt;...&lt;/c2&gt;</code>&nbsp;- Red</li>
+													<li><code>&lt;c2=06644bd2&gt;...&lt;/c2&gt;</code>&nbsp;- Green</li>
+													<li><code>&lt;c2=65467b14&gt;...&lt;/c2&gt;</code>&nbsp;- Blue</li>
+													<li><code>&lt;c2=318c675a&gt;...&lt;/c2&gt;</code>&nbsp;- Gray</li>
+												</ul>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;c=RRGGBBAA&gt;...&lt;/c&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands a given colour. This text will not have a shadow.
+												<ul>
+													<li>"<code>RRGGBB</code>" is the hexadecimal colour of the text.</li>
+													<li>"<code>AA</code>" is optional and sets the opacity of the text. Is a hexadecimal number between <code>00</code> (fully transparent) and <code>FF</code> (fully opaque).</li>
+												</ul>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;c3=RRGGBBAA,RRGGBBAA&gt;...&lt;/c3&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands a given colour. The first number is the base colour, and the second number is the shadow colour.
+												<ul>
+													<li>"<code>RRGGBB</code>" is the hexadecimal colour of the text.</li>
+													<li>"<code>AA</code>" is optional and sets the opacity of the text. Is a hexadecimal number between <code>00</code> (fully transparent) and <code>FF</code> (fully opaque).</li>
+												</ul>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+									</tbody>
+								</table><p class="mw-empty-elt"></p>
+							</div>
+							<div class="tabbertab" title="Text positioning">
+								<p class="mw-empty-elt">
+								</p><table class="article-table" border="1">
+									<tbody>
+										<tr>
+											<th>
+												Command
+											</th>
+											<th>
+												What it does
+											</th>
+											<th>
+												Screenshot
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<code>\n</code><br><code>&lt;br /&gt;</code>
+											</td>
+											<td>
+												Causes a line break. Note that this&nbsp;<i>has</i>&nbsp;to be used to start a new line, as pressing Enter in the "Show Text" event command window will only add a space.
+											</td>
+											<td rowspan="5">
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/3/3a/MessageTextAlign.png/revision/latest?cb=20181104181330" class="image"><img alt="MessageTextAlign.png" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="128" height="114" class="thumbimage lazyload" data-image-name="MessageTextAlign.png" data-image-key="MessageTextAlign.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/3/3a/MessageTextAlign.png/revision/latest/scale-to-width-down/128?cb=20181104181330"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/3/3a/MessageTextAlign.png/revision/latest?cb=20181104181330" class="image"><img alt="MessageTextAlign.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/3/3a/MessageTextAlign.png/revision/latest/scale-to-width-down/128?cb=20181104181330" decoding="async" width="128" height="114" class="thumbimage" data-image-name="MessageTextAlign.png" data-image-key="MessageTextAlign.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/3/3a/MessageTextAlign.png/revision/latest/scale-to-width-down/128?cb=20181104181330" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageTextAlign.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;r&gt;</code>
+											</td>
+											<td>
+												Right-aligns the text after this command until the next line break. The text after this command begins to be displayed on the same line as the text just before it, so there may be overlapping text if there is enough of it.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;ac&gt;...&lt;/ac&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands centre-aligned. Causes line breaks before and after this text.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;al&gt;...&lt;/al&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands left-aligned. Causes line breaks before and after this text.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;ar&gt;...&lt;/ar&gt;</code>
+											</td>
+											<td>
+												Makes the text between these commands right-aligned. Causes line breaks before and after this text.
+											</td>
+										</tr>
+									</tbody>
+								</table><p class="mw-empty-elt"></p>
+							</div>
+							<div class="tabbertab" title="Alter message box">
+								<p class="mw-empty-elt">
+								</p><table class="article-table" border="1">
+									<tbody>
+										<tr>
+											<th>
+												Command
+											</th>
+											<th>
+												What it does
+											</th>
+											<th>
+												Screenshot
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<code>\w[X]</code>
+											</td>
+											<td>
+												Changes the message box's windowskin after this command for this message only. The windowskin used is named "X.png" (in the folder "Graphics/Windowskins"). If "X" is blank, there is no windowskin (i.e. just the text appears).
+												<p>
+													Note that changing the windowskin will not change the text colour. The text colour used will depend on whether the regular windowskin is considered to be light or dark (i.e. dark grey text or white text respectively). This is the case even if this command <code>\w[X]</code> is the first thing in the message.
+												</p>
+											</td>
+											<td>
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/f/ff/MessageWindowskin.png/revision/latest?cb=20181104181357" class="image"><img alt="MessageWindowskin.png" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="128" height="65" class="thumbimage lazyload" data-image-name="MessageWindowskin.png" data-image-key="MessageWindowskin.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/f/ff/MessageWindowskin.png/revision/latest/scale-to-width-down/128?cb=20181104181357"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/f/ff/MessageWindowskin.png/revision/latest?cb=20181104181357" class="image"><img alt="MessageWindowskin.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/f/ff/MessageWindowskin.png/revision/latest/scale-to-width-down/128?cb=20181104181357" decoding="async" width="128" height="65" class="thumbimage" data-image-name="MessageWindowskin.png" data-image-key="MessageWindowskin.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/f/ff/MessageWindowskin.png/revision/latest/scale-to-width-down/128?cb=20181104181357" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageWindowskin.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\sign[X]</code>
+											</td>
+											<td>
+												Displays the message in the form of a sign and in the windowskin "X". If this field is blank, the message system won't display a windowskin. This command is actually a combination of <code>\op</code>, <code>\cl</code>, <code>\ts[]</code> and <code>\w[X]</code>.
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\l[n]</code>
+											</td>
+											<td>
+												Changes the height of the message box to show "n" lines of text at once.
+											</td>
+											<td>
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/0/02/MessageLines.png/revision/latest?cb=20181104181412" class="image"><img alt="MessageLines.png" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="128" height="72" class="thumbimage lazyload" data-image-name="MessageLines.png" data-image-key="MessageLines.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/0/02/MessageLines.png/revision/latest/scale-to-width-down/128?cb=20181104181412"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/0/02/MessageLines.png/revision/latest?cb=20181104181412" class="image"><img alt="MessageLines.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/0/02/MessageLines.png/revision/latest/scale-to-width-down/128?cb=20181104181412" decoding="async" width="128" height="72" class="thumbimage" data-image-name="MessageLines.png" data-image-key="MessageLines.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/0/02/MessageLines.png/revision/latest/scale-to-width-down/128?cb=20181104181412" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageLines.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\wu</code>
+											</td>
+											<td>
+												The message box is displayed at the top of the screen.
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\wm</code>
+											</td>
+											<td>
+												The message box is displayed halfway down the screen.
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\wd</code>
+											</td>
+											<td>
+												The message box is displayed at the bottom of the screen (default).
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\op</code>
+											</td>
+											<td>
+												Slides the message box vertically from off-screen to its display position (either top or bottom; middle is treated as bottom) as it displays.
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\cl[X]</code>
+											</td>
+											<td>
+												After pressing a button to close the message, slides the message box vertically off-screen from its display position (either top or bottom). The "<code>[X]</code>" is optional, where X is the sound file to play as the window closes.
+												<p>
+													Not suitable for use with <code>\wm</code>, as the window will immediately jump to the bottom and then slide off the bottom, which looks weird.
+												</p>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+									</tbody>
+								</table><p class="mw-empty-elt"></p>
+							</div>
+							<div class="tabbertab" title="Alter text displaying">
+								<p class="mw-empty-elt">
+								</p><table class="article-table" border="1">
+									<tbody>
+										<tr>
+											<th>
+												Command
+											</th>
+											<th>
+												What it does
+											</th>
+											<th>
+												Screenshot
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<code>\ts[X]</code>
+											</td>
+											<td>
+												Sets the display speed of the text to the value "<code>X</code>". If "<code>X</code>" is blank (i.e.&nbsp;<code>\ts[]</code>), the text displays instantly. The higher the number, the slower the text is displayed.
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\1</code>
+											</td>
+											<td>
+												Pauses the message. When the player presses a button, the message will carry on being shown.
+												<p>
+													If you're showing several messages in a row via code (e.g. with&nbsp;<code>Kernel.pbMessage</code>), these ordinarily won't show the pause arrow at the end of the first message, even though there's a second message immediately afterwards. However, you can put&nbsp;<code>\1</code>&nbsp;at the end of the first message to display the pause arrow, and continuing from it will immediately start on the second message.
+												</p>
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\.</code>
+											</td>
+											<td>
+												Pauses the message for 1/4 of a second, then automatically continues to show the rest of the text
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\|</code>
+											</td>
+											<td>
+												Pauses the message for 1 second, then automatically continues to show the rest of the text
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\wt[X]</code>
+											</td>
+											<td>
+												Pauses the message for <code>X</code>/20 of a second, then automatically continues to show the rest of the text.
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\wtnp[X]</code>
+											</td>
+											<td>
+												Pauses the message for <code>X</code>/20 of a second, then automatically continues to show the rest of the text. The message closes immediately when it is done.
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+									</tbody>
+								</table><p class="mw-empty-elt"></p>
+							</div>
+							<div class="tabbertab" title="Play sound">
+								<p class="mw-empty-elt">
+								</p><table class="article-table" border="1">
+									<tbody>
+										<tr>
+											<th>
+												Command
+											</th>
+											<th>
+												What it does
+											</th>
+											<th>
+												Screenshot
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<code>\se[X]</code>
+											</td>
+											<td>
+												Plays the sound effect (SE) named "<code>X</code>".
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\me[X]</code>
+											</td>
+											<td>
+												Plays the music effect (ME) named "<code>X</code>".
+											</td>
+											<td>
+												n/a
+											</td>
+										</tr>
+									</tbody>
+								</table><p class="mw-empty-elt"></p>
+							</div>
+							<div class="tabbertab" title="Display extra things">
+								<p class="mw-empty-elt">
+								</p><table class="article-table" border="1">
+									<tbody>
+										<tr>
+											<th>
+												Command
+											</th>
+											<th>
+												What it does
+											</th>
+											<th>
+												Screenshot
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<code>\G</code>
+											</td>
+											<td>
+												Displays a separate window showing the player's current money, at the top left of the screen only while the current message is being displayed. This window is displayed by <code>def pbDisplayGoldWindow</code>&nbsp;in the script section&nbsp;<b>Messages</b>.
+											</td>
+											<td>
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/17/MessageMoney.png/revision/latest?cb=20181104181441" class="image"><img alt="MessageMoney.png" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="128" height="137" class="thumbimage lazyload" data-image-name="MessageMoney.png" data-image-key="MessageMoney.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/17/MessageMoney.png/revision/latest/scale-to-width-down/128?cb=20181104181441"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/17/MessageMoney.png/revision/latest?cb=20181104181441" class="image"><img alt="MessageMoney.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/1/17/MessageMoney.png/revision/latest/scale-to-width-down/128?cb=20181104181441" decoding="async" width="128" height="137" class="thumbimage" data-image-name="MessageMoney.png" data-image-key="MessageMoney.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/17/MessageMoney.png/revision/latest/scale-to-width-down/128?cb=20181104181441" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageMoney.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\CN</code>
+											</td>
+											<td>
+												Displays a separate window showing the player's current Coins, at the top left of the screen only while the current message is being displayed. This window is displayed by <code>def pbDisplayCoinsWindow</code>&nbsp;in the script section&nbsp;<b>Messages</b>.
+												<p>
+													It can be shown alongside the money window, but if so, this command must appear&nbsp;<i>after</i>&nbsp;the money window's command (e.g.&nbsp;<code>\G\CN</code>).
+												</p>
+											</td>
+											<td>
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/a/ac/MessageCoins.png/revision/latest?cb=20181104181454" class="image"><img alt="MessageCoins.png" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="128" height="137" class="thumbimage lazyload" data-image-name="MessageCoins.png" data-image-key="MessageCoins.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/a/ac/MessageCoins.png/revision/latest/scale-to-width-down/128?cb=20181104181454"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/a/ac/MessageCoins.png/revision/latest?cb=20181104181454" class="image"><img alt="MessageCoins.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/a/ac/MessageCoins.png/revision/latest/scale-to-width-down/128?cb=20181104181454" decoding="async" width="128" height="137" class="thumbimage" data-image-name="MessageCoins.png" data-image-key="MessageCoins.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/a/ac/MessageCoins.png/revision/latest/scale-to-width-down/128?cb=20181104181454" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageCoins.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\f[X]</code>
+											</td>
+											<td>
+												Displays the picture called "X.png", located in the folder "Graphics/Pictures".
+											</td>
+											<td>
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/e/e7/MessagePicture1.png/revision/latest?cb=20181104181510" class="image"><img alt="MessagePicture1.png" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="128" height="137" class="thumbimage lazyload" data-image-name="MessagePicture1.png" data-image-key="MessagePicture1.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/e/e7/MessagePicture1.png/revision/latest/scale-to-width-down/128?cb=20181104181510"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/e/e7/MessagePicture1.png/revision/latest?cb=20181104181510" class="image"><img alt="MessagePicture1.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/e/e7/MessagePicture1.png/revision/latest/scale-to-width-down/128?cb=20181104181510" decoding="async" width="128" height="137" class="thumbimage" data-image-name="MessagePicture1.png" data-image-key="MessagePicture1.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/e/e7/MessagePicture1.png/revision/latest/scale-to-width-down/128?cb=20181104181510" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessagePicture1.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\ff[X]</code><br><code>\ff[X,2]</code>
+											</td>
+											<td>
+												Displays a 96x96 pixel square of the picture called "X.gif" or "X.png", located in the folder "Graphics/Faces" (or "Graphics/Pictures" if not found).
+												<p>
+													The number is optional, is 0 by default, and indicates which part of the picture to show. The picture is considered to be a 4x4 grid of squares, starting with square 0 being the top left one and counting across and then down (e.g. square 7 is the far right square of the second row).
+												</p><p>
+													This command works with animated gifs.
+												</p>
+											</td>
+											<td>
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/1f/MessagePicture2.png/revision/latest?cb=20181104181524" class="image"><img alt="MessagePicture2.png" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="128" height="137" class="thumbimage lazyload" data-image-name="MessagePicture2.png" data-image-key="MessagePicture2.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/1f/MessagePicture2.png/revision/latest/scale-to-width-down/128?cb=20181104181524"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/1f/MessagePicture2.png/revision/latest?cb=20181104181524" class="image"><img alt="MessagePicture2.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/1/1f/MessagePicture2.png/revision/latest/scale-to-width-down/128?cb=20181104181524" decoding="async" width="128" height="137" class="thumbimage" data-image-name="MessagePicture2.png" data-image-key="MessagePicture2.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/1/1f/MessagePicture2.png/revision/latest/scale-to-width-down/128?cb=20181104181524" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessagePicture2.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>&lt;icon=X&gt;</code>
+											</td>
+											<td>
+												Displays the icon called "X.png" in the folder "Graphics/Icons". This icon appears in-line in the text.
+											</td>
+											<td>
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/b/b2/MessageIcon.png/revision/latest?cb=20181104181540" class="image"><img alt="MessageIcon.png" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="128" height="64" class="thumbimage lazyload" data-image-name="MessageIcon.png" data-image-key="MessageIcon.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/b/b2/MessageIcon.png/revision/latest/scale-to-width-down/128?cb=20181104181540"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/b/b2/MessageIcon.png/revision/latest?cb=20181104181540" class="image"><img alt="MessageIcon.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/b/b2/MessageIcon.png/revision/latest/scale-to-width-down/128?cb=20181104181540" decoding="async" width="128" height="64" class="thumbimage" data-image-name="MessageIcon.png" data-image-key="MessageIcon.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/b/b2/MessageIcon.png/revision/latest/scale-to-width-down/128?cb=20181104181540" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageIcon.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<code>\ch[a,b,choices]</code>
+											</td>
+											<td>
+												Displays a list of choices. See below for more information.
+											</td>
+											<td>
+												<figure class="thumb tright show-info-icon" style="width: 130px"> 	<a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/5/52/MessageChoices.png/revision/latest?cb=20181104181602" class="image"><img alt="MessageChoices.png" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="128" height="137" class="thumbimage lazyload" data-image-name="MessageChoices.png" data-image-key="MessageChoices.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/5/52/MessageChoices.png/revision/latest/scale-to-width-down/128?cb=20181104181602"></a> 	<noscript><a href="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/5/52/MessageChoices.png/revision/latest?cb=20181104181602" class="image"><img alt="MessageChoices.png" src="https://web.archive.org/web/20201001121228im_/https://static.wikia.nocookie.net/essentialsdocs/images/5/52/MessageChoices.png/revision/latest/scale-to-width-down/128?cb=20181104181602" decoding="async" width="128" height="137" class="thumbimage" data-image-name="MessageChoices.png" data-image-key="MessageChoices.png" data-src="https://web.archive.org/web/20201001121228/https://static.wikia.nocookie.net/essentialsdocs/images/5/52/MessageChoices.png/revision/latest/scale-to-width-down/128?cb=20181104181602" /></a></noscript> 	<figcaption class="thumbcaption"> 		 			<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/File:MessageChoices.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+											</td>
+										</tr>
+									</tbody>
+								</table><p class="mw-empty-elt"></p>
+							</div>
+						</div>
+						<p>
+							When using a message command, you should not put any spaces around it as you would a word. For example, you should write "<code>\bText</code>" rather than "<code>\b Text</code>".
+						</p>
+						<h2><span class="mw-headline" id="Choices">Choices</span></h2>
+						<p>
+							RPG Maker XP has an&nbsp;<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/Events" title="Events">event command</a>&nbsp;called "Show Choices", which is useful so long as there are no more than four options to choose from. To show a choice of more than four options, you will need to use a message command instead.
+						</p><p>
+							You can display a list of choices by using the message command&nbsp;<code>\ch[a,b,choices]</code>, where:
+						</p>
+						<ul>
+							<li>"<code>a</code>" is the number of a&nbsp;Game Variable&nbsp;in which to store the chosen choice (the first choice is 0, the second is 1, and so on).</li>
+							<li>"<code>b</code>" is the choice used when the player cancels (or 0 if the player can't cancel or -1 if you don't want to choose any of the displayed options). Here, the first choice is 1, the second is 2, and so on.</li>
+							<li>"<code>choices</code>" is a comma-separated list of choices.</li>
+						</ul>
+						<h3><span class="mw-headline" id="Examples">Examples</span></h3>
+<pre>\ch[5,1,Choice 1,Choice 2,Choice 3,Choice 4]
+</pre>
+						<p>
+							This example displays four choices, stores the chosen choice in Game Variable 5, and specifies that "Choice 1" will be chosen if the player cancels. Game Variable 5 will store the number 0 if "Choice 1" is chosen, the number 1 if "Choice 2" is chosen, and so on.
+						</p>
+<pre>\ch[5,0,Choice 1,Choice 2,Choice 3,Choice 4,Choice 5]
+</pre>
+						<p>
+							This example displays five choices, stores the chosen choice in Game Variable 5, and specifies that the player must make a choice (i.e. they cannot cancel).
+						</p>
+<pre>\ch[5,-1,Choice 1,Choice 2,Choice 3,Choice 4,Choice 5]
+</pre>
+						<p>
+							This example displays five choices, stores the chosen choice in Game Variable 5, and specifies that none of the given choices will be chosen if the player cancels.
+						</p><p>
+							Below is a complete example that shows how an event can do different things depending on the choice the player chose. Note the Conditional Branches that check the value of the stored result.
+						</p>
+<pre>@@&gt;Comment: Store result in Variable 1.
+		&nbsp;: Cancelling stores a result of -1.
+@@&gt;Text: Please choose one.\ch[1,-1,Choice 1,Choice 2]
+@@&gt;Conditional Branch: Variable [0001: Temp Pokemon Choice] == -1
+  @@&gt;Text: The choice was cancelled.
+  @@&gt;
+&nbsp;: Branch End
+@@&gt;Conditional Branch: Variable [0001: Temp Pokemon Choice] == 0
+  @@&gt;Text: Choice 1 was chosen.
+  @@&gt;
+&nbsp;: Branch End
+@@&gt;Conditional Branch: Variable [0001: Temp Pokemon Choice] == 1
+  @@&gt;Text: Choice 2 was chosen.
+  @@&gt;
+&nbsp;: Branch End
+@@&gt;
+</pre>
+						<p>
+							In the following example, the player&nbsp;<i>must</i>&nbsp;make a choice:
+						</p>
+<pre>@@&gt;Comment: Store result in Variable 1.
+		 : Can't cancel.
+@@&gt;Text: Please choose one.\ch[1,0,Choice 1,Choice 2]
+@@&gt;Conditional Branch: Variable [0001: Temp Pokemon Choice] == 0
+  @@&gt;Text: Choice 1 was chosen.
+  @@&gt;
+&nbsp;: Branch End
+@@&gt;Conditional Branch: Variable [0001: Temp Pokemon Choice] == 1
+  @@&gt;Text: Choice 2 was chosen.
+  @@&gt;
+&nbsp;: Branch End
+@@&gt;
+</pre>
+						<h2><span class="mw-headline" id="Entering_text">Entering text</span></h2>
+						<p>
+							The player can provide text for the game to use. There are two different kinds of text entry. This section only describes how to get text from the player; it does not describe what you can do with it.
+						</p>
+						<h3><span id="Entering_a_word/name"></span><span class="mw-headline" id="Entering_a_word.2Fname">Entering a word/name</span></h3>
+						<p>
+							This method lets the player enter a short name. It is used for naming the player character (and&nbsp;<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/Rival" title="Rival">rivals</a>), giving a Pokémon a nickname, and naming a&nbsp;Pokémon storage&nbsp;box. This is done via the&nbsp;<i>naming screen</i>.
+						</p><p>
+							There are two versions of the naming screen - cursor entry and keyboard entry. Which one is used by a game depends on an option in the <a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/Options_screen" title="Options screen">Options screen</a>. The cursor entry version is identical to text entry in the official games, where you are provided with a grid of letters, numbers and symbols to select and insert into the name. The keyboard entry version takes advantage of Essentials games being PC games, and allows direct text entry by typing it in via the keyboard.
+						</p><p>
+							Entering a word is done by using the following code:
+						</p>
+<pre>name=pbEnterText(_INTL("Your name?"),0,7,_INTL("Red"))
+</pre>
+						<p>
+							The first parameter is the "helper text", a phrase which appears in the naming screen and lets the player know what they're supposed to be entering a name for.
+						</p><p>
+							The second parameter is the minimum length that the name can be. If this is 0, the naming can be cancelled (and&nbsp;<code>name</code>will be set to&nbsp;<code>""</code>). The third parameter is the maximum length that the name can be, and is traditionally 7 characters for player names and 10 characters for Pokémon nicknames.
+						</p><p>
+							The fourth parameter is optional, and is the default name which the player can edit/replace.
+						</p>
+						<h4><span class="mw-headline" id="Variants">Variants</span></h4>
+						<p>
+							There are three variants of&nbsp;<code>pbEnterText</code>, which are used to give names to specific things. The difference is that they display an icon of the thing being named.
+						</p><p>
+							None of these variants need to be manually used by you. The scripts automatically use these variants where appropriate, and it is highly unlikely you would ever want to use them manually. They are mentioned here for the sake of completeness.
+						</p>
+<pre>pbEnterPlayerName(_INTL("Your name?"),0,7,_INTL("Red"))
+</pre>
+						<p>
+							This specifically is for naming the player. It shows the player's south-facing overworld image, animated and walking on the spot. Its parameters are the same as for&nbsp;<code>pbEnterText</code>.
+						</p>
+<pre>pbEnterPokemonName(_INTL("Nickname?"),0,10,"",pokemon)
+</pre>
+						<p>
+							This specifically is for naming a Pokémon. It shows the Pokémon's animated icon, along with its gender symbol if it has a gender. Its parameters are the same as for&nbsp;<code>pbEnterText</code>, except for the addition of one at the end, which is a Pokémon object.
+						</p>
+<pre>pbEnterBoxName(_INTL("Box name?"),0,12,"BOX 1")
+</pre>
+						<p>
+							This specifically is for naming a&nbsp;<a href="/web/20201001121228/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a>&nbsp;box. It shows an animated icon that represents a storage box. Its parameters are the same as for&nbsp;<code>pbEnterText</code>.
+						</p>
+						<h3><span class="mw-headline" id="Entering_a_message">Entering a message</span></h3>
+						<p>
+							This method lets the player enter a longer message. It is used for writing a message in a mail item when giving it to a Pokémon.
+						</p><p>
+							Unlike naming something, entering a message does not involve a separate screen. Instead, a message box appears on-screen which the player can type into using the keyboard.
+						</p><p>
+							Message entry is done by using the following code:
+						</p>
+<pre>message=Kernel.pbMessageFreeText(_INTL("Please enter a message."),
+								 _INTL("Default message."),
+								 false,256,Graphics.width)
+</pre>
+						<p>
+							The first parameter is the "helper text", a phrase which appears to let the player know what they're supposed to be doing.
+						</p><p>
+							The second parameter is the default message. If you don't want a default message, simply put&nbsp;<code>""</code>&nbsp;here instead.
+						</p><p>
+							The third parameter is whether the message is a password. If this is true, then the message is shown as asterisks instead of actual letters. If this is false, then the message is shown as normal.
+						</p><p>
+							The fourth parameter is the maximum length that the message can be.
+						</p><p>
+							The fifth parameter is optional, and is the width of the message entry box. If this is blank, the width will be 240 pixels (just under half the width of the screen). <code>Graphics.width</code> is the entire width of the screen.
+						</p><p>
+							Note that message entry can be cancelled. In that case,&nbsp;<code>message</code>&nbsp;will be set to&nbsp;<code>""</code>.
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20200930203720
+					Cache expiry: 86400
+					Dynamic content: false
+					CPU time usage: 0.044 seconds
+					Real time usage: 0.056 seconds
+					Preprocessor visited node count: 79/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 89/2097152 bytes
+					Template argument size: 67/2097152 bytes
+					Highest expansion depth: 3/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 33012/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    3.068      1 Template:For
+					100.00%    3.068      1 -total
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:271-0!canonical and timestamp 20200930203720 and revision id 845
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20201001121228/https://essentialsdocs.fandom.com/wiki/Messages?oldid=845">https://essentialsdocs.fandom.com/wiki/Messages?oldid=845</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20201001121228/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

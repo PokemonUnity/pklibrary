@@ -1,0 +1,579 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20201001122915if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<dl><dd><i>For the main page about trainers, see <a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Trainers" title="Trainers">Trainers</a>.</i></dd></dl>
+						<p>
+							This page describes&nbsp;<b>how to define a trainer</b>. This includes both trainer types and individual trainers.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1">
+									<a href="#Defining_a_trainer_type"><span class="tocnumber">1</span> <span class="toctext">Defining a trainer type</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-2"><a href="#PBS_file_.22trainertypes.txt.22"><span class="tocnumber">1.1</span> <span class="toctext">PBS file "trainertypes.txt"</span></a></li>
+										<li class="toclevel-2 tocsection-3"><a href="#Trainer_type_graphics"><span class="tocnumber">1.2</span> <span class="toctext">Trainer type graphics</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-4">
+									<a href="#Defining_an_individual_trainer"><span class="tocnumber">2</span> <span class="toctext">Defining an individual trainer</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-5"><a href="#PBS_file_.22trainers.txt.22"><span class="tocnumber">2.1</span> <span class="toctext">PBS file "trainers.txt"</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Defining_a_trainer_type">Defining a trainer type</span></h2>
+						<p>
+							Every trainer in the game, including the&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Player" title="Player">player</a>, has a trainer type. The trainer type defines various pieces of information that are common to all trainers of that type - this includes their title (e.g. Bug Catcher, Hiker, Gym Leader), appearance (i.e. sprite), the amount of money gained from defeating them, and associated battle music.
+						</p><p>
+							A trainer type begins with its definition. This means that it is listed in the&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"trainertypes.txt", so that it can be recognised by the game as a trainer type.
+						</p><p>
+							In addition to this, a trainer type will require a number of graphics files depicting that trainer type in different ways. See below for more information.
+						</p>
+						<h3><span id="PBS_file_&quot;trainertypes.txt&quot;"></span><span class="mw-headline" id="PBS_file_.22trainertypes.txt.22">PBS file "trainertypes.txt"</span></h3>
+						<p>
+							The&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"trainertypes.txt" lists all the defined trainer types in the game. Each line in this file is one separate trainer type.
+						</p><p>
+							Every line in this file follows the same format. Firstly, here are some examples:
+						</p>
+<pre>1,POKEMONTRAINER_Leaf,Pokémon Trainer,60,,,,Female,,
+7,BEAUTY,Beauty,56,,,,Female,,
+18,HIKER,Hiker,32,,,,Male,,
+51,COOLCOUPLE,Cool Couple,72,,,,Mixed,48,
+59,LEADER_Brock,Gym Leader,100,gymleader,,,Male,,
+71,CHAMPION,Champion,100,elite,,,Male,,
+</pre>
+						<p>
+							Each line is structured as follows, with commas separating each part:
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Part
+									</th>
+									<th>
+										Information
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<th>
+										1
+									</th>
+									<th>
+										ID number
+									</th>
+									<td>
+										This number must be different for each trainer type. It must be a whole number greater than 0. You can skip numbers (e.g. the sequence&nbsp;<code>23,24,25,197,198,199,...</code>&nbsp;is allowed). The order in which trainer types are numbered is not important.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										2
+									</th>
+									<th>
+										Internal name
+									</th>
+									<td>
+										This is how the scripts refer to the trainer type. Typically this is the same as the trainer type's name, but written in all capital letters and with no spaces or symbols. The internal name is never seen by the player.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										3
+									</th>
+									<th>
+										Display name
+									</th>
+									<td>
+										The name of the trainer type, as seen by the player. Multiple trainer types can have the same display name, although they cannot share ID numbers or internal names.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										4
+									</th>
+									<th>
+										Base money
+									</th>
+									<td>
+										The amount of money earned from defeating a trainer of this type. The base money value is multiplied by the highest Level among all the trainer's Pokémon to produce the actual amount of money gained (assuming no other modifiers). Must be a number greater than or equal to 0.
+										<p>
+											Optional. If undefined, the default is 30.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										5
+									</th>
+									<th>
+										Battle BGM
+									</th>
+									<td>
+										The name of a background music (BGM) file in the folder "Audio/BGM" (excluding its file extension). The music that plays during battles against trainers of this type. Typically only defined for <a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Gym Leaders</a>, Elite Four members and&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Rival" title="Rival">rivals</a>.
+										<p>
+											Optional. If undefined, the default BGM is used.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										6
+									</th>
+									<th>
+										Victory ME
+									</th>
+									<td>
+										The name of a music effect (ME) file in the folder "Audio/ME" (excluding its file extension). The victory music that plays upon defeat of trainers of this type.
+										<p>
+											Optional. If undefined, the default victory ME is used.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										7
+									</th>
+									<th>
+										Intro ME
+									</th>
+									<td>
+										The name of a music effect (ME) file in the folder "Audio/ME" (excluding its file extension). The music that plays before the battle begins, while still talking to the trainer.
+										<p>
+											Optional. If undefined, the default ME is used.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										8
+									</th>
+									<th>
+										Gender
+									</th>
+									<td>
+										The gender of all trainers of this type. Is one of:
+										<ul>
+											<li>Male</li>
+											<li>Female</li>
+											<li>Mixed (i.e. if the type shows a pair of trainers)</li>
+										</ul>
+										<p>
+											Optional. If undefined, the default is "Mixed".
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										9
+									</th>
+									<th>
+										Skill level
+									</th>
+									<td>
+										The skill level of all trainers of this type, used for&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Battle_AI" title="Battle AI">battle AI</a>. Higher numbers represent higher skill levels. Must be a number greater than or equal to 0.
+										<p>
+											Optional. If undefined, the default is equal to the base money value.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										10
+									</th>
+									<th>
+										Skill codes
+									</th>
+									<td>
+										A text field which can be used to modify the AI behaviour of all trainers of this type. No such modifiers are defined by default, and there is no standard format. See the page&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Battle_AI" title="Battle AI">Battle AI</a>&nbsp;for more details.
+										<p>
+											Optional. If undefined, the default is blank.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							There is no difference between a trainer type used by many trainers (e.g. Bug Catcher), and a trainer type unique to just one NPC (e.g.&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_Gym" title="Pokémon Gym">Gym Leaders</a>). They are all defined in exactly the same way.
+						</p><p>
+							It is important to note that the player also has a trainer type, and it is defined in exactly the same way as any other trainer type.&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Metadata" title="Metadata">Player characters are defined</a>&nbsp;in the&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"metadata.txt" to have trainer types. They do not need to be the first trainer types defined in the <a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "trainertypes.txt", although it may help developers to keep track of them if they are.
+						</p>
+						<h3><span class="mw-headline" id="Trainer_type_graphics">Trainer type graphics</span></h3>
+						<p>
+							Each trainer type must have the following graphics:
+						</p>
+						<ul>
+							<li>
+								In the "Graphics/Characters" folder:
+								<ul><li><code>trcharXXX.png</code>&nbsp;- The trainer type's overworld charset. "<code>XXX</code>" is either the internal name of the trainer type or its ID number padded to 3 digits (e.g. "<code>trchar018.png</code>" is for the Hiker trainer type).</li></ul>
+							</li>
+							<li>
+								In the "Graphics/Trainers" folder:
+								<ul>
+									<li><code>trainerXXX.png</code>&nbsp;- The trainer type's battle sprite. "<code>XXX</code>" is as above.</li>
+									<li><code>trbackXXX.png</code>&nbsp;- The trainer type's back sprite, used in battle. "<code>XXX</code>" is as above.</li>
+								</ul>
+							</li>
+						</ul>
+						<p>
+							Only certain trainer types will also require back sprites. These include all trainer types which are used by&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Player" title="Player">player characters</a>, as well as all trainer types of NPC trainers who team up with the player and fight alongside them (i.e.&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Partner_trainer" title="Partner trainer">partner trainers</a>).
+						</p><p>
+							The back sprite can either be a square picture (e.g. 128x128 pixels), or it can contain 5 such square pictures arranged horizontally (e.g. 640x128 pixels). If the latter, the first frame will be the regular back sprite and the next four frames will depict a throwing animation in order.
+						</p>
+						<h2><span class="mw-headline" id="Defining_an_individual_trainer">Defining an individual trainer</span></h2>
+						<p>
+							An individual trainer begins with its definition. This means that it is listed in the&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"trainers.txt", so that it can be recognised by the game as an individual trainer.
+						</p>
+						<h3><span id="PBS_file_&quot;trainers.txt&quot;"></span><span class="mw-headline" id="PBS_file_.22trainers.txt.22">PBS file "trainers.txt"</span></h3>
+						<p>
+							The&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"trainers.txt" lists all the defined individual trainers in the game. Each section in this file is one separate individual trainer, where a section begins with a line contained within square brackets and ends when the next section begins. Each line in a section is one separate piece of information about that trainer or one of their Pokémon.
+						</p><p>
+							The section's "header", the line contained within square brackets, has the trainer type's internal name for that trainer, followed by a comma and then the name of the individual trainer. If the trainer requires a version number to differentiate it from other trainers with the same type/name (see below), that version number is also included here after another comma.
+						</p><p>
+							The rest of the lines in each section are written in the format <code>XXX = YYY</code>, where <code>XXX</code> is a property and <code>YYY</code> is the value or values associated with it (the spaces are optional).
+						</p><p>
+							Some lines may be indented, but this makes no difference and is just done to make things more legible. Any line beginning with a <code>#</code> (including the lines separating one trainer from the next) are comment lines and are not compiled; again, they are just there to make things more legible.
+						</p><p>
+							Here are some examples of defined trainers:
+						</p>
+<pre>[CAMPER,Liam]
+LoseText = "A very good battle, indeed!"
+Pokemon = DIGLETT,10
+Pokemon = BONSLY,11
+#-------------------------------
+[LEADER_Brock,Brock]
+Items = FULLRESTORE,FULLRESTORE
+LoseText = "Very good."
+Pokemon = GEODUDE,12
+ &nbsp;&nbsp; Gender = male
+ &nbsp;&nbsp; Moves = DEFENSECURL,HEADSMASH,ROCKPOLISH,ROCKTHROW
+ &nbsp;&nbsp; Ability = 0
+ &nbsp;&nbsp; IV = 20
+Pokemon = ONIX,14
+ &nbsp;&nbsp; Name = Rocky
+ &nbsp;&nbsp; Gender = male
+ &nbsp;&nbsp; Shiny = yes
+ &nbsp;&nbsp; Moves = HEADSMASH,ROCKTHROW,RAGE,ROCKTOMB
+ &nbsp;&nbsp; Ability = 0
+ &nbsp;&nbsp; Item = SITRUSBERRY
+ &nbsp;&nbsp; IV = 20
+ &nbsp;&nbsp; Ball = 19
+#-------------------------------
+[TEAMROCKET_M,Grunt,1]
+LoseText = "You're too good for me!"
+Pokemon = WEEPINBELL,21
+ &nbsp;&nbsp; Shadow = yes
+</pre>
+						<p>
+							The order in which these properties are written matters to some extent. Some properties relate to the trainer themselves and can be written anywhere within the section (although traditionally they go at the top). Other properties relate to an individual Pokémon owned by the trainer, and relate to the most recently defined Pokémon written above those properties.
+						</p><p>
+							The properties relating to the trainer are:
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Property
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<th>
+										Trainer type, trainer's name[, version number]
+									</th>
+									<td>
+										This is the section "header", written in square brackets (rather than in the format <code>XXX = YYY</code>). There are either two or three parts to this line, separated by commas:
+										<ol>
+											<li>The internal name of the trainer type.</li>
+											<li>This trainer's name.</li>
+											<li>Optional. A version number to distinguish this trainer from other trainers with the same trainer type and name, when <a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Trainers" title="Trainers">a battle against them is called</a>. Default is 0.</li>
+										</ol>
+										<p>
+											Version numbers are useful for&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">rematches</a>, where they represent different versions of the same trainer changing over time. They are also useful for creating groups of "Grunts" (multiple separate trainers with the same name and appearance, e.g. "Team Rocket Grunt", where "Team Rocket" is the trainer type and "Grunt" is the name). Note that there are rules placed on how you use version numbers for&nbsp;<a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Rematches" title="Rematches">rematch&nbsp;trainers</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Items
+									</th>
+									<td>
+										Optional. The internal names of one or more items that this trainer is able to use in-battle, separated by commas.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										LoseText
+									</th>
+									<td>
+										The in-battle text that appears when this trainer is defeated.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Pokemon
+									</th>
+									<td>
+										There are two parts to this line, which are separated by a comma:
+										<ol>
+											<li>The internal name of a Pokémon species.</li>
+											<li>A level number.</li>
+										</ol>
+										<p>
+											A trainer can have multiple Pokémon - simply have multiple "Pokemon = YYY" lines.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							The properties which are specific to a single Pokémon are typically indented to make it easier to see which Pokémon they apply to (the most recently defined one). Indentation is not necessary, though. They can be written in any order. The available properties are as follows:
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Property
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<th>
+										Item
+									</th>
+									<td>
+										The internal name of this Pokémon's held item. Default is no held item.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Moves
+									</th>
+									<td>
+										The internal names of this Pokémon's moves, separated by commas.
+										<p>
+											If at least one move is defined here, then this Pokémon's moveset will consist solely of those move(s), with gaps for undefined move slots. If no moves are defined, then this Pokémon's moveset will be the same as for a wild Pokémon of the same species/level/form.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Ability
+									</th>
+									<td>
+										Either "<code>0</code>" (first natural ability), "<code>1</code>" (second natural ability) or "<code>2</code>" through "<code>5</code>" (hidden abilities). Default is 0.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Gender
+									</th>
+									<td>
+										Either "<code>male</code>" or "<code>female</code>". Default is the same as the trainer's gender as defined in the <a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "trainertypes.txt" for their trainer type (male if uncertain). If this Pokémon cannot legitimately be the gender set here, it will instead be the gender (or genderless) it can be.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Form
+									</th>
+									<td>
+										This Pokémon's form number. Default is 0.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Shiny
+									</th>
+									<td>
+										Is "<code>yes</code>" if this Pokémon is shiny. Default is "<code>no</code>" (which means it definitely won't be shiny).
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Nature
+									</th>
+									<td>
+										The internal name of this Pokémon's nature. If undefined, the nature depends on this Pokémon's species and the trainer's type (both of which are consistent no matter how many times you battle the trainer, meaning this Pokémon's nature cannot randomly change between battles).
+									</td>
+								</tr>
+								<tr>
+									<th>
+										IV
+									</th>
+									<td>
+										This Pokémon's IV value(s). Is one to six numbers, each of which is between 0 and 31, which are separated by commas. Default is this Pokémon's level divided by 2 (rounded down), up to a maximum of 31 (i.e. the maximum number of IVs a stat can have).
+										<p>
+											The IV numbers are written in the order: HP, Attack, Defense, Speed, Special Attack, Special Defense. If there is no number for a stat, it will use the first number (HP's value).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										EV
+									</th>
+									<td>
+										This Pokémon's EV value(s). Is one to six numbers, each of which is between 0 and 252, which are separated by commas. Default is this Pokémon's level multiplied by 1.5 (rounded down), up to a maximum of 85 (510/6, i.e. the maximum number of EVs a Pokémon can have divided equally between its six stats).
+										<p>
+											The EV numbers are written in the order: HP, Attack, Defense, Speed, Special Attack, Special Defense. If there is no number for a stat, it will use the first number (HP's value).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Happiness
+									</th>
+									<td>
+										This Pokémon's happiness. Is a value between 0 and 255. Default is 70.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Name
+									</th>
+									<td>
+										This Pokémon's nickname. Up to 10 characters long.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Shadow
+									</th>
+									<td>
+										Is "<code>yes</code>" if this Pokémon is a <a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Shadow_Pok%C3%A9mon" title="Shadow Pokémon">Shadow Pokémon</a>. Default is "<code>no</code>" (which means it definitely won't be a <a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Shadow_Pok%C3%A9mon" title="Shadow Pokémon">Shadow Pokémon</a>).
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Ball
+									</th>
+									<td>
+										A number referring to the type of Poké Ball this Pokémon is kept in. These numbers are written in the <code>$BallTypes</code> hash at the top of the <a href="/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Script_section" class="mw-redirect" title="Script section">script section</a> <b>PokeBall_CatchEffects</b>. Default is 0, which is a regular Poké Ball.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							Note that both the number of lines per section (i.e. per trainer), and the number of lines describing individual Pokémon, will vary from trainer to trainer.
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20200930193532
+					Cache expiry: 86400
+					Dynamic content: false
+					CPU time usage: 0.015 seconds
+					Real time usage: 0.018 seconds
+					Preprocessor visited node count: 38/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 66/2097152 bytes
+					Template argument size: 44/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    2.591      1 Template:For
+					100.00%    2.591      1 -total
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:208-0!canonical and timestamp 20200930193532 and revision id 938
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20201001122915/https://essentialsdocs.fandom.com/wiki/Defining_a_trainer?oldid=938">https://essentialsdocs.fandom.com/wiki/Defining_a_trainer?oldid=938</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20201001122915/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

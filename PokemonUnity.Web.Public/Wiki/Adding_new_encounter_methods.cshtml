@@ -1,0 +1,249 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<div class="mw-parser-output">
+	<dl>
+		<dd><i>For how to set up wild encounters on maps, see <a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Wild_encounters" title="Wild encounters">Wild encounters</a>.</i></dd>
+		<dd><i>For triggering an encounter with a specific wild Pokémon, see <a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Event_encounters" title="Event encounters">Event encounters</a>.</i></dd>
+	</dl>
+	<p>
+		This page describes how to create&nbsp;<b>new wild encounter methods</b>. An explanation of what an encounter method is can be found on the&nbsp;<a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Wild_encounters" title="Wild encounters">Wild encounters</a>&nbsp;page.
+	</p><p>
+		There are two steps to adding a new encounter method:
+	</p>
+	<ol>
+		<li>Defining it (getting the game to recognise it as an encounter method).</li>
+		<li>Making it work (changing which list of wild encounters to use depending on the new encounter method).</li>
+	</ol>
+	<div id="toc" class="toc">
+		<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr" style="min-width: 364px;">
+			<h2>
+				<svg class="wds-icon wds-icon-tiny">
+					<use href="#wds-icons-bullet-list-tiny"></use>
+				</svg>Contents
+			</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span>
+		</div>
+		<ul>
+			<li class="toclevel-1 tocsection-1"><a href="#Defining_an_encounter_method"><span class="tocnumber">1</span> <span class="toctext">Defining an encounter method</span></a></li>
+			<li class="toclevel-1 tocsection-2">
+				<a href="#Making_the_encounter_method_work"><span class="tocnumber">2</span> <span class="toctext">Making the encounter method work</span></a>
+				<ul>
+					<li class="toclevel-2 tocsection-3"><a href="#.22Taking_a_step.22_encounter_methods"><span class="tocnumber">2.1</span> <span class="toctext">"Taking a step" encounter methods</span></a></li>
+					<li class="toclevel-2 tocsection-4"><a href="#.22Direct_Triggering.22_encounter_methods"><span class="tocnumber">2.2</span> <span class="toctext">"Direct Triggering" encounter methods</span></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Defining_an_encounter_method">Defining an encounter method</span></h2>
+	<p>
+		All encounter methods are defined in the script section&nbsp;<b>EncounterType</b>. Each encounter method is registered in the Game Data separately; you can define additional encounter methods in any script section (you can put all your new ones in a new script section to keep track of the code changes you make).
+	</p><p>
+		Examples of definitions of encounter methods are:
+	</p>
+<pre>GameData::EncounterType.register({
+  :id             =&gt; :Land,
+  :type           =&gt; :land,
+  :trigger_chance =&gt; 21,
+  :old_slots      =&gt; [20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1]
+})
+</pre>
+<pre>GameData::EncounterType.register({
+  :id             =&gt; :CaveNight,
+  :type           =&gt; :cave,
+  :trigger_chance =&gt; 5,
+  :old_slots      =&gt; [20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1]
+})
+</pre>
+<pre>GameData::EncounterType.register({
+  :id             =&gt; :OldRod,
+  :type           =&gt; :fishing,
+  :old_slots      =&gt; [70, 30]
+})
+</pre>
+<pre>GameData::EncounterType.register({
+  :id             =&gt; :RockSmash,
+  :type           =&gt; :none,
+  :trigger_chance =&gt; 50,
+  :old_slots      =&gt; [60, 30, 5, 4, 1]
+})
+</pre>
+	<p>
+		The properties an encounter method can be given are as follows:
+	</p>
+	<table class="article-table" border="1">
+		<tbody>
+			<tr>
+				<th>
+					Property
+				</th>
+				<th>
+					Description
+				</th>
+				<th>
+					Necessary?
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<code>:id</code>
+				</td>
+				<td>
+					The ID of the encounter type, as a symbol.
+				</td>
+				<td>
+					Yes
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>:type</code>
+				</td>
+				<td>
+					The category that this encounter type belongs to. Is one of <code>:land</code>, <code>:cave</code>, <code>:water</code>, <code>:fishing</code>, <code>:contest</code> or <code>:none</code>.
+					<p>
+						The type has several effects. <code>:land</code> is for encounter types that occur when moving in tall grass, <a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Roaming_Pok%C3%A9mon" title="Roaming Pokémon">roaming Pokémon</a> can be made to appear only for certain types of encounter, the <a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9_Radar" title="Poké Radar">Poké Radar</a> only works for <code>:land</code> encounter types, and so on.
+					</p>
+				</td>
+				<td>
+					No (default is <code>:none</code>)
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>:trigger_chance</code>
+				</td>
+				<td>
+					This is the percentage chance that an encounter using this encounter method will happen when prompted (e.g. upon taking a step, upon using Rock Smash). It is used as the default step chance when creating a new set of wild encounters in the <a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Debug_mode" title="Debug mode">Debug mode</a> feature "Edit Wild Encounters", but is not used by anything else.
+					<p>
+						For encounter methods that are prompted by taking a step (in tall grass, caves, surfing), this number also determines how many steps the player can take after a battle before another another encounter could happen (max. 8, but lower if this trigger chance is higher). Effects that alter the encounter rate also affect the number of "safe" steps (e.g. Cleanse Tag reduces the trigger chance and increases the number of "safe" steps).
+					</p>
+				</td>
+				<td>
+					No (default is 0)
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>:old_slots</code>
+				</td>
+				<td>
+					This property is only used for old encounter methods, as part of converting an old format "<a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Wild_encounters" title="Wild encounters">encounters.txt</a>" <a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> to the current format. It is an array of the relative chances each encounter slot has of being chosen for a generated wild encounter. As they are relative numbers, they do not have to add to 100.
+				</td>
+				<td>
+					No (only for old encounter methods)
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>
+		All encounter methods are compatible with all other encounter methods. For example, a map could have both :Cave and :Land wild encounters defined, and the :Land encounters would be used if the player walks in tall grass, while the :Cave encounters would be used if the player walks anywhere else.
+	</p>
+	<h2><span class="mw-headline" id="Making_the_encounter_method_work">Making the encounter method work</span></h2>
+	<p>
+		Once an encounter method is properly defined, scripts need to be altered to make use of it at the appropriate times. This may not be straightforward to do, depending on when exactly it should be used.
+	</p><p>
+		There are two possible ways to use an encounter method to trigger a wild encounter:
+	</p>
+	<ul>
+		<li>Taking a step: The game decides which encounter method needs to be used (in&nbsp;<code>def encounter_type</code> in <code>class PokemonEncounters</code>). This decision can depend on a variety of factors, such as which encounter methods are used by the current map, whether something special is happening (e.g. the player is surfing, there is a&nbsp;<a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Bug_Catching_Contest" title="Bug Catching Contest">Bug Catching Contest</a>&nbsp;in progress), and/or the <a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Time" title="Time">time of day</a>. You can add your own factors too.</li>
+		<li>Direct triggering: A wild encounter is directly triggered by using an item (e.g. fishing rods) or by&nbsp;<a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">using moves outside battle</a>&nbsp;(e.g. Rock Smash, Headbutt). The thing that triggered the wild encounter will determine the encounter method to use.</li>
+	</ul>
+	<p>
+		When making something that directly triggers a wild encounter, the advice is to copy an existing thing that works similarly.
+	</p>
+	<h3><span id="&quot;Taking_a_step&quot;_encounter_methods"></span><span class="mw-headline" id=".22Taking_a_step.22_encounter_methods">"Taking a step" encounter methods</span></h3>
+	<p>
+		The game decides which encounter method needs to be used in any given situation. It makes this decision in&nbsp;<code>def encounter_type</code> in <code>class PokemonEncounters</code>.
+	</p>
+<pre>def encounter_type
+  time = pbGetTimeNow
+  ret = nil
+  if $PokemonGlobal.surfing
+    ret = find_valid_encounter_type_for_time(:Water, time)
+  else   # Land/Cave (can have both in the same map)
+    if has_land_encounters? &amp;&amp; $game_map.terrain_tag($game_player.x, $game_player.y).land_wild_encounters
+      ret = :BugContest if pbInBugContest? &amp;&amp; has_encounter_type?(:BugContest)
+      ret = find_valid_encounter_type_for_time(:Land, time) if !ret
+    end
+    if !ret &amp;&amp; has_cave_encounters?
+      ret = find_valid_encounter_type_for_time(:Cave, time)
+    end
+  end
+  return ret
+end
+</pre>
+	<p>
+		The encounter method returned by this code is the&nbsp;<i>only</i>&nbsp;encounter method attempted.
+	</p><p>
+		The code <code>has_land_encounters?</code> and <code>has_cave_encounters?</code> checks whether there are wild encounters of those types (see the <code>:type</code> property above) defined for the current map. There is also <code>has_water_encounters?</code>, which is currently unused.
+	</p><p>
+		Note the way in which this script is written. For example, if the player is surfing, it will <i>only</i> check for Water encounter methods, and it checks this first because the current map may have cave-type encounters (triggered upon every step, even while surfing), but it is not appropriate to check for the :Cave encounter methods while surfing. Another example is the :BugContest encounter method, which is checked before the other :Land encounter methods (which are then skipped if the player is in a <a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Bug_Catching_Contest" title="Bug Catching Contest">Bug Catching Contest</a> and :BugContest encounters are defined for the current map).
+	</p><p>
+		After deciding whether the player is surfing, or the map has and land- or cave-type encounters defined, or whether the player is in a <a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Bug_Catching_Contest" title="Bug Catching Contest">Bug Catching Contest</a>, the above script calls <code>def find_valid_encounter_type_for_time</code> with an appropriate "base type" (<code>:Land</code>, <code>:Cave</code> or <code>:Water</code>) and the current time.
+	</p>
+<pre>def find_valid_encounter_type_for_time(base_type, time)
+  ret = nil
+  if PBDayNight.isDay?(time)
+    try_type = nil
+    if PBDayNight.isMorning?(time)
+      try_type = (base_type.to_s + "Morning").to_sym
+    elsif PBDayNight.isAfternoon?(time)
+      try_type = (base_type.to_s + "Afternoon").to_sym
+    elsif PBDayNight.isEvening?(time)
+      try_type = (base_type.to_s + "Evening").to_sym
+    end
+    ret = try_type if try_type &amp;&amp; has_encounter_type?(try_type)
+    if !ret
+      try_type = (base_type.to_s + "Day").to_sym
+      ret = try_type if has_encounter_type?(try_type)
+    end
+  else
+    try_type = (base_type.to_s + "Night").to_sym
+    ret = try_type if has_encounter_type?(try_type)
+  end
+  return ret if ret
+  return (has_encounter_type?(base_type))&nbsp;? base_type&nbsp;: nil
+end
+</pre>
+	<p>
+		This script determines the <a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Time" title="Time">time of day</a> and looks for time-appropriate encounters defined for the current map. If there are encounters defined for a checked encounter method, this script will return it. If not, it returns <code>nil</code>
+	</p><p>
+		The encounter methods checked for by this script are the "base type" (<code>:Land</code>, <code>:Cave</code> or <code>:Water</code>) with a time period's word added onto the end (e.g. <code>:LandMorning</code>, <code>:LandDay</code>, <code>:LandNight</code>). Some time periods overlap (morning, afternoon and evening are all part of the daytime), so this script will check the shorter time periods (morning, afternoon, evening) before the longer time periods (day).
+	</p><p>
+		Because this script adds words onto the end of the "base type" to create new encounter methods to check for, each "base type"'s set of time-related encounter methods need to be named a particular way. If you create a new encounter method and want to make use of this script, you will need to be careful with how you name them. Note that you do not need to create variants of your new encounter method for all these time periods, though; ones that do not exist will just not produce a result, and the script will move on to the next check.
+	</p><p>
+		Note that the scripts above do <i>not</i> check whether a wild encounter should be triggered. That is determined in <code>def encounter_possible_here?</code>. You should not need to change this script.
+	</p>
+	<h3><span id="&quot;Direct_Triggering&quot;_encounter_methods"></span><span class="mw-headline" id=".22Direct_Triggering.22_encounter_methods">"Direct Triggering" encounter methods</span></h3>
+	<p>
+		These kinds of wild encounters are currently only possible by either using an item (a fishing rod) or by&nbsp;<a href="/web/20211024124549/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">a move outside of battle</a>&nbsp;(Rock Smash or Headbutt). In all cases, the effects of these items/moves is to determine which encounter method they want to trigger, and then call&nbsp;<code>def pbEncounter</code>&nbsp;with that encounter method.
+	</p><p>
+		The determination is typically very straightforward (e.g. the Old Rod only ever triggers the :OldRod encounter method), although Headbutt has two encounter methods to choose between, and Rock Smash has a percentage chance of trying to trigger a wild encounter. This is not worth documenting.
+	</p>
+	<!--
+	NewPP limit report
+	Cached time: 20211015101859
+	Cache expiry: 1209600
+	Dynamic content: false
+	CPU time usage: 0.013 seconds
+	Real time usage: 0.016 seconds
+	Preprocessor visited node count: 43/1000000
+	Preprocessor generated node count: 0/1000000
+	Post‐expand include size: 195/2097152 bytes
+	Template argument size: 152/2097152 bytes
+	Highest expansion depth: 2/40
+	Expensive parser function count: 0/100
+	Unstrip recursion depth: 0/20
+	Unstrip post‐expand size: 0/5000000 bytes
+	-->
+	<!--
+	Transclusion expansion time report (%,ms,calls,template)
+	100.00%    1.996      1 -total
+	 94.90%    1.894      2 Template:For
+	-->
+	<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:136-0!canonical!FandomDesktop!LegacyGalleries and timestamp 20211015101859 and revision id 1048
+	 -->
+</div>

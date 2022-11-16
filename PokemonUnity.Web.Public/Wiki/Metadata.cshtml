@@ -1,0 +1,525 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20210512075445if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<p>
+							This page describes the&nbsp;<b>metadata</b>, a set of information contained within the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"metadata.txt" which defines some important information.
+						</p><p>
+							There are two parts to the metadata:&nbsp;<b>global metadata</b>&nbsp;and&nbsp;<b>map-specific metadata</b>.
+						</p>
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Global_metadata">Global metadata</span></h2>
+						<p>
+							The first section of the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"metadata.txt" begins with&nbsp;<code>[000]</code>, and contains much of the information about the player characters, as well as some other general information.
+						</p><p>
+							It looks something like the following:
+						</p>
+<pre>[000]
+PlayerA=POKEMONTRAINER_Red,trchar000,boy_bike,boy_surf,boy_run,boy_surf,boy_fish_offset,boy_fish_offset
+PlayerB=POKEMONTRAINER_Leaf,trchar001,girl_bike,girl_surf,girl_run,girl_surf,girl_fish_offset,girl_fish_offset
+Home=3,7,5,8
+BicycleBGM=Bicycle.mid
+SurfBGM=Surfing.mid
+WildBattleBGM=Battle wild.mid
+WildVictoryME=Battle victory wild.ogg
+TrainerBattleBGM=Battle trainer.mid
+TrainerVictoryME=Battle victory trainer.ogg
+</pre>
+						<p>
+							The table below explains what each line means:
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Metadata
+									</th>
+									<th>
+										Description
+									</th>
+								</tr>
+								<tr>
+									<th>
+										PlayerA<br>PlayerB<br>PlayerC<br>PlayerD<br>PlayerE<br>PlayerF<br>PlayerG<br>PlayerH
+									</th>
+									<td>
+										Information on the player characters in the game. The "PlayerA" line is required, and the other seven are optional. This setting consists of a number of comma-separated fields, as follows:
+										<ol>
+											<li>The player's trainer type. This is the internal name of a&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Defining_a_trainer" title="Defining a trainer">trainer type</a>, as defined in the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"trainertypes.txt". This trainer type is defined in exactly the same way as any other trainer type, and is typically only used by this player character (although some games may turn an unused player character into a&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Rival" title="Rival">rival</a>&nbsp;instead).</li>
+											<li>The character's walking charset, as found in "Graphics/Characters"</li>
+											<li>The character's cycling charset, as found in "Graphics/Characters"</li>
+											<li>The character's surfing charset, as found in "Graphics/Characters"</li>
+											<li>The character's running charset, as found in "Graphics/Characters"</li>
+											<li>The character's diving charset, as found in "Graphics/Characters"</li>
+											<li>The character's fishing-while-standing charset, as found in "Graphics/Characters"</li>
+											<li>The character's fishing-while-surfing charset, as found in "Graphics/Characters"</li>
+										</ol>
+										<p>
+											Typically, "PlayerA" will correspond to the male player character, and "PlayerB" the female one. The charsets mentioned should depict the "default" outfit for that player character, i.e. they have no outfit ID number at the end of their filenames.
+										</p><p>
+											If a charset includes the word "offset", then it will be shifted 1 tile south when being displayed. This is useful for any charset which extends below the tile the player is currently on (such as a lengthy fishing rod while fishing).
+										</p><p>
+											It is possible to modify the scripts to allow for more than eight player options, but this requires some scripting knowledge.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Home
+									</th>
+									<td>
+										The point that the player is transferred to when they&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Map_transfers" title="Map transfers">black out</a>&nbsp;but no&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9_Center" title="Poké Center">Poké Center</a>&nbsp;has been visited yet. This line consists of four comma-separated numbers in the following order:
+										<ol>
+											<li>Map ID</li>
+											<li>X coordinate on that map</li>
+											<li>Y coordinate on that map</li>
+											<li>Direction the player should face (2=down, 4=left, 6=right, 8=up, 0=retain direction)</li>
+										</ol>
+										<p>
+											The map identified by this metadata must have an event page with the "Autorun" trigger, which depends on the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Switch</a>&nbsp;called "Starting Over" (number 1 by default). This event page, when run, must heal all Pokémon in the player's <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a> (use the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Events" title="Events">event command</a>&nbsp;"Recover All: Entire Party" for this), and then turn that <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Events" title="Events">Game Switch</a> OFF again.
+										</p><p>
+											This metadata is required.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										BicycleBGM
+									</th>
+									<td>
+										The background music that plays while the player is cycling.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										SurfBGM
+									</th>
+									<td>
+										The background music that plays while the player is surfing.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										WildBattleBGM
+									</th>
+									<td>
+										The default music that plays during&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Wild_encounters" title="Wild encounters">wild Pokémon battles</a>. It should be placed in the "Audio/BGM" directory.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										TrainerBattleBGM
+									</th>
+									<td>
+										The default music that plays during&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Trainers" title="Trainers">trainer battles</a>. It should be placed in the "Audio/BGM" directory.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										WildVictoryME
+									</th>
+									<td>
+										The default victory music that plays at the end of a won wild Pokémon battle. It should be placed in the "Audio/ME" directory.
+									</td>
+								</tr>
+								<tr>
+									<th>
+										TrainerVictoryME
+									</th>
+									<td>
+										The default victory music that plays at the end of a won Trainer battle. It should be placed in the "Audio/ME" directory.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h2><span class="mw-headline" id="Map-specific_metadata">Map-specific metadata</span></h2>
+						<p>
+							Each map can have its own metadata section, containing information that is specific to that map and which tells it how to behave. For example, metadata can specify whether the player can ride a bicycle on a given map, where that map is located on the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Region_map" title="Region map">region map</a>, and whether it is an outdoor map.
+						</p><p>
+							While all of the map-specific metadata are technically optional, several of them will need to be included for (nearly) all maps in order to ensure they behave properly.
+						</p><p>
+							A map's metadata section begins with the map's ID number in square brackets, e.g.&nbsp;<code>[042]</code>. An example of a map-specific metadata section is as follows:
+						</p>
+<pre>[004]
+Outdoor=true
+Bicycle=true
+MapPosition=0,6,4
+ShowArea=true
+Weather=Rain,100
+</pre>
+						<p>
+							The possible entry types are as follows:
+						</p>
+						<table class="article-table" border="1">
+							<tbody>
+								<tr>
+									<th>
+										Metadata
+									</th>
+									<th>
+										Description
+									</th>
+									<th>
+										For which maps
+									</th>
+								</tr>
+								<tr>
+									<th>
+										Outdoor
+									</th>
+									<td>
+										If this is TRUE, this map is an outdoor map. If this is FALSE (or this line doesn't exist), this map is an indoor map. Only outdoor maps will have&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Time" title="Time">day/night tinting</a>. The&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">hidden move Fly</a>&nbsp;can only be used on an outdoor map.
+									</td>
+									<td>
+										Outdoor maps
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Bicycle
+									</th>
+									<td>
+										If this is TRUE, the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Getting_around" title="Getting around">bicycle</a>&nbsp;can be used on this map. If this is FALSE, it cannot. If this line doesn't exist, then the player will only be able to ride a bicycle if this map is an outdoor map.
+										<p>
+											Note that caves are not outdoor maps, and therefore cave maps must have this metadata (set to TRUE) in order to allow the player to cycle in caves. This can also apply to gatehouses.
+										</p>
+									</td>
+									<td>
+										Non-outdoor maps that can be cycled in
+									</td>
+								</tr>
+								<tr>
+									<th>
+										BicycleAlways
+									</th>
+									<td>
+										If this is TRUE, the player will automatically mount their bicycle upon entering this map, and they cannot dismount it (not even to&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Fishing_encounters" title="Fishing encounters">fish</a>&nbsp;or&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Getting_around" title="Getting around">surf</a>) while on this map.
+										<p>
+											Note that the player will mount a bicycle upon entering this map even if they don't own one. <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Manipulating_items" title="Manipulating items">Checks</a> should be made before the player can enter one of these maps, to allow them through only if they own a bicycle.
+										</p>
+									</td>
+									<td>
+										Cycling Road maps
+									</td>
+								</tr>
+								<tr>
+									<th>
+										HealingSpot
+									</th>
+									<td>
+										This is a set of three comma-separated numbers: a map ID number followed by the X and Y coordinates of a particular tile in that map.
+										<p>
+											When a map with this metadata is entered (e.g. the interior of a&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9_Center" title="Poké Center">Poké Center</a>), the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">Teleport</a>&nbsp;destination is changed to the spot described by this metadata. Note that the spot itself is not usually on the same map as the one that has this metadata set; the spot is the tile just in front of the entrance to this map (e.g. just in front of a&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9_Center" title="Poké Center">Poké Center</a>'s entrance).
+										</p><p>
+											Note that the only thing this metadata affects is the Teleport destination. It does not determine&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">Fly destinations</a>&nbsp;(those are set on the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Region_map" title="Region map">region map</a> in the <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a> "townmap.txt"), nor does it determine where the player goes to after&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Map_transfers" title="Map transfers">blacking out</a>&nbsp;(this is either set by the script&nbsp;<code>Kernel.pbSetPokemonCenter</code>&nbsp;which is part of the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9_Center" title="Poké Center">Poké Center</a>&nbsp;nurse event, or the "Home" global metadata mentioned above).
+										</p>
+									</td>
+									<td>
+										Poké Centre interiors
+									</td>
+								</tr>
+								<tr>
+									<th>
+										MapPosition
+									</th>
+									<td>
+										The position on the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Region_map" title="Region map">region map</a>&nbsp;where this map is located. This metadata consists of three comma-separated numbers that indicate the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Multiple_regions" title="Multiple regions">region number</a> and this map's X and Y coordinates on that region map.
+										<p>
+											When standing in this map and looking at the Town Map, the player's head icon will be placed on this point to show their current location. Note that this is (pretty much) the only purpose of this setting - it does not name the point or make it a&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">Fly destination</a>&nbsp;- see the page <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Region_map" title="Region map">Region map</a>&nbsp;for those features.
+										</p><p>
+											For large maps, this should be the top left square of the map (even if that particular square isn't part of the map).
+										</p>
+									</td>
+									<td>
+										All maps
+									</td>
+								</tr>
+								<tr>
+									<th>
+										MapSize
+									</th>
+									<td>
+										The size and shape of this map in&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Region_map" title="Region map">region map</a>&nbsp;squares. This metadata consists of two comma-separated numbers:
+										<ol>
+											<li>The width of the map, in squares. This can be 1.</li>
+											<li>A string of 1s and 0s, which describe the shape of the map. It is more easily visualised by breaking it up into chunks with "width" number of digits each; each successive chunk comes underneath the previous chunk. A 1 represents a square that is part of the map, and a 0 represents a square that isn't. The numbers are <i>not</i> comma-separated in any way.</li>
+										</ol>
+										<p>
+											For example, if the width of the map is 2, and the layout is "1011", then the map is a 2x2 L-shaped map with the gap in the top right corner.
+										</p><p>
+											Maps with this metadata calculate the relative position of the player on that map, and show the player's head icon in the appropriate place depending on this position.
+										</p>
+									</td>
+									<td>
+										Large maps
+									</td>
+								</tr>
+								<tr>
+									<th>
+										ShowArea
+									</th>
+									<td>
+										If this is TRUE, a&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Map_transfers" title="Map transfers">location signpost</a>&nbsp;stating the map's name will be displayed at the top left of the screen when it is entered. If this is FALSE (or this line doesn't exist), it won't.
+										<p>
+											Typically, this metadata should only be TRUE for outdoor maps and other important areas (e.g. some caves).
+										</p><p>
+											There are some cases where a&nbsp;location signpost&nbsp;will not be displayed even if this metadata says it should. See the page <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Map_transfers" title="Map transfers">Map transfers</a>&nbsp;for more details.
+										</p>
+									</td>
+									<td>
+										Outdoor maps, other important maps
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Weather
+									</th>
+									<td>
+										The&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Weather" title="Weather">weather</a>&nbsp;in effect on this map, and the likelihood of it. This setting consists of two fields: the weather type and the probability (out of 100) of that weather occurring when the player enters this map. The possible weather types are as follows:
+										<ul>
+											<li>Rain</li>
+											<li>HeavyRain</li>
+											<li>Storm</li>
+											<li>Snow</li>
+											<li>Blizzard</li>
+											<li>Sandstorm</li>
+											<li>Sunny</li>
+										</ul>
+									</td>
+									<td>
+										Maps with weather
+									</td>
+								</tr>
+								<tr>
+									<th>
+										DarkMap
+									</th>
+									<td>
+										If this is TRUE, this map is enshrouded in darkness and a small circle of light will appear around the player. If this is FALSE (or this line doesn't exist), there is no darkness. The player can&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">use the move Flash</a>&nbsp;to illuminate the surroundings, and can only use Flash on dark maps (if it has not already been used).
+									</td>
+									<td>
+										Dark maps
+									</td>
+								</tr>
+								<tr>
+									<th>
+										DiveMap
+									</th>
+									<td>
+										The&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Obstacles" title="Obstacles">underwater layer</a>&nbsp;of this map. This metadata defines the map ID of the underwater map related to this map, and is required if this map contains accessible patches of deep water (tiles with&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Tilesets" title="Tilesets">terrain tag&nbsp;5</a>) where&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">the move Dive</a> can be used.
+										<p>
+											Multiple maps cannot refer to the same underwater map, as the game wouldn't know which map to return the player to when surfacing.
+										</p>
+									</td>
+									<td>
+										Maps with deep water to dive into
+									</td>
+								</tr>
+								<tr>
+									<th>
+										SafariMap
+									</th>
+									<td>
+										If this is TRUE, this map is part of the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Safari_Zone" title="Safari Zone">Safari Zone</a>.
+										<p>
+											Walking in a map that is part of the Safari Zone will decrease the player's Safari Zone step count.&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Wild_encounters" title="Wild encounters">Wild Pokémon battles</a>&nbsp;that occur in these maps will be Safari encounters (i.e. the player doesn't use Pokémon, but instead throws bait/rocks, and the wild Pokémon either stays or flees, etc.).
+										</p>
+									</td>
+									<td>
+										Safari Zone maps
+									</td>
+								</tr>
+								<tr>
+									<th>
+										SnapEdges
+									</th>
+									<td>
+										If this is TRUE, then the screen cannot scroll past the edges of the map. This avoids showing the black borders beyond the edges of maps, but the camera will not be centred on the player if they are close to the edges.
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Dungeon
+									</th>
+									<td>
+										If this is TRUE, this map is a&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Dungeons" title="Dungeons">randomly generated dungeon map</a>&nbsp;which changes layout each time the player enters it. This map should not be&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Connecting_maps" title="Connecting maps">connected</a>&nbsp;to any other map.
+									</td>
+									<td>
+										Dungeon maps
+									</td>
+								</tr>
+								<tr>
+									<th>
+										BattleBack
+									</th>
+									<td>
+										The&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Backgrounds_and_music" title="Backgrounds and music">backdrop picture</a>&nbsp;used for all&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battles</a>&nbsp;that take place on this map. This setting is a phrase which corresponds to a particular backdrop; see the page <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Backgrounds_and_music" title="Backgrounds and music">Backgrounds and music</a>&nbsp;for more information.
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr>
+									<th>
+										WildBattleBGM
+									</th>
+									<td>
+										The&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Backgrounds_and_music" title="Backgrounds and music">music&nbsp;played</a> during any wild&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battles</a>&nbsp;that take place on this map. See the page <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Backgrounds_and_music" title="Backgrounds and music">Backgrounds and music</a>&nbsp;for more information.
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr>
+									<th>
+										TrainerBattleBGM
+									</th>
+									<td>
+										The <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Backgrounds_and_music" title="Backgrounds and music">music played</a> during any trainer <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Battles" title="Battles">battle</a> that takes place on this map. See the page <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Backgrounds_and_music" title="Backgrounds and music">Backgrounds and music</a>&nbsp;for more information.
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr>
+									<th>
+										WildVictoryME
+									</th>
+									<td>
+										The <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Backgrounds_and_music" title="Backgrounds and music">music played</a> when the player wins a wild Pokémon battle that takes place on this map. See the page <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Backgrounds_and_music" title="Backgrounds and music">Backgrounds and music</a>&nbsp;for more information.
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+								<tr>
+									<th>
+										TrainerVictoryME
+									</th>
+									<td>
+										The <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Backgrounds_and_music" title="Backgrounds and music">music played</a> when the player wins a trainer Pokémon battle that takes place on this map. See the page <a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Backgrounds_and_music" title="Backgrounds and music">Backgrounds and music</a>&nbsp;for more information.
+									</td>
+									<td>
+										-
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<h2><span class="mw-headline" id="Editing_the_metadata">Editing the metadata</span></h2>
+						<p>
+							You can edit the metadata in two ways: the first is by editing the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS file</a>&nbsp;"metadata.txt" directly, and the second is by using the "Set Metadata" option in the&nbsp;<a href="/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Debug_mode" title="Debug mode">Debug menu</a>.
+						</p><p>
+							Note that the "Set Metadata" option does NOT move any files around, nor does it create any audio files or graphics that may be needed (such as a new player character's spritesets). You will need to add these files into the appropriate folders yourself.
+						</p>
+						<!--
+					NewPP limit report
+					Cached time: 20210504072513
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.017 seconds
+					Real time usage: 0.019 seconds
+					Preprocessor visited node count: 73/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 0/2097152 bytes
+					Template argument size: 0/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    0.000      1 -total
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:174-0!canonical and timestamp 20210504072513 and revision id 535
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20210512075445/https://essentialsdocs.fandom.com/wiki/Metadata?oldid=535">https://essentialsdocs.fandom.com/wiki/Metadata?oldid=535</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20210512075445/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

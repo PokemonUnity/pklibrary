@@ -1,0 +1,334 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<article id="WikiaMainContent" class="WikiaMainContent">
+		<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+			<div id="content" class="WikiaArticle">
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					<!-- Google Tag Manager (noscript) -->
+					<noscript><iframe src="https://web.archive.org/web/20210512071840if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+					<!-- End Google Tag Manager (noscript) -->
+					<div class="mw-parser-output">
+						<p>
+							This article describes&nbsp;<b>map transfers</b>. It details all the ways in which the player can instantly move from one map to another.
+						</p>
+						<div id="toc" class="toc">
+							<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+							<ul>
+								<li class="toclevel-1 tocsection-1">
+									<a href="#Doors"><span class="tocnumber">1</span> <span class="toctext">Doors</span></a>
+									<ul>
+										<li class="toclevel-2 tocsection-2"><a href="#Door_event.2C_page_1"><span class="tocnumber">1.1</span> <span class="toctext">Door event, page 1</span></a></li>
+										<li class="toclevel-2 tocsection-3"><a href="#Door_event.2C_page_2"><span class="tocnumber">1.2</span> <span class="toctext">Door event, page 2</span></a></li>
+									</ul>
+								</li>
+								<li class="toclevel-1 tocsection-4"><a href="#Stairs"><span class="tocnumber">2</span> <span class="toctext">Stairs</span></a></li>
+								<li class="toclevel-1 tocsection-5"><a href="#Warp_tiles"><span class="tocnumber">3</span> <span class="toctext">Warp tiles</span></a></li>
+								<li class="toclevel-1 tocsection-6"><a href="#Cave_entrances_and_exits"><span class="tocnumber">4</span> <span class="toctext">Cave entrances and exits</span></a></li>
+								<li class="toclevel-1 tocsection-7"><a href="#While_surfing"><span class="tocnumber">5</span> <span class="toctext">While surfing</span></a></li>
+								<li class="toclevel-1 tocsection-8"><a href="#While_diving"><span class="tocnumber">6</span> <span class="toctext">While diving</span></a></li>
+								<li class="toclevel-1 tocsection-9"><a href="#Fly.2C_Teleport_and_Dig"><span class="tocnumber">7</span> <span class="toctext">Fly, Teleport and Dig</span></a></li>
+								<li class="toclevel-1 tocsection-10"><a href="#Escape_Rope"><span class="tocnumber">8</span> <span class="toctext">Escape Rope</span></a></li>
+								<li class="toclevel-1 tocsection-11"><a href="#Blacking_out"><span class="tocnumber">9</span> <span class="toctext">Blacking out</span></a></li>
+								<li class="toclevel-1 tocsection-12"><a href="#The_location_signpost"><span class="tocnumber">10</span> <span class="toctext">The location signpost</span></a></li>
+								<li class="toclevel-1 tocsection-13"><a href="#Recording_where_the_player_has_been"><span class="tocnumber">11</span> <span class="toctext">Recording where the player has been</span></a></li>
+								<li class="toclevel-1 tocsection-14"><a href="#Tips"><span class="tocnumber">12</span> <span class="toctext">Tips</span></a></li>
+							</ul>
+						</div>
+
+						<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Doors">Doors</span></h2>
+						<p>
+							Doors are essentially events that transfer the player to another place. The complexity seen in door events is due to animating the door, moving the player, playing sound effects and fading the screen out and in.
+						</p><p>
+							Door events have two pages. The first page is for entering through the door, and the second page is for when the player is coming out through it.
+						</p><p>
+							Although an event only takes up one tile, you can have large doors that are more than one tile in size. You just need to manage your events properly.
+						</p><p>
+							The door images should come from a character image file (in the folder "Graphics/Characters"). See the example door graphics that come with Essentials for an idea of how to arrange these graphics.
+						</p>
+						<h3><span id="Door_event,_page_1"></span><span class="mw-headline" id="Door_event.2C_page_1">Door event, page 1</span></h3>
+						<p class="mw-empty-elt"></p><figure class="thumb tright show-info-icon" style="width: 220px"> 	<a href="https://web.archive.org/web/20210512071840/https://static.wikia.nocookie.net/essentialsdocs/images/c/ca/DoorEvent1.png/revision/latest?cb=20180905013833" class="image"><img alt="DoorEvent1.png" src="https://web.archive.org/web/20210512071840im_/https://static.wikia.nocookie.net/essentialsdocs/images/c/ca/DoorEvent1.png/revision/latest/scale-to-width-down/220?cb=20180905013833" decoding="async" width="220" height="208" class="thumbimage" data-image-name="DoorEvent1.png" data-image-key="DoorEvent1.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20210512071840/https://essentialsdocs.fandom.com/wiki/File:DoorEvent1.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+						<p class="mw-empty-elt"></p><p>
+							This page has no conditions, and is triggered by the player's touch. Its graphic is of a closed door. Typically, this page's event commands are as follows:
+						</p>
+<pre>@@&gt;Set Move Route: This event (Ignore If Can't Move)
+&nbsp;:             &nbsp;: $&gt;SE: 'Entering Door', 100, 100
+&nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+&nbsp;:             &nbsp;: $&gt;Turn Left
+&nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+&nbsp;:             &nbsp;: $&gt;Turn Right
+&nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+&nbsp;:             &nbsp;: $&gt;Turn Up
+&nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+@@&gt;Wait for Move's Completion
+@@&gt;Set Move Route: Player (Ignore If Can't Move)
+&nbsp;:             &nbsp;: $&gt;Through ON
+&nbsp;:             &nbsp;: $&gt;Move Up
+&nbsp;:             &nbsp;: $&gt;Through OFF
+@@&gt;Wait for Move's Completion
+@@&gt;Change Transparent Flag: Transparency
+@@&gt;Set Move Route: This event (Ignore If Can't Move)
+&nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+&nbsp;:             &nbsp;: $&gt;Turn Right
+&nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+&nbsp;:             &nbsp;: $&gt;Turn Left
+&nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+&nbsp;:             &nbsp;: $&gt;Turn Down
+&nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+@@&gt;Wait for Move's Completion
+@@&gt;Change Screen Color Tone: (-255,-255,-255,0), @@6
+@@&gt;Wait: 8 frame(s)
+@@&gt;Change Transparent Flag: Normal
+@@&gt;Transfer Player:[003: \PN's house], (003,008), Up, No Fade
+@@&gt;Change Screen Color Tone: (0,0,0,0), @@6
+@@&gt;
+</pre>
+						<p>
+							Note that the "Change Screen Color Tone" commands and the "Transfer Player" command are useful for other kinds of player transfer too.
+						</p>
+						<h3><span id="Door_event,_page_2"></span><span class="mw-headline" id="Door_event.2C_page_2">Door event, page 2</span></h3>
+						<p class="mw-empty-elt"></p><figure class="thumb tright show-info-icon" style="width: 220px"> 	<a href="https://web.archive.org/web/20210512071840/https://static.wikia.nocookie.net/essentialsdocs/images/6/61/DoorEvent2.png/revision/latest?cb=20180905013910" class="image"><img alt="DoorEvent2.png" src="https://web.archive.org/web/20210512071840im_/https://static.wikia.nocookie.net/essentialsdocs/images/6/61/DoorEvent2.png/revision/latest/scale-to-width-down/220?cb=20180905013910" decoding="async" width="220" height="208" class="thumbimage" data-image-name="DoorEvent2.png" data-image-key="DoorEvent2.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20210512071840/https://essentialsdocs.fandom.com/wiki/File:DoorEvent2.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+						<p class="mw-empty-elt"></p><p>
+							This page has the condition that&nbsp;Global Switch&nbsp;22 should be ON, and it is set to Autorun. Its graphic is the same as the first page. Typically, this page's event commands are as follows:
+						</p>
+<pre>@@&gt;Conditional Branch: Script: get_character(0).onEvent?
+  @@&gt;Change Transparent Flag: Transparency
+  @@&gt;Set Move Route: This event (Ignore If Can't Move)
+  &nbsp;:             &nbsp;: $&gt;SE: 'Entering Door', 100, 100
+  &nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+  &nbsp;:             &nbsp;: $&gt;Turn Left
+  &nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+  &nbsp;:             &nbsp;: $&gt;Turn Right
+  &nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+  &nbsp;:             &nbsp;: $&gt;Turn Up
+  &nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+  @@&gt;Wait for Move's Completion
+  @@&gt;Change Transparent Flag: Normal
+  @@&gt;Set Move Route: Player (Ignore If Can't Move)
+  &nbsp;:             &nbsp;: $&gt;Move Down
+  @@&gt;Wait for Move's Completion
+  @@&gt;Set Move Route: This event (Ignore If Can't Move)
+  &nbsp;:             &nbsp;: $&gt;Turn Right
+  &nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+  &nbsp;:             &nbsp;: $&gt;Turn Left
+  &nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+  &nbsp;:             &nbsp;: $&gt;Turn Down
+  &nbsp;:             &nbsp;: $&gt;Wait: 2 frame(s)
+  @@&gt;Wait for Move's Completion
+  @@&gt;
+&nbsp;: Branch End
+@@&gt;Script: setTempSwitchOn("A")
+@@&gt;
+</pre>
+						<p>
+							This page checks whether a player is standing on the door, and if so, shows the player coming out of it. This means that when choosing where a door should lead to, you should choose the tile with the door event on it (i.e. the door itself, not below it).
+						</p>
+						<h2><span class="mw-headline" id="Stairs">Stairs</span></h2>
+						<p class="mw-empty-elt"></p><figure class="thumb tright show-info-icon" style="width: 220px"> 	<a href="https://web.archive.org/web/20210512071840/https://static.wikia.nocookie.net/essentialsdocs/images/f/f1/SideStairsEvent.png/revision/latest?cb=20180905013949" class="image"><img alt="SideStairsEvent.png" src="https://web.archive.org/web/20210512071840im_/https://static.wikia.nocookie.net/essentialsdocs/images/f/f1/SideStairsEvent.png/revision/latest/scale-to-width-down/220?cb=20180905013949" decoding="async" width="220" height="208" class="thumbimage" data-image-name="SideStairsEvent.png" data-image-key="SideStairsEvent.png"></a> 	 	<figcaption class="thumbcaption"> 		 			<a href="/web/20210512071840/https://essentialsdocs.fandom.com/wiki/File:SideStairsEvent.png" class="info-icon"><svg><use xlink:href="#wds-icons-info-small"></use></svg></a> 		 		 		 	</figcaption> </figure>
+						<p class="mw-empty-elt"></p><p>
+							Stairs behave much like doors, except they do not (usually) animate while the player steps onto them.
+						</p><p>
+							Sideways-facing stairs are a problem when making the player walk up them, as due to the game's perspective the player should only go up/down by half a tile for every tile they go across. Such a movement cannot easily be done in RPG Maker XP, and unless you spend a lot of time learning how to do this, you will need to suffice with having the player move diagonally (1 tile across and 1 tile up/down), but fading out for the transfer before it becomes obvious that the player isn't moving properly.
+						</p><p>
+							On the right is an example of an event for side-facing stairs that go up and to the left. To adapt this for other directions, simply change the direction the player is made to turn, and the diagonal direction the player is made to step in. If the stairs go downstairs, it is recommended that the player simply move left/right rather than diagonally.
+						</p>
+						<h2><span class="mw-headline" id="Warp_tiles">Warp tiles</span></h2>
+						<p>
+							Warp tiles are simply tiles that, when the player steps on them, will transfer the player to another place. They work in exactly the same way as doors and stairs do, in that they all use the "Transfer Player" event command.
+						</p><p>
+							You could also have animations, such as making the player spin around before transferring, or having the screen flash or the warp tile itself animate.
+						</p>
+						<h2><span class="mw-headline" id="Cave_entrances_and_exits">Cave entrances and exits</span></h2>
+						<p>
+							There are special animations that can/should be used for when the player enters or exits a cave. These animations are played by the two methods&nbsp;<code>pbCaveEntrance</code>&nbsp;and&nbsp;<code>pbCaveExit</code>&nbsp;respectively. There are examples of how to use these methods in the&nbsp;example maps.
+						</p><p>
+							As mentioned below, these animations are connected to the use of Dig and the Escape Rope (i.e. they can be used in caves).
+						</p>
+						<h2><span class="mw-headline" id="While_surfing">While surfing</span></h2>
+						<p>
+							The normal method of transferring the player to a different map (i.e. the&nbsp;event command&nbsp;"Transfer Player") will automatically cancel surfing when it is used. To allow map transfers while remaining surfing, an alternate method must be used instead:
+						</p>
+<pre>Kernel.pbTransferSurfing(42,10,14)
+Kernel.pbTransferSurfing(42,10,14,8)
+</pre>
+						<p>
+							This script will transfer the player to a different map while ensuring that they remain surfing. In the example given, the destination is map 42, at coordinates (10,14). The fourth parameter is optional, and is the direction the player will end up facing (by default, it is the player's current facing direction).
+						</p><p>
+							This allows the player to surf directly into a cave or other structure.
+						</p>
+						<h2><span class="mw-headline" id="While_diving">While diving</span></h2>
+						<p>
+							The normal method of transferring the player to a different map (i.e. the&nbsp;event command&nbsp;"Transfer Player") will automatically cancel diving when it is used. To allow map transfers while remaining diving, an alternate method must be used instead:
+						</p>
+<pre>Kernel.pbTransferUnderwater(42,10,14)
+Kernel.pbTransferUnderwater(42,10,14,8)
+</pre>
+						<p>
+							This script will transfer the player to a different map while ensuring that they remain diving. In the example given, the destination is map 42, at coordinates (10,14). The fourth parameter is optional, and is the direction the player will end up facing (by default, it is the player's current facing direction).
+						</p><p>
+							This allows the player to dive underwater and then pass through into an underwater cave.
+						</p>
+						<h2><span id="Fly,_Teleport_and_Dig"></span><span class="mw-headline" id="Fly.2C_Teleport_and_Dig">Fly, Teleport and Dig</span></h2>
+						<dl><dd><i>Main article:&nbsp;Using moves outside battle</i></dd></dl>
+						<p>
+							The moves Fly, Teleport and Dig all instantly change the player's location.
+						</p><p>
+							For more information about how Dig chooses where to send the player (and when it can be used), see the "Escape Rope" section below, as they both use the same system.
+						</p>
+						<h2><span class="mw-headline" id="Escape_Rope">Escape Rope</span></h2>
+						<p>
+							The Escape Rope is an item that will change the player's location, and is the item equivalent of the&nbsp;move Dig. It can only be used while there is an escape point set, and only if the player has no dependent events (e.g. a&nbsp;partner trainer).
+						</p><p>
+							In most cases, the location where the player is able to use an Escape Rope/Dig will be a cave interior, in which case you will be using the methods&nbsp;<code>pbCaveEntrance</code>&nbsp;and&nbsp;<code>pbCaveExit</code>&nbsp;to enter/exit those areas (see above). These methods automatically set/erase the escape point at the same time, so if you are using them, you do not need to worry about the escape point. In the rare situations where you want to set/erase the escape point&nbsp;<i>without</i>&nbsp;using the cave transition animation, see below.
+						</p><p>
+							When a cave or other Escape Rope-able location is entered, the escape point needs to be set (<code>$PokemonGlobal.escapePoint</code>). To do this, put a call to the method&nbsp;<code>pbSetEscapePoint</code>&nbsp;immediately before the map transfer (which should be a doorway or entrance of some kind). This method will set the escape point to the spot&nbsp;<i>behind</i>&nbsp;the player (who will currently be standing on the entrance when this method is called), i.e. the spot in front of the entrance.
+						</p><p>
+							When leaving an Escape Rope-able location, the escape point needs to be erased. To do this, put a call to the method&nbsp;<code>pbEraseEscapePoint</code>&nbsp;in any map transfer event which leads out of that location. The escape point is erased automatically when using Fly/Teleport/Dig/Escape Rope/blacking out.
+						</p><p>
+							The Escape Rope's effect is located in the script section&nbsp;<b>PokemonItemEffects</b>.
+						</p>
+						<h2><span class="mw-headline" id="Blacking_out">Blacking out</span></h2>
+						<p>
+							If the player has no able Pokémon left, they will black out and return to the last&nbsp;Poké Center&nbsp;they talked to the nurse in. This usually occurs in the field when the player's last Pokémon faints because of poisoning, and at the end of a battle if the player&nbsp;lost that battle.
+						</p><p>
+							The scripts that transfer the player when they black out are located in the script section&nbsp;<b>PokemonField</b>.&nbsp;<code>pbCheckAllFainted</code>&nbsp;checks whether the player has no usable Pokémon left and displays the messages, and&nbsp;<code>Kernel.pbStartOver</code>&nbsp;handles the actual transfer. If the player blacked out because of losing a battle, only the latter of these scripts will be used.
+						</p><p>
+							The location the player is transferred to is set by the script&nbsp;<code>Kernel.pbSetPokemonCenter</code>, which should appear at the start of every&nbsp;Poké Center&nbsp;nurse's event. This location is the player's current position when they talked to the nurse. If this hasn't been set (i.e. the player has not yet talked to a&nbsp;Poké Center&nbsp;nurse), then the coordinates used will be those in the&nbsp;global metadata&nbsp;"Home" instead.
+						</p><p>
+							When the player blacks out, the Global Switch with the number given by&nbsp;<code>STARTING_OVER_SWITCH</code>&nbsp;(in the script section&nbsp;<b>Settings</b>; Global Switch 1 by default) is set to TRUE. This lets you do special things after returning to the last healing spot, such as having a nearby NPC say something about not pushing your Pokémon too hard. To take advantage of this, simply have an Autorun event on the map the player will return to check whether this Global Switch is TRUE. This is usually the nurse or the player's mother.
+						</p><p>
+							The player's&nbsp;party&nbsp;will also be fully healed.
+						</p>
+						<h2><span class="mw-headline" id="The_location_signpost">The location signpost</span></h2>
+						<p>
+							When entering some maps, a message window will appear in the upper left of the screen announcing the name of that map. This is the location signpost.
+						</p><p>
+							Only maps which have the "ShowArea"&nbsp;metadata&nbsp;set to TRUE will show the location signpost. Typically, these will be outdoor maps and some important indoor locations.
+						</p><p>
+							The scripts that handle what the location signpost looks like are in the script section&nbsp;<b>PokemonField</b>, in the class&nbsp;<code>LocationWindow</code>. These scripts are called from the procedure&nbsp;<code>Events.onMapSceneChange</code>&nbsp;in the same script section.
+						</p><p>
+							If the location signpost should appear when stepping onto a particular map, but the player has just come from another map with the same name, then the location signpost will not be shown instead. This is useful for splitting up large routes/towns into multiple maps, and means that the location signpost won't be shown in the middle of traversing those routes/towns (it will only appear when the player enters that route/town in the first place).
+						</p><p>
+							You can also stop the location signpost from appearing for certain other map transfers that would ordinarily show it. To do this, in the script section&nbsp;<b>Settings</b>&nbsp;is an array called&nbsp;<code>NOSIGNPOSTS</code>. Enter the map ID numbers of the two maps where you don't want the location signpost to appear when moving from one to the other (or vice versa). The order in which you put these numbers doesn't matter, and you can add as many map pairs as you like. For example:
+						</p>
+<pre>NOSIGNPOSTS=[4,5,16,17,42,43]
+</pre>
+						<p>
+							This example will stop the location signpost from appearing if the player moves from map 4 to map 5 (and vice versa), from map 16 to map 17 (and vice versa), and from map 42 to map 43 (and vice versa).
+						</p>
+						<h2><span class="mw-headline" id="Recording_where_the_player_has_been">Recording where the player has been</span></h2>
+						<p>
+							There is an array which records the player's most recent movement between maps:
+						</p>
+<pre>$PokemonGlobal.mapTrail
+</pre>
+						<p>
+							This array stores the ID numbers of the last 4 maps the player has been on, including the map they are currently on. They are stored in order from newest to oldest, i.e.&nbsp;<code>$PokemonGlobal.mapTrail[0]</code>&nbsp;is the current map,&nbsp;<code>$PokemonGlobal.mapTrail[1]</code>&nbsp;is the map just before the current one,&nbsp;<code>$PokemonGlobal.mapTrail[2]</code>&nbsp;is the map before that, etc.
+						</p><p>
+							It is updated in the same place in the scripts that the location signpost is dealt with.
+						</p>
+						<h2><span class="mw-headline" id="Tips">Tips</span></h2>
+						<ul><li>Don't forget that you can lock/unlock doors and enable/disable warp tiles by various methods, such as checking whether the player&nbsp;has a certain Key Item&nbsp;or by changing a&nbsp;Global Switch&nbsp;when a certain thing happens.</li></ul>
+						<!--
+					NewPP limit report
+					Cached time: 20210511024912
+					Cache expiry: 1209600
+					Dynamic content: false
+					CPU time usage: 0.016 seconds
+					Real time usage: 0.017 seconds
+					Preprocessor visited node count: 45/1000000
+					Preprocessor generated node count: 0/1000000
+					Post‐expand include size: 0/2097152 bytes
+					Template argument size: 0/2097152 bytes
+					Highest expansion depth: 2/40
+					Expensive parser function count: 0/100
+					Unstrip recursion depth: 0/20
+					Unstrip post‐expand size: 0/5000000 bytes
+					-->
+						<!--
+					Transclusion expansion time report (%,ms,calls,template)
+					100.00%    0.000      1 -total
+					-->
+						<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:187-0!canonical and timestamp 20210511024912 and revision id 258
+					 -->
+					</div>
+				</div>								<div class="printfooter">Retrieved from "<a dir="ltr" href="https://web.archive.org/web/20210512071840/https://essentialsdocs.fandom.com/wiki/Map_transfers?oldid=258">https://essentialsdocs.fandom.com/wiki/Map_transfers?oldid=258</a>"</div>
+			</div>
+
+
+			<div class="license-description">
+				Community content is available under <a href="https://web.archive.org/web/20210512071840/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+			</div>
+			<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+			<!-- end SkinAfterContent output -->
+		</div>
+	</article>
+	<!-- WikiaMainContent -->
+</section>

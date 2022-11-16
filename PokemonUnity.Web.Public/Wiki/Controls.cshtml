@@ -1,0 +1,356 @@
+﻿@{
+	Layout = "~/Theme/UnityFX/Layout/Wiki/_Layout";
+	Page.Title = "Abilities";
+}
+
+<section id="WikiaPage" class="WikiaPage V2" onclick="">
+	<header id="PageHeader" class="page-header">
+		<div class="page-header__main">
+			<h1 class="page-header__title">@Page.Title</h1>
+		</div>
+		@*<div class="page-header__contribution">
+			<div>
+				<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+			</div>
+			<div class="page-header__contribution-buttons">
+				<div class="wds-button-group">
+					<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+							<defs>
+								<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+								</path>
+							</defs>
+							<use fill-rule="evenodd" xlink:href="#lock-small">
+							</use>
+						</svg>
+						<span>Edit</span>
+					</a>
+					<div class="wds-dropdown">
+						<div class="wds-button wds-dropdown__toggle">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+								<defs>
+									<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+									</path>
+								</defs>
+								<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+								</use>
+							</svg>
+						</div>
+						<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+							<ul class="wds-list wds-is-linked">
+								<li>
+									<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+										History
+									</a>
+								</li>
+								<li>
+									<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+										Talk (0)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+						<defs>
+							<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+							</path>
+						</defs>
+						<use fill-rule="evenodd" xlink:href="#share-small">
+						</use>
+					</svg>
+					<span>Share</span>
+				</a>
+			</div>
+		</div>*@
+	</header>
+	<hr class="page-header__separator">
+
+	<div id="content" class="page-content">
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+			<!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://web.archive.org/web/20211024132729if_/https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<!-- End Google Tag Manager (noscript) -->
+			<div class="mw-parser-output">
+				<figure class="thumb tright " style="width: 256px"> 	<a href="https://web.archive.org/web/20211024132729/https://static.wikia.nocookie.net/essentialsdocs/images/f/fc/Controls.png/revision/latest?cb=20210502161810" class="image"><img alt="" src="https://web.archive.org/web/20211024132729im_/https://static.wikia.nocookie.net/essentialsdocs/images/f/fc/Controls.png/revision/latest/scale-to-width-down/256?cb=20210502161810" decoding="async" width="256" height="192" class="thumbimage" data-image-name="Controls.png" data-image-key="Controls.png"></a> 	 	<figcaption class="thumbcaption"> 		 		 		 			<p class="caption">The in-game help screen showing the basic controls.</p> 		 	</figcaption> </figure>
+				<p>
+					This page describes the&nbsp;<b>keyboard controls</b>&nbsp;used in Pokémon Essentials.
+				</p>
+				<div id="incontent_player" class="gpt-ad"></div><h2><span class="mw-headline" id="Keys_versus_inputs">Keys versus inputs</span></h2>
+				<p>
+					There is a distinction between the terms "key" and "input":
+				</p>
+				<ul>
+					<li>A&nbsp;<b>key</b>&nbsp;is the key you press on the keyboard. The game will convert a pressed key into an input. Pressing F1 at any point produces a menu that allows you to change which keys will be converted into which inputs.</li>
+					<li>An&nbsp;<b>input</b>, also known as a <b>button</b>, is an abstracted way of determining what the player tells the game to do. Inputs are usually seen in the scripts, with names like <code>Input::USE</code> and <code>Input::DOWN</code>.</li>
+				</ul>
+				<p>
+					This distinction allows scripts to ignore which of the dozens of keys the player is pressing, and just concern themselves with what the player wants the game to do. There is a limited number of possible inputs, listed below. The choice of which keys should produce which inputs is left to the player, who can rebind their keys to the inputs at any point by pressing F1.
+				</p>
+				<h2><span class="mw-headline" id="Default_controls">Default controls</span></h2>
+				<figure class="thumb tright " style="width: 256px"> 	<a href="https://web.archive.org/web/20211024132729/https://static.wikia.nocookie.net/essentialsdocs/images/5/52/ControlBinding.png/revision/latest?cb=20210502161630" class="image"><img alt="" src="https://web.archive.org/web/20211024132729im_/https://static.wikia.nocookie.net/essentialsdocs/images/5/52/ControlBinding.png/revision/latest/scale-to-width-down/256?cb=20210502161630" decoding="async" width="256" height="118" class="thumbimage" data-image-name="ControlBinding.png" data-image-key="ControlBinding.png"></a> 	 	<figcaption class="thumbcaption"> 		 		 		 			<p class="caption">The F1 Key bindings menu.</p> 		 	</figcaption> </figure>
+				<p>
+					The following table lists all the inputs available in Essentials, along with a description of what each one does and what the default keys are for each of them.&nbsp;
+					<br clear="all">
+				</p>
+				<table class="article-table" border="1">
+					<tbody>
+						<tr>
+							<th>
+								Input
+							</th>
+							<th>
+								Description
+							</th>
+							<th>
+								Default key
+							</th>
+						</tr>
+						<tr>
+							<td>
+								Input::UP<br>Input::DOWN<br>Input::LEFT<br>Input::RIGHT
+							</td>
+							<td>
+								<ul>
+									<li>Player movement in the overworld.</li>
+									<li>Up/down scrolling through lists.</li>
+									<li>General menu navigation.</li>
+								</ul>
+							</td>
+							<td>
+								Arrow keys
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::USE
+							</td>
+							<td>
+								<ul>
+									<li>Use/interact with things.</li>
+									<li>Confirm/choose.</li>
+									<li>Continue through displaying text.</li>
+								</ul>
+							</td>
+							<td>
+								C, Space, Return
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::BACK
+							</td>
+							<td>
+								<ul>
+									<li>Go back/cancel/exit.</li>
+									<li>Opens the&nbsp;<a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Pause_menu" title="Pause menu">Pause menu</a> while in the overworld.</li>
+								</ul>
+							</td>
+							<td>
+								X, Esc
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::ACTION
+							</td>
+							<td>
+								Various functions depending on context:
+								<ul>
+									<li>While walking/running in the overworld, hold to move at a different speed (running or walking, the opposite of the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Options_screen" title="Options screen">Default Movement</a> speed). Only if the player has the Running Shoes.</li>
+									<li>In battle, toggles the option to perform a <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Mega_Evolution" title="Mega Evolution">Mega Evolution</a> (if available).</li>
+									<li>In the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a>, opens the search feature.</li>
+									<li>In a <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9dex" title="Pokédex">Pokédex</a> entry screen, plays the cry of the displayed species.</li>
+									<li>In the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Party" title="Party">party</a> screen, starts to switch the selected Pokémon with another one, or cancels switching if a first Pokémon is already selected for switching.</li>
+									<li>In the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Summary_screens" title="Summary screens">summary screens</a>, plays the Pokémon's cry.</li>
+									<li>In the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">Bag</a> screen, allows moving the selected item.</li>
+									<li>In the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a> screen, toggles quick-movement mode (lets you pick up/swap/place Pokémon quickly).</li>
+									<li>In a game of <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Mini-games" title="Mini-games">Voltorb Flip</a>, toggles marking mode.</li>
+									<li>In a <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Mini-games" title="Mini-games">mining game</a>, changes the tool used.</li>
+									<li>In certain <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Mini-games" title="Mini-games">tile puzzle games</a>, rotates the selected tile.</li>
+									<li>Some minor navigation functions in certain screens (e.g. quickly move the cursor to a particular spot).</li>
+									<li>Some functions in <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Debug_mode" title="Debug mode">Debug mode</a> features.</li>
+								</ul>
+							</td>
+							<td>
+								Z, Shift
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::JUMPUP
+							</td>
+							<td>
+								<ul>
+									<li>Quickly moves the cursor up one "page" in a list of commands (or as far as possible).</li>
+									<li>In the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a> screen, changes to a different storage box.</li>
+									<li>In the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Shadow_Pok%C3%A9mon" title="Shadow Pokémon">Purify Chamber</a>, changes to a different set.</li>
+								</ul>
+							</td>
+							<td>
+								A
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::JUMPDOWN
+							</td>
+							<td>
+								<ul>
+									<li>Quickly moves the cursor down one "page" in a list of commands (or as far as possible).</li>
+									<li>In the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a> screen, changes to a different storage box.</li>
+									<li>In the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Shadow_Pok%C3%A9mon" title="Shadow Pokémon">Purify Chamber</a>, changes to a different set.</li>
+								</ul>
+							</td>
+							<td>
+								S
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::SPECIAL
+							</td>
+							<td>
+								<ul>
+									<li>In the overworld, opens the <span class="new" title="Ready menu (page does not exist)" data-uncrawlable-url="L3dpa2kvUmVhZHlfbWVudT9hY3Rpb249ZWRpdCZyZWRsaW5rPTE=">Ready menu</span> to use a&nbsp;<a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Bag" title="Bag">registered item</a> or <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Using_moves_outside_battle" title="Using moves outside battle">a move usable outside of battle</a>.</li>
+									<li>In battle, chooses the "Shift" action in the Fight menu (if available).</li>
+									<li>In the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9mon_storage" title="Pokémon storage">Pokémon storage</a> screen, quickly moves the cursor to the box name.</li>
+									<li>In the naming screen, changes the character tab.</li>
+								</ul>
+							</td>
+							<td>
+								D
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::AUX1
+							</td>
+							<td>
+								<i>unused</i>
+							</td>
+							<td>
+								Q
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::AUX2
+							</td>
+							<td>
+								<i>unused</i>
+							</td>
+							<td>
+								W
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::F8
+							</td>
+							<td>
+								<ul><li>Take a screenshot of the game. The picture is saved in the same place as the&nbsp;<a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Saving_and_loading" title="Saving and loading">save file</a>.</li></ul>
+							</td>
+							<td>
+								F8
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::F9
+							</td>
+							<td>
+								<ul><li><a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Debug_mode" title="Debug mode">Debug mode</a>&nbsp;only. Open the Debug menu while in the overworld.</li></ul>
+							</td>
+							<td>
+								F9
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<i>none</i>
+							</td>
+							<td>
+								<ul><li>Soft resets the game.</li></ul>
+							</td>
+							<td>
+								F12
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::CTRL
+							</td>
+							<td>
+								Various <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Debug_mode" title="Debug mode">Debug mode</a> functionality including:<i></i>
+								<ul>
+									<li>Hold when closing an error message to copy that message to the computer's clipboard.</li>
+									<li>Hold while starting the game in Debug mode to force the game to recompile <span class="new" title="Plugins (page does not exist)" data-uncrawlable-url="L3dpa2kvUGx1Z2lucz9hY3Rpb249ZWRpdCZyZWRsaW5rPTE=">plugin scripts</span> and <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/PBS_file" title="PBS file">PBS files</a>.</li>
+									<li>In the overworld, hold while moving to move over any tile.</li>
+									<li>In the overworld, hold to skip trainer battles and prevent wild encounters from occurring.</li>
+									<li>In the overworld, hold while using the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Pok%C3%A9_Radar" title="Poké Radar">Poké Radar</a> to be able to use it regardless of its battery level.</li>
+									<li>When using Fly, hold to allow flying to a location that hasn't been visited yet.</li>
+									<li>In a <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Mini-games" title="Mini-games">mining game</a>, hold while breaking the wall to prevent the crack from getting longer.</li>
+									<li>In battle, hold after a move's animation plays to force its additional effect to occur (if it has one).</li>
+									<li>In battle, hold at the start of throwing a Poké Ball to ensure that it will capture the Pokémon.</li>
+									<li>In battle, hold when choosing "Run" to ensure fleeing is successful. You can run from trainer battles this way, and will be given the choice of whether to treat it as a win or loss for the player.</li>
+									<li>In battle, hold while opening the Fight menu to force the <a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Mega_Evolution" title="Mega Evolution">Mega Evolution</a> option to appear (ignoring whether you have already performed a Mega Evolution this battle, and ignoring whether you have a Mega Ring item).</li>
+								</ul>
+							</td>
+							<td>
+								Ctrl
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Input::CTRL + Input::BACK + Input::DOWN
+							</td>
+							<td>
+								<ul><li>Press during the&nbsp;<a href="/web/20211024132729/https://essentialsdocs.fandom.com/wiki/Game_intro" title="Game intro">title screen</a>&nbsp;to delete all save data.</li></ul>
+							</td>
+							<td>
+								Ctrl + X + Down
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2><span class="mw-headline" id="How_to_use_inputs_in_scripts">How to use inputs in scripts</span></h2>
+				<p>
+					There are hundreds of examples of how to check for an input in the scripts. These checks are always done inside a repeating loop that also updates the game, so that the user can hesitate and still operate the game without fear that the game will have "moved on" and started doing something else.
+				</p><p>
+					To check whether the Up arrow key has been pressed, use the following:
+				</p>
+<pre>if Input.trigger?(Input::UP)
+</pre>
+				<p>
+					Any input (see the table above) can be used here.
+				</p>
+				<!--
+			NewPP limit report
+			Cached time: 20211015122605
+			Cache expiry: 1209600
+			Dynamic content: false
+			CPU time usage: 0.015 seconds
+			Real time usage: 0.018 seconds
+			Preprocessor visited node count: 44/1000000
+			Preprocessor generated node count: 0/1000000
+			Post‐expand include size: 0/2097152 bytes
+			Template argument size: 0/2097152 bytes
+			Highest expansion depth: 2/40
+			Expensive parser function count: 0/100
+			Unstrip recursion depth: 0/20
+			Unstrip post‐expand size: 0/5000000 bytes
+			-->
+				<!--
+			Transclusion expansion time report (%,ms,calls,template)
+			100.00%    0.000      1 -total
+			-->
+				<!-- Saved in parser cache with key prod:essentialsdocs:pcache:idhash:269-0!canonical!FandomDesktop!LegacyGalleries and timestamp 20211015122604 and revision id 1017
+			 -->
+			</div>
+		</div>
+	</div>
+	<!-- WikiaMainContent -->
+</section>
