@@ -88,12 +88,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Theme\UnityFX\Styles\docfx.css" />
-    <Content Include="Theme\UnityFX\Styles\docfx.js" />
-    <Content Include="Theme\UnityFX\Styles\docfx.vendor.css" />
-    <Content Include="Theme\UnityFX\Styles\docfx.vendor.js" />
-    <Content Include="Theme\UnityFX\Styles\main.css" />
-    <Content Include="Theme\UnityFX\Styles\main.js" />
+    <Content Include="Themes\UnityFX\Styles\docfx.css" />
+    <Content Include="Themes\UnityFX\Styles\docfx.js" />
+    <Content Include="Themes\UnityFX\Styles\docfx.vendor.css" />
+    <Content Include="Themes\UnityFX\Styles\docfx.vendor.js" />
+    <Content Include="Themes\UnityFX\Styles\main.css" />
+    <Content Include="Themes\UnityFX\Styles\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -103,21 +103,21 @@
   <ItemGroup>
     <Content Include="Api\index.cshtml" />
     <None Include="packages.config" />
-    <Content Include="Theme\UnityFX\Layout\_Partial-Api-Left_Nav-Panel.cshtml" />
-    <Content Include="Theme\UnityFX\Layout\_Partial-Api-Top_Nav-Panel.cshtml" />
-    <Content Include="Theme\UnityFX\Layout\_Layout-Wiki.cshtml" />
-    <Content Include="Theme\UnityFX\Layout\_Partial-Wiki-Left_Nav-Panel.cshtml" />
-    <Content Include="Theme\UnityFX\Layout\_Partial-Wiki-Top_Nav-Panel.cshtml" />
-    <Content Include="Theme\Guidebook\Wiki\_Layout-Left_Nav-Panel.cshtml" />
-    <Content Include="Theme\Guidebook\Wiki\_Layout-Top_Nav-Panel.cshtml" />
-    <Content Include="Theme\Guidebook\Wiki\_Layout.cshtml" />
+    <Content Include="Themes\UnityFX\Layout\_Partial-Api-Left_Nav-Panel.cshtml" />
+    <Content Include="Themes\UnityFX\Layout\_Partial-Api-Top_Nav-Panel.cshtml" />
+    <Content Include="Themes\UnityFX\Layout\_Layout-Wiki.cshtml" />
+    <Content Include="Themes\UnityFX\Layout\_Partial-Wiki-Left_Nav-Panel.cshtml" />
+    <Content Include="Themes\UnityFX\Layout\_Partial-Wiki-Top_Nav-Panel.cshtml" />
+    <Content Include="Themes\Guidebook\Wiki\_Layout-Left_Nav-Panel.cshtml" />
+    <Content Include="Themes\Guidebook\Wiki\_Layout-Top_Nav-Panel.cshtml" />
+    <Content Include="Themes\Guidebook\Wiki\_Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Theme\UnityFX\Layout\_Layout-Api.cshtml" />
+    <Content Include="Themes\UnityFX\Layout\_Layout-Api.cshtml" />
     <Content Include="Wiki\Pokemon\Ability.cshtml" />
     <Content Include="Wiki\Pokemon\Defining_a_species.cshtml" />
     <Content Include="Wiki\Pokemon\Defining_a_ability.cshtml" />

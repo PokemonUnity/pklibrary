@@ -14,9 +14,9 @@
 	<meta name="generator" content="docfx 2.40.11.0">
 
 	<link rel="shortcut icon" href="../favicon.ico">
-	<link rel="stylesheet" href="~/UnityFX/Styles/docfx.vendor.css">
-	<link rel="stylesheet" href="~/UnityFX/Styles/docfx.css">
-	<link rel="stylesheet" href="~/UnityFX/Styles/main.css">
+	<link rel="stylesheet" href="~/Themes/UnityFX/Styles/docfx.vendor.css">
+	<link rel="stylesheet" href="~/Themes/UnityFX/Styles/docfx.css">
+	<link rel="stylesheet" href="~/Themes/UnityFX/Styles/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<meta property="docfx:navrel" content="../toc.html">
 	<meta property="docfx:tocrel" content="toc.html">
@@ -44,7 +44,7 @@
 								<input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
 							</div>
 						</form>
-						@RenderPage("_Layout-Top_Nav-Panel.cshtml")
+						@RenderPage("_Partial-Api-Top_Nav-Panel.cshtml")
 					</div>
 				</div>
 			</nav>
@@ -52,7 +52,7 @@
 			<div class="subnav navbar navbar-default">
 				<div class="container hide-when-search" id="breadcrumb">
 					<ul class="level1 breadcrumb">
-						@RenderSection("breadcrumb")
+						@RenderSection("breadcrumb", false)
 					</ul>
 				</div>
 			</div>
@@ -62,7 +62,7 @@
 			<div class="sidenav hide-when-search">
 				<a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
 				<div class="sidetoggle collapse" id="sidetoggle">
-					<div id="sidetoc">@RenderPage("_Layout-Left_Nav-Panel.cshtml")</div>
+					<div id="sidetoc">@RenderPage("_Partial-Api-Left_Nav-Panel.cshtml")</div>
 				</div>
 			</div>
 			<div class="article row grid-right">
@@ -104,8 +104,8 @@
 		</footer>
 	</div>
 
-	<script type="text/javascript" src="~/UnityFX/Styles/docfx.vendor.js"></script>
-	<script type="text/javascript" src="~/UnityFX/Styles/docfx.js"></script>
-	<script type="text/javascript" src="~/UnityFX/Styles/main.js"></script>
+	<script type="text/javascript" src="~/Themes/UnityFX/Styles/docfx.vendor.js"></script>
+	<script type="text/javascript" src="~/Themes/UnityFX/Styles/docfx.js"></script>
+	<script type="text/javascript" src="~/Themes/UnityFX/Styles/main.js"></script>
 </body>
 </html>
