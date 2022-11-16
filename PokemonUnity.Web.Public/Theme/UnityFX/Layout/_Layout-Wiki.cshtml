@@ -1,0 +1,190 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>@Page.Title </title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="title" content="@Page.Title">
+	<meta name="generator" content="docfx 2.40.11.0">
+
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" href="~/UnityFX/Styles/docfx.vendor.css">
+	<link rel="stylesheet" href="~/UnityFX/Styles/docfx.css">
+	<link rel="stylesheet" href="~/UnityFX/Styles/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta property="docfx:navrel" content="../toc.html">
+	<meta property="docfx:tocrel" content="toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+	<div id="wrapper">
+		<header>
+			<nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<a class="navbar-brand" href="~/">
+							<img id="logo" class="svg" src="../logo.svg" alt="">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar">
+						<form class="navbar-form navbar-right" role="search" id="search">
+							<div class="form-group">
+								<input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+							</div>
+						</form>
+						@RenderPage("_Layout-Top_Nav-Panel.cshtml")
+					</div>
+				</div>
+			</nav>
+
+			<div class="subnav navbar navbar-default">
+				<div class="container hide-when-search" id="breadcrumb">
+					<ul class="level1 breadcrumb">
+						@RenderSection("breadcrumb")
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main role="main" class="container body-content hide-when-search">
+			<aside class="sidenav hide-when-search">
+				<a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+				<div class="sidetoggle collapse" id="sidetoggle">
+					<div id="sidetoc">@RenderPage("_Layout-Left_Nav-Panel.cshtml")</div>
+				</div>
+			</aside>
+			<div class="article row grid-right">
+				<div class="col-md-10">
+					<section id="WikiaPage" class="WikiaPage content wrap" id="_content" data-uid="">
+						<header id="PageHeader" class="page-header">
+							<div class="page-header__main">
+								<h1 id="title" class="page-header__title">@Page.Title</h1>
+							</div>
+							@*<div class="page-header__contribution">
+								<div>
+									<!--Empty div to ensure $actionButton is always pushed to bottom of the container-->
+								</div>
+								<div class="page-header__contribution-buttons">
+									<div class="wds-button-group">
+										<a href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=edit" class="wds-button" id="ca-viewsource" data-tracking="ca-viewsource">
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-lock-small">
+												<defs>
+													<path id="lock-small" d="M14 16H4V8h10v8zM7 4c0-1.104.897-2 2-2s2 .896 2 2v2H7V4zm8 2h-2V4c0-2.205-1.794-4-4-4S5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2">
+													</path>
+												</defs>
+												<use fill-rule="evenodd" xlink:href="#lock-small">
+												</use>
+											</svg>
+											<span>Edit</span>
+										</a>
+										<div class="wds-dropdown">
+											<div class="wds-button wds-dropdown__toggle">
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron" id="wds-icons-dropdown-tiny">
+													<defs>
+														<path id="dropdown-tiny-a" d="M6.0001895,8.80004571 C5.79538755,8.80004571 5.5905856,8.72164496 5.43458411,8.56564348 L2.23455364,5.365613 C2.00575146,5.13681083 1.93695081,4.79280755 2.06095199,4.4936047 C2.18415316,4.19440185 2.47695595,4 2.80015903,4 L9.20021997,4 C9.52342305,4 9.81542583,4.19440185 9.93942701,4.4936047 C10.0634282,4.79280755 9.99462754,5.13681083 9.76582536,5.365613 L6.56579489,8.56564348 C6.4097934,8.72164496 6.20499145,8.80004571 6.0001895,8.80004571 Z">
+														</path>
+													</defs>
+													<use fill-rule="evenodd" xlink:href="#dropdown-tiny-a">
+													</use>
+												</svg>
+											</div>
+											<div class="wds-dropdown__content wds-is-not-scrollable wds-is-right-aligned">
+												<ul class="wds-list wds-is-linked">
+													<li>
+														<a id="ca-history" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Abilities?action=history" data-tracking="ca-history-dropdown">
+															History
+														</a>
+													</li>
+													<li>
+														<a id="ca-talk" href="/web/20190329212818/https://essentialsdocs.fandom.com/wiki/Talk:Abilities?action=edit&amp;redlink=1" class="new" data-tracking="ca-talk-dropdown">
+															Talk (0)
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<a class="wds-button wds-is-secondary" href="#" id="ShareEntryPoint">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="wds-icon wds-icon-small" id="wds-icons-share-small">
+											<defs>
+												<path id="share-small" d="M14.5 15a1.502 1.502 0 0 1-1.406-2.022l.022-.05.017-.045c.236-.52.76-.883 1.367-.883.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5M4.906 9.522l-.022.05-.017.045c-.236.52-.76.883-1.367.883C2.673 10.5 2 9.827 2 9s.673-1.5 1.5-1.5c.607 0 1.131.363 1.367.883l.017.045.022.05a1.482 1.482 0 0 1 0 1.044M14.5 3c.827 0 1.5.673 1.5 1.5S15.327 6 14.5 6a1.503 1.503 0 0 1-1.367-.883l-.017-.045-.022-.05A1.502 1.502 0 0 1 14.5 3m0 7c-1.098 0-2.08.508-2.722 1.303L6.983 9.348a3.653 3.653 0 0 0 0-.696l4.795-1.955A3.492 3.492 0 0 0 14.5 8C16.43 8 18 6.43 18 4.5S16.43 1 14.5 1a3.504 3.504 0 0 0-3.483 3.848L6.222 6.803A3.492 3.492 0 0 0 3.5 5.5C1.57 5.5 0 7.07 0 9s1.57 3.5 3.5 3.5c1.098 0 2.08-.508 2.722-1.303l4.795 1.955A3.504 3.504 0 0 0 14.5 17c1.93 0 3.5-1.57 3.5-3.5S16.43 10 14.5 10">
+												</path>
+											</defs>
+											<use fill-rule="evenodd" xlink:href="#share-small">
+											</use>
+										</svg>
+										<span>Share</span>
+									</a>
+								</div>
+							</div>*@
+						</header>
+						<hr class="page-header__separator">
+
+						<article id="WikiaMainContent" class="WikiaMainContent">
+							<div id="WikiaMainContentContainer" class="WikiaMainContentContainer">
+								<div id="content" class="WikiaArticle">
+									<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+										@RenderBody()
+									</div>
+								</div>
+
+
+								<div class="license-description">
+									Community content is available under <a href="https://web.archive.org/web/20201028151500/https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.
+								</div>
+								<!-- render SkinAfterContent hook output - used by article comments, SMW factbox etc. -->
+								<!-- end SkinAfterContent output -->
+							</div>
+						</article>
+						<!-- WikiaMainContent -->
+					</section>
+				</div>
+
+				<div class="hidden-sm col-md-2" role="complementary">
+					<div class="sideaffix">
+						<div class="contribution">
+							<ul class="nav">
+								<li>
+									<a href="https://github.com/code-beans/UnityFX/blob/sandbox/docfx_project/api/index.md/#L1" class="contribution-link">Improve this Doc</a>
+								</li>
+							</ul>
+						</div>
+						<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+							<!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+						</nav>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="grad-bottom"></div>
+			<div class="footer">
+				<div class="container">
+					<span class="pull-right">
+						<a href="#top">Back to top</a>
+					</span>
+
+					<span>Generated by <strong>DocFX</strong></span>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="~/UnityFX/Styles/docfx.vendor.js"></script>
+	<script type="text/javascript" src="~/UnityFX/Styles/docfx.js"></script>
+	<script type="text/javascript" src="~/UnityFX/Styles/main.js"></script>
+</body>
+</html>
