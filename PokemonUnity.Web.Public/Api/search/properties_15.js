@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['unburden_0',['Unburden',['../class_pokemon_unity_1_1_combat_1_1_effects_1_1_battler.cshtml#a2cbdb701f33efeec05935b9172b1c5d4',1,'PokemonUnity.Combat.Effects.Battler.Unburden()'],['../interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_effects_1_1_i_effects_battler.cshtml#a82e1e0bec313916bdd07a004780d21bc',1,'PokemonEssentials.Interface.PokeBattle.Effects.IEffectsBattler.Unburden()']]],
+  ['undecided_1',['undecided',['../interface_pokemon_essentials_1_1_interface_1_1_battle_1_1_i_bug_contest_state.cshtml#a037587f0811a8c879b44b4a9e9e3c0e8',1,'PokemonEssentials::Interface::Battle::IBugContestState']]],
+  ['underground_2',['Underground',['../struct_pokemon_unity_1_1_inventory_1_1_item_flag.cshtml#ade01ac605080034a040274e016a54bed',1,'PokemonUnity::Inventory::ItemFlag']]],
+  ['unownshape_3',['unownShape',['../interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_pokemon.cshtml#a0739a5832433834f0dbd168ff013c9cc',1,'PokemonEssentials::Interface::PokeBattle::IPokemon']]],
+  ['uproar_4',['Uproar',['../class_pokemon_unity_1_1_combat_1_1_effects_1_1_battler.cshtml#aef1555d003f0cc1f85acd3e74603cd9f',1,'PokemonUnity.Combat.Effects.Battler.Uproar()'],['../interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_effects_1_1_i_effects_battler.cshtml#a8035c76178e5a8a7540e85e2e0de3218',1,'PokemonEssentials.Interface.PokeBattle.Effects.IEffectsBattler.Uproar()']]],
+  ['useable_5fin_5fbattle_5',['Useable_In_Battle',['../struct_pokemon_unity_1_1_inventory_1_1_item_flag.cshtml#a5482c8e3be0fac170afebc6f6905a4de',1,'PokemonUnity::Inventory::ItemFlag']]],
+  ['useable_5foverworld_6',['Useable_Overworld',['../struct_pokemon_unity_1_1_inventory_1_1_item_flag.cshtml#aefba57996af88edbb9b25127fc00f4b9',1,'PokemonUnity::Inventory::ItemFlag']]],
+  ['usemove_7',['UseMove',['../interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_hidden_move_handlers.cshtml#ab4f3a7f366f0819b80f915102d872873',1,'PokemonEssentials::Interface::Field::IHiddenMoveHandlers']]],
+  ['usepriority_8',['usepriority',['../class_pokemon_unity_1_1_combat_1_1_battle.cshtml#ae37c0f2e284dd480f0f97a799c8f125e',1,'PokemonUnity::Combat::Battle']]],
+  ['usestate_9',['UseState',['../class_pokemon_unity_1_1_combat_1_1_data_1_1_success_state.cshtml#abbdc2c4a8e9473f07be70ff22430840f',1,'PokemonUnity.Combat.Data.SuccessState.UseState()'],['../interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_success_state.cshtml#a0f2e76591186bec28f8e654e07ec97e9',1,'PokemonEssentials.Interface.PokeBattle.ISuccessState.UseState()']]],
+  ['uturn_10',['Uturn',['../class_pokemon_unity_1_1_combat_1_1_effects_1_1_battler.cshtml#adf8026165860a8f5f567720f8bcc037a',1,'PokemonUnity.Combat.Effects.Battler.Uturn()'],['../interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_effects_1_1_i_effects_battler.cshtml#ac73775e29d49b79ee04ea8c917b6699f',1,'PokemonEssentials.Interface.PokeBattle.Effects.IEffectsBattler.Uturn()']]]
+];
