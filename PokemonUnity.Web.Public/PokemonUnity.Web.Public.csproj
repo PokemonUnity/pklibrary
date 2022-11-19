@@ -102,6 +102,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Api\index.cshtml" />
+    <Content Include="Api\_PageStart.cshtml" />
+    <Content Include="Api\index.html" />
+    <Content Include="Api\annotated.cshtml" />
+    <Content Include="Api\classes.cshtml" />
+    <Content Include="Api\hierarchy.cshtml" />
     <None Include="packages.config" />
     <Content Include="Themes\UnityFX\Layout\_Partial-Api-Left_Nav-Panel.cshtml" />
     <Content Include="Themes\UnityFX\Layout\_Partial-Api-Top_Nav-Panel.cshtml" />
@@ -111,6 +116,7 @@
     <Content Include="Themes\Guidebook\Wiki\_Layout-Left_Nav-Panel.cshtml" />
     <Content Include="Themes\Guidebook\Wiki\_Layout-Top_Nav-Panel.cshtml" />
     <Content Include="Themes\Guidebook\Wiki\_Layout.cshtml" />
+    <Content Include="Themes\Doxygen\Layout\_Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
