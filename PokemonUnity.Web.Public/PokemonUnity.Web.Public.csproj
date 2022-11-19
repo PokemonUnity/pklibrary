@@ -102,11 +102,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Api\index.cshtml" />
-    <Content Include="Api\_PageStart.cshtml" />
     <Content Include="Api\index.html" />
     <Content Include="Api\annotated.cshtml" />
     <Content Include="Api\classes.cshtml" />
     <Content Include="Api\hierarchy.cshtml" />
+    <Content Include="Api\_PageStart.cshtml" />
     <None Include="packages.config" />
     <Content Include="Themes\UnityFX\Layout\_Partial-Api-Left_Nav-Panel.cshtml" />
     <Content Include="Themes\UnityFX\Layout\_Partial-Api-Top_Nav-Panel.cshtml" />
