@@ -13,6 +13,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#events">Events</a> &#124;
 <a href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene-members.cshtml">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PokemonEssentials.Interface.Screen.IEventScene Interface Reference</div></div>
 }
@@ -23,19 +24,18 @@ Inheritance diagram for PokemonEssentials.Interface.Screen.IEventScene:</div>
  <div class="center">
   <img src="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.png" usemap="#PokemonEssentials.Interface.Screen.IEventScene_map" alt=""/>
   <map id="PokemonEssentials.Interface.Screen.IEventScene_map" name="PokemonEssentials.Interface.Screen.IEventScene_map">
-<area href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_button_event_scene.cshtml" title="Shows a help screen listing the keyboard controls." alt="PokemonEssentials.Interface.Screen.IButtonEventScene" shape="rect" coords="0,56,328,80"/>
-<area href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_intro_event_scene.cshtml" title="First scene to load when game boots up. Displays logos and intro credits/sponsers" alt="PokemonEssentials.Interface.Screen.IIntroEventScene" shape="rect" coords="338,56,666,80"/>
+<area href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_button_event_scene.cshtml" title="Shows a help screen listing the keyboard controls." alt="PokemonEssentials.Interface.Screen.IButtonEventScene" shape="rect" coords="0,112,328,136"/>
+<area href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_intro_event_scene.cshtml" title="First scene to load when game boots up. Displays logos and intro credits/sponsors" alt="PokemonEssentials.Interface.Screen.IIntroEventScene" shape="rect" coords="338,112,666,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aae06059928f3892b083510e2ca0774ff"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#aae06059928f3892b083510e2ca0774ff">main</a> ()</td></tr>
+<tr class="memdesc:aae06059928f3892b083510e2ca0774ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beginning starting point that runs and operates the entire game application   <a href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#aae06059928f3892b083510e2ca0774ff">More...</a><br /></td></tr>
 <tr class="separator:aae06059928f3892b083510e2ca0774ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5d68c065752ad5ce65bd73aa69f0718"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml">IEventScene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#aa5d68c065752ad5ce65bd73aa69f0718">initialize</a> ()</td></tr>
-<tr class="separator:aa5d68c065752ad5ce65bd73aa69f0718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab85722f17e776d7718bb060a428c0796"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#ab85722f17e776d7718bb060a428c0796">dispose</a> ()</td></tr>
-<tr class="separator:ab85722f17e776d7718bb060a428c0796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1bd4b2b3593d861e70de298963f55ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml">IEventScene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#ad1bd4b2b3593d861e70de298963f55ba">initialize</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml">IViewport</a> viewport=null)</td></tr>
+<tr class="separator:ad1bd4b2b3593d861e70de298963f55ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39b01a578930a7b9be97f2f518005ae1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a39b01a578930a7b9be97f2f518005ae1">addLabel</a> (float x, float y, float width, string text)</td></tr>
 <tr class="separator:a39b01a578930a7b9be97f2f518005ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bfe23737982dd1ea99ee27136582f58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a0bfe23737982dd1ea99ee27136582f58">addImage</a> (float x, float y, string name)</td></tr>
@@ -51,16 +51,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a7f6744824b1af390ba6a4a64c030baf9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a7f6744824b1af390ba6a4a64c030baf9">onATrigger</a> <code>[get, set]</code></td></tr>
-<tr class="memdesc:a7f6744824b1af390ba6a4a64c030baf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action Button Pressed...   <a href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a7f6744824b1af390ba6a4a64c030baf9">More...</a><br /></td></tr>
-<tr class="separator:a7f6744824b1af390ba6a4a64c030baf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32b154460be3e064cc0990cfb30dac3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a32b154460be3e064cc0990cfb30dac3b">onBTrigger</a> <code>[get, set]</code></td></tr>
-<tr class="memdesc:a32b154460be3e064cc0990cfb30dac3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Back/Cancel Button Pressed...   <a href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a32b154460be3e064cc0990cfb30dac3b">More...</a><br /></td></tr>
-<tr class="separator:a32b154460be3e064cc0990cfb30dac3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac19af6c8488b7e8ac997045526db17a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#ac19af6c8488b7e8ac997045526db17a7">onUpdate</a> <code>[get, set]</code></td></tr>
-<tr class="separator:ac19af6c8488b7e8ac997045526db17a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeda265316ed969617320bf3d2ccfb27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#adeda265316ed969617320bf3d2ccfb27">disposed</a> <code>[get]</code></td></tr>
 <tr class="separator:adeda265316ed969617320bf3d2ccfb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
+Events</h2></td></tr>
+<tr class="memitem:a7ca7d0b8016eebb2e8874da43ae4428b"><td class="memItemLeft" align="right" valign="top">EventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a7ca7d0b8016eebb2e8874da43ae4428b">onATrigger</a></td></tr>
+<tr class="memdesc:a7ca7d0b8016eebb2e8874da43ae4428b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action Button Pressed...   <a href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a7ca7d0b8016eebb2e8874da43ae4428b">More...</a><br /></td></tr>
+<tr class="separator:a7ca7d0b8016eebb2e8874da43ae4428b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099380f70b04a582870bdb048ff5ca57"><td class="memItemLeft" align="right" valign="top">EventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a099380f70b04a582870bdb048ff5ca57">onBTrigger</a></td></tr>
+<tr class="memdesc:a099380f70b04a582870bdb048ff5ca57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Back/Cancel Button Pressed...   <a href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a099380f70b04a582870bdb048ff5ca57">More...</a><br /></td></tr>
+<tr class="separator:a099380f70b04a582870bdb048ff5ca57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb2daca31738cf3873fa55763a2ceaf"><td class="memItemLeft" align="right" valign="top">EventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a4fb2daca31738cf3873fa55763a2ceaf">onUpdate</a></td></tr>
+<tr class="memdesc:a4fb2daca31738cf3873fa55763a2ceaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update has been triggered, and a new frame is called   <a href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml#a4fb2daca31738cf3873fa55763a2ceaf">More...</a><br /></td></tr>
+<tr class="separator:a4fb2daca31738cf3873fa55763a2ceaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0bfe23737982dd1ea99ee27136582f58" name="a0bfe23737982dd1ea99ee27136582f58"></a>
@@ -127,23 +131,6 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="ab85722f17e776d7718bb060a428c0796" name="ab85722f17e776d7718bb060a428c0796"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab85722f17e776d7718bb060a428c0796">&#9670;&#160;</a></span>dispose()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PokemonEssentials.Interface.Screen.IEventScene.dispose </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af022403fbfceefe0bd8b51ca4245fb65" name="af022403fbfceefe0bd8b51ca4245fb65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af022403fbfceefe0bd8b51ca4245fb65">&#9670;&#160;</a></span>getPicture()</h2>
 
@@ -162,8 +149,8 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="aa5d68c065752ad5ce65bd73aa69f0718" name="aa5d68c065752ad5ce65bd73aa69f0718"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5d68c065752ad5ce65bd73aa69f0718">&#9670;&#160;</a></span>initialize()</h2>
+<a id="ad1bd4b2b3593d861e70de298963f55ba" name="ad1bd4b2b3593d861e70de298963f55ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1bd4b2b3593d861e70de298963f55ba">&#9670;&#160;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +158,8 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_event_scene.cshtml">IEventScene</a> PokemonEssentials.Interface.Screen.IEventScene.initialize </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml">IViewport</a>&#160;</td>
+          <td class="paramname"><em>viewport</em> = <code>null</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -193,6 +181,10 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Beginning starting point that runs and operates the entire game application  </p>
+<dl class="section return"><dt>Returns</dt><dd>Enumerates through each frame tick and calls <code>update</code> across entire game assembly </dd></dl>
+<p>This is supposed to mimic behavior of Unity's Monobehavior <code>OnUpdate</code> </p>
 
 </div>
 </div>
@@ -272,76 +264,56 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f6744824b1af390ba6a4a64c030baf9" name="a7f6744824b1af390ba6a4a64c030baf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f6744824b1af390ba6a4a64c030baf9">&#9670;&#160;</a></span>onATrigger</h2>
+<h2 class="groupheader">Event Documentation</h2>
+<a id="a7ca7d0b8016eebb2e8874da43ae4428b" name="a7ca7d0b8016eebb2e8874da43ae4428b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ca7d0b8016eebb2e8874da43ae4428b">&#9670;&#160;</a></span>onATrigger</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Screen.IEventScene.onATrigger</td>
+          <td class="memname">EventHandler PokemonEssentials.Interface.Screen.IEventScene.onATrigger</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Action Button Pressed...  </p>
 
 </div>
 </div>
-<a id="a32b154460be3e064cc0990cfb30dac3b" name="a32b154460be3e064cc0990cfb30dac3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32b154460be3e064cc0990cfb30dac3b">&#9670;&#160;</a></span>onBTrigger</h2>
+<a id="a099380f70b04a582870bdb048ff5ca57" name="a099380f70b04a582870bdb048ff5ca57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099380f70b04a582870bdb048ff5ca57">&#9670;&#160;</a></span>onBTrigger</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Screen.IEventScene.onBTrigger</td>
+          <td class="memname">EventHandler PokemonEssentials.Interface.Screen.IEventScene.onBTrigger</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Back/Cancel Button Pressed...  </p>
 
 </div>
 </div>
-<a id="ac19af6c8488b7e8ac997045526db17a7" name="ac19af6c8488b7e8ac997045526db17a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac19af6c8488b7e8ac997045526db17a7">&#9670;&#160;</a></span>onUpdate</h2>
+<a id="a4fb2daca31738cf3873fa55763a2ceaf" name="a4fb2daca31738cf3873fa55763a2ceaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb2daca31738cf3873fa55763a2ceaf">&#9670;&#160;</a></span>onUpdate</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Screen.IEventScene.onUpdate</td>
+          <td class="memname">EventHandler PokemonEssentials.Interface.Screen.IEventScene.onUpdate</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Update has been triggered, and a new frame is called  </p>
 
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>PokemonUnity.Shared/Framework/Essentials/Screen/<a class="el" href="_essentials_2_screen_2_i_scene_8cs.cshtml">IScene.cs</a></li>
+<li>PokemonUnity.Shared/Framework/Essentials/Screen/<a class="el" href="_i_intro_8cs.cshtml">IIntro.cs</a></li>
 </ul>
+

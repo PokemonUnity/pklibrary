@@ -12,6 +12,7 @@
 @section headertitle {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#events">Events</a> &#124;
 <a href="interface_pokemon_essentials_1_1_interface_1_1_i_input-members.cshtml">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PokemonEssentials.Interface.IInput Interface Reference</div></div>
 }
@@ -22,9 +23,9 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3d13c873ac0716cd60e19c4384c1c90c"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_input.cshtml#a3d13c873ac0716cd60e19c4384c1c90c">update</a> ()</td></tr>
-<tr class="memdesc:a3d13c873ac0716cd60e19c4384c1c90c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates input data. As a rule, this method is called once per frame.   <a href="interface_pokemon_essentials_1_1_interface_1_1_i_input.cshtml#a3d13c873ac0716cd60e19c4384c1c90c">More...</a><br /></td></tr>
-<tr class="separator:a3d13c873ac0716cd60e19c4384c1c90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98180ad976bc8760026f8515d2af8e50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_input.cshtml#a98180ad976bc8760026f8515d2af8e50">update</a> ()</td></tr>
+<tr class="memdesc:a98180ad976bc8760026f8515d2af8e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates input data. As a rule, this method is called once per frame.   <a href="interface_pokemon_essentials_1_1_interface_1_1_i_input.cshtml#a98180ad976bc8760026f8515d2af8e50">More...</a><br /></td></tr>
+<tr class="separator:a98180ad976bc8760026f8515d2af8e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6bc0760a95932864db8f56b7cbaa85c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_input.cshtml#ac6bc0760a95932864db8f56b7cbaa85c">press</a> (<a class="el" href="namespace_pokemon_unity_1_1_u_x.cshtml#a0a26d222a4145c5a05914246558a3b65">PokemonUnity.UX.InputKeys</a> num)</td></tr>
 <tr class="memdesc:ac6bc0760a95932864db8f56b7cbaa85c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the button number is currently being pressed.   <a href="interface_pokemon_essentials_1_1_interface_1_1_i_input.cshtml#ac6bc0760a95932864db8f56b7cbaa85c">More...</a><br /></td></tr>
 <tr class="separator:ac6bc0760a95932864db8f56b7cbaa85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -34,6 +35,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aac49620c567d545d6cc5f9cbea9827b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_input.cshtml#aac49620c567d545d6cc5f9cbea9827b1">repeat</a> (<a class="el" href="namespace_pokemon_unity_1_1_u_x.cshtml#a0a26d222a4145c5a05914246558a3b65">PokemonUnity.UX.InputKeys</a> num)</td></tr>
 <tr class="memdesc:aac49620c567d545d6cc5f9cbea9827b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the button number is being pressed again.   <a href="interface_pokemon_essentials_1_1_interface_1_1_i_input.cshtml#aac49620c567d545d6cc5f9cbea9827b1">More...</a><br /></td></tr>
 <tr class="separator:aac49620c567d545d6cc5f9cbea9827b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
+Events</h2></td></tr>
+<tr class="memitem:a13ba1fd6be2f928d1bdd461eb37a837b"><td class="memItemLeft" align="right" valign="top">Action&lt; object, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_event_arg_1_1_i_button_event_args.cshtml">EventArg.IButtonEventArgs</a>&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_input.cshtml#a13ba1fd6be2f928d1bdd461eb37a837b">OnKeyPress</a></td></tr>
+<tr class="separator:a13ba1fd6be2f928d1bdd461eb37a837b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A module that handles input data from a gamepad or keyboard.  </p>
@@ -121,14 +127,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3d13c873ac0716cd60e19c4384c1c90c" name="a3d13c873ac0716cd60e19c4384c1c90c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d13c873ac0716cd60e19c4384c1c90c">&#9670;&#160;</a></span>update()</h2>
+<a id="a98180ad976bc8760026f8515d2af8e50" name="a98180ad976bc8760026f8515d2af8e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98180ad976bc8760026f8515d2af8e50">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">IEnumerator PokemonEssentials.Interface.IInput.update </td>
+          <td class="memname">void PokemonEssentials.Interface.IInput.update </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -141,6 +147,22 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Event Documentation</h2>
+<a id="a13ba1fd6be2f928d1bdd461eb37a837b" name="a13ba1fd6be2f928d1bdd461eb37a837b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ba1fd6be2f928d1bdd461eb37a837b">&#9670;&#160;</a></span>OnKeyPress</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action&lt;object, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_event_arg_1_1_i_button_event_args.cshtml">EventArg.IButtonEventArgs</a>&gt; PokemonEssentials.Interface.IInput.OnKeyPress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>PokemonUnity.Shared/Framework/Essentials/<a class="el" href="_i_engine_8cs.cshtml">IEngine.cs</a></li>
 </ul>
+

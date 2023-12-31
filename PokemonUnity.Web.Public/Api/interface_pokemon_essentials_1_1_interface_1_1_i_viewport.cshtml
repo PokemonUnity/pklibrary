@@ -31,15 +31,12 @@ Inheritance diagram for PokemonEssentials.Interface.IViewport:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a802e4c3e8c8e06c6f8f3ad015e55a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml">IViewport</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml#a7a802e4c3e8c8e06c6f8f3ad015e55a9">initialize</a> (float x, float y, float height, float width)</td></tr>
 <tr class="separator:a7a802e4c3e8c8e06c6f8f3ad015e55a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2d496b19e157271802627673a417f27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml#ae2d496b19e157271802627673a417f27">dispose</a> ()</td></tr>
-<tr class="memdesc:ae2d496b19e157271802627673a417f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the viewport. If the viewport has already been freed, does nothing.   <a href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml#ae2d496b19e157271802627673a417f27">More...</a><br /></td></tr>
-<tr class="separator:ae2d496b19e157271802627673a417f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66682454e3cb88929770f6aa80aa6193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml#a66682454e3cb88929770f6aa80aa6193">flash</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_color.cshtml">IColor</a> <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml#a31016f0fb49c31553883306cebf3b80d">color</a>, int duration)</td></tr>
-<tr class="memdesc:a66682454e3cb88929770f6aa80aa6193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins flashing the viewport. duration specifies the number of frames the flash will last. If color is set to nil, the viewport will disappear while flashing.   <a href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml#a66682454e3cb88929770f6aa80aa6193">More...</a><br /></td></tr>
+<tr class="memdesc:a66682454e3cb88929770f6aa80aa6193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the viewport. If the viewport has already been freed, does nothing.   <a href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml#a66682454e3cb88929770f6aa80aa6193">More...</a><br /></td></tr>
 <tr class="separator:a66682454e3cb88929770f6aa80aa6193"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11072f89cd3ff4f1ef9cc879eb6ec0bd"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml#a11072f89cd3ff4f1ef9cc879eb6ec0bd">update</a> ()</td></tr>
-<tr class="memdesc:a11072f89cd3ff4f1ef9cc879eb6ec0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the viewport flash. As a rule, this method is called once per frame. It is not necessary to call this method if no flash effect is needed.   <a href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml#a11072f89cd3ff4f1ef9cc879eb6ec0bd">More...</a><br /></td></tr>
-<tr class="separator:a11072f89cd3ff4f1ef9cc879eb6ec0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52174c6540d458c9251fbc1f0fe72be3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml#a52174c6540d458c9251fbc1f0fe72be3">update</a> ()</td></tr>
+<tr class="memdesc:a52174c6540d458c9251fbc1f0fe72be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the viewport flash. As a rule, this method is called once per frame. It is not necessary to call this method if no flash effect is needed.   <a href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml#a52174c6540d458c9251fbc1f0fe72be3">More...</a><br /></td></tr>
+<tr class="separator:a52174c6540d458c9251fbc1f0fe72be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -64,25 +61,6 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The viewport class. Used when displaying sprites in one portion of the screen, with no overflow into other regions.  </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae2d496b19e157271802627673a417f27" name="ae2d496b19e157271802627673a417f27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2d496b19e157271802627673a417f27">&#9670;&#160;</a></span>dispose()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PokemonEssentials.Interface.IViewport.dispose </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frees the viewport. If the viewport has already been freed, does nothing.  </p>
-
-</div>
-</div>
 <a id="a66682454e3cb88929770f6aa80aa6193" name="a66682454e3cb88929770f6aa80aa6193"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66682454e3cb88929770f6aa80aa6193">&#9670;&#160;</a></span>flash()</h2>
 
@@ -104,8 +82,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Begins flashing the viewport. duration specifies the number of frames the flash will last. If color is set to nil, the viewport will disappear while flashing.  </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Frees the viewport. If the viewport has already been freed, does nothing.  </p>
+<p >Begins flashing the viewport. duration specifies the number of frames the flash will last. If color is set to nil, the viewport will disappear while flashing.  </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">color</td><td></td></tr>
     <tr><td class="paramname">duration</td><td></td></tr>
@@ -150,14 +128,14 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="a11072f89cd3ff4f1ef9cc879eb6ec0bd" name="a11072f89cd3ff4f1ef9cc879eb6ec0bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11072f89cd3ff4f1ef9cc879eb6ec0bd">&#9670;&#160;</a></span>update()</h2>
+<a id="a52174c6540d458c9251fbc1f0fe72be3" name="a52174c6540d458c9251fbc1f0fe72be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52174c6540d458c9251fbc1f0fe72be3">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">IEnumerator PokemonEssentials.Interface.IViewport.update </td>
+          <td class="memname">void PokemonEssentials.Interface.IViewport.update </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -316,3 +294,4 @@ Properties</h2></td></tr>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>PokemonUnity.Shared/Framework/Essentials/<a class="el" href="_i_engine_8cs.cshtml">IEngine.cs</a></li>
 </ul>
+

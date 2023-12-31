@@ -281,7 +281,7 @@ Properties</h2></td></tr>
 
 <p>This is a map ID number followed by the X and Y coordinates of a particular tile in that map. When a map with this metadata is entered (e.g.the interior of a Pok&eacute; Center), the Teleport destination is changed to the spot described by this metadata. Note that the spot itself is not usually on the same map as the one that has this metadata set; the spot is the tile just in front of the entrance to this map (e.g.just in front of a Pok&eacute; Center's entrance). </p>
 <p >For which maps: Pok&eacute; Centre interiors</p>
-<p >Note that the only thing this metadata affects is the Teleport destination. It does not determine Fly destinations (those are set on the region map in the PBS file "townmap.txt"), nor does it determine where the player goes to after blacking out (this is either set by the script <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a058b469c3ce4b26888762dca9b1ad61e">IGameField.pbSetPokemonCenter</a> which is part of the Pok&eacute; Center nurse event, or the <a class="el" href="struct_pokemon_essentials_1_1_interface_1_1_field_1_1_global_metadata.cshtml#a302347327ef70ffd218749e8983dbb5b" title="The point that the player is transferred to when they black out but no Pok&eacute; Center has been visited y...">GlobalMetadata.Home</a> global metadata). </p>
+<p >Note that the only thing this metadata affects is the Teleport destination. It does not determine Fly destinations (those are set on the region map in the S file "townmap.txt"), nor does it determine where the player goes to after blacking out (this is either set by the script <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a0fe6818f8529f6cae6d3b4b99e6ca62b">IGameField.SetPokemonCenter</a> which is part of the Pok&eacute; Center nurse event, or the <a class="el" href="struct_pokemon_essentials_1_1_interface_1_1_field_1_1_global_metadata.cshtml#a302347327ef70ffd218749e8983dbb5b" title="The point that the player is transferred to when they black out but no Pok&eacute; Center has been visited y...">GlobalMetadata.Home</a> global metadata). </p>
 
 </div>
 </div>
@@ -611,3 +611,4 @@ Properties</h2></td></tr>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>PokemonUnity.Shared/Framework/Essentials/Field/<a class="el" href="_i_misc_data_8cs.cshtml">IMiscData.cs</a></li>
 </ul>
+

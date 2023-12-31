@@ -36,7 +36,7 @@ namespace PokemonEssentials.Interface
 
 		//int id { get; }
 
-		void pbCheckEventTriggerAfterTurning();
+		void CheckEventTriggerAfterTurning();
 
 		bool tsOn(string c);
 
@@ -46,10 +46,7 @@ namespace PokemonEssentials.Interface
 
 		void setTempSwitchOff(string c);
 
-		object variable
-		{
-			get;
-		}
+		object variable { get; }
 
 		void setVariable(int variable);
 

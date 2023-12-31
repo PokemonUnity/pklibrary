@@ -45,9 +45,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6cac5bf128da3fae494e332e1fa8f38a"><td class="memItemLeft" align="right" valign="top">static byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pokemon_unity_1_1_monster_1_1_data_1_1_experience.cshtml#a6cac5bf128da3fae494e332e1fa8f38a">GetLevelFromExperience</a> (<a class="el" href="namespace_pokemon_unity_1_1_monster.cshtml#a49198148aa64bebaa554a09a1a020a1e">LevelingRate</a> levelingRate, int experiencePoints)</td></tr>
 <tr class="memdesc:a6cac5bf128da3fae494e332e1fa8f38a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a level given the number of Exp Points and growth rate.   <a href="class_pokemon_unity_1_1_monster_1_1_data_1_1_experience.cshtml#a6cac5bf128da3fae494e332e1fa8f38a">More...</a><br /></td></tr>
 <tr class="separator:a6cac5bf128da3fae494e332e1fa8f38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a854cf4704511e9304655654a1af8ca64"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pokemon_unity_1_1_monster_1_1_data_1_1_experience.cshtml#a854cf4704511e9304655654a1af8ca64">pbAddExperience</a> (int currexp, int expgain, <a class="el" href="namespace_pokemon_unity_1_1_monster.cshtml#a49198148aa64bebaa554a09a1a020a1e">LevelingRate</a> growth)</td></tr>
-<tr class="memdesc:a854cf4704511e9304655654a1af8ca64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds experience points ensuring that the new total doesn't exceed the maximum Exp. Points for the given growth rate.   <a href="class_pokemon_unity_1_1_monster_1_1_data_1_1_experience.cshtml#a854cf4704511e9304655654a1af8ca64">More...</a><br /></td></tr>
-<tr class="separator:a854cf4704511e9304655654a1af8ca64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e48a1baffeb24a71f490aee660e1b3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pokemon_unity_1_1_monster_1_1_data_1_1_experience.cshtml#ab7e48a1baffeb24a71f490aee660e1b3">AddExperience</a> (int currexp, int expgain, <a class="el" href="namespace_pokemon_unity_1_1_monster.cshtml#a49198148aa64bebaa554a09a1a020a1e">LevelingRate</a> growth)</td></tr>
+<tr class="memdesc:ab7e48a1baffeb24a71f490aee660e1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds experience points ensuring that the new total doesn't exceed the maximum Exp. Points for the given growth rate.   <a href="class_pokemon_unity_1_1_monster_1_1_data_1_1_experience.cshtml#ab7e48a1baffeb24a71f490aee660e1b3">More...</a><br /></td></tr>
+<tr class="separator:ab7e48a1baffeb24a71f490aee660e1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -106,8 +106,56 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab7e48a1baffeb24a71f490aee660e1b3" name="ab7e48a1baffeb24a71f490aee660e1b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e48a1baffeb24a71f490aee660e1b3">&#9670;&#160;</a></span>AddExperience() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int PokemonUnity.Monster.Data.Experience.AddExperience </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>currexp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>expgain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_pokemon_unity_1_1_monster.cshtml#a49198148aa64bebaa554a09a1a020a1e">LevelingRate</a>&#160;</td>
+          <td class="paramname"><em>growth</em>&#160;&nbsp;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds experience points ensuring that the new total doesn't exceed the maximum Exp. Points for the given growth rate.  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currexp</td><td>Current Exp Points.</td></tr>
+    <tr><td class="paramname">expgain</td><td>Exp. Points to add</td></tr>
+    <tr><td class="paramname">growth</td><td>Growth rate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a8f4604c557e9207656d74b979641bbb8" name="a8f4604c557e9207656d74b979641bbb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f4604c557e9207656d74b979641bbb8">&#9670;&#160;</a></span>AddExperience()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f4604c557e9207656d74b979641bbb8">&#9670;&#160;</a></span>AddExperience() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,54 +316,6 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="a854cf4704511e9304655654a1af8ca64" name="a854cf4704511e9304655654a1af8ca64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a854cf4704511e9304655654a1af8ca64">&#9670;&#160;</a></span>pbAddExperience()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int PokemonUnity.Monster.Data.Experience.pbAddExperience </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>currexp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>expgain</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_pokemon_unity_1_1_monster.cshtml#a49198148aa64bebaa554a09a1a020a1e">LevelingRate</a>&#160;</td>
-          <td class="paramname"><em>growth</em>&#160;&nbsp;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds experience points ensuring that the new total doesn't exceed the maximum Exp. Points for the given growth rate.  </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">currexp</td><td>Current Exp Points.</td></tr>
-    <tr><td class="paramname">expgain</td><td>Exp. Points to add</td></tr>
-    <tr><td class="paramname">growth</td><td>Growth rate.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a id="a325012375d22c950df42e6fb571171d5" name="a325012375d22c950df42e6fb571171d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a325012375d22c950df42e6fb571171d5">&#9670;&#160;</a></span>Current</h2>
@@ -414,3 +414,4 @@ Properties</h2></td></tr>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>PokemonUnity.Shared/Monster/Pokemon/Data/<a class="el" href="_experience_8cs.cshtml">Experience.cs</a></li>
 </ul>
+

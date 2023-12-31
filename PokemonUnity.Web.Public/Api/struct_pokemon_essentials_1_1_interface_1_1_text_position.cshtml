@@ -29,6 +29,8 @@ Inheritance diagram for PokemonEssentials.Interface.TextPosition:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab0386e6b76fd666dcb20622cdb9d49c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pokemon_essentials_1_1_interface_1_1_text_position.cshtml#ab0386e6b76fd666dcb20622cdb9d49c9">TextPosition</a> (string text, float x, float y, int leftAligned, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_color.cshtml">IColor</a> base_, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_color.cshtml">IColor</a> shadow)</td></tr>
+<tr class="separator:ab0386e6b76fd666dcb20622cdb9d49c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82a6e00bc3b2f789512a724085b202bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pokemon_essentials_1_1_interface_1_1_text_position.cshtml#a82a6e00bc3b2f789512a724085b202bb">TextPosition</a> (string text, float x, float y, bool? leftAligned, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_color.cshtml">IColor</a> base_, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_color.cshtml">IColor</a> shadow)</td></tr>
 <tr class="separator:a82a6e00bc3b2f789512a724085b202bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a352cca23c6e773504ae75d139ef1f47c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pokemon_essentials_1_1_interface_1_1_text_position.cshtml#a352cca23c6e773504ae75d139ef1f47c">TextPosition</a> (string name, float x, float y, float srcx, float srcy, float width, float height)</td></tr>
@@ -46,7 +48,7 @@ Properties</h2></td></tr>
 <tr class="memdesc:a5dd44098fb1fc95bcc6037103ee73ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y coordinate   <a href="struct_pokemon_essentials_1_1_interface_1_1_text_position.cshtml#a5dd44098fb1fc95bcc6037103ee73ca4">More...</a><br /></td></tr>
 <tr class="separator:a5dd44098fb1fc95bcc6037103ee73ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5d56b180fdeacea8e87b772b0cf1583"><td class="memItemLeft" align="right" valign="top">bool?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pokemon_essentials_1_1_interface_1_1_text_position.cshtml#ab5d56b180fdeacea8e87b772b0cf1583">LeftAligned</a> <code>[get, set]</code></td></tr>
-<tr class="memdesc:ab5d56b180fdeacea8e87b772b0cf1583"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true or 1, the text is right aligned. If 2, the text is centered. Otherwise, the text is left aligned.   <a href="struct_pokemon_essentials_1_1_interface_1_1_text_position.cshtml#ab5d56b180fdeacea8e87b772b0cf1583">More...</a><br /></td></tr>
+<tr class="memdesc:ab5d56b180fdeacea8e87b772b0cf1583"><td class="mdescLeft">&#160;</td><td class="mdescRight">If false, the text is right aligned. If null, the text is centered. Otherwise, the text is left aligned.   <a href="struct_pokemon_essentials_1_1_interface_1_1_text_position.cshtml#ab5d56b180fdeacea8e87b772b0cf1583">More...</a><br /></td></tr>
 <tr class="separator:ab5d56b180fdeacea8e87b772b0cf1583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4c272aff4587d8c321492a98890c872"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_color.cshtml">PokemonEssentials.Interface.IColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pokemon_essentials_1_1_interface_1_1_text_position.cshtml#ad4c272aff4587d8c321492a98890c872">Base</a> <code>[get, set]</code></td></tr>
 <tr class="memdesc:ad4c272aff4587d8c321492a98890c872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base color   <a href="struct_pokemon_essentials_1_1_interface_1_1_text_position.cshtml#ad4c272aff4587d8c321492a98890c872">More...</a><br /></td></tr>
@@ -75,8 +77,68 @@ Properties</h2></td></tr>
 <tr class="separator:aae8cc51bdb338d4ea28206c1f82ee40b inherit properties_interface_pokemon_essentials_1_1_interface_1_1_i_text_position"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab0386e6b76fd666dcb20622cdb9d49c9" name="ab0386e6b76fd666dcb20622cdb9d49c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0386e6b76fd666dcb20622cdb9d49c9">&#9670;&#160;</a></span>TextPosition() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PokemonEssentials.Interface.TextPosition.TextPosition </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>leftAligned</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_color.cshtml">IColor</a>&#160;</td>
+          <td class="paramname"><em>base_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_color.cshtml">IColor</a>&#160;</td>
+          <td class="paramname"><em>shadow</em>&#160;&nbsp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Text to draw</td></tr>
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">leftAligned</td><td>If 1, the text is right aligned. If 2, the text is centered. Otherwise, the text is left aligned. </td></tr>
+    <tr><td class="paramname">base_</td><td></td></tr>
+    <tr><td class="paramname">shadow</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a82a6e00bc3b2f789512a724085b202bb" name="a82a6e00bc3b2f789512a724085b202bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82a6e00bc3b2f789512a724085b202bb">&#9670;&#160;</a></span>TextPosition() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a6e00bc3b2f789512a724085b202bb">&#9670;&#160;</a></span>TextPosition() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -120,10 +182,23 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Text to draw</td></tr>
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">leftAligned</td><td>If false, the text is right aligned. If null, the text is centered. Otherwise, the text is left aligned. </td></tr>
+    <tr><td class="paramname">base_</td><td></td></tr>
+    <tr><td class="paramname">shadow</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a352cca23c6e773504ae75d139ef1f47c" name="a352cca23c6e773504ae75d139ef1f47c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a352cca23c6e773504ae75d139ef1f47c">&#9670;&#160;</a></span>TextPosition() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a352cca23c6e773504ae75d139ef1f47c">&#9670;&#160;</a></span>TextPosition() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +297,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>If true or 1, the text is right aligned. If 2, the text is centered. Otherwise, the text is left aligned.  </p>
+<p>If false, the text is right aligned. If null, the text is centered. Otherwise, the text is left aligned.  </p>
 
 <p>Implements <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_text_position.cshtml#ac4f25dfb918e4413251448f19f61b9c1">PokemonEssentials.Interface.ITextPosition</a>.</p>
 
@@ -335,3 +410,4 @@ Properties</h2></td></tr>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>PokemonUnity.Shared/Framework/Essentials/<a class="el" href="_i_text_position_8cs.cshtml">ITextPosition.cs</a></li>
 </ul>
+

@@ -10,7 +10,7 @@ using PokemonEssentials.Interface.EventArg;
 
 namespace PokemonUnity
 {
-    public partial class Game { 
+	public partial class Game {
 		/// <summary>
 		/// This class handles the map. It includes scrolling and passable determining
 		/// functions. Refer to <see cref="IGame.GameMap"/> for the instance of this class.
@@ -60,7 +60,7 @@ namespace PokemonUnity
 				@display_y = 0;
 			}
 			#endregion
-		
+
 			#region Methods
 			public void setup(int map_id) {
 				this.map_id = map_id;
@@ -86,6 +86,7 @@ namespace PokemonUnity
 				@need_refresh = false;
 				//Events.onMapCreate.trigger(this,map_id, @map, tileset);
 				//Events.OnMapCreate.Invoke(this,map_id, @map, tileset);
+				Events.OnMapCreateTrigger(this,map_id, @map, tileset);
 				@events = new Dictionary<int, IGameEvent>();
 				foreach (int i in @map.events.Keys) {
 					//@events[i] = new Game_Event(@map_id, @map.events[i],this);
@@ -136,13 +137,13 @@ namespace PokemonUnity
 			public void autoplayAsCue() {
 				if (@map.autoplay_bgm) {
 					if (IsNight) { //&& FileTest.audio_exist("Audio/BGM/"+ @map.bgm.name+ "n")
-						if (GameData is PokemonEssentials.Interface.Field.IGameField f) f.pbCueBGM(@map.bgm.name+"n",1.0f,@map.bgm.volume,@map.bgm.pitch);
+						if (GameData is PokemonEssentials.Interface.Field.IGameField f) f.CueBGM(@map.bgm.name+"n",1.0f,@map.bgm.volume,@map.bgm.pitch);
 					} else {
-						if (GameData is PokemonEssentials.Interface.Field.IGameField f) f.pbCueBGM(@map.bgm,1.0f);
+						if (GameData is PokemonEssentials.Interface.Field.IGameField f) f.CueBGM(@map.bgm,1.0f);
 					}
 				}
 				if (@map.autoplay_bgs) {
-					if (GameData is PokemonEssentials.Interface.IGameAudioPlay a) a.pbBGSPlay(@map.bgs);
+					if (GameData is PokemonEssentials.Interface.IGameAudioPlay a) a.BGSPlay(@map.bgs);
 				}
 			}
 			/// <summary>
@@ -152,13 +153,13 @@ namespace PokemonUnity
 			public void autoplay() {
 				if (@map.autoplay_bgm) {
 					if (IsNight) { //&& FileTest.audio_exist("Audio/BGM/"+ @map.bgm.name+ "n")
-						if (GameData is PokemonEssentials.Interface.IGameAudioPlay a) a.pbBGMPlay(@map.bgm.name+"n",@map.bgm.volume,@map.bgm.pitch);
+						if (GameData is PokemonEssentials.Interface.IGameAudioPlay a) a.BGMPlay(@map.bgm.name+"n",@map.bgm.volume,@map.bgm.pitch);
 					} else {
-						if (GameData is PokemonEssentials.Interface.IGameAudioPlay a) a.pbBGMPlay(@map.bgm);
+						if (GameData is PokemonEssentials.Interface.IGameAudioPlay a) a.BGMPlay(@map.bgm);
 					}
 				}
 				if (@map.autoplay_bgs) {
-					if (GameData is PokemonEssentials.Interface.IGameAudioPlay a) a.pbBGSPlay(@map.bgs);
+					if (GameData is PokemonEssentials.Interface.IGameAudioPlay a) a.BGSPlay(@map.bgs);
 				}
 			}
 
@@ -398,7 +399,7 @@ namespace PokemonUnity
 						int? tile_id = data[(int)System.Math.Floor(x), (int)System.Math.Floor(y), i];
 						if (tile_id == null) {
 							return false;
-						} else if (//@passages[tile_id.Value] != null && 
+						} else if (//@passages[tile_id.Value] != null &&
 							(@passages[tile_id.Value] & 0x80) == 0x80) {
 							return true;
 						}
@@ -415,7 +416,7 @@ namespace PokemonUnity
 							GameData.Global != null && GameData.Global.bridge==0 && !countBridge) continue;
 						if (tile_id == null) {
 							return 0;
-						} else if (//@terrain_tags[tile_id.Value] != null && 
+						} else if (//@terrain_tags[tile_id.Value] != null &&
 							@terrain_tags[tile_id.Value] > 0 &&
 							@terrain_tags[tile_id.Value]!=Terrains.Neutral) {
 							return @terrain_tags[tile_id.Value];
@@ -484,10 +485,10 @@ namespace PokemonUnity
 						case 2:
 							scroll_down(distance);
 							break;
-						case 4: 
+						case 4:
 							scroll_left(distance);
 							break;
-						case 6: 
+						case 6:
 							scroll_right(distance);
 							break;
 						case 8:
@@ -526,7 +527,7 @@ namespace PokemonUnity
 
 		public partial class Game_Map {
 			public string name { get {
-				string ret=""; //GameData.pbGetMessage(MessageTypes.MapNames,this.map_id); //Dictionary of Static Strings
+				string ret=""; //GameData.GetMessage(MessageTypes.MapNames,this.map_id); //Dictionary of Static Strings
 				if (GameData.Trainer != null) {
 					// Replace "\PN" with the Trainer.Name
 					//ret.gsub!(/\\PN/,GameData.Trainer.name);
@@ -551,7 +552,7 @@ namespace PokemonUnity
 
 			//public int display_x { set {
 			//  @display_x=value;
-			//  if (pbGetMetadata(this.map_id,MetadataSnapEdges)) {
+			//  if (GetMetadata(this.map_id,MetadataSnapEdges)) {
 			//    max_x = (this.width - Graphics.width*1.0f/Game_Map.TILEWIDTH) * Game_Map.realResX;
 			//    @display_x = Math.Max(0, Math.Min(@display_x, max_x));
 			//  }
@@ -560,13 +561,13 @@ namespace PokemonUnity
 			//
 			//public int display_y { set {
 			//  @display_y=value;
-			//  if (pbGetMetadata(this.map_id,MetadataSnapEdges)) {
+			//  if (GetMetadata(this.map_id,MetadataSnapEdges)) {
 			//    int max_y = (this.height - Graphics.height*1.0f/Game_Map.TILEHEIGHT) * Game_Map.realResY;
 			//    @display_y = Math.Max(0, Math.Min(@display_y, max_y));
 			//  }
 			//  if (GameData.MapFactory != null) GameData.MapFactory.setMapsInRange;
 			//} }
-			
+
 			public void start_scroll(int direction,int distance,int speed) {
 				@scroll_direction = direction;
 				if (direction==2 || direction==8) {
@@ -576,19 +577,19 @@ namespace PokemonUnity
 				}
 				@scroll_speed = speed;
 			}
-			
+
 			public void scroll_down(int distance) {
 				this.display_y+=distance;
 			}
-			
+
 			public void scroll_left(int distance) {
 				this.display_x-=distance;
 			}
-			
+
 			public void scroll_right(int distance) {
 				this.display_x+=distance;
 			}
-			
+
 			public void scroll_up(int distance) {
 				this.display_y-=distance;
 			}

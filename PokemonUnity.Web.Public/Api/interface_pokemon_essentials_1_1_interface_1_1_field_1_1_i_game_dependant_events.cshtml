@@ -12,6 +12,7 @@
 @section headertitle {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#events">Events</a> &#124;
 <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events-members.cshtml">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PokemonEssentials.Interface.Field.IGameDependantEvents Interface Reference</div></div>
 }
@@ -19,29 +20,117 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a94ae8eac0d9caa31cfa510016e481cc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a94ae8eac0d9caa31cfa510016e481cc5">pbRemoveDependencies</a> ()</td></tr>
-<tr class="separator:a94ae8eac0d9caa31cfa510016e481cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a528fc7c8cab7c31ced8ea277aa666065"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a528fc7c8cab7c31ced8ea277aa666065">pbAddDependency</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_event.cshtml">IGameEvent</a> @@event)</td></tr>
-<tr class="separator:a528fc7c8cab7c31ced8ea277aa666065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab52ea7ad22c8b0ecf13af05c1f1e0ad5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#ab52ea7ad22c8b0ecf13af05c1f1e0ad5">pbRemoveDependency</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_event.cshtml">IGameEvent</a> @@event)</td></tr>
-<tr class="separator:ab52ea7ad22c8b0ecf13af05c1f1e0ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbbbe76d1f3350951a0fa85e32f7c934"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#abbbbe76d1f3350951a0fa85e32f7c934">pbAddDependency2</a> (int eventID, string eventName, object commonEvent)</td></tr>
-<tr class="separator:abbbbe76d1f3350951a0fa85e32f7c934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e2be31d59c3bd955f58452df9b387ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a2e2be31d59c3bd955f58452df9b387ec">pbRemoveDependency2</a> (string eventName)</td></tr>
-<tr class="memdesc:a2e2be31d59c3bd955f58452df9b387ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Game_Character object associated with a dependent event.   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a2e2be31d59c3bd955f58452df9b387ec">More...</a><br /></td></tr>
-<tr class="separator:a2e2be31d59c3bd955f58452df9b387ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4fec3a5bc4f5b0fa6d69dafd6b9d26a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#aa4fec3a5bc4f5b0fa6d69dafd6b9d26a">pbTestPass</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> follower, float x, float y, int? direction=null)</td></tr>
-<tr class="separator:aa4fec3a5bc4f5b0fa6d69dafd6b9d26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ed471b4d16a21442c1ae6b43ffe6e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#ad5ed471b4d16a21442c1ae6b43ffe6e4">RemoveDependencies</a> ()</td></tr>
+<tr class="separator:ad5ed471b4d16a21442c1ae6b43ffe6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb0dd2fb84821c3bcad596b305a2014"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#aacb0dd2fb84821c3bcad596b305a2014">AddDependency</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_event.cshtml">IGameEvent</a> @@event)</td></tr>
+<tr class="separator:aacb0dd2fb84821c3bcad596b305a2014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1988eac6d7faf4d30fd7bf8884c683ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a1988eac6d7faf4d30fd7bf8884c683ec">RemoveDependency</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_event.cshtml">IGameEvent</a> @@event)</td></tr>
+<tr class="separator:a1988eac6d7faf4d30fd7bf8884c683ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac8d14c784e91a978b7f729c4e0dd6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#abac8d14c784e91a978b7f729c4e0dd6a">AddDependency2</a> (int eventID, string eventName, object commonEvent)</td></tr>
+<tr class="separator:abac8d14c784e91a978b7f729c4e0dd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af249aca7741097336f3a96df467b520f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#af249aca7741097336f3a96df467b520f">RemoveDependency2</a> (string eventName)</td></tr>
+<tr class="memdesc:af249aca7741097336f3a96df467b520f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Game_Character object associated with a dependent event.   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#af249aca7741097336f3a96df467b520f">More...</a><br /></td></tr>
+<tr class="separator:af249aca7741097336f3a96df467b520f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a373d7d0ad6c59b3a2c3a79b0a631a367"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a373d7d0ad6c59b3a2c3a79b0a631a367">TestPass</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> follower, float x, float y, int? direction=null)</td></tr>
+<tr class="separator:a373d7d0ad6c59b3a2c3a79b0a631a367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2558fbabe03c02ecd6f43931270d0b4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a2558fbabe03c02ecd6f43931270d0b4d">moveThrough</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> follower, int direction)</td></tr>
+<tr class="memdesc:a2558fbabe03c02ecd6f43931270d0b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same map only   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a2558fbabe03c02ecd6f43931270d0b4d">More...</a><br /></td></tr>
 <tr class="separator:a2558fbabe03c02ecd6f43931270d0b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6166e53e49dfd67071f953960b99ca7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a6166e53e49dfd67071f953960b99ca7b">moveFancy</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> follower, int direction)</td></tr>
+<tr class="memdesc:a6166e53e49dfd67071f953960b99ca7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same map only   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a6166e53e49dfd67071f953960b99ca7b">More...</a><br /></td></tr>
 <tr class="separator:a6166e53e49dfd67071f953960b99ca7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acac15406cf09333b29a1706614f6bac5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#acac15406cf09333b29a1706614f6bac5">jumpFancy</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> follower, int direction)</td></tr>
+<tr class="memdesc:acac15406cf09333b29a1706614f6bac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same map only   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#acac15406cf09333b29a1706614f6bac5">More...</a><br /></td></tr>
 <tr class="separator:acac15406cf09333b29a1706614f6bac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31f64396060349d34d592361b940df07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a31f64396060349d34d592361b940df07">pbFancyMoveTo</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> follower, float newX, float newY)</td></tr>
-<tr class="separator:a31f64396060349d34d592361b940df07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1966163dc187ec9253f98d754c08c3ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a1966163dc187ec9253f98d754c08c3ed">FancyMoveTo</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> follower, float newX, float newY)</td></tr>
+<tr class="separator:a1966163dc187ec9253f98d754c08c3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
+Events</h2></td></tr>
+<tr class="memitem:a30a69326bb6dbb319a69ca02b6c6c3d5"><td class="memItemLeft" align="right" valign="top">Action&lt; object, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_event_arg_1_1_i_on_spriteset_create_event_args.cshtml">EventArg.IOnSpritesetCreateEventArgs</a>&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a30a69326bb6dbb319a69ca02b6c6c3d5">OnSpritesetCreate</a></td></tr>
+<tr class="memdesc:a30a69326bb6dbb319a69ca02b6c6c3d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fires whenever a spriteset is created.   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a30a69326bb6dbb319a69ca02b6c6c3d5">More...</a><br /></td></tr>
+<tr class="separator:a30a69326bb6dbb319a69ca02b6c6c3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532b5212617c2d3e7e951e2ff49f61f7"><td class="memItemLeft" align="right" valign="top">Action&lt; object, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_event_arg_1_1_i_on_map_scene_change_event_args.cshtml">EventArg.IOnMapSceneChangeEventArgs</a>&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a532b5212617c2d3e7e951e2ff49f61f7">OnMapSceneChange</a></td></tr>
+<tr class="memdesc:a532b5212617c2d3e7e951e2ff49f61f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fires whenever the map scene is regenerated and soon after the player moves to a new map.   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_dependant_events.cshtml#a532b5212617c2d3e7e951e2ff49f61f7">More...</a><br /></td></tr>
+<tr class="separator:a532b5212617c2d3e7e951e2ff49f61f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aacb0dd2fb84821c3bcad596b305a2014" name="aacb0dd2fb84821c3bcad596b305a2014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb0dd2fb84821c3bcad596b305a2014">&#9670;&#160;</a></span>AddDependency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.AddDependency </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_event.cshtml">IGameEvent</a> @@&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abac8d14c784e91a978b7f729c4e0dd6a" name="abac8d14c784e91a978b7f729c4e0dd6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abac8d14c784e91a978b7f729c4e0dd6a">&#9670;&#160;</a></span>AddDependency2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.AddDependency2 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>eventName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>commonEvent</em>&#160;&nbsp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1966163dc187ec9253f98d754c08c3ed" name="a1966163dc187ec9253f98d754c08c3ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1966163dc187ec9253f98d754c08c3ed">&#9670;&#160;</a></span>FancyMoveTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.FancyMoveTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a>&#160;</td>
+          <td class="paramname"><em>follower</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newY</em>&#160;&nbsp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acac15406cf09333b29a1706614f6bac5" name="acac15406cf09333b29a1706614f6bac5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acac15406cf09333b29a1706614f6bac5">&#9670;&#160;</a></span>jumpFancy()</h2>
 
@@ -62,6 +151,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Same map only  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">follower</td><td></td></tr>
+    <tr><td class="paramname">direction</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -86,6 +184,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Same map only  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">follower</td><td></td></tr>
+    <tr><td class="paramname">direction</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a2558fbabe03c02ecd6f43931270d0b4d" name="a2558fbabe03c02ecd6f43931270d0b4d"></a>
@@ -109,92 +216,25 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Same map only  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">follower</td><td></td></tr>
+    <tr><td class="paramname">direction</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a528fc7c8cab7c31ced8ea277aa666065" name="a528fc7c8cab7c31ced8ea277aa666065"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a528fc7c8cab7c31ced8ea277aa666065">&#9670;&#160;</a></span>pbAddDependency()</h2>
+<a id="ad5ed471b4d16a21442c1ae6b43ffe6e4" name="ad5ed471b4d16a21442c1ae6b43ffe6e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ed471b4d16a21442c1ae6b43ffe6e4">&#9670;&#160;</a></span>RemoveDependencies()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.pbAddDependency </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_event.cshtml">IGameEvent</a> @@&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abbbbe76d1f3350951a0fa85e32f7c934" name="abbbbe76d1f3350951a0fa85e32f7c934"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbbbe76d1f3350951a0fa85e32f7c934">&#9670;&#160;</a></span>pbAddDependency2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.pbAddDependency2 </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>eventID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>eventName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">object&#160;</td>
-          <td class="paramname"><em>commonEvent</em>&#160;&nbsp;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a31f64396060349d34d592361b940df07" name="a31f64396060349d34d592361b940df07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31f64396060349d34d592361b940df07">&#9670;&#160;</a></span>pbFancyMoveTo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.pbFancyMoveTo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a>&#160;</td>
-          <td class="paramname"><em>follower</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>newX</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>newY</em>&#160;&nbsp;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a94ae8eac0d9caa31cfa510016e481cc5" name="a94ae8eac0d9caa31cfa510016e481cc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94ae8eac0d9caa31cfa510016e481cc5">&#9670;&#160;</a></span>pbRemoveDependencies()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.pbRemoveDependencies </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.RemoveDependencies </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -204,14 +244,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab52ea7ad22c8b0ecf13af05c1f1e0ad5" name="ab52ea7ad22c8b0ecf13af05c1f1e0ad5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab52ea7ad22c8b0ecf13af05c1f1e0ad5">&#9670;&#160;</a></span>pbRemoveDependency()</h2>
+<a id="a1988eac6d7faf4d30fd7bf8884c683ec" name="a1988eac6d7faf4d30fd7bf8884c683ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1988eac6d7faf4d30fd7bf8884c683ec">&#9670;&#160;</a></span>RemoveDependency()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.pbRemoveDependency </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.RemoveDependency </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_event.cshtml">IGameEvent</a> @@&#160;</td>
           <td class="paramname"><em>event</em></td><td>)</td>
@@ -222,14 +262,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2e2be31d59c3bd955f58452df9b387ec" name="a2e2be31d59c3bd955f58452df9b387ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e2be31d59c3bd955f58452df9b387ec">&#9670;&#160;</a></span>pbRemoveDependency2()</h2>
+<a id="af249aca7741097336f3a96df467b520f" name="af249aca7741097336f3a96df467b520f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af249aca7741097336f3a96df467b520f">&#9670;&#160;</a></span>RemoveDependency2()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.pbRemoveDependency2 </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameDependantEvents.RemoveDependency2 </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>eventName</em></td><td>)</td>
@@ -248,14 +288,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa4fec3a5bc4f5b0fa6d69dafd6b9d26a" name="aa4fec3a5bc4f5b0fa6d69dafd6b9d26a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4fec3a5bc4f5b0fa6d69dafd6b9d26a">&#9670;&#160;</a></span>pbTestPass()</h2>
+<a id="a373d7d0ad6c59b3a2c3a79b0a631a367" name="a373d7d0ad6c59b3a2c3a79b0a631a367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a373d7d0ad6c59b3a2c3a79b0a631a367">&#9670;&#160;</a></span>TestPass()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameDependantEvents.pbTestPass </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameDependantEvents.TestPass </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a>&#160;</td>
           <td class="paramname"><em>follower</em>, </td>
@@ -283,6 +323,40 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Event Documentation</h2>
+<a id="a532b5212617c2d3e7e951e2ff49f61f7" name="a532b5212617c2d3e7e951e2ff49f61f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532b5212617c2d3e7e951e2ff49f61f7">&#9670;&#160;</a></span>OnMapSceneChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action&lt;object, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_event_arg_1_1_i_on_map_scene_change_event_args.cshtml">EventArg.IOnMapSceneChangeEventArgs</a>&gt; PokemonEssentials.Interface.Field.IGameDependantEvents.OnMapSceneChange</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fires whenever the map scene is regenerated and soon after the player moves to a new map.  </p>
+
+</div>
+</div>
+<a id="a30a69326bb6dbb319a69ca02b6c6c3d5" name="a30a69326bb6dbb319a69ca02b6c6c3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a69326bb6dbb319a69ca02b6c6c3d5">&#9670;&#160;</a></span>OnSpritesetCreate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action&lt;object, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_event_arg_1_1_i_on_spriteset_create_event_args.cshtml">EventArg.IOnSpritesetCreateEventArgs</a>&gt; PokemonEssentials.Interface.Field.IGameDependantEvents.OnSpritesetCreate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fires whenever a spriteset is created.  </p>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>PokemonUnity.Shared/Framework/Essentials/Field/<a class="el" href="_i_dependant_events_8cs.cshtml">IDependantEvents.cs</a></li>
 </ul>
+

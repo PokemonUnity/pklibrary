@@ -88,6 +88,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="searchdata.sql" />
+    <Content Include="searchdata.xml" />
     <Content Include="Themes\UnityFX\Styles\docfx.css" />
     <Content Include="Themes\UnityFX\Styles\docfx.js" />
     <Content Include="Themes\UnityFX\Styles\docfx.vendor.css" />
@@ -107,6 +109,7 @@
     <Content Include="Api\classes.cshtml" />
     <Content Include="Api\hierarchy.cshtml" />
     <Content Include="Api\_PageStart.cshtml" />
+    <Content Include="Api\search.cshtml" />
     <None Include="packages.config" />
     <Content Include="Themes\UnityFX\Layout\_Partial-Api-Left_Nav-Panel.cshtml" />
     <Content Include="Themes\UnityFX\Layout\_Partial-Api-Top_Nav-Panel.cshtml" />

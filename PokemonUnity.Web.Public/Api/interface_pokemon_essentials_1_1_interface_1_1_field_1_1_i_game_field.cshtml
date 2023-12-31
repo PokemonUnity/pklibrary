@@ -12,6 +12,7 @@
 @section headertitle {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#events">Events</a> &#124;
 <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field-members.cshtml">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PokemonEssentials.Interface.Field.IGameField Interface Reference</div></div>
 }
@@ -32,151 +33,162 @@ Inheritance diagram for PokemonEssentials.Interface.Field.IGameField:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2f2efd5b46ce66a9a577a53e09a34dc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_poke_battle___scene.cshtml">IPokeBattle_Scene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a2f2efd5b46ce66a9a577a53e09a34dc3">pbNewBattleScene</a> ()</td></tr>
-<tr class="separator:a2f2efd5b46ce66a9a577a53e09a34dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8b427e6fcb83eef9e4222097edfadae"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ab8b427e6fcb83eef9e4222097edfadae">pbSceneStandby</a> (Action block=null)</td></tr>
-<tr class="separator:ab8b427e6fcb83eef9e4222097edfadae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6738ef56ec9fa3e7e067f8c24cfa9549"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a6738ef56ec9fa3e7e067f8c24cfa9549">pbBattleAnimation</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_audio_b_g_m.cshtml">IAudioBGM</a> bgm=null, int trainerid=-1, string trainername=&quot;&quot;, Action block=null)</td></tr>
-<tr class="separator:a6738ef56ec9fa3e7e067f8c24cfa9549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75c59f9716466514ce5575e3db9d8076"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a75c59f9716466514ce5575e3db9d8076">pbBattleAnimationOverride</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml">IViewport</a> viewport, int trainerid=-1, string trainername=&quot;&quot;)</td></tr>
-<tr class="memdesc:a75c59f9716466514ce5575e3db9d8076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override and use this method if you want to add a custom battle intro animation e.g. variants of the Vs. animation.   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a75c59f9716466514ce5575e3db9d8076">More...</a><br /></td></tr>
-<tr class="separator:a75c59f9716466514ce5575e3db9d8076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bfdcb428ef876aa17771ea1b85395ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a5bfdcb428ef876aa17771ea1b85395ff">pbPrepareBattle</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_battle.cshtml">IBattle</a> battle)</td></tr>
-<tr class="separator:a5bfdcb428ef876aa17771ea1b85395ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a945f91afbc3e5b2f215e822e7fd0f258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#a5f8faaaa9680d40830ea7c82e647b2e8">Environments</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a945f91afbc3e5b2f215e822e7fd0f258">pbGetEnvironment</a> ()</td></tr>
-<tr class="separator:a945f91afbc3e5b2f215e822e7fd0f258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a590f70f05455132e5973035ea9075135"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_pokemon.cshtml">IPokemon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a590f70f05455132e5973035ea9075135">pbGenerateWildPokemon</a> (<a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a> species, int level, bool isroamer=false)</td></tr>
-<tr class="separator:a590f70f05455132e5973035ea9075135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a022eee5527830f19fb2ed52fe72df8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_combat.cshtml#a6d3738e09e699ec67acc67d0f876f29b">PokemonUnity.Combat.BattleResults</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a3a022eee5527830f19fb2ed52fe72df8">pbWildBattle</a> (<a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a> species, int level, int? variable=null, bool canescape=true, bool canlose=false)</td></tr>
-<tr class="separator:a3a022eee5527830f19fb2ed52fe72df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55e3db62b35515459d8aa746a2978fd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_combat.cshtml#a6d3738e09e699ec67acc67d0f876f29b">PokemonUnity.Combat.BattleResults</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a55e3db62b35515459d8aa746a2978fd3">pbDoubleWildBattle</a> (<a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a> species1, int level1, <a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a> species2, int level2, int? variable=null, bool canescape=true, bool canlose=false)</td></tr>
-<tr class="separator:a55e3db62b35515459d8aa746a2978fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75f8bcd1cd6e609ea35cd1309fd87f46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a75f8bcd1cd6e609ea35cd1309fd87f46">pbCheckAllFainted</a> ()</td></tr>
-<tr class="separator:a75f8bcd1cd6e609ea35cd1309fd87f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab87333490604c92e0349f1d64a23c881"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ab87333490604c92e0349f1d64a23c881">pbEvolutionCheck</a> (int[] currentlevels)</td></tr>
-<tr class="separator:ab87333490604c92e0349f1d64a23c881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d552f174ce96ffbae8c97c6d0849964"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a6d552f174ce96ffbae8c97c6d0849964">pbDynamicItemList</a> (params <a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a>[] args)</td></tr>
-<tr class="separator:a6d552f174ce96ffbae8c97c6d0849964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d0e76ad3963fdba296c7828b90c0006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a4d0e76ad3963fdba296c7828b90c0006">pbPickup</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_pokemon.cshtml">IPokemon</a> pokemon)</td></tr>
-<tr class="memdesc:a4d0e76ad3963fdba296c7828b90c0006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the Pickup event after a battle if a Pokemon has the ability Pickup.   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a4d0e76ad3963fdba296c7828b90c0006">More...</a><br /></td></tr>
-<tr class="separator:a4d0e76ad3963fdba296c7828b90c0006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e743f67461ca6f1116fc3a32ac7b0b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a7e743f67461ca6f1116fc3a32ac7b0b3">pbEncounter</a> (<a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#a441bb53fe173af8730970779c8ef933b">Method</a> enctype)</td></tr>
-<tr class="separator:a7e743f67461ca6f1116fc3a32ac7b0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a053ad045678c0c1eeb6bfbca9d673057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a053ad045678c0c1eeb6bfbca9d673057">pbOnSpritesetCreate</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_spriteset_map.cshtml">ISpritesetMap</a> spriteset, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml">IViewport</a> viewport)</td></tr>
-<tr class="separator:a053ad045678c0c1eeb6bfbca9d673057"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8194e08022f031faa5a62f255e53184"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ae8194e08022f031faa5a62f255e53184">pbLedge</a> (float xOffset, float yOffset)</td></tr>
-<tr class="separator:ae8194e08022f031faa5a62f255e53184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad560ef56f6ad7619abbe55376d33109b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ad560ef56f6ad7619abbe55376d33109b">pbSlideOnIce</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_player.cshtml">IGamePlayer</a> _event=null)</td></tr>
-<tr class="separator:ad560ef56f6ad7619abbe55376d33109b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642222f3aff7c727809c45665a75e3c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a642222f3aff7c727809c45665a75e3c8">pbBattleOnStepTaken</a> ()</td></tr>
-<tr class="separator:a642222f3aff7c727809c45665a75e3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20b59980652532f1117254922ea77a2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a20b59980652532f1117254922ea77a2d">pbOnStepTaken</a> (bool eventTriggered)</td></tr>
-<tr class="separator:a20b59980652532f1117254922ea77a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57003784867afe1e961edf986606be45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a57003784867afe1e961edf986606be45">pbUpdateVehicle</a> ()</td></tr>
-<tr class="separator:a57003784867afe1e961edf986606be45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad00c6563ca53da64bea51b848b0e77bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ad00c6563ca53da64bea51b848b0e77bd">pbCancelVehicles</a> (int? destination=null)</td></tr>
-<tr class="separator:ad00c6563ca53da64bea51b848b0e77bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9928d69afb6191b203b5ff17cdb4ae01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a9928d69afb6191b203b5ff17cdb4ae01">pbCanUseBike</a> (int mapid)</td></tr>
-<tr class="separator:a9928d69afb6191b203b5ff17cdb4ae01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d34315340f87fa7c8a7f0709cd62bd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a3d34315340f87fa7c8a7f0709cd62bd4">pbMountBike</a> ()</td></tr>
-<tr class="separator:a3d34315340f87fa7c8a7f0709cd62bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7d403a1f8b364bebf47faebeddcd666"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ae7d403a1f8b364bebf47faebeddcd666">pbDismountBike</a> ()</td></tr>
-<tr class="separator:ae7d403a1f8b364bebf47faebeddcd666"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a058b469c3ce4b26888762dca9b1ad61e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a058b469c3ce4b26888762dca9b1ad61e">pbSetPokemonCenter</a> ()</td></tr>
-<tr class="separator:a058b469c3ce4b26888762dca9b1ad61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd6c8c770c57402d1376c262a4695f32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#abd6c8c770c57402d1376c262a4695f32">pbFishingBegin</a> ()</td></tr>
-<tr class="separator:abd6c8c770c57402d1376c262a4695f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a445409e51fbfaf72391519b65325d2c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a445409e51fbfaf72391519b65325d2c3">pbFishingEnd</a> ()</td></tr>
-<tr class="separator:a445409e51fbfaf72391519b65325d2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3db87f0d8b1939cf34fa05ab812f3506"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a3db87f0d8b1939cf34fa05ab812f3506">pbFishing</a> (bool hasencounter, int rodtype=1)</td></tr>
-<tr class="separator:a3db87f0d8b1939cf34fa05ab812f3506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb8393d5840479efd6e90573d9302ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#affb8393d5840479efd6e90573d9302ae">pbWaitForInput</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_window.cshtml">IWindow</a> msgwindow, string message, int frames)</td></tr>
-<tr class="separator:affb8393d5840479efd6e90573d9302ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab07eefeae790d2fe9696528f6a54a94b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ab07eefeae790d2fe9696528f6a54a94b">pbWaitMessage</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_window.cshtml">IWindow</a> msgwindow, int time)</td></tr>
-<tr class="separator:ab07eefeae790d2fe9696528f6a54a94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0128968d5c488994ccd2bdc3538f424c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a0128968d5c488994ccd2bdc3538f424c">pbStartOver</a> (bool gameover=false)</td></tr>
-<tr class="separator:a0128968d5c488994ccd2bdc3538f424c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa5c43e4dc2593fa68c5a82ac87b346f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#aaa5c43e4dc2593fa68c5a82ac87b346f">pbCaveEntranceEx</a> (bool exiting)</td></tr>
-<tr class="separator:aaa5c43e4dc2593fa68c5a82ac87b346f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ea537d408b1050b170c1a657d15a9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a32ea537d408b1050b170c1a657d15a9d">pbCaveEntrance</a> ()</td></tr>
-<tr class="separator:a32ea537d408b1050b170c1a657d15a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e80a75e0216673f226ba07b13bde5fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a7e80a75e0216673f226ba07b13bde5fa">pbCaveExit</a> ()</td></tr>
-<tr class="separator:a7e80a75e0216673f226ba07b13bde5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada325a18eecd62b6a86694712b7398d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ada325a18eecd62b6a86694712b7398d6">pbSetEscapePoint</a> ()</td></tr>
-<tr class="separator:ada325a18eecd62b6a86694712b7398d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5c2877fa2f68664563d195f33b02003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ae5c2877fa2f68664563d195f33b02003">pbEraseEscapePoint</a> ()</td></tr>
-<tr class="separator:ae5c2877fa2f68664563d195f33b02003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ad1832bfe11d4fb3e2761f2db283c08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a6ad1832bfe11d4fb3e2761f2db283c08">pbRegisterPartner</a> (<a class="el" href="namespace_pokemon_unity.cshtml#a40e9330636bad76fe0f3fdc9d7ae87c2">TrainerTypes</a> trainerid, string trainername, int partyid=0)</td></tr>
-<tr class="separator:a6ad1832bfe11d4fb3e2761f2db283c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0612a25cf69cde599168f152c2fe65b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a0612a25cf69cde599168f152c2fe65b2">pbDeregisterPartner</a> ()</td></tr>
-<tr class="separator:a0612a25cf69cde599168f152c2fe65b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aed60ab47d5cb8b27248e75ebf858bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a2aed60ab47d5cb8b27248e75ebf858bc">pbPokerus</a> ()</td></tr>
-<tr class="memdesc:a2aed60ab47d5cb8b27248e75ebf858bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the Pok&eacute; Center should explain Pok&eacute;rus to the player, if a healed Pok&eacute;mon has it.   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a2aed60ab47d5cb8b27248e75ebf858bc">More...</a><br /></td></tr>
-<tr class="separator:a2aed60ab47d5cb8b27248e75ebf858bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add82b66566e571e12fa8850b15f78677"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#add82b66566e571e12fa8850b15f78677">pbCueBGM</a> (string bgm, float seconds, int? volume=null, float? pitch=null)</td></tr>
-<tr class="separator:add82b66566e571e12fa8850b15f78677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9f1b8d662816389ccbfd426facee5f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ac9f1b8d662816389ccbfd426facee5f4">pbCueBGM</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_audio_b_g_m.cshtml">IAudioBGM</a> bgm, float seconds, int? volume=null, float? pitch=null)</td></tr>
-<tr class="separator:ac9f1b8d662816389ccbfd426facee5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f7aaeed2224f87fd6043a5edceb4506"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a3f7aaeed2224f87fd6043a5edceb4506">pbAutoplayOnTransition</a> ()</td></tr>
-<tr class="separator:a3f7aaeed2224f87fd6043a5edceb4506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5e834ff95fd607866e962da4ce1e0a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#af5e834ff95fd607866e962da4ce1e0a5">pbAutoplayOnSave</a> ()</td></tr>
-<tr class="separator:af5e834ff95fd607866e962da4ce1e0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a175415b9a9b784af321d9dab7b7db660"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_wave_data.cshtml">IWaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a175415b9a9b784af321d9dab7b7db660">pbRecord</a> (string text, float maxtime=30.0f)</td></tr>
-<tr class="separator:a175415b9a9b784af321d9dab7b7db660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71db55c92d157968ad96962bd7bdc394"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a71db55c92d157968ad96962bd7bdc394">pbRxdataExists</a> (string file)</td></tr>
-<tr class="separator:a71db55c92d157968ad96962bd7bdc394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfc64313631bc2483b81e6636b1969a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#acfc64313631bc2483b81e6636b1969a7">pbItemBall</a> (<a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a> item, int quantity=1)</td></tr>
-<tr class="separator:acfc64313631bc2483b81e6636b1969a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d7b001c3fd61f5d8f80c32899482e1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a0d7b001c3fd61f5d8f80c32899482e1b">pbReceiveItem</a> (<a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a> item, int quantity=1)</td></tr>
-<tr class="separator:a0d7b001c3fd61f5d8f80c32899482e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb88393e43e621b7945fdf68b7dd51a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#adb88393e43e621b7945fdf68b7dd51a8">pbUseKeyItem</a> ()</td></tr>
-<tr class="separator:adb88393e43e621b7945fdf68b7dd51a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a425d69e65387f745e3842e603ba99eff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a425d69e65387f745e3842e603ba99eff">pbBridgeOn</a> (float height=2)</td></tr>
-<tr class="separator:a425d69e65387f745e3842e603ba99eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1660d67d61c48a1ec4873f291298e85a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a1660d67d61c48a1ec4873f291298e85a">pbBridgeOff</a> ()</td></tr>
-<tr class="separator:a1660d67d61c48a1ec4873f291298e85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae018d789c31f5e9e2da95c9cc95af8e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ae018d789c31f5e9e2da95c9cc95af8e3">pbEventFacesPlayer</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_player.cshtml">IGamePlayer</a> player, float distance)</td></tr>
-<tr class="separator:ae018d789c31f5e9e2da95c9cc95af8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a94538ce4f65dfcb2b289ef1da873d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a0a94538ce4f65dfcb2b289ef1da873d2">pbEventCanReachPlayer</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_player.cshtml">IGamePlayer</a> player, float distance)</td></tr>
-<tr class="separator:a0a94538ce4f65dfcb2b289ef1da873d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a33c038ebe8b75c3665e02210213bdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_tile_position.cshtml">ITilePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a7a33c038ebe8b75c3665e02210213bdf">pbFacingTileRegular</a> (float? direction=null, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event=null)</td></tr>
-<tr class="separator:a7a33c038ebe8b75c3665e02210213bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9e08115da742f90842d88826612a22b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_tile_position.cshtml">ITilePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ac9e08115da742f90842d88826612a22b">pbFacingTile</a> (float? direction=null, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event=null)</td></tr>
-<tr class="separator:ac9e08115da742f90842d88826612a22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11712644b4e812a211c8e4fe3fffeb16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a11712644b4e812a211c8e4fe3fffeb16">pbFacingEachOther</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> event1, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> event2)</td></tr>
-<tr class="separator:a11712644b4e812a211c8e4fe3fffeb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d6f1fa9f112bc5748b0ade50502ef2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#ab4a5d1860bd07de7a21b4981e764700d">Terrains</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ad8d6f1fa9f112bc5748b0ade50502ef2">pbGetTerrainTag</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event=null, bool countBridge=false)</td></tr>
-<tr class="separator:ad8d6f1fa9f112bc5748b0ade50502ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a757c571d98509160738e8282828426ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#ab4a5d1860bd07de7a21b4981e764700d">Terrains</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a757c571d98509160738e8282828426ac">pbFacingTerrainTag</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event=null, float? dir=null)</td></tr>
-<tr class="separator:a757c571d98509160738e8282828426ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4b99d8c9530dd13fe12d057f26c69c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ae4b99d8c9530dd13fe12d057f26c69c5">pbTurnTowardEvent</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> otherEvent)</td></tr>
-<tr class="separator:ae4b99d8c9530dd13fe12d057f26c69c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3b205181c641e3c2b23e185a8487014"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ab3b205181c641e3c2b23e185a8487014">pbMoveTowardPlayer</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event)</td></tr>
-<tr class="separator:ab3b205181c641e3c2b23e185a8487014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fe22c15f1b026dc9a37b635091a66e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a5fe22c15f1b026dc9a37b635091a66e4">pbJumpToward</a> (int dist=1, bool playSound=false, bool cancelSurf=false)</td></tr>
-<tr class="separator:a5fe22c15f1b026dc9a37b635091a66e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2dfc533f667b793a7f9c627352639d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ae2dfc533f667b793a7f9c627352639d5">pbWait</a> (int numframes)</td></tr>
-<tr class="separator:ae2dfc533f667b793a7f9c627352639d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc1d0e5eaf0f538485dade576272c90c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#abc1d0e5eaf0f538485dade576272c90c">pbToneChangeAll</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_tone.cshtml">ITone</a> tone, float duration)</td></tr>
-<tr class="separator:abc1d0e5eaf0f538485dade576272c90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab567c475714eaffc0778fe2ed38e2fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#aab567c475714eaffc0778fe2ed38e2fb">pbShake</a> (int power, int speed, int frames)</td></tr>
-<tr class="separator:aab567c475714eaffc0778fe2ed38e2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0af80a7e473dc2329f40c6f92772944d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a0af80a7e473dc2329f40c6f92772944d">pbFlash</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_color.cshtml">IColor</a> color, int frames)</td></tr>
-<tr class="separator:a0af80a7e473dc2329f40c6f92772944d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9642150b705cc874384addb20adebee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#af9642150b705cc874384addb20adebee">pbScrollMap</a> (int direction, int distance, float speed)</td></tr>
-<tr class="separator:af9642150b705cc874384addb20adebee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb7253f8d9a4a8186dbe592f3e991a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_poke_battle___scene.cshtml">IPokeBattle_Scene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a6eb7253f8d9a4a8186dbe592f3e991a9">NewBattleScene</a> ()</td></tr>
+<tr class="separator:a6eb7253f8d9a4a8186dbe592f3e991a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb993421d254c8f127e02599a19b7e0d"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#adb993421d254c8f127e02599a19b7e0d">SceneStandby</a> (Action block=null)</td></tr>
+<tr class="separator:adb993421d254c8f127e02599a19b7e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2721da775c15d0839da2ca8634969f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a8c2721da775c15d0839da2ca8634969f">BattleAnimation</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_audio_b_g_m.cshtml">IAudioBGM</a> bgm=null, int trainerid=-1, string trainername=&quot;&quot;, Action block=null)</td></tr>
+<tr class="separator:a8c2721da775c15d0839da2ca8634969f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27cf50a06641eece0e7aee256fda0eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ae27cf50a06641eece0e7aee256fda0eb">BattleAnimationOverride</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml">IViewport</a> viewport, int trainerid=-1, string trainername=&quot;&quot;)</td></tr>
+<tr class="memdesc:ae27cf50a06641eece0e7aee256fda0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override and use this method if you want to add a custom battle intro animation e.g. variants of the Vs. animation.   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ae27cf50a06641eece0e7aee256fda0eb">More...</a><br /></td></tr>
+<tr class="separator:ae27cf50a06641eece0e7aee256fda0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049ce6202ba637e4b0c1195a91049db7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a049ce6202ba637e4b0c1195a91049db7">PrepareBattle</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_battle.cshtml">IBattle</a> battle)</td></tr>
+<tr class="separator:a049ce6202ba637e4b0c1195a91049db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd7c130d9e079e63f3b44a0863542cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#a5f8faaaa9680d40830ea7c82e647b2e8">Environments</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a7fd7c130d9e079e63f3b44a0863542cb">GetEnvironment</a> ()</td></tr>
+<tr class="separator:a7fd7c130d9e079e63f3b44a0863542cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134b08c1dab76df9165c45c01b83e7a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_pokemon.cshtml">IPokemon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a134b08c1dab76df9165c45c01b83e7a5">GenerateWildPokemon</a> (<a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a> species, int level, bool isroamer=false)</td></tr>
+<tr class="separator:a134b08c1dab76df9165c45c01b83e7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ad640a68948147d92722aeca1a94e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a99ad640a68948147d92722aeca1a94e4">ControlledWildBattle</a> (<a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a> species, int level, <a class="el" href="namespace_pokemon_unity.cshtml#af1839a452927e1d32ae272ee55e5ac97">Moves</a>[] moves=null, int? ability=null, <a class="el" href="namespace_pokemon_unity_1_1_monster.cshtml#a006b000842ecac022ed75bd637df09dd">PokemonUnity.Monster.Natures</a>? nature=null, bool? gender=null, <a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a>? item=null, bool? shiny=null, int outcomeVar=1, bool canRun=true, bool canLose=false)</td></tr>
+<tr class="separator:a99ad640a68948147d92722aeca1a94e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbde42ddbe16fb0e5654d1786cebbf55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_combat.cshtml#a6d3738e09e699ec67acc67d0f876f29b">PokemonUnity.Combat.BattleResults</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#acbde42ddbe16fb0e5654d1786cebbf55">WildBattleCore</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_pokemon.cshtml">IPokemon</a> pkmn, int? variable=null, bool canescape=true, bool canlose=false)</td></tr>
+<tr class="separator:acbde42ddbe16fb0e5654d1786cebbf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa810d67dbdfe91febedd2369cad4777e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_combat.cshtml#a6d3738e09e699ec67acc67d0f876f29b">PokemonUnity.Combat.BattleResults</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#aa810d67dbdfe91febedd2369cad4777e">WildBattle</a> (<a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a> species, int level, int? variable=null, bool canescape=true, bool canlose=false)</td></tr>
+<tr class="separator:aa810d67dbdfe91febedd2369cad4777e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ab58209880082b4dba4845835493a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_combat.cshtml#a6d3738e09e699ec67acc67d0f876f29b">PokemonUnity.Combat.BattleResults</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a30ab58209880082b4dba4845835493a8">DoubleWildBattle</a> (<a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a> species1, int level1, <a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a> species2, int level2, int? variable=null, bool canescape=true, bool canlose=false)</td></tr>
+<tr class="separator:a30ab58209880082b4dba4845835493a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49aa217d4396ffbd37c90dd51971b67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#aa49aa217d4396ffbd37c90dd51971b67">CheckAllFainted</a> ()</td></tr>
+<tr class="separator:aa49aa217d4396ffbd37c90dd51971b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f9d6f1a220515c420e91f11e3f0881"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a26f9d6f1a220515c420e91f11e3f0881">EvolutionCheck</a> (int[] currentlevels)</td></tr>
+<tr class="separator:a26f9d6f1a220515c420e91f11e3f0881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2ad4271d17fc215a348fc78e7d20c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a5c2ad4271d17fc215a348fc78e7d20c9">DynamicItemList</a> (params <a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a>[] args)</td></tr>
+<tr class="separator:a5c2ad4271d17fc215a348fc78e7d20c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b96706c3af483d25da0958616cdf62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a35b96706c3af483d25da0958616cdf62">Pickup</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_pokemon.cshtml">IPokemon</a> pokemon)</td></tr>
+<tr class="memdesc:a35b96706c3af483d25da0958616cdf62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the Pickup event after a battle if a Pokemon has the ability Pickup.   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a35b96706c3af483d25da0958616cdf62">More...</a><br /></td></tr>
+<tr class="separator:a35b96706c3af483d25da0958616cdf62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b5addb38674dfc2efb364b29c736fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#aa2b5addb38674dfc2efb364b29c736fe">Encounter</a> (<a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#a441bb53fe173af8730970779c8ef933b">Method</a> enctype)</td></tr>
+<tr class="separator:aa2b5addb38674dfc2efb364b29c736fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb77d4a6351a1cfa273a66bcb406d86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a3bb77d4a6351a1cfa273a66bcb406d86">OnSpritesetCreate</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_spriteset_map.cshtml">ISpritesetMap</a> spriteset, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml">IViewport</a> viewport)</td></tr>
+<tr class="separator:a3bb77d4a6351a1cfa273a66bcb406d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f2a65e6ca8aa0908e396f0e284c144"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ac9f2a65e6ca8aa0908e396f0e284c144">Ledge</a> (float xOffset, float yOffset)</td></tr>
+<tr class="separator:ac9f2a65e6ca8aa0908e396f0e284c144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab904b9b562d43bc2b035c790c6cad4fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ab904b9b562d43bc2b035c790c6cad4fb">SlideOnIce</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_player.cshtml">IGamePlayer</a> _event=null)</td></tr>
+<tr class="separator:ab904b9b562d43bc2b035c790c6cad4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c69bf373ec1870332ffac4372167adb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a5c69bf373ec1870332ffac4372167adb">BattleOnStepTaken</a> ()</td></tr>
+<tr class="separator:a5c69bf373ec1870332ffac4372167adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27aea909391d9d67be261394c234a515"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a27aea909391d9d67be261394c234a515">OnStepTaken</a> (bool eventTriggered)</td></tr>
+<tr class="separator:a27aea909391d9d67be261394c234a515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af613d6668786dd3b9e9e951157dfb995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#af613d6668786dd3b9e9e951157dfb995">UpdateVehicle</a> ()</td></tr>
+<tr class="separator:af613d6668786dd3b9e9e951157dfb995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a95d301e98e6ed8e16312c47a57ea34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a0a95d301e98e6ed8e16312c47a57ea34">CancelVehicles</a> (int? destination=null)</td></tr>
+<tr class="separator:a0a95d301e98e6ed8e16312c47a57ea34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1fca9c276496c07e7b7e3ae2790833"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#aff1fca9c276496c07e7b7e3ae2790833">CanUseBike</a> (int mapid)</td></tr>
+<tr class="separator:aff1fca9c276496c07e7b7e3ae2790833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ba13f10487d17ae5bc98f52ee8bc60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#aa8ba13f10487d17ae5bc98f52ee8bc60">MountBike</a> ()</td></tr>
+<tr class="separator:aa8ba13f10487d17ae5bc98f52ee8bc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795fd3e3b50a402646939e960d0e6f5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a795fd3e3b50a402646939e960d0e6f5c">DismountBike</a> ()</td></tr>
+<tr class="separator:a795fd3e3b50a402646939e960d0e6f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe6818f8529f6cae6d3b4b99e6ca62b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a0fe6818f8529f6cae6d3b4b99e6ca62b">SetPokemonCenter</a> ()</td></tr>
+<tr class="separator:a0fe6818f8529f6cae6d3b4b99e6ca62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e89048516c86774c7374902174bc94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a32e89048516c86774c7374902174bc94">FishingBegin</a> ()</td></tr>
+<tr class="separator:a32e89048516c86774c7374902174bc94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4e6dc35ad3c947864bba4720c5f2ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ade4e6dc35ad3c947864bba4720c5f2ac">FishingEnd</a> ()</td></tr>
+<tr class="separator:ade4e6dc35ad3c947864bba4720c5f2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e265224312521e620838b73ab6c5f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a44e265224312521e620838b73ab6c5f5">Fishing</a> (bool hasencounter, int rodtype=1)</td></tr>
+<tr class="separator:a44e265224312521e620838b73ab6c5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a2bc781d97a84ce7af7d14574d2b74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a64a2bc781d97a84ce7af7d14574d2b74">WaitForInput</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_window.cshtml">IWindow</a> msgwindow, string message, int frames)</td></tr>
+<tr class="separator:a64a2bc781d97a84ce7af7d14574d2b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d4c206bc0daab5c104b1675e36e75d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a17d4c206bc0daab5c104b1675e36e75d">WaitMessage</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_window.cshtml">IWindow</a> msgwindow, int time)</td></tr>
+<tr class="separator:a17d4c206bc0daab5c104b1675e36e75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84c98eb444a77399c39fc440e5ed72c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#af84c98eb444a77399c39fc440e5ed72c">StartOver</a> (bool gameover=false)</td></tr>
+<tr class="separator:af84c98eb444a77399c39fc440e5ed72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad520ff11603d60c5153eb78ddac9023a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ad520ff11603d60c5153eb78ddac9023a">CaveEntranceEx</a> (bool exiting)</td></tr>
+<tr class="separator:ad520ff11603d60c5153eb78ddac9023a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6a9366d235324f9272a80c8552fb19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a5e6a9366d235324f9272a80c8552fb19">CaveEntrance</a> ()</td></tr>
+<tr class="separator:a5e6a9366d235324f9272a80c8552fb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f6257964f22dabe7d446aee60b822d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a86f6257964f22dabe7d446aee60b822d">CaveExit</a> ()</td></tr>
+<tr class="separator:a86f6257964f22dabe7d446aee60b822d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13892b7acab08990c9906896ccf8de48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a13892b7acab08990c9906896ccf8de48">SetEscapePoint</a> ()</td></tr>
+<tr class="separator:a13892b7acab08990c9906896ccf8de48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59778acaf092e47eeaf3630b66581418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a59778acaf092e47eeaf3630b66581418">EraseEscapePoint</a> ()</td></tr>
+<tr class="separator:a59778acaf092e47eeaf3630b66581418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97deb4e5d468fccad195430e3000680"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ae97deb4e5d468fccad195430e3000680">RegisterPartner</a> (<a class="el" href="namespace_pokemon_unity.cshtml#a40e9330636bad76fe0f3fdc9d7ae87c2">TrainerTypes</a> trainerid, string trainername, int partyid=0)</td></tr>
+<tr class="separator:ae97deb4e5d468fccad195430e3000680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50800f8c7f877ab3af6cbdb35ae9a052"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a50800f8c7f877ab3af6cbdb35ae9a052">DeregisterPartner</a> ()</td></tr>
+<tr class="separator:a50800f8c7f877ab3af6cbdb35ae9a052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cae16006e1fe462ab32eefe22f315a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a8cae16006e1fe462ab32eefe22f315a0">Pokerus</a> ()</td></tr>
+<tr class="memdesc:a8cae16006e1fe462ab32eefe22f315a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the Pok&eacute; Center should explain Pok&eacute;rus to the player, if a healed Pok&eacute;mon has it.   <a href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a8cae16006e1fe462ab32eefe22f315a0">More...</a><br /></td></tr>
+<tr class="separator:a8cae16006e1fe462ab32eefe22f315a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cab9698942c7f8aad389a1ccb936944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a4cab9698942c7f8aad389a1ccb936944">CueBGM</a> (string bgm, float seconds, int? volume=null, float? pitch=null)</td></tr>
+<tr class="separator:a4cab9698942c7f8aad389a1ccb936944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec683f166b439506a4a03d6ab900ab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a7ec683f166b439506a4a03d6ab900ab1">CueBGM</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_audio_b_g_m.cshtml">IAudioBGM</a> bgm, float seconds, int? volume=null, float? pitch=null)</td></tr>
+<tr class="separator:a7ec683f166b439506a4a03d6ab900ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72aa9406ad7bf6e223f0d3d79671170d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a72aa9406ad7bf6e223f0d3d79671170d">AutoplayOnTransition</a> ()</td></tr>
+<tr class="separator:a72aa9406ad7bf6e223f0d3d79671170d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d252576cd5e8423af09ee08e6f53510"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a1d252576cd5e8423af09ee08e6f53510">AutoplayOnSave</a> ()</td></tr>
+<tr class="separator:a1d252576cd5e8423af09ee08e6f53510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a89bdc8de4766a9e26e58c5454169ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_wave_data.cshtml">IWaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a6a89bdc8de4766a9e26e58c5454169ad">Record</a> (string text, float maxtime=30.0f)</td></tr>
+<tr class="separator:a6a89bdc8de4766a9e26e58c5454169ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a108fce6eeaa07de9ed1951cfc4ad6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a62a108fce6eeaa07de9ed1951cfc4ad6">RxdataExists</a> (string file)</td></tr>
+<tr class="separator:a62a108fce6eeaa07de9ed1951cfc4ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022b875d7157fd2696ed4b1f7f727e2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a022b875d7157fd2696ed4b1f7f727e2b">ItemBall</a> (<a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a> item, int quantity=1)</td></tr>
+<tr class="separator:a022b875d7157fd2696ed4b1f7f727e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9735c2153adbf875d989e6ef55cc72ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a9735c2153adbf875d989e6ef55cc72ec">ReceiveItem</a> (<a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a> item, int quantity=1)</td></tr>
+<tr class="separator:a9735c2153adbf875d989e6ef55cc72ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2784a114fc725328da54f647954483fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a2784a114fc725328da54f647954483fd">UseKeyItem</a> ()</td></tr>
+<tr class="separator:a2784a114fc725328da54f647954483fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7648fc5337f2d41000117e0a647831f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ad7648fc5337f2d41000117e0a647831f">BridgeOn</a> (float height=2)</td></tr>
+<tr class="separator:ad7648fc5337f2d41000117e0a647831f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438c28a1f7a4b881fe39a65a65472097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a438c28a1f7a4b881fe39a65a65472097">BridgeOff</a> ()</td></tr>
+<tr class="separator:a438c28a1f7a4b881fe39a65a65472097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96110d718ec9379dfb3a3916ff05ca5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ac96110d718ec9379dfb3a3916ff05ca5">EventFacesPlayer</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_player.cshtml">IGamePlayer</a> player, float distance)</td></tr>
+<tr class="separator:ac96110d718ec9379dfb3a3916ff05ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4944b3516d9501c88053efa65824b6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ac4944b3516d9501c88053efa65824b6f">EventCanReachPlayer</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_player.cshtml">IGamePlayer</a> player, float distance)</td></tr>
+<tr class="separator:ac4944b3516d9501c88053efa65824b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f09ffd0c2aff60e47663e5a3980351"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_tile_position.cshtml">ITilePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a70f09ffd0c2aff60e47663e5a3980351">FacingTileRegular</a> (float? direction=null, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event=null)</td></tr>
+<tr class="separator:a70f09ffd0c2aff60e47663e5a3980351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde68457a7fe6561c2d9e33e708c5303"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_tile_position.cshtml">ITilePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#abde68457a7fe6561c2d9e33e708c5303">FacingTile</a> (float? direction=null, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event=null)</td></tr>
+<tr class="separator:abde68457a7fe6561c2d9e33e708c5303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30c7a314c1f0d4384da773a6efc1da7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#af30c7a314c1f0d4384da773a6efc1da7">FacingEachOther</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> event1, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> event2)</td></tr>
+<tr class="separator:af30c7a314c1f0d4384da773a6efc1da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a139b8d6e7f5286471443a73958f5ecfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#ab4a5d1860bd07de7a21b4981e764700d">Terrains</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a139b8d6e7f5286471443a73958f5ecfa">GetTerrainTag</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event=null, bool countBridge=false)</td></tr>
+<tr class="separator:a139b8d6e7f5286471443a73958f5ecfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167af5fc297e478f7a2001bcef00dbae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#ab4a5d1860bd07de7a21b4981e764700d">Terrains</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a167af5fc297e478f7a2001bcef00dbae">FacingTerrainTag</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event=null, float? dir=null)</td></tr>
+<tr class="separator:a167af5fc297e478f7a2001bcef00dbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb61a31f7eddd533f524fc1e564a4da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a3eb61a31f7eddd533f524fc1e564a4da">TurnTowardEvent</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> otherEvent)</td></tr>
+<tr class="separator:a3eb61a31f7eddd533f524fc1e564a4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467be70359547fb9a9206ff6e0e3a8c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a467be70359547fb9a9206ff6e0e3a8c6">MoveTowardPlayer</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a> _event)</td></tr>
+<tr class="separator:a467be70359547fb9a9206ff6e0e3a8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919f21f72f8dcbefcdd5ba73c8a578ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a919f21f72f8dcbefcdd5ba73c8a578ba">JumpToward</a> (int dist=1, bool playSound=false, bool cancelSurf=false)</td></tr>
+<tr class="separator:a919f21f72f8dcbefcdd5ba73c8a578ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd98d0534fee5a0ebcbafa37443a1df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#aacd98d0534fee5a0ebcbafa37443a1df">Wait</a> (int numframes)</td></tr>
+<tr class="separator:aacd98d0534fee5a0ebcbafa37443a1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1bfbf7385b86b554907d9196a03b70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#add1bfbf7385b86b554907d9196a03b70">ToneChangeAll</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_tone.cshtml">ITone</a> tone, float duration)</td></tr>
+<tr class="separator:add1bfbf7385b86b554907d9196a03b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342c802db2c76a0bb42cc9210031fdc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a342c802db2c76a0bb42cc9210031fdc2">Shake</a> (int power, int speed, int frames)</td></tr>
+<tr class="separator:a342c802db2c76a0bb42cc9210031fdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d0dbb4905c085e63d1e3b509f7ef35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a20d0dbb4905c085e63d1e3b509f7ef35">Flash</a> (<a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_color.cshtml">IColor</a> color, int frames)</td></tr>
+<tr class="separator:a20d0dbb4905c085e63d1e3b509f7ef35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d878be14ae3f457075fb89cbbe928b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#ab7d878be14ae3f457075fb89cbbe928b">ScrollMap</a> (int direction, int distance, float speed)</td></tr>
+<tr class="separator:ab7d878be14ae3f457075fb89cbbe928b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
+Events</h2></td></tr>
+<tr class="memitem:aab2533ea37aeeb8693356a32e934cadf"><td class="memItemLeft" align="right" valign="top">EventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#aab2533ea37aeeb8693356a32e934cadf">OnStartBattle</a></td></tr>
+<tr class="separator:aab2533ea37aeeb8693356a32e934cadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65dd237c53baa252a1e1fdaadb86bb33"><td class="memItemLeft" align="right" valign="top">Action&lt; object, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_event_arg_1_1_i_on_end_battle_event_args.cshtml">IOnEndBattleEventArgs</a>&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_game_field.cshtml#a65dd237c53baa252a1e1fdaadb86bb33">OnEndBattle</a></td></tr>
+<tr class="separator:a65dd237c53baa252a1e1fdaadb86bb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Extension of base game class... </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game.cshtml">IGame</a></dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af5e834ff95fd607866e962da4ce1e0a5" name="af5e834ff95fd607866e962da4ce1e0a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5e834ff95fd607866e962da4ce1e0a5">&#9670;&#160;</a></span>pbAutoplayOnSave()</h2>
+<a id="a1d252576cd5e8423af09ee08e6f53510" name="a1d252576cd5e8423af09ee08e6f53510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d252576cd5e8423af09ee08e6f53510">&#9670;&#160;</a></span>AutoplayOnSave()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbAutoplayOnSave </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.AutoplayOnSave </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -184,18 +196,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a7ba5ac0b9049e5a41676377bbc8765a3">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a2969da4920f4787fdfcffd0470992802">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a3f7aaeed2224f87fd6043a5edceb4506" name="a3f7aaeed2224f87fd6043a5edceb4506"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f7aaeed2224f87fd6043a5edceb4506">&#9670;&#160;</a></span>pbAutoplayOnTransition()</h2>
+<a id="a72aa9406ad7bf6e223f0d3d79671170d" name="a72aa9406ad7bf6e223f0d3d79671170d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72aa9406ad7bf6e223f0d3d79671170d">&#9670;&#160;</a></span>AutoplayOnTransition()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbAutoplayOnTransition </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.AutoplayOnTransition </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -203,18 +215,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a7f6a0e6ba36c56077195950b9a99eda1">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a7b86c5c99e5a9b9e99761075e5200d36">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a6738ef56ec9fa3e7e067f8c24cfa9549" name="a6738ef56ec9fa3e7e067f8c24cfa9549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6738ef56ec9fa3e7e067f8c24cfa9549">&#9670;&#160;</a></span>pbBattleAnimation()</h2>
+<a id="a8c2721da775c15d0839da2ca8634969f" name="a8c2721da775c15d0839da2ca8634969f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2721da775c15d0839da2ca8634969f">&#9670;&#160;</a></span>BattleAnimation()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbBattleAnimation </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.BattleAnimation </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_audio_b_g_m.cshtml">IAudioBGM</a>&#160;</td>
           <td class="paramname"><em>bgm</em> = <code>null</code>, </td>
@@ -240,18 +252,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#aa656f0cb7f10807e6794e9dba0e3bdd0">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#aab487a6a58f911dfcde3e1fe3d32fee1">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a75c59f9716466514ce5575e3db9d8076" name="a75c59f9716466514ce5575e3db9d8076"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75c59f9716466514ce5575e3db9d8076">&#9670;&#160;</a></span>pbBattleAnimationOverride()</h2>
+<a id="ae27cf50a06641eece0e7aee256fda0eb" name="ae27cf50a06641eece0e7aee256fda0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae27cf50a06641eece0e7aee256fda0eb">&#9670;&#160;</a></span>BattleAnimationOverride()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbBattleAnimationOverride </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.BattleAnimationOverride </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_viewport.cshtml">IViewport</a>&#160;</td>
           <td class="paramname"><em>viewport</em>, </td>
@@ -283,18 +295,18 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#af0032e62eaef076d336235bae4dc4392">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a6f873aa112625da2888db2df558da4ef">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a642222f3aff7c727809c45665a75e3c8" name="a642222f3aff7c727809c45665a75e3c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a642222f3aff7c727809c45665a75e3c8">&#9670;&#160;</a></span>pbBattleOnStepTaken()</h2>
+<a id="a5c69bf373ec1870332ffac4372167adb" name="a5c69bf373ec1870332ffac4372167adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c69bf373ec1870332ffac4372167adb">&#9670;&#160;</a></span>BattleOnStepTaken()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbBattleOnStepTaken </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.BattleOnStepTaken </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -302,18 +314,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ab657ea91aa846aebc9664ad83644e11b">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a2ad7d19a55333c15115450cc29d49889">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a1660d67d61c48a1ec4873f291298e85a" name="a1660d67d61c48a1ec4873f291298e85a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1660d67d61c48a1ec4873f291298e85a">&#9670;&#160;</a></span>pbBridgeOff()</h2>
+<a id="a438c28a1f7a4b881fe39a65a65472097" name="a438c28a1f7a4b881fe39a65a65472097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a438c28a1f7a4b881fe39a65a65472097">&#9670;&#160;</a></span>BridgeOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbBridgeOff </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.BridgeOff </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -321,18 +333,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a2f57f6d68256ef34821291b5e396f58c">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a9286a09755d2dd7ae518f00e26d22e6d">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a425d69e65387f745e3842e603ba99eff" name="a425d69e65387f745e3842e603ba99eff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a425d69e65387f745e3842e603ba99eff">&#9670;&#160;</a></span>pbBridgeOn()</h2>
+<a id="ad7648fc5337f2d41000117e0a647831f" name="ad7648fc5337f2d41000117e0a647831f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7648fc5337f2d41000117e0a647831f">&#9670;&#160;</a></span>BridgeOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbBridgeOn </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.BridgeOn </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>height</em> = <code>2</code></td><td>)</td>
@@ -341,18 +353,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a70d8a65b5be670136e155bb74d7bc719">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#aac389dee0027460ecff1d665b2adf1b0">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ad00c6563ca53da64bea51b848b0e77bd" name="ad00c6563ca53da64bea51b848b0e77bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad00c6563ca53da64bea51b848b0e77bd">&#9670;&#160;</a></span>pbCancelVehicles()</h2>
+<a id="a0a95d301e98e6ed8e16312c47a57ea34" name="a0a95d301e98e6ed8e16312c47a57ea34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a95d301e98e6ed8e16312c47a57ea34">&#9670;&#160;</a></span>CancelVehicles()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbCancelVehicles </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.CancelVehicles </td>
           <td>(</td>
           <td class="paramtype">int?&#160;</td>
           <td class="paramname"><em>destination</em> = <code>null</code></td><td>)</td>
@@ -369,18 +381,18 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a75a3a6c2e96cc5a1b5016ac81d7814bb">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a252875e53bb7dded04d88311b87db63e">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a9928d69afb6191b203b5ff17cdb4ae01" name="a9928d69afb6191b203b5ff17cdb4ae01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9928d69afb6191b203b5ff17cdb4ae01">&#9670;&#160;</a></span>pbCanUseBike()</h2>
+<a id="aff1fca9c276496c07e7b7e3ae2790833" name="aff1fca9c276496c07e7b7e3ae2790833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1fca9c276496c07e7b7e3ae2790833">&#9670;&#160;</a></span>CanUseBike()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbCanUseBike </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.CanUseBike </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>mapid</em></td><td>)</td>
@@ -389,18 +401,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a1986d56ba2704ddf5601165c89f1211e">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a25adfbddbd90f2d0f128217ef544fff2">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a32ea537d408b1050b170c1a657d15a9d" name="a32ea537d408b1050b170c1a657d15a9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32ea537d408b1050b170c1a657d15a9d">&#9670;&#160;</a></span>pbCaveEntrance()</h2>
+<a id="a5e6a9366d235324f9272a80c8552fb19" name="a5e6a9366d235324f9272a80c8552fb19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6a9366d235324f9272a80c8552fb19">&#9670;&#160;</a></span>CaveEntrance()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbCaveEntrance </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.CaveEntrance </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -408,18 +420,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ace981a5270a653e0fec5890208b57e83">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ac98c3982a08432f32a00c36e1adc6909">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="aaa5c43e4dc2593fa68c5a82ac87b346f" name="aaa5c43e4dc2593fa68c5a82ac87b346f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa5c43e4dc2593fa68c5a82ac87b346f">&#9670;&#160;</a></span>pbCaveEntranceEx()</h2>
+<a id="ad520ff11603d60c5153eb78ddac9023a" name="ad520ff11603d60c5153eb78ddac9023a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad520ff11603d60c5153eb78ddac9023a">&#9670;&#160;</a></span>CaveEntranceEx()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbCaveEntranceEx </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.CaveEntranceEx </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>exiting</em></td><td>)</td>
@@ -428,18 +440,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#af1c773e9fff4a265e5ba277076ca7d9b">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#af50351ce1586e20315998abd97574613">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a7e80a75e0216673f226ba07b13bde5fa" name="a7e80a75e0216673f226ba07b13bde5fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e80a75e0216673f226ba07b13bde5fa">&#9670;&#160;</a></span>pbCaveExit()</h2>
+<a id="a86f6257964f22dabe7d446aee60b822d" name="a86f6257964f22dabe7d446aee60b822d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86f6257964f22dabe7d446aee60b822d">&#9670;&#160;</a></span>CaveExit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbCaveExit </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.CaveExit </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -447,18 +459,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a293d6a806d349dc8eb7d2b817f203a04">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a2407b9267489f7273cd4bcd4060f4a8e">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a75f8bcd1cd6e609ea35cd1309fd87f46" name="a75f8bcd1cd6e609ea35cd1309fd87f46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75f8bcd1cd6e609ea35cd1309fd87f46">&#9670;&#160;</a></span>pbCheckAllFainted()</h2>
+<a id="aa49aa217d4396ffbd37c90dd51971b67" name="aa49aa217d4396ffbd37c90dd51971b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49aa217d4396ffbd37c90dd51971b67">&#9670;&#160;</a></span>CheckAllFainted()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbCheckAllFainted </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.CheckAllFainted </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -466,18 +478,97 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a2bdb16c79dab5e9e7dfa6e5b91ce96c5">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ad062d412331f2cd23cdcc1fe09563b60">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ac9f1b8d662816389ccbfd426facee5f4" name="ac9f1b8d662816389ccbfd426facee5f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9f1b8d662816389ccbfd426facee5f4">&#9670;&#160;</a></span>pbCueBGM() <span class="overload">[1/2]</span></h2>
+<a id="a99ad640a68948147d92722aeca1a94e4" name="a99ad640a68948147d92722aeca1a94e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ad640a68948147d92722aeca1a94e4">&#9670;&#160;</a></span>ControlledWildBattle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbCueBGM </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.ControlledWildBattle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a>&#160;</td>
+          <td class="paramname"><em>species</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_pokemon_unity.cshtml#af1839a452927e1d32ae272ee55e5ac97">Moves</a>[]&#160;</td>
+          <td class="paramname"><em>moves</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int?&#160;</td>
+          <td class="paramname"><em>ability</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_pokemon_unity_1_1_monster.cshtml#a006b000842ecac022ed75bd637df09dd">PokemonUnity.Monster.Natures</a>?&#160;</td>
+          <td class="paramname"><em>nature</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool?&#160;</td>
+          <td class="paramname"><em>gender</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a>?&#160;</td>
+          <td class="paramname"><em>item</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool?&#160;</td>
+          <td class="paramname"><em>shiny</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outcomeVar</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>canRun</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>canLose</em> = <code>false</code>&#160;&nbsp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ac625b57b765da9fb4d2e85f476c20b23">PokemonUnity.Game</a>.</p>
+
+</div>
+</div>
+<a id="a7ec683f166b439506a4a03d6ab900ab1" name="a7ec683f166b439506a4a03d6ab900ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec683f166b439506a4a03d6ab900ab1">&#9670;&#160;</a></span>CueBGM() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.CueBGM </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_audio_b_g_m.cshtml">IAudioBGM</a>&#160;</td>
           <td class="paramname"><em>bgm</em>, </td>
@@ -503,18 +594,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a0e766bf7cda4093edac219f0e25df60a">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#acac5bdb6a289a9fdf0ae7a1043256337">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="add82b66566e571e12fa8850b15f78677" name="add82b66566e571e12fa8850b15f78677"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add82b66566e571e12fa8850b15f78677">&#9670;&#160;</a></span>pbCueBGM() <span class="overload">[2/2]</span></h2>
+<a id="a4cab9698942c7f8aad389a1ccb936944" name="a4cab9698942c7f8aad389a1ccb936944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cab9698942c7f8aad389a1ccb936944">&#9670;&#160;</a></span>CueBGM() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbCueBGM </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.CueBGM </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>bgm</em>, </td>
@@ -540,18 +631,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a748640bfe58f786a15c491318a0f1a7c">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#acd6fcfb1f908575c5cba80fd8b862110">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a0612a25cf69cde599168f152c2fe65b2" name="a0612a25cf69cde599168f152c2fe65b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0612a25cf69cde599168f152c2fe65b2">&#9670;&#160;</a></span>pbDeregisterPartner()</h2>
+<a id="a50800f8c7f877ab3af6cbdb35ae9a052" name="a50800f8c7f877ab3af6cbdb35ae9a052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50800f8c7f877ab3af6cbdb35ae9a052">&#9670;&#160;</a></span>DeregisterPartner()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbDeregisterPartner </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.DeregisterPartner </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -559,18 +650,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a628cc7e576c58d0b2375c38136aae561">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a73f0a2ebed22e1e507b73168a80f6368">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ae7d403a1f8b364bebf47faebeddcd666" name="ae7d403a1f8b364bebf47faebeddcd666"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7d403a1f8b364bebf47faebeddcd666">&#9670;&#160;</a></span>pbDismountBike()</h2>
+<a id="a795fd3e3b50a402646939e960d0e6f5c" name="a795fd3e3b50a402646939e960d0e6f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795fd3e3b50a402646939e960d0e6f5c">&#9670;&#160;</a></span>DismountBike()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbDismountBike </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.DismountBike </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -578,18 +669,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a81a33cdc737cc31816cde590b7f38406">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ad67144b4075644bf81aa543263e7958e">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a55e3db62b35515459d8aa746a2978fd3" name="a55e3db62b35515459d8aa746a2978fd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55e3db62b35515459d8aa746a2978fd3">&#9670;&#160;</a></span>pbDoubleWildBattle()</h2>
+<a id="a30ab58209880082b4dba4845835493a8" name="a30ab58209880082b4dba4845835493a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ab58209880082b4dba4845835493a8">&#9670;&#160;</a></span>DoubleWildBattle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_combat.cshtml#a6d3738e09e699ec67acc67d0f876f29b">PokemonUnity.Combat.BattleResults</a> PokemonEssentials.Interface.Field.IGameField.pbDoubleWildBattle </td>
+          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_combat.cshtml#a6d3738e09e699ec67acc67d0f876f29b">PokemonUnity.Combat.BattleResults</a> PokemonEssentials.Interface.Field.IGameField.DoubleWildBattle </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a>&#160;</td>
           <td class="paramname"><em>species1</em>, </td>
@@ -633,18 +724,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a0e90cdf1811ec63e1d52b8c9ff6e79be">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a8c667276f0a58cbb2ea8aa43f8ef47a0">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a6d552f174ce96ffbae8c97c6d0849964" name="a6d552f174ce96ffbae8c97c6d0849964"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d552f174ce96ffbae8c97c6d0849964">&#9670;&#160;</a></span>pbDynamicItemList()</h2>
+<a id="a5c2ad4271d17fc215a348fc78e7d20c9" name="a5c2ad4271d17fc215a348fc78e7d20c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2ad4271d17fc215a348fc78e7d20c9">&#9670;&#160;</a></span>DynamicItemList()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a>[] PokemonEssentials.Interface.Field.IGameField.pbDynamicItemList </td>
+          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a>[] PokemonEssentials.Interface.Field.IGameField.DynamicItemList </td>
           <td>(</td>
           <td class="paramtype">params <a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a>[]&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
@@ -653,18 +744,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a764ebf23b040ef64ac98519da5687790">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a26f728c2b1bc0134536ae2bd9144f354">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a7e743f67461ca6f1116fc3a32ac7b0b3" name="a7e743f67461ca6f1116fc3a32ac7b0b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e743f67461ca6f1116fc3a32ac7b0b3">&#9670;&#160;</a></span>pbEncounter()</h2>
+<a id="aa2b5addb38674dfc2efb364b29c736fe" name="aa2b5addb38674dfc2efb364b29c736fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b5addb38674dfc2efb364b29c736fe">&#9670;&#160;</a></span>Encounter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbEncounter </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.Encounter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#a441bb53fe173af8730970779c8ef933b">Method</a>&#160;</td>
           <td class="paramname"><em>enctype</em></td><td>)</td>
@@ -673,18 +764,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a18d5d9086d302bfe8e70a165d6cb90c5">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a4947ce1ef88a0c66053d1ac71a742d5b">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ae5c2877fa2f68664563d195f33b02003" name="ae5c2877fa2f68664563d195f33b02003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5c2877fa2f68664563d195f33b02003">&#9670;&#160;</a></span>pbEraseEscapePoint()</h2>
+<a id="a59778acaf092e47eeaf3630b66581418" name="a59778acaf092e47eeaf3630b66581418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59778acaf092e47eeaf3630b66581418">&#9670;&#160;</a></span>EraseEscapePoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbEraseEscapePoint </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.EraseEscapePoint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -692,18 +783,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a028acec70eaea74f9d7d20a539aac2d4">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#aad7af44aab168ad9a709416b988c3e71">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a0a94538ce4f65dfcb2b289ef1da873d2" name="a0a94538ce4f65dfcb2b289ef1da873d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a94538ce4f65dfcb2b289ef1da873d2">&#9670;&#160;</a></span>pbEventCanReachPlayer()</h2>
+<a id="ac4944b3516d9501c88053efa65824b6f" name="ac4944b3516d9501c88053efa65824b6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4944b3516d9501c88053efa65824b6f">&#9670;&#160;</a></span>EventCanReachPlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbEventCanReachPlayer </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.EventCanReachPlayer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a>&#160;</td>
           <td class="paramname"><em>_event</em>, </td>
@@ -725,14 +816,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae018d789c31f5e9e2da95c9cc95af8e3" name="ae018d789c31f5e9e2da95c9cc95af8e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae018d789c31f5e9e2da95c9cc95af8e3">&#9670;&#160;</a></span>pbEventFacesPlayer()</h2>
+<a id="ac96110d718ec9379dfb3a3916ff05ca5" name="ac96110d718ec9379dfb3a3916ff05ca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96110d718ec9379dfb3a3916ff05ca5">&#9670;&#160;</a></span>EventFacesPlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbEventFacesPlayer </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.EventFacesPlayer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a>&#160;</td>
           <td class="paramname"><em>_event</em>, </td>
@@ -754,14 +845,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab87333490604c92e0349f1d64a23c881" name="ab87333490604c92e0349f1d64a23c881"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab87333490604c92e0349f1d64a23c881">&#9670;&#160;</a></span>pbEvolutionCheck()</h2>
+<a id="a26f9d6f1a220515c420e91f11e3f0881" name="a26f9d6f1a220515c420e91f11e3f0881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f9d6f1a220515c420e91f11e3f0881">&#9670;&#160;</a></span>EvolutionCheck()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbEvolutionCheck </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.EvolutionCheck </td>
           <td>(</td>
           <td class="paramtype">int[]&#160;</td>
           <td class="paramname"><em>currentlevels</em></td><td>)</td>
@@ -770,18 +861,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a6e19b5dbb89e470170d23c2ab5b398e5">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a33d7aa6f251723e1f9e3e07230422dbe">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a11712644b4e812a211c8e4fe3fffeb16" name="a11712644b4e812a211c8e4fe3fffeb16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11712644b4e812a211c8e4fe3fffeb16">&#9670;&#160;</a></span>pbFacingEachOther()</h2>
+<a id="af30c7a314c1f0d4384da773a6efc1da7" name="af30c7a314c1f0d4384da773a6efc1da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30c7a314c1f0d4384da773a6efc1da7">&#9670;&#160;</a></span>FacingEachOther()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbFacingEachOther </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.FacingEachOther </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a>&#160;</td>
           <td class="paramname"><em>event1</em>, </td>
@@ -795,18 +886,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#aae4521d80eeef77fa4c8cc02a2dd4077">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a2dcfba848d2d48125ae7677c9c280ca3">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a757c571d98509160738e8282828426ac" name="a757c571d98509160738e8282828426ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a757c571d98509160738e8282828426ac">&#9670;&#160;</a></span>pbFacingTerrainTag()</h2>
+<a id="a167af5fc297e478f7a2001bcef00dbae" name="a167af5fc297e478f7a2001bcef00dbae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a167af5fc297e478f7a2001bcef00dbae">&#9670;&#160;</a></span>FacingTerrainTag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#ab4a5d1860bd07de7a21b4981e764700d">Terrains</a>? PokemonEssentials.Interface.Field.IGameField.pbFacingTerrainTag </td>
+          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#ab4a5d1860bd07de7a21b4981e764700d">Terrains</a>? PokemonEssentials.Interface.Field.IGameField.FacingTerrainTag </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a>&#160;</td>
           <td class="paramname"><em>_event</em> = <code>null</code>, </td>
@@ -822,14 +913,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac9e08115da742f90842d88826612a22b" name="ac9e08115da742f90842d88826612a22b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9e08115da742f90842d88826612a22b">&#9670;&#160;</a></span>pbFacingTile()</h2>
+<a id="abde68457a7fe6561c2d9e33e708c5303" name="abde68457a7fe6561c2d9e33e708c5303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abde68457a7fe6561c2d9e33e708c5303">&#9670;&#160;</a></span>FacingTile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_tile_position.cshtml">ITilePosition</a> PokemonEssentials.Interface.Field.IGameField.pbFacingTile </td>
+          <td class="memname"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_tile_position.cshtml">ITilePosition</a> PokemonEssentials.Interface.Field.IGameField.FacingTile </td>
           <td>(</td>
           <td class="paramtype">float?&#160;</td>
           <td class="paramname"><em>direction</em> = <code>null</code>, </td>
@@ -845,14 +936,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7a33c038ebe8b75c3665e02210213bdf" name="a7a33c038ebe8b75c3665e02210213bdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a33c038ebe8b75c3665e02210213bdf">&#9670;&#160;</a></span>pbFacingTileRegular()</h2>
+<a id="a70f09ffd0c2aff60e47663e5a3980351" name="a70f09ffd0c2aff60e47663e5a3980351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f09ffd0c2aff60e47663e5a3980351">&#9670;&#160;</a></span>FacingTileRegular()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_tile_position.cshtml">ITilePosition</a> PokemonEssentials.Interface.Field.IGameField.pbFacingTileRegular </td>
+          <td class="memname"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_field_1_1_i_tile_position.cshtml">ITilePosition</a> PokemonEssentials.Interface.Field.IGameField.FacingTileRegular </td>
           <td>(</td>
           <td class="paramtype">float?&#160;</td>
           <td class="paramname"><em>direction</em> = <code>null</code>, </td>
@@ -868,14 +959,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3db87f0d8b1939cf34fa05ab812f3506" name="a3db87f0d8b1939cf34fa05ab812f3506"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3db87f0d8b1939cf34fa05ab812f3506">&#9670;&#160;</a></span>pbFishing()</h2>
+<a id="a44e265224312521e620838b73ab6c5f5" name="a44e265224312521e620838b73ab6c5f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e265224312521e620838b73ab6c5f5">&#9670;&#160;</a></span>Fishing()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbFishing </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.Fishing </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>hasencounter</em>, </td>
@@ -889,18 +980,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#afb13a92aa3f966d6ede609e84a65fd89">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a72074c60dc1721b0a559f7ebdeea9ad2">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="abd6c8c770c57402d1376c262a4695f32" name="abd6c8c770c57402d1376c262a4695f32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd6c8c770c57402d1376c262a4695f32">&#9670;&#160;</a></span>pbFishingBegin()</h2>
+<a id="a32e89048516c86774c7374902174bc94" name="a32e89048516c86774c7374902174bc94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e89048516c86774c7374902174bc94">&#9670;&#160;</a></span>FishingBegin()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbFishingBegin </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.FishingBegin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -908,18 +999,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ac42c2ae1a2b5396542033dbbd0de4675">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a16c9c13192d0e9699fbd58802dd8eda2">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a445409e51fbfaf72391519b65325d2c3" name="a445409e51fbfaf72391519b65325d2c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a445409e51fbfaf72391519b65325d2c3">&#9670;&#160;</a></span>pbFishingEnd()</h2>
+<a id="ade4e6dc35ad3c947864bba4720c5f2ac" name="ade4e6dc35ad3c947864bba4720c5f2ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade4e6dc35ad3c947864bba4720c5f2ac">&#9670;&#160;</a></span>FishingEnd()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbFishingEnd </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.FishingEnd </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -927,18 +1018,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#aa2741ee1a1b90e1a8ace71bd8e90dc53">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#af8a79992d46a5e276754ae6eff4647d0">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a0af80a7e473dc2329f40c6f92772944d" name="a0af80a7e473dc2329f40c6f92772944d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0af80a7e473dc2329f40c6f92772944d">&#9670;&#160;</a></span>pbFlash()</h2>
+<a id="a20d0dbb4905c085e63d1e3b509f7ef35" name="a20d0dbb4905c085e63d1e3b509f7ef35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d0dbb4905c085e63d1e3b509f7ef35">&#9670;&#160;</a></span>Flash()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbFlash </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.Flash </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_color.cshtml">IColor</a>&#160;</td>
           <td class="paramname"><em>color</em>, </td>
@@ -952,18 +1043,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ae806f7faeff78359899568b22f4c5e12">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a0879a9201bebcc3f96095881ec16502f">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a590f70f05455132e5973035ea9075135" name="a590f70f05455132e5973035ea9075135"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a590f70f05455132e5973035ea9075135">&#9670;&#160;</a></span>pbGenerateWildPokemon()</h2>
+<a id="a134b08c1dab76df9165c45c01b83e7a5" name="a134b08c1dab76df9165c45c01b83e7a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134b08c1dab76df9165c45c01b83e7a5">&#9670;&#160;</a></span>GenerateWildPokemon()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_pokemon.cshtml">IPokemon</a> PokemonEssentials.Interface.Field.IGameField.pbGenerateWildPokemon </td>
+          <td class="memname"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_pokemon.cshtml">IPokemon</a> PokemonEssentials.Interface.Field.IGameField.GenerateWildPokemon </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a>&#160;</td>
           <td class="paramname"><em>species</em>, </td>
@@ -983,18 +1074,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a6ada2ed689a7c3bddc3a74e7891dfc1f">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a03ee6384c3b05611accd8e0280eb7102">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a945f91afbc3e5b2f215e822e7fd0f258" name="a945f91afbc3e5b2f215e822e7fd0f258"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a945f91afbc3e5b2f215e822e7fd0f258">&#9670;&#160;</a></span>pbGetEnvironment()</h2>
+<a id="a7fd7c130d9e079e63f3b44a0863542cb" name="a7fd7c130d9e079e63f3b44a0863542cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd7c130d9e079e63f3b44a0863542cb">&#9670;&#160;</a></span>GetEnvironment()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#a5f8faaaa9680d40830ea7c82e647b2e8">Environments</a> PokemonEssentials.Interface.Field.IGameField.pbGetEnvironment </td>
+          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#a5f8faaaa9680d40830ea7c82e647b2e8">Environments</a> PokemonEssentials.Interface.Field.IGameField.GetEnvironment </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1002,18 +1093,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a31847e2a7ef61ed6b26121e9c22b4b7a">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a243d15f7cab59a813c646be22a44c8ef">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ad8d6f1fa9f112bc5748b0ade50502ef2" name="ad8d6f1fa9f112bc5748b0ade50502ef2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8d6f1fa9f112bc5748b0ade50502ef2">&#9670;&#160;</a></span>pbGetTerrainTag()</h2>
+<a id="a139b8d6e7f5286471443a73958f5ecfa" name="a139b8d6e7f5286471443a73958f5ecfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a139b8d6e7f5286471443a73958f5ecfa">&#9670;&#160;</a></span>GetTerrainTag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#ab4a5d1860bd07de7a21b4981e764700d">Terrains</a> PokemonEssentials.Interface.Field.IGameField.pbGetTerrainTag </td>
+          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_overworld.cshtml#ab4a5d1860bd07de7a21b4981e764700d">Terrains</a> PokemonEssentials.Interface.Field.IGameField.GetTerrainTag </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a>&#160;</td>
           <td class="paramname"><em>_event</em> = <code>null</code>, </td>
@@ -1029,14 +1120,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acfc64313631bc2483b81e6636b1969a7" name="acfc64313631bc2483b81e6636b1969a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfc64313631bc2483b81e6636b1969a7">&#9670;&#160;</a></span>pbItemBall()</h2>
+<a id="a022b875d7157fd2696ed4b1f7f727e2b" name="a022b875d7157fd2696ed4b1f7f727e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022b875d7157fd2696ed4b1f7f727e2b">&#9670;&#160;</a></span>ItemBall()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbItemBall </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.ItemBall </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a>&#160;</td>
           <td class="paramname"><em>item</em>, </td>
@@ -1050,18 +1141,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a2d8f3b8e81ea36884c66af875ddaad52">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ab3bcc9eaf59d3ce963ffeded51ebee1b">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a5fe22c15f1b026dc9a37b635091a66e4" name="a5fe22c15f1b026dc9a37b635091a66e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fe22c15f1b026dc9a37b635091a66e4">&#9670;&#160;</a></span>pbJumpToward()</h2>
+<a id="a919f21f72f8dcbefcdd5ba73c8a578ba" name="a919f21f72f8dcbefcdd5ba73c8a578ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a919f21f72f8dcbefcdd5ba73c8a578ba">&#9670;&#160;</a></span>JumpToward()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbJumpToward </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.JumpToward </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>dist</em> = <code>1</code>, </td>
@@ -1081,18 +1172,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a99ce6f06b4481db504f846ec27c1b6e6">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a4d2f7d784362c5781f6132f2ef9cbd50">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ae8194e08022f031faa5a62f255e53184" name="ae8194e08022f031faa5a62f255e53184"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8194e08022f031faa5a62f255e53184">&#9670;&#160;</a></span>pbLedge()</h2>
+<a id="ac9f2a65e6ca8aa0908e396f0e284c144" name="ac9f2a65e6ca8aa0908e396f0e284c144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f2a65e6ca8aa0908e396f0e284c144">&#9670;&#160;</a></span>Ledge()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbLedge </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.Ledge </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>xOffset</em>, </td>
@@ -1106,18 +1197,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a322cd3c806b59676507c65bf6845e4a7">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#afc142da5d3c618719f41039edcfacdb8">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a3d34315340f87fa7c8a7f0709cd62bd4" name="a3d34315340f87fa7c8a7f0709cd62bd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d34315340f87fa7c8a7f0709cd62bd4">&#9670;&#160;</a></span>pbMountBike()</h2>
+<a id="aa8ba13f10487d17ae5bc98f52ee8bc60" name="aa8ba13f10487d17ae5bc98f52ee8bc60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ba13f10487d17ae5bc98f52ee8bc60">&#9670;&#160;</a></span>MountBike()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbMountBike </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.MountBike </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1125,18 +1216,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a85fd5463d71d0dd8bb05e7e9a7785f01">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#aa6dd2068dad75ce1912f32a071d9d357">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ab3b205181c641e3c2b23e185a8487014" name="ab3b205181c641e3c2b23e185a8487014"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3b205181c641e3c2b23e185a8487014">&#9670;&#160;</a></span>pbMoveTowardPlayer()</h2>
+<a id="a467be70359547fb9a9206ff6e0e3a8c6" name="a467be70359547fb9a9206ff6e0e3a8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a467be70359547fb9a9206ff6e0e3a8c6">&#9670;&#160;</a></span>MoveTowardPlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbMoveTowardPlayer </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.MoveTowardPlayer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a>&#160;</td>
           <td class="paramname"><em>_event</em></td><td>)</td>
@@ -1147,14 +1238,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f2efd5b46ce66a9a577a53e09a34dc3" name="a2f2efd5b46ce66a9a577a53e09a34dc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f2efd5b46ce66a9a577a53e09a34dc3">&#9670;&#160;</a></span>pbNewBattleScene()</h2>
+<a id="a6eb7253f8d9a4a8186dbe592f3e991a9" name="a6eb7253f8d9a4a8186dbe592f3e991a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb7253f8d9a4a8186dbe592f3e991a9">&#9670;&#160;</a></span>NewBattleScene()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_poke_battle___scene.cshtml">IPokeBattle_Scene</a> PokemonEssentials.Interface.Field.IGameField.pbNewBattleScene </td>
+          <td class="memname"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_screen_1_1_i_poke_battle___scene.cshtml">IPokeBattle_Scene</a> PokemonEssentials.Interface.Field.IGameField.NewBattleScene </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1162,18 +1253,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#acd578e547ea5a7044de64580cb7d382a">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a699ea9021438a5e22891252c215146fb">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a053ad045678c0c1eeb6bfbca9d673057" name="a053ad045678c0c1eeb6bfbca9d673057"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a053ad045678c0c1eeb6bfbca9d673057">&#9670;&#160;</a></span>pbOnSpritesetCreate()</h2>
+<a id="a3bb77d4a6351a1cfa273a66bcb406d86" name="a3bb77d4a6351a1cfa273a66bcb406d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb77d4a6351a1cfa273a66bcb406d86">&#9670;&#160;</a></span>OnSpritesetCreate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbOnSpritesetCreate </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.OnSpritesetCreate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_spriteset_map.cshtml">ISpritesetMap</a>&#160;</td>
           <td class="paramname"><em>spriteset</em>, </td>
@@ -1187,18 +1278,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a74cfa759ab6620faf2b6917390326aaa">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a81174106cddeb0ddda9ac83e0a6328bf">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a20b59980652532f1117254922ea77a2d" name="a20b59980652532f1117254922ea77a2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20b59980652532f1117254922ea77a2d">&#9670;&#160;</a></span>pbOnStepTaken()</h2>
+<a id="a27aea909391d9d67be261394c234a515" name="a27aea909391d9d67be261394c234a515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27aea909391d9d67be261394c234a515">&#9670;&#160;</a></span>OnStepTaken()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbOnStepTaken </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.OnStepTaken </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>eventTriggered</em></td><td>)</td>
@@ -1207,18 +1298,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a2b682ca2ed08862fc797960aaa1a6894">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a2dc64ea436643fec506530ee8a5c2d10">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a4d0e76ad3963fdba296c7828b90c0006" name="a4d0e76ad3963fdba296c7828b90c0006"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d0e76ad3963fdba296c7828b90c0006">&#9670;&#160;</a></span>pbPickup()</h2>
+<a id="a35b96706c3af483d25da0958616cdf62" name="a35b96706c3af483d25da0958616cdf62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b96706c3af483d25da0958616cdf62">&#9670;&#160;</a></span>Pickup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbPickup </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.Pickup </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_pokemon.cshtml">IPokemon</a>&#160;</td>
           <td class="paramname"><em>pokemon</em></td><td>)</td>
@@ -1235,18 +1326,18 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a719db6a3c07177c0b6015b7f052b44ac">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a63fab9e602b02a912151932235c606db">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a2aed60ab47d5cb8b27248e75ebf858bc" name="a2aed60ab47d5cb8b27248e75ebf858bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aed60ab47d5cb8b27248e75ebf858bc">&#9670;&#160;</a></span>pbPokerus()</h2>
+<a id="a8cae16006e1fe462ab32eefe22f315a0" name="a8cae16006e1fe462ab32eefe22f315a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cae16006e1fe462ab32eefe22f315a0">&#9670;&#160;</a></span>Pokerus()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbPokerus </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.Pokerus </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1257,18 +1348,18 @@ Public Member Functions</h2></td></tr>
 <p>Returns whether the Pok&eacute; Center should explain Pok&eacute;rus to the player, if a healed Pok&eacute;mon has it.  </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a0fcd71befd85b5dc8e2c164f4a3d0e40">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a16e24ad13596766b1937fb9c91c60874">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a5bfdcb428ef876aa17771ea1b85395ff" name="a5bfdcb428ef876aa17771ea1b85395ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bfdcb428ef876aa17771ea1b85395ff">&#9670;&#160;</a></span>pbPrepareBattle()</h2>
+<a id="a049ce6202ba637e4b0c1195a91049db7" name="a049ce6202ba637e4b0c1195a91049db7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049ce6202ba637e4b0c1195a91049db7">&#9670;&#160;</a></span>PrepareBattle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbPrepareBattle </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.PrepareBattle </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_battle.cshtml">IBattle</a>&#160;</td>
           <td class="paramname"><em>battle</em></td><td>)</td>
@@ -1277,18 +1368,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a0b1e2527f45d85196382223f8f2536af">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a0673652db9a76c7200ff88a81c8e2530">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a0d7b001c3fd61f5d8f80c32899482e1b" name="a0d7b001c3fd61f5d8f80c32899482e1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d7b001c3fd61f5d8f80c32899482e1b">&#9670;&#160;</a></span>pbReceiveItem()</h2>
+<a id="a9735c2153adbf875d989e6ef55cc72ec" name="a9735c2153adbf875d989e6ef55cc72ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9735c2153adbf875d989e6ef55cc72ec">&#9670;&#160;</a></span>ReceiveItem()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbReceiveItem </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.ReceiveItem </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_pokemon_unity_1_1_inventory.cshtml#a88bcc16c916ce015bba31f959c11e0a7">Items</a>&#160;</td>
           <td class="paramname"><em>item</em>, </td>
@@ -1302,18 +1393,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a40a7fd641c70ff8967c3884de85a44d1">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a0a2c372b3583b1d5cb98f9b00266e615">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a175415b9a9b784af321d9dab7b7db660" name="a175415b9a9b784af321d9dab7b7db660"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a175415b9a9b784af321d9dab7b7db660">&#9670;&#160;</a></span>pbRecord()</h2>
+<a id="a6a89bdc8de4766a9e26e58c5454169ad" name="a6a89bdc8de4766a9e26e58c5454169ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a89bdc8de4766a9e26e58c5454169ad">&#9670;&#160;</a></span>Record()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_wave_data.cshtml">IWaveData</a> PokemonEssentials.Interface.Field.IGameField.pbRecord </td>
+          <td class="memname"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_wave_data.cshtml">IWaveData</a> PokemonEssentials.Interface.Field.IGameField.Record </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>text</em>, </td>
@@ -1330,18 +1421,18 @@ Public Member Functions</h2></td></tr>
 <p></p>
 <p >BGM audio file? </p>
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a8bcc1972658f14d65b1cbf826496b2c5">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a4616b311f33c4ae60cf2f174b450fbbe">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a6ad1832bfe11d4fb3e2761f2db283c08" name="a6ad1832bfe11d4fb3e2761f2db283c08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ad1832bfe11d4fb3e2761f2db283c08">&#9670;&#160;</a></span>pbRegisterPartner()</h2>
+<a id="ae97deb4e5d468fccad195430e3000680" name="ae97deb4e5d468fccad195430e3000680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97deb4e5d468fccad195430e3000680">&#9670;&#160;</a></span>RegisterPartner()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbRegisterPartner </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.RegisterPartner </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_pokemon_unity.cshtml#a40e9330636bad76fe0f3fdc9d7ae87c2">TrainerTypes</a>&#160;</td>
           <td class="paramname"><em>trainerid</em>, </td>
@@ -1361,18 +1452,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a26cebc44e8da61eb0874aa2ab91e56e6">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ac7159f66a21075a84de7ab9c92e08fa8">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a71db55c92d157968ad96962bd7bdc394" name="a71db55c92d157968ad96962bd7bdc394"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71db55c92d157968ad96962bd7bdc394">&#9670;&#160;</a></span>pbRxdataExists()</h2>
+<a id="a62a108fce6eeaa07de9ed1951cfc4ad6" name="a62a108fce6eeaa07de9ed1951cfc4ad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a108fce6eeaa07de9ed1951cfc4ad6">&#9670;&#160;</a></span>RxdataExists()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbRxdataExists </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.RxdataExists </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>file</em></td><td>)</td>
@@ -1381,18 +1472,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a86b8bcf1fdd5a198f230294494602f84">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a115fb78b1c613a5ec2d33014cf5df29a">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ab8b427e6fcb83eef9e4222097edfadae" name="ab8b427e6fcb83eef9e4222097edfadae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8b427e6fcb83eef9e4222097edfadae">&#9670;&#160;</a></span>pbSceneStandby()</h2>
+<a id="adb993421d254c8f127e02599a19b7e0d" name="adb993421d254c8f127e02599a19b7e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb993421d254c8f127e02599a19b7e0d">&#9670;&#160;</a></span>SceneStandby()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">IEnumerator PokemonEssentials.Interface.Field.IGameField.pbSceneStandby </td>
+          <td class="memname">IEnumerator PokemonEssentials.Interface.Field.IGameField.SceneStandby </td>
           <td>(</td>
           <td class="paramtype">Action&#160;</td>
           <td class="paramname"><em>block</em> = <code>null</code></td><td>)</td>
@@ -1401,18 +1492,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#aea711cd5a89c286fda3910375d59501a">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a241afd1fe733e75b67012005c28fb2aa">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="af9642150b705cc874384addb20adebee" name="af9642150b705cc874384addb20adebee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9642150b705cc874384addb20adebee">&#9670;&#160;</a></span>pbScrollMap()</h2>
+<a id="ab7d878be14ae3f457075fb89cbbe928b" name="ab7d878be14ae3f457075fb89cbbe928b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7d878be14ae3f457075fb89cbbe928b">&#9670;&#160;</a></span>ScrollMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbScrollMap </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.ScrollMap </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>direction</em>, </td>
@@ -1432,18 +1523,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ada4e58021a3aea0650b39f63d517c7f0">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a3fc2dc8b94753866cac71acbdaca7cab">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ada325a18eecd62b6a86694712b7398d6" name="ada325a18eecd62b6a86694712b7398d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada325a18eecd62b6a86694712b7398d6">&#9670;&#160;</a></span>pbSetEscapePoint()</h2>
+<a id="a13892b7acab08990c9906896ccf8de48" name="a13892b7acab08990c9906896ccf8de48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13892b7acab08990c9906896ccf8de48">&#9670;&#160;</a></span>SetEscapePoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbSetEscapePoint </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.SetEscapePoint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1451,18 +1542,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ae344224b8fb508f25a221beec2b4cf6e">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ab106dd631e20ea5d4b7a31a15e7dd209">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="a058b469c3ce4b26888762dca9b1ad61e" name="a058b469c3ce4b26888762dca9b1ad61e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a058b469c3ce4b26888762dca9b1ad61e">&#9670;&#160;</a></span>pbSetPokemonCenter()</h2>
+<a id="a0fe6818f8529f6cae6d3b4b99e6ca62b" name="a0fe6818f8529f6cae6d3b4b99e6ca62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fe6818f8529f6cae6d3b4b99e6ca62b">&#9670;&#160;</a></span>SetPokemonCenter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbSetPokemonCenter </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.SetPokemonCenter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1470,18 +1561,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#adb5bf13930fd3025b068e6fc10e21980">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a9dd3a651ea386512a4e3af4325ba1e2b">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="aab567c475714eaffc0778fe2ed38e2fb" name="aab567c475714eaffc0778fe2ed38e2fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab567c475714eaffc0778fe2ed38e2fb">&#9670;&#160;</a></span>pbShake()</h2>
+<a id="a342c802db2c76a0bb42cc9210031fdc2" name="a342c802db2c76a0bb42cc9210031fdc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a342c802db2c76a0bb42cc9210031fdc2">&#9670;&#160;</a></span>Shake()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbShake </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.Shake </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>power</em>, </td>
@@ -1501,18 +1592,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a4e60b86d4caaf23fdc66c759ba3e2e36">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ab6927d7bc8c3b0e67698eebfcc063aa1">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ad560ef56f6ad7619abbe55376d33109b" name="ad560ef56f6ad7619abbe55376d33109b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad560ef56f6ad7619abbe55376d33109b">&#9670;&#160;</a></span>pbSlideOnIce()</h2>
+<a id="ab904b9b562d43bc2b035c790c6cad4fb" name="ab904b9b562d43bc2b035c790c6cad4fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab904b9b562d43bc2b035c790c6cad4fb">&#9670;&#160;</a></span>SlideOnIce()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbSlideOnIce </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.SlideOnIce </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_player.cshtml">IGamePlayer</a>&#160;</td>
           <td class="paramname"><em>_event</em> = <code>null</code></td><td>)</td>
@@ -1523,14 +1614,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0128968d5c488994ccd2bdc3538f424c" name="a0128968d5c488994ccd2bdc3538f424c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0128968d5c488994ccd2bdc3538f424c">&#9670;&#160;</a></span>pbStartOver()</h2>
+<a id="af84c98eb444a77399c39fc440e5ed72c" name="af84c98eb444a77399c39fc440e5ed72c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84c98eb444a77399c39fc440e5ed72c">&#9670;&#160;</a></span>StartOver()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbStartOver </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.StartOver </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>gameover</em> = <code>false</code></td><td>)</td>
@@ -1539,18 +1630,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a4da96f11444df12a2f93486a69924521">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a61042cebcec39ed5d268a3e4e657d006">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="abc1d0e5eaf0f538485dade576272c90c" name="abc1d0e5eaf0f538485dade576272c90c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc1d0e5eaf0f538485dade576272c90c">&#9670;&#160;</a></span>pbToneChangeAll()</h2>
+<a id="add1bfbf7385b86b554907d9196a03b70" name="add1bfbf7385b86b554907d9196a03b70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1bfbf7385b86b554907d9196a03b70">&#9670;&#160;</a></span>ToneChangeAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbToneChangeAll </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.ToneChangeAll </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_tone.cshtml">ITone</a>&#160;</td>
           <td class="paramname"><em>tone</em>, </td>
@@ -1564,18 +1655,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a2ea3c787cebee2f3abc89d23b44c0098">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a92f222e50fe6e183605dddee6ec2676b">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ae4b99d8c9530dd13fe12d057f26c69c5" name="ae4b99d8c9530dd13fe12d057f26c69c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4b99d8c9530dd13fe12d057f26c69c5">&#9670;&#160;</a></span>pbTurnTowardEvent()</h2>
+<a id="a3eb61a31f7eddd533f524fc1e564a4da" name="a3eb61a31f7eddd533f524fc1e564a4da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb61a31f7eddd533f524fc1e564a4da">&#9670;&#160;</a></span>TurnTowardEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbTurnTowardEvent </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.TurnTowardEvent </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_game_character.cshtml">IGameCharacter</a>&#160;</td>
           <td class="paramname"><em>_event</em>, </td>
@@ -1591,14 +1682,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a57003784867afe1e961edf986606be45" name="a57003784867afe1e961edf986606be45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57003784867afe1e961edf986606be45">&#9670;&#160;</a></span>pbUpdateVehicle()</h2>
+<a id="af613d6668786dd3b9e9e951157dfb995" name="af613d6668786dd3b9e9e951157dfb995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af613d6668786dd3b9e9e951157dfb995">&#9670;&#160;</a></span>UpdateVehicle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbUpdateVehicle </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.UpdateVehicle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1606,18 +1697,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a15d734367172f3e9b30dbd1e3018e337">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a9e4188a3c04bc05d4dfd1cf73b4d1e2e">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="adb88393e43e621b7945fdf68b7dd51a8" name="adb88393e43e621b7945fdf68b7dd51a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb88393e43e621b7945fdf68b7dd51a8">&#9670;&#160;</a></span>pbUseKeyItem()</h2>
+<a id="a2784a114fc725328da54f647954483fd" name="a2784a114fc725328da54f647954483fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2784a114fc725328da54f647954483fd">&#9670;&#160;</a></span>UseKeyItem()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbUseKeyItem </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.UseKeyItem </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1625,18 +1716,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#add7d8e81eef09c5919b5dc2ae4002bda">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a95714c7a8aeebf28f0d5f653d45b222f">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="ae2dfc533f667b793a7f9c627352639d5" name="ae2dfc533f667b793a7f9c627352639d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2dfc533f667b793a7f9c627352639d5">&#9670;&#160;</a></span>pbWait()</h2>
+<a id="aacd98d0534fee5a0ebcbafa37443a1df" name="aacd98d0534fee5a0ebcbafa37443a1df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacd98d0534fee5a0ebcbafa37443a1df">&#9670;&#160;</a></span>Wait()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.pbWait </td>
+          <td class="memname">void PokemonEssentials.Interface.Field.IGameField.Wait </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>numframes</em></td><td>)</td>
@@ -1645,18 +1736,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a01452e7fa995e9c6ed2223670f9a6fe3">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a2f84141d6b6fbf140fa5ebbbc9092f87">PokemonUnity.Game</a>.</p>
 
 </div>
 </div>
-<a id="affb8393d5840479efd6e90573d9302ae" name="affb8393d5840479efd6e90573d9302ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affb8393d5840479efd6e90573d9302ae">&#9670;&#160;</a></span>pbWaitForInput()</h2>
+<a id="a64a2bc781d97a84ce7af7d14574d2b74" name="a64a2bc781d97a84ce7af7d14574d2b74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a2bc781d97a84ce7af7d14574d2b74">&#9670;&#160;</a></span>WaitForInput()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbWaitForInput </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.WaitForInput </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_window.cshtml">IWindow</a>&#160;</td>
           <td class="paramname"><em>msgwindow</em>, </td>
@@ -1676,16 +1767,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ab8a1e554598e0c3c0ed7eed10535fad8">PokemonUnity.Game</a>.</p>
+
 </div>
 </div>
-<a id="ab07eefeae790d2fe9696528f6a54a94b" name="ab07eefeae790d2fe9696528f6a54a94b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab07eefeae790d2fe9696528f6a54a94b">&#9670;&#160;</a></span>pbWaitMessage()</h2>
+<a id="a17d4c206bc0daab5c104b1675e36e75d" name="a17d4c206bc0daab5c104b1675e36e75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d4c206bc0daab5c104b1675e36e75d">&#9670;&#160;</a></span>WaitMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.pbWaitMessage </td>
+          <td class="memname">bool PokemonEssentials.Interface.Field.IGameField.WaitMessage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_i_window.cshtml">IWindow</a>&#160;</td>
           <td class="paramname"><em>msgwindow</em>, </td>
@@ -1699,16 +1792,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a7e162dcd4d54406d87511d764cebea97">PokemonUnity.Game</a>.</p>
+
 </div>
 </div>
-<a id="a3a022eee5527830f19fb2ed52fe72df8" name="a3a022eee5527830f19fb2ed52fe72df8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a022eee5527830f19fb2ed52fe72df8">&#9670;&#160;</a></span>pbWildBattle()</h2>
+<a id="aa810d67dbdfe91febedd2369cad4777e" name="aa810d67dbdfe91febedd2369cad4777e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa810d67dbdfe91febedd2369cad4777e">&#9670;&#160;</a></span>WildBattle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_combat.cshtml#a6d3738e09e699ec67acc67d0f876f29b">PokemonUnity.Combat.BattleResults</a> PokemonEssentials.Interface.Field.IGameField.pbWildBattle </td>
+          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_combat.cshtml#a6d3738e09e699ec67acc67d0f876f29b">PokemonUnity.Combat.BattleResults</a> PokemonEssentials.Interface.Field.IGameField.WildBattle </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_pokemon_unity.cshtml#aa6eb2463614633fcdf93f95a6816bb47">Pokemons</a>&#160;</td>
           <td class="paramname"><em>species</em>, </td>
@@ -1740,10 +1835,77 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#ab5cb2222179e2d8f7643bbb5a518807d">PokemonUnity.Game</a>.</p>
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a64ed5165137b55515eee0e471fe31434">PokemonUnity.Game</a>.</p>
+
+</div>
+</div>
+<a id="acbde42ddbe16fb0e5654d1786cebbf55" name="acbde42ddbe16fb0e5654d1786cebbf55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbde42ddbe16fb0e5654d1786cebbf55">&#9670;&#160;</a></span>WildBattleCore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_pokemon_unity_1_1_combat.cshtml#a6d3738e09e699ec67acc67d0f876f29b">PokemonUnity.Combat.BattleResults</a> PokemonEssentials.Interface.Field.IGameField.WildBattleCore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_poke_battle_1_1_i_pokemon.cshtml">IPokemon</a>&#160;</td>
+          <td class="paramname"><em>pkmn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int?&#160;</td>
+          <td class="paramname"><em>variable</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>canescape</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>canlose</em> = <code>false</code>&#160;&nbsp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_pokemon_unity_1_1_game.cshtml#a60c42324b2400329af73e157c79eae56">PokemonUnity.Game</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Event Documentation</h2>
+<a id="a65dd237c53baa252a1e1fdaadb86bb33" name="a65dd237c53baa252a1e1fdaadb86bb33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65dd237c53baa252a1e1fdaadb86bb33">&#9670;&#160;</a></span>OnEndBattle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action&lt;object, <a class="el" href="interface_pokemon_essentials_1_1_interface_1_1_event_arg_1_1_i_on_end_battle_event_args.cshtml">IOnEndBattleEventArgs</a>&gt; PokemonEssentials.Interface.Field.IGameField.OnEndBattle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab2533ea37aeeb8693356a32e934cadf" name="aab2533ea37aeeb8693356a32e934cadf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab2533ea37aeeb8693356a32e934cadf">&#9670;&#160;</a></span>OnStartBattle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler PokemonEssentials.Interface.Field.IGameField.OnStartBattle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>PokemonUnity.Shared/Framework/Essentials/Field/<a class="el" href="_i_field_8cs.cshtml">IField.cs</a></li>
 </ul>
+
