@@ -531,8 +531,8 @@ namespace Tests
 		[TestMethod]
 		public void Player_Load_Pokedex()
 		{
-			Assert.Inconclusive("Need better test...");
-			//Assert.Inconclusive("Code is temporarily stripped from project");
+			//Assert.Inconclusive("Need better test...");
+			Assert.Inconclusive("Code is temporarily stripped from project");
 			Overwrite_New_Save_File_With_Standard_Unit_Test_Values();
 
 			//GameState newSave = SaveManager.GetSave()[0];
