@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PokemonUnity;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 using PokemonUnity.Combat;
 using PokemonUnity.Character;
 using PokemonUnity.Inventory;
@@ -21,7 +21,7 @@ namespace PokemonEssentials.Interface.Screen
 	/// <summary>
 	/// The Bag object, which actually contains all the items
 	/// </summary>
-	public interface IBag 
+	public interface IBag
 	{
 		Items registeredItem			{ get; }
 		int lastpocket				{ get; }
@@ -178,20 +178,18 @@ namespace PokemonEssentials.Interface.Screen
 		//refresh();
 		// } }
 
-		int page_row_max();
-		int page_item_max();
+		//int page_row_max();
+		//int page_item_max();
 
-		IRect itemRect(int item);
+		//IRect itemRect(int item);
 
-		IRect drawCursor(int index, IRect rect);
+		//IRect drawCursor(int index, IRect rect);
 
 		Items item();
 
-		int itemCount { get; }
-
-		void drawItem(int index, int count, IRect rect);
-
-		void refresh();
+		//int itemCount { get; }
+		//void drawItem(int index, int count, IRect rect);
+		//void refresh();
 	}
 	#endregion
 }

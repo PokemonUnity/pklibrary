@@ -305,7 +305,7 @@ namespace PokemonUnity
 		/// </summary>
 		LEVITATE = 26,
 		/// <summary>
-		/// Has a 30% chance of inflcting either <see cref="Status.PARALYSIS"/>, <see cref="Status.POISON"/>, or <see cref="Status.SLEEP"/> on attacking Pokémon on contact.<para></para> Whenever a move makes contact with this Pokémon, the move's user has a 30% chance of being <see cref="Status.PARALYSIS"/>, <see cref="Status.POISON"/>, or put to <see cref="Status.SLEEP"/>, chosen at random.
+		/// Has a 30% chance of inflicting either <see cref="Status.PARALYSIS"/>, <see cref="Status.POISON"/>, or <see cref="Status.SLEEP"/> on attacking Pokémon on contact.<para></para> Whenever a move makes contact with this Pokémon, the move's user has a 30% chance of being <see cref="Status.PARALYSIS"/>, <see cref="Status.POISON"/>, or put to <see cref="Status.SLEEP"/>, chosen at random.
 		///
 		/// Nothing is done to compensate if the move's user is immune to one of these ailments; there is simply a lower chance that the move's user will be affected.
 		/// </summary>
@@ -431,13 +431,13 @@ namespace PokemonUnity
 		/// </summary>
 		SAND_STREAM = 45,
 		/// <summary>
-		/// Increases the <see cref="IMove.PP"/> cost of moves targetting the Pokémon by one.<para></para> Moves targetting this Pokémon use one extra <see cref="IMove.PP"/>.
+		/// Increases the <see cref="IMove.PP"/> cost of moves targeting the Pokémon by one.<para></para> Moves targeting this Pokémon use one extra <see cref="IMove.PP"/>.
 		///
 		/// This ability stacks if multiple targets have it. This ability still affects moves that fail or miss. This ability does not affect ally moves that target either the entire field or just its side, nor this Pokémon's self-targetted moves; it does, however, affect single-targetted ally moves aimed at this Pokémon, ally moves that target all other Pokémon, and opponents' moves that target the entire field. If this ability raises a move's PP cost above its remaining PP, it will use all remaining PP.
 		///
 		/// When this Pokémon enters battle, all participating trainers are notified that it has this ability.
 		///
-		/// Overworld: If the lead Pokémon has this ability, higher-levelled Pokémon have their encounter rate increased.
+		/// Overworld: If the lead Pokémon has this ability, higher-leveled Pokémon have their encounter rate increased.
 		/// </summary>
 		PRESSURE = 46,
 		/// <summary>
@@ -499,7 +499,7 @@ namespace PokemonUnity
 		///
 		/// Special moves are unaffected. Moves that do set damage, such as <see cref="Moves.SEISMIC_TOSS"/>, have their accuracy affected, but not their damage.
 		///
-		/// Overworld: If the lead Pokémon has this ability, higher-levelled Pokémon have their encounter rate increased.
+		/// Overworld: If the lead Pokémon has this ability, higher-leveled Pokémon have their encounter rate increased.
 		/// </summary>
 		HUSTLE = 55,
 		/// <summary>
@@ -603,7 +603,7 @@ namespace PokemonUnity
 		///
 		/// This ability functions identically to <see cref="Abilities.INSOMNIA"/> in battle.
 		///
-		/// Overworld: If the lead Pokémon has this ability, higher-levelled Pokémon have their encounter rate increased.
+		/// Overworld: If the lead Pokémon has this ability, higher-leveled Pokémon have their encounter rate increased.
 		/// </summary>
 		VITAL_SPIRIT = 72,
 		/// <summary>

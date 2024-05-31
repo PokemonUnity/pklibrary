@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PokemonUnity;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 using PokemonUnity.Combat;
 using PokemonUnity.Character;
 using PokemonUnity.Inventory;
@@ -18,13 +18,14 @@ using PokemonEssentials.Interface.EventArg;
 
 namespace PokemonEssentials.Interface.Screen
 {
-	/// <summary>
-	/// </summary>
-	/// Modified By Harshboy
-	/// Modified by Peter O.
-	/// Also Modified By OblivionMew
-	/// Overhauled by Maruno
-	public interface IPokegearScene : IScene {
+    /// <summary>
+    /// PokéGear Scene
+    /// </summary>
+    /// Modified By Harshboy
+    /// Modified by Peter O.
+    /// Also Modified By OblivionMew
+    /// Overhauled by Maruno
+    public interface IPokegearScene : IScene {
 		// -----------------------------------------------------------------------------
 		//  initialize
 		// -----------------------------------------------------------------------------

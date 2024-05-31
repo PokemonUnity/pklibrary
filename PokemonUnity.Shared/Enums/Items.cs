@@ -526,7 +526,7 @@ namespace PokemonUnity.Inventory
 		QUICK_POWDER = 251,
 		/// <summary>Held: If the holder has full HP and is attacked for regular damage that would faint it, this item is consumed and prevents the holder's HP from lowering below 1.  This effect works against multi-hit attacks, but does not work against the effects of Doom Desire or Future Sight.</summary>
 		FOCUS_SASH = 252,
-		/// <summary>Held: Raises the holder's Accuracy by 20% when it goes last. Ingame description is incorrect.</summary>
+		/// <summary>Held: Raises the holder's Accuracy by 20% when it goes last. In-game description is incorrect.</summary>
 		ZOOM_LENS = 253,
 		/// <summary>Held: Each time the holder uses the same move consecutively, its power is increased by another 10% of its original, to a maximum of 100%.</summary>
 		METRONOME = 254,
@@ -570,37 +570,37 @@ namespace PokemonUnity.Inventory
 		BIG_ROOT = 273,
 		/// <summary>Held: Increases the holder's Special Attack by 50%, but restricts it to the first move it uses until it leaves battle or loses this item.  If this item is swapped for another Choice item via Trick or Switcheroo, the holder's restriction is still lifted, but it will again be restricted to the next move it uses. (Quirk: If the holder is switched in by U-Turn and it also knows U-Turn, U-Turn becomes its restricted move.)</summary>
 		CHOICE_SPECS = 274,
-		/// <summary>Held: Increases the power of the holder's Fire moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Fire.</summary>
+		/// <summary>Held: Increases the power of the holder's Fire moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Fire.</summary>
 		FLAME_PLATE = 275,
-		/// <summary>Held: Increases the power of the holder's Water moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Water.</summary>
+		/// <summary>Held: Increases the power of the holder's Water moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Water.</summary>
 		SPLASH_PLATE = 276,
-		/// <summary>Held: Increases the power of the holder's Electric moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Electric.</summary>
+		/// <summary>Held: Increases the power of the holder's Electric moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Electric.</summary>
 		ZAP_PLATE = 277,
-		/// <summary>Held: Increases the power of the holder's Grass moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Grass.</summary>
+		/// <summary>Held: Increases the power of the holder's Grass moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Grass.</summary>
 		MEADOW_PLATE = 278,
-		/// <summary>Held: Increases the power of the holder's Ice moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Ice.</summary>
+		/// <summary>Held: Increases the power of the holder's Ice moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Ice.</summary>
 		ICICLE_PLATE = 279,
-		/// <summary>Held: Increases the power of the holder's Fighting moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Fighting.</summary>
+		/// <summary>Held: Increases the power of the holder's Fighting moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Fighting.</summary>
 		FIST_PLATE = 280,
-		/// <summary>Held: Increases the power of the holder's Poison moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Poison.</summary>
+		/// <summary>Held: Increases the power of the holder's Poison moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Poison.</summary>
 		TOXIC_PLATE = 281,
-		/// <summary>Held: Increases the power of the holder's Ground moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Ground.</summary>
+		/// <summary>Held: Increases the power of the holder's Ground moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Ground.</summary>
 		EARTH_PLATE = 282,
-		/// <summary>Held: Increases the power of the holder's Flying moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Flying.</summary>
+		/// <summary>Held: Increases the power of the holder's Flying moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Flying.</summary>
 		SKY_PLATE = 283,
-		/// <summary>Held: Increases the power of the holder's Psychic moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Psychic.</summary>
+		/// <summary>Held: Increases the power of the holder's Psychic moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Psychic.</summary>
 		MIND_PLATE = 284,
-		/// <summary>Held: Increases the power of the holder's Bug moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Bug.</summary>
+		/// <summary>Held: Increases the power of the holder's Bug moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Bug.</summary>
 		INSECT_PLATE = 285,
-		/// <summary>Held: Increases the power of the holder's Rock moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Rock.</summary>
+		/// <summary>Held: Increases the power of the holder's Rock moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Rock.</summary>
 		STONE_PLATE = 286,
-		/// <summary>Held: Increases the power of the holder's Ghost moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Ghost.</summary>
+		/// <summary>Held: Increases the power of the holder's Ghost moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Ghost.</summary>
 		SPOOKY_PLATE = 287,
-		/// <summary>Held: Increases the power of the holder's Dragon moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Dragon.</summary>
+		/// <summary>Held: Increases the power of the holder's Dragon moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Dragon.</summary>
 		DRACO_PLATE = 288,
-		/// <summary>Held: Increases the power of the holder's Dark moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Dark.</summary>
+		/// <summary>Held: Increases the power of the holder's Dark moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Dark.</summary>
 		DREAD_PLATE = 289,
-		/// <summary>Held: Increases the power of the holder's Steel moves by 20%. Held by a Multitype Pokémon: Holder's type becomes Steel.</summary>
+		/// <summary>Held: Increases the power of the holder's Steel moves by 20%. Held by a Multi-type Pokémon: Holder's type becomes Steel.</summary>
 		IRON_PLATE = 290,
 		/// <summary>Held: Increases the power of the holder's Psychic moves by 20%.</summary>
 		ODD_INCENSE = 291,
@@ -908,7 +908,7 @@ namespace PokemonUnity.Inventory
 		SECRET_POTION = 441,
 		/// <summary>Held by <see cref="Pokemons.GIRATINA"/> :   Holder's <see cref="Types.DRAGON"/> and <see cref="Types.GHOST"/> moves have 1.2× their base power.      Holder is in Origin Forme.  This item cannot be held by any Pokémon but Giratina.  When you enter the Union Room or connect to Wi-Fi, this item returns to your bag.</summary>
 		GRISEOUS_ORB = 442,
-		/// <summary>Optionally records wireless, Wi-Fi, and Battle Frontier battles.  Tracks Battle Points earned in the Battle Frontier, and stores commemorative prints.</summary>
+		/// <summary>Optionally records wireless, WiFi, and Battle Frontier battles.  Tracks Battle Points earned in the Battle Frontier, and stores commemorative prints.</summary>
 		VS_RECORDER = 443,
 		/// <summary>Used by trainer on a <see cref="Pokemons.SHAYMIN"/> :   Changes the target Shaymin from Land Forme to Sky Forme.      This item cannot be used on a <see cref="Status.FROZEN"/> Shaymin or at night.  Sky Forme Shaymin will revert to Land Forme overnight, when frozen, and upon entering a link battle.  This item must be used again to change it back.</summary>
 		GRACIDEA = 444,
@@ -1106,7 +1106,7 @@ namespace PokemonUnity.Inventory
 		RM_4_KEY = 540,
 		/// <summary>Unlocks room 6 on the <see cref="Locations.ABANDONED_SHIP"/>.</summary>
 		RM_6_KEY = 541,
-		/// <summary>Reveals invisble <see cref="Pokemons.KECLEON"/> on the overworld.</summary>
+		/// <summary>Reveals invisible <see cref="Pokemons.KECLEON"/> on the overworld.</summary>
 		DEVON_SCOPE = 542,
 		/// <summary>A parcel to be delivered to Professor Oak for a Pokédex.</summary>
 		OAKS_PARCEL = 543,
@@ -1360,7 +1360,7 @@ namespace PokemonUnity.Inventory
 		DRAGON_GEM = 668,
 		/// <summary>Held :   When the holder uses a damaging <see cref="Types.NORMAL"/>-type move, the move has 1.5× power and this item is consumed.</summary>
 		NORMAL_GEM = 669,
-		/// <summary>Holds medals recieved in the medal rally.</summary>
+		/// <summary>Holds medals received in the medal rally.</summary>
 		MEDAL_BOX = 670,
 		/// <summary>Fuses Kyurem with Reshiram or Zekrom, or splits them apart again.</summary>
 		DNA_SPLICERS = 671,

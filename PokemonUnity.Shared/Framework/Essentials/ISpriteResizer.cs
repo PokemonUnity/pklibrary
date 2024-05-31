@@ -28,7 +28,7 @@ namespace PokemonEssentials.Interface
 		// Nominal screen size
 		//int @width { get; }
 		//int @height { get; }
-		
+
 		//int brightness { get; set; }
 
 		void fadein(int frames);
@@ -116,9 +116,9 @@ namespace PokemonEssentials.Interface
 		IViewport initialize(params object[] arg);
 
 		float ox { get; set; }
-		
+
 		float oy { get; set; }
-		
+
 		IRect rect { get; set; }
 	}
 

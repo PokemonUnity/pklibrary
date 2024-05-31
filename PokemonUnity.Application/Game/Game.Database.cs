@@ -1479,7 +1479,7 @@ namespace PokemonUnity
 							Kernal.MoveEffectData.Add(effect, new Combat.PokeBattle_Move_135());
 							break;
 						case Effects.x17D:
-							//Disarming voice, inflices extra effects
+							//Disarming voice, inflicts extra effects
 							Kernal.MoveEffectData.Add(effect, new Combat.PokeBattle_Move_0A5());
 							break;
 						case Effects.x17E:
@@ -3412,7 +3412,7 @@ namespace PokemonUnity
 									,method: (Method)int.Parse((string)reader["encounter_method_id"].ToString())
 									,slotId: int.Parse((string)reader["slot"].ToString())
 									//,pokemon: (Pokemons)int.Parse((string)reader["pokemon_id"].ToString())
-									,pokemon: reader["pokemon_group"].ToString().Split(',').Select(x => (Pokemons)int.Parse(x)).ToArray()
+									,pokemon: reader["pokemon_group"].ToString().Split(',').Select(x => (Pokemons)int.Parse(x)).ToArray() //ToDo: foreach pokemon in group, make one encounter?
 									,conditions: reader["encounter_condition_value_group"].ToString().Split(',').Select(x => (ConditionValue)int.Parse(x)).ToArray()
 									,generation: int.Parse((string)reader["generation_id"].ToString())
 									,minLevel: int.Parse((string)reader["min_level"].ToString())
@@ -3443,7 +3443,7 @@ namespace PokemonUnity
 					reader.Dispose();
 					#endregion
 					//EncounterData.Add(Method.NONE, new List<Encounter>() { }.ToArray());
-					foreach (var en in e)
+					foreach (KeyValuePair<Method, List<int>> en in e)
 					{
 						Kernal.MethodData.Add((Method)int.Parse((string)reader["encounter_method_id"].ToString()), en.Value.ToArray());
 					}

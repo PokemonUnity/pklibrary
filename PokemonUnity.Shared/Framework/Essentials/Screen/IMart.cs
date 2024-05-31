@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PokemonUnity;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 using PokemonUnity.Combat;
 using PokemonUnity.Character;
 using PokemonUnity.Inventory;
@@ -227,7 +227,7 @@ namespace PokemonEssentials.Interface.Screen
 	// Pokémon Mart
 	// ===============================================================================
 	public interface IGameMart {
-		void PokemonMart(Items[] stock, string speech = null, bool cantsell = false); 
+		void PokemonMart(Items[] stock, string speech = null, bool cantsell = false);
 	}
 
 	public interface IGameTempMart {
@@ -290,7 +290,7 @@ namespace PokemonEssentials.Interface.Screen
 	#endregion
 
 	#region UI Elements
-	public interface IWindow_PokemonMart //: IWindow_DrawableCommand 
+	public interface IWindow_PokemonMart //: IWindow_DrawableCommand
 	{
 		IWindow_PokemonMart initialize(Items[] stock, IMartAdapter adapter, float x, float y, int width, int height, IViewport viewport = null);
 

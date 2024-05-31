@@ -11,7 +11,7 @@ using PokemonEssentials.Interface.PokeBattle;
 
 namespace PokemonEssentials.Interface.Battle
 {
-	public interface IBugContestState 
+	public interface IBugContestState
 	{
 		int ballcount				        { get; }
 		BattleResults decision				{ get; }
@@ -181,7 +181,7 @@ namespace PokemonEssentials.Interface.Battle
 		//}
 	}
 
-	public interface IBattle_BugContestBattle : IBattle 
+	public interface IBattle_BugContestBattle : IBattle
 	{
 		int ballcount				{ get; }
 

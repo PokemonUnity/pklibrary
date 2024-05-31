@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PokemonUnity;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 using PokemonUnity.Combat;
 using PokemonUnity.Character;
 using PokemonUnity.Inventory;
@@ -18,7 +18,7 @@ using PokemonEssentials.Interface.EventArg;
 
 namespace PokemonEssentials.Interface.Screen
 {
-	public interface IPokemonBox : IList<PokemonEssentials.Interface.PokeBattle.IPokemon>, ICollection<PokemonEssentials.Interface.PokeBattle.IPokemon> {
+	public interface IPokemonBox : IList<PokemonEssentials.Interface.PokeBattle.IPokemon>, ICollection<PokemonEssentials.Interface.PokeBattle.IPokemon>, IEnumerable<PokemonEssentials.Interface.PokeBattle.IPokemon> {
 		IList<IPokemon> pokemon				{ get; }
 		string name							{ get; set; }
 		string background					{ get; set; }

@@ -28,7 +28,7 @@ namespace PokemonUnity.Combat
 		public Attack.Category Category		{ get; set; }
 		public Moves MoveId					{ get; set; }
 		//public Attack.Target Targets		{ get; set; }
-		public Attack.Targets Target	{ get; set; }
+		public Attack.Targets Target		{ get; set; }
 		public Types Type					{ get; set; }
 		//public Attack.MoveFlags Flag		{ get; set; }
 		public Attack.Data.Flag Flags		{ get; set; }
@@ -41,7 +41,7 @@ namespace PokemonUnity.Combat
 		/// Abilities like Sheer Force and Shield Dust only affect additional effects, not regular effects.
 		/// </summary>
 		public virtual int AddlEffect		{ get { return Kernal.MoveData[MoveId].EffectChance??0; } }
-		public Attack.Effects Effect	{ get { return Kernal.MoveData[MoveId].Effect; } }
+		public Attack.Effects Effect		{ get { return Kernal.MoveData[MoveId].Effect; } }
 		/// <summary>
 		/// The move's accuracy, as a percentage.
 		/// An accuracy of 0 means the move doesn't perform an accuracy check

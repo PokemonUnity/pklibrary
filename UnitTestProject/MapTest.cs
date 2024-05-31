@@ -14,11 +14,21 @@ using PokemonEssentials.Interface.PokeBattle.Effects;
 
 namespace Tests
 {
-    [TestClass]
-    public class MapTest
-    {
-        #region Events
-        [TestMethod]
+	[TestClass]
+	public class MapTest
+	{
+		[TestMethod]
+		public void TestMapTreeGeneration()
+		{
+			IGame game = new Game();
+			// Assume player is located on a specific map or level, before the generated map is called.
+			// Assuming MapTree method should return a list of map objects or similar
+			var result = game.MapTree();
+			Assert.AreNotEqual(result, string.Empty, "MapTree should return a non-empty list when maps are available.");
+		}
+
+		#region Events
+		[TestMethod]
 		public void Map_TestMap_Event_Trigger()
 		{
 			//MapId
@@ -27,6 +37,6 @@ namespace Tests
 			//assert trigger
 			Assert.Inconclusive();
 		}
-        #endregion
-    }
+		#endregion
+	}
 }

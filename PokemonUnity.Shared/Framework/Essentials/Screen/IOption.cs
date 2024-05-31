@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PokemonUnity;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 using PokemonUnity.Combat;
 using PokemonUnity.Character;
 using PokemonUnity.Inventory;
@@ -18,7 +18,7 @@ using PokemonEssentials.Interface.EventArg;
 
 namespace PokemonEssentials.Interface.Screen
 {
-	public interface IWindow_PokemonOption //: Window_DrawableCommand 
+	public interface IWindow_PokemonOption //: Window_DrawableCommand
 	{
 		bool mustUpdateOptions				{ get; set; }
 

@@ -82,7 +82,7 @@ namespace PokemonEssentials.Interface
 		/// </summary>
 		int[] passages { get; set; }
 		/// <summary>
-		/// prioroty table
+		/// priority table
 		/// </summary>
 		int[] priorities { get; set; }
 		/// <summary>

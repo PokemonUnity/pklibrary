@@ -188,7 +188,7 @@ namespace PokemonUnity.Monster.Data
 					if (!typeof(T).Equals(typeof(int)))
 					{
 						//throw new Exception("Type not acceptable for Method-Value pair.");
-						//Instead of throwing an exception, i'll correct the problem instead?
+						//Instead of throwing an exception, I'll correct the problem instead?
 						//int.TryParse(Value.ToString, out EvolveValue);
 						//Convert.ChangeType(EvolveValue, typeof(int));
 						//Convert.ChangeType(Value, typeof(int));

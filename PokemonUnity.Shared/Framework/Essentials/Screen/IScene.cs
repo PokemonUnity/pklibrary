@@ -15,7 +15,7 @@ using PokemonEssentials.Interface.PokeBattle.Effects;
 using PokemonEssentials.Interface.EventArg;
 using PokemonEssentials.Interface.Screen;
 
-namespace PokemonEssentials.Interface.Screen 
+namespace PokemonEssentials.Interface.Screen
 {
 	/// <summary>
 	/// </summary>
@@ -67,12 +67,12 @@ namespace PokemonEssentials.Interface.Screen
 		bool DisplayConfirm(string v);
 	}
 	/// <summary>
-	/// A scene basically represents unity (or any frontend) where code pauses 
+	/// A scene basically represents unity (or any frontend) where code pauses
 	/// for user interaction (animation, and user key inputs).
 	/// </summary>
 	/// <remarks>
 	/// When code has a scene variable calling a method in middle of script
-	/// everything essentially comes to a halt as the frontend takes over 
+	/// everything essentially comes to a halt as the frontend takes over
 	/// and the code awaits a result or response to begin again.
 	/// </remarks>
 	public interface IScene : IHasDisplayMessage

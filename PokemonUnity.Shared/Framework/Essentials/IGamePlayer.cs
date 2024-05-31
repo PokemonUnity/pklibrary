@@ -3,14 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using PokemonUnity;
 using PokemonUnity.Inventory;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 using PokemonEssentials.Interface.Screen;
 
 namespace PokemonEssentials.Interface
 {
 	/// <summary>
 	/// This class handles the player. Its functions include event starting
-	/// determinants and map scrolling. 
+	/// determinants and map scrolling.
 	/// </summary>
 	/// Refer to "Game.GameData.GamePlayer" for the one instance of this class.
 	public interface IGamePlayer : IGameCharacter
@@ -71,7 +71,7 @@ namespace PokemonEssentials.Interface
 		/// <summary>
 		/// Refresh
 		/// </summary>
-		void refresh();
+		//void refresh();
 		/// <summary>
 		/// Same Position Starting Determinant
 		/// </summary>
@@ -90,6 +90,6 @@ namespace PokemonEssentials.Interface
 		/// <param name="x"></param>
 		/// <param name="y"></param>
 		/// <returns></returns>
-		bool check_event_trigger_touch(float x, float y);
+		//bool check_event_trigger_touch(float x, float y);
 	}
 }

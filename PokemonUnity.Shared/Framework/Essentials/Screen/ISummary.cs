@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PokemonUnity;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 using PokemonUnity.Combat;
 using PokemonUnity.Character;
 using PokemonUnity.Inventory;
@@ -52,7 +52,7 @@ namespace PokemonEssentials.Interface.Screen
 		int StartChooseMoveScreen(IPokemon party, int partyindex, string message);
 	}
 
-	public interface IMoveSelectionSprite : ISpriteWrapper, IDisposable 
+	public interface IMoveSelectionSprite : ISpriteWrapper, IDisposable
 	{
 		int preselected				{ get; set; }
 		int index				    { get; set; }

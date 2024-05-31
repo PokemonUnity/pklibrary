@@ -51,17 +51,17 @@ namespace PokemonUnity
 		/// </summary>
 		public static IDictionary<Locations,int[]> LocationData { get; private set; }
 		/// <summary>
-		/// List of <see cref="Player.Area"/> that triggers <seealso cref="Overworld.IEncounterData"/>
+		/// List of <see cref="Player.Area"/> that triggers <seealso cref="Overworld.IMapEncounterMetadata"/>
 		/// <para></para>
 		/// Key: <seealso cref="Overworld.IArea.Id"/> | Value: <seealso cref="Player.Area"/>
 		/// </summary>
 		public static IDictionary<int,IArea> AreaData { get; private set; }
 		/// <summary>
-		/// Key: <seealso cref="Method"/> | Value: <seealso cref="IEncounterData.Id"/>
+		/// Key: <seealso cref="Method"/> | Value: <seealso cref="IMapEncounterMetadata.Id"/>
 		/// </summary>
 		public static IDictionary<Method,int[]> MethodData { get; private set; }
 		/// <summary>
-		/// Key: <seealso cref="IEncounterData.Id"/> | Value: <seealso cref="Overworld.IEncounterData"/>
+		/// Key: <seealso cref="IMapEncounterMetadata.Id"/> | Value: <seealso cref="Overworld.IMapEncounterMetadata"/>
 		/// </summary>
 		public static IDictionary<int,IMapEncounterMetadata> EncounterData { get; private set; }
 		//public static IDictionary<Method,IMapEncounterMetadata> EncounterMethodData { get; private set; }
@@ -175,6 +175,7 @@ namespace PokemonUnity
 		#endregion
 
 		#region Write to and Read from Methods
+		public static void load_data(string filepath = null) { }
 		public static void load_data(out IDictionary<int, PokemonEssentials.Interface.Field.IEncounters> encdata, string filepath = null)
 		{
 			encdata = new Dictionary<int, PokemonEssentials.Interface.Field.IEncounters>();
@@ -320,9 +321,10 @@ namespace PokemonUnity
 			}*/
 			#endregion
 		}
-		public static void save_data(IDictionary<int, PokemonEssentials.Interface.Field.IEncounters> encdata, string filepath = null)
+		//public static void save_data(IDictionary<int, PokemonEssentials.Interface.Field.IEncounters> encdata, string filepath = null)
+		public static void save_data(object encdata, string filepath = null)
 		{
-			if (encdata == null) return; //maybe save an empty file, or clear database?
+			if (encdata == null || encdata is null) return; //maybe save an empty file, or clear database?
 			if (!string.IsNullOrEmpty(filepath))
 			{
 //				BinaryFormatter bf = new BinaryFormatter();

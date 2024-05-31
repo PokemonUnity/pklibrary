@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PokemonUnity;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 using PokemonUnity.Combat;
 using PokemonUnity.Character;
 using PokemonUnity.Inventory;
@@ -51,13 +51,15 @@ namespace PokemonEssentials.Interface.Screen
 		void setIconBitmap(Pokemons species);
 	}
 
-	// ===============================================================================
-	// Pokédex menu screen
-	// * For choosing which region list to view.  Only appears when there is more
-	//   than one viable region list to choose from, and if DEXDEPENDSONLOCATION is
-	//   false.
-	// * Adapted from the Pokégear menu script by Maruno.
-	// ===============================================================================
+	#region Pokédex Menu Scene
+	/// <summary>
+	/// </summary>
+	/// <remarks>
+	/// For choosing which region list to view.  Only appears when there is more
+	/// than one viable region list to choose from, and if DEXDEPENDSONLOCATION is
+	/// false.
+	/// </remarks>
+	/// Adapted from the Pokégear menu script by Maruno.
 	public interface IWindow_DexesList : IWindow_CommandPokemon
 	{
 		IWindow_DexesList initialize(string[] commands, float width, int seen, int owned);
@@ -65,6 +67,9 @@ namespace PokemonEssentials.Interface.Screen
 		//void drawItem(int index, int count, IRect rect);
 	}
 
+	/// <summary>
+	/// Pokédex Menu Scene
+	/// </summary>
 	public interface IScene_PokedexMenu
 	{
 		IScene_PokedexMenu initialize(int menu_index = 0);
@@ -75,6 +80,7 @@ namespace PokemonEssentials.Interface.Screen
 
 		void update_command();
 	}
+	#endregion
 
 	// ===============================================================================
 	// Pokédex main screen

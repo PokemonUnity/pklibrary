@@ -9,7 +9,7 @@ using PokemonEssentials.Interface.Screen;
 using PokemonEssentials.Interface.PokeBattle;
 using PokemonEssentials.Interface.PokeBattle.Effects;
 using PokemonUnity;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 
 namespace PokemonEssentials.Interface
 {
@@ -25,7 +25,7 @@ namespace PokemonEssentials.Interface
 	/// <summary>
 	/// Pokémon sprite (used out of battle)
 	/// </summary>
-	public interface IPokemonSprite : ISpriteWrapper 
+	public interface IPokemonSprite : ISpriteWrapper
 	{
 		new IPokemonSprite initialize(IViewport viewport = null);
 
@@ -45,7 +45,7 @@ namespace PokemonEssentials.Interface
 	/// <summary>
 	/// Pokémon sprite (used in battle)
 	/// </summary>
-	public interface IPokemonBattlerSprite //: RPG.ISprite 
+	public interface IPokemonBattlerSprite //: RPG.ISprite
 	{
 		int selected				{ get; set; }
 
@@ -84,8 +84,8 @@ namespace PokemonEssentials.Interface
 	/// </summary>
 	public interface IPokemonIconSprite : ISpriteWrapper {
 		int selected				{ get; set; }
-		int active				{ get; set; }
-		IPokemon pokemon				{ get; set; }
+		int active					{ get; set; }
+		IPokemon pokemon			{ get; set; }
 
 		IPokemonIconSprite initialize(IPokemon pokemon, IViewport viewport = null);
 

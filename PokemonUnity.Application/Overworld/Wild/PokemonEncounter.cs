@@ -7,7 +7,7 @@ using PokemonUnity;
 using PokemonUnity.Inventory;
 using PokemonUnity.Monster;
 using PokemonUnity.Utility;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 using PokemonEssentials.Interface.Item;
 using PokemonEssentials.Interface.Field;
 using PokemonEssentials.Interface.Battle;
@@ -52,7 +52,28 @@ namespace PokemonUnity.Overworld
 		//	new int[] { 20,20,10,10,10,10,5,5,4,4,1,1 }, //LandNight
 		//	new int[] { 20,20,10,10,10,10,5,5,4,4,1,1 } //BugContest
 		//}; } }
-		public IDictionary<EncounterOptions, int[]> EnctypeChances { get; }
+		public IDictionary<EncounterOptions, int[]> EnctypeChances
+		{
+			get
+			{
+				return new Dictionary<EncounterOptions, int[]>()
+				{
+					{ EncounterOptions.Land, Walk },
+					{ EncounterOptions.Cave, DarkSpots },
+					{ EncounterOptions.Water, Surf },
+					{ EncounterOptions.RockSmash, Hidden },
+					//{ EncounterOptions.OldRod, OldRod },
+					//{ EncounterOptions.GoodRod, GoodRod },
+					//{ EncounterOptions.SuperRod, SuperRod },
+					{ EncounterOptions.HeadbuttLow, Hidden },
+					{ EncounterOptions.HeadbuttHigh, Hidden },
+					{ EncounterOptions.LandMorning, Walk },
+					{ EncounterOptions.LandDay, Walk },
+					{ EncounterOptions.LandNight, Walk },
+					//{ EncounterOptions.BugContest, BugContest }
+				};
+			}
+		}
 		/// <summary>
 		/// Density is rate encounter;
 		/// How often player is to encounter a pokemon
@@ -60,7 +81,7 @@ namespace PokemonUnity.Overworld
 		//public int[] EnctypeDensities { get { return new int[] {25,10,10,0,0,0,0,0,0,25,25,25,25}; } }
 		public IDictionary<EncounterOptions, int> EnctypeDensities { get; }
 		//public int[] EnctypeCompileDens { get { return new int[] {1,2,3,0,0,0,0,0,0,1,1,1,1}; } }
-		public IDictionary<EncounterOptions,IList<IEncounterPokemon>> EnctypeEncounters { get; }
+		public IDictionary<EncounterOptions,IList<IEncounterPokemon>> EnctypeEncounters { get { return enctypes; } }
 		private IDictionary<EncounterOptions,IList<IEncounterPokemon>> enctypes;
 		//private NestedDictionary<EncounterOptions, NestedDictionary<Pokemons,int[]>> enctypes;
 		private int[] density;
@@ -196,6 +217,7 @@ namespace PokemonUnity.Overworld
 		public bool MapHasEncounter (int mapID, EncounterOptions enctype) {
 			IDictionary<int, IEncounters> data = null;//load_data("Data/encounters.dat");
 			Kernal.load_data(out data, "Data/encounters.dat");
+			//Kernal.EncounterData[mapID]
 			if (data[mapID] != null) { //data.is_a(Hash) &&
 				enctypes=data[mapID].EnctypeEncounters;	//[1]
 				density=data[mapID].EnctypeDensities.Values.ToArray();	//[0] | ToDo: refactor this and remove private variable?

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PokemonUnity;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 using PokemonUnity.Combat;
 using PokemonUnity.Character;
 using PokemonUnity.Inventory;
@@ -69,7 +69,6 @@ namespace PokemonEssentials.Interface.Screen
 
 		/// <summary>
 		/// Creating a new Mystery Gift for the Master file, and editing an existing one.
-		///
 		/// </summary>
 		/// <param name="type">0=Pokémon; 1 or higher=item (is the item's quantity).</param>
 		/// <param name="item">The thing being turned into a Mystery Gift (Pokémon object or item ID).</param>
@@ -77,8 +76,21 @@ namespace PokemonEssentials.Interface.Screen
 		/// <param name="giftname"></param>
 		/// <returns></returns>
 		//IMysteryGiftData EditMysteryGift(int type, Items item, int id = 0, string giftname = "");
-		IMysteryGiftData EditMysteryGift(Items item, int id = 0, string giftname = "");
-		IMysteryGiftData EditMysteryGift(Pokemons pkmn, int id = 0, string giftname = "");
+		/// <summary>
+		/// Creating a new Mystery Gift for the Master file, and editing an existing one.
+		/// </summary>
+		/// <param name="item">The thing being turned into a Mystery Gift (Item ID).</param>
+		/// <param name="qty">1 or higher (is the item's quantity).</param>
+		/// <param name="giftname"></param>
+		/// <returns></returns>
+		IMysteryGiftData EditMysteryGift(Items item, int qty = 0, string giftname = "");
+		/// <summary>
+		/// Creating a new Mystery Gift for the Master file, and editing an existing one.
+		/// </summary>
+		/// <param name="pkmn">The thing being turned into a Mystery Gift (Pokémon object).</param>
+		/// <param name="giftname"></param>
+		/// <returns></returns>
+		IMysteryGiftData EditMysteryGift(Pokemons pkmn, string giftname = "");
 
 		//void CreateMysteryGift(int type, Items item);
 		void CreateMysteryGift(Items item);
@@ -86,29 +98,43 @@ namespace PokemonEssentials.Interface.Screen
 
 
 
-		// ###############################################################################
-		// Debug option for managing gifts in the Master file and exporting them to a
-		// file to be uploaded.
-		// ###############################################################################
+		/// <summary>
+		/// Debug option for managing gifts in the Master file and exporting them to a
+		/// file to be uploaded.
+		/// </summary>
 		void ManageMysteryGifts();
 
 		void RefreshMGCommands(IMysteryGiftData[] master, int[] online);
 
 
 
-		// ###############################################################################
-		// Downloads all available Mystery Gifts that haven't been downloaded yet.
-		// ###############################################################################
-		// Called from the Continue/New Game screen.
+		/// <summary>
+		/// Downloads all available Mystery Gifts that haven't been downloaded yet.
+		/// </summary>
+		/// <remarks>
+		/// Called from the Continue/New Game screen.
+		/// </remarks>
+		/// <param name="trainer"></param>
+		/// <returns></returns>
 		ITrainer DownloadMysteryGift(ITrainer trainer);
 
 
 
-		// ###############################################################################
-		// Converts an array of gifts into a string and back.
-		// ###############################################################################
-		string MysteryGiftEncrypt(IMysteryGiftData gift);
+        // ###############################################################################
+        // Converts an array of gifts into a string and back.
+        // ###############################################################################
+        /// <summary>
+        ///Converts an array of gifts into a string
+        /// </summary>
+        /// <param name="gift"></param>
+        /// <returns></returns>
+        string MysteryGiftEncrypt(IMysteryGiftData gift);
 
+		/// <summary>
+		///Converts a string into an array of gifts
+		/// </summary>
+		/// <param name="gift"></param>
+		/// <returns></returns>
 		IMysteryGiftData MysteryGiftDecrypt(string gift);
 
 

@@ -22,7 +22,7 @@ namespace PokemonUnity.Application
 		/// <summary>
 		/// Shift: after you kill the enemy's pokemon,
 		/// the game will tell you what pokemon will be switched in and then allow you to freely switch your pokemon with another. <para></para>
-		/// Set: you can't do the above (link battles can only be set btw)
+		/// Set: you can't do the above (link battles can only be set by the way)
 		/// </summary>
 		public bool BattleShiftStyle { get; private set; }
 		public bool ForceBattleStyle { get; private set; }
@@ -214,7 +214,7 @@ namespace PokemonUnity.Application
 		public const int STORAGEBOXES = 24;
 		#endregion
 
-		#region Pokedex
+		#region Pokédex
 		/// <summary>
 		/// Whether the Pokédex list shown is the one for the player's current region
 		///    (true), or whether a menu pops up for the player to manually choose which
@@ -372,9 +372,9 @@ namespace PokemonUnity.Application
 		/// <summary>
 		/// Immediately after reaching win goal for challenge criteria,
 		/// disables all features related to challenge
-		/// (returns game to "normmal"/classic at the end of challenge)
+		/// (returns game to "normal"/classic at the end of challenge)
 		/// </summary>
-		//ToDo: Left Open-ended for different win-criterias
+		//ToDo: Left Open-ended for different win-criteria
 		public bool ChallengeEndsAfter { get; private set; }
 		/// <summary>
 		/// Cannot use or access PC, of any sort (cant access stored pokemons or items)
@@ -413,7 +413,7 @@ namespace PokemonUnity.Application
 		/// </summary>
 		public bool LosingTwiceInRowResetsMoney { get; private set; }
 		/// <summary>
-		/// Will TMs stay in bag inventory after consumed by pokmeon
+		/// Will TMs stay in bag inventory after consumed by pokemon
 		/// </summary>
 		public bool MachineIsInfiniteUse { get; private set; }
 		#endregion
@@ -562,6 +562,7 @@ namespace PokemonUnity.Application
 		#region Methods
 		public string GetGuid()
 		{
+			//ToDo: Use Bitwise Operators to represent value as a binary integer
 			return string.Format(""
 				+ (BattleShiftStyle ? "1" : "0"							)
 				+ (CanOnlyCaptureFirstWildEncounter ? "1" : "0"			)
@@ -647,8 +648,8 @@ namespace PokemonUnity.Application
 	#region Custom Game Mode
 	// Challenge is different from Game Mode because...
 	// Challenge affects your experience playing thru the open-world adventure
-	// While Survival, Battle-Mode, Statium, Elite Four, Battle Frontier, [Misc] Contents...
-	// can all be labeled as a Mode of gamplay, and be a stand-alone expierence without `World`-element
+	// While Survival, Battle-Mode, Stadium, Elite Four, Battle Frontier, [Misc] Contents...
+	// can all be labeled as a Mode of gameplay, and be a stand-alone experience without `World`-element
 	public enum Challenges
 	{
 		/// <summary>
@@ -675,7 +676,7 @@ namespace PokemonUnity.Application
 		/// </summary>
 		,RolePlay
 		/// <summary>
-		/// Montoype Challenge => Like Gym Leader, theme entire collection of pokemon around a single type (or concept)
+		/// Monotype Challenge => Like Gym Leader, theme entire collection of pokemon around a single type (or concept)
 		/// </summary>
 		,Monotype
 		/// <summary>

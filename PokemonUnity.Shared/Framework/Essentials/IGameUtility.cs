@@ -272,7 +272,7 @@ namespace PokemonEssentials.Interface
 		void SeenForm(IPokemon poke);//, int gender = 0, int form = 0
 		#endregion
 
-		#region Analysing Pokémon
+		#region Analyzing Pokémon
 		/// <summary>
 		/// Heals all Pokémon in the party.
 		/// </summary>

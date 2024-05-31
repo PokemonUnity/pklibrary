@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PokemonUnity;
-using PokemonUnity.UX;
+using PokemonUnity.Interface;
 using PokemonUnity.Combat;
 using PokemonUnity.Utility;
 using PokemonUnity.Character;
@@ -130,9 +130,9 @@ namespace PokemonEssentials.Interface.Screen
 	//PokemonPCList.registerPC(new PurifyChamberPC());
 
 	// ####################
-	// 
+	//
 	//  General purpose utilities
-	// 
+	//
 
 	public interface IGamePurifyChamber
 	{
@@ -188,7 +188,7 @@ namespace PokemonEssentials.Interface.Screen
 
 // ###############################################
 
-	public interface IWindow_PurifyChamberSets //: IWindow_DrawableCommand 
+	public interface IWindow_PurifyChamberSets //: IWindow_DrawableCommand
 	{
 		int switching				{ get; set; }
 

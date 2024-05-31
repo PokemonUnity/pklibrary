@@ -136,14 +136,14 @@ namespace PokemonUnity
 					return (int)Math.Min(catchRate,255);
 				}
 				else if (ball == Items.LEVEL_BALL) {
-					int attler=battle.battlers[0].Level;
+					int pbattler=battle.battlers[0].Level;
 					if (battle.battlers[2].IsNotNullOrNone() &&
-						battle.battlers[2].Level>attler) attler=battle.battlers[2].Level;
-					if (attler>=battler.Level*4) {
+						battle.battlers[2].Level>pbattler) pbattler=battle.battlers[2].Level;
+					if (pbattler>=battler.Level*4) {
 						catchRate*=8;
-					} else if (attler>=battler.Level*2) {
+					} else if (pbattler>=battler.Level*2) {
 						catchRate*=4;
-					} else if (attler>battler.Level) {
+					} else if (pbattler>battler.Level) {
 						catchRate*=2;
 					}
 					return (int)Math.Min(catchRate,255);
@@ -172,16 +172,16 @@ namespace PokemonUnity
 					return (int)Math.Min(catchRate,255);
 				}
 				else if (ball == Items.LOVE_BALL) {
-					IBattler attler=battle.battlers[0];
-					IBattler attler2=null;
-					if (battle.battlers[2].IsNotNullOrNone()) attler2=battle.battlers[2];
-					if (attler.Species==battler.Species &&
-						((battler.Gender==false && attler.Gender==true) ||
-						(battler.Gender==true && attler.Gender==false))) {
+					IBattler pbattler=battle.battlers[0];
+					IBattler pbattler2=null;
+					if (battle.battlers[2].IsNotNullOrNone()) pbattler2=battle.battlers[2];
+					if (pbattler.Species==battler.Species &&
+						((battler.Gender==false && pbattler.Gender==true) ||
+						(battler.Gender==true && pbattler.Gender==false))) {
 						catchRate*=8;
-					} else if (attler2.IsNotNullOrNone() && attler2.Species==battler.Species &&
-						((battler.Gender==false && attler2.Gender==true) ||
-						(battler.Gender==true && attler2.Gender==false))) {
+					} else if (pbattler2.IsNotNullOrNone() && pbattler2.Species==battler.Species &&
+						((battler.Gender==false && pbattler2.Gender==true) ||
+						(battler.Gender==true && pbattler2.Gender==false))) {
 						catchRate*=8;
 					}
 					return (int)Math.Min(catchRate,255);

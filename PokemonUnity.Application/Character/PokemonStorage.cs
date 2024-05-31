@@ -187,7 +187,7 @@ namespace PokemonUnity
 			public static string[] MARKINGCHARS=new string[] { "●", "▲", "■", "♥", "★", "♦︎" };
 
 			public PokemonStorage(int maxBoxes = Core.STORAGEBOXES, int maxPokemon = 30) { initialize(maxBoxes, maxPokemon); }
-			public PokemonEssentials.Interface.Screen.IPCPokemonStorage initialize (int maxBoxes=Core.STORAGEBOXES,int maxPokemon=30) {
+			public virtual PokemonEssentials.Interface.Screen.IPCPokemonStorage initialize (int maxBoxes=Core.STORAGEBOXES,int maxPokemon=30) {
 				@boxes=new PokemonBox[maxBoxes];
 				for (int i = 0; i < maxBoxes; i++) {
 					int ip1=i+1;
@@ -206,7 +206,7 @@ namespace PokemonUnity
 			}
 
 			public IPokemonBox this[int x] { get {
-					return (x==-1) ? (IPokemonBox)(PokemonBox)this.party : @boxes[x];
+					return (x==-1) ? (IPokemonBox)(IList)this.party : @boxes[x];
 				}
 			}
 			public PokemonEssentials.Interface.PokeBattle.IPokemon this[int x,int y] { get {
@@ -262,7 +262,7 @@ namespace PokemonUnity
 					if (!found) return false;
 				}
 				if (boxDst==-1) {
-					if (((PokemonBox)this.party).nitems>=6) {
+					if (((IPokemonBox)(IList)this.party).nitems>=6) {
 						//if (this.party.GetCount()>=6) {
 						return false;
 					}
@@ -288,7 +288,7 @@ namespace PokemonUnity
 			}
 
 			public void MoveCaughtToParty(PokemonEssentials.Interface.PokeBattle.IPokemon pkmn) {
-				if (((PokemonBox)this.party).nitems>=6) {
+				if (((IPokemonBox)(IList)this.party).nitems>=6) {
 				//if (this.party.GetCount()>=6) {
 					return;
 				}
@@ -362,9 +362,7 @@ namespace PokemonUnity
 			}
 		}
 
-		// ###############################################################################
-		// Regional Storage scripts
-		// ###############################################################################
+		#region Regional Storage scripts
 		public partial class RegionalStorage : IRegionalStorage {
 			protected IList<IPCPokemonStorage> storages { get; set; }
 			protected int lastmap { get; set; }
@@ -461,7 +459,11 @@ namespace PokemonUnity
 				getCurrentStorage.Delete(box, index);
 			}
 		}
+		#endregion
 
+		/// <summary>
+		/// Use this to access the player's <see cref="Items"/> inventory and mailbox from PC
+		/// </summary>
 		public partial class TrainerPC : IPCMenuUser {
 			public bool shouldShow { get {
 				return true;
@@ -477,6 +479,9 @@ namespace PokemonUnity
 			}
 		}
 
+		/// <summary>
+		/// Use this to access the player's <see cref="IPokemon"/> storage system from PC
+		/// </summary>
 		public partial class StorageSystemPC : IPCMenuUser {
 			public bool shouldShow { get {
 				return true;
@@ -569,9 +574,7 @@ namespace PokemonUnity
 	}
 
 	public partial class Game : PokemonEssentials.Interface.Screen.IGamePCStorage {
-		// ###############################################################################
-		// PC menus
-		// ###############################################################################
+		#region PC menus
 		public string GetStorageCreator() {
 			string creator=null;//StorageCreator();
 			//if (creator == null || creator=="") creator=Game._INTL("Bill");
@@ -713,5 +716,6 @@ namespace PokemonUnity
 			} while (true);
 			(this as IGameAudioPlay).SEPlay("computerclose");
 		}
+		#endregion
 	}
 }

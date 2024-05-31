@@ -23,17 +23,17 @@ namespace PokemonUnity.ConsoleApp
 {
 	class Program
 	{
-		public static void ResetSqlConnection(string db) 
+		public static void ResetSqlConnection(string db)
 		{
-			Game.con = (System.Data.IDbConnection)new System.Data.SQLite.SQLiteConnection(db); 
-			Game.ResetSqlConnection(db); 
+			Game.con = (System.Data.IDbConnection)new System.Data.SQLite.SQLiteConnection(db);
+			Game.ResetSqlConnection(db);
 		}
 
 		static void Main(string[] args)
 		{
 			System.Console.OutputEncoding = System.Text.Encoding.UTF8;
-			GameDebug.OnLog += GameDebug_OnLog;
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			Debugger.Instance.OnLog += GameDebug_OnLog;
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 			System.Console.WriteLine("######################################");
 			System.Console.WriteLine("# Hello - Welcome to Console Battle! #");
 			System.Console.WriteLine("######################################");
@@ -133,7 +133,7 @@ namespace PokemonUnity.ConsoleApp
 		public void Display(string v)
 		//void IHasDisplayMessage.Display(string v)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			//GameDebug.Log(v);
 			System.Console.WriteLine(v);
@@ -141,7 +141,7 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.DisplayMessage(string msg, bool brief)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			Display(msg);
 			@messageCount += 1;
@@ -149,7 +149,7 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.DisplayPausedMessage(string msg)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			Display(msg);
 			@messageCount += 1;
@@ -157,7 +157,7 @@ namespace PokemonUnity.ConsoleApp
 
 		bool IPokeBattle_DebugSceneNoGraphics.DisplayConfirmMessage(string msg)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			Display(msg);
 			@messageCount += 1;
@@ -185,14 +185,14 @@ namespace PokemonUnity.ConsoleApp
 
 		bool IHasDisplayMessage.DisplayConfirm(string v)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			return (this as IPokeBattle_DebugSceneNoGraphics).DisplayConfirmMessage(v);
 		}
 
 		bool IPokeBattle_DebugSceneNoGraphics.ShowCommands(string msg, string[] commands, bool defaultValue)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			GameDebug.Log(msg);
 			@messageCount += 1;
@@ -201,7 +201,7 @@ namespace PokemonUnity.ConsoleApp
 
 		int IPokeBattle_DebugSceneNoGraphics.ShowCommands(string msg, string[] commands, int defaultValue)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			GameDebug.Log(msg);
 			@messageCount += 1;
@@ -210,7 +210,7 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.BeginCommandPhase()
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			if (@messageCount > 0)
 			{
@@ -221,7 +221,7 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.StartBattle(PokemonEssentials.Interface.PokeBattle.IBattle battle)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			this.battle = battle;
 			lastcmd = new MenuCommands[] { 0, 0, 0, 0 };
@@ -258,7 +258,7 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.EndBattle(BattleResults result)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		//void IPokeBattle_DebugSceneNoGraphics.TrainerSendOut(IBattle battle, IPokemon pkmn)
@@ -268,17 +268,17 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.TrainerWithdraw(IBattle battle, IBattler pkmn)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		void IPokeBattle_DebugSceneNoGraphics.Withdraw(IBattle battle, IBattler pkmn)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		int IPokeBattle_DebugSceneNoGraphics.ForgetMove(PokemonEssentials.Interface.PokeBattle.IPokemon pokemon, Moves moveToLearn)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			IMove[] moves = pokemon.moves;
 			string[] commands = new string[4] {
@@ -292,7 +292,7 @@ namespace PokemonUnity.ConsoleApp
 			}
 			System.Console.WriteLine("Press 0 to Cancel");
 			bool appearing = true;
-			do 
+			do
 			{
 				ConsoleKeyInfo fs = System.Console.ReadKey(true);
 
@@ -328,20 +328,20 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.BeginAttackPhase()
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 		}
 
 		int IPokeBattle_DebugSceneNoGraphics.CommandMenu(int index)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			bool shadowTrainer = //(hasConst(Types,:SHADOW) && //Game has shadow pokemons
 				//@battle.opponent != null;
 				battle.battlers[index] is IPokemonShadowPokemon p && p.hypermode;
 
 			System.Console.WriteLine("Enemy: {0} HP: {1}/{2}", battle.battlers[index].Opposing1.Name, battle.battlers[index].Opposing1.HP, battle.battlers[index].Opposing1.TotalHP);
-			if (battle.battlers[index].Opposing2.IsNotNullOrNone()) 
+			if (battle.battlers[index].Opposing2.IsNotNullOrNone())
 				System.Console.WriteLine("Enemy: {0} HP: {1}/{2}", battle.battlers[index].Opposing2.Name, battle.battlers[index].Opposing2.HP, battle.battlers[index].Opposing2.TotalHP);
 
 			System.Console.WriteLine("What will {0} do?", battle.battlers[index].Name);
@@ -390,7 +390,7 @@ namespace PokemonUnity.ConsoleApp
 
 		int IPokeBattle_DebugSceneNoGraphics.FightMenu(int index)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			IBattleMove[] moves = @battle.battlers[index].moves;
 			string[] commands = new string[4] {
@@ -450,7 +450,7 @@ namespace PokemonUnity.ConsoleApp
 
 		Items IPokeBattle_DebugSceneNoGraphics.ItemMenu(int index)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			//System.Console.WriteLine("Need to implement item system in textbased-line");
 			return Items.NONE;
@@ -458,7 +458,7 @@ namespace PokemonUnity.ConsoleApp
 
 		int IPokeBattle_DebugSceneNoGraphics.ChooseTarget(int index, PokemonUnity.Attack.Targets targettype)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			//Doesnt include multiple targets at once...
 			List<int> targets = new List<int>();
@@ -467,17 +467,17 @@ namespace PokemonUnity.ConsoleApp
 				//if (@battle.battlers[index].IsOpposing(i) &&
 				//   !@battle.battlers[i].isFainted()) targets.Add(i);
 				if (!@battle.battlers[i].isFainted())
-					if ((targettype == Targets.RANDOM_OPPONENT
-						//|| targettype == Targets.ALL_OPPONENTS
-						//|| targettype == Targets.OPPONENTS_FIELD
-						|| targettype == Targets.SELECTED_POKEMON
-						|| targettype == Targets.SELECTED_POKEMON_ME_FIRST) &&
+					if ((targettype == PokemonUnity.Attack.Targets.RANDOM_OPPONENT
+						//|| targettype == PokemonUnity.Attack.Targets.ALL_OPPONENTS
+						//|| targettype == PokemonUnity.Attack.Targets.OPPONENTS_FIELD
+						|| targettype == PokemonUnity.Attack.Targets.SELECTED_POKEMON
+						|| targettype == PokemonUnity.Attack.Targets.SELECTED_POKEMON_ME_FIRST) &&
 						@battle.battlers[index].IsOpposing(i))
 						targets.Add(i);
-					else if ((targettype == Targets.ALLY
-						//|| targettype == Targets.USERS_FIELD
-						//|| targettype == Targets.USER_AND_ALLIES
-						|| targettype == Targets.USER_OR_ALLY) &&
+					else if ((targettype == PokemonUnity.Attack.Targets.ALLY
+						//|| targettype == PokemonUnity.Attack.Targets.USERS_FIELD
+						//|| targettype == PokemonUnity.Attack.Targets.USER_AND_ALLIES
+						|| targettype == PokemonUnity.Attack.Targets.USER_OR_ALLY) &&
 						!@battle.battlers[index].IsOpposing(i))
 						targets.Add(i);
 			}
@@ -521,13 +521,13 @@ namespace PokemonUnity.ConsoleApp
 
 		public void Refresh()
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		//int IPokeBattle_DebugSceneNoGraphics.Switch(int index, bool lax, bool cancancel)
 		int IPokeBattle_SceneNonInteractive.Switch(int index, bool lax, bool cancancel)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			IPokemon[] party = @battle.Party(index);
 			IList<string> commands = new List<string>();
@@ -659,7 +659,7 @@ namespace PokemonUnity.ConsoleApp
 		//public IEnumerator HPChanged(PokemonEssentials.Interface.PokeBattle.IBattler pkmn, int oldhp, bool animate)
 		void IPokeBattle_DebugSceneNoGraphics.HPChanged(IBattler pkmn, int oldhp, bool anim)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			int hpchange = pkmn.HP - oldhp;
 			if (hpchange < 0)
@@ -681,13 +681,13 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.Fainted(IBattler pkmn)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		//void IPokeBattle_DebugSceneNoGraphics.ChooseEnemyCommand(int index)
 		void IPokeBattle_SceneNonInteractive.ChooseEnemyCommand(int index)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			if (battle is IBattleAI b) b.DefaultChooseEnemyCommand(index);
 		}
@@ -695,7 +695,7 @@ namespace PokemonUnity.ConsoleApp
 		//void IPokeBattle_DebugSceneNoGraphics.ChooseNewEnemy(int index, IPokemon[] party)
 		int IPokeBattle_SceneNonInteractive.ChooseNewEnemy(int index, IPokemon[] party)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			if (battle is IBattleAI b) return b.DefaultChooseNewEnemy(index, party);
 			return -1;
@@ -703,34 +703,34 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.WildBattleSuccess()
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		void IPokeBattle_DebugSceneNoGraphics.TrainerBattleSuccess()
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		void IPokeBattle_DebugSceneNoGraphics.EXPBar(IBattler battler, IPokemon thispoke, int startexp, int endexp, int tempexp1, int tempexp2)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		void IPokeBattle_DebugSceneNoGraphics.LevelUp(IBattler battler, IPokemon thispoke, int oldtotalhp, int oldattack, int olddefense, int oldspeed, int oldspatk, int oldspdef)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		int IPokeBattle_DebugSceneNoGraphics.Blitz(int keys)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			return battle.Random(30);
 		}
 
 		void ISceneHasChatter.Chatter(PokemonEssentials.Interface.PokeBattle.IBattler attacker, PokemonEssentials.Interface.PokeBattle.IBattler opponent)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		//void IPokeBattle_DebugSceneNoGraphics.Chatter(IBattler attacker, IBattler opponent)
@@ -742,27 +742,27 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.ShowOpponent(int opp)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		void IPokeBattle_DebugSceneNoGraphics.HideOpponent()
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		void IPokeBattle_DebugSceneNoGraphics.Recall(int battlerindex)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		void IPokeBattle_DebugSceneNoGraphics.DamageAnimation(IBattler pkmn, TypeEffective effectiveness)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 		}
 
 		void IPokeBattle_DebugSceneNoGraphics.BattleArenaJudgment(IBattle b1, IBattle b2, int[] r1, int[] r2)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			//GameDebug.Log($"[Judgment] #{b1.ToString()}:#{r1.Inspect()}, #{b2.ToString()}:#{r2.Inspect()}");
 			GameDebug.Log($"[Judgment] #{b1.ToString()}:#[{r1.JoinAsString(", ")}], #{b2.ToString()}:#[{r2.JoinAsString(", ")}]");
@@ -770,14 +770,14 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.BattleArenaBattlers(IBattle b1, IBattle b2)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			GameDebug.Log($"[#{b1.ToString()} VS #{b2.ToString()}]");
 		}
 
 		void IPokeBattle_DebugSceneNoGraphics.CommonAnimation(Moves moveid, IBattler attacker, IBattler opponent, int hitnum)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			if (attacker.IsNotNullOrNone())
 			{
@@ -798,7 +798,7 @@ namespace PokemonUnity.ConsoleApp
 
 		void IPokeBattle_DebugSceneNoGraphics.Animation(Moves moveid, PokemonEssentials.Interface.PokeBattle.IBattler user, PokemonEssentials.Interface.PokeBattle.IBattler target, int hitnum)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			System.Console.WriteLine("{0} attack {1} With {2} for {3} hit times", user.Name, target.Name, moveid.ToString(), hitnum);
 
@@ -822,7 +822,7 @@ namespace PokemonUnity.ConsoleApp
 		#region Non Interactive Battle Scene
 		int IPokeBattle_SceneNonInteractive.CommandMenu(int index)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			//if (battle.Random(15) == 0) return 1;
 			//return 0;
@@ -831,7 +831,7 @@ namespace PokemonUnity.ConsoleApp
 
 		int IPokeBattle_SceneNonInteractive.FightMenu(int index)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			//IBattler battler = @battle.battlers[index];
 			//int i = 0;
@@ -846,7 +846,7 @@ namespace PokemonUnity.ConsoleApp
 
 		Items IPokeBattle_SceneNonInteractive.ItemMenu(int index)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			//return -1;
 			return (this as IPokeBattle_DebugSceneNoGraphics).ItemMenu(index);
@@ -854,7 +854,7 @@ namespace PokemonUnity.ConsoleApp
 
 		int IPokeBattle_SceneNonInteractive.ChooseTarget(int index, PokemonUnity.Attack.Targets targettype)
 		{
-			GameDebug.Log("Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
+			GameDebug.Log(message: "Run: {0}", System.Reflection.MethodBase.GetCurrentMethod().Name);
 
 			//List<int> targets = new List<int>();
 			//for (int i = 0; i < 4; i++)
@@ -933,7 +933,7 @@ namespace PokemonUnity.ConsoleApp
 			}
 			return $"#{pkmn.Name} (Lv. #{pkmn.Level})#{status} HP: #{pkmn.HP}/#{pkmn.TotalHP}";
 		}
-		
+
 		private string PokemonString(IBattler pkmn)
 		{
 			if (!pkmn.pokemon.IsNotNullOrNone())
