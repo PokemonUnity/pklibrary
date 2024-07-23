@@ -16,7 +16,7 @@ namespace PokemonUnity.Saving
 
 		/// <summary>
 		/// If UseAppdata = true, Pokemon Unity will save the save files into %AppData%/Roaming/Pokemon Unity/Saves
-		/// <para></para> 
+		/// <para></para>
 		/// If UseAppdata = false, Pokemon Unity will save the save files into Assets/Saves
 		/// </summary>
 		/// <remarks>
@@ -32,8 +32,8 @@ namespace PokemonUnity.Saving
 		public static readonly string playerSave = @"\Saves\SaveFile.pku"; //TestProject\bin\Debug
 		//private static string playerSave = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).Substring(6) + "/Saves/SaveFile.pku"; //TestProject\bin\Debug
 		public static readonly string saveLocation = "\\Saves\\"; //TestProject\bin\Debug
-		//private static string saveLocation = @"..\..\..\\Pokemon Unity\Assets\Scripts2\Test.data"; 
-		//private static string saveLocation = System.Environment.CurrentDirectory + @"\SaveDirectory\SaveFile.pku"; //@"\Resources\Database\Pokemon\Pokemon_" + fileLanguage + ".xml"; 
+		//private static string saveLocation = @"..\..\..\\Pokemon Unity\Assets\Scripts2\Test.data";
+		//private static string saveLocation = System.Environment.CurrentDirectory + @"\SaveDirectory\SaveFile.pku"; //@"\Resources\Database\Pokemon\Pokemon_" + fileLanguage + ".xml";
 		//private static string saveLocation = @"$(SolutionDir)\Assets\Resources\Database\Pokemon\Pokemon_" + fileLanguage + ".xml"; //Doesnt work
 #else
 		private static readonly string gameConfig = UnityEngine.Application.persistentDataPath + "/ConfigFile.pku";
@@ -44,7 +44,7 @@ namespace PokemonUnity.Saving
 		//private static string saveLocation = UnityEngine.Application.dataPath + "/Saves/"; //Use for production
 #endif
 		#endregion
-		
+
 		#region 0.0.1 Original Save Mechanic
 		//private static UnityEngine.GameObject Player;
 		//private static List<SaveEvent> EventSaves = new List<SaveEvent>();
@@ -422,7 +422,7 @@ namespace PokemonUnity.Saving
 			using (FileStream fs = System.IO.File.Open(gameConfig, System.IO.FileMode.OpenOrCreate, System.IO.FileAccess.Write))
 			{
 #if DEBUG
-				//using (StreamWriter sw = new StreamWriter(fs, System.Text.Encoding.ASCII)) 
+				//using (StreamWriter sw = new StreamWriter(fs, System.Text.Encoding.ASCII))
 				//{
 				//	sw.Write(
 					File.WriteAllText(playerSave, JsonConvert.SerializeObject(new
@@ -537,7 +537,7 @@ namespace PokemonUnity.Saving
 					,@TrainerPublicId	--INTEGER NOT NULL,
 					,@TrainerSecretId	--INTEGER NOT NULL,
 					,@TimeCreated		--DATETIME NOT NULL,
-					,@PlayTime)			--INTEGER NOT NULL"; 
+					,@PlayTime)			--INTEGER NOT NULL";
 				stmt.CommandType = System.Data.CommandType.Text;
 				stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@id", value: (int)0));
 				stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@ChallengeId", value: (int)gameState.Challenge));
@@ -680,7 +680,7 @@ namespace PokemonUnity.Saving
 						@pokemon_personal_id	--INTEGER NOT NULL UNIQUE ON CONFLICT REPLACE, --no duplicates
 						,@pokemon_game_id		--INTEGER NOT NULL, --game state
 						,@pokemon_location_id   --BIT NULL, --party / pc, or wild... make int and add `game modes` (stadium saved party)?
-						,@pokemon_slot_position)--INTEGER NOT NULL --where"; 
+						,@pokemon_slot_position)--INTEGER NOT NULL --where";
 					stmt.CommandType = System.Data.CommandType.Text;
 					stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@pokemon_personal_id", value: (int)gameState.PlayerParty[i].PersonalId));
 					stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@pokemon_game_id", value: (int)0));
@@ -717,7 +717,7 @@ namespace PokemonUnity.Saving
 							,@move_slot_position	--INTEGER NOT NULL,
 							,@move_id				--INTEGER NOT NULL,
 							,@PP					--INTEGER NOT NULL,
-							,@PPups					--INTEGER NOT NULL,"; 
+							,@PPups					--INTEGER NOT NULL,";
 						stmt.CommandType = System.Data.CommandType.Text;
 						stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@pokemon_game_id", value: (int)0));
 						stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@pokemon_personal_id", value: (int)gameState.PlayerParty[i].PersonalId));
@@ -757,7 +757,7 @@ namespace PokemonUnity.Saving
 						,@slot_id				--INTEGER NOT NULL, --box
 						,@slot_background_id    --INTEGER NOT NULL, --theme / texture
 						,@slot_name				--NVARCHAR(18) NOT NULL, --label
-						,@unlocked)				--BIT NOT NULL"; 
+						,@unlocked)				--BIT NOT NULL";
 					stmt.CommandType = System.Data.CommandType.Text;
 					stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@game_id", value: (int)0));
 					stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@slot_id", value: (int)i));
@@ -869,7 +869,7 @@ namespace PokemonUnity.Saving
 							@pokemon_personal_id	--INTEGER NOT NULL UNIQUE ON CONFLICT REPLACE, --no duplicates
 							,@pokemon_game_id		--INTEGER NOT NULL, --game state
 							,@pokemon_location_id   --BIT NULL, --party / pc, or wild... make int and add `game modes` (stadium saved party)?
-							,@pokemon_slot_position)--INTEGER NOT NULL --where"; 
+							,@pokemon_slot_position)--INTEGER NOT NULL --where";
 						stmt.CommandType = System.Data.CommandType.Text;
 						stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@pokemon_personal_id", value: (int)gameState.PlayerPC.Pokemons[i][j].PersonalId));
 						stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@pokemon_game_id", value: (int)0));
@@ -906,7 +906,7 @@ namespace PokemonUnity.Saving
 								,@move_slot_position	--INTEGER NOT NULL,
 								,@move_id				--INTEGER NOT NULL,
 								,@PP					--INTEGER NOT NULL,
-								,@PPups					--INTEGER NOT NULL,"; 
+								,@PPups					--INTEGER NOT NULL,";
 							stmt.CommandType = System.Data.CommandType.Text;
 							stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@pokemon_game_id", value: (int)0));
 							stmt.Parameters.Add(new System.Data.SQLite.SQLiteParameter("@pokemon_personal_id", value: (int)gameState.PlayerPC.Pokemons[i][j].PersonalId));
@@ -1067,7 +1067,7 @@ namespace PokemonUnity.Saving
 				//ToDo: Sort out importing older formats...
 				//case "0.0.1":
 				//case "0.1.0":
-				//	Player.LoadTrainer(data); 
+				//	Player.LoadTrainer(data);
 				//	//PC_Poke = data.PC.GetPokemonsFromSeri();
 				//	//PC_boxNames = data.PC.BoxNames;
 				//	//PC_boxTexture = data.PC.BoxTextures;
@@ -1197,7 +1197,7 @@ namespace PokemonUnity.Saving
 			#endregion
 
 			public static void Save(System.IO.BinaryWriter writer) { }
-		
+
 			/// <summary>
 			/// When initially boots up, this will be all the application data stored
 			/// on user's PersonalComputer (PC). If first time running game, naturally

@@ -34,5 +34,5 @@ using System.Resources;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")] => major.minor.build.revision
 [assembly: AssemblyVersion("16.7")] //Pokemon Essentials Version
-[assembly: AssemblyFileVersion("24.06.27.0206")] //Pokemon Framework Version
-[assembly: AssemblyInformationalVersion("24.06.27.0206.41435442-alpha")] //Github Branch Source
+[assembly: AssemblyFileVersion("24.07.23.1623")] //Pokemon Framework Version
+[assembly: AssemblyInformationalVersion("24.07.23.1623.7dd3e2c8-main")] //Github Branch Source

@@ -29,7 +29,7 @@ namespace PokemonUnity.Character
 			set
 			{
 				//If pokemon is null dont add to list, count only not nulls
-				if (!Pokemons.Contains(value) 
+				if (!Pokemons.Contains(value)
 						&& (IsReadOnly && value.IsNotNullOrNone()))
 					Pokemons[i] = value;
 			}
@@ -39,8 +39,8 @@ namespace PokemonUnity.Character
 		{
 			if (!maxPokemon.HasValue) maxPokemon = (Game.GameData as Game).Features.LimitPokemonPartySize;
 			Pokemons = new List<PokemonEssentials.Interface.PokeBattle.IPokemon>(
-				capacity: maxPokemon.Value > Core.MAXPARTYSIZE 
-					? Core.MAXPARTYSIZE 
+				capacity: maxPokemon.Value > Core.MAXPARTYSIZE
+					? Core.MAXPARTYSIZE
 					: maxPokemon.Value);
 			//for (int i = 0; i < maxPokemon; i++)
 			//{
@@ -53,10 +53,10 @@ namespace PokemonUnity.Character
 			//if there is space add to party
 			if(!Full)
 			{
-				if (!Pokemons.Contains(item) 
+				if (!Pokemons.Contains(item)
 						&& item.IsNotNullOrNone())
 					Pokemons.Add(item);
-			}				
+			}
 			//otherwise send to player's pc
 			//ToDo: add pc specific to this player's party
 		}

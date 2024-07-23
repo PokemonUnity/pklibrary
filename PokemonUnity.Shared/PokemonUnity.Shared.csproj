@@ -209,10 +209,10 @@
     <Compile Include="Framework\IFrontend.cs" />
     <Compile Include="Framework\IResources.cs" />
     <Compile Include="Framework\IGame.cs" />
-    <Compile Include="Inventory\Data\Machine.cs" />
     <Compile Include="Inventory\Data\Base.cs" />
     <Compile Include="Inventory\Data\Berry.cs" />
     <Compile Include="Inventory\Data\ItemFlags.cs" />
+    <Compile Include="Inventory\Data\Machine.cs" />
     <Compile Include="Inventory\Data\Mail.cs" />
     <Compile Include="Localization\XmlStringRes.cs" />
     <Compile Include="Monster\Nature.cs" />
@@ -224,11 +224,18 @@
     <Compile Include="Monster\Pokemon\Data\Form.cs" />
     <Compile Include="Monster\Pokemon\Data\Moveset.cs" />
     <Compile Include="Monster\Pokemon\Data\MoveTree.cs" />
+    <Compile Include="Overworld\IArea.cs" />
     <Compile Include="Overworld\MapData.cs" />
     <Compile Include="Overworld\Wild\EncounterSlotData.cs" />
-    <Compile Include="Overworld\IArea.cs" />
     <Compile Include="Overworld\Wild\IMapEncounterMetadata.cs" />
     <Compile Include="Overworld\Wild\RoamingData.cs" />
+    <Compile Include="Saving\SerializableClasses\SeriMail.cs" />
+    <Compile Include="Saving\SerializableClasses\SeriMove.cs" />
+    <Compile Include="Saving\SerializableClasses\SeriPC.cs" />
+    <Compile Include="Saving\SerializableClasses\SeriPokemon.cs" />
+    <Compile Include="Saving\SerializableClasses\SeriV2.cs" />
+    <Compile Include="Saving\SerializableClasses\SeriV3.cs" />
+    <Compile Include="Saving\SerializableClasses\SeriV4.cs" />
     <Content Include="Properties\AssemblyInfo.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AssemblyInfo.cs</LastGenOutput>
@@ -238,13 +245,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AssemblyInfo.tt</DependentUpon>
     </Compile>
-    <Compile Include="Saving\SerializableClasses\SeriMail.cs" />
-    <Compile Include="Saving\SerializableClasses\SeriMove.cs" />
-    <Compile Include="Saving\SerializableClasses\SeriPC.cs" />
-    <Compile Include="Saving\SerializableClasses\SeriPokemon.cs" />
-    <Compile Include="Saving\SerializableClasses\SeriV2.cs" />
-    <Compile Include="Saving\SerializableClasses\SeriV3.cs" />
-    <Compile Include="Saving\SerializableClasses\SeriV4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />

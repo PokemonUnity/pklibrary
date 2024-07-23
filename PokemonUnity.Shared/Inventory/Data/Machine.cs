@@ -10,7 +10,7 @@ namespace PokemonUnity.Inventory
 		/// <summary>
 		/// Id of this Machine
 		/// </summary>
-		public int Id { get; private set; } 
+		public int Id { get; private set; }
 		//public string Name { get; private set; }
 		/// <summary>
 		/// If this machine is a TM or HM (or possibly other)
@@ -21,7 +21,7 @@ namespace PokemonUnity.Inventory
 		/// The Region this TM or HM belongs to
 		/// </summary>
 		/// <remarks>
-		/// In case you decide to region lock your TM#Id, 
+		/// In case you decide to region lock your TM#Id,
 		/// to give different Moves based on Region acquired from.
 		/// </remarks>
 		public Regions Region { get; private set; } //= "Johto";
