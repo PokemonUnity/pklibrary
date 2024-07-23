@@ -20,7 +20,7 @@ namespace PokemonEssentials.Interface
 		/// <param name="filename"></param>
 		/// <param name="volume"></param>
 		/// <param name="pitch"></param>
-		void bgm_play(string filename, float volume, float pitch);
+		void bgm_play(string filename, float volume, float pitch, int position = 0);
 		/// <summary>
 		/// Stops BGM playback.
 		/// </summary>
@@ -75,6 +75,7 @@ namespace PokemonEssentials.Interface
 		/// Stops ME playback.
 		/// </summary>
 		void se_stop();
+		//IAudioObject ResolveAudioFile(string filename, float volume, float pitch);
 	}
 	public interface IAudioObject
 	{
@@ -158,12 +159,14 @@ namespace PokemonEssentials.Interface
 	public interface IWaveData
 	{
 		/// <summary>
+		/// Average loudness or power of the sound data.
 		/// </summary>
-		byte intensity();
+		byte intensity { get; }
 		/// <summary>
 		/// </summary>
-		int time();
+		int time { get; }
 		/// <summary>
+		/// Play the recorded audio
 		/// </summary>
 		void play();
 	}

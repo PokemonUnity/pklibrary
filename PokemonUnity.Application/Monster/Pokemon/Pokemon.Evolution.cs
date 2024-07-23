@@ -46,12 +46,12 @@ namespace PokemonUnity
 			int _EVOTYPEMASK=0x3F;
 			int _EVODATAMASK=0xC0;
 			{  //RgssOpen("Data/evolutions.dat","rb"){|f|
-				//for (int species = 1; species < Kernal.PokemonData.Count; species++) {
+				//for (int species = 1; species < Core.PokemonIndexLimit; species++) {
 				foreach (Pokemons species in Kernal.PokemonData.Keys) {
 					//f.pos=(species-1)*8;
 					//offset=f.fgetdw;
 					int length=(int)species;//f.fgetdw; //use pokemon id as length
-					GameDebug.Log(Game._INTL(species.ToString(TextScripts.Name)));
+					Core.Logger?.Log(Game._INTL(species.ToString(TextScripts.Name)));
 					if (length>0) {
 						//f.pos=offset;
 						int i=0; do { //unless (i<length) break; //loop
@@ -59,9 +59,9 @@ namespace PokemonUnity
 							EvolutionMethod evonib=evo.EvolveMethod; //evo&_EVOTYPEMASK;
 							int level=(int)evo.EvolveValue; //f.fgetw;
 							Pokemons poke=evo.Species; //f.fgetw;
-							//GameDebug.Log(string.Format("type=%02X, data=%02X, name=%s, level=%d",
+							//Core.Logger?.Log(string.Format("type=%02X, data=%02X, name=%s, level=%d",
 							//	evonib,evo&_EVODATAMASK,Game._INTL(poke.ToString(TextScripts.Name)),level));
-							GameDebug.Log(string.Format("type={0}, data={1}, name={2}, level={3}",
+							Core.Logger?.Log(string.Format("type={0}, data={1}, name={2}, level={3}",
 								evonib,evo.EvolveValue,Game._INTL(poke.ToString(TextScripts.Name)),level));
 							if (poke==0) {
 								//p f.eof?;
@@ -116,7 +116,7 @@ namespace PokemonUnity
 						EvolutionMethod evonib=evo.EvolveMethod; //evo&_EVOTYPEMASK;
 						int level=(int)evo.EvolveValue; //f.fgetw();
 						//Pokemons poke=evo.Species; //f.fgetw();
-						if (//poke<=Kernal.PokemonData.Count && //Species.maxValue
+						if (//poke<=Core.PokemonIndexLimit && //Species.maxValue
 							//(evo&_EVODATAMASK)==_EVOPREVFORM && // evolved from
 							new EvolutionMethod[] {EvolutionMethod.Level,EvolutionMethod.LevelMale,
 							EvolutionMethod.LevelFemale,EvolutionMethod.AttackGreater,
@@ -152,7 +152,7 @@ namespace PokemonUnity
 						int level=(int)evo.EvolveValue; //f.fgetw();
 						Pokemons poke=evo.Species; //f.fgetw();
 						//if (poke<=Species.maxValue && (evo&_EVODATAMASK)==_EVOPREVFORM) {		// evolved from
-						if (//poke<=Kernal.PokemonData.Keys.Count &&
+						if (//poke<=Core.PokemonIndexLimit &&
 							Kernal.PokemonData[poke].IsBaby) {		// evolved from
 							if (item1>=0 && item2>=0) {
 								//dexdata=OpenDexData();

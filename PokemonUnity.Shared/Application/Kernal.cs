@@ -18,6 +18,10 @@ using PokemonUnity.Inventory.Plants;
 using PokemonUnity.Attack.Data;
 using PokemonUnity.Character;
 using Newtonsoft.Json;
+using PokemonEssentials.Interface.Battle;
+using PokemonEssentials.Interface.PokeBattle;
+using PokemonEssentials.Interface.Field;
+using PokemonEssentials.Interface.RPGMaker.Kernal;
 
 namespace PokemonUnity
 {
@@ -53,7 +57,7 @@ namespace PokemonUnity
 		/// <summary>
 		/// List of <see cref="Player.Area"/> that triggers <seealso cref="Overworld.IMapEncounterMetadata"/>
 		/// <para></para>
-		/// Key: <seealso cref="Overworld.IArea.Id"/> | Value: <seealso cref="Player.Area"/>
+		/// Key: <seealso cref="Overworld.IArea.Id"/> | Value: <seealso cref="PokemonEssentials.Interface.IGameCharacter.map"/> (Player.Area)
 		/// </summary>
 		public static IDictionary<int,IArea> AreaData { get; private set; }
 		/// <summary>
@@ -66,6 +70,8 @@ namespace PokemonUnity
 		public static IDictionary<int,IMapEncounterMetadata> EncounterData { get; private set; }
 		//public static IDictionary<Method,IMapEncounterMetadata> EncounterMethodData { get; private set; }
 		//public static IDictionary<int,PokemonEssentials.Interface.Field.IEncounters> MapEncounterData { get; private set; }
+		public static IDictionary<int, ITrainerData> TrainerData { get; private set; }
+		public static IDictionary<int,TrainerMetaData> TrainerPartyData { get; private set; }
 		public static IDictionary<TrainerTypes,TrainerMetaData> TrainerMetaData { get; private set; }
 		public static IDictionary<GymBadges,Character.BadgeData> BadgeData { get; private set; }
 		public static IDictionary<HiddenMoves,HiddenMoveData> HiddenMoveData { get; private set; }
@@ -164,19 +170,26 @@ namespace PokemonUnity
 			EncounterData = new Dictionary<int, IMapEncounterMetadata>();
 			//EncounterData = new Dictionary<int, Encounter>();
 			//MapEncounterData = new Dictionary<int, PokemonEssentials.Interface.Field.IEncounters>();
-			TrainerMetaData = new Dictionary<TrainerTypes, TrainerMetaData>();
 			//TrainerData = new Dictionary<int, Encounter>();
+			TrainerMetaData = new Dictionary<TrainerTypes, TrainerMetaData>();
 			BadgeData = new Dictionary<GymBadges, Character.BadgeData>();
 			HiddenMoveData = new Dictionary<HiddenMoves, HiddenMoveData>();
-			//TrainerData = new Dictionary<int, Encounter>();
+			MachineData = new Dictionary<int, MachineData>();
 		}
 		#endregion
 
 		#region Write to and Read from Methods
 		public static void load_data(string filepath = null) { }
-		public static void load_data(out IDictionary<int, PokemonEssentials.Interface.Field.IEncounters> encdata, string filepath = null)
+		public static void load_data(IMapData map, string filepath = null) { }
+		public static void load_data(IList<IPokemon> party, string filepath = null) { }
+		public static void load_data(IList<ITrainerData> trainers, string filepath = null) { }
+		public static void load_data(IList<ITrainerChallengeData> trainers, string filepath = null) { }
+		public static void load_data(IList<IRuledTeam> teams, string filepath = null) { }
+		public static void load_data(IDictionary<int,IMapInfo> mapInfo, string filepath = null) { }
+		public static void load_data(IDictionary<int, IPokemonMetadata> metaData, string filepath = null) { }
+		public static void load_data(IDictionary<int, PokemonEssentials.Interface.Field.IEncounters> encdata, string filepath = null)
 		{
-			encdata = new Dictionary<int, PokemonEssentials.Interface.Field.IEncounters>();
+			encdata.Clear(); //= new Dictionary<int, PokemonEssentials.Interface.Field.IEncounters>();
 			//if path is used, then the information will source from hard file
 			if (!string.IsNullOrEmpty(filepath)) //and file exist...
 			{

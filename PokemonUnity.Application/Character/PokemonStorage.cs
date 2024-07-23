@@ -23,6 +23,7 @@ namespace PokemonUnity
 	namespace Character
 	{
 		public partial class PokemonBox : PokemonEssentials.Interface.Screen.IPokemonBox,  IList<PokemonEssentials.Interface.PokeBattle.IPokemon>, ICollection<PokemonEssentials.Interface.PokeBattle.IPokemon> {
+			//protected readonly IList<PokemonEssentials.Interface.PokeBattle.IPokemon> pokemon;
 			public IList<PokemonEssentials.Interface.PokeBattle.IPokemon> pokemon				{ get; protected set; }
 			public string name						{ get; set; }
 			public string background				{ get; set; }
@@ -33,18 +34,19 @@ namespace PokemonUnity
 			}
 
 			public IPokemonBox initialize (string name,int maxPokemon=30) {
-				@pokemon=new List<PokemonEssentials.Interface.PokeBattle.IPokemon>(capacity: maxPokemon);
+				@pokemon=new IPokemon[maxPokemon]; //List<PokemonEssentials.Interface.PokeBattle.IPokemon>(capacity: maxPokemon);
 				this.name=name;
 				@background=null;
-				for (int i = 0; i < maxPokemon; i++) {
-					@pokemon[i]=null;
-				}
+				//for (int i = 0; i < maxPokemon; i++) {
+				//	@pokemon[i]=null;
+				//}
 				return this;
 			}
 
 			public bool full { get {
 				//return (@pokemon.nitems==this.Length);
-				return (this.nitems==this.length);
+				//return (this.nitems==this.length);
+				return pokemon.Any(p => !p.IsNotNullOrNone());
 			} }
 
 			public int nitems { get { //item count
@@ -52,7 +54,8 @@ namespace PokemonUnity
 			} }
 
 			public int length { get { //capacity
-				return (@pokemon as List<Pokemon>).Capacity;
+				//return (@pokemon as List<Pokemon>).Capacity;
+				return @pokemon.Count;
 			} }
 
 			int ICollection<IPokemon>.Count { get { return nitems; } }
@@ -79,7 +82,15 @@ namespace PokemonUnity
 				{
 					if (!pokemon.Contains(item)
 							&& item.IsNotNullOrNone())
-						pokemon.Add(item);
+						//pokemon.Add(item);
+						for (int i = 0; i < length; i++)
+						{
+							if (!pokemon[i].IsNotNullOrNone())
+							{
+								pokemon[i] = item;
+								break;
+							}
+						}
 				}
 				//move to next box, if full? or send player message to remove?
 			}
@@ -108,7 +119,7 @@ namespace PokemonUnity
 			{
 				if (!item.IsNotNullOrNone()) return true;
 				//if object is removed, it will remove nulls and empty space
-				return pokemon.Remove(item);
+				return pokemon.Remove(item); //ToDo: get index and assign null
 			}
 
 			IEnumerator<IPokemon> IEnumerable<IPokemon>.GetEnumerator()
@@ -132,19 +143,19 @@ namespace PokemonUnity
 			{
 				if (!item.IsNotNullOrNone()) return;
 				//return ((IList<PokemonEssentials.Interface.PokeBattle.IPokemon>)pokemon).Insert(index, item);
-				pokemon.Insert(index, item);
+				pokemon[index] = item; //pokemon.Insert(index, item);
 			}
 
 			void IList<IPokemon>.RemoveAt(int index)
 			{
 				//((IList<PokemonEssentials.Interface.PokeBattle.IPokemon>)pokemon).RemoveAt(index);
-				pokemon.RemoveAt(index);
+				pokemon[index] = null; //pokemon.RemoveAt(index);
 			}
 			#endregion
 
 			public static implicit operator PokemonBox (PokemonEssentials.Interface.PokeBattle.IPokemon[] party)
 			{
-				IPokemonBox box = new PokemonBox("party", (Game.GameData as Game).Features.LimitPokemonPartySize);
+				IPokemonBox box = new PokemonBox("party", (Game.GameData.Global?.Features.LimitPokemonPartySize??Core.MAXPARTYSIZE));
 				int i = 0;
 				foreach(PokemonEssentials.Interface.PokeBattle.IPokemon p in party)
 				{
@@ -177,7 +188,7 @@ namespace PokemonUnity
 				}
 				protected set {
 					//throw new Exception("Not supported");
-					//GameDebug.LogError("Not supported");
+					//Core.Logger.LogError("Not supported");
 					Game.GameData.Trainer.party = value;
 			} }
 
@@ -202,7 +213,7 @@ namespace PokemonUnity
 
 			public int maxPokemon(int box) {
 				if (box>=this.maxBoxes) return 0;
-				return box<0 ? (Game.GameData as Game).Features.LimitPokemonPartySize : this[box].length;
+				return box<0 ? (Game.GameData.Global?.Features.LimitPokemonPartySize??Core.MAXPARTYSIZE) : this[box].length;
 			}
 
 			public IPokemonBox this[int x] { get {
@@ -215,7 +226,7 @@ namespace PokemonUnity
 					//} else {
 					//	foreach (var i in @boxes) {
 					//		if (i is PokemonEssentials.Interface.PokeBattle.IPokemon) //throw new Exception ("Box is a Pokémon, not a box");
-					//			GameDebug.LogError("Box is a Pokémon, not a box");
+					//			Core.Logger.LogError("Box is a Pokémon, not a box");
 					//	}
 						return (x == -1) ? this.party[y] : @boxes[x][y];
 					//}
@@ -271,7 +282,7 @@ namespace PokemonUnity
 				} else {
 					if (!this[boxSrc,indexSrc].IsNotNullOrNone()) {
 						//throw new Exception("Trying to copy null to storage");
-						GameDebug.LogWarning("Trying to copy null to storage"); // not localized
+						Core.Logger.LogWarning("Trying to copy null to storage"); // not localized
 					}
 					this[boxSrc,indexSrc].Heal();
 					if (this[boxSrc,indexSrc] is IPokemonMultipleForms f && //this[boxSrc,indexSrc].respond_to("formTime") &&
@@ -356,7 +367,7 @@ namespace PokemonUnity
 					//ToDo: Feature not setup...
 					this.party=party;
 				} else {
-					@party=new Pokemon[(Game.GameData as Game).Features.LimitPokemonPartySize];
+					@party=new Pokemon[(Game.GameData.Global?.Features.LimitPokemonPartySize ?? Core.MAXPARTYSIZE)];
 				}
 				return this;
 			}
@@ -378,15 +389,15 @@ namespace PokemonUnity
 			public IPCPokemonStorage getCurrentStorage { get {
 				if (Game.GameData.GameMap == null) {
 					//throw Exception(Game._INTL("The player is not on a map, so the region could not be determined."));
-					GameDebug.LogError(Game._INTL("The player is not on a map, so the region could not be determined."));
+					Core.Logger.LogError(Game._INTL("The player is not on a map, so the region could not be determined."));
 				}
-				if (@lastmap!=Game.GameData.GameMap.map_id) {
+				if (Game.GameData.GameMap is IGameMapOrgBattle gmo && @lastmap != gmo.map_id) {
 					@rgnmap=Game.GameData is IGameUtility g ? g.GetCurrentRegion() : -1; // may access file IO, so caching result
-					@lastmap=Game.GameData.GameMap.map_id;
+					@lastmap=gmo.map_id;
 				}
 				if (@rgnmap<0) {
 					//throw Exception(Game._INTL("The current map has no region set. Please set the MapPosition metadata setting for this map."));
-					GameDebug.LogError(Game._INTL("The current map has no region set. Please set the MapPosition metadata setting for this map."));
+					Core.Logger.LogError(Game._INTL("The current map has no region set. Please set the MapPosition metadata setting for this map."));
 				}
 				if (@storages[@rgnmap] == null) {
 					@storages[@rgnmap]=new PokemonStorage();
@@ -701,7 +712,10 @@ namespace PokemonUnity
 		public void TrainerPC() {
 			(this as IGameMessage).Message(Game._INTL("\\se[computeropen]{1} booted up the PC.",Trainer.name));
 			TrainerPCMenu();
-			(this as IGameAudioPlay).SEPlay("computerclose");
+			if (Audio is IGameAudioPlay gap) gap.SEPlay("computerclose");
+				//if (FileTest.Instance.SoundEffectComputerClose != null)
+				//	gap.SEPlay(FileTest.Instance.SoundEffectComputerClose);
+				//else gap.SEPlay("computerclose");
 		}
 
 		public void PokeCenterPC() {
@@ -714,7 +728,7 @@ namespace PokemonUnity
 					break;
 				}
 			} while (true);
-			(this as IGameAudioPlay).SEPlay("computerclose");
+			if (Audio is IGameAudioPlay gap) gap.SEPlay("computerclose");
 		}
 		#endregion
 	}

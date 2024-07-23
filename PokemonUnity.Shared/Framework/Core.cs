@@ -57,10 +57,10 @@ namespace PokemonUnity
 		/// </summary>
 		public const float framesPerSecond = 30f;
 
-		public const sbyte pokemonGeneration = (sbyte)Generation.All;
+		public static sbyte PokemonGeneration { get { return pokemonGeneration; } set { pokemonGeneration = value; } }
+		private static sbyte pokemonGeneration = (sbyte)Generation.All;
 
-#pragma warning disable 0162 //Warning CS0162  Unreachable code detected
-		public static int pokemonGenerationCount {
+		public static int PokemonIndexLimit { //ToDo: Rename to PokedexLimit
 			get {
 				int MaxPoke = 0;
 				int Gen1 = 151;
@@ -102,12 +102,14 @@ namespace PokemonUnity
 				#endregion
 				return MaxPoke; }
 		}
-#pragma warning restore 0162 //Warning CS0162  Unreachable code detected
 		#endregion
 
 		#region Logging
 		private static IDebugger _logger;
-		public static IDebugger Logger { get { return _logger; } set { _logger = value; } }
+		public static IDebugger Logger { get { return _logger; } set { if (value is null) _logger = LogManager.Logger; else _logger = value; } }
+		//private static readonly LogManager _logger = new LogManager();
+		//private static LogManager _logger;
+		//public static LogManager Logger { get { return _logger; } set { _logger = value; } }
 		#endregion
 
 		#region Pokemon RNG

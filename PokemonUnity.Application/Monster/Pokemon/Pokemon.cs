@@ -14,10 +14,11 @@ using PokemonUnity.Saving.SerializableClasses;
 using PokemonEssentials.Interface;
 using PokemonEssentials.Interface.PokeBattle;
 using PokemonEssentials.Interface.Item;
+using PokemonEssentials.Interface.Battle;
 
 namespace PokemonUnity.Monster
 {
-	public partial class Pokemon : IPokemon, IEquatable<IPokemon>, IEqualityComparer<IPokemon>, IEquatable<Pokemon>, IEqualityComparer<Pokemon>, ICloneable
+	public partial class Pokemon : IPokemon, IEquatable<IPokemon>, IEquatable<Pokemon>, ICloneable//ToDo: Migrate to separate class => IEqualityComparer<IPokemon>, IEqualityComparer<Pokemon>
 	{
 		#region Variables
 		private Pokemons pokemons;
@@ -192,6 +193,10 @@ namespace PokemonUnity.Monster
 		/// <summary>
 		/// Max total EVs
 		/// </summary>
+		/// <remarks>
+		/// This Pokémon's level multiplied by 1.5 (rounded down), up to a maximum of 85
+		/// (510/6, i.e. the maximum number of EVs a Pokémon can have, divided equally between its six stats)
+		/// </remarks>
 		public const int EVLIMIT = 510;
 		/// <summary>
 		/// Max EVs that a single stat can have
@@ -235,9 +240,9 @@ namespace PokemonUnity.Monster
 			Item = Items.NONE;
 			ribbons = new HashSet<Ribbons>();
 			calcStats();
-			if (Game.GameData.GameMap != null)
+			if (Game.GameData.GameMap != null && Game.GameData.GameMap is IGameMapOrgBattle gmo)
 			{
-				@ObtainMap = (Locations)Game.GameData.GameMap.map_id;
+				@ObtainMap = (Locations)gmo.map_id;
 				//@ObtainText = null;
 				@ObtainLevel = Level;
 			}
@@ -700,7 +705,7 @@ namespace PokemonUnity.Monster
 				}
 				else
 					//throw new Exception("Trainer did not acquire Pokemon as an egg.");
-					GameDebug.LogError("Trainer did not acquire Pokemon as an egg.");
+					Core.Logger.LogError("Trainer did not acquire Pokemon as an egg.");
 					return null;
 			}
 			//set { this.hatchedWhen = value; }
@@ -715,8 +720,8 @@ namespace PokemonUnity.Monster
 		{
 			//ToDo: If OT != null, dont change it... Pokemon is already captured... Unless Pokeball.SnagBall?
 			//if not npc?
-			if(Game.GameData.GameMap != null)
-				this.ObtainMap = (Locations)Game.GameData.GameMap.map_id; //todo: remove locations enum from code?
+			if(Game.GameData.GameMap != null && Game.GameData.GameMap is IGameMapOrgBattle gmo)
+				this.ObtainMap = (Locations)gmo.map_id; //todo: remove locations enum from code?
 			else
 				this.ObtainMap = 0;
 			//this.CatchTrainerName = Game.GameData.Player.Name;
@@ -754,7 +759,7 @@ namespace PokemonUnity.Monster
 			set
 			{
 				if (value < 0) //|| value > this.Experience.GetMaxExperience(this.GrowthRate)
-					GameDebug.LogError(string.Format("The experience number {0} is invalid", value));
+					Core.Logger.LogError(string.Format("The experience number {0} is invalid", value));
 				else //(value < this.Experience.GetMaxExperience(this.GrowthRate))
 					//this.Experience.AddExperience(value - this.Experience.Current);
 					Experience = new Experience(this.GrowthRate, value);
@@ -773,15 +778,15 @@ namespace PokemonUnity.Monster
 			private set
 			{
 				if (value < 1 || value > Core.MAXIMUMLEVEL)
-					GameDebug.LogError(string.Format("The level number {0} is invalid", value));
+					Core.Logger.LogError(string.Format("The level number {0} is invalid", value));
 				if (value > this.Level) {
-					GameDebug.Log(string.Format("Pokemon level manually changed to {0}", value));
+					Core.Logger.Log(string.Format("Pokemon level manually changed to {0}", value));
 					//this.Experience.AddExperience(Experience.GetStartExperience(this.GrowthRate, value) - this.Experience.Total);
 					Exp = Experience.GetStartExperience(this.GrowthRate, value);
 				}
 				else
 				{
-					GameDebug.LogWarning(string.Format("The level number has gone backwards and experience points is reset"));
+					Core.Logger.LogWarning(string.Format("The level number has gone backwards and experience points is reset"));
 					Exp = Experience.GetStartExperience(this.GrowthRate, value);
 				}
 			}
@@ -1569,7 +1574,7 @@ namespace PokemonUnity.Monster
 			resetMoves();
 			int numMove = Core.Rand.Next(4) + 1; //number of moves pokemon will have, between 0 and 3
 			List<Moves> movelist = new List<Moves>();
-			if (isEgg || egg || (Game.GameData as Game).Features.CatchPokemonsWithEggMoves)
+			if (isEgg || egg || (Game.GameData.Global?.Features.CatchPokemonsWithEggMoves??false))
 				movelist.AddRange(Kernal.PokemonMovesData[pokemons].Egg);
 			IList<int?> rejected = new int?[movelist.Count]; //default null, to exclude `0`
 			switch (level)
@@ -1589,25 +1594,21 @@ namespace PokemonUnity.Monster
 						}
 						i -= 1;
 					}
-					if (i >= 0)
-					{ //if i is at least 0 still, then you can grab the next move down.
-					  //moves[2] = movesetMovesStrings[i];
+					if (i >= 0) { //if i is at least 0 still, then you can grab the next move down.
+						//moves[2] = movesetMovesStrings[i];
 						i -= 1;
-						if (i >= 0)
-						{ //if i is at least 0 still, then you can grab the next move down.
-						  //moves[1] = movesetMovesStrings[i];
+						if (i >= 0) { //if i is at least 0 still, then you can grab the next move down.
+							//moves[1] = movesetMovesStrings[i];
 							i -= 1;
-							if (i >= 0)
-							{ //if i is at least 0 still, then you can grab the last move down.
-							  //moves[0] = movesetMovesStrings[i];
+							if (i >= 0) { //if i is at least 0 still, then you can grab the last move down.
+								//moves[0] = movesetMovesStrings[i];
 								i -= 1;
 							}
 						}
 					}
 					i = 0;
-					int i2 = 0;         //if the first move is null, then the array will need to be packed down
-					if (moves[0] == null)
-					{       //(nulls moved to the end of the array)
+					int i2 = 0;				//if the first move is null, then the array will need to be packed down
+					if (moves[0] == null) {	//(nulls moved to the end of the array)
 						while (i < 4)
 						{
 							while (moves[i] == null)
@@ -1710,7 +1711,7 @@ namespace PokemonUnity.Monster
 			if ((int)move <= 0) return;
 			if (!getMoveList().Contains(move))
 			{
-				GameDebug.Log("Move is not compatible");
+				Core.Logger.Log("Move is not compatible");
 				return;
 			}
 			//for (int i = 0; i < 4; i++) {
@@ -1728,7 +1729,7 @@ namespace PokemonUnity.Monster
 			//}
 			if (hasMove(move))
 			{
-				GameDebug.Log("Already knows move...");
+				Core.Logger.Log("Already knows move...");
 				return;
 			}
 			for (int i = 0; i < 4; i++)
@@ -1742,7 +1743,7 @@ namespace PokemonUnity.Monster
 			}
 			if (!silently)
 			{
-				GameDebug.LogWarning("Cannot learn move, pokmeon moveset is full");
+				Core.Logger.LogWarning("Cannot learn move, pokmeon moveset is full");
 			}
 			else
 			{
@@ -2158,7 +2159,7 @@ namespace PokemonUnity.Monster
 		public void StoreMail(string message, TrainerId sender)//pkmn, item, message, poke1= nil, poke2= nil, poke3= nil)
 		{
 			//raise Game._INTL("Pokémon already has mail") if pkmn.mail
-			if (Mail == null) GameDebug.LogError("Pokémon already has mail");
+			if (Mail == null) Core.Logger.LogError("Pokémon already has mail");
 			//Mail = new PokemonMail(item, message, Trainer.name, poke1, poke2, poke3)
 			mail = new Mail(Item, message, sender);
 		}
@@ -2233,7 +2234,7 @@ namespace PokemonUnity.Monster
 						if (!Game.GameData.Player.Bag.StoreItem(item)) // Compensate
 						{
 							//raise Game._INTL("Can't re-store deleted item in bag");
-							GameDebug.LogError(Game._INTL("Can't re-store deleted item in bag"));
+							Core.Logger.LogError(Game._INTL("Can't re-store deleted item in bag"));
 						}
 
 						Display(Game._INTL("The Bag is full.  The Pokémon's item could not be removed."));
@@ -2255,7 +2256,7 @@ namespace PokemonUnity.Monster
 							{
 								if (!Game.GameData.Player.Bag.StoreItem(item)) { // Compensate
 									//raise Game._INTL("Can't re-store deleted item in bag");
-									GameDebug.LogError(Game._INTL("Can't re-store deleted item in bag"));
+									Core.Logger.LogError(Game._INTL("Can't re-store deleted item in bag"));
 								}
 							}
 						}
@@ -2306,7 +2307,7 @@ namespace PokemonUnity.Monster
 		/// <summary>
 		/// Nickname
 		/// </summary>
-		public bool IsNicknamed { get { return !string.IsNullOrEmpty(name.Trim()); } }
+		public bool IsNicknamed { get { return !string.IsNullOrEmpty(name?.Trim()); } }
 		/// <summary>
 		/// Nickname;
 		/// Returns Pokemon species name if not nicknamed.
@@ -2428,7 +2429,7 @@ namespace PokemonUnity.Monster
 					gain += Happiness < 200 ? 1 : 0;
 					//ToDo: if trainer is on map pkmn was captured on, add more happiness on walk
 					//gain += this.metMap.Id == currentMap.Id ? 1 : 0; //change to "obtainMap"?
-					if ((int)this.ObtainMap == Game.GameData.GameMap.map_id) gain += 1;
+					if (Game.GameData.GameMap is IGameMapOrgBattle gmo && (int)this.ObtainMap == gmo.map_id) gain += 1;
 					luxury = true;
 					break;
 				case HappinessMethods.LEVELUP:
@@ -2658,7 +2659,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.HP] += (byte)gainEVHP;
 				totalEVgain += gainEVHP;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.HP.ToString()}  EV gain: #{gainEVHP}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.HP.ToString()}  EV gain: #{gainEVHP}  EVs: #{EV.ToString()}");
 
 			// Attack gain
 			if ((gainEVAttack > 0 && EV[(int)Stats.ATTACK] < EVSTATLIMIT && maxEVgain - totalEVgain > 0))
@@ -2671,7 +2672,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.ATTACK] += (byte)gainEVAttack;
 				totalEVgain += gainEVAttack;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.ATTACK.ToString()}  EV gain: #{gainEVAttack}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.ATTACK.ToString()}  EV gain: #{gainEVAttack}  EVs: #{EV.ToString()}");
 
 			// Defense gain
 			if ((gainEVDefense > 0 && EV[(int)Stats.DEFENSE] < EVSTATLIMIT && maxEVgain - totalEVgain > 0))
@@ -2684,7 +2685,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.DEFENSE] += (byte)gainEVDefense;
 				totalEVgain += gainEVDefense;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.DEFENSE.ToString()}  EV gain: #{gainEVDefense}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.DEFENSE.ToString()}  EV gain: #{gainEVDefense}  EVs: #{EV.ToString()}");
 
 			// SpAttack gain
 			if ((gainEVSpAttack > 0 && EV[(int)Stats.SPATK] < EVSTATLIMIT && maxEVgain - totalEVgain > 0))
@@ -2697,7 +2698,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.SPATK] += (byte)gainEVSpAttack;
 				totalEVgain += gainEVSpAttack;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPATK.ToString()}  EV gain: #{gainEVSpAttack}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPATK.ToString()}  EV gain: #{gainEVSpAttack}  EVs: #{EV.ToString()}");
 
 			// SpDefense gain
 			if ((gainEVSpDefense > 0 && EV[(int)Stats.SPDEF] < EVSTATLIMIT && maxEVgain - totalEVgain > 0))
@@ -2710,7 +2711,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.SPDEF] += (byte)gainEVSpDefense;
 				totalEVgain += gainEVSpDefense;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPDEF.ToString()}  EV gain: #{gainEVSpDefense}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPDEF.ToString()}  EV gain: #{gainEVSpDefense}  EVs: #{EV.ToString()}");
 
 			// Speed gain
 			if ((gainEVSpeed > 0 && EV[(int)Stats.SPEED] < EVSTATLIMIT && maxEVgain - totalEVgain > 0))
@@ -2723,7 +2724,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.SPEED] += (byte)gainEVSpeed;
 				totalEVgain += gainEVSpeed;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPEED.ToString()}  EV gain: #{gainEVSpeed}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPEED.ToString()}  EV gain: #{gainEVSpeed}  EVs: #{EV.ToString()}");
 		}
 
 		/// <summary>
@@ -2736,7 +2737,7 @@ namespace PokemonUnity.Monster
 			int allEV = EV[(int)Stats.HP] + EV[(int)Stats.ATTACK] + EV[(int)Stats.DEFENSE] + EV[(int)Stats.SPATK] + EV[(int)Stats.SPDEF] + EV[(int)Stats.SPEED];
 			if (allEV >= EVLIMIT)
 			{
-				GameDebug.LogWarning($"EV limit #{Monster.Pokemon.EVLIMIT} exceeded.\r\nTotal EVs: #{allEV} EV gain: 0  EVs: #{EV.ToString()}");
+				Core.Logger.LogWarning($"EV limit #{Monster.Pokemon.EVLIMIT} exceeded.\r\nTotal EVs: #{allEV} EV gain: 0  EVs: #{EV.ToString()}");
 				return;
 			}
 
@@ -2872,7 +2873,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.HP] += (byte)gainEVHP;
 				totalEVgain += gainEVHP;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.HP.ToString()}  EV gain: #{gainEVHP}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.HP.ToString()}  EV gain: #{gainEVHP}  EVs: #{EV.ToString()}");
 
 			// Attack gain
 			if ((gainEVAttack > 0 && EV[(int)Stats.ATTACK] < EVSTATLIMIT && maxEVgain - totalEVgain > 0))
@@ -2887,7 +2888,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.ATTACK] += (byte)gainEVAttack;
 				totalEVgain += gainEVAttack;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.ATTACK.ToString()}  EV gain: #{gainEVAttack}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.ATTACK.ToString()}  EV gain: #{gainEVAttack}  EVs: #{EV.ToString()}");
 
 			// Defense gain
 			if ((gainEVDefense > 0 && EV[(int)Stats.DEFENSE] < EVSTATLIMIT && maxEVgain - totalEVgain > 0))
@@ -2902,7 +2903,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.DEFENSE] += (byte)gainEVDefense;
 				totalEVgain += gainEVDefense;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.DEFENSE.ToString()}  EV gain: #{gainEVDefense}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.DEFENSE.ToString()}  EV gain: #{gainEVDefense}  EVs: #{EV.ToString()}");
 
 			// SpAttack gain
 			if ((gainEVSpAttack > 0 && EV[(int)Stats.SPATK] < EVSTATLIMIT && maxEVgain - totalEVgain > 0))
@@ -2917,7 +2918,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.SPATK] += (byte)gainEVSpAttack;
 				totalEVgain += gainEVSpAttack;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPATK.ToString()}  EV gain: #{gainEVSpAttack}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPATK.ToString()}  EV gain: #{gainEVSpAttack}  EVs: #{EV.ToString()}");
 
 			// SpDefense gain
 			if ((gainEVSpDefense > 0 && EV[(int)Stats.SPDEF] < EVSTATLIMIT && maxEVgain - totalEVgain > 0))
@@ -2932,7 +2933,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.SPDEF] += (byte)gainEVSpDefense;
 				totalEVgain += gainEVSpDefense;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPDEF.ToString()}  EV gain: #{gainEVSpDefense}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPDEF.ToString()}  EV gain: #{gainEVSpDefense}  EVs: #{EV.ToString()}");
 
 			// Speed gain
 			if ((gainEVSpeed > 0 && EV[(int)Stats.SPEED] < EVSTATLIMIT && maxEVgain - totalEVgain > 0))
@@ -2947,7 +2948,7 @@ namespace PokemonUnity.Monster
 				EV[(int)Stats.SPEED] += (byte)gainEVSpeed;
 				totalEVgain += gainEVSpeed;
 			}
-			else GameDebug.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPEED.ToString()}  EV gain: #{gainEVSpeed}  EVs: #{EV.ToString()}");
+			else Core.Logger.LogWarning($"Single-stat EV limit #{EVSTATLIMIT} exceeded.\r\nStat: #{Stats.SPEED.ToString()}  EV gain: #{gainEVSpeed}  EVs: #{EV.ToString()}");
 		}
 		#endregion
 #pragma warning restore 0162 //Warning CS0162  Unreachable code detected
@@ -2975,8 +2976,8 @@ namespace PokemonUnity.Monster
 		int IPokemon.tough	{ get { return Tough; }		set { Tough = value; } }
 		int IPokemon.sheen	{ get { return Sheen; }		set { Sheen = value; } }
 		int IPokemon.publicID	{ get { return PersonalId; } }
-		DateTime? IPokemon.timeReceived	{ get { return TimeReceived.UtcDateTime; } set { obtainWhen = (DateTimeOffset)DateTime.SpecifyKind(value.Value, DateTimeKind.Utc); } }
-		DateTime? IPokemon.timeEggHatched	{ get { return TimeEggHatched?.UtcDateTime; } set { hatchedWhen = value != null ? (DateTimeOffset)DateTime.SpecifyKind(value.Value, DateTimeKind.Utc) : (DateTimeOffset?)null; } }
+		DateTime? IPokemon.timeReceived	{ get { return TimeReceived.UtcDateTime; } set { obtainWhen = value == null ?  DateTimeOffset.Now : (DateTimeOffset)DateTime.SpecifyKind(value.Value, DateTimeKind.Utc); } }
+		DateTime? IPokemon.timeEggHatched	{ get { return TimeEggHatched?.UtcDateTime; } set { hatchedWhen = value == null ? (DateTimeOffset?)null : (DateTimeOffset)DateTime.SpecifyKind(value.Value, DateTimeKind.Utc); } }
 		bool IPokemon.isSingleGendered	{ get { return IsSingleGendered; } }
 		char IPokemon.unownShape	{ get { return UnownShape; } }
 		float IPokemon.height	{ get { return _base.Height; } }
@@ -2985,15 +2986,25 @@ namespace PokemonUnity.Monster
 		string IPokemon.kind	{ get; } //{ return Species.ToString(TextScripts.Description); } }
 		string IPokemon.dexEntry	{ get { return pokemons.ToString(TextScripts.Description); } }
 
+		Pokemons IPokemonSerialized.species { get { return Species; } }
+		Items IPokemonSerialized.item { get { return Item; } }
+		Natures IPokemonSerialized.nature { get { return natureFlag; } }
+		Moves IPokemonSerialized.move1	{ get { return moves[0].id; } }
+		Moves IPokemonSerialized.move2	{ get { return moves[1].id; } }
+		Moves IPokemonSerialized.move3	{ get { return moves[2].id; } }
+		Moves IPokemonSerialized.move4	{ get { return moves[3].id; } }
+		int IPokemonSerialized.ev { get { return -1; } } //FixMe: Not sure what to put here...
+
 		bool IPokemon.isFemale(int b, int genderRate)
 		{
 			if (genderRate == 254) return true;		// AlwaysFemale
-			if (genderRate == 255) return false;    // Genderless
+			if (genderRate == 255) return false;	// Genderless
 			return b <= genderRate;
 		}
 
 		void IPokemon.setGender(int value)
 		{
+			//if (value > 1) setGender(null); //2 means unknown...
 			setGender(value == 0);
 		}
 
@@ -3007,21 +3018,6 @@ namespace PokemonUnity.Monster
 			LowerPokerusCount();
 		}
 
-		void IPokemon.DeleteMove(Moves move)
-		{
-			DeleteMove(move);
-		}
-
-		void IPokemon.DeleteMoveAtIndex(int index)
-		{
-			DeleteMoveAtIndex(index);
-		}
-
-		void IPokemon.DeleteAllMoves()
-		{
-			DeleteAllMoves();
-		}
-
 		int IPokemon.upgradeRibbon(params Ribbons[] arg)
 		{
 			return (int)upgradeRibbon(arg);
@@ -3029,7 +3025,42 @@ namespace PokemonUnity.Monster
 
 		IPokemon IPokemon.initialize(Pokemons species, int level, ITrainer player, bool withMoves)
 		{
+			return this; //FIXME;
+		}
+
+		IPokemonSerialized IPokemonSerialized.fromInspected(string str)
+		{
+			return this; //FIXME;
+		}
+
+		IPokemonSerialized IPokemonSerialized.fromPokemon(IPokemon pokemon)
+		{
+			return pokemon;
+		}
+
+		string IPokemonSerialized.inspect()
+		{
+			return ToString();
+		}
+
+		string IPokemonSerialized.tocompact()
+		{
+			return null;
+		}
+
+		IPokemonSerialized IPokemonSerialized.fromString(string str)
+		{
+			return this;
+		}
+
+		Moves IPokemonSerialized.convertMove(Moves move)
+		{
 			throw new NotImplementedException();
+		}
+
+		IPokemon IPokemonSerialized.createPokemon(int level, int iv, ITrainer trainer)
+		{
+			return this; //FIXME;
 		}
 		#endregion
 
@@ -3077,22 +3108,23 @@ namespace PokemonUnity.Monster
 		{
 			return Equals(obj: (object)other);
 		}
-		bool IEqualityComparer<IPokemon>.Equals(IPokemon x, IPokemon y)
-		{
-			return x == y;
-		}
-		bool IEqualityComparer<Pokemon>.Equals(Pokemon x, Pokemon y)
-		{
-			return x == y;
-		}
-		int IEqualityComparer<IPokemon>.GetHashCode(IPokemon obj)
-		{
-			return obj.GetHashCode();
-		}
-		int IEqualityComparer<Pokemon>.GetHashCode(Pokemon obj)
-		{
-			return obj.GetHashCode();
-		}
+		//ToDo: Migrate below...
+		//bool IEqualityComparer<IPokemon>.Equals(IPokemon x, IPokemon y)
+		//{
+		//	return x == y;
+		//}
+		//bool IEqualityComparer<Pokemon>.Equals(Pokemon x, Pokemon y)
+		//{
+		//	return x == y;
+		//}
+		//int IEqualityComparer<IPokemon>.GetHashCode(IPokemon obj)
+		//{
+		//	return obj.GetHashCode();
+		//}
+		//int IEqualityComparer<Pokemon>.GetHashCode(Pokemon obj)
+		//{
+		//	return obj.GetHashCode();
+		//}
 		object ICloneable.Clone()
 		{
 			return MemberwiseClone();

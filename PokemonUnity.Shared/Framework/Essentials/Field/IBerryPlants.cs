@@ -20,31 +20,31 @@ namespace PokemonEssentials.Interface.Field
 		// Hours/stage, drying/hour, min yield, max yield
 	}
 
-	public interface ITempMetadataBerryPlants {
+	public interface ITempMetadataBerryPlants : ITempMetadata {
 		IDictionary<int, BerryData> berryPlantData				{ get; }
 
 		//int[] GetBerryPlantData(Items item);
 		BerryData GetBerryPlantData(Items item);
 	}
 
-	public interface IBerryPlantMoistureSprite : IDisposable {
+	public interface IBerryPlantMoistureSprite : ISpriteAnimation, IDisposable {
 		IBerryPlantMoistureSprite initialize(IGameCharacter @event,IGameMap map,IViewport viewport=null);
 
 		bool disposed();
 
-		void dispose();
+		//void dispose();
 
 		void updateGraphic();
 
-		void update();
+		//void update();
 	}
 
-	public interface IBerryPlantSprite : IDisposable {
+	public interface IBerryPlantSprite : ISpriteAnimation, IDisposable {
 		//REPLANTS = 9;
 
 		IBerryPlantSprite initialize(IGameCharacter @event, IGameMap map,IViewport viewport);
 
-		void dispose();
+		//void dispose();
 
 		bool disposed();
 
@@ -52,14 +52,18 @@ namespace PokemonEssentials.Interface.Field
 		/// Constantly updates, used only to immediately
 		/// change sprite when planting/picking berries
 		/// </summary>
-		IEnumerator update();
+		//IEnumerator update();
 
+		/// <summary>
+		/// </summary>
+		/// <param name="berryData"></param>
+		/// <returns></returns>
 		BerryData updatePlantDetails(BerryData berryData);
 
 		void setGraphic(BerryData berryData, bool fullcheck = false);
 	}
 
-	public interface IGameBerryPlants
+	public interface IGameBerryPlants : IGame
 	{
 		void BerryPlant();
 

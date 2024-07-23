@@ -11,7 +11,7 @@ using PokemonEssentials.Interface.PokeBattle;
 namespace PokemonUnity
 {
 	[System.Serializable]
-	public partial class Trainer : PokemonEssentials.Interface.PokeBattle.ITrainer, IEquatable<Trainer>, IEqualityComparer<Trainer>
+	public partial class Trainer : PokemonEssentials.Interface.PokeBattle.ITrainer, IEquatable<Trainer>//, IEqualityComparer<Trainer>
 	{
 		#region Variables
 		public string name { get; set; }
@@ -106,12 +106,13 @@ namespace PokemonUnity
 			seen = new Dictionary<Pokemons, bool>();
 			owned = new Dictionary<Pokemons, bool>();
 			clearPokedex();
-			//@shadowcaught=new bool[0];
-			//for (int i = 1; i < Kernal.PokemonData.Count; i++) {
-			//  @shadowcaught[i]=false;
+			//@shadowcaught=new bool[Core.PokemonIndexLimit];
+			//for (int i = 1; i < Core.PokemonIndexLimit; i++) {
+			//	@shadowcaught[i]=false;
 			//}
 			@shadowcaught=new List<Pokemons>();
 			@badges=new bool[8]; //ToDo: Dynamic Badge Count...
+			if (Kernal.BadgeData.Count>0) @badges=new bool[Kernal.BadgeData.Count];
 			for (int i = 0; i < 8; i++) {
 				@badges[i]=false;
 			}
@@ -164,7 +165,7 @@ namespace PokemonUnity
 		}
 
 		public int MetaID { get {
-			if (!@metaID.HasValue && Game.GameData != null) @metaID=Game.GameData.Player.GetHashCode();//ID;
+			if (!@metaID.HasValue && Game.GameData != null) @metaID=Game.GameData.GamePlayer.GetHashCode();//ID;
 			if (!@metaID.HasValue) @metaID=0;
 			return @metaID.Value;
 		} }
@@ -330,16 +331,16 @@ namespace PokemonUnity
 		public int pokedexSeen(Regions? region=null) {
 			int ret=0;
 			if (region==null) {
-				//for (int i = 0; i < Kernal.PokemonData.Count; i++) {
-				//  if (@seen[i]) ret+=1;
-				//}
-				return seen.Count;
+				for (int i = 0; i < Core.PokemonIndexLimit; i++) {
+					if (@seen[(Pokemons)i]) ret+=1;
+				}
+				//return seen.Count;
 			}
 			else {
-				//int[] regionlist=Game.AllRegionalSpecies(region);
 				Pokemons[] regionlist=new Pokemons[0];
+				if (Game.GameData is PokemonEssentials.Interface.IGameUtility gu) regionlist=gu.AllRegionalSpecies((int)region);
 				foreach (Pokemons i in regionlist) {
-				if (@seen[i]) ret+=1;
+					if (@seen[i]) ret+=1;
 				}
 			}
 			return ret;
@@ -353,16 +354,16 @@ namespace PokemonUnity
 		public int pokedexOwned(Regions? region=null) {
 			int ret=0;
 			if (region==null) {
-				//for (int i = 0; i < Kernal.PokemonData.Count; i++) {
-				//  if (@owned[i]) ret+=1;
-				//}
-				return owned.Count;
+				for (int i = 0; i < Core.PokemonIndexLimit; i++) {
+					if (@owned[(Pokemons)i]) ret+=1;
+				}
+				//return owned.Count;
 			}
 			else {
-				//int[] regionlist=Game.GameData.AllRegionalSpecies(region);
 				Pokemons[] regionlist=new Pokemons[0];
+				if (Game.GameData is PokemonEssentials.Interface.IGameUtility gu) regionlist=gu.AllRegionalSpecies((int)region);
 				foreach (Pokemons i in regionlist) {
-				if (@owned[i]) ret+=1;
+					if (@owned[i]) ret+=1;
 				}
 			}
 			return ret;
@@ -409,14 +410,14 @@ namespace PokemonUnity
 		public void clearPokedex() {
 			@seen.Clear(); //=new Dictionary<Pokemons, bool>();
 			@owned.Clear(); //=new Dictionary<Pokemons, bool>();
-			@formseen=new int?[0][];
-			@formlastseen=new KeyValuePair<int, int?>[0];
-			//for (int i = 1; i < Kernal.PokemonData.Count; i++) {
-			//  @seen[i]=false;
-			//  @owned[i]=false;
-			//  @formlastseen[i]=[];
-			//  @formseen[i]=new int?[]{null};
-			//}
+			@formseen=new int?[Core.PokemonIndexLimit][];
+			@formlastseen=new KeyValuePair<int, int?>[Core.PokemonIndexLimit];
+			for (int i = 1; i < Core.PokemonIndexLimit; i++) {
+				//@seen[i]=false;
+				//@owned[i]=false;
+				//@formseen[i]=new int?[]{null};
+				//@formlastseen[i]=new KeyValuePair<int, int?>();
+			}
 		}
 		#endregion
 
@@ -459,14 +460,14 @@ namespace PokemonUnity
 		{
 			return Equals(obj: (object)other);
 		}
-		bool IEqualityComparer<Trainer>.Equals(Trainer x, Trainer y)
-		{
-			return x == y;
-		}
-		int IEqualityComparer<Trainer>.GetHashCode(Trainer obj)
-		{
-			return obj.GetHashCode();
-		}
+		//bool IEqualityComparer<Trainer>.Equals(Trainer x, Trainer y)
+		//{
+		//	return x == y;
+		//}
+		//int IEqualityComparer<Trainer>.GetHashCode(Trainer obj)
+		//{
+		//	return obj.GetHashCode();
+		//}
 		#endregion
 	}
 }

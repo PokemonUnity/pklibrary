@@ -12,6 +12,7 @@ using PokemonEssentials.Interface.Item;
 using PokemonEssentials.Interface.Screen;
 using PokemonEssentials.Interface.EventArg;
 using PokemonEssentials.Interface.PokeBattle;
+using PokemonEssentials.Interface.Battle;
 
 namespace PokemonUnity//.Inventory
 {
@@ -233,7 +234,7 @@ namespace PokemonUnity//.Inventory
 				Pokemons newspecies=CheckEvolution(pokemon)[0];
 				if (newspecies>0) {
 					FadeOutInWithMusic(99999, block: () => {
-						IPokemonEvolutionScene evo=Scenes.EvolvingScene; //new PokemonEvolutionScene();
+						IPokemonEvolutionScene evo=Scenes.EvolvingScene.initialize(); //new PokemonEvolutionScene();
 						evo.StartScreen(pokemon,newspecies);
 						evo.Evolution();
 						evo.EndScreen();
@@ -250,7 +251,7 @@ namespace PokemonUnity//.Inventory
 			return hpgain;
 		}
 
-		public bool HPItem(IPokemon pokemon,int restorehp,IScene scene) {
+		public bool HPItem(IPokemon pokemon,int restorehp,PokemonEssentials.Interface.Screen.IHasDisplayMessage scene) {
 			if (pokemon.HP<=0 || pokemon.HP==pokemon.TotalHP || pokemon.isEgg) {
 				scene.Display(Game._INTL("It won't have any effect."));
 				return false;
@@ -262,7 +263,7 @@ namespace PokemonUnity//.Inventory
 			}
 		}
 
-		public bool BattleHPItem(IPokemon pokemon,IBattler battler,int restorehp,IScene scene) {
+		public bool BattleHPItem(IPokemon pokemon,IBattler battler,int restorehp, PokemonEssentials.Interface.Screen.IHasDisplayMessage scene) {
 			if (pokemon.HP<=0 || pokemon.HP==pokemon.TotalHP || pokemon.isEgg) {
 				scene.Display(Game._INTL("But it had no effect!"));
 				return false;
@@ -321,7 +322,7 @@ namespace PokemonUnity//.Inventory
 			return evgain;
 		}
 
-		public bool RaiseHappinessAndLowerEV(IPokemon pokemon,IScene scene,Stats ev,string[] messages) {
+		public bool RaiseHappinessAndLowerEV(IPokemon pokemon, PokemonEssentials.Interface.Screen.IHasDisplayMessage scene,Stats ev,string[] messages) {
 			bool h=(pokemon.Happiness<255);
 			bool e=(pokemon.EV[(int)ev]>0);
 			if (!h && !e) {
@@ -363,7 +364,7 @@ namespace PokemonUnity//.Inventory
 
 		public bool BikeCheck() {
 			if (Global.surfing ||
-				(!Global.bicycle && Terrain.onlyWalk((this as PokemonEssentials.Interface.Field.IGameField).GetTerrainTag()))) {
+				(!Global.bicycle && Terrain.onlyWalk((this is PokemonEssentials.Interface.Field.IGameField f ? f.GetTerrainTag() : (Terrains?)null)))) {
 				GameMessage.Message(Game._INTL("Can't use that here."));
 				return false;
 			}
@@ -373,16 +374,16 @@ namespace PokemonUnity//.Inventory
 			}
 			if (Global.bicycle) {
 				//if (GetMetadata(GameMap.map_id,MetadataBicycleAlways)) {
-				if (GetMetadata(GameMap.map_id).Map.BicycleAlways) {
+				if (GetMetadata(GameMap is IGameMapOrgBattle gmo ? gmo.map_id : 0).Map.BicycleAlways) {
 					GameMessage.Message(Game._INTL("You can't dismount your Bike here."));
 					return false;
 				}
 				return true;
 			} else {
 				//bool? val=GetMetadata(GameMap.map_id,MetadataBicycle);
-				bool? val=GetMetadata(GameMap.map_id).Map.Bicycle;
+				bool? val=GetMetadata(GameMap is IGameMapOrgBattle gmo0 ? gmo0.map_id : 0).Map.Bicycle;
 				//if (val == null) val=GetMetadata(GameMap.map_id,MetadataOutdoor);
-				if (val == null) val=GetMetadata(GameMap.map_id).Map.Outdoor;
+				if (val == null) val=GetMetadata(GameMap is IGameMapOrgBattle gmo1 ? gmo1.map_id : 0).Map.Outdoor;
 				if (val == null) {
 					GameMessage.Message(Game._INTL("Can't use that here."));
 					return false;
@@ -395,11 +396,11 @@ namespace PokemonUnity//.Inventory
 			IList<IGameCharacter> result = new List<IGameCharacter>();
 			float playerX=GamePlayer.x;
 			float playerY=GamePlayer.y;
-			foreach (IGameCharacter @event in GameMap.events.Values) {
+			foreach (IGameEvent @event in GameMap.events.Values) {
 				if (@event.name!="HiddenItem") continue;
 				if (Math.Abs(playerX-@event.x)>=8) continue;
 				if (Math.Abs(playerY-@event.y)>=6) continue;
-				if (GameSelfSwitches[(ISelfSwitchVariable)new SelfSwitchVariable(GameMap.map_id,@event.id,"A")]) continue;
+				if (GameSelfSwitches[(ISelfSwitchVariable)new SelfSwitchVariable(GameMap is IGameMapOrgBattle gmo ? gmo.map_id : 0,@event.id,"A")]) continue;
 				result.Add(@event);
 			}
 			if (result.Count==0) return null;
@@ -423,7 +424,7 @@ namespace PokemonUnity//.Inventory
 
 		public bool SpeciesCompatible (Pokemons species,Moves move) {
 			//bool ret=false;
-			//if (species<=0) return false;
+			if (species<=0) return false;
 			//data=load_data("Data/tm.dat");
 			//if (!data[move]) return false;
 			//return data[move].Any(item => item==species);
@@ -594,7 +595,7 @@ namespace PokemonUnity//.Inventory
 					}
 				}
 				FadeOutIn(99999, block: () => {
-					IPartyDisplayScene scene=Scenes.Party; //new PokemonScreen_Scene();
+					IPartyDisplayScene scene=Scenes.Party.initialize(); //new PokemonScreen_Scene();
 					IPartyDisplayScreen screen=Screens.Party.initialize(scene,Trainer.party); //new PokemonScreen(scene,Trainer.party);
 					screen.StartScene(Game._INTL("Use on which Pokémon?"),false,annot.ToArray());
 					do { //;loop
@@ -602,8 +603,8 @@ namespace PokemonUnity//.Inventory
 						int chosen=screen.ChoosePokemon();
 						if (chosen>=0) {
 							IPokemon pokemon=Trainer.party[chosen];
-							if (!CheckUseOnPokemon(item,pokemon,screen)) {
-								(this as IGameAudioPlay).PlayBuzzerSE();
+							if (!CheckUseOnPokemon(item,pokemon,screen) && this is IGameAudioPlay gap) {
+								gap.PlayBuzzerSE();
 							} else {
 								ret=ItemHandlers.triggerUseOnPokemon(item,pokemon,(IHasDisplayMessage)screen);
 								if (ret && Kernal.ItemData[item].Flags.Consumable) {		//[ITEMUSE]==1 Usable on Pokémon, consumed
@@ -650,7 +651,7 @@ namespace PokemonUnity//.Inventory
 
 		public Items ChooseItem(int var=0,params Items[] args) {
 			Items ret=0; //int?
-			IBagScene scene=Scenes.Bag; //new PokemonBag_Scene();
+			IBagScene scene=Scenes.Bag.initialize(); //new PokemonBag_Scene();
 			IBagScreen screen=Screens.Bag.initialize(scene,Bag); //new PokemonBagScreen(scene,Bag);
 			FadeOutIn(99999, block: () => {
 				ret=screen.ChooseItemScreen();
@@ -697,11 +698,12 @@ namespace PokemonUnity//.Inventory
 
 		public void TopRightWindow(string text) {
 			IWindow_AdvancedTextPokemon window = null; //new Window_AdvancedTextPokemon(text);
+			window.initialize(text);
 			window.z=99999;
 			window.width=198;
 			window.y=0;
 			window.x=Graphics.width-window.width;
-			(this as IGameAudioPlay).PlayDecisionSE();
+			if (this is IGameAudioPlay gap) gap.PlayDecisionSE();
 			do { //;loop
 				Graphics?.update();
 				Input.update();

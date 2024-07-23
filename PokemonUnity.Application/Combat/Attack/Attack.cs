@@ -21,6 +21,10 @@ namespace PokemonUnity.Combat
 	/// <summary>
 	/// Uses current battle and manipulates the data then return the current battle with updated values.
 	/// </summary>
+	/// <remarks>
+	/// During battle, the moves used are modified by these classes before calculations are applied
+	/// </remarks>
+	/// https://essentialsdocs.fandom.com/wiki/Function_codes
 	public abstract class PokeBattle_Move : Move, IBattleMove, ICloneable
 	{
 		protected int[] astage { get; set; }
@@ -155,12 +159,7 @@ namespace PokemonUnity.Combat
 		#endregion
 	}
 
-	// <summary>
-	// During battle, the moves used are modified by these classes before calculations are applied
-	// </summary>
 #pragma warning disable 0162 //Warning CS0162  Unreachable code detected
-	// ToDo: Rename from PokemonEssential's Function to Veekun's Attack.Effects
-	// https://essentialsdocs.fandom.com/wiki/Function_codes
 	#region Battle Class Functions
 	/// <summary>
 	/// Superclass that handles moves using a non-existent function code.
@@ -374,7 +373,7 @@ namespace PokemonUnity.Combat
 					attacker.Update(true);
 					if (this.battle.scene is IPokeBattle_Scene s0) s0.ChangePokemon(attacker, attacker.pokemon);
 					battle.Display(Game._INTL("{1} transformed!", attacker.ToString()));
-					GameDebug.Log($"[Form changed] #{attacker.ToString()} changed to form #{Game._INTL((attacker as Pokemon).Form.Pokemon.ToString(TextScripts.Name))}");
+					Core.Logger.Log($"[Form changed] #{attacker.ToString()} changed to form #{Game._INTL((attacker as Pokemon).Form.Pokemon.ToString(TextScripts.Name))}");
 				}
 			}
 		}
@@ -836,9 +835,11 @@ namespace PokemonUnity.Combat
 	/// <summary>
 	/// Confuses the target. Chance of causing confusion depends on the cry's volume.
 	/// Confusion chance is 0% if user doesn't have a recorded cry. (Chatter)
-	/// TODO: Play the actual chatter cry as part of the move animation
-	///       this.battle.scene.Chatter(attacker,opponent) // Just plays cry
 	/// <summary>
+	/// <remarks>
+	/// TODO: Play the actual chatter cry as part of the move animation
+	/// <see cref="IPokeBattle_SceneChatter.Chatter(IBattler, IBattler)"/> // Just plays cry
+	/// </remarks>
 	public partial class PokeBattle_Move_014 : PokeBattle_Move
 	{
 		public PokeBattle_Move_014() : base() { }
@@ -850,7 +851,7 @@ namespace PokemonUnity.Combat
 			{
 				if (Core.USENEWBATTLEMECHANICS) return 100;
 				if (attacker.pokemon.IsNotNullOrNone() && attacker.pokemon is IPokemonChatter a && a.chatter != null) {
-					return a.chatter.intensity() * 10 / 127;
+					return a.chatter.intensity * 10 / 127;
 				}
 				return 0;
 			}
@@ -3594,7 +3595,7 @@ namespace PokemonUnity.Combat
 			battle.Display(Game._INTL("{1} acquired {2}!", opponent.ToString(), abilityname));
 			if (opponent.effects.Illusion.Species != Pokemons.NONE && oldabil == Abilities.ILLUSION)
 			{
-				GameDebug.Log($"[Ability triggered] #{opponent.ToString()}'s Illusion ended");
+				Core.Logger.Log($"[Ability triggered] #{opponent.ToString()}'s Illusion ended");
 				opponent.effects.Illusion = null;
 				if (this.battle.scene is IPokeBattle_Scene s0) s0.ChangePokemon(opponent, opponent.pokemon);
 
@@ -3635,7 +3636,7 @@ namespace PokemonUnity.Combat
 			battle.Display(Game._INTL("{1} acquired {2}!", opponent.ToString(), abilityname));
 			if (opponent.effects.Illusion.Species != Pokemons.NONE && oldabil == Abilities.ILLUSION)
 			{
-				GameDebug.Log($"[Ability triggered] #{opponent.ToString()}'s Illusion ended");
+				Core.Logger.Log($"[Ability triggered] #{opponent.ToString()}'s Illusion ended");
 				opponent.effects.Illusion = null;
 				if (this.battle.scene is IPokeBattle_Scene s0) s0.ChangePokemon(opponent, opponent.pokemon);
 
@@ -3685,7 +3686,7 @@ namespace PokemonUnity.Combat
 			battle.Display(Game._INTL("{1} copied {2}'s {3}!", attacker.ToString(), opponent.ToString(true), abilityname));
 			if (attacker.effects.Illusion.Species != Pokemons.NONE && oldabil == Abilities.ILLUSION)
 			{
-				GameDebug.Log($"[Ability triggered] #{attacker.ToString()}'s Illusion ended");
+				Core.Logger.Log($"[Ability triggered] #{attacker.ToString()}'s Illusion ended");
 				attacker.effects.Illusion = null;
 				if (this.battle.scene is IPokeBattle_Scene s0) s0.ChangePokemon(attacker, attacker.pokemon);
 
@@ -3744,7 +3745,7 @@ namespace PokemonUnity.Combat
 			battle.Display(Game._INTL("{1} acquired {2}!", opponent.ToString(), abilityname));
 			if (opponent.effects.Illusion.Species != Pokemons.NONE && oldabil == Abilities.ILLUSION)
 			{
-				GameDebug.Log($"[Ability triggered] #{opponent.ToString()}'s Illusion ended");
+				Core.Logger.Log($"[Ability triggered] #{opponent.ToString()}'s Illusion ended");
 				opponent.effects.Illusion = null;
 				if (this.battle.scene is IPokeBattle_Scene s0) s0.ChangePokemon(opponent, opponent.pokemon);
 
@@ -3821,7 +3822,7 @@ namespace PokemonUnity.Combat
 			battle.Display(Game._INTL("{1}'s Ability was suppressed!", opponent.ToString()));
 			if (opponent.effects.Illusion.Species != Pokemons.NONE && oldabil == Abilities.ILLUSION)
 			{
-				GameDebug.Log($"[Ability triggered] #{opponent.ToString()}'s Illusion ended");
+				Core.Logger.Log($"[Ability triggered] #{opponent.ToString()}'s Illusion ended");
 				opponent.effects.Illusion = null;
 				if (this.battle.scene is IPokeBattle_Scene s0) s0.ChangePokemon(opponent, opponent.pokemon);
 

@@ -50,7 +50,7 @@ namespace PokemonEssentials.Interface
 			//void registerEncounterEnd(Action p);
 
 			//IEncounterPokemon trigger(IEncounterPokemon encounter);
-			void triggerEncounter(IEncounterPokemon encounter);
+			IPokemon triggerEncounter(IPokemon encounter);
 
 			void triggerEncounterEnd();
 		}
@@ -302,8 +302,8 @@ namespace PokemonEssentials.Interface
 		public interface ITempMetadataField
 		{
 			#region
-			Method? encounterType	{ get; set; }
-			int[] evolutionLevels				{ get; set; }
+			Method? encounterType { get; set; }
+			int[] evolutionLevels { get; set; }
 			#endregion
 
 			#region
@@ -314,6 +314,9 @@ namespace PokemonEssentials.Interface
 		}
 
 		#region Scene_Map and Spriteset_Map
+		/// <summary>
+		/// Extension of <see cref="Interface.ISceneMap"/>
+		/// </summary>
 		public interface ISceneMapField
 		{
 			void createSingleSpriteset(int map);
@@ -325,6 +328,13 @@ namespace PokemonEssentials.Interface
 		//
 		//	void restoreAnimations(anims);
 		//}
+
+		public interface ILocationWindow : IDisposable
+		{
+			ILocationWindow initialize(string name);
+
+			void update();
+		}
 		#endregion
 
 		/*public static partial class IMoveRoute

@@ -65,6 +65,7 @@ namespace PokemonUnity
 		//ToDo: Replace as Func<Attack.Effects,IBattleMove> instead?
 		public static IBattleMove ToBattleMove(this Attack.Effects effect)
 		{
+			//ToDo: At a glance overview of how much of the move effects are implemented
 			switch (effect)
 			{
 				case Attack.Effects.NONE:
@@ -764,7 +765,7 @@ namespace PokemonUnity
 				case Attack.Effects.x167:
 					return new Combat.PokeBattle_Move_136();
 				case Attack.Effects.x168:
-					//ToDo: I think the function both do the samething
+					//ToDo: I think the function both do the same thing
 					//MoveEffectData.Add(effect, new Combat.PokeBattle_Move_13B());
 					return new Combat.PokeBattle_Move_147();
 				case Attack.Effects.x169:
@@ -811,7 +812,7 @@ namespace PokemonUnity
 				case Attack.Effects.x17C:
 					return new Combat.PokeBattle_Move_135();
 				case Attack.Effects.x17D:
-					//Disarming voice, inflices extra effects
+					//Disarming voice, inflicts extra effects
 					return new Combat.PokeBattle_Move_0A5();
 				case Attack.Effects.x17E:
 					break;

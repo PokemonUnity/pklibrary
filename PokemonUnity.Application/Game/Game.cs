@@ -10,6 +10,8 @@ using PokemonUnity.Saving;
 using PokemonUnity.Utility;
 using PokemonUnity.Application;
 using PokemonUnity.Character;
+using PokemonUnity.Overworld;
+using PokemonEssentials.Interface.Field;
 
 namespace PokemonUnity
 {
@@ -19,7 +21,6 @@ namespace PokemonUnity
 	/// This class should be called once, when the game boots-up.
 	/// During boot-up, game will check directory for save files and load data.
 	/// Game class will overwrite all the other class default values when player triggers a load state.
-	//ToDo: Should all variables in Game be static?
 	public partial class Game
 	{
 		//private readonly static Lazy<Game> _instance = new Lazy<Game>(() => new Game());
@@ -35,8 +36,6 @@ namespace PokemonUnity
 
 		public Game()
 		{
-			//Rival = new string[0];
-			Features = new Feature();
 			#region Public Constructor
 			//	Game boots up
 			//		* Game engine calls private constructor to begin process
@@ -49,83 +48,52 @@ namespace PokemonUnity
 			//		* give warning to player if problems
 			//	Scan for save files and previous game progress
 			// Load Player/Character/Overworld THEN Encounter
-			//ResetSqlConnection();
-			//con.Open();
-			//InitTypes();
-			//InitNatures();
-			//InitPokemons();
-			//InitPokemonForms();
-			//InitPokemonMoves();
-			//InitPokemonEvolutions();
-			//InitPokemonItems();
-			//InitMoves();
-			//InitItems();
-			//InitBerries();
-			//InitTrainers();
-			//InitRegions();
-			//InitLocations();
-			//InitPlayerCharacter();
-			//InitLoadFile();
 			#endregion
-		}
 
-		public Game(PokemonEssentials.Interface.IGamePlayer player, Feature? features = null, Challenges challenge = Challenges.Classic, //string[] rival = null,
-			string playerItemData = null, string playerDayCareData = null, string playerBerryData = null, string playerNPCData = null, string playerApricornData = null)
-		{
-			Features = features ?? new Feature();
-			Challenge = challenge;
-			//Player = player ?? new Player();
-			//Trainer = trainer ?? new Combat.Trainer();
-			//Rival = rival							?? new string[0];//throw new ArgumentNullException(nameof(rival));
-			PlayerItemData = playerItemData			?? string.Empty;//throw new ArgumentNullException(nameof(playerItemData));
-			PlayerDayCareData = playerDayCareData	?? string.Empty;//throw new ArgumentNullException(nameof(playerDayCareData));
-			PlayerBerryData = playerBerryData		?? string.Empty;//throw new ArgumentNullException(nameof(playerBerryData));
-			PlayerNPCData = playerNPCData			?? string.Empty;//throw new ArgumentNullException(nameof(playerNPCData));
-			PlayerApricornData = playerApricornData	?? string.Empty;//throw new ArgumentNullException(nameof(playerApricornData));
-			//PC = pC ?? throw new ArgumentNullException(nameof(pC));
-			//Bag = bag ?? throw new ArgumentNullException(nameof(bag));
+			Global = new GlobalMetadata();
+			//MapFactory = new MapFactory();
+			//PokemonMap = new MapMetadata();
+			//MapData = new MapData();
+			PokemonSystem = new PokemonSystem();
+			PokemonTemp = new PokemonTemp();
+			PokemonEncounters = new PokemonUnity.Overworld.PokemonEncounter();
+			//MapEncounterData = new MapEncounterData(); Duplicate
+			PokemonStorage = new PokemonStorage();
+			Bag = new PokemonBag();
+			/*Scene = new SceneMap();
+			GameTemp = new GameTemp();
+			GamePlayer = new GamePlayer();
+			//Player = new Player();	Duplicate
+			//Trainer = new Trainer();
+			DataSystem = new DataSystem();
+			DataTilesets = new DataTilesets();
+			DataCommonEvents = new DataCommonEvents();
+			GameSwitches = new GameSwitches();
+			GameSelfSwitches = new GameSelfSwitches();
+			GameVariables = new GameVariables();*/
+			GameSystem = new GameSystem();
+			GameMap = new Game_Map();
+			EncounterModifier = new EncounterModifier();
 		}
 		#endregion
 
-		public Game SetScenes(params PokemonEssentials.Interface.Screen.IScene[] scenes)
+		private void EnableEventListeners()
 		{
-			//Scenes = new UX.Scene(scenes);
-			//if (Scenes == null)
-			Scenes.initialize(scenes);
-			return this;
+			//Events_EncounterEnd;
+			//Events_EncounterModifiers;
+			//Events_OnEndBattle;
+			//Events_OnMapChange;
+			//Events_OnMapChangeRoaming;
+			//Events_OnMapChanging;
+			//Events_OnMapSceneChange;
+			//Events_OnMapUpdate;
+			//Events_OnSpritesetCreate;
+			//Events_OnStartBattle;
+			//Events_OnStepTaken;
+			//Events_OnStepTakenFieldMovement;
+			//Events_OnStepTakenPokemonShadow;
+			//Events_OnStepTakenTransferPossible;
+			//Events_OnWildBattleOverride;
 		}
-
-		public Game SetScreens(params PokemonEssentials.Interface.Screen.IScreen[] screens)
-		{
-			Screens = new PokemonUnity.Interface.Screen(screens);
-			return this;
-		}
-
-		//public static implicit operator Game(GameState state)
-		//{
-		//	Game game = new Game()
-		//	{
-		//		Player				= state.GetPlayer()
-		//		,RepelSteps			= state.RepelSteps
-		//		//,Rival				= state.Rival
-		//		//,PlayerPosition		= state.PlayerPosition
-		//		,Checkpoint			= (Locations)state.PokeCenterId
-		//		//,Area				= data.ActiveMapId;
-		//		//,PC					= state.PlayerPC
-		//		//,Bag				= state.PlayerBag
-		//		//PlayerItemData		= state.PlayerItemData
-		//		//,PlayerBerryData	= state.PlayerBerryData
-		//		//,PlayerNPCData		= state.PlayerNPCData
-		//		//,PlayerApricornData	= state.PlayerApricornData
-		//		//PC_Poke = data.PC.GetPokemonsFromSeri();
-		//		//PC_boxNames = data.PC.BoxNames;
-		//		//PC_boxTexture = data.PC.BoxTextures;
-		//		//PC_Items = new List<Items>(data.PC.GetItemsFromSeri());
-		//		//Bag_Items = data.PlayerBag;
-		//		,Challenge = state.Challenge
-		//		,Features = state.Features
-		//	};
-		//	return game;
-		//}
 	}
 }

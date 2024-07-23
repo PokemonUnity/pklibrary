@@ -21,8 +21,7 @@ namespace PokemonUnity.Character
 	/// it was a {get;} only, that returned an iqueryable
 	/// ToDo: remove static <see cref="GameVariables.Bag_Items"/>
 	/// so trainerbag can load multiple players (for netplay)
-	/*[System.Obsolete("Something i plan to transition to; not yet ready for full integration")]
-	public class Bag : PokemonEssentials.Interface.Screen.IBag
+	/*public class Bag : PokemonEssentials.Interface.Screen.IBag
 	{
 		#region Variables
 		private List<Items> items { get; set; }
@@ -253,7 +252,7 @@ namespace PokemonUnity.Character
 		/// <returns></returns>
 		public bool HasMegaBracelet()
 		{
-			if (Game.GameData.Features.SandBoxMode || Core.DEBUG)
+			if (Game.GameData.Global.Features.SandBoxMode || Core.DEBUG)
 				return true;
 			else
 				if (items.Contains(Items.MEGA_BRACELET))
@@ -365,9 +364,9 @@ namespace PokemonUnity.Character
 		{
 			string Message = "";
 			if (quantity == 1)
-				Message = Game.GameData.Player.Name + " stored it in the~" + Kernal.ItemData[item].Pocket.ToString() + " pocket.";
+				Message = Game.GameData.Trainer.name + " stored it in the~" + Kernal.ItemData[item].Pocket.ToString() + " pocket.";
 			else
-				Message = Game.GameData.Player.Name + " stored them~in the " + Kernal.ItemData[item].Pocket.ToString() + " pocket.";
+				Message = Game.GameData.Trainer.name + " stored them~in the " + Kernal.ItemData[item].Pocket.ToString() + " pocket.";
 			//scene.DisplayMessage(Message);
 		}
 
@@ -447,7 +446,7 @@ namespace PokemonUnity.Character
 		public int getChoice(ItemPockets pocket) {
 			if (pocket<0 || (int)pocket>numPockets) {
 				//throw new Exception(Game._INTL("Invalid pocket: {1}",pocket.ToString()));
-				GameDebug.LogError(Game._INTL("Invalid pocket: {1}",pocket.ToString()));
+				Core.Logger.LogError(Game._INTL("Invalid pocket: {1}",pocket.ToString()));
 			}
 			rearrange();
 			return Math.Min(@choices[pocket],@pockets[(int)pocket].Length); //|| 0
@@ -473,7 +472,7 @@ namespace PokemonUnity.Character
 		public void setChoice(ItemPockets pocket,int value) {
 			if (pocket<=0 || (int)pocket>numPockets) {
 				//throw new Exception(Game._INTL("Invalid pocket: {1}",pocket.ToString()));
-				GameDebug.LogError(Game._INTL("Invalid pocket: {1}",pocket.ToString()));
+				Core.Logger.LogError(Game._INTL("Invalid pocket: {1}",pocket.ToString()));
 			}
 			rearrange();
 			if (value<=@pockets[(int)pocket].Length) @choices[pocket]=value;

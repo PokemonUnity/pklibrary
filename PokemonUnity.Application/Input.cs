@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PokemonEssentials.Interface;
+using PokemonEssentials.Interface.EventArg;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +17,7 @@ namespace PokemonUnity
 	//  return (wndthreadid==threadid);
 	//}
 
-	public abstract class Input {
+	public abstract class Input : IInput {
 		#region Variables
 		public const int DOWN  = 2;
 		public const int LEFT  = 4;
@@ -32,6 +34,7 @@ namespace PokemonUnity
 		public const int SHIFT = 21; //SELECT
 		public const int CTRL  = 22; //START
 		public const int ALT   = 23;
+		public const int ESC   = 24;
 		public const int F5    = 25;
 		public const int F6    = 26;
 		public const int F7    = 27;
@@ -71,6 +74,7 @@ namespace PokemonUnity
 		/// Define the ButtonUp event property.
 		/// </summary>
 		public static event ButtonEventHandler ButtonUp;
+		public abstract event Action<object, IButtonEventArgs> OnKeyPress;
 
 		/// <summary>
 		/// Raise the event with the delegate specified by keyDownEventKey
@@ -353,6 +357,11 @@ namespace PokemonUnity
 		{
 			m_KeyTable[key] = state;
 		}
+
+		void IInput.update() { update(); }
+		bool IInput.press(int num) { return press(num); }
+		bool IInput.trigger(int num) { return trigger(num); }
+		bool IInput.repeat(int num) { return repeat(num); }
 		#endregion
 
 		public class ButtonEventArgs : EventArgs, PokemonEssentials.Interface.EventArg.IButtonEventArgs
