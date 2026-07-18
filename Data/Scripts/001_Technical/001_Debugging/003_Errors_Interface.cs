@@ -7,19 +7,20 @@ namespace PokemonEssentials
     /// <summary>
     /// Interface for the Reset exception, used to restart the game.
     /// </summary>
-    public interface IReset
+    public interface IReset : IThrowException
     {
     }
 
     /// <summary>
     /// Interface for event script errors that occur during map event execution.
     /// </summary>
-    public interface IEventScriptError
+    public interface IEventScriptError : IThrowException
     {
         /// <summary>
         /// Gets or sets the event-specific error message.
         /// </summary>
-        string event_message { get; set; }
+        //string event_message { get; set; }
+        string EventMessage { get; }
     }
 
     /// <summary>
@@ -33,13 +34,13 @@ namespace PokemonEssentials
         /// <param name="e">The exception to get the message from.</param>
         /// <param name="_script">Optional script context information.</param>
         /// <returns>A formatted error message string.</returns>
-        string pbGetExceptionMessage(Exception e, string _script = "");
+        string GetExceptionMessage(Exception e, string _script = "");
 
         /// <summary>
         /// Prints and logs an exception with full error details and backtrace.
         /// </summary>
         /// <param name="e">The exception to print and log.</param>
-        void pbPrintException(Exception e);
+        void PrintException(Exception e);
 
         /// <summary>
         /// Executes critical code with exception handling and error recovery.
@@ -48,6 +49,6 @@ namespace PokemonEssentials
         /// <returns>
         /// Status code: 0 = exception occurred and was handled; 1 = success; 2 = Hangup occurred.
         /// </returns>
-        int pbCriticalCode(Action @yield);
+        int CriticalCode(Action @yield);
     }
 }

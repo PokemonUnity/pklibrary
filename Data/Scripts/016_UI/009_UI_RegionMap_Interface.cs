@@ -85,6 +85,6 @@ namespace PokemonEssentials
         /// Starts the region map screen for viewing and navigation.
         /// Displays the regional map with interactive location browsing.
         /// </summary>
-        void StartScreen();
+        int StartScreen();
     }
 }

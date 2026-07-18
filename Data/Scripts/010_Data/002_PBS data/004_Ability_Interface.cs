@@ -7,7 +7,7 @@ namespace PokemonEssentials.Data
     /// Interface for Ability data, representing Pokemon abilities and their properties.
     /// Provides read-only access to ability information including names, descriptions, and flags.
     /// </summary>
-    public interface IAbility
+    public interface IAbility : IEnumeration<IAbility>
     {
         /// <summary>
         /// Gets the unique identifier for this ability.

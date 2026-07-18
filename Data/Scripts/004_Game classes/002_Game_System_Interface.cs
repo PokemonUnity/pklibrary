@@ -84,7 +84,7 @@ namespace PokemonEssentials
         /// Gets the remaining time on the timer in seconds.
         /// </summary>
         /// <returns>Remaining time in seconds.</returns>
-        double timer(); // Ruby method is [timer], your C# version used `GetTimer`. Sticking to [timer] from Ruby. Returns double.
+        int timer(); // Ruby method is [timer], your C# version used `GetTimer`. Sticking to [timer] from Ruby. Returns double.
 
         /// <summary>
         /// Starts playing a BGM.

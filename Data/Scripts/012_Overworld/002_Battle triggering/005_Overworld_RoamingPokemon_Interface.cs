@@ -185,23 +185,42 @@ namespace PokemonEssentials
 		/// <summary>
 		/// Gets the game switch that controls whether this Pokémon is roaming.
 		/// </summary>
+		/// <remarks>
+		/// Game Switch; the Pokémon roams while this is ON.
+		/// </remarks>
+		/// <seealso cref="IGameManager.game_switches"/>
 		int game_switch { get; }
 
 		/// <summary>
 		/// Gets the encounter method for this roaming Pokémon.
 		/// 0=any step, 1=walking, 2=surfing, 3=fishing, 4=water-based
 		/// </summary>
+		/// <remarks>
+		/// Encounter type (see <see cref="IMainOverworldRoamingPokemon.RoamingMethodAllowed(int)"/> for their use):
+		///   0 = grass, walking in cave, surfing
+		///   1 = grass, walking in cave
+		///   2 = surfing
+		///   3 = fishing
+		///   4 = surfing, fishing
+		/// </remarks>
 		int roamer_method { get; }
 
 		/// <summary>
 		/// Gets the battle BGM for encounters with this Pokémon.
 		/// </summary>
+		/// <remarks>
+		/// Name of BGM to play for that encounter (optional).
+		/// </remarks>
 		string battle_bgm { get; }
 
 		/// <summary>
 		/// Gets the area maps hash for this roaming Pokémon.
 		/// If null, uses the default roaming areas.
 		/// </summary>
+		/// <remarks>
+		/// Roaming areas specifically for this Pokémon (optional; used instead of
+		/// <see cref="ISettings.ROAMING_AREAS"/>).
+		/// </remarks>
 		IDictionary<int, IList<int>> area_maps { get; }
 	}
 
@@ -213,7 +232,7 @@ namespace PokemonEssentials
 		/// <summary>
 		/// The species of the roaming Pokémon.
 		/// </summary>
-		string Species { get; }
+		int Species { get; }
 
 		/// <summary>
 		/// The level of the roaming Pokémon.
@@ -223,7 +242,7 @@ namespace PokemonEssentials
 		/// <summary>
 		/// The Game Switch ID; the Pokémon roams while this is ON.
 		/// </summary>
-		int Switch { get; }
+		int SwitchId { get; }
 
 		/// <summary>
 		/// The encounter type:
@@ -242,8 +261,8 @@ namespace PokemonEssentials
 
 		/// <summary>
 		/// Optional roaming areas specifically for this Pokémon.
-		/// Used instead of the global ROAMING_AREAS if specified.
+		/// Used instead of the global <see cref="ISettings.ROAMING_AREAS"/> if specified.
 		/// </summary>
-		IDictionary<int, int[]> CustomRoamingAreas { get; }
+		IDictionary<int, int[]> RoamingAreas { get; }
 	}
 }

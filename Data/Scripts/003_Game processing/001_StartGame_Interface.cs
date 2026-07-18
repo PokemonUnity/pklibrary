@@ -15,29 +15,29 @@ namespace PokemonEssentials
 		/// <summary>
 		/// Initializes various global variables and loads the game data.
 		/// </summary>
-		IGameStart initialize();
+		IGameStart Initialize();
 		//void Initialize();
 
 		/// <summary>
 		/// Loads bootup data from save file (if it exists) or creates bootup data (if it doesn't).
 		/// </summary>
 		void set_up_system();
-		//void SetUpSystem();
+		void SetUpSystem();
 
 		/// <summary>
 		/// Called when starting a new game. Initializes global variables
 		/// and transfers the player into the map scene.
 		/// </summary>
-		void start_new();
-		//void StartNewGame();
+		//void start_new();
+		void StartNewGame();
 
 		/// <summary>
 		/// Loads the game from the given save data and starts the map scene.
 		/// </summary>
 		/// <param name="save_data">hash containing the save data</param>
 		/// <exception cref="SaveData.InvalidValueError">if an invalid value is being loaded</exception>
-		void load(ISaveData save_data);
-		//void LoadGame(IDictionary<string, object> saveData);
+		void load(Dictionary<string, object> save_data);
+		//void LoadGame(IISaveData saveData);
 
 		/// <summary>
 		/// Loads and validates the map. Called when loading a saved game.

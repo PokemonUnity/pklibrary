@@ -311,28 +311,32 @@ namespace PokemonEssentials
 	/// PC main menu
 	/// Various debug menus (main, Pokémon, battle, battle Pokémon)
 	/// </remarks>
-	public interface IMenuContent
+	public interface IMenuContent //ToDo: Rename to `IMenuCommand`?
 	{
+		int					id { get; set; }
 		/// <summary>
 		/// Gets the display name of the menu content.
 		/// </summary>
-		string Name { get; }
+		string				name { get; set; }
+		int					parent { get; set; }
+		string				description { get; set; }
 		/// <summary>
 		/// Gets the display order of the menu content.
 		/// </summary>
-		int Order { get; }
-		//Predicate<> Condition { get; }
-
+		int					order { get; set; }
+		bool?				always_show { get; set; }
 		/// <summary>
 		/// Determines whether this menu content should be displayed.
 		/// </summary>
 		/// <returns>True if the menu content should be displayed; otherwise, false.</returns>
-		bool Condition();
+		//Predicate<>		condition { get; }
+		Func<bool>			condition { get; set; }
 		/// <summary>
 		/// Executes the effect of this menu content when selected.
 		/// </summary>
 		/// <returns>True if the effect was executed successfully; otherwise, false.</returns>
-		bool Effect();
+		//bool				effect();
+		Func<IScenePokemonPauseMenu,bool>	effect { get; set; }
 	}
 
 	namespace EventArg

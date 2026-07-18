@@ -6,7 +6,7 @@ namespace PokemonEssentials.Data
 {
 	/// <summary>
 	/// </summary>
-	public interface IEnvironment
+	public interface IEnvironment : IEnumeration<IEnvironment>
 	{
 		/// <summary>
 		/// Gets the unique identifier for this environment.
@@ -23,9 +23,11 @@ namespace PokemonEssentials.Data
 		/// <summary>
 		/// Gets the data collection for all registered egg groups.
 		/// </summary>
-		IDictionary DATA { get; }
+		//IDictionary DATA { get; }
 
-		IEnvironment initialize(int id, string name, string battle_base);
+		/// <summary>
+		/// </summary>
+		IEnvironment Initialize(int id, string name = null, string battle_base = null);
 
 		/// <summary>
 		/// Loads environment data from storage.

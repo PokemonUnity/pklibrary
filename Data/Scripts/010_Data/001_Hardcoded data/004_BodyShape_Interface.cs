@@ -18,7 +18,7 @@ namespace PokemonEssentials.Data
         /// <summary>
         /// Gets the unique identifier for this body shape.
         /// </summary>
-        object id { get; }
+        int id { get; }
 
         /// <summary>
         /// Gets the untranslated name of this body shape.
@@ -37,7 +37,7 @@ namespace PokemonEssentials.Data
         /// <summary>
         /// Gets the data collection for all registered body shapes.
         /// </summary>
-        IDictionary DATA { get; }
+        //IDictionary DATA { get; }
 
         /// <summary>
         /// Loads body shape data from storage.
@@ -53,6 +53,6 @@ namespace PokemonEssentials.Data
         /// Gets the translated name of this body shape.
         /// </summary>
         /// <returns>The localized name of the body shape.</returns>
-        string name();
+        string name { get; }
     }
 }

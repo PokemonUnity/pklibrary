@@ -13,12 +13,12 @@ namespace PokemonEssentials.Data
     /// used for Pokedex entries, search functionality, and environmental
     /// context for Pokemon encounters and behaviors.
     /// </remarks>
-    public interface IHabitat
+    public interface IHabitat : IEnumeration<IHabitat>
     {
         /// <summary>
         /// Gets the unique identifier for this habitat.
         /// </summary>
-        object id { get; }
+        int id { get; }
 
         /// <summary>
         /// Gets the untranslated name of this habitat.
@@ -28,22 +28,22 @@ namespace PokemonEssentials.Data
         /// <summary>
         /// Gets the data collection for all registered habitats.
         /// </summary>
-        IDictionary DATA { get; }
+        //IDictionary DATA { get; }
 
         /// <summary>
         /// Loads habitat data from storage.
         /// </summary>
-        void load();
+        //void load();
 
         /// <summary>
         /// Saves habitat data to storage.
         /// </summary>
-        void save();
+        //void save();
 
         /// <summary>
         /// Gets the translated name of this habitat.
         /// </summary>
         /// <returns>The localized name of the habitat.</returns>
-        string name();
+        string name { get; }
     }
 }

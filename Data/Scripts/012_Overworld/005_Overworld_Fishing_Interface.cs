@@ -3,7 +3,7 @@ using System;
 namespace PokemonEssentials
 {
     /// <summary>
-    /// Firshing.
+    /// Fishing.
     /// </summary>
     /// <remarks>
     /// Interface for fishing functionality in the overworld.

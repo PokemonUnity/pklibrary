@@ -18,6 +18,42 @@ namespace PokemonEssentials
     /// </remarks>
     public interface IMessageConfig
     {
+		IColor LIGHT_TEXT_MAIN_COLOR		{ get; }
+		IColor LIGHT_TEXT_SHADOW_COLOR	{ get; }
+		IColor DARK_TEXT_MAIN_COLOR		{ get; }
+		IColor DARK_TEXT_SHADOW_COLOR	{ get; }
+		/// <summary>
+		/// Used by message tag "\b"
+		/// </summary>
+		IColor MALE_TEXT_MAIN_COLOR		{ get; }
+		IColor MALE_TEXT_SHADOW_COLOR	{ get; }
+		/// <summary>
+		/// Used by message tag "\r"
+		/// </summary>
+		IColor FEMALE_TEXT_MAIN_COLOR	{ get; }
+		IColor FEMALE_TEXT_SHADOW_COLOR	{ get; }
+		string FONT_NAME				{ get; }
+		int FONT_SIZE				{ get; }
+		int FONT_Y_OFFSET			{ get; }
+		string SMALL_FONT_NAME		{ get; }
+		int SMALL_FONT_SIZE			{ get; }
+		int SMALL_FONT_Y_OFFSET		{ get; }
+		string NARROW_FONT_NAME		{ get; }
+		int NARROW_FONT_SIZE			{ get; }
+		int NARROW_FONT_Y_OFFSET		{ get; }
+		/// <summary>
+		/// </summary>
+		/// <value>
+		/// 0 = Pause cursor is displayed at end of text
+		/// 1 = Pause cursor is displayed at bottom right
+		/// 2 = Pause cursor is displayed at lower middle side
+		/// </value>
+		int CURSOR_POSITION			{ get; }
+		int WINDOW_OPACITY			{ get; }
+		/// <summary>
+		/// Time in seconds between two characters
+		/// </summary>
+		float? TEXT_SPEED			{ get; }
         /// <summary>
         /// Gets the default system window frame.
         /// </summary>

@@ -7,7 +7,7 @@ namespace PokemonEssentials.Data
 	/// Interface for Move data, representing Pokemon moves and their properties.
 	/// Provides read-only access to move information including power, accuracy, type, and effects.
 	/// </summary>
-	public interface IMove
+	public interface IMove : IEnumeration<IMove>
 	{
 		/// <summary>
 		/// Gets the unique identifier for this move.

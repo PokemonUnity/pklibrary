@@ -21,7 +21,7 @@ namespace PokemonEssentials
     /// Manages a hierarchical list of debug commands and submenus.
     /// Provides organization and navigation for the extensive debug functionality.
     /// </summary>
-    public interface ICommandMenuList
+    public interface ICommandMenuList : ICollection<IMenuContent>, IEnumerable<IMenuContent>
     {
         /// <summary>
         /// The currently active menu level.
@@ -40,7 +40,7 @@ namespace PokemonEssentials
         /// <param name="hash">Hash containing command properties.</param>
         /// <param name="name">Optional display name for the command.</param>
         /// <param name="description">Optional description for the command.</param>
-        void add(object option, IDictionary<string, object> hash, string name = null, string description = null);
+        void add(int option, IDictionary<string, object> hash, string name = null, string description = null);
 
         /// <summary>
         /// Gets the list of commands for the current menu level.
@@ -67,7 +67,7 @@ namespace PokemonEssentials
         /// </summary>
         /// <param name="check_cmd">Command to check for submenu.</param>
         /// <returns>True if the command has a submenu, false otherwise.</returns>
-        bool hasSubMenu(object check_cmd);
+        bool hasSubMenu(int check_cmd);
 
         /// <summary>
         /// Gets the parent menu and index for navigation.

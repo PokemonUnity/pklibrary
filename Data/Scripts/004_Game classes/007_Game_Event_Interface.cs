@@ -47,7 +47,7 @@ namespace PokemonEssentials
 		/// <summary>
 		/// Gets the id of the event.
 		/// </summary>
-		string id { get; }
+		int id { get; }
 
 		/// <summary>
 		/// Gets the name of the event.

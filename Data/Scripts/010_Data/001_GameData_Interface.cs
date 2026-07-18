@@ -142,6 +142,46 @@ namespace PokemonEssentials.Data
 	/// </remarks>
 	public interface IGameData
 	{
+		#region
+		IGameDataEnumeration<PokemonEssentials.Data.IGrowthRate> GrowthRate { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IGenderRatio> GenderRatio { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IBodyShape> BodyShape { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IBodyColor> BodyColor { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IHabitat> Habitat { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IEvolution> Evolution { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IStat> Stat { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.INature> Nature { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IStatus> Status { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.ITerrainTag> TerrainTag { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IWeather> Weather { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IEncounterType> EncounterType { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IEnvironment> Environment { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IBattleWeather> BattleWeather { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IBattleTerrain> BattleTerrain { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.ITarget> Target { get; set; }
+		#endregion
+		#region
+		//PokemonEssentials.Data.IItem this[int key] Item { get; set; }
+		//IDictionary<int, PokemonEssentials.Data.IItem> Item { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IItem> Item { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IMove> Move { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IAbility> Ability { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IType> Type { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.ITownMap> TownMap { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IBerryPlant> BerryPlant { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.ISpecies> Species { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IRibbon> Ribbon { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IEncounter> Encounter { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.ITrainerType> TrainerType { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.ITrainer> Trainer { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IMetadata> Metadata { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IPlayerMetadata> PlayerMetadata { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IMapMetadata> MapMetadata { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IDungeonTileset> DungeonTileset { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IDungeonParameters> DungeonParameters { get; set; }
+		IGameDataEnumeration<PokemonEssentials.Data.IPhoneMessage> PhoneMessage { get; set; }
+		#endregion
+
 		/// <summary>
 		/// A bulk loader method for all data stored in .dat files in the Data folder.
 		/// </summary>
@@ -431,5 +471,24 @@ namespace PokemonEssentials.Data
 		/// </summary>
 		/// <param name="enumerator">The game data as an enumerator.</param>
 		void SetDataFromEnumerator(IEnumerator enumerator);*/
+	}
+
+	//public interface IGameDataEnumeration<enumT, T> : IDictionary<enumT, T>
+	//	,IGameDataEnumeration<T>
+	//	where enumT : Enum
+	//	where T : IEnumeration<T>
+	//{
+	//}
+
+	public interface IGameDataEnumeration<T> : IDictionary<int, T>
+		where T : IEnumeration<T>
+	{
+
+	}
+
+	public interface IEnumeration<T> : IEquatable<T>, IEqualityComparer<T>, IComparable<T>
+	{
+		int id { get; }
+		string name { get; }
 	}
 }

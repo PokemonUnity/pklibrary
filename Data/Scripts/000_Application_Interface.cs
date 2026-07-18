@@ -24,6 +24,7 @@ namespace PokemonEssentials
 		IList<ICommonEvent>			data_common_events	{ get; set; } //						data_common_events { get; set; }
 		ISystem						data_system			{ get; set; } //						data_system { get; set; }
 		IGameSystemOption			pokemonSystem		{ get; set; } //						pokemonSystem { get; set; }
+		IGameStorage				pokemonStorage		{ get; set; } //						pokemonStorage { get; set; }
 		IGameMap					game_map			{ get; set; } //						game_map { get; set; }
 		IPokemonEncounters			pokemonEncounters	{ get; set; } //						pokemonEncounters { get; set; }
 		IGlobalMetadata				pokemonGlobal		{ get; set; } //						pokemonGlobal { get; set; }
@@ -31,10 +32,12 @@ namespace PokemonEssentials
 		IGameStats					stats				{ get; set; } //						stats { get; set; }
 		IMapFactory					map_factory			{ get; set; } //						map_factory { get; set; }
 		IGamePlayer					game_player			{ get; set; } //						game_player { get; set; }
-		IPlayer						game_actors			{ get; set; } //						game_actors { get; set; }
+		IList<IPlayer>				game_actors			{ get; set; } //						game_actors { get; set; }
+		IList<IPlayer>				data_actors			{ get; set; } //						data_actors { get; set; }
 		IGameVariable				game_variables		{ get; set; } //						game_variables { get; set; }
 		IPlayer						player				{ get; set; } //						player { get; set; }
-		ISceneMap					scene				{ get; set; } //						scene { get; set; }
+		IScene						scene				{ get; set; } //						scene { get; set; }
+		IDictionary<int,string>		RGSS_SCRIPTS		{ get; set; } //						RGSS_SCRIPTS { get; set; }
 	}
 
 	/// <summary>
@@ -183,6 +186,11 @@ namespace PokemonEssentials
 		{
 		}
 
+		public interface IGame : global::PokemonEssentials.IGame
+			,IGameStart
+		{
+		}
+
 		public interface IMain : global::PokemonEssentials.IMain
 			,IApplication
 			,IMainFileTests
@@ -224,6 +232,16 @@ namespace PokemonEssentials
 			,IMainSafariZone
 		{
 		}
+
+		public interface IInput : global::PokemonEssentials.IInput
+			,RPGMaker.Kernel.Static.IInput
+		{
+		}
+
+		//public interface IGraphics : global::PokemonEssentials.IGraphics
+		//	,RPGMaker.Kernel.Static.IGraphics
+		//{
+		//}
 
 		public interface IGlobalMetadata : global::PokemonEssentials.IGlobalMetadata
 			//,IGlobalMetadataBattleIntroAnimation

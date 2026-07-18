@@ -43,7 +43,7 @@ namespace PokemonEssentials
 		/// </summary>
 		/// <param name="script">Script to execute.</param>
 		/// <returns>Result of the script execution.</returns>
-		void execute_script(string script);
+		bool execute_script(string script);
 
 		/// <summary>
 		/// Gets a character based on the parameter.

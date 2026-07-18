@@ -118,17 +118,17 @@ namespace PokemonEssentials
 
 		void setCancelValue(int number);
 
-		int initialNumber();
+		int initialNumber { get; }
 
-		int cancelNumber();
+		int cancelNumber { get; }
 
-		int minNumber();
+		int minNumber { get; }
 
-		int maxNumber();
+		int maxNumber { get; }
 
 		void setMaxDigits(int value);
 
-		int maxDigits();
+		int maxDigits { get; }
 
 		//private;
 

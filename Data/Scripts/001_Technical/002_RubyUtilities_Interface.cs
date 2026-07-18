@@ -4,24 +4,25 @@ using System.Collections.Generic;
 namespace PokemonEssentials
 {
     /// <summary>
-    /// Global utility methods and extensions (IMain interface).
+    /// Global utility methods and extensions (<see cref="IMain"/> interface).
     /// </summary>
     public interface IMainUtilities : IMain
     {
         /// <summary>
         /// Generates a random number.
         /// </summary>
-        int rand(object a = null, object b = null);
+        int Rand(object a = null, object b = null);
 
         /// <summary>
         /// Checks if a string is null or empty.
         /// </summary>
-        bool nil_or_empty(string str);
+        //bool nil_or_empty(string str);
+        bool NullOrEmpty(string str);
 
         /// <summary>
         /// Performs linear interpolation between two values.
         /// </summary>
-        double lerp(double start_val, double end_val, double duration, double delta, double? now = null);
+        double Lerp(double start_val, double end_val, double duration, double delta, double? now = null);
     }
 
     /// <summary>
@@ -32,62 +33,70 @@ namespace PokemonEssentials
         /// <summary>
         /// Creates a color from RGB values.
         /// </summary>
-        IColor new_from_rgb(object param);
+        //IColor new_from_rgb(object param);
+        IColor NewFromRgb(string param);
 
         /// <summary>
         /// Converts the color to RGB15 format.
         /// </summary>
-        int to_rgb15();
+        //int to_rgb15();
+        string ToRgb15();
 
         /// <summary>
         /// Converts the color to RGB24 format.
         /// </summary>
-        string to_rgb24();
+        //string to_rgb24();
+        string ToRgb24();
 
         /// <summary>
         /// Converts the color to RGB32 format.
         /// </summary>
-        string to_rgb32(bool always_include_alpha = false);
+        //string to_rgb32(bool always_include_alpha = false);
+        string ToRgb32(bool always_include_alpha = false);
 
         /// <summary>
         /// Converts the color to hex format.
         /// </summary>
-        string to_hex();
+        //string to_hex();
+        string ToHex();
 
         /// <summary>
         /// Converts the color to integer.
         /// </summary>
-        int to_i();
+        //int to_i();
+        int ToInt();
 
         /// <summary>
         /// Gets a contrasting color.
         /// </summary>
-        IColor get_contrast_color();
+        //IColor get_contrast_color();
+        IColor GetContrastColor();
 
         /// <summary>
         /// Converts hex color to RGB values.
         /// </summary>
-        IColorRGB hex_to_rgb(string hex);
+        //IColorRGB hex_to_rgb(string hex);
+        int[] HexToRgb(string hex);
 
         /// <summary>
         /// Parses a color from various formats.
         /// </summary>
-        IColor parse(object color);
+        IColor Parse(object color);
 
         // Predefined colors
-        IColor red { get; }
-        IColor green { get; }
-        IColor blue { get; }
-        IColor yellow { get; }
-        IColor magenta { get; }
-        IColor cyan { get; }
-        IColor white { get; }
-        IColor gray { get; }
-        IColor black { get; }
-        IColor pink { get; }
-        IColor orange { get; }
-        IColor purple { get; }
-        IColor brown { get; }
+        //IColor red        { get; }
+        //IColor green      { get; }
+        //IColor blue       { get; }
+        //IColor yellow     { get; }
+        //IColor magenta    { get; }
+        //IColor cyan       { get; }
+        //IColor white      { get; }
+        //IColor gray       { get; }
+        //IColor black      { get; }
+        //IColor pink       { get; }
+        //IColor orange     { get; }
+        //IColor purple     { get; }
+        //IColor brown      { get; }
     }
 
     /// <summary>
@@ -98,12 +107,12 @@ namespace PokemonEssentials
         /// <summary>
         /// Executes the wrapped code block with optional parameters.
         /// </summary>
-        void execute(Action<IDictionary<string, object>> given_block = null, IDictionary<string, object> args = null);
+        void Execute(Action<IDictionary<string, object>> given_block = null, IDictionary<string, object> args = null);
 
         /// <summary>
         /// Sets the parameters for the wrapped code block.
         /// </summary>
-        void set(IDictionary<string, object> parameters);
+        void Set(IDictionary<string, object> parameters);
     }
 
     /// <summary>
@@ -258,11 +267,11 @@ namespace PokemonEssentials
         /// <summary>
         /// Gets the minimum value of the range.
         /// </summary>
-        object min { get; }
+        double Min { get; }
 
         /// <summary>
         /// Gets the maximum value of the range.
         /// </summary>
-        object max { get; }
+        double Max { get; }
     }
 }

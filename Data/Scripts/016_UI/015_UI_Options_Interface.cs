@@ -13,7 +13,7 @@ namespace PokemonEssentials
 		int sendtoboxes				{ get; set; }
 		int givenicknames			{ get; set; }
 		int frame					{ get; set; }
-		int textskin				{ get; }
+		int textskin				{ get; set; }
 		//int font					{ get; set; }
 		int screensize				{ get; set; }
 		int language				{ get; set; }

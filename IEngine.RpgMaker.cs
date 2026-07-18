@@ -315,7 +315,8 @@ namespace PokemonEssentials
 				/// Gets the box (Rect) used when drawing a string str with the draw_text method. Does not include the angled portions of italicized text.
 				/// </summary>
 				/// <param name="str"></param>
-				void text_size(string str);
+				IRect text_size(string str);
+				IRect TextSize(string str);
 			}
 			/// <summary>
 			/// The RGB color class. Each component is handled with a floating point value (Float).
@@ -415,18 +416,22 @@ namespace PokemonEssentials
 				/// The X-coordinate of the rectangle's upper left corner.
 				/// </summary>
 				float x { get; set; }
+				float X { get; set; }
 				/// <summary>
 				/// The Y-coordinate of the rectangle's upper left corner.
 				/// </summary>
 				float y { get; set; }
+				float Y { get; set; }
 				/// <summary>
 				/// The rectangle's width.
 				/// </summary>
 				int width { get; set; }
+				int Width { get; set; }
 				/// <summary>
 				/// The rectangle's height.
 				/// </summary>
 				int height { get; set; }
+				int Height { get; set; }
 				/// <summary>
 				/// Sets all parameters at once.
 				/// </summary>
@@ -766,7 +771,7 @@ namespace PokemonEssentials
 				/// <summary>
 				/// The module that carries out graphics processing.
 				/// </summary>
-				public interface IGraphics
+				public interface IGraphics : IHaveUpdate
 				{
 					/// <summary>
 					/// The number of times the screen is refreshed per second. The larger the value, the more CPU power is required. Normally set at 60.
@@ -796,7 +801,7 @@ namespace PokemonEssentials
 				/// <summary>
 				/// A module that handles input data from a gamepad or keyboard.
 				/// </summary>
-				public interface IInput
+				public interface IInput : IHaveUpdate
 				{
 					#region Variables
 					int DOWN				{ get; }	//= 2;
@@ -1170,6 +1175,7 @@ namespace PokemonEssentials
 			/// <summary>
 			/// Array containing the Move command arguments. The contents vary for each command.
 			/// </summary>
+			/// [0] = label_name
 			//IMoveCommand command { get; set; }
 			//IList<IMoveCommand> parameters { get; set; }
 			IList<object> parameters { get; set; }
@@ -1430,19 +1436,22 @@ namespace PokemonEssentials
 		/// <remarks>
 		/// Sprites (Sprite) and other objects must be used to display bitmaps on the screen.
 		/// </remarks>
-		//public interface IBitmap : global::PokemonEssentials.RPGMaker.Kernel.IBitmap { }
+		public interface IBitmap : global::PokemonEssentials.RPGMaker.Kernel.IBitmap { }
 		/// <summary>
 		/// The RGB color class. Each component is handled with a floating point value (Float).
 		/// </summary>
-		public interface IColorRGB : global::PokemonEssentials.RPGMaker.Kernel.IColorRGB { }
+		//public interface IColorRGB : global::PokemonEssentials.RPGMaker.Kernel.IColorRGB { }
 		/// <summary>
 		/// The RGBA color class. Each component is handled with a floating point value (Float).
 		/// </summary>
-		public interface IColor : global::PokemonEssentials.RPGMaker.Kernel.IColor, IColorRGB, IColorExtensions {
+		//public interface IColor : global::PokemonEssentials.RPGMaker.Kernel.IColor, IColorRGB, IColorExtensions {
+		/// <summary>
+		/// </summary>
+		public interface IColorEnum {
 			IColor default_color { get; }
-			new IColor red		{ get; }
-			new IColor green	{ get; }
-			new IColor blue		{ get; }
+			IColor red		{ get; }
+			IColor green	{ get; }
+			IColor blue		{ get; }
 			IColor yellow	{ get; }
 			IColor magenta	{ get; }
 			IColor cyan		{ get; }
@@ -1475,7 +1484,7 @@ namespace PokemonEssentials
 		/// Used when displaying sprites in one portion of the screen,
 		/// with no overflow into other regions.
 		/// </summary>
-		public interface IViewport : global::PokemonEssentials.RPGMaker.Kernel.IViewport { }
+		public interface IViewport : global::PokemonEssentials.RPGMaker.Kernel.IViewport, global::PokemonEssentials.IViewport { }
 		/// <summary>
 		/// The game window class. Created internally from multiple sprites.
 		/// </summary>

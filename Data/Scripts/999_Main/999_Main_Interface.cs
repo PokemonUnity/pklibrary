@@ -6,7 +6,7 @@ namespace PokemonEssentials
 	/// <summary>
 	/// A simple scene used during debug starts to bypass the title screen and load directly into the game.
 	/// </summary>
-	public interface ISceneDebugIntro : IScene
+	public interface ISceneDebugIntro : ISceneIntro, IScene
 	{
 		/// <summary>
 		/// Execution logic for the debug intro scene.
@@ -26,7 +26,7 @@ namespace PokemonEssentials
 		/// Determines the initial scene to load upon starting the game.
 		/// </summary>
 		/// <returns>A new title scene instance.</returns>
-		IScene CallTitle();
+		ISceneIntro CallTitle();
 
 		/// <summary>
 		/// The primary entry point loop logic.

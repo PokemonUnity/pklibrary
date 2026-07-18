@@ -101,7 +101,7 @@ namespace PokemonEssentials
 		/// <param name="id">The ID to associate with the handler.</param>
 		/// <param name="handler">The handler to add.</param>
 		//void add(object id, Delegate handler = null);
-		void add(int id, object handler = null);
+		void add(int id, Delegate handler = null);
 
 		/// <summary>
 		/// Copies a handler from one ID to multiple destination IDs.

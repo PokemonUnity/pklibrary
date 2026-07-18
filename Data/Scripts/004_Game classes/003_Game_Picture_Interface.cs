@@ -84,7 +84,7 @@ namespace PokemonEssentials
 		/// <param name="zoomY">The y-directional zoom rate.</param>
 		/// <param name="opacity">The opacity level.</param>
 		/// <param name="blendType">The blend method.</param>
-		void show(string name, int origin, float x, float y, float zoomX, float zoomY, float opacity, int blendType);
+		void show(string name, int origin, int x, int y, float zoomX, float zoomY, float opacity, int blendType);
 
 		/// <summary>
 		/// Moves the picture with animation.
@@ -97,7 +97,7 @@ namespace PokemonEssentials
 		/// <param name="zoomY">The target y-directional zoom rate.</param>
 		/// <param name="opacity">The target opacity level.</param>
 		/// <param name="blendType">The blend method.</param>
-		void move(float duration, int origin, float x, float y, float zoomX, float zoomY, float opacity, int blendType);
+		void move(float duration, int origin, int x, int y, float zoomX, float zoomY, float opacity, int blendType);
 
 		/// <summary>
 		/// Changes the rotation speed of the picture.

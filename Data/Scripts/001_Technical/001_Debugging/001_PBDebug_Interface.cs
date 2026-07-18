@@ -7,7 +7,7 @@ namespace PokemonEssentials
     /// <summary>
     /// Interface for application error handling and logging within the debug module.
     /// </summary>
-    public interface IPBDebug : IDebugger
+    public interface IDebug : IDebugger
     {
         /// <summary>
         /// Executes a block of code, rescuing any exceptions and logging them.
